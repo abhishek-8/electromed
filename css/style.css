@@ -1,0 +1,68 @@
+/* Custom Stylesheet */
+#products{
+  min-width: 300px;"
+  background-color:grey;
+}
+
+nav {
+  margin-top: -25px;
+  background:#424242;
+  font-family:'Ubuntu';
+  height:10%;
+}
+/*
+nav ul a {
+  color :#00897b;
+
+}
+*/
+.product-details {
+  z-index:1; 
+  margin-top:50px;
+  margin-left:40px;
+  position:absolute;
+}
+nav .brand-logo{
+  color:white;
+}
+/*
+.button-collapse {
+  color: #26a69a;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+*/
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}

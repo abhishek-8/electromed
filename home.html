@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    <title>Home Page</title>
+    <!-- CSS  -->
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+    <!-- <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>  -->
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <!--Import jQuery before materialize.js-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>‌
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+
+    <script type="text/javascript" src="actions.js"></script>
+    <script>
+    $(document).ready(function(){
+    $(".dropdown-button").dropdown({
+    hover:true,
+    constrain_width: true,
+    gutter: 0,
+    belowOrigin: true
+    }
+    );
+    $('.product-details').hide();
+    $('.slider').slider({full_width: true});
+    });
+    </script>
+  </head>
+  <body>
+    <!-- Initially hidden -->
+    <div class="z-depth-5 product-details" id="pd">
+      
+    </div>
+
+    <div id="rest" style="z-index:-1;">
+      <div class="dropdown-content" id="products">
+        <ul>
+          <li><a onclick="set()">FLOW MONITOR</a></li>
+          <li><a href="interest_rate_display_board.php">INTEREST RATE DISPLAY BOARD</a></li>
+          <li><a href="industrial_display.php">INDUSTRIAL DISPLAY</a></li>
+          <li><a href="industrial_clock.php">INDUSTRIAL CLOCKS</a></li>
+          <li><a href="lfm.php">LINE FREQUENCY MONITOR</a></li>
+          <li><a href="megawatt_pannel.php">MEGA WATT PANEL</a></li>
+          <li><a href="process_&_indicator.php">PROCESS INDICATORS</a></li>
+          <li><a href="ph_meter.php">PH METER</a></li>
+          <li><a href="scrolling_display.php">SCROLLING DISPLAY</a></li>
+          <li><a href="tachometer.php">TACHOMETER</a></li>
+          <li><a href="temp_cont.php">TEMPERATURE CONTROLLER</a></li>
+          <li><a href="twilight_switches.php">TWILIGHT SWITCHES</a></li>
+          <li><a href="token.php">TOKEN DISPLAY</a></li>
+          <li><a href="wsm.php">WEIGHING SCALE MONITOR</a></li>
+        </ul>
+      </div>
+      <div class="navbar-fixed">
+        <nav>
+          <div class="nav-wrapper container">
+            <a id="logo-container" href="" class="brand-logo">Logo</a>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="">Home</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="" class="dropdown-button" data-activates="products">Products<i class="material-icons right">arrow_drop_down</i></a></li>
+              <li><a href="">Link 3</a></li>
+              <li><a href="">Link 4</a></li>
+              <li><a href="">Contact Us</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="slider" style="z-index: -1;">
+        <ul class="slides">
+
+        <li>
+            <img src="ckt.jpg"> <!-- random image -->
+            <div class="caption left-align">
+              <h3>Left Aligned Caption</h3>
+              <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+            </div>
+          </li>
+
+          <li>
+            <img src="mother-board.jpeg"> <!-- random image -->
+            <div class="caption right-align">
+              <h3>Right Aligned Caption</h3>
+              <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+            </div>
+          </li>
+          
+          <li>
+            <img src="img1.jpeg"> <!-- random image -->
+            <div class="caption right-align" style="color:grey;">
+              <h3>Right Aligned Caption</h3>
+              <h5 class="light grey-text text-lighten-3" style="color:grey;">Here's our small slogan.</h5>
+            </div>
+          </li>
+          
+          <li>
+            <img src="technology.jpg"> <!-- random image -->
+            <div class="caption left-align">
+              <h3>Left Aligned Caption</h3>
+              <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+            </div>
+          </li>
+          <li>
+            <img src="work-harder.jpeg"> <!-- random image -->
+            <div class="caption right-align">
+              <h3>We believe in technology</h3>
+              <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+            </div>
+          </li>
+          
+          <li>
+            <img src="ckt.jpg"> <!-- random image -->
+            <div class="caption right-align">
+              <h3>Right Aligned Caption</h3>
+              <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+            </div>
+          </li>
+          <li>
+            <img src="ckt.jpg"> <!-- random image -->
+            <div class="caption center-align">
+              <h3>This is our big Tagline!</h3>
+              <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+            </div>
+          </li>
+        </ul>
+      </div>
+      
+      <div class="container">
+        <div class="section">
+          <!--   Icon Section   -->
+          <div class="row">
+            <div class="col s12 m4">
+              <div class="icon-block card-panel hoverable">
+                <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
+                <h5 class="center">What we do</h5>
+                <p class="light">ELECTRO-MED is an established and leading manufacturer of electronic products in India. We manufacture and assemble a comprehensive range of moving as well as static electronic LED displays besides a wide range of electronic instruments for industrial application</p>
+              </div>
+            </div>
+            <div class="col s12 m5">
+              <div class="icon-block card-panel hoverable">
+                <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
+                <h5 class="center">Why Electro-med?</h5>
+                <p class="light">ELECTRO-MED has a team of dedicated engineers with varied experience in the field of electronic instrumentation, displays and microcontroller based systems. We have in-house R & D facility for the development of microprocessor based systems, design of PC Boards and mechanical assemblies.
+                our in house R & D, Manufacturing and Quality Control practices ensure that the product you buy is the best in terms of technology, and consistently reliable in terms of Standards and Quality. At ELECTRO-MED, we are committed to bring to our customers, best of the innovations & quality.</p>
+              </div>
+            </div>
+            <div class="col s12 m3 ">
+              <div class="icon-block card-panel hoverable">
+                <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
+                <h5 class="center">Easy to work with</h5>
+                <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+<!--
+      <div class="parallax-container valign-wrapper">
+        <div class="section no-pad-bot">
+          <div class="container">
+            <div class="row center">
+            </div>
+          </div>
+        </div>
+        <div class="parallax"><img src="background2.jpg" alt="Unsplashed background img 2"></div>
+      </div>
+      <div class="container">
+        <div class="section">
+          <div class="row">
+            <div class="col s12 center">
+              <h3><i class="mdi-content-send brown-text"></i></h3>
+              <h4>Contact Us</h4>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="parallax-container valign-wrapper">
+        <div class="section no-pad-bot">
+          <div class="container">
+            <div class="row center">
+            </div>
+          </div>
+        </div>
+        <div class="parallax"><img src="background3.jpg" alt="Unsplashed background img 3"></div>
+      </div>
+      -->
+      <footer class="page-footer grey">
+        <div class="container">
+          <div class="row">
+            <div class="col l3 s12">
+              <h5 class="white-text">Company Bio</h5>
+              <p class="grey-text text-lighten-4"></p>
+            </div>
+            <div class="col l3 s12">
+              <h5 class="white-text">Our Links</h5>
+              <ul>
+                <li><a href="#!">About Us</a></li>
+                <li><a href="#!">Clients</a></li>
+                <li><a href="#!">Coach Guidance System</a></li>
+                <li><a href="#!">Contact Us</a></li>
+                <li><a href="#!">Customers List</a></li>
+                <li><a href="#!">Enquiry</a></li>
+              </ul>
+            </div>
+            <div class="col l3 s12">
+              <h5 class="white-text">Career</h5>
+              <ul>
+                <li><a class="white-text" href="#!">Job/Apprenticeship</a></li>
+              </ul>
+            </div>
+            <div class="col l3 s12">
+              <h5 class="white-text">Connect</h5>
+              <ul>
+                <li><a class="white-text" href="#!">Link 1</a></li>
+                <li><a class="white-text" href="#!">Link 2</a></li>
+                <li><a class="white-text" href="#!">Link 3</a></li>
+                <li><a class="white-text" href="#!">Link 4</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+            Made by <a class="brown-text text-lighten-3" href="">Abhishek Tiwari</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

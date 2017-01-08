@@ -1,9 +1,12 @@
 /* Custom Stylesheet */
 #products{
-  min-width: 300px;"
+  min-width: 300px;
   background-color:grey;
+}/*
+#customers {
+  background:#e0e0e0;
 }
-
+*/
 nav {
   margin-top: -25px;
   background:#424242;
@@ -16,11 +19,9 @@ nav ul a {
 
 }
 */
-.product-details {
-  z-index:1; 
-  margin-top:50px;
-  margin-left:40px;
-  position:absolute;
+#products a {
+  color:white;
+  font-size:15px;
 }
 nav .brand-logo{
   color:white;

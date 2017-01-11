@@ -2,23 +2,20 @@
 #products{
   min-width: 300px;
   background-color:grey;
-}/*
-#customers {
-  background:#e0e0e0;
 }
-*/
+  #contactForm {
+    width:50%;
+    height:90%;
+    margin-left: 250px;
+  }
+
 nav {
   margin-top: -25px;
   background:#424242;
   font-family:'Ubuntu';
   height:10%;
 }
-/*
-nav ul a {
-  color :#00897b;
 
-}
-*/
 #products a {
   color:white;
   font-size:15px;
@@ -26,37 +23,7 @@ nav ul a {
 nav .brand-logo{
   color:white;
 }
-/*
-.button-collapse {
-  color: #26a69a;
-}
 
-.parallax-container {
-  min-height: 380px;
-  line-height: 0;
-  height: auto;
-  color: rgba(255,255,255,.9);
-}
-  .parallax-container .section {
-    width: 100%;
-  }
-
-@media only screen and (max-width : 992px) {
-  .parallax-container .section {
-    position: absolute;
-    top: 40%;
-  }
-  #index-banner .section {
-    top: 10%;
-  }
-}
-
-@media only screen and (max-width : 600px) {
-  #index-banner .section {
-    top: 0;
-  }
-}
-*/
 .icon-block {
   padding: 0 15px;
 }
@@ -66,4 +33,40 @@ nav .brand-logo{
 
 footer.page-footer {
   margin: 0;
+}
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local('Material Icons'),
+       local('MaterialIcons-Regular'),
+       url(../icons/MaterialIcons-Regular.woff2) format('woff2'),
+       url(../icons/MaterialIcons-Regular.woff) format('woff'),
+       url(../icons/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  font-feature-settings: 'liga';
 }

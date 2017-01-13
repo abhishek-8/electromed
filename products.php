@@ -10,6 +10,8 @@ $x= $_GET['id'];
     <!-- CSS  -->
     <!--Import Google Icon Font-->
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
     <!-- <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>  -->
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
@@ -17,7 +19,6 @@ $x= $_GET['id'];
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>‌
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300" rel="stylesheet">
     <script src="action.js" type="text/javascript"></script>
     <script>
     
@@ -36,6 +37,7 @@ $x= $_GET['id'];
     </script>
   </head>
   <body>
+
   <div class="dropdown-content" id="products">
         <ul>
           <li><a href="products.php?id=flow_monitor">FLOW MONITOR</a></li>
@@ -57,7 +59,7 @@ $x= $_GET['id'];
     <div class="navbar-fixed">
       <nav>
         <div class="nav-wrapper container">
-          <a id="logo-container" href="" class="brand-logo">Logo</a>
+          <a id="logo-container" href="" class="brand-logo">Electromed</a>
           <ul class="right hide-on-med-and-down">
             <li><a href="home.html">Home</a></li>
             <li><a href="">About</a></li>
@@ -125,7 +127,15 @@ $x= $_GET['id'];
         </li>
       </ul>
     </div>
-    
+
+
+    <h2 class="headName" id="head_name"></h2>
+    <hr>          
+    <div class="card-image materialboxed" id="product_image">
+              
+    </div>
+      
+    <!--
     <div class="row">
       <div class="col l8 s12 m12 card-panel">
 
@@ -135,9 +145,9 @@ $x= $_GET['id'];
         
        </div> 
         <div class="right col s12 m7">
-          <h2 class="header" id="head_name"></h2>
-          <div class="card horizontal">
-            <div class="card-image" id="product_image">
+          
+          <div class="card">
+            <div class="card-image materialboxed" id="product_image">
               
             </div>
             <div class="card-stacked">
@@ -149,7 +159,8 @@ $x= $_GET['id'];
         </div>
         </div>
       </div>
-      <div class="col l3 s12 m12 card-panel push-l1">
+
+      <div class="col l3 s10 offset-s1 m12 card-panel" style="margin-left:20px;">
         <div class="row" style="background: cyan;">Request for quote</div>
         <form>
           <div class="input-field col s12">
@@ -180,7 +191,8 @@ $x= $_GET['id'];
           <input type="submit" class="btn">
         </form>
       </div>
-    </div>
+
+    </div>  -->
     
     <footer class="page-footer grey">
       <div class="container">
@@ -188,6 +200,8 @@ $x= $_GET['id'];
           <div class="col l3 s12">
             <h5 class="white-text">Our Address</h5>
             <hr>
+            <p>D -17, Vivekanand Puri,
+                    Lucknow –226007 India</p>
             <p class="grey-text text-lighten-4"></p>
           </div>
           <div class="col l3 s12">

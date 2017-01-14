@@ -23,8 +23,8 @@ $x= $_GET['id'];
     <script>
     
     $(document).ready(function(){
-      $('.materialboxed').materialbox();
-      set1('<?php echo $x ?>');
+    $('.materialboxed').materialbox();
+    set1('<?php echo $x ?>');
     $(".dropdown-button").dropdown({
     hover:true,
     constrain_width: true,
@@ -37,32 +37,31 @@ $x= $_GET['id'];
     </script>
   </head>
   <body>
-
-  <div class="dropdown-content" id="products">
-        <ul>
-          <li><a href="products.php?id=flow_monitor">FLOW MONITOR</a></li>
-          <li><a href="products.php?id=interest_rate_display_board">INTEREST RATE DISPLAY BOARD</a></li>
-          <li><a href="products.php?id=industrial_display">INDUSTRIAL DISPLAY</a></li>
-          <li><a href="products.php?id=industrial_clock">INDUSTRIAL CLOCKS</a></li>
-          <li><a href="products.php?id=lfm">LINE FREQUENCY MONITOR</a></li>
-          <li><a href="products.php?id=megawatt_pannel">MEGA WATT PANEL</a></li>
-          <li><a href="products.php?id=process_n_indicator">PROCESS INDICATORS</a></li>
-          <li><a href="products.php?id=ph_meter">PH METER</a></li>
-          <li><a href="products.php?id=scrolling_display">SCROLLING DISPLAY</a></li>
-          <li><a href="products.php?id=tachometer">TACHOMETER</a></li>
-          <li><a href="products.php?id=temp_cont">TEMPERATURE CONTROLLER</a></li>
-          <li><a href="products.php?id=twilight_switches">TWILIGHT SWITCHES</a></li>
-          <li><a href="products.php?id=token">TOKEN DISPLAY</a></li>
-          <li><a href="products.php?id=wsm">WEIGHING SCALE MONITOR</a></li>
-        </ul>
-      </div>
+    <div class="dropdown-content" id="products">
+      <ul>
+        <li><a href="products.php?id=flow_monitor">FLOW MONITOR</a></li>
+        <li><a href="products.php?id=interest_rate_display_board">INTEREST RATE DISPLAY BOARD</a></li>
+        <li><a href="products.php?id=industrial_display">INDUSTRIAL DISPLAY</a></li>
+        <li><a href="products.php?id=industrial_clock">INDUSTRIAL CLOCKS</a></li>
+        <li><a href="products.php?id=lfm">LINE FREQUENCY MONITOR</a></li>
+        <li><a href="products.php?id=megawatt_pannel">MEGA WATT PANEL</a></li>
+        <li><a href="products.php?id=process_n_indicator">PROCESS INDICATORS</a></li>
+        <li><a href="products.php?id=ph_meter">PH METER</a></li>
+        <li><a href="products.php?id=scrolling_display">SCROLLING DISPLAY</a></li>
+        <li><a href="products.php?id=tachometer">TACHOMETER</a></li>
+        <li><a href="products.php?id=temp_cont">TEMPERATURE CONTROLLER</a></li>
+        <li><a href="products.php?id=twilight_switches">TWILIGHT SWITCHES</a></li>
+        <li><a href="products.php?id=token">TOKEN DISPLAY</a></li>
+        <li><a href="products.php?id=wsm">WEIGHING SCALE MONITOR</a></li>
+      </ul>
+    </div>
     <div class="navbar-fixed">
       <nav>
         <div class="nav-wrapper container">
-          <a id="logo-container" href="" class="brand-logo">Electromed</a>
+          <a id="logo-container" href="" class="brand-logo">Electro-med</a>
           <ul class="right hide-on-med-and-down">
             <li><a href="home.html">Home</a></li>
-            <li><a href="">About</a></li>
+            <li><a href="about.html">About Us</a></li>
             <li><a href="" class="dropdown-button" data-activates="products">Products<i class="material-icons right">arrow_drop_down</i></a></li>
             <li><a href="">Link 3</a></li>
             <li><a href="">Link 4</a></li>
@@ -71,128 +70,140 @@ $x= $_GET['id'];
         </div>
       </nav>
     </div>
-    <div class="slider" style="z-index: -1;">
+    <div class="slider">
       <ul class="slides">
         <li>
-          <img src="ckt.jpg"> <!-- random image -->
-          <div class="caption left-align">
+          <img src="banner_1.jpg"> <!-- random image -->
+          <!--<div class="caption left-align">
             <h3>Left Aligned Caption</h3>
             <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-          </div>
+          </div>-->
         </li>
         <li>
-          <img src="mother-board.jpeg"> <!-- random image -->
-          <div class="caption right-align">
+          <img src="banner_2.jpg"> <!-- random image -->
+          <!--<div class="caption right-align">
             <h3>Right Aligned Caption</h3>
             <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-          </div>
+          </div>-->
         </li>
         
         <li>
-          <img src="img1.jpeg"> <!-- random image -->
-          <div class="caption right-align" style="color:grey;">
+          <img src="banner_16.jpg"> <!-- random image -->
+          <!--<div class="caption right-align" style="color:grey;">
             <h3>Right Aligned Caption</h3>
             <h5 class="light grey-text text-lighten-3" style="color:grey;">Here's our small slogan.</h5>
-          </div>
+          </div>-->
         </li>
         
         <li>
-          <img src="technology.jpg"> <!-- random image -->
-          <div class="caption left-align">
+          <img src="banner_6.jpg"> <!-- random image -->
+          <!--<div class="caption left-align">
             <h3>Left Aligned Caption</h3>
             <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-          </div>
+          </div>-->
         </li>
         <li>
-          <img src="work-harder.jpeg"> <!-- random image -->
-          <div class="caption right-align">
+          <img src="banner_24.jpg"> <!-- random image -->
+          <!--<div class="caption right-align">
             <h3>We believe in technology</h3>
             <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-          </div>
+          </div>-->
         </li>
         
         <li>
-          <img src="ckt.jpg"> <!-- random image -->
-          <div class="caption right-align">
+          <img src="banner_22.jpg"> <!-- random image -->
+          <!--<div class="caption right-align">
             <h3>Right Aligned Caption</h3>
             <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-          </div>
+          </div>-->
         </li>
         <li>
-          <img src="ckt.jpg"> <!-- random image -->
-          <div class="caption center-align">
+          <img src="banner_21.jpg"> <!-- random image -->
+          <!--<div class="caption center-align">
             <h3>This is our big Tagline!</h3>
             <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-          </div>
+          </div>-->
         </li>
       </ul>
     </div>
 
 
     <h2 class="headName" id="head_name"></h2>
-    <hr>          
-    <div class="card-image materialboxed" id="product_image">
-              
-    </div>
-      
-    <!--
+    <hr>
+
     <div class="row">
-      <div class="col l8 s12 m12 card-panel">
-
-      <div class="row">
-      
-      <div class="col s12 m5" id="details">
-        
-       </div> 
-        <div class="right col s12 m7">
-          
-          <div class="card">
-            <div class="card-image materialboxed" id="product_image">
-              
-            </div>
-            <div class="card-stacked">
-              <div class="card-action">
-                <a href="#">This is a link</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        </div>
+      <div class="product_image materialboxed col l4" id="product_image1">
       </div>
-
-      <div class="col l3 s10 offset-s1 m12 card-panel" style="margin-left:20px;">
+      <div class="col l4">
+        <h4 class="headName" id="r1">specs</h4>
+      </div>
+      <div class="col l2 offset-l2 m12 s12">
         <div class="row" style="background: cyan;">Request for quote</div>
         <form>
           <div class="input-field col s12">
-          <i class="material-icons prefix">perm_identity</i>
             <input id="name" type="text" class="validate">
             <label for="name">Name</label>
           </div>
           <div class="input-field col s12">
-          <i class="material-icons prefix">email</i>
             <input id="email" type="email" class="validate">
             <label for="email">Email</label>
           </div>
           <div class="input-field col s12">
-          <i class="material-icons prefix">work</i>
             <input id="company" type="text" class="validate">
             <label for="company">Company</label>
           </div>
           <div class="input-field col s12">
-          <i class="material-icons prefix">phone</i>
             <input id="phone" type="text" class="validate">
             <label for="phone">Phone no.</label>
           </div>
           <div class="input-field col s12">
-          <i class="material-icons prefix">message</i>
             <input id="msg" type="text" class="validate">
             <label for="msg">Message</label>
           </div>
-          <input type="submit" class="btn">
+          <input type="submit" class="waves-effect waves-light btn-flat hoverable">
         </form>
       </div>
-
-    </div>  -->
+    </div>
+    </div>
+    <div class="row">
+      <div class="col l4">
+        <h4 class="headName" id="r2">specs</h4>
+      </div>
+      <div class="product_image materialboxed right col l4" id="product_image2">
+      </div>
+      
+    </div>
+    <div class="row">
+      <div class="product_image materialboxed col l4" id="product_image3">
+      </div>
+      <div class="col l4">
+        <h4 class="headName" id="r3">specs</h4>
+      </div>
+    </div>
+    <!--
+    <div class="row">
+      <div class="col l8 s12 m12 card-panel">
+        <div class="row">
+          
+          <div class="col s12 m5" id="details">
+            
+          </div>
+          <div class="right col s12 m7">
+            
+            <div class="card">
+              <div class="card-image materialboxed" id="product_image">
+                
+              </div>
+              <div class="card-stacked">
+                <div class="card-action">
+                  <a href="#">This is a link</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        -->
     
     <footer class="page-footer grey">
       <div class="container">
@@ -201,7 +212,7 @@ $x= $_GET['id'];
             <h5 class="white-text">Our Address</h5>
             <hr>
             <p>D -17, Vivekanand Puri,
-                    Lucknow –226007 India</p>
+            Lucknow –226007 India</p>
             <p class="grey-text text-lighten-4"></p>
           </div>
           <div class="col l3 s12">

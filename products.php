@@ -32,7 +32,7 @@ $x= $_GET['id'];
     belowOrigin: true
     }
     );
-    $('.slider').slider({full_width: true});
+    //  $('.slider').slider({full_width: true});
     });
     </script>
   </head>
@@ -70,74 +70,60 @@ $x= $_GET['id'];
         </div>
       </nav>
     </div>
+    <!--
     <div class="slider">
       <ul class="slides">
         <li>
-          <img src="banner_1.jpg"> <!-- random image -->
-          <!--<div class="caption left-align">
-            <h3>Left Aligned Caption</h3>
-            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-          </div>-->
+          <img src="banner_1.jpg">
         </li>
         <li>
-          <img src="banner_2.jpg"> <!-- random image -->
-          <!--<div class="caption right-align">
-            <h3>Right Aligned Caption</h3>
-            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-          </div>-->
+          <img src="banner_2.jpg">
         </li>
         
         <li>
-          <img src="banner_16.jpg"> <!-- random image -->
-          <!--<div class="caption right-align" style="color:grey;">
-            <h3>Right Aligned Caption</h3>
-            <h5 class="light grey-text text-lighten-3" style="color:grey;">Here's our small slogan.</h5>
-          </div>-->
+          <img src="banner_16.jpg">
         </li>
         
         <li>
-          <img src="banner_6.jpg"> <!-- random image -->
-          <!--<div class="caption left-align">
-            <h3>Left Aligned Caption</h3>
-            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-          </div>-->
+          <img src="banner_6.jpg">
         </li>
         <li>
-          <img src="banner_24.jpg"> <!-- random image -->
-          <!--<div class="caption right-align">
-            <h3>We believe in technology</h3>
-            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-          </div>-->
+          <img src="banner_24.jpg">
         </li>
         
         <li>
-          <img src="banner_22.jpg"> <!-- random image -->
-          <!--<div class="caption right-align">
-            <h3>Right Aligned Caption</h3>
-            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-          </div>-->
+          <img src="banner_22.jpg">
+          
         </li>
         <li>
-          <img src="banner_21.jpg"> <!-- random image -->
-          <!--<div class="caption center-align">
-            <h3>This is our big Tagline!</h3>
-            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-          </div>-->
+          <img src="banner_21.jpg">
+          
         </li>
       </ul>
-    </div>
-
-
+    </div>-->
     <h2 class="headName" id="head_name"></h2>
     <hr>
-
     <div class="row">
-      <div class="product_image materialboxed col l4" id="product_image1">
+      
+      <div class="col l5">
+      <div class="row">
+      <div class="col l12 materialboxed" id="product_image">
+        
       </div>
-      <div class="col l4">
+      </div>
+      <br><br>
+      <div class="row">
+        <div class="col l3" id="product_image1" onclick="set2('<?php echo $x ?>')"></div>
+        <div class="col l3" id="product_image2" onclick="set3('<?php echo $x ?>')"></div>
+        <div class="col l3" id="product_image3" onclick="set4('<?php echo $x ?>')"></div>
+      </div>
+      </div>
+      <div class="col l4 s11 m11">
         <h4 class="headName" id="r1">specs</h4>
+        <h4 class="headName" id="r2">specs</h4>
+        <h4 class="headName" id="r3">specs</h4>
       </div>
-      <div class="col l2 offset-l2 m12 s12">
+      <div class="col l2 offset-l1 m12 s12">
         <div class="row" style="background: cyan;">Request for quote</div>
         <form>
           <div class="input-field col s12">
@@ -164,46 +150,7 @@ $x= $_GET['id'];
         </form>
       </div>
     </div>
-    </div>
-    <div class="row">
-      <div class="col l4">
-        <h4 class="headName" id="r2">specs</h4>
-      </div>
-      <div class="product_image materialboxed right col l4" id="product_image2">
-      </div>
-      
-    </div>
-    <div class="row">
-      <div class="product_image materialboxed col l4" id="product_image3">
-      </div>
-      <div class="col l4">
-        <h4 class="headName" id="r3">specs</h4>
-      </div>
-    </div>
-    <!--
-    <div class="row">
-      <div class="col l8 s12 m12 card-panel">
-        <div class="row">
-          
-          <div class="col s12 m5" id="details">
-            
-          </div>
-          <div class="right col s12 m7">
-            
-            <div class="card">
-              <div class="card-image materialboxed" id="product_image">
-                
-              </div>
-              <div class="card-stacked">
-                <div class="card-action">
-                  <a href="#">This is a link</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-        -->
+
     
     <footer class="page-footer grey">
       <div class="container">

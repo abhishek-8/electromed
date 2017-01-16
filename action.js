@@ -22,8 +22,8 @@ document.getElementById('head_name').innerHTML='Process and Indicator';
 else if(x=='ph_meter') {
 document.getElementById('head_name').innerHTML='Ph Meter';
 document.getElementById('r1').innerHTML ='Range: for pH: 0-14pH '+'\n'+'for mV: (-1999) mV to (+1999) mV (optional)'+'\n'+'Temperature compensation: 0-100degC (manual)'+'\n'+'Accuracy: ±1 mV ±1count';
-document.getElementById('r2').innerHTML ='Resolution: 0.01 pH;'+'\n' +' 1mV 3 ½ digit LED display';
-document.getElementById('r3').innerHTML = 'Options: Analog recorder output facility'+'\n'+'Accessories: pH electrodes, buffer tablets';
+document.getElementById('r2').innerHTML ='\n'+'Resolution: 0.01 pH;'+'\n' +' 1mV 3 ½ digit LED display';
+document.getElementById('r3').innerHTML ='\n'+'Options: Analog recorder output facility'+'\n'+'Accessories: pH electrodes, buffer tablets';
 }
 else if(x=='scrolling_display')
 document.getElementById('head_name').innerHTML='Scrolling Display';
@@ -43,7 +43,23 @@ document.getElementById('r3').innerHTML = 'No. of digit is 03 and color of displ
 else if(x=='wsm')
 document.getElementById('head_name').innerHTML='Weighing Scale Monitor';
 
-document.getElementById('product_image1').innerHTML='<img class="responsive-img" src='+x+'.jpg'+'>';
-document.getElementById('product_image2').innerHTML='<img class="responsive-img" src='+x+'.jpg'+'>';
-document.getElementById('product_image3').innerHTML='<img class="responsive-img" src='+x+'.jpg'+'>';
+
+
+document.getElementById('product_image').innerHTML='<img width="500" src='+x+'.jpg'+' alt="">';
+document.getElementById('product_image1').innerHTML='<img src='+x+'.jpg'+' alt="" class="circle responsive-img">';
+document.getElementById('product_image2').innerHTML='<img src='+x+'.jpg'+' alt="" class="circle responsive-img">';
+document.getElementById('product_image3').innerHTML='<img src='+x+'.jpg'+' alt="" class="circle responsive-img">';
+}
+
+function set2(x){
+
+document.getElementById('product_image').innerHTML='<img width="500" src='+x+'.jpg'+' alt="">';//'<img src='+x+'.jpg'+' alt="" class="responsive-img">'	
+}
+function set3(x){
+
+document.getElementById('product_image').innerHTML='<img width="500" src='+x+'.jpg'+' alt="">';//'<img src='+x+'.jpg'+' alt="" class="responsive-img">'	
+}
+function set4(x){
+
+document.getElementById('product_image').innerHTML='other image';//'<img src='+x+'.jpg'+' alt="" class="responsive-img">'	
 }

@@ -25,6 +25,27 @@ $x= $_GET['id'];
     $(document).ready(function(){
     $('.materialboxed').materialbox();
     set1('<?php echo $x ?>');
+     $(".btn1").click(function(){
+        $("#product_image").fadeOut('fast', function() {
+          set2('<?php echo $x ?>');
+          $("#product_image").fadeIn("fast");
+        });;
+    });
+    
+    $(".btn2").click(function(){
+        $("#product_image").fadeOut('fast', function() {
+          set3('<?php echo $x ?>');
+          $("#product_image").fadeIn("fast");
+        });;
+    });
+
+    $(".btn3").click(function(){
+        $("#product_image").fadeOut('fast', function() {
+          set4('<?php echo $x ?>');
+          $("#product_image").fadeIn("fast");
+        });;
+    });
+
     $(".dropdown-button").dropdown({
     hover:true,
     constrain_width: true,
@@ -113,15 +134,13 @@ $x= $_GET['id'];
       </div>
       <br><br>
       <div class="row">
-        <div class="col l3" id="product_image1" onclick="set2('<?php echo $x ?>')"></div>
-        <div class="col l3" id="product_image2" onclick="set3('<?php echo $x ?>')"></div>
-        <div class="col l3" id="product_image3" onclick="set4('<?php echo $x ?>')"></div>
+        <div class="col l3 m3 s3 btn1" id="product_image1"></div>
+        <div class="col l3 m3 s3 btn2" id="product_image2"></div>
+        <div class="col l3 m3 s3 btn3" id="product_image3"></div>
       </div>
       </div>
       <div class="col l4 s11 m11">
-        <h4 class="headName" id="r1">specs</h4>
-        <h4 class="headName" id="r2">specs</h4>
-        <h4 class="headName" id="r3">specs</h4>
+        <h4 class="headNamev2" id="r1">specs</h4>
       </div>
       <div class="col l2 offset-l1 m12 s12">
         <div class="row" style="background: cyan;">Request for quote</div>

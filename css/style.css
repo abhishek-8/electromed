@@ -16,16 +16,21 @@ body{
   font-family:'Abel',sans-serif;
 }
 .headName {
-  opacity:0.5;
+  opacity:0.6;
   text-align: center;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+.headNamev2 {
+  opacity:0.6;
   font-family: 'Open Sans Condensed', sans-serif;
 }
 .headName1 {
   font-family: 'Abel', sans-serif;
 }
-span{
-  color:red;
-}/*
+span {
+  color:red; 
+}
+/*
 #contactform{
   margin-left: 25px;
 }

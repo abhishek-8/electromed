@@ -91,61 +91,61 @@ $x= $_GET['id'];
     </div>
     
     <div class="row">
-      <div class="col l9 s12 m12">
+      <div class="col l9 s12 m12 card-panel">
         <h2 class="headName" id="head_name" style="/*background:#f5f5f5; */background: linear-gradient(#eeeeee,white );" ></h2>
         <hr>
         
-        <div class="col l5">
+        <div class="col l5 s11 m11" id="product">
           <div class="row">
-          <br><br><br>
+          <br><br><br><br>
             <div class="col l12 s12 materialboxed" id="product_image">
               
             </div>
           </div>
           <br><br>
           <div class="row">
-            <div class="col l3 offset-l2 m3 offset-m2 s3 offset-s2 btn1" id="product_image1"></div>
-            <div class="col l3 m3 s3 btn2" id="product_image2"></div>
-            <div class="col l3 m3 s3 btn3" id="product_image3"></div>
+            <div class="col l3 offset-l2 m3 offset-m2 s3 offset-s2 btn1 hoverable" id="product_image1"></div>
+            <div class="col l3 m3 s3 btn2 hoverable" id="product_image2" style="margin-left:2px;margin-right:2px;"></div>
+            <div class="col l3 m3 s3 btn3 hoverable" id="product_image3"></div>
           </div>
         </div>
         
-        <div class="col l6 offset-l1 s11 m11">
+        <div class="col l6 s11 m11" id="specs">
           <table class="striped responsive-table" style="line-height: 160%;">
           <center><h3 class="headName">Specifications</h3></center>
             <tr id="r1">
-              <td class="headNamev2" id="r1d1"></td>
-              <td class="headNamev2" id="r1d2"></td>
+              <td class="headNamev2" id="r1d1" style="vertical-align: top;" ></td>
+              <td class="headNamev2" id="r1d2" style="vertical-align: top;" ></td>
             </tr>
             <tr>
-              <td class="headNamev2" id="r2d1"></td>
-              <td class="headNamev2" id="r2d2"></td>
+              <td class="headNamev2" id="r2d1" style="vertical-align: top;" ></td>
+              <td class="headNamev2" id="r2d2" style="vertical-align: top;" ></td>
             </tr>
             <tr>
-              <td class="headNamev2" id="r3d1"></td>
-              <td class="headNamev2" id="r3d2"></td>
+              <td class="headNamev2" id="r3d1" style="vertical-align: top;" ></td>
+              <td class="headNamev2" id="r3d2" style="vertical-align: top;" ></td>
             </tr>
             <tr>
-              <td class="headNamev2" id="r4d1"></td>
-              <td class="headNamev2" id="r4d2"></td>
+              <td class="headNamev2" id="r4d1" style="vertical-align: top;" ></td>
+              <td class="headNamev2" id="r4d2" style="vertical-align: top;" ></td>
             </tr>
             <tr>
-              <td class="headNamev2" id="r5d1"></td>
-              <td class="headNamev2" id="r5d2"></td>
+              <td class="headNamev2" id="r5d1" style="vertical-align: top;" ></td>
+              <td class="headNamev2" id="r5d2" style="vertical-align: top;" ></td>
             </tr>
             <tr>
-              <td class="headNamev2" id="r6d1"></td>
-              <td class="headNamev2" id="r6d2"></td>
+              <td class="headNamev2" id="r6d1" style="vertical-align: top;" ></td>
+              <td class="headNamev2" id="r6d2" style="vertical-align: top;" ></td>
             </tr>
             <tr>
-              <td class="headNamev2" id="r7d1"></td>
-              <td class="headNamev2" id="r7d2"></td>
+              <td class="headNamev2" id="r7d1" style="vertical-align: top;" ></td>
+              <td class="headNamev2" id="r7d2" style="vertical-align: top;" ></td>
             </tr>
           </table>
           
         </div>
       </div>
-      <div class="col l2 offset-l1 m12 s12" id="request_for_quote">
+      <div class="col l2 offset-l1 m12 s12 card-panel" id="request_for_quote">
       <legend class="white-text" style="position:relative; background: lightblue;height: 40px;width: 100%;"><br><center>Contact Us</center></legend>
           
       <img src="contact.jpg">
@@ -176,13 +176,13 @@ $x= $_GET['id'];
       <br>
       <div class="row" id="related_products">
         
-        <div class="col l2 offset-l1"><img style="border-radius:10px;" src='temp_cont.jpg'+' alt="" class="responsive-img">
+        <div class="col l2 offset-l1"><img style="border-radius:10px;" src='photos/temp_cont1.jpg'+' alt="" class="responsive-img">
         <a>know more</a></div>
-        <div class="col l2"><img style="border-radius:10px;" src='temp_cont.jpg'+' alt="" class="responsive-img">
+        <div class="col l2"><img style="border-radius:10px;" src='photos/temp_cont2.jpg'+' alt="" class="responsive-img">
         <a>know more</a></div>
-        <div class="col l2"><img style="border-radius:10px;" src='temp_cont.jpg'+' alt="" class="responsive-img">
+        <div class="col l2"><img style="border-radius:10px;" src='photos/twilight_switches1.jpg'+' alt="" class="responsive-img">
         <a>know more</a></div>
-        <div class="col l2"><img style="border-radius:10px;" src='temp_cont.jpg'+' alt="" class="responsive-img">
+        <div class="col l2"><img style="border-radius:10px;" src='photos/temp_cont1.jpg'+' alt="" class="responsive-img">
         <a>know more</a></div>
 
       </div>

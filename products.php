@@ -59,9 +59,9 @@ $x= $_GET['id'];
     <div class="dropdown-content" id="products">
       <ul>
         <li><a href="products.php?id=flow_monitor">FLOW MONITOR</a></li>
-        <li><a href="products.php?id=interest_rate_display_board">INTEREST RATE DISPLAY BOARD</a></li>
+        <li><a href="products.php?id=led_display">LED DISPLAY BOARD</a></li>
         <li><a href="products.php?id=industrial_display">INDUSTRIAL DISPLAY</a></li>
-        <li><a href="products.php?id=industrial_clock">INDUSTRIAL CLOCKS</a></li>
+        <li><a href="products.php?id=digital_clock">DIGITAL CLOCKS</a></li>
         <li><a href="products.php?id=lfm">LINE FREQUENCY MONITOR</a></li>
         <li><a href="products.php?id=megawatt_pannel">MEGA WATT PANEL</a></li>
         <li><a href="products.php?id=process_n_indicator">PROCESS INDICATORS</a></li>
@@ -111,9 +111,9 @@ $x= $_GET['id'];
         </div>
         
         <div class="col l6 offset-l1 s11 m11">
-          <table style="line-height: 160%;">
+          <table class="striped responsive-table" style="line-height: 160%;">
           <center><h3 class="headName">Specifications</h3></center>
-            <tr>
+            <tr id="r1">
               <td class="headNamev2" id="r1d1"></td>
               <td class="headNamev2" id="r1d2"></td>
             </tr>

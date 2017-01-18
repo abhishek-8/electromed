@@ -40,7 +40,10 @@ body{
 span {
   color:red; 
 }
-
+/*
+.boundary {
+  border:1px solid;
+}*/
 /*
 #contactform{
   margin-left: 25px;

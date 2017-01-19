@@ -21,41 +21,44 @@ $x= $_GET['id'];
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
     <script src="action.js" type="text/javascript"></script>
     <script>
-    
     $(document).ready(function(){
-    $('.materialboxed').materialbox();
-    set1('<?php echo $x ?>');
-    $(".btn1").click(function(){
-    $("#product_image").fadeOut('fast', function() {
-    set2('<?php echo $x ?>');
-    $("#product_image").fadeIn("fast");
-    });;
-    });
+
+      $('.materialboxed').materialbox();
+      set1('<?php echo $x ?>');
+      $(".btn1").click(function(){
+      $("#product_image").fadeOut('fast', function() {
+      set2('<?php echo $x ?>');
+      $("#product_image").fadeIn("fast");
+      });;
+      });
     
-    $(".btn2").click(function(){
-    $("#product_image").fadeOut('fast', function() {
-    set3('<?php echo $x ?>');
-    $("#product_image").fadeIn("fast");
-    });;
-    });
-    $(".btn3").click(function(){
-    $("#product_image").fadeOut('fast', function() {
-    set4('<?php echo $x ?>');
-    $("#product_image").fadeIn("fast");
-    });;
-    });
-    $(".dropdown-button").dropdown({
-    hover:true,
-    constrain_width: true,
-    gutter: 0,
-    belowOrigin: true
-    }
-    );
-    //  $('.slider').slider({full_width: true});
+      $('.rqst').click(function(){
+          $('#rqst_form').slideToggle("fast");
+      });
+
+      $(".btn2").click(function(){
+      $("#product_image").fadeOut('fast', function() {
+      set3('<?php echo $x ?>');
+      $("#product_image").fadeIn("fast");
+      });;
+      });
+
+      $(".btn3").click(function(){
+      $("#product_image").fadeOut('fast', function() {
+      set4('<?php echo $x ?>');
+      $("#product_image").fadeIn("fast");
+      });;
+      });
+      $(".dropdown-button").dropdown({
+      hover:true,
+      constrain_width: true,
+      gutter: 0,
+      belowOrigin: true
+      });
     });
     </script>
   </head>
-  <body>
+  <body id="product_page">
     <div class="dropdown-content" id="products">
       <ul>
         <li><a href="products.php?id=flow_monitor">FLOW MONITOR</a></li>
@@ -91,7 +94,7 @@ $x= $_GET['id'];
     </div>
     
     <div class="row">
-      <div class="col l9 s12 m12 card-panel">
+      <div class="col l10 s12 m12 card-panel" style="width:80%;">
         <h2 class="headName" id="head_name" style="/*background:#f5f5f5; */background: linear-gradient(#eeeeee,white );" ></h2>
         <hr>
         
@@ -145,8 +148,8 @@ $x= $_GET['id'];
           
         </div>
       </div>
-      <div class="col l2 offset-l1 m12 s12 card-panel" id="request_for_quote">
-      <legend class="white-text" style="position:relative; background: lightblue;height: 40px;width: 100%;"><br><center>Contact Us</center></legend>
+      <div class="col l2 m12 s12 card-panel" id="request_for_quote">
+      <legend class="white-text btn rqst" style="position:relative; background: lightblue;height: 40px;width: 100%;"><center>Contact Us</center></legend>
           
       <img src="contact.jpg">
         <ul>
@@ -154,7 +157,7 @@ $x= $_GET['id'];
         <li>+91-9415039393</li>
         <li>info@electromed.co.in</li>         
        </ul>
-        <fieldset>
+        <fieldset style="display:none;" id="rqst_form">
           <legend class="white-text" style="position:relative; background: lightblue;height: 40px;width: 100%;"><br><center>Request for quote</center></legend>
           <form>
            <input id="name" type="text" class="validate" placeholder="Name" style="font-size:15px;height:25px;">
@@ -174,7 +177,7 @@ $x= $_GET['id'];
       <h2 class="headName">Related Products</h2>
       <hr>
       <br>
-      <div class="row" id="related_products">
+      <div class="row card-panel hoverable" id="related_products">
         
         <div class="col l2 offset-l1"><img style="border-radius:10px;" src='photos/temp_cont1.jpg'+' alt="" class="responsive-img">
         <a>know more</a></div>

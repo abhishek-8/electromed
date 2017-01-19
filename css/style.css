@@ -2,6 +2,11 @@
 body{
   width: 100%;
 }
+#product_page {
+
+  background: linear-gradient(#fafafa,white );
+}
+
 #contactPage {
   background: #f5f5f5;
 }/*
@@ -22,6 +27,7 @@ body{
 #request_for_quote{
   background: linear-gradient(#e3f2fd,white );
   line-height: 100%;
+  float:right;
 }
 
 

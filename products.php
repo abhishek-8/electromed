@@ -22,6 +22,7 @@ $x= $_GET['id'];
     <script src="action.js" type="text/javascript"></script>
     <script>
     $(document).ready(function(){
+      $('#request_for_quote').hide();
 
       $('.materialboxed').materialbox();
       set1('<?php echo $x ?>');
@@ -33,7 +34,10 @@ $x= $_GET['id'];
       });
     
       $('.rqst').click(function(){
-          $('#rqst_form').slideToggle("fast");
+        $('#request_for_quote').show();
+        });
+      $('.close').click(function(){
+        $('#request_for_quote').hide();
       });
 
       $(".btn2").click(function(){
@@ -88,19 +92,47 @@ $x= $_GET['id'];
             <li><a href="">Link 3</a></li>
             <li><a href="">Link 4</a></li>
             <li><a href="contactForm.html">Contact Us</a></li>
+            <ul class="right">
+        <li>+91 9415085804</li><br>
+        <li style="line-height: 1%;">+91-9415039393</li>        
+       </ul>
           </ul>
+
         </div>
+
       </nav>
     </div>
-    
-    <div class="row">
-      <div class="col l10 s12 m12 card-panel" style="width:80%;">
-        <h2 class="headName" id="head_name" style="/*background:#f5f5f5; */background: linear-gradient(#eeeeee,white );" ></h2>
-        <hr>
+
+    <div class="z-depth-5 card-panel hoverable" id="request_for_quote">
+      <legend class="white-text rqst headNamev2" style="position:relative; background: #e3f2fd;height:40px;width: 100%;"><center style="color:black;">Contact Us</center></legend>
+          
+      <img src="contact.jpg">
         
+        <fieldset id="rqst_form">
+          <legend class="white-text" style="position:relative; background: lightblue;height: 40px;width: 100%;"><br><center>Request for quote</center></legend>
+          <form>
+           <input id="name" type="text" class="validate" placeholder="Name" style="font-size:15px;height:25px;">
+            <input id="email" type="email" class="validate" placeholder="Email" style="font-size:15px;height:25px;">
+            <input id="company" type="text" class="validate" placeholder="Company" style="font-size:15px;height:25px;">
+            <input id="phone" type="text" class="validate" placeholder="Phone" style="font-size:15px;height:25px;">
+            <textarea name="" placeholder="Message" style="font-size:15px;"></textarea>
+            <input type="submit" class="btn blue lighten-2">
+         </form>
+         <a class="btn close" style="float:right;">Close</a>
+        </fieldset>
+        
+      </div>
+    
+    <div class="row" style="z-index:-1;">
+      <div class="col l10 offset-l1 s12 m12 card-panel">
+        <h2 class="headName" id="head_name" style="/*background:#f5f5f5; */background: linear-gradient(#e3f2fd,white );" ></h2>
+        <hr>
+        <div class="headNamev2"><center id="desc"></center></div>
         <div class="col l5 s11 m11" id="product">
+
           <div class="row">
-          <br><br><br><br>
+
+        <br><br><br><br>
             <div class="col l12 s12 materialboxed" id="product_image">
               
             </div>
@@ -111,6 +143,15 @@ $x= $_GET['id'];
             <div class="col l3 m3 s3 btn2 hoverable" id="product_image2" style="margin-left:2px;margin-right:2px;"></div>
             <div class="col l3 m3 s3 btn3 hoverable" id="product_image3"></div>
           </div>
+          <div class="row">  
+          <div class="col l5">
+        <button class="btn">Brochure</button>
+        </div>
+        <div class="col l5">
+        <button class="btn rqst">Request</button>
+        </div>
+        </div>
+
         </div>
         
         <div class="col l6 s11 m11" id="specs">
@@ -147,29 +188,8 @@ $x= $_GET['id'];
           </table>
           
         </div>
+        
       </div>
-      <div class="col l2 m12 s12 card-panel" id="request_for_quote">
-      <legend class="white-text btn rqst" style="position:relative; background: lightblue;height: 40px;width: 100%;"><center>Contact Us</center></legend>
-          
-      <img src="contact.jpg">
-        <ul>
-        <li>+91 9415085804</li>
-        <li>+91-9415039393</li>
-        <li>info@electromed.co.in</li>         
-       </ul>
-        <fieldset style="display:none;" id="rqst_form">
-          <legend class="white-text" style="position:relative; background: lightblue;height: 40px;width: 100%;"><br><center>Request for quote</center></legend>
-          <form>
-           <input id="name" type="text" class="validate" placeholder="Name" style="font-size:15px;height:25px;">
-            <input id="email" type="email" class="validate" placeholder="Email" style="font-size:15px;height:25px;">
-            <input id="company" type="text" class="validate" placeholder="Company" style="font-size:15px;height:25px;">
-            <input id="phone" type="text" class="validate" placeholder="Phone" style="font-size:15px;height:25px;">
-            <textarea name="" placeholder="Message" style="font-size:15px;"></textarea>
-            <input type="submit" class="btn blue lighten-2">
-         </form>
-        </fieldset>
-      </div>
-      
     </div>
 
     <div>

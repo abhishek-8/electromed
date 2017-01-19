@@ -3,8 +3,11 @@ body{
   width: 100%;
 }
 #product_page {
-
-  background: linear-gradient(#fafafa,white );
+background: linear-gradient(#fafafa,white );
+}
+#about_page {
+background: linear-gradient(#fafafa,white );
+  
 }
 
 #contactPage {
@@ -26,8 +29,10 @@ body{
 }
 #request_for_quote{
   background: linear-gradient(#e3f2fd,white );
-  line-height: 100%;
-  float:right;
+  position:absolute;
+  width:50%;
+  margin-left:400px;
+  z-index:1;
 }
 
 

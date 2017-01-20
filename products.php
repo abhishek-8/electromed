@@ -92,48 +92,59 @@ $x= $_GET['id'];
             <li><a href="">Link 3</a></li>
             <li><a href="">Link 4</a></li>
             <li><a href="contactForm.html">Contact Us</a></li>
-            <ul class="right">
-        <li>+91 9415085804</li><br>
-        <li style="line-height: 1%;">+91-9415039393</li>        
-       </ul>
+            <ul class="right"><i class="material-icons prefix">phone</i></ul>
+            <ul class="right"><li>+91 9415085804</li></li></ul>   
+      
           </ul>
 
         </div>
 
       </nav>
     </div>
+    <nav class="center">
+    <div class="nav-wrapper">
+      <div class="col s12">
+        <a href="#!" class="breadcrumb">First</a>
+        <a href="#!" class="breadcrumb">Second</a>
+        <a href="#!" class="breadcrumb">Third</a>
+      </div>
+    </div>
+  </nav>
 
     <div class="z-depth-5 card-panel hoverable" id="request_for_quote">
-      <legend class="white-text rqst headNamev2" style="position:relative; background: #e3f2fd;height:40px;width: 100%;"><center style="color:black;">Contact Us</center></legend>
+      <!--<legend class="white-text rqst headNamev2" style="position:relative; background: #e3f2fd;height:40px;width: 100%;"><center style="color:black;"></center></legend> -->
           
-      <img src="contact.jpg">
+      <!--<img src="contact.jpg">-->
         
         <fieldset id="rqst_form">
-          <legend class="white-text" style="position:relative; background: lightblue;height: 40px;width: 100%;"><br><center>Request for quote</center></legend>
+          <legend class="white-text" style="position:relative; background: lightblue;height: 40px;width: 100%;"><center>Request for quote</center></legend>
           <form>
            <input id="name" type="text" class="validate" placeholder="Name" style="font-size:15px;height:25px;">
             <input id="email" type="email" class="validate" placeholder="Email" style="font-size:15px;height:25px;">
             <input id="company" type="text" class="validate" placeholder="Company" style="font-size:15px;height:25px;">
             <input id="phone" type="text" class="validate" placeholder="Phone" style="font-size:15px;height:25px;">
             <textarea name="" placeholder="Message" style="font-size:15px;"></textarea>
-            <input type="submit" class="btn blue lighten-2">
+            <div class="row">
+            <div class="col l4">
+            <input type="submit" class="btn blue lighten-2"></div>
+            <div class="col l4 offset-l4">
+              <a class="btn blue lighten-2 close" style="float:right;">Close</a>
+             </div> 
+            </div>
          </form>
-         <a class="btn close" style="float:right;">Close</a>
-        </fieldset>
-        
+        </fieldset>  
       </div>
     
-    <div class="row" style="z-index:-1;">
-      <div class="col l10 offset-l1 s12 m12 card-panel">
-        <h2 class="headName" id="head_name" style="/*background:#f5f5f5; */background: linear-gradient(#e3f2fd,white );" ></h2>
-        <hr>
-        <div class="headNamev2"><center id="desc"></center></div>
+    <div class="row" style="z-index:-1;margin-top:-25px;">
+      <div class="col l12 s12 m12">
+        <h2 class="headNamev3 blue lighten-3 z-depth-1" id="head_name"></h2>
+        
         <div class="col l5 s11 m11" id="product">
 
           <div class="row">
 
         <br><br><br><br>
-            <div class="col l12 s12 materialboxed" id="product_image">
+            <div class="col l11 offset-l1 s12 materialboxed" id="product_image">
               
             </div>
           </div>
@@ -145,18 +156,20 @@ $x= $_GET['id'];
           </div>
           <div class="row">  
           <div class="col l5">
-        <button class="btn">Brochure</button>
+        <button class="btn" style="font-size:13px;">Brochure</button>
         </div>
         <div class="col l5">
-        <button class="btn rqst">Request</button>
+        <button class="btn rqst" style="font-size:13px;">Request for quote</button>
         </div>
         </div>
 
         </div>
         
         <div class="col l6 s11 m11" id="specs">
+
+        <div class="headNamev2"><center id="desc"></center></div>
           <table class="striped responsive-table" style="line-height: 160%;">
-          <center><h3 class="headName">Specifications</h3></center>
+          <center><h4 class="headName">Specifications</h3></center>
             <tr id="r1">
               <td class="headNamev2" id="r1d1" style="vertical-align: top;" ></td>
               <td class="headNamev2" id="r1d2" style="vertical-align: top;" ></td>
@@ -194,18 +207,17 @@ $x= $_GET['id'];
 
     <div>
     <br><br>
-      <h2 class="headName">Related Products</h2>
-      <hr>
+      <h2 class="headNamev3 blue lighten-3">Related Products</h2>
       <br>
-      <div class="row card-panel hoverable" id="related_products">
+      <div class="row" id="related_products">
         
-        <div class="col l2 offset-l1"><img style="border-radius:10px;" src='photos/temp_cont1.jpg'+' alt="" class="responsive-img">
+        <div class="col l2 offset-l1 hoverable"><img style="border-radius:10px;" src='photos/temp_cont1.jpg'+' alt="" class="responsive-img">
         <a>know more</a></div>
-        <div class="col l2"><img style="border-radius:10px;" src='photos/temp_cont2.jpg'+' alt="" class="responsive-img">
+        <div class="col l2 hoverable"><img style="border-radius:10px;" src='photos/temp_cont2.jpg'+' alt="" class="responsive-img">
         <a>know more</a></div>
-        <div class="col l2"><img style="border-radius:10px;" src='photos/twilight_switches1.jpg'+' alt="" class="responsive-img">
+        <div class="col l2 hoverable"><img style="border-radius:10px;" src='photos/twilight_switches1.jpg'+' alt="" class="responsive-img">
         <a>know more</a></div>
-        <div class="col l2"><img style="border-radius:10px;" src='photos/temp_cont1.jpg'+' alt="" class="responsive-img">
+        <div class="col l2 hoverable"><img style="border-radius:10px;" src='photos/temp_cont1.jpg'+' alt="" class="responsive-img">
         <a>know more</a></div>
 
       </div>

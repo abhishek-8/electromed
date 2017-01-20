@@ -68,6 +68,7 @@ document.getElementById('r7d2').innerHTML ='12.5mm, 25mm, 50mm, 100mm, 150mm, 20
 
 else if(x=='ph_meter') {
 document.getElementById('head_name').innerHTML='Ph Meter';
+//document.getElementById('head_name1').innerHTML='Ph Meter';
 document.getElementById('desc').innerHTML='These are used to measure pH of all types of liquids. We supply the pH meters with combination electrode, electrode stand with clamp and temperature compensation.';
 document.getElementById('r1d1').innerHTML ='<span>Features:</span>';
 document.getElementById('r1d2').innerHTML ='3 ½ digit LED display';
@@ -196,7 +197,7 @@ document.getElementById('r7d2').innerHTML ='';
 }
 
 
-document.getElementById('product_image').innerHTML='<img style="border-radius:10px;" width="340" height="260" src=photos/'+x+'1.jpg'+' alt="">';
+document.getElementById('product_image').innerHTML='<img style="border-radius:10px;" width="340" height="220" src=photos/'+x+'1.jpg'+' alt="">';
 document.getElementById('product_image1').innerHTML='<img style="border-radius:10px;" src=photos/'+x+'1.jpg'+' alt="" class="responsive-img">';
 document.getElementById('product_image2').innerHTML='<img style="border-radius:10px;" src=photos/'+x+'2.jpg'+' alt="" class="responsive-img">';
 document.getElementById('product_image3').innerHTML='<img style="border-radius:10px;" src=photos/'+x+'3.jpg'+' alt="" class="responsive-img">';
@@ -211,13 +212,13 @@ if ($('#r'+x+'d2').is(':empty') ){
 }
 
 function set2(x){
-document.getElementById('product_image').innerHTML='<img style="border-radius:10px;" width="340" height="260" src=photos/'+x+'1.jpg'+' alt="">';
+document.getElementById('product_image').innerHTML='<img style="border-radius:10px;" width="340" height="220" src=photos/'+x+'1.jpg'+' alt="">';
 
 }
 function set3(x){
-document.getElementById('product_image').innerHTML='<img style="border-radius:10px;" width="340" height="260" src=photos/'+x+'2.jpg'+' alt="">';
+document.getElementById('product_image').innerHTML='<img style="border-radius:10px;" width="340" height="220" src=photos/'+x+'2.jpg'+' alt="">';
 }
 
 function set4(x){
-document.getElementById('product_image').innerHTML='<img style="border-radius:10px;" width="340" height="260" src=photos/'+x+'3.jpg'+' alt="">';	
+document.getElementById('product_image').innerHTML='<img style="border-radius:10px;" width="340" height="220" src=photos/'+x+'3.jpg'+' alt="">';	
 }

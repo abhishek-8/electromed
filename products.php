@@ -23,7 +23,6 @@ $x= $_GET['id'];
     <script>
     $(document).ready(function(){
       $('#request_for_quote').hide();
-
       $('.materialboxed').materialbox();
       set1('<?php echo $x ?>');
       $(".btn1").click(function(){
@@ -32,7 +31,6 @@ $x= $_GET['id'];
       $("#product_image").fadeIn("fast");
       });;
       });
-    
       $('.rqst').click(function(){
         $('#request_for_quote').show();
         });
@@ -89,8 +87,6 @@ $x= $_GET['id'];
             <li><a href="home.html">Home</a></li>
             <li><a href="about.html">About Us</a></li>
             <li><a href="" class="dropdown-button" data-activates="products">Products<i class="material-icons right">arrow_drop_down</i></a></li>
-            <li><a href="">Link 3</a></li>
-            <li><a href="">Link 4</a></li>
             <li><a href="contactForm.html">Contact Us</a></li>
             <ul class="right"><i class="material-icons prefix">phone</i></ul>
             <ul class="right"><li>+91 9415085804</li></li></ul>   
@@ -101,7 +97,7 @@ $x= $_GET['id'];
 
       </nav>
     </div>
-    <nav class="center">
+    <nav class="center indigo darken-4">
     <div class="nav-wrapper">
       <div class="col s12">
         <a href="#!" class="breadcrumb">First</a>
@@ -138,7 +134,7 @@ $x= $_GET['id'];
     <div class="row" style="z-index:-1;margin-top:-25px;">
       <div class="col l12 s12 m12">
         <h2 class="headNamev3 blue lighten-3 z-depth-1" id="head_name"></h2>
-        
+
         <div class="col l5 s11 m11" id="product">
 
           <div class="row">
@@ -150,7 +146,7 @@ $x= $_GET['id'];
           </div>
           <br><br>
           <div class="row">
-            <div class="col l3 offset-l2 m3 offset-m2 s3 offset-s2 btn1 hoverable" id="product_image1"></div>
+            <div class="col l3 offset-l1 m3 offset-m1 s3 offset-s1 btn1 hoverable" id="product_image1"></div>
             <div class="col l3 m3 s3 btn2 hoverable" id="product_image2" style="margin-left:2px;margin-right:2px;"></div>
             <div class="col l3 m3 s3 btn3 hoverable" id="product_image3"></div>
           </div>

@@ -84,23 +84,7 @@ document.getElementById('r6d1').innerHTML ='<span>Options: </span>';
 document.getElementById('r6d2').innerHTML =' Analog recorder output facility';
 document.getElementById('r7d1').innerHTML ='<span>Accessories:</span>';
 document.getElementById('r7d2').innerHTML ='pH electrodes, buffer tablets';
-/*
-$(document).ready(function(){   
-$('#r1').addClass('boundary');	
-$('#r2d1').addClass('boundary');
-$('#r2d2').addClass('boundary');
-$('#r3d1').addClass('boundary');
-$('#r3d2').addClass('boundary');
-$('#r4d1').addClass('boundary');
-$('#r4d2').addClass('boundary');
-$('#r5d1').addClass('boundary');
-$('#r5d2').addClass('boundary');
-$('#r6d1').addClass('boundary');
-$('#r6d2').addClass('boundary');
-$('#r7d1').addClass('boundary');
-$('#r7d2').addClass('boundary');
 
-});*/
 }
 
 else if(x=='scrolling_display')
@@ -222,3 +206,21 @@ document.getElementById('product_image').innerHTML='<img style="border-radius:10
 function set4(x){
 document.getElementById('product_image').innerHTML='<img style="border-radius:10px;" width="340" height="220" src=photos/'+x+'3.jpg'+' alt="">';	
 }
+var i=1,j=100;
+function start(){
+start1();
+setTimeout(function() {
+  document.getElementById('field1').innerHTML=i;
+  i++;
+  if(i<=25)
+  	start();
+}, 45);
+}
+function start1(){
+setTimeout(function() {
+  document.getElementById('field2').innerHTML=j+' <p style="display:inline">thousands</p>';
+  j=j+50;
+  if(j<=500)
+  	start1();
+}, 45);
+} 

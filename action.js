@@ -218,7 +218,7 @@ setTimeout(function() {
 }
 function start1(){
 setTimeout(function() {
-  document.getElementById('field2').innerHTML=j+' <p style="display:inline">thousands</p>';
+  document.getElementById('field2').innerHTML=j+' <p style="display:inline">thousand</p>';
   j=j+50;
   if(j<=500)
   	start1();

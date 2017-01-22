@@ -13,17 +13,35 @@ body{
    -webkit-filter: grayscale(50%); /* Safari 6.0 - 9.0 */
     filter: grayscale(50%);
 }
-.slider .indicators .indicator-item.active{background-color:#2196f3;}
-#client_slider .slides li img{
+.slider .indicators .indicator-item.active{
+  background-color:#2196f3;
+  }
+
+  .slider .indicators .indicator-item{
+  display:inline-block;
+  position:relative;
+  cursor:pointer;
+  height:16px;
+  width:16px;
+  margin:0 12px;
+  background-color:#e0e0e0;
+  transition:background-color .3s;
+  border-radius:25%;
+}
+.client_slider .slides li img{
   height:100%;
  width:100%;
  background-size:contain;
  background-repeat:   no-repeat;
  /*background-position:center*/
 }
+
 #home_content{
   background-color:#e0e0e0;
   margin-top:590px;
+}
+#products {
+  margin-left:180px;
 }
 
 .caption h3{
@@ -96,7 +114,6 @@ color:white;
 .dropdown_headName :hover{
   color:white;
 }
-
 
 span {
   color:red; 

@@ -69,7 +69,7 @@ $x= $_GET['id'];
           <div class="col l3"><p class="dropdown_headName">Standalone Projects</p><hr></div>
           <div class="col l4"><p class="dropdown_headName">Industrial Instruments</p><hr></div>
         </div>
-        <div class="row">
+        <div class="row" style="margin-top:-50px;">
           <div class="col l2">
             <p class="product_name"><a href="products.php?id=">TRUE COLOR HD SCREEN</a></p>
             <p class="product_name"><a href="products.php?id=">TRI COLOR DISPLAY BOARDS</a></p>
@@ -162,8 +162,8 @@ $x= $_GET['id'];
     
     <div class="row" style="z-index:-1;margin-top:-25px;">
       <div class="col l12 s12 m12">
-        <h2 class="headNamev3 blue lighten-3 z-depth-1" id="head_name"></h2>
-
+        <!--<h2 class="headNamev3 blue lighten-3 z-depth-1" id="head_name"></h2>-->
+<br>
         <div class="col l5 s11 m11" id="product">
 
           <div class="row">

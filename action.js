@@ -67,7 +67,7 @@ document.getElementById('r7d2').innerHTML ='12.5mm, 25mm, 50mm, 100mm, 150mm, 20
 }
 
 else if(x=='ph_meter') {
-document.getElementById('head_name').innerHTML='Ph Meter';
+//document.getElementById('head_name').innerHTML='Ph Meter';
 //document.getElementById('head_name1').innerHTML='Ph Meter';
 document.getElementById('desc').innerHTML='These are used to measure pH of all types of liquids. We supply the pH meters with combination electrode, electrode stand with clamp and temperature compensation.';
 document.getElementById('r1d1').innerHTML ='<span>Features:</span>';

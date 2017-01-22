@@ -16,7 +16,7 @@
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
     <script src="action.js" type="text/javascript"></script>
     <script>
     $(document).ready(function(){
@@ -26,7 +26,7 @@
     gutter: 0,
     belowOrigin: true
     });
-    $('.collapsible').collapsible();
+   // $('.collapsible').collapsible();
     $('.parallax').parallax();
     
     });
@@ -118,26 +118,29 @@
     <div class="row">
       <h1 class="headNamev3" style="color:#1b5e20;">A few facts about us</h1>
     </div>
+    <div class="container">
     <div class="row">
-    <div class="col l2 offset-l2 m2 offset-m2 s12">
+    <div class="col l2 m2 s12">
     <h2 class="numerics" style="color:orange;" id="field1"></h2>
-    <h4 class="numerics" style="color:orange;" id="field1">Employees</h4>
+    <h5 class="numerics" style="color:orange;" id="field1">Countries Served</h5>
 
     </div>
-    <div class="col l4 offset-l1 m4 offset-m1 s12">
+    <div class="col l2 offset-l2 m2 offset-m2 s12">
     <h2 class="numerics" style="color:orange;" id="field2"></h2>
-    <h4 class="numerics" style="color:orange;">Customers</h4>
+    <h5 class="numerics" style="color:orange;">Years on market</h5>
     
     </div>
-    <div class="col l3 m3 s12">
+    <div class="col l2 offset-l2 m2 offset-m2 s12">
     <h1 class="numerics" style="color:orange;" id="field3"></h1>
+    <h5 class="numerics" style="color:orange;">Number of projects</h5>
     </div>
     
+    </div>
     </div>
 </div>
 
     <div class="row" style="background:#42a5f5;color:white;">
-      <div class="col l4 offset-l1">
+      <div class="col l4">
       <img src="https://www.embeddedarm.com/images/about-facility-sign.jpg" height="325">
       </div>
       <div class="col l6">
@@ -478,43 +481,45 @@
     <img class="reponsive-img" src="company_profile.png" >
     </center>
     <br>  -->
-    <footer class="page-footer grey">
+    <footer class="page-footer">
       <div class="container">
         <div class="row">
           <div class="col l3 s12">
-            <h5 class="white-text">Our Address</h5>
+            <h6 class="white-text">Our Address</h6>
             <hr>
-            <p>D -17, Vivekanand Puri,
+            <p class="white-text foot" >D -17, Vivekanand Puri,
             Lucknow –226007 India</p>
             
-            <p class="grey-text text-lighten-4"></p>
           </div>
           <div class="col l3 s12">
-            <h5 class="white-text">Our Links</h5>
+            <h6 class="white-text">Our Links</h6>
             <hr>
             <ul>
-              <li><a href="#!">About Us</a></li>
-              <li><a href="#!">Clients</a></li>
-              <li><a href="#!">Coach Guidance System</a></li>
-              <li><a href="#!">Contact Us</a></li>
-              <li><a href="#!">Customers List</a></li>
-              <li><a href="#!">Enquiry</a></li>
+              <li><a class="white-text foot" href="#!">About Us</a></li>
+              <li><a class="white-text foot" href="#!">Clients</a></li>
+              <li><a class="white-text foot" href="#!">Coach Guidance System</a></li>
+              <li><a class="white-text foot" href="#!">Contact Us</a></li>
+              <li><a class="white-text foot" href="#!">Customers List</a></li>
+              <li><a class="white-text foot" href="#!">Enquiry</a></li>
             </ul>
           </div>
           <div class="col l3 s12">
-            <h5 class="white-text">Career</h5>
+            <h6 class="white-text">Career</h6>
             <hr>
             <ul>
-              <li><a class="white-text" href="#!">Job/Apprenticeship</a></li>
+              <li><a class="white-text foot" href="#!">Job/Apprenticeship</a></li>
             </ul>
           </div>
           <div class="col l3 s12">
-            <h5 class="white-text">Connect</h5>
+            <h6 class="white-text">Connect</h6>
             <hr>
             <ul>
-              <li><i class="material-icons">phone</i><p style="display:inline;">9415039393</p></li>
-              <li><i class="material-icons">textsms</i><p style="display:inline;">Send SMS</p></li>
-              <li><i class="material-icons">email</i><p style="display:inline;">Send Email</p></li>
+              <li><i class="tiny material-icons prefix blue-text">phone</i>
+              <p class="white-text foot" style="display:inline;"> 9415039393</p></li>
+              <li><i class="tiny material-icons prefix blue-text">textsms</i>
+              <p class="white-text foot" style="display:inline;"> Send SMS</p></li>
+              <li><i class="tiny material-icons prefix blue-text">email</i>
+              <p class="white-text foot" style="display:inline;"> Send Email</p></li>
               
             </ul>
           </div>
@@ -540,8 +545,8 @@
       </div>
       <hr>
       <div class="footer-copyright">
-        <div class="container">
-          &copy Made by <a class="brown-text text-lighten-3" href="">Abhishek Tiwari</a>
+        <div class="container foot">
+        © 2017 Copyright Electromed. All rights reserved.
         </div>
       </div>
     </footer>

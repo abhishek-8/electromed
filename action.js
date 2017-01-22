@@ -206,21 +206,32 @@ document.getElementById('product_image').innerHTML='<img style="border-radius:10
 function set4(x){
 document.getElementById('product_image').innerHTML='<img style="border-radius:10px;" width="340" height="220" src=photos/'+x+'3.jpg'+' alt="">';	
 }
-var i=1,j=100;
+var i=1,j=1,k=500;
 function start(){
 start1();
+start2();
 setTimeout(function() {
   document.getElementById('field1').innerHTML=i;
   i++;
-  if(i<=25)
+  if(i<=5)
   	start();
-}, 45);
+}, 120);
 }
 function start1(){
 setTimeout(function() {
-  document.getElementById('field2').innerHTML=j+' <p style="display:inline">thousand</p>';
-  j=j+50;
-  if(j<=500)
+  document.getElementById('field2').innerHTML=j;
+  j++;
+  if(j<42)
   	start1();
-}, 45);
+}, 25);
 } 
+function start2(){
+setTimeout(function() {
+
+  if(k<=1024 )
+  document.getElementById('field3').innerHTML=k;
+  k+=4;
+  if(k<1024 )
+  	start2();
+}, 20);
+}

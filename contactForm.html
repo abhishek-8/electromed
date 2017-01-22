@@ -26,6 +26,7 @@
         belowOrigin: true
         });
         $('select').material_select();
+        $('.parallax').parallax();
         });
         
         </script>
@@ -66,71 +67,76 @@
                 </div>
             </nav>
         </div>
+        <div class="parallax-container" id="contact_us">
+            <div class="parallax"><img src="black-and-white-city-man-people.jpg"></div>
+            <h1 class="headNamev3" style="color:white;">Contact Us</h1>
+            <div class="container">
+                <p class="headNamev3" style="font-size:28px;">Have Questions About Our Products or Services?<br>
+                Use the Contact Catalog Below So That We Can Better Assist You.</p>
+            </div>
+        </div>
+        
         <div class="row">
-        <h5 style="position:absolute;font-family:'Abel',sans-serif;padding-left: 35px;">We'd love to help you </h5>
+            <h5 style="position:absolute;font-family:'Abel',sans-serif;padding-left: 35px;">We'd love to help you </h5>
             <div class="hoverable col l6 offset-l4 m7 s12 card-panel" id="contactform">
                 <form>
-
-                   <div class="row"> 
-                    <div class="col l6">
-                        <div class="input-field">
-                            <i class="material-icons prefix">perm_identity</i>
-                            <input id="name" type="text" class="validate">
-                            <label for="name">Name</label>
+                    <div class="row">
+                        <div class="col l6">
+                            <div class="input-field">
+                                <i class="material-icons prefix">perm_identity</i>
+                                <input id="name" type="text" class="validate">
+                                <label for="name">Name</label>
+                            </div>
+                            <div class="input-field">
+                                <i class="material-icons prefix">phone</i>
+                                <input id="phone" type="text" class="validate">
+                                <label for="phone">Phone</label>
+                            </div>
+                            <div class="input-field">
+                                <i class="material-icons prefix">email</i>
+                                <input id="email" type="email" class="validate">
+                                <label for="email">Email</label>
+                            </div>
+                            <div class="input-field">
+                                <i class="material-icons prefix">room</i>
+                                <input id="address" type="text" class="validate">
+                                <label for="address">Address</label>
+                            </div>
+                            <div class="input-field">
+                                <i class="material-icons prefix">perm_contact_calendar</i>
+                                <input id="designation" type="text" class="validate">
+                                <label for="designation">Designation</label>
+                            </div>
+                            <div class="input-field">
+                                <i class="material-icons prefix">work</i>
+                                <input id="company" type="text" class="validate">
+                                <label for="company">Company</label>
+                            </div>
+                            <div class="input-field">
+                                <select>
+                                    <option value="" disabled selected>Choose your Industry</option>
+                                    <option value="1">Option 1</option>
+                                    <option value="2">Option 2</option>
+                                    <option value="3">Option 3</option>
+                                </select>
+                            </div>
+                            <div class="input-field">
+                                <input id="poi" type="text" class="validate">
+                                <label for="poi">Product of Interest</label>
+                            </div>
                         </div>
-                        <div class="input-field">
-                            <i class="material-icons prefix">phone</i>
-                            <input id="phone" type="text" class="validate">
-                            <label for="phone">Phone</label>
+                        <div class="col l6">
+                            <div class="input-field">
+                                <i class="material-icons prefix">message</i>
+                                <textarea id="qry" class="materialize-textarea"></textarea>
+                                <label for="qry">Write your query...</label>
+                            </div>
+                            <center><input type="submit" class="black btn" style="color:#ff9800;"></center>
                         </div>
-                    <div class="input-field">
-                        <i class="material-icons prefix">email</i>
-                        <input id="email" type="email" class="validate">
-                        <label for="email">Email</label>
-                    </div>
-                    <div class="input-field">
-                        <i class="material-icons prefix">room</i>
-                        <input id="address" type="text" class="validate">
-                        <label for="address">Address</label>
-                    </div>
-                    <div class="input-field">
-                        <i class="material-icons prefix">perm_contact_calendar</i>
-                        <input id="designation" type="text" class="validate">
-                        <label for="designation">Designation</label>
-                    </div>
-                    <div class="input-field">
-                        <i class="material-icons prefix">work</i>
-                        <input id="company" type="text" class="validate">
-                        <label for="company">Company</label>
-                    </div>
-                    <div class="input-field">
-                        <select>
-                            <option value="" disabled selected>Choose your Industry</option>
-                            <option value="1">Option 1</option>
-                            <option value="2">Option 2</option>
-                            <option value="3">Option 3</option>
-                        </select>
-                    </div>
-                    <div class="input-field">
-                        <input id="poi" type="text" class="validate">
-                        <label for="poi">Product of Interest</label>
-                    </div>
-                    </div>
-                    <div class="col l6">
-                    <div class="input-field">
-                        <i class="material-icons prefix">message</i>
-                        <textarea id="qry" class="materialize-textarea"></textarea>
-                        <label for="qry">Write your query...</label>
-                    </div>
-                    <center><input type="submit" class="black btn" style="color:#ff9800;"></center>
-                    </div>
-
-
                     </div>
                 </form>
             </div>
         </div>
-
         <h1 class="headName" style="background: linear-gradient(#e3f2fd,white );">Find Us</h1>
         <hr>
         <footer>

@@ -219,42 +219,42 @@ $x= $_GET['id'];
       </div>
     </div>
     <br><br>
-    <footer class="page-footer grey">
+    <footer class="page-footer">
       <div class="container">
         <div class="row">
           <div class="col l3 s12">
-            <h5 class="white-text">Our Address</h5>
+            <h6 class="white-text">Our Address</h6>
             <hr>
-            <p>D -17, Vivekanand Puri,
+            <p class="white-text foot" >D -17, Vivekanand Puri,
             Lucknow –226007 India</p>
-            <p class="grey-text text-lighten-4"></p>
+            
           </div>
           <div class="col l3 s12">
-            <h5 class="white-text">Our Links</h5>
+            <h6 class="white-text">Our Links</h6>
             <hr>
             <ul>
-              <li><a href="#!">About Us</a></li>
-              <li><a href="#!">Clients</a></li>
-              <li><a href="#!">Coach Guidance System</a></li>
-              <li><a href="#!">Contact Us</a></li>
-              <li><a href="#!">Customers List</a></li>
-              <li><a href="#!">Enquiry</a></li>
+              <li><a class="white-text foot" href="#!">About Us</a></li>
+              <li><a class="white-text foot" href="#!">Clients</a></li>
+              <li><a class="white-text foot" href="#!">Coach Guidance System</a></li>
+              <li><a class="white-text foot" href="#!">Contact Us</a></li>
+              <li><a class="white-text foot" href="#!">Customers List</a></li>
+              <li><a class="white-text foot" href="#!">Enquiry</a></li>
             </ul>
           </div>
           <div class="col l3 s12">
-            <h5 class="white-text">Career</h5>
+            <h6 class="white-text">Career</h6>
             <hr>
             <ul>
-              <li><a class="white-text" href="#!">Job/Apprenticeship</a></li>
+              <li><a class="white-text foot" href="#!">Job/Apprenticeship</a></li>
             </ul>
           </div>
           <div class="col l3 s12">
-            <h5 class="white-text">Connect</h5>
+            <h6 class="white-text">Connect</h6>
             <hr>
             <ul>
-              <li><i class="material-icons">phone</i><p style="display:inline;">phone number</p></li>
-              <li><i class="material-icons">textsms</i><p style="display:inline;">Send SMS</p></li>
-              <li><i class="material-icons">email</i><p style="display:inline;">Send Email</p></li>
+              <li><i class="material-icons prefix blue-text">phone</i><p class="white-text foot" style="display:inline;">  9415039393</p></li>
+              <li><i class="material-icons prefix blue-text">textsms</i><p class="white-text foot" style="display:inline;">  Send SMS</p></li>
+              <li><i class="material-icons prefix blue-text">email</i><p class="white-text foot" style="display:inline;">  Send Email</p></li>
               
             </ul>
           </div>
@@ -280,11 +280,10 @@ $x= $_GET['id'];
       </div>
       <hr>
       <div class="footer-copyright">
-        <div class="container">
-          &copy Made by <a class="brown-text text-lighten-3" href="">Abhishek Tiwari</a>
+        <div class="container foot">
+        © 2017 Copyright Electromed. All rights reserved.
         </div>
       </div>
     </footer>
-    
   </body>
 </html>

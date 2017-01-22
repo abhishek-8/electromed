@@ -63,8 +63,9 @@ body{
 
 }
 #products{
-  min-width: 300px;
-  background-color:#424242;
+  min-width: 1000px;
+  max-height: 400px;
+  background-color: #263238;
   font-family:'Abel',sans-serif;
 }
 .headName {
@@ -85,6 +86,18 @@ body{
 .headName1 {
   font-family: 'Abel', sans-serif;
 }
+.dropdown_headName{
+line-height:100%;
+color:white;
+}
+.product_name {
+ line-height: 100%; 
+}
+.dropdown_headName :hover{
+  color:white;
+}
+
+
 span {
   color:red; 
 }
@@ -94,18 +107,15 @@ nav {
   background:#212121;
   font-family:'Abel',sans-serif;
 }
+
 nav :hover {
     color:#ff9800;
   }
  #products :hover {
   color :#ff9800;
-  background-color:#424242;
- } 
+  background-color:#263238;
+ }
 
-#products a {
-  color:white;
-  font-size:15px;
-}
 nav .brand-logo{
   color:white;
 }

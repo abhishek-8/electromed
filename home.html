@@ -16,6 +16,7 @@
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Coming+Soon|Pacifico|Shadows+Into+Light" rel="stylesheet">
     <script>
     $(document).ready(function(){
     $(".dropdown-button").dropdown({
@@ -31,33 +32,56 @@
   </head>
   <body>
     <div class="dropdown-content" id="products">
-      <ul>
-        <li><a href="products.php?id=flow_monitor">FLOW MONITOR</a></li>
-        <li><a href="products.php?id=led_display">LED DISPLAY BOARD</a></li>
-        <li><a href="products.php?id=industrial_display">INDUSTRIAL DISPLAY</a></li>
-        <li><a href="products.php?id=digital_clock">DIGITAL CLOCKS</a></li>
-        <li><a href="products.php?id=lfm">LINE FREQUENCY MONITOR</a></li>
-        <li><a href="products.php?id=megawatt_pannel">MEGA WATT PANEL</a></li>
-        <li><a href="products.php?id=process_n_indicator">PROCESS INDICATORS</a></li>
-        <li><a href="products.php?id=ph_meter">PH METER</a></li>
-        <li><a href="products.php?id=scrolling_display">SCROLLING DISPLAY</a></li>
-        <li><a href="products.php?id=tachometer">TACHOMETER</a></li>
-        <li><a href="products.php?id=temp_cont">TEMPERATURE CONTROLLER</a></li>
-        <li><a href="products.php?id=twilight_switches">TWILIGHT SWITCHES</a></li>
-        <li><a href="products.php?id=token">TOKEN DISPLAY</a></li>
-        <li><a href="products.php?id=wsm">WEIGHING SCALE MONITOR</a></li>
-      </ul>
+      <div class="container">
+        <div class="row">
+          <div class="col l2"><p class="dropdown_headName">LED Display</p><hr></div>
+          <div class="col l3"><p class="dropdown_headName">Products for Office</p><hr></div>
+          <div class="col l3"><p class="dropdown_headName">Standalone Projects</p><hr></div>
+          <div class="col l4"><p class="dropdown_headName">Industrial Instruments</p><hr></div>
+        </div>
+        <div class="row" style="margin-top:-50px;">
+          <div class="col l2">
+            <p class="product_name"><a href="products.php?id=">TRUE COLOR HD SCREEN</a></p>
+            <p class="product_name"><a href="products.php?id=">TRI COLOR DISPLAY BOARDS</a></p>
+            <p class="product_name"><a href="products.php?id=">UNI COLOR DISPLAY BOARDS</a></p>
+            
+          </div>
+          <div class="col l3">
+            <p class="product_name"><a href="products.php?id=token">TOKEN DISPLAY</a></p>
+            <p class="product_name"><a href="products.php?id=digital_clock">DIGITAL CLOCKS</a></p>
+            <p class="product_name"><a href="products.php?id=industrial_display">INDUSTRIAL DISPLAY</a></p>
+            <p class="product_name"><a href="products.php?id=scrolling_display">SCROLLING DISPLAY</a></p>
+          </div>
+          <div class="col l3">
+            <p class="product_name"><a href="products.php?id=">COACH GUIDANCE SYSTEM</a></p>
+            <p class="product_name"><a href="products.php?id=">TRAIN INFORMATION BOARD</a></p>
+            <p class="product_name"><a href="products.php?id=">POWER GENERATION DISPLAY BOARD</a></p>
+            
+          </div>
+          <div class="col l4">
+            <p class="product_name"><a href="products.php?id=flow_monitor">FLOW MONITOR</a></p>
+            <p class="product_name"><a href="products.php?id=lfm">LINE FREQUENCY MONITOR</a></p>
+            <p class="product_name"><a href="products.php?id=megawatt_pannel">MEGA WATT PANEL</a></p>
+            <p class="product_name"><a href="products.php?id=process_n_indicator">PROCESS INDICATORS</a></p>
+            <p class="product_name"><a href="products.php?id=ph_meter">PH METER</a></p>
+            <p class="product_name"><a href="products.php?id=tachometer">TACHOMETER</a></p>
+            <p class="product_name"><a href="products.php?id=temp_cont">TEMPERATURE CONTROLLER</a></p>
+            <p class="product_name"><a href="products.php?id=twilight_switches">TWILIGHT SWITCHES</a></p>
+            <p class="product_name"><a href="products.php?id=industrial_display">INDUSTRIAL DISPLAY</a></p>
+            <p class="product_name"><a href="products.php?id=wsm">WEIGHING SCALE MONITOR</a></p>
+          </div>
+        </div>
+      </div>
     </div>
-    
     <div class="navbar-fixed">
       <nav>
         <div class="nav-wrapper container">
           <a id="logo-container" href="" class="brand-logo">Electro-med</a>
           <ul class="right hide-on-med-and-down">
-            <li><a href="home.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="" class="dropdown-button" data-activates="products">Products<i class="material-icons right">arrow_drop_down</i></a></li>
-            <li><a href="contactForm.html">Contact Us</a></li>
+            <li><a href="home.html" class="navLink">Home</a></li>
+            <li><a href="about.html" class="navLink">About Us</a></li>
+            <li><a href="" class="dropdown-button navLink" data-activates="products">Products<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a href="contactForm.html" class="navLink">Contact Us</a></li>
           </ul>
           <!--<ul id="nav-mobile" class="side-nav">
             <li><a href="home.html">Home</a></li>
@@ -77,18 +101,16 @@
           <img class="cover-pic" src="cover/3.jpg"> <!-- random image -->
           <div class="caption center-align">
             <h3><b>This is our big Tagline</b></h3>
-            <a class="btn">Know more</a>
-          
             <h5 class="light red-text text-lighten-3">Here's our small slogan.</h5>
+            <a class="btn">Know more</a>
           </div>
-
         </li>
         <li>
           <img class="cover-pic" src="cover/4.jpg"> <!-- random image -->
           <div class="caption left-align">
             <h3><b>Left Aligned Caption</b></h3>
-            <a class="btn">Know more</a>
             <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+            <a class="btn">Know more</a>
           </div>
         </li>
         
@@ -96,8 +118,8 @@
           <img class="cover-pic" src="cover/mahabal2.jpg"> <!-- random image -->
           <div class="caption right-align">
             <h3><b>Right Aligned Caption</b></h3>
-            <a class="btn">Know more</a>
             <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+            <a class="btn">Know more</a>
           </div>
         </li>
         
@@ -105,16 +127,16 @@
           <img class="cover-pic" src="cover/patna_rlw_stn.jpg"> <!-- random image -->
           <div class="caption right-align">
             <h3><b>Right Aligned Caption</b></h3>
-            <a class="btn">Know more</a>
             <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+            <a class="btn">Know more</a>
           </div>
         </li>
         <li>
           <img class="cover-pic" src="cover/rihand2.jpg"> <!-- random image -->
           <div class="caption right-align">
             <h3><b>We believe in technology</b></h3>
-            <a class="btn">Know more</a>
             <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+            <a class="btn">Know more</a>
           </div>
         </li>
         
@@ -122,13 +144,12 @@
           <img class="cover-pic" src="cover/rihand6.jpg"> <!-- random image -->
           <div class="caption right-align">
             <h3><b>Right Aligned Caption</b></h3>
-            <a class="btn">Know more</a>
             <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+            <a class="btn">Know more</a>
           </div>
         </li>
       </ul>
     </div>
-    
     <div class="container-fluid" id="home_content">
       <div class="container">
         <br>
@@ -227,153 +248,176 @@
           <p><a href="products.php?id=tachometer">Know More</a></p>
         </div>
       </div>
-      
     </div>
     -->
-    
-    <br><br>
-    <h1 class="headName" >Valued Clients</h1>
-    <hr>
+    <div class="container">
+      <p style="font-size:32px;font-family: 'Coming Soon', cursive;line-height: 35%;"><strong>Here are some all-stars we've worked with over the years</strong></p>
+    </div>
     <div class="slider" id="client_slider">
       <ul class="slides" style="background: white;">
         <li>
           <div class="container-fluid" id="clients">
             
             <div class="container">
-              
-            <div class="row">
-                <div class="col l2 s6 client-div"><img class="client" height="110" width="140" src="client_logos/client9.jpeg"></div>
-                <div class="col l2 offset-l1 s6 client-div"><img class="client" height="110" width="140" src="client_logos/client5.jpeg"></div>
+              <h4 class="headName1" style="line-height: 38%;"><center>Sugar Industry</center></h4>
+              <div class="row">
+                <div class="col l2 s6 client-div"><img class="client" height="100" width="140" src="client_logos/client9.jpeg"></div>
+                <div class="col l2 offset-l1 s6 client-div"><img class="client" height="100" width="140" src="client_logos/client5.jpeg"></div>
                 
-                <div class="col l2 offset-l1 s6 client-div"><img class="client" height="110" width="140" src="client_logos/client4.jpeg"></div>
+                <div class="col l2 offset-l1 s6 client-div"><img class="client" height="100" width="140" src="client_logos/client4.jpeg"></div>
                 
-                <div class="col l2 offset-l1 s6 client-div"><img class="client" height="110" width="140" src="client_logos/client1.jpeg"></div>
+                <div class="col l2 offset-l1 s6 client-div"><img class="client" height="100" width="140" src="client_logos/client1.jpeg"></div>
                 
               </div>
-              <br><br>
               <div class="row">
                 
-                <div class="col l2 s6 client-div"><img class="client" height="110" width="140" src="client_logos/client2.jpeg"></div>
-                <div class="col l2 offset-l1 s6 client-div"><img class="client" height="110" width="140" src="client_logos/client10.jpeg"></div>
-                <div class="col l2 offset-l1 s6 client-div"><img class="client" height="110" width="140" src="client_logos/client7.jpeg"></div>
-                <div class="col l2 offset-l1 s6 client-div"><img class="client" height="110" width="140" src="client_logos/client8.jpeg"></div>
+                <div class="col l2 s6 client-div"><img class="client" height="100" width="140" src="client_logos/client2.jpeg"></div>
+                <div class="col l2 offset-l1 s6 client-div"><img class="client" height="100" width="140" src="client_logos/client10.jpeg"></div>
+                <div class="col l2 offset-l1 s6 client-div"><img class="client" height="100" width="140" src="client_logos/client7.jpeg"></div>
+                <div class="col l2 offset-l1 s6 client-div"><img class="client" height="100" width="140" src="client_logos/client8.jpeg"></div>
               </div>
-           </div>
+            </div>
           </div>
         </li>
-
         <li>
           <div class="container-fluid" id="clients">
             
-            <div class="container">-->
-             
+            <div class="container">
+              <h4 class="headName1" style="line-height: 38%;"><center>Power Sector</center></h4>
               <div class="row">
-                <div class="col l2 s6 client-div"><img class="client" height="110" width="140" src="client_logos/client1.jpeg"></div>
-                <div class="col l2 offset-l1 s6 client-div"><img class="client" height="110" width="140" src="client_logos/client3.jpeg"></div>
+                <div class="col l2 s6 client-div"><img class="client" height="100" width="140" src="client_logos/client1.jpeg"></div>
+                <div class="col l2 offset-l1 s6 client-div"><img class="client" height="100" width="140" src="client_logos/client3.jpeg"></div>
                 
-                <div class="col l2 offset-l1 s6 client-div"><img class="client" height="110" width="140" src="client_logos/client6.jpeg"></div>
-                <div class="col l2 offset-l1 s6 client-div"><img class="client" height="110" width="140" src="client_logos/client11.jpeg"></div>
+                <div class="col l2 offset-l1 s6 client-div"><img class="client" height="100" width="140" src="client_logos/client6.jpeg"></div>
+                <div class="col l2 offset-l1 s6 client-div"><img class="client" height="100" width="140" src="client_logos/client11.jpeg"></div>
                 
               </div>
               <div class="row">
                 
-                <div class="col l2 s6 client-div"><img class="client" height="110" width="140" src="client_logos/client2.jpeg"></div>
-                <div class="col l2 offset-l1 s6 client-div"><img class="client" height="110" width="140" src="client_logos/client10.jpeg"></div>
-                <div class="col l2 offset-l1 s6 client-div"><img class="client" height="110" width="140" src="client_logos/client7.jpeg"></div>
-                <div class="col l2 offset-l1 s6 client-div"><img class="client" height="110" width="140" src="client_logos/client8.jpeg"></div>
+                <div class="col l2 s6 client-div"><img class="client" height="100" width="140" src="client_logos/client2.jpeg"></div>
+                <div class="col l2 offset-l1 s6 client-div"><img class="client" height="100" width="140" src="client_logos/client10.jpeg"></div>
+                <div class="col l2 offset-l1 s6 client-div"><img class="client" height="100" width="140" src="client_logos/client7.jpeg"></div>
+                <div class="col l2 offset-l1 s6 client-div"><img class="client" height="100" width="140" src="client_logos/client8.jpeg"></div>
               </div>
-            
-            </div>
-            </div>
-          </li>
-        </ul>
-      </div>
-
-      <!--<div class="row" id="customers">
-        <h1 class="headName" >Our Customers</h1>
-        <hr>
-        <marquee scrollamount="12">
-        <ul>
-          <li style="display:inline;"><img src="client_logos/client1.jpeg"></li>
-          <li style="display:inline;"><img src="client_logos/client2.jpeg"></li>
-          <li style="display:inline;"><img src="client_logos/client3.jpeg"></li>
-          <li style="display:inline;"><img src="client_logos/client4.jpeg"></li>
-          <li style="display:inline;"><img src="client_logos/client5.jpeg"></li>
-          <li style="display:inline;"><img src="client_logos/client6.jpeg"></li>
-          <li style="display:inline;"><img src="client_logos/client7.jpeg"></li>
-          <li style="display:inline;"><img src="client_logos/client8.jpeg"></li>
-          <li style="display:inline;"><img src="client_logos/client9.jpeg"></li>
-          <li style="display:inline;"><img src="client_logos/client10.jpeg"></li>
-          <li style="display:inline;"><img src="client_logos/client11.jpeg"></li>
-        </ul>
-        </marquee>
-      </div> -->
-      <footer class="page-footer">
-        <div class="container">
-          <div class="row">
-            <div class="col l3 s12">
-              <h6 class="white-text">Our Address</h6>
-              <hr>
-              <p class="white-text foot" >D -17, Vivekanand Puri,
-              Lucknow –226007 India</p>
               
             </div>
-            <div class="col l3 s12">
-              <h6 class="white-text">Our Links</h6>
-              <hr>
-              <ul>
-                <li><a class="white-text foot" href="#!">About Us</a></li>
-                <li><a class="white-text foot" href="#!">Clients</a></li>
-                <li><a class="white-text foot" href="#!">Coach Guidance System</a></li>
-                <li><a class="white-text foot" href="#!">Contact Us</a></li>
-                <li><a class="white-text foot" href="#!">Customers List</a></li>
-                <li><a class="white-text foot" href="#!">Enquiry</a></li>
-              </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <!--<div class="row" id="customers">
+      <h1 class="headName" >Our Customers</h1>
+      <hr>
+      <marquee scrollamount="12">
+      <ul>
+        <li style="display:inline;"><img src="client_logos/client1.jpeg"></li>
+        <li style="display:inline;"><img src="client_logos/client2.jpeg"></li>
+        <li style="display:inline;"><img src="client_logos/client3.jpeg"></li>
+        <li style="display:inline;"><img src="client_logos/client4.jpeg"></li>
+        <li style="display:inline;"><img src="client_logos/client5.jpeg"></li>
+        <li style="display:inline;"><img src="client_logos/client6.jpeg"></li>
+        <li style="display:inline;"><img src="client_logos/client7.jpeg"></li>
+        <li style="display:inline;"><img src="client_logos/client8.jpeg"></li>
+        <li style="display:inline;"><img src="client_logos/client9.jpeg"></li>
+        <li style="display:inline;"><img src="client_logos/client10.jpeg"></li>
+        <li style="display:inline;"><img src="client_logos/client11.jpeg"></li>
+      </ul>
+      </marquee>
+    </div> -->
+    <footer class="page-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col l3 s12">
+            <div class="row">
+              <h5 class="white-text"><strong>[ Electro-Med ]</strong></h5>
+              <p class="white-text foot" >Welcome to the leading company delivering services that combine quality,reliability and compliance.</p>
             </div>
-            <div class="col l3 s12">
-              <h6 class="white-text">Career</h6>
-              <hr>
-              <ul>
-                <li><a class="white-text foot" href="#!">Job/Apprenticeship</a></li>
-              </ul>
-            </div>
-            <div class="col l3 s12">
-              <h6 class="white-text">Contact Us</h6>
-              <hr>
-              <ul>
-                <li><i class="material-icons prefix blue-text">phone</i><p class="white-text foot" style="display:inline;">  9415039393</p></li>
-                <li><i class="material-icons prefix blue-text">textsms</i><p class="white-text foot" style="display:inline;">  Send SMS</p></li>
-                <li><i class="material-icons prefix blue-text">email</i><p class="white-text foot" style="display:inline;">  Send Email</p></li>
-                
-              </ul>
+            <div class="row">
+              <div class="col l5">
+                <h6 class="white-text">Follow Us: </h6>
+              </div>
+              <div class="col l2"><a href="" target="_blank">
+                <img title="LinkedIn" alt="LinkedIn" src="icons/linkedin.png" width="30" height="30" />
+              </a></div>
+              <div class="col l2">
+                <a href="" target="_blank" target="_blank">
+                <img title="Facebook" alt="Facebook" src="icons/facebook.png" width="30" height="30" /></a>
+              </div>
+              <div class="col l2"><a href="" target="_blank">
+                <img title="Google" alt="Google" src="icons/google.png" width="30" height="30" />
+              </a></div>
             </div>
           </div>
-          <div class="fixed-action-btn horizontal">
-            <a class="btn-floating btn-large blue">
-              <i class="large material-icons">phone</i>
-            </a>
+          <div class="col l3 s12">
+            <h6 class="white-text"><strong>Our Links</strong></h6>
+            
             <ul>
-              <li><a href="" target="_blank">
-                <img title="LinkedIn" alt="LinkedIn" src="icons/linkedin.png" width="35" height="35" />
-              </a></li>
-              <li><a href="" target="_blank" target="_blank">
-              <img title="Facebook" alt="Facebook" src="icons/facebook.png" width="35" height="35" /></li>
-              <li><a href="" target="_blank">
-                <img title="Google" alt="Google" src="icons/google.png" width="35" height="35" />
-              </a></li>
-              <li><a href="" target="_blank">
-                <img title="Yahoo" alt="RSS" src="icons/yahoo.png" width="35" height="35" />
-              </a></li>
+              <li><a class="white-text foot" href="#!">About Us</a></li>
+              <li><a class="white-text foot" href="#!">Clients</a></li>
+              <li><a class="white-text foot" href="#!">Coach Guidance System</a></li>
+              <li><a class="white-text foot" href="#!">Contact Us</a></li>
+              <li><a class="white-text foot" href="#!">Customers List</a></li>
+              <li><a class="white-text foot" href="#!">Enquiry</a></li>
             </ul>
           </div>
-        </div>
-        <hr>
-        <div class="footer-copyright">
-          <div class="container foot">
-            © 2017 Copyright Electromed. All rights reserved.
+          <div class="col l3 s12">
+            <h6 class="white-text"><strong>Career</strong></h6>
+            <ul>
+              <li><a class="white-text foot" href="#!">Job/Apprenticeship</a></li>
+            </ul>
+          </div>
+          <div class="col l3 s12">
+            <h6 class="white-text"><strong>Contact Info</strong></h6>
+            <div class="row">
+              <div class="col l1"><i class="material-icons prefix blue-text">phone</i></div>
+              <div class="col l8 offset-l1"><p class="white-text foot" style="display:inline;">9415039393</p></div>
+            </div>
+            
+            <div class="row">
+              <div class="col l1"><i class="material-icons prefix blue-text">email</i></div>
+              <div class="col l8 offset-l1"><p class="white-text foot" style="display:inline;">electro.med25@gmail.com</p></div>
+            </div>
+            <div class="row">
+              <div class="col l1"><i class="material-icons prefix blue-text">room</i></div>
+              <div class="col l8 offset-l1"><p class="white-text foot" style="display:inline;">D -17, Vivekanand Puri,
+              <br/>Lucknow –226007 India</p></div>
+            </div>
+            <!-- <ul>
+              <li><i class="material-icons prefix blue-text">phone</i><p class="white-text foot" style="display:inline;">9415039393</p></li>
+              <li><i class="material-icons prefix blue-text">email</i><p class="white-text foot" style="display:inline;">  electro.med25@gmail.com</p></li>
+              <li><i class="material-icons prefix blue-text">room</i><p class="white-text foot" style="display:inline;">D -17, Vivekanand Puri,
+              <br/>Lucknow –226007 India</p></li>
+              
+              
+            </ul> -->
           </div>
         </div>
-      </footer>
-      
-    </body>
-  </html>
+      </div>
+      <div class="fixed-action-btn horizontal">
+        <a class="btn-floating btn-large blue">
+          <i class="large material-icons">phone</i>
+        </a>
+        <ul>
+          <li><a href="" target="_blank">
+            <img title="LinkedIn" alt="LinkedIn" src="icons/linkedin.png" width="35" height="35" />
+          </a></li>
+          <li><a href="" target="_blank" target="_blank">
+          <img title="Facebook" alt="Facebook" src="icons/facebook.png" width="35" height="35" /></a></li>
+          <li><a href="" target="_blank">
+            <img title="Google" alt="Google" src="icons/google.png" width="35" height="35" />
+          </a></li>
+          <li><a href="" target="_blank">
+            <img title="Yahoo" alt="RSS" src="icons/yahoo.png" width="35" height="35" />
+          </a></li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+    <div class="footer-copyright">
+      <div class="container foot">
+        © 2017 Copyright Electromed. All rights reserved.
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

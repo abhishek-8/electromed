@@ -64,12 +64,16 @@ body{
   margin-left:38px;
 }
 #request_for_quote{
-  background: linear-gradient(#e3f2fd,white );
+  /*background: linear-gradient(#e3f2fd,white );*/
   position:absolute;
   width:50%;
   margin-left:400px;
-  margin-top:120px;
+  margin-top:90px;
   z-index:1;
+}
+.rqst_btn {
+  background:white;
+  color:black;
 }
 
 #about_us,#contact_us {
@@ -116,7 +120,8 @@ color:white;
 }
 
 span {
-  color:red; 
+  color:#263238; 
+  font-size:27px;
 }
 
 nav {
@@ -135,6 +140,20 @@ nav :hover {
 
 nav .brand-logo{
   color:white;
+}
+
+
+.breadcrumb:before{
+  content:'\E5CC';
+  color:rgba(0,0,0,0.7);
+  vertical-align:top;
+  display:inline-block;
+  font-family:'Material Icons';
+  font-weight:normal;
+  font-style:normal;
+  font-size:25px;
+  margin:0 10px 0 8px;
+-webkit-font-smoothing:antialiased
 }
 
 .icon-block {

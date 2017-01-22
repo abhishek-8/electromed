@@ -1,10 +1,10 @@
 function set1(x) {
 
-if(x=='flow_monitor')
-document.getElementById('head_name').innerHTML='Flow Monitor';
-
+if(x=='flow_monitor'){
+//document.getElementById('head_name').innerHTML='Flow Monitor';
+}
 else if(x=='led_display'){
-document.getElementById('head_name').innerHTML='LED Display Board';
+//document.getElementById('head_name').innerHTML='LED Display Board';
 document.getElementById('r1d1').innerHTML ='<span>Features:</span>';
 document.getElementById('r1d2').innerHTML ='<p class="bullets" style="display:inline;">Scrolling message displays are useful in describing the facilities available at your end</p>';
 document.getElementById('r2d1').innerHTML ='';
@@ -21,11 +21,11 @@ document.getElementById('r7d1').innerHTML ='';
 document.getElementById('r7d2').innerHTML ='';
 }
 
-else if(x=='industrial_display')
-document.getElementById('head_name').innerHTML='Industrial Display';
+else if(x=='industrial_display'){}
+//document.getElementById('head_name').innerHTML='Industrial Display';
 
 else if(x=='digital_clock') {
-document.getElementById('head_name').innerHTML='Digital Clock';
+//document.getElementById('head_name').innerHTML='Digital Clock';
 document.getElementById('r1d1').innerHTML ='<span>Features:</span>';
 document.getElementById('r1d2').innerHTML ='<p class="bullets" style="display:inline;">Micro-controller based design with or without GPS connectivity</p>';
 document.getElementById('r2d1').innerHTML ='';
@@ -42,14 +42,14 @@ document.getElementById('r7d1').innerHTML ='';
 document.getElementById('r7d2').innerHTML ='';
 }
 
-else if(x=='lfm')
-document.getElementById('head_name').innerHTML='Line Frequency Monitor';
+else if(x=='lfm'){}
+//document.getElementById('head_name').innerHTML='Line Frequency Monitor';
 
-else if(x=='megawatt_pannel')
-document.getElementById('head_name').innerHTML='Megawatt Pannel';
+else if(x=='megawatt_pannel'){}
+//document.getElementById('head_name').innerHTML='Megawatt Pannel';
 
 else if(x=='process_n_indicator'){
-document.getElementById('head_name').innerHTML='Process and Indicator';
+//document.getElementById('head_name').innerHTML='Process and Indicator';
 document.getElementById('r1d1').innerHTML ='<span>Features:</span>';
 document.getElementById('r1d2').innerHTML ='<p class="bullets" style="display:inline;">Used for the measurement of process parameters</p>';
 document.getElementById('r2d1').innerHTML ='';
@@ -69,6 +69,10 @@ document.getElementById('r7d2').innerHTML ='12.5mm, 25mm, 50mm, 100mm, 150mm, 20
 else if(x=='ph_meter') {
 //document.getElementById('head_name').innerHTML='Ph Meter';
 //document.getElementById('head_name1').innerHTML='Ph Meter';
+document.getElementById('pre1').innerHTML='Products';
+document.getElementById('pre2').innerHTML='Industrial Instruments';
+document.getElementById('curr').innerHTML='Ph Meter';
+//document.getElementById('currLogo').innerHTML='Ph Meter';
 document.getElementById('desc').innerHTML='These are used to measure pH of all types of liquids. We supply the pH meters with combination electrode, electrode stand with clamp and temperature compensation.';
 document.getElementById('r1d1').innerHTML ='<span>Features:</span>';
 document.getElementById('r1d2').innerHTML ='3 ½ digit LED display';
@@ -87,11 +91,11 @@ document.getElementById('r7d2').innerHTML ='pH electrodes, buffer tablets';
 
 }
 
-else if(x=='scrolling_display')
-document.getElementById('head_name').innerHTML='Scrolling Display';
+else if(x=='scrolling_display'){}
+//document.getElementById('head_name').innerHTML='Scrolling Display';
 
 else if(x=='tachometer') {
-document.getElementById('head_name').innerHTML='Tachometer';
+//document.getElementById('head_name').innerHTML='Tachometer';
 document.getElementById('r1d1').innerHTML ='<span>Features:</span>';
 document.getElementById('r1d2').innerHTML ='<p class="bullets" style="display:inline;">Non blinking display</p>';
 document.getElementById('r2d1').innerHTML ='';
@@ -109,7 +113,7 @@ document.getElementById('r7d2').innerHTML =' 230V ± 15%, 50Hz (standard)';
 }
 
 else if(x=='temp_cont') {
-document.getElementById('head_name').innerHTML='Temperature Controller';
+//document.getElementById('head_name').innerHTML='Temperature Controller';
 document.getElementById('r1d1').innerHTML ='<span>Features:</span>';
 document.getElementById('r1d2').innerHTML ='<p class="bullets" style="display:inline;">Potentiometer setting is available</p>';
 document.getElementById('r2d1').innerHTML ='';
@@ -128,7 +132,7 @@ document.getElementById('r7d2').innerHTML ='';
 }
 
 else if(x=='twilight_switches') {
-document.getElementById('head_name').innerHTML='Twilight Switches';
+//document.getElementById('head_name').innerHTML='Twilight Switches';
 document.getElementById('r1d1').innerHTML ='<span style="align:top;">Features:</span>';
 document.getElementById('r1d2').innerHTML ='<p class="bullets" style="display:inline;">Switches ON and OFF at dusk and dawn.</p>';
 document.getElementById('r2d1').innerHTML ='';
@@ -145,7 +149,7 @@ document.getElementById('r7d1').innerHTML ='';
 document.getElementById('r7d2').innerHTML ='';
 }
 else if(x=='token') {
-document.getElementById('head_name').innerHTML='Token Display';
+//document.getElementById('head_name').innerHTML='Token Display';
 document.getElementById('r1d1').innerHTML ='<span>Features:</span>';
 document.getElementById('r1d2').innerHTML ='<p class="bullets" style="display:inline;">Token displays are extremely useful in bringing order in the waiting area.</p>';
 document.getElementById('r2d1').innerHTML ='';
@@ -163,7 +167,7 @@ document.getElementById('r7d2').innerHTML ='';
 }
 
 else if(x=='wsm'){
-document.getElementById('head_name').innerHTML='Weighing Scale Monitor';
+//document.getElementById('head_name').innerHTML='Weighing Scale Monitor';
 document.getElementById('r1d1').innerHTML ='<span>Features:</span>';
 document.getElementById('r1d2').innerHTML ='<p class="bullets" style="display:inline;">Current hour, previous hour and real time clock</p>';
 document.getElementById('r2d1').innerHTML ='';

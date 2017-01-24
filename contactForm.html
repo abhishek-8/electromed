@@ -27,6 +27,9 @@
         });
         $('select').material_select();
         $('.parallax').parallax();
+        $('#info').click(function(){ 
+            Reset(); });
+        
         });
         
         </script>
@@ -82,7 +85,7 @@
             <li><a href="home.html" class="navLink">Home</a></li>
             <li><a href="about.html" class="navLink">About Us</a></li>
             <li><a href="" class="dropdown-button navLink" data-activates="products">Products<i class="material-icons right">arrow_drop_down</i></a></li>
-            <li><a href="contactForm.html" class="navLink">Contact Us</a></li>
+            <li class="active"><a href="contactForm.html" class="navLink">Contact Us</a></li>
           </ul>
           <!--<ul id="nav-mobile" class="side-nav">
             <li><a href="home.html">Home</a></li>
@@ -112,6 +115,19 @@
                 <form>
                     <div class="row">
                         <div class="col l6">
+                        <div class="input-field">
+                                <select>
+                                    <option value="" disabled selected>Choose your Industry</option>
+                                    <option value="1">Power</option>
+                                    <option value="2">Sugar</option>
+                                    <option value="3">Railway</option>
+                                    <option value="4">Others</option>
+                                </select>
+                            </div>
+                            <div class="input-field">
+                                <input id="poi" type="text" class="validate">
+                                <label for="poi">Product of Interest</label>
+                            </div>
                             <div class="input-field">
                                 <i class="material-icons prefix">perm_identity</i>
                                 <input id="name" type="text" class="validate">
@@ -142,18 +158,7 @@
                                 <input id="company" type="text" class="validate">
                                 <label for="company">Company</label>
                             </div>
-                            <div class="input-field">
-                                <select>
-                                    <option value="" disabled selected>Choose your Industry</option>
-                                    <option value="1">Option 1</option>
-                                    <option value="2">Option 2</option>
-                                    <option value="3">Option 3</option>
-                                </select>
-                            </div>
-                            <div class="input-field">
-                                <input id="poi" type="text" class="validate">
-                                <label for="poi">Product of Interest</label>
-                            </div>
+                            
                         </div>
                         <div class="col l6">
                             <div class="input-field">
@@ -167,7 +172,38 @@
                 </form>
             </div>
         </div>
-        <h1 class="headName" style="background: linear-gradient(#e3f2fd,white );">Find Us</h1>
+
+        <div class="parallax-container" style="height:340px;">
+    <div class="parallax"><img src="pexels-photo-201761.jpeg"></div>
+    <h3 class="headNamev3 black-text" id="info">Connect With Us</h3><br>
+    <div class="container">
+    <div class="row">
+        <div class="col l3 offset-l1 s4" id="phone" onclick="info1();">
+            <i class="large material-icons" style="cursor:pointer;">phone</i>
+        </div>
+        <div class="col l3 offset-l1 s4" id="email" onclick="info2();">
+            <i class="large material-icons" style="cursor:pointer;">email</i>
+        </div>
+        <div class="col l3 offset-l1 s4" id="address" onclick="info3();">
+            <i class="large material-icons" style="cursor:pointer;">room</i>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col l3 offset-l1 s4">
+            <p>Phone</p>
+        </div>
+        <div class="col l3 offset-l1 s4">
+            <p>Email</p>
+        </div>
+        <div class="col l3 offset-l1 s4">
+            <p>Locate Us</p>
+        </div>
+    </div>
+    </div>
+    </div>
+
+
+        <h1 class="headName">Find Us</h1>
         <hr>
             <div class="row" id="contactDetails">
                 <div class="col l4 s12">

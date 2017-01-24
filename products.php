@@ -22,6 +22,7 @@ $x= $_GET['id'];
     <script src="action.js" type="text/javascript"></script>
     <script>
     $(document).ready(function(){
+        $('.parallax').parallax();
     $('#request_for_quote').hide();
     $('.materialboxed').materialbox();
     set1('<?php echo $x ?>');
@@ -108,7 +109,7 @@ $x= $_GET['id'];
           <ul class="right hide-on-med-and-down">
             <li><a href="home.html" class="navLink">Home</a></li>
             <li><a href="about.html" class="navLink">About Us</a></li>
-            <li><a href="" class="dropdown-button navLink" data-activates="products">Products<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li class="active"><a href="" class="dropdown-button navLink" data-activates="products">Products<i class="material-icons right">arrow_drop_down</i></a></li>
             <li><a href="contactForm.html" class="navLink">Contact Us</a></li>
           </ul>
           <!--<ul id="nav-mobile" class="side-nav">
@@ -160,6 +161,16 @@ $x= $_GET['id'];
       </fieldset>
     </div>
     
+       <div class="parallax-container" style="height:340px;">
+    <div class="parallax"><img src="pexels-photo-201761.jpeg"></div>
+    <h3 class="headNamev3 black-text" id="info">Overview</h3><br>
+    <div class="container">
+    
+     <h4 style="font-family: 'Open Sans Condensed', sans-serif;"><center id="desc"></center></h4>
+         
+    </div>
+    </div>
+
     <div class="row" style="z-index:-1;margin-top:-25px;">
       <div class="col l12 s12 m12">
         <br>
@@ -178,7 +189,8 @@ $x= $_GET['id'];
           </div>
           <div class="row">
             <div class="col l5">
-              <button class="btn" style="font-size:13px;">Brochure</button>
+              <button class="btn" style="font-size:13px;"><i class="material-icons left">library_books</i> 
+              Brochure</button>
             </div>
             <div class="col l5">
               <button class="btn rqst" style="font-size:13px;">Request for quote</button>
@@ -187,37 +199,50 @@ $x= $_GET['id'];
         </div>
         
         <div class="col l6 s11 m11" id="specs">
-        <h5 class="headName">Overview</h5>
+       <!-- <h5 class="headName"><blockquote>Overview</blockquote></h5> -->
+       <!--
+        <blockquote style="font-family: 'Open Sans Condensed', sans-serif;font-size:21px;">Overview</blockquote>
+          <div class="headNamev2"><center id="desc"></center></div>-->
+          <table class="striped responsive-table" style="line-height: 90%;">
+          <blockquote style="font-family: 'Open Sans Condensed', sans-serif;font-size:21px;">Specifications</blockquote>
           <div class="headNamev2"><center id="desc"></center></div>
-          <table class="striped responsive-table" style="line-height: 160%;">
-            <center><h5 class="headName">Specifications</h5></center>
+          <col width="30%">
+          <col width="0.5%">
+          <col width="69.5%">
             <tr id="r1">
-              <td class="headNamev2" id="r1d1" style="vertical-align: top;" ></td>
-              <td class="headNamev2" id="r1d2" style="vertical-align: top;" ></td>
+              <td class="table_specs" id="r1d1" style="vertical-align: top;"></td>
+              <td style="text-align:center" id="c1">:</td>
+              <td class="table_specs" id="r1d2" style="vertical-align: top;"></td>
             </tr>
             <tr>
-              <td class="headNamev2" id="r2d1" style="vertical-align: top;" ></td>
-              <td class="headNamev2" id="r2d2" style="vertical-align: top;" ></td>
+              <td class="table_specs" id="r2d1" style="vertical-align: top;"></td>
+              <td style="text-align:center" id="c2">:</td>
+              <td class="table_specs" id="r2d2" style="vertical-align: top;"></td>
             </tr>
             <tr>
-              <td class="headNamev2" id="r3d1" style="vertical-align: top;" ></td>
-              <td class="headNamev2" id="r3d2" style="vertical-align: top;" ></td>
+              <td class="table_specs" id="r3d1" style="vertical-align: top;"></td>
+              <td style="text-align:center" id="c3">:</td>
+              <td class="table_specs" id="r3d2" style="vertical-align: top;"></td>
             </tr>
             <tr>
-              <td class="headNamev2" id="r4d1" style="vertical-align: top;" ></td>
-              <td class="headNamev2" id="r4d2" style="vertical-align: top;" ></td>
+              <td class="table_specs" id="r4d1" style="vertical-align: top;"></td>
+              <td style="text-align:center" id="c4">:</td>
+              <td class="table_specs" id="r4d2" style="vertical-align: top;"></td>
             </tr>
             <tr>
-              <td class="headNamev2" id="r5d1" style="vertical-align: top;" ></td>
-              <td class="headNamev2" id="r5d2" style="vertical-align: top;" ></td>
+              <td class="table_specs" id="r5d1" style="vertical-align: top;"></td>
+              <td style="text-align:center" id="c5">:</td>
+              <td class="table_specs" id="r5d2" style="vertical-align: top;"></td>
             </tr>
             <tr>
-              <td class="headNamev2" id="r6d1" style="vertical-align: top;" ></td>
-              <td class="headNamev2" id="r6d2" style="vertical-align: top;" ></td>
+              <td class="table_specs" id="r6d1" style="vertical-align: top;"></td>
+              <td style="text-align:center" id="c6">:</td>
+              <td class="table_specs" id="r6d2" style="vertical-align: top;"></td>
             </tr>
             <tr>
-              <td class="headNamev2" id="r7d1" style="vertical-align: top;" ></td>
-              <td class="headNamev2" id="r7d2" style="vertical-align: top;" ></td>
+              <td class="table_specs" id="r7d1" style="vertical-align: top;"></td>
+              <td style="text-align:center" id="c7">:</td>
+              <td class="table_specs" id="r7d2" style="vertical-align: top;"></td>
             </tr>
           </table>
           
@@ -227,7 +252,8 @@ $x= $_GET['id'];
     </div>
     <div>
       <br><br>
-      <h2 class="headNamev3 blue lighten-3">Related Products</h2>
+      <h2 class="headNamev3 black-text">Related Products</h2>
+      <hr>
       <br>
       <div class="row" id="related_products">
         

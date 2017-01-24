@@ -74,19 +74,19 @@ document.getElementById('pre2').innerHTML='Industrial Instruments';
 document.getElementById('curr').innerHTML='Ph Meter';
 //document.getElementById('currLogo').innerHTML='Ph Meter';
 document.getElementById('desc').innerHTML='These are used to measure pH of all types of liquids. We supply the pH meters with combination electrode, electrode stand with clamp and temperature compensation.';
-document.getElementById('r1d1').innerHTML ='<span>Features:</span>';
+document.getElementById('r1d1').innerHTML ='Features';
 document.getElementById('r1d2').innerHTML ='3 ½ digit LED display';
-document.getElementById('r2d1').innerHTML ='<span>Range:</span>';
+document.getElementById('r2d1').innerHTML ='Range';
 document.getElementById('r2d2').innerHTML ='for pH: 0-14pH for mV: (-1999) mV to (+1999) mV (optional)';
-document.getElementById('r3d1').innerHTML ='<span>Temperature compensation:</span>';
-document.getElementById('r3d2').innerHTML =' 0-100degC (manual)';
-document.getElementById('r4d1').innerHTML ='<span>Accuracy:</span>';
+document.getElementById('r3d1').innerHTML ='Temperature compensation';
+document.getElementById('r3d2').innerHTML ='0-100degC (manual)';
+document.getElementById('r4d1').innerHTML ='Accuracy';
 document.getElementById('r4d2').innerHTML ='±1 mV ±1count';
-document.getElementById('r5d1').innerHTML ='<span>Resolution:</span>';
+document.getElementById('r5d1').innerHTML ='Resolution';
 document.getElementById('r5d2').innerHTML ='0.01 pH; 1mV';
-document.getElementById('r6d1').innerHTML ='<span>Options: </span>';
-document.getElementById('r6d2').innerHTML =' Analog recorder output facility';
-document.getElementById('r7d1').innerHTML ='<span>Accessories:</span>';
+document.getElementById('r6d1').innerHTML ='Options';
+document.getElementById('r6d2').innerHTML ='Analog recorder output facility';
+document.getElementById('r7d1').innerHTML ='Accessories';
 document.getElementById('r7d2').innerHTML ='pH electrodes, buffer tablets';
 
 }
@@ -133,15 +133,15 @@ document.getElementById('r7d2').innerHTML ='';
 
 else if(x=='twilight_switches') {
 //document.getElementById('head_name').innerHTML='Twilight Switches';
-document.getElementById('r1d1').innerHTML ='<span style="align:top;">Features:</span>';
+document.getElementById('r1d1').innerHTML ='Features';
 document.getElementById('r1d2').innerHTML ='<p class="bullets" style="display:inline;">Switches ON and OFF at dusk and dawn.</p>';
 document.getElementById('r2d1').innerHTML ='';
 document.getElementById('r2d2').innerHTML ='<p class="bullets" style="display:inline;">Electromagnetic relay / contractor is provided as a switching element</p>';
 document.getElementById('r3d1').innerHTML ='';
 document.getElementById('r3d2').innerHTML ='<p class="bullets" style="display:inline;">Miniature circuit breaker and HRC fuse used for over load protection</p>';
-document.getElementById('r4d1').innerHTML ='<span>Contact rating:</span>';
+document.getElementById('r4d1').innerHTML ='Contact rating';
 document.getElementById('r4d2').innerHTML ='(5, 10, 16, 25, 32, 63, 100) Amps.';
-document.getElementById('r5d1').innerHTML ='<span>No. of poles:</span>';
+document.getElementById('r5d1').innerHTML ='No. of poles';
 document.getElementById('r5d2').innerHTML ='<p class="bullets" style="display:inline;">For (5, 10, 25) amps. : 02</p>';
 document.getElementById('r6d1').innerHTML ='';
 document.getElementById('r6d2').innerHTML ='<p class="bullets" style="display:inline;">For (10, 16, 32, 63 and 100) amps. : 03</p>';
@@ -195,6 +195,7 @@ for(x=1;x<=7;x++) {
 if ($('#r'+x+'d2').is(':empty') ){
   $('#r'+x+'d1').hide();
   $('#r'+x+'d2').hide();
+  $('#c'+x).hide();
 }
 }
 }
@@ -238,4 +239,16 @@ setTimeout(function() {
   if(k<1024 )
   	start2();
 }, 20);
+}
+function Reset(){
+document.getElementById('info').innerHTML='Connect With Us';	
+}
+function info2(){
+document.getElementById('info').innerHTML='electro.med25@gmail.com'+' , '+'electromed3@rediffmail.com'+' , ' +'info@electromed.co.in';
+}
+function info1(){
+document.getElementById('info').innerHTML='+91 9415085804'+','+'+91-9415039393';
+}
+function info3(){
+document.getElementById('info').innerHTML='D -17, Vivekanand Puri, Lucknow –226007 India';
 }

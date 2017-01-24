@@ -203,6 +203,7 @@ $x= $_GET['id'];
        <!--
         <blockquote style="font-family: 'Open Sans Condensed', sans-serif;font-size:21px;">Overview</blockquote>
           <div class="headNamev2"><center id="desc"></center></div>-->
+          <br><br><br>
           <table class="striped responsive-table" style="line-height: 90%;">
           <blockquote style="font-family: 'Open Sans Condensed', sans-serif;font-size:21px;">Specifications</blockquote>
           <div class="headNamev2"><center id="desc"></center></div>

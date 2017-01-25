@@ -1,5 +1,6 @@
 <?php
 $x= $_GET['id'];
+$z=$_GET['num'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -23,6 +24,7 @@ $x= $_GET['id'];
          <script src="action.js" type="text/javascript"></script>
         <script>
         $(document).ready(function(){
+         filter('<?php echo $x; ?>',<?php echo $z; ?>);   
         $('.collapsible').collapsible();
         $(".dropdown-button").dropdown({
         hover:true,
@@ -37,11 +39,11 @@ $x= $_GET['id'];
     <body>
         <div class="dropdown-content" id="products">
             <div class="container">
-                <div class="row">
-          <div class="col l2"><p class="dropdown_headName"><a href="product_list.php?id=LED_display">LED Display</a></p><hr></div>
-          <div class="col l3"><p class="dropdown_headName"><a href="product_list.php?id=Product_for_office">Products for Office</a></p><hr></div>
-          <div class="col l3"><p class="dropdown_headName"><a href="product_list.php?id=Standalone_projects">Standalone Projects</a></p><hr></div>
-          <div class="col l4"><p class="dropdown_headName"><a href="product_list.php?id=Industrial_Instruments">Industrial Instruments</a></p><hr></div>
+          <div class="row">
+          <div class="col l2"><p class="dropdown_headName"><a href="product_list.php?id=LED_display&num=3">LED Display</a></p><hr></div>
+          <div class="col l3"><p class="dropdown_headName"><a href="product_list.php?id=Product_for_office&num=4">Products for Office</a></p><hr></div>
+          <div class="col l3"><p class="dropdown_headName"><a href="product_list.php?id=Featured_Projects&num=3">Featured Projects</a></p><hr></div>
+          <div class="col l4"><p class="dropdown_headName"><a href="product_list.php?id=Industrial_Instruments&num=10">Industrial Instruments</a></p><hr></div>
         </div>
                 <div class="row" style="margin-top:-50px;">
                     <div class="col l2">
@@ -51,10 +53,10 @@ $x= $_GET['id'];
                         
                     </div>
                     <div class="col l3">
-                        <p class="product_name"><a href="products.php?id=token">TOKEN DISPLAY</a></p>
-                        <p class="product_name"><a href="products.php?id=digital_clock">DIGITAL CLOCKS</a></p>
-                        <p class="product_name"><a href="products.php?id=industrial_display">INDUSTRIAL DISPLAY</a></p>
-                        <p class="product_name"><a href="products.php?id=scrolling_display">SCROLLING DISPLAY</a></p>
+                        <p class="product_name"><a href="products.php?id=token&type=2">TOKEN DISPLAY</a></p>
+                        <p class="product_name"><a href="products.php?id=digital_clock&type=2">DIGITAL CLOCKS</a></p>
+                        <p class="product_name"><a href="products.php?id=industrial_display&type=2">INDUSTRIAL DISPLAY</a></p>
+                        <p class="product_name"><a href="products.php?id=scrolling_display&type=2">SCROLLING DISPLAY</a></p>
                     </div>
                     <div class="col l3">
                         <p class="product_name"><a href="products.php?id=">COACH GUIDANCE SYSTEM</a></p>
@@ -63,16 +65,16 @@ $x= $_GET['id'];
                         
                     </div>
                     <div class="col l4">
-                        <p class="product_name"><a href="products.php?id=flow_monitor">FLOW MONITOR</a></p>
-                        <p class="product_name"><a href="products.php?id=lfm">LINE FREQUENCY MONITOR</a></p>
-                        <p class="product_name"><a href="products.php?id=megawatt_pannel">MEGA WATT PANEL</a></p>
-                        <p class="product_name"><a href="products.php?id=process_n_indicator">PROCESS INDICATORS</a></p>
-                        <p class="product_name"><a href="products.php?id=ph_meter">PH METER</a></p>
-                        <p class="product_name"><a href="products.php?id=tachometer">TACHOMETER</a></p>
-                        <p class="product_name"><a href="products.php?id=temp_cont">TEMPERATURE CONTROLLER</a></p>
-                        <p class="product_name"><a href="products.php?id=twilight_switches">TWILIGHT SWITCHES</a></p>
-                        <p class="product_name"><a href="products.php?id=industrial_display">INDUSTRIAL DISPLAY</a></p>
-                        <p class="product_name"><a href="products.php?id=wsm">WEIGHING SCALE MONITOR</a></p>
+                        <p class="product_name"><a href="products.php?id=flow_monitor&type=4">FLOW MONITOR</a></p>
+                        <p class="product_name"><a href="products.php?id=lfm&type=4">LINE FREQUENCY MONITOR</a></p>
+                        <p class="product_name"><a href="products.php?id=megawatt_pannel&type=4">MEGA WATT PANEL</a></p>
+                        <p class="product_name"><a href="products.php?id=process_n_indicator&type=4">PROCESS INDICATORS</a></p>
+                        <p class="product_name"><a href="products.php?id=ph_meter&type=4">PH METER</a></p>
+                        <p class="product_name"><a href="products.php?id=tachometer&type=4">TACHOMETER</a></p>
+                        <p class="product_name"><a href="products.php?id=temp_cont&type=4">TEMPERATURE CONTROLLER</a></p>
+                        <p class="product_name"><a href="products.php?id=twilight_switches&type=4">TWILIGHT SWITCHES</a></p>
+                        <p class="product_name"><a href="products.php?id=industrial_display&type=4">INDUSTRIAL DISPLAY</a></p>
+                        <p class="product_name"><a href="products.php?id=wsm&type=4">WEIGHING SCALE MONITOR</a></p>
                     </div>
                 </div>
             </div>
@@ -104,7 +106,7 @@ $x= $_GET['id'];
                     <a href="#!" class="btn" onclick="Materialize.showStaggeredList('#staggered-test')">Categories</a>
                     <ul id="staggered-test" class="collapsible" data-collapsible="accordion">
                         <li style="opacity: 0;">
-                            <div class="collapsible-header" onclick="temp()">LED Display</div>
+                            <div class="collapsible-header" onclick="filter('LED_display',3)">LED Display</div>
                             <div class="collapsible-body container"><br>
                                 <a href="products.php?id=">TRUE COLOR HD SCREEN</a><br>
                                 <hr>
@@ -115,45 +117,45 @@ $x= $_GET['id'];
                             </div>
                         </li>
                         <li style="opacity: 0;">
-                            <div class="collapsible-header">Product for Office</div>
+                            <div class="collapsible-header" onclick="filter('Product_for_office',4)">Product for Office</div>
                             <div class="collapsible-body container"><br>
                                 
-                                <a href="products.php?id=token">TOKEN DISPLAY</a><br>
+                                <a href="products.php?id=token&type=2">TOKEN DISPLAY</a><br>
                                 <hr>
-                                <a href="products.php?id=digital_clock">DIGITAL CLOCKS</a><br>
+                                <a href="products.php?id=digital_clock&type=2">DIGITAL CLOCKS</a><br>
                                 <hr>
-                                <a href="products.php?id=industrial_display">INDUSTRIAL DISPLAY</a><br>
+                                <a href="products.php?id=industrial_display&type=2">INDUSTRIAL DISPLAY</a><br>
                                 <hr>
-                                <a href="products.php?id=scrolling_display">SCROLLING DISPLAY</a><br>
+                                <a href="products.php?id=scrolling_display&type=2">SCROLLING DISPLAY</a><br>
                             </div>
                             
                         </li>
                         <li style="opacity: 0;">
-                            <div class="collapsible-header">Industrial Instruments</div>
+                            <div class="collapsible-header" onclick="filter('Industrial_Instruments',10)">Industrial Instruments</div>
                             <div class="collapsible-body container"><br>
-                                <a href="products.php?id=flow_monitor">FLOW MONITOR</a><br>
+                                <a href="products.php?id=flow_monitor&type=4">FLOW MONITOR</a><br>
                                 <hr>
-                                <a href="products.php?id=lfm">LINE FREQUENCY MONITOR</a><br>
+                                <a href="products.php?id=lfm&type=4">LINE FREQUENCY MONITOR</a><br>
                                 <hr>
-                                <a href="products.php?id=megawatt_pannel">MEGA WATT PANEL</a><br>
+                                <a href="products.php?id=megawatt_pannel&type=4">MEGA WATT PANEL</a><br>
                                 <hr>
-                                <a href="products.php?id=process_n_indicator">PROCESS INDICATORS</a><br>
+                                <a href="products.php?id=process_n_indicator&type=4">PROCESS INDICATORS</a><br>
                                 <hr>
-                                <a href="products.php?id=ph_meter">PH METER</a><br>
+                                <a href="products.php?id=ph_meter&type=4">PH METER</a><br>
                                 <hr>
-                                <a href="products.php?id=tachometer">TACHOMETER</a><br>
+                                <a href="products.php?id=tachometer&type=4">TACHOMETER</a><br>
                                 <hr>
-                                <a href="products.php?id=temp_cont">TEMPERATURE CONTROLLER</a><br>
+                                <a href="products.php?id=temp_cont&type=4">TEMPERATURE CONTROLLER</a><br>
                                 <hr>
-                                <a href="products.php?id=twilight_switches">TWILIGHT SWITCHES</a><br>
+                                <a href="products.php?id=twilight_switches&type=4">TWILIGHT SWITCHES</a><br>
                                 <hr>
-                                <a href="products.php?id=industrial_display">INDUSTRIAL DISPLAY</a><br>
+                                <a href="products.php?id=industrial_display&type=4">INDUSTRIAL DISPLAY</a><br>
                                 <hr>
-                                <a href="products.php?id=wsm">WEIGHING SCALE MONITOR</a><br>
+                                <a href="products.php?id=wsm&type=4">WEIGHING SCALE MONITOR</a><br>
                             </div>
                         </li>
                         <li style="opacity: 0;">
-                            <div class="collapsible-header">Featured Projects</div>
+                            <div class="collapsible-header" onclick="filter('Featured_Projects',3)">Featured Projects</div>
                             <div class="collapsible-body container"><br>
                                 <a href="products.php?id=">COACH GUIDANCE SYSTEM</a><br>
                                 <hr>
@@ -165,58 +167,54 @@ $x= $_GET['id'];
                     </ul>
                 </div>
                 <div class="col l9">
-                    <h3 class="headName1" id='t'><?php echo $x; ?></h3>
+                    <h3 class="headName" id="category_name"></h3>
                     <div class="row">
-                        <div class="col s12 m7 l3">
+                        <div class="col s12 m7 l3" id="c1">
                             <div class="card">
-                                <div class="card-image">
-                                    <img src="photos/lfm1.jpg">
-                                    <span class="card-title">Card Title</span>
+                                <div class="card-image" id="p1">
+                                    
                                 </div>
                                 <div class="card-content">
-                                    <p>I am a very simple card. I am good at containing small bits of information.</p>
+                                    <p id="d1"></p>
                                 </div>
                                 <div class="card-action">
                                     <a href="#">This is a link</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="col s12 m7 l3">
+                        <div class="col s12 m7 l3" id="c2">
                             <div class="card">
-                                <div class="card-image">
-                                    <img src="photos/lfm1.jpg">
-                                    <span class="card-title">Card Title</span>
+                                <div class="card-image" id="p2">
+                                    
                                 </div>
                                 <div class="card-content">
-                                    <p>I am a very simple card. I am good at containing small bits of information.</p>
+                                    <p id="d2"></p>
                                 </div>
                                 <div class="card-action">
                                     <a href="#">This is a link</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="col s12 m7 l3">
+                        <div class="col s12 m7 l3" id="c3">
                             <div class="card">
-                                <div class="card-image">
-                                    <img src="photos/lfm1.jpg">
-                                    <span class="card-title">Card Title</span>
+                                <div class="card-image" id="p3">
+                                    
                                 </div>
                                 <div class="card-content">
-                                    <p>I am a very simple card. I am good at containing small bits of information.</p>
+                                    <p id="d3"></p>
                                 </div>
                                 <div class="card-action">
                                     <a href="#">This is a link</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="col s12 m7 l3">
+                        <div class="col s12 m7 l3" id="c4">
                             <div class="card">
-                                <div class="card-image">
-                                    <img src="photos/lfm1.jpg">
-                                    <span class="card-title">Card Title</span>
+                                <div class="card-image" id="p4">
+                                    
                                 </div>
                                 <div class="card-content">
-                                    <p>I am a very simple card. I am good at containing small bits of information.</p>
+                                    <p id="d4"></p>
                                 </div>
                                 <div class="card-action">
                                     <a href="#">This is a link</a>
@@ -226,56 +224,80 @@ $x= $_GET['id'];
                     </div>
 
                      <div class="row">
-                        <div class="col s12 m7 l3">
+                        <div class="col s12 m7 l3" id="c5">
                             <div class="card">
-                                <div class="card-image">
-                                    <img src="photos/lfm1.jpg">
-                                    <span class="card-title">Card Title</span>
+                                <div class="card-image" id="p5">
+                                   
                                 </div>
                                 <div class="card-content">
-                                    <p>I am a very simple card. I am good at containing small bits of information.</p>
+                                    <p id="d5"></p>
                                 </div>
                                 <div class="card-action">
                                     <a href="#">This is a link</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="col s12 m7 l3">
+                        <div class="col s12 m7 l3" id="c6">
                             <div class="card">
-                                <div class="card-image">
-                                    <img src="photos/lfm1.jpg">
-                                    <span class="card-title">Card Title</span>
+                                <div class="card-image" id="p6">
+                                    
                                 </div>
                                 <div class="card-content">
-                                    <p>I am a very simple card. I am good at containing small bits of information.</p>
+                                    <p id="d6"></p>
                                 </div>
                                 <div class="card-action">
                                     <a href="#">This is a link</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="col s12 m7 l3">
+                        <div class="col s12 m7 l3" id="c7">
                             <div class="card">
-                                <div class="card-image">
-                                    <img src="photos/lfm1.jpg">
-                                    <span class="card-title">Card Title</span>
+                                <div class="card-image" id="p7">
+                                    
                                 </div>
                                 <div class="card-content">
-                                    <p>I am a very simple card. I am good at containing small bits of information.</p>
+                                    <p id="d7"></p>
                                 </div>
                                 <div class="card-action">
                                     <a href="#">This is a link</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="col s12 m7 l3">
+                        <div class="col s12 m7 l3" id="c8">
                             <div class="card">
-                                <div class="card-image">
-                                    <img src="photos/lfm1.jpg">
-                                    <span class="card-title">Card Title</span>
+                                <div class="card-image" id="p8">
+                                    
                                 </div>
                                 <div class="card-content">
-                                    <p>I am a very simple card. I am good at containing small bits of information.</p>
+                                    <p id="d8"></p>
+                                </div>
+                                <div class="card-action">
+                                    <a href="#">This is a link</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12 m7 l3" id="c9">
+                            <div class="card">
+                                <div class="card-image" id="p9">
+
+                                </div>
+                                <div class="card-content">
+                                    <p id="d9"></p>
+                                </div>
+                                <div class="card-action">
+                                    <a href="#">This is a link</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s12 m7 l3" id="c10">
+                            <div class="card">
+                                <div class="card-image" id="p10">
+
+                                </div>
+                                <div class="card-content">
+                                    <p id="d10"></p>
                                 </div>
                                 <div class="card-action">
                                     <a href="#">This is a link</a>

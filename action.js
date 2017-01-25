@@ -252,6 +252,73 @@ document.getElementById('info').innerHTML='+91 9415085804'+','+'+91-9415039393';
 function info3(){
 document.getElementById('info').innerHTML='D -17, Vivekanand Puri, Lucknow –226007 India';
 }
-function temp(){
-	document.getElementById('t').innerHTML='yeahh!!';
+
+function filter(x,z){
+	var y,k;
+
+	for(k=1;k<=10;k++) {
+		if(k<=z)
+			$('#c'+k).show();
+		else
+			$('#c'+k).hide();
+	}
+
+	if(x=='LED_display') {
+		y='LED Display';
+		
+		document.getElementById('p1').innerHTML='<img src="photos/lfm1.jpg">';
+		document.getElementById('d1').innerHTML='I am a very simple card. I am good at containing small bits of information.';
+		document.getElementById('p2').innerHTML='<img src="photos/lfm1.jpg">';
+		document.getElementById('d2').innerHTML='I am a very simple card. I am good at containing small bits of information.';
+		document.getElementById('p3').innerHTML='<img src="photos/lfm1.jpg">';
+		document.getElementById('d3').innerHTML='I am a very simple card. I am good at containing small bits of information.';	
+	}
+	else if(x=='Product_for_office') {
+		y='Product for Office';
+		
+		document.getElementById('p1').innerHTML='<img src="photos/lfm1.jpg">';
+		document.getElementById('d1').innerHTML='I am a very simple card. I am good at containing small bits of information.';
+		document.getElementById('p2').innerHTML='<img src="photos/lfm1.jpg">';
+		document.getElementById('d2').innerHTML='I am a very simple card. I am good at containing small bits of information.';
+		document.getElementById('p3').innerHTML='<img src="photos/lfm1.jpg">';
+		document.getElementById('d3').innerHTML='I am a very simple card. I am good at containing small bits of information.';
+		document.getElementById('p4').innerHTML='<img src="photos/lfm1.jpg">';
+		document.getElementById('d4').innerHTML='I am a very simple card. I am good at containing small bits of information.';
+	}
+	else if(x=='Featured_Projects') {
+		y='Featured Projects';
+		
+		document.getElementById('p1').innerHTML='<img src="photos/lfm1.jpg">';
+		document.getElementById('d1').innerHTML='I am a very simple card. I am good at containing small bits of information.';
+		document.getElementById('p2').innerHTML='<img src="photos/lfm1.jpg">';
+		document.getElementById('d2').innerHTML='I am a very simple card. I am good at containing small bits of information.';
+		document.getElementById('p3').innerHTML='<img src="photos/lfm1.jpg">';
+		document.getElementById('d3').innerHTML='I am a very simple card. I am good at containing small bits of information.';
+
+	}
+	else if(x=='Industrial_Instruments') {
+		y='Industrial Instruments';	
+		
+		document.getElementById('p1').innerHTML='<img src="photos/lfm1.jpg">';
+		document.getElementById('d1').innerHTML='I am a very simple card. I am good at containing small bits of information.';
+		document.getElementById('p2').innerHTML='<img src="photos/lfm1.jpg">';
+		document.getElementById('d2').innerHTML='I am a very simple card. I am good at containing small bits of information.';
+		document.getElementById('p3').innerHTML='<img src="photos/lfm1.jpg">';
+		document.getElementById('d3').innerHTML='I am a very simple card. I am good at containing small bits of information.';
+		document.getElementById('p4').innerHTML='<img src="photos/lfm1.jpg">';
+		document.getElementById('d4').innerHTML='I am a very simple card. I am good at containing small bits of information.';
+		document.getElementById('p5').innerHTML='<img src="photos/lfm1.jpg">';
+		document.getElementById('d5').innerHTML='I am a very simple card. I am good at containing small bits of information.';
+		document.getElementById('p6').innerHTML='<img src="photos/lfm1.jpg">';
+		document.getElementById('d6').innerHTML='I am a very simple card. I am good at containing small bits of information.';
+		document.getElementById('p7').innerHTML='<img src="photos/lfm1.jpg">';
+		document.getElementById('d7').innerHTML='I am a very simple card. I am good at containing small bits of information.';
+		document.getElementById('p8').innerHTML='<img src="photos/lfm1.jpg">';
+		document.getElementById('d8').innerHTML='I am a very simple card. I am good at containing small bits of information.';
+		document.getElementById('p9').innerHTML='<img src="photos/lfm1.jpg">';
+		document.getElementById('d9').innerHTML='I am a very simple card. I am good at containing small bits of information.';
+		document.getElementById('p10').innerHTML='<img src="photos/lfm1.jpg">';
+		document.getElementById('d10').innerHTML='I am a very simple card. I am good at containing small bits of information.';
+	}
+	document.getElementById('category_name').innerHTML=y;	
 }

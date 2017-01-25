@@ -1,5 +1,21 @@
 <?php
 $x= $_GET['id'];
+$type=$_GET['type'];
+$link='';
+
+if($type==1){
+    $link='product_list.php?id=LED_display&num=3';
+}
+else if($type==2){
+  $link='product_list.php?id=Product_for_office&num=4';
+}
+else if($type==3){
+  $link='product_list.php?id=Featured_Projects&num=3';
+}
+else if($type==4){
+  $link='product_list.php?id=Industrial_Instruments&num=10';
+}
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -63,10 +79,10 @@ $x= $_GET['id'];
     <div class="dropdown-content" id="products">
       <div class="container">
         <div class="row">
-          <div class="col l2"><p class="dropdown_headName"><a href="product_list.php?id=LED_display">LED Display</a></p><hr></div>
-          <div class="col l3"><p class="dropdown_headName"><a href="product_list.php?id=Product_for_office">Products for Office</a></p><hr></div>
-          <div class="col l3"><p class="dropdown_headName"><a href="product_list.php?id=Standalone_projects">Standalone Projects</a></p><hr></div>
-          <div class="col l4"><p class="dropdown_headName"><a href="product_list.php?id=Industrial_Instruments">Industrial Instruments</a></p><hr></div>
+          <div class="col l2"><p class="dropdown_headName"><a href="product_list.php?id=LED_display&num=3">LED Display</a></p><hr></div>
+          <div class="col l3"><p class="dropdown_headName"><a href="product_list.php?id=Product_for_office&num=4">Products for Office</a></p><hr></div>
+          <div class="col l3"><p class="dropdown_headName"><a href="product_list.php?id=Featured_Projects&num=3">Featured Projects</a></p><hr></div>
+          <div class="col l4"><p class="dropdown_headName"><a href="product_list.php?id=Industrial_Instruments&num=10">Industrial Instruments</a></p><hr></div>
         </div>
         <div class="row" style="margin-top:-50px;">
           <div class="col l2">
@@ -76,10 +92,10 @@ $x= $_GET['id'];
             
           </div>
           <div class="col l3">
-            <p class="product_name"><a href="products.php?id=token">TOKEN DISPLAY</a></p>
-            <p class="product_name"><a href="products.php?id=digital_clock">DIGITAL CLOCKS</a></p>
-            <p class="product_name"><a href="products.php?id=industrial_display">INDUSTRIAL DISPLAY</a></p>
-            <p class="product_name"><a href="products.php?id=scrolling_display">SCROLLING DISPLAY</a></p>
+            <p class="product_name"><a href="products.php?id=token&type=2">TOKEN DISPLAY</a></p>
+            <p class="product_name"><a href="products.php?id=digital_clock&type=2">DIGITAL CLOCKS</a></p>
+            <p class="product_name"><a href="products.php?id=industrial_display&type=2">INDUSTRIAL DISPLAY</a></p>
+            <p class="product_name"><a href="products.php?id=scrolling_display&type=2">SCROLLING DISPLAY</a></p>
           </div>
           <div class="col l3">
             <p class="product_name"><a href="products.php?id=">COACH GUIDANCE SYSTEM</a></p>
@@ -88,16 +104,16 @@ $x= $_GET['id'];
             
           </div>
           <div class="col l4">
-            <p class="product_name"><a href="products.php?id=flow_monitor">FLOW MONITOR</a></p>
-            <p class="product_name"><a href="products.php?id=lfm">LINE FREQUENCY MONITOR</a></p>
-            <p class="product_name"><a href="products.php?id=megawatt_pannel">MEGA WATT PANEL</a></p>
-            <p class="product_name"><a href="products.php?id=process_n_indicator">PROCESS INDICATORS</a></p>
-            <p class="product_name"><a href="products.php?id=ph_meter">PH METER</a></p>
-            <p class="product_name"><a href="products.php?id=tachometer">TACHOMETER</a></p>
-            <p class="product_name"><a href="products.php?id=temp_cont">TEMPERATURE CONTROLLER</a></p>
-            <p class="product_name"><a href="products.php?id=twilight_switches">TWILIGHT SWITCHES</a></p>
-            <p class="product_name"><a href="products.php?id=industrial_display">INDUSTRIAL DISPLAY</a></p>
-            <p class="product_name"><a href="products.php?id=wsm">WEIGHING SCALE MONITOR</a></p>
+            <p class="product_name"><a href="products.php?id=flow_monitor&type=4">FLOW MONITOR</a></p>
+            <p class="product_name"><a href="products.php?id=lfm&type=4">LINE FREQUENCY MONITOR</a></p>
+            <p class="product_name"><a href="products.php?id=megawatt_pannel&type=4">MEGA WATT PANEL</a></p>
+            <p class="product_name"><a href="products.php?id=process_n_indicator&type=4">PROCESS INDICATORS</a></p>
+            <p class="product_name"><a href="products.php?id=ph_meter&type=4">PH METER</a></p>
+            <p class="product_name"><a href="products.php?id=tachometer&type=4">TACHOMETER</a></p>
+            <p class="product_name"><a href="products.php?id=temp_cont&type=4">TEMPERATURE CONTROLLER</a></p>
+            <p class="product_name"><a href="products.php?id=twilight_switches&type=4">TWILIGHT SWITCHES</a></p>
+            <p class="product_name"><a href="products.php?id=industrial_display&type=4">INDUSTRIAL DISPLAY</a></p>
+            <p class="product_name"><a href="products.php?id=wsm&type=4">WEIGHING SCALE MONITOR</a></p>
           </div>
         </div>
       </div>
@@ -128,8 +144,8 @@ $x= $_GET['id'];
     <nav class="white">
       <div class="nav-wrapper container">
         <div class="col s12">
-          <a href="product_list.php?id=" class="breadcrumb black-text" id="pre1"></a>
-          <a href="" class="breadcrumb black-text" id="pre2"></a>
+          <a href="" class="breadcrumb black-text" id="pre1"></a>
+          <a href="<?php echo $link; ?>" class="breadcrumb black-text" id="pre2"></a>
           <a href="" class="breadcrumb black-text" style="font-size:25px" id="curr"></a>
         </div>
       </div>

@@ -63,10 +63,10 @@ $x= $_GET['id'];
     <div class="dropdown-content" id="products">
       <div class="container">
         <div class="row">
-          <div class="col l2"><p class="dropdown_headName"><a href="products.php?id=">LED Display</a></p><hr></div>
-          <div class="col l3"><p class="dropdown_headName"><a href="products.php?id=">Products for Office</a></p><hr></div>
-          <div class="col l3"><p class="dropdown_headName"><a href="products.php?id=">Standalone Projects</a></p><hr></div>
-          <div class="col l4"><p class="dropdown_headName"><a href="products.php?id=">Industrial Instruments</a></p><hr></div>
+          <div class="col l2"><p class="dropdown_headName"><a href="product_list.php?id=LED_display">LED Display</a></p><hr></div>
+          <div class="col l3"><p class="dropdown_headName"><a href="product_list.php?id=Product_for_office">Products for Office</a></p><hr></div>
+          <div class="col l3"><p class="dropdown_headName"><a href="product_list.php?id=Standalone_projects">Standalone Projects</a></p><hr></div>
+          <div class="col l4"><p class="dropdown_headName"><a href="product_list.php?id=Industrial_Instruments">Industrial Instruments</a></p><hr></div>
         </div>
         <div class="row" style="margin-top:-50px;">
           <div class="col l2">
@@ -109,7 +109,7 @@ $x= $_GET['id'];
           <ul class="right hide-on-med-and-down">
             <li><a href="home.html" class="navLink">Home</a></li>
             <li><a href="about.html" class="navLink">About Us</a></li>
-            <li class="active"><a href="product_list.html" class="dropdown-button navLink" data-activates="products">Products<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li class="active"><a href="product_list.php" class="dropdown-button navLink" data-activates="products">Products<i class="material-icons right">arrow_drop_down</i></a></li>
             <li><a href="contactForm.html" class="navLink">Contact Us</a></li>
           </ul>
           <!--<ul id="nav-mobile" class="side-nav">
@@ -128,9 +128,9 @@ $x= $_GET['id'];
     <nav class="white">
       <div class="nav-wrapper container">
         <div class="col s12">
-          <a href="#!" class="breadcrumb black-text" id="pre1"></a>
-          <a href="#!" class="breadcrumb black-text" id="pre2"></a>
-          <a href="#!" class="breadcrumb black-text" style="font-size:25px" id="curr"></a>
+          <a href="product_list.php?id=" class="breadcrumb black-text" id="pre1"></a>
+          <a href="" class="breadcrumb black-text" id="pre2"></a>
+          <a href="" class="breadcrumb black-text" style="font-size:25px" id="curr"></a>
         </div>
       </div>
     </nav>

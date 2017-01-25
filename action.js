@@ -252,3 +252,6 @@ document.getElementById('info').innerHTML='+91 9415085804'+','+'+91-9415039393';
 function info3(){
 document.getElementById('info').innerHTML='D -17, Vivekanand Puri, Lucknow –226007 India';
 }
+function temp(){
+	document.getElementById('t').innerHTML='yeahh!!';
+}

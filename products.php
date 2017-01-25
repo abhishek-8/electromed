@@ -109,7 +109,7 @@ $x= $_GET['id'];
           <ul class="right hide-on-med-and-down">
             <li><a href="home.html" class="navLink">Home</a></li>
             <li><a href="about.html" class="navLink">About Us</a></li>
-            <li class="active"><a href="" class="dropdown-button navLink" data-activates="products">Products<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li class="active"><a href="product_list.html" class="dropdown-button navLink" data-activates="products">Products<i class="material-icons right">arrow_drop_down</i></a></li>
             <li><a href="contactForm.html" class="navLink">Contact Us</a></li>
           </ul>
           <!--<ul id="nav-mobile" class="side-nav">

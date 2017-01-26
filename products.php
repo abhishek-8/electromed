@@ -79,35 +79,29 @@ else if($type==4){
     <div class="dropdown-content" id="products">
       <div class="container">
         <div class="row">
-          <div class="col l2"><p class="dropdown_headName"><a href="product_list.php?id=LED_display&num=3">LED Display</a></p><hr></div>
-          <div class="col l3"><p class="dropdown_headName"><a href="product_list.php?id=Product_for_office&num=4">Products for Office</a></p><hr></div>
-          <div class="col l3"><p class="dropdown_headName"><a href="product_list.php?id=Featured_Projects&num=3">Featured Projects</a></p><hr></div>
+          <div class="col l4"><p class="dropdown_headName"><a href="product_list.php?id=LED_display&num=3">LED Display</a></p><hr></div>
+          <div class="col l4"><p class="dropdown_headName"><a href="product_list.php?id=Product_for_office&num=4">Products for Office</a></p><hr></div>
           <div class="col l4"><p class="dropdown_headName"><a href="product_list.php?id=Industrial_Instruments&num=10">Industrial Instruments</a></p><hr></div>
         </div>
         <div class="row" style="margin-top:-50px;">
-          <div class="col l2">
-            <p class="product_name"><a href="products.php?id=">TRUE COLOR HD SCREEN</a></p>
-            <p class="product_name"><a href="products.php?id=">TRI COLOR DISPLAY BOARDS</a></p>
-            <p class="product_name"><a href="products.php?id=">UNI COLOR DISPLAY BOARDS</a></p>
-            
-          </div>
-          <div class="col l3">
-            <p class="product_name"><a href="products.php?id=token&type=2">TOKEN DISPLAY</a></p>
-            <p class="product_name"><a href="products.php?id=digital_clock&type=2">DIGITAL CLOCKS</a></p>
-            <p class="product_name"><a href="products.php?id=industrial_display&type=2">INDUSTRIAL DISPLAY</a></p>
-            <p class="product_name"><a href="products.php?id=scrolling_display&type=2">SCROLLING DISPLAY</a></p>
-          </div>
-          <div class="col l3">
-            <p class="product_name"><a href="products.php?id=">COACH GUIDANCE SYSTEM</a></p>
-            <p class="product_name"><a href="products.php?id=">TRAIN INFORMATION BOARD</a></p>
-            <p class="product_name"><a href="products.php?id=">POWER GENERATION DISPLAY BOARD</a></p>
+          <div class="col l4">
+            <p class="product_name"><a href="products.php?id=true_color_display&type=1">TRUE COLOR HD SCREEN</a></p>
+            <p class="product_name"><a href="products.php?id=tri_color_display&type=1">TRI COLOR DISPLAY BOARDS</a></p>
+            <p class="product_name"><a href="products.php?id=uni_color_display&type=1">UNI COLOR DISPLAY BOARDS</a></p>
             
           </div>
           <div class="col l4">
+            <p class="product_name"><a href="products.php?id=token&type=2">TOKEN DISPLAY</a></p>
+            <p class="product_name"><a href="products.php?id=digital_clock&type=2">DIGITAL CLOCKS</a></p>
+            <p class="product_name"><a href="products.php?id=interest_rate_display_board&type=2">INTEREST RATE DISPLAY BOARD</a></p>
+            <p class="product_name"><a href="products.php?id=scrolling_display&type=2">SCROLLING DISPLAY</a></p>
+          </div>
+          
+          <div class="col l4">
             <p class="product_name"><a href="products.php?id=flow_monitor&type=4">FLOW MONITOR</a></p>
             <p class="product_name"><a href="products.php?id=lfm&type=4">LINE FREQUENCY MONITOR</a></p>
-            <p class="product_name"><a href="products.php?id=megawatt_pannel&type=4">MEGA WATT PANEL</a></p>
-            <p class="product_name"><a href="products.php?id=process_n_indicator&type=4">PROCESS INDICATORS</a></p>
+            <p class="product_name"><a href="products.php?id=megawatt_panel&type=4">MEGA WATT PANEL</a></p>
+            <p class="product_name"><a href="products.php?id=process_indicator&type=4">PROCESS INDICATORS</a></p>
             <p class="product_name"><a href="products.php?id=ph_meter&type=4">PH METER</a></p>
             <p class="product_name"><a href="products.php?id=tachometer&type=4">TACHOMETER</a></p>
             <p class="product_name"><a href="products.php?id=temp_cont&type=4">TEMPERATURE CONTROLLER</a></p>
@@ -118,28 +112,45 @@ else if($type==4){
         </div>
       </div>
     </div>
-    <div class="navbar-fixed">
+
+    <div class="dropdown-content" id="projects">
+      <div class="container">
+        <div class="row">
+        <div class="col l12">
+            <p class="product_name"><a href="#">COACH GUIDANCE SYSTEM</a></p>
+            <p class="product_name"><a href="#">TRAIN INFORMATION BOARD</a></p>
+            <p class="product_name"><a href="#">POWER GENERATION DISPLAY BOARD</a></p>
+            
+          </div>
+       </div>
+    </div>
+    </div>
+
+   <div class="navbar-fixed">
       <nav>
         <div class="nav-wrapper container">
           <a id="logo-container" href="" class="brand-logo">Electro-med</a>
           <ul class="right hide-on-med-and-down">
             <li><a href="home.html" class="navLink">Home</a></li>
             <li><a href="about.html" class="navLink">About Us</a></li>
-            <li class="active"><a href="product_list.php" class="dropdown-button navLink" data-activates="products">Products<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li class="active"><a href="#" class="dropdown-button navLink" data-activates="products">Products<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a href="#" class="dropdown-button navLink" data-activates="projects">Projects<i class="material-icons right">arrow_drop_down</i></a></li>
             <li><a href="contactForm.html" class="navLink">Contact Us</a></li>
           </ul>
-          <!--<ul id="nav-mobile" class="side-nav">
+          
+         <!-- <ul id="nav-mobile" class="side-nav">
             <li><a href="home.html">Home</a></li>
             <li><a href="about.html">About Us</a></li>
             <li><a href="" class="dropdown-button" data-activates="products">Products<i class="material-icons right">arrow_drop_down</i></a></li>
-            <li><a href="">Link 3</a></li>
-            <li><a href="">Link 4</a></li>
-            <li><a href="contactForm.html">Contact Us</a></li>
+            <li><a href="contactForm.html">Contact Us</a></li> 
           </ul>
-          <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a> -->
+
+          <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>-->
+
         </div>
       </nav>
     </div>
+
     
     <nav class="white">
       <div class="nav-wrapper container">
@@ -343,14 +354,6 @@ else if($type==4){
                       <div class="col l8 offset-l1"><p class="white-text foot" style="display:inline;">D -17, Vivekanand Puri,
                       <br/>Lucknow –226007 India</p></div>
                     </div>
-                    <!-- <ul>
-                      <li><i class="material-icons prefix blue-text">phone</i><p class="white-text foot" style="display:inline;">9415039393</p></li>
-                      <li><i class="material-icons prefix blue-text">email</i><p class="white-text foot" style="display:inline;">  electro.med25@gmail.com</p></li>
-                      <li><i class="material-icons prefix blue-text">room</i><p class="white-text foot" style="display:inline;">D -17, Vivekanand Puri,
-                      <br/>Lucknow –226007 India</p></li>
-                      
-                      
-                    </ul> -->
                   </div>
                 </div>
               </div>

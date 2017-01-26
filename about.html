@@ -48,35 +48,29 @@
    <div class="dropdown-content" id="products">
       <div class="container">
         <div class="row">
-          <div class="col l2"><p class="dropdown_headName"><a href="product_list.php?id=LED_display&num=3">LED Display</a></p><hr></div>
-          <div class="col l3"><p class="dropdown_headName"><a href="product_list.php?id=Product_for_office&num=4">Products for Office</a></p><hr></div>
-          <div class="col l3"><p class="dropdown_headName"><a href="product_list.php?id=Featured_Projects&num=3">Featured Projects</a></p><hr></div>
+          <div class="col l4"><p class="dropdown_headName"><a href="product_list.php?id=LED_display&num=3">LED Display</a></p><hr></div>
+          <div class="col l4"><p class="dropdown_headName"><a href="product_list.php?id=Product_for_office&num=4">Products for Office</a></p><hr></div>
           <div class="col l4"><p class="dropdown_headName"><a href="product_list.php?id=Industrial_Instruments&num=10">Industrial Instruments</a></p><hr></div>
         </div>
         <div class="row" style="margin-top:-50px;">
-          <div class="col l2">
-            <p class="product_name"><a href="products.php?id=">TRUE COLOR HD SCREEN</a></p>
-            <p class="product_name"><a href="products.php?id=">TRI COLOR DISPLAY BOARDS</a></p>
-            <p class="product_name"><a href="products.php?id=">UNI COLOR DISPLAY BOARDS</a></p>
-            
-          </div>
-          <div class="col l3">
-            <p class="product_name"><a href="products.php?id=token&type=2">TOKEN DISPLAY</a></p>
-            <p class="product_name"><a href="products.php?id=digital_clock&type=2">DIGITAL CLOCKS</a></p>
-            <p class="product_name"><a href="products.php?id=industrial_display&type=2">INDUSTRIAL DISPLAY</a></p>
-            <p class="product_name"><a href="products.php?id=scrolling_display&type=2">SCROLLING DISPLAY</a></p>
-          </div>
-          <div class="col l3">
-            <p class="product_name"><a href="products.php?id=">COACH GUIDANCE SYSTEM</a></p>
-            <p class="product_name"><a href="products.php?id=">TRAIN INFORMATION BOARD</a></p>
-            <p class="product_name"><a href="products.php?id=">POWER GENERATION DISPLAY BOARD</a></p>
+          <div class="col l4">
+            <p class="product_name"><a href="products.php?id=true_color_display&type=1">TRUE COLOR HD SCREEN</a></p>
+            <p class="product_name"><a href="products.php?id=tri_color_display&type=1">TRI COLOR DISPLAY BOARDS</a></p>
+            <p class="product_name"><a href="products.php?id=uni_color_display&type=1">UNI COLOR DISPLAY BOARDS</a></p>
             
           </div>
           <div class="col l4">
+            <p class="product_name"><a href="products.php?id=token&type=2">TOKEN DISPLAY</a></p>
+            <p class="product_name"><a href="products.php?id=digital_clock&type=2">DIGITAL CLOCKS</a></p>
+            <p class="product_name"><a href="products.php?id=interest_rate_display_board&type=2">INTEREST RATE DISPLAY BOARD</a></p>
+            <p class="product_name"><a href="products.php?id=scrolling_display&type=2">SCROLLING DISPLAY</a></p>
+          </div>
+          
+          <div class="col l4">
             <p class="product_name"><a href="products.php?id=flow_monitor&type=4">FLOW MONITOR</a></p>
             <p class="product_name"><a href="products.php?id=lfm&type=4">LINE FREQUENCY MONITOR</a></p>
-            <p class="product_name"><a href="products.php?id=megawatt_pannel&type=4">MEGA WATT PANEL</a></p>
-            <p class="product_name"><a href="products.php?id=process_n_indicator&type=4">PROCESS INDICATORS</a></p>
+            <p class="product_name"><a href="products.php?id=megawatt_panel&type=4">MEGA WATT PANEL</a></p>
+            <p class="product_name"><a href="products.php?id=process_indicator&type=4">PROCESS INDICATORS</a></p>
             <p class="product_name"><a href="products.php?id=ph_meter&type=4">PH METER</a></p>
             <p class="product_name"><a href="products.php?id=tachometer&type=4">TACHOMETER</a></p>
             <p class="product_name"><a href="products.php?id=temp_cont&type=4">TEMPERATURE CONTROLLER</a></p>
@@ -87,28 +81,45 @@
         </div>
       </div>
     </div>
-    <div class="navbar-fixed">
+
+    <div class="dropdown-content" id="projects">
+      <div class="container">
+        <div class="row">
+        <div class="col l12">
+            <p class="product_name"><a href="#">COACH GUIDANCE SYSTEM</a></p>
+            <p class="product_name"><a href="#">TRAIN INFORMATION BOARD</a></p>
+            <p class="product_name"><a href="#">POWER GENERATION DISPLAY BOARD</a></p>
+            
+          </div>
+       </div>
+    </div>
+    </div>
+
+   <div class="navbar-fixed">
       <nav>
         <div class="nav-wrapper container">
           <a id="logo-container" href="" class="brand-logo">Electro-med</a>
           <ul class="right hide-on-med-and-down">
             <li><a href="home.html" class="navLink">Home</a></li>
             <li class="active"><a href="about.html" class="navLink">About Us</a></li>
-            <li><a href="product_list.php" class="dropdown-button navLink" data-activates="products">Products<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a href="#" class="dropdown-button navLink" data-activates="products">Products<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a href="#" class="dropdown-button navLink" data-activates="projects">Projects<i class="material-icons right">arrow_drop_down</i></a></li>
             <li><a href="contactForm.html" class="navLink">Contact Us</a></li>
           </ul>
-          <!--<ul id="nav-mobile" class="side-nav">
+          
+         <!-- <ul id="nav-mobile" class="side-nav">
             <li><a href="home.html">Home</a></li>
             <li><a href="about.html">About Us</a></li>
             <li><a href="" class="dropdown-button" data-activates="products">Products<i class="material-icons right">arrow_drop_down</i></a></li>
-            <li><a href="">Link 3</a></li>
-            <li><a href="">Link 4</a></li>
-            <li><a href="contactForm.html">Contact Us</a></li>
+            <li><a href="contactForm.html">Contact Us</a></li> 
           </ul>
-          <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a> -->
+
+          <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>-->
+
         </div>
       </nav>
     </div>
+
     
 
     <div class="parallax-container" id="about_us">
@@ -335,188 +346,6 @@
     <center><a>Read customer testimonials</a></center>
     <br>
     
-    <!--
-    <div class="row">
-      <div class="col l8 offset-l2 ">
-        <h5 class="headName1"><center><br>We, <span>Electro-Med</span>, commenced our operations in <span>1977</span> as manufacturer of a wide range of Digital Instruments and LCD Display Board. Our range of products is inclusive of LED Display, LED Display Board and Line Frequency Monitors. Owing to our offerings of unsurpassable quality, we have been able to establish a commendable reputation in the industry. These offerings are patronized by a large number of customers, pertaining to several industries. We design these display systems keeping in mind the exact requirements of our customers.<br><br>
-        We have established a state-of-the-art infrastructure that is spread over a vast area. Equipped with high-tech machinery and multiple amenities, our infrastructure is instrumental in carrying out our functions in a hassle free manner. We have segregated our entire facility into multiple divisions to ensure that maximum operational efficiency is achieved. These units are production department, quality assurance department, designing unit, administration and logistics unit. These units are efficiently managed by our team of dexterous professionals. Working in close coordination with each other, these units achieve spectacular results consistently. Our team members are proficient in their respective areas of expertise and strive to perform to the best of their capabilities.
-        <br><br>
-        We are a proprietorship firm established under the visionary guidance of, <span>Mr. Pushkar Srivastava</span>. Through his vast domain expertise and brilliant leadership skills, he has steered the organization on the path to success. We offer fair business terms and are highly regarded in the industry.<br></center></h5>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col l6 m6 s12">
-        <table class="striped">
-          
-          <h3 class="headName">Basic Information</h3>
-          <tbody>
-            <tr>
-              <td>Nature of Business</td>
-              <td>Manufacturer</td>
-            </tr>
-            <tr>
-              <td>Additional Business</td>
-              <td>Trader</td>
-            </tr>
-            <tr>
-              <td>Company CEO</td>
-              <td>Pushkar Srivastava</td>
-            </tr>
-            <tr>
-              <td>Industry</td>
-              <td>Manufacturing & Trading of Digital Instruments & large LED Displays</td>
-            </tr>
-            <tr>
-              <td>Registered Address</td>
-              <td>D-17, Vivekanandpuri, Lucknow- 226 007, Uttar Pradesh, India.</td>
-            </tr>
-            <tr>
-              <td>Year of Establishment</td>
-              <td>1977</td>
-            </tr>
-            <tr>
-              <td>Total Number of Employees</td>
-              <td>11 to 25 people</td>
-            </tr>
-            <tr>
-              <td>Legal Status of Firm</td>
-              <td>Proprietorship Firm</td>
-            </tr>
-            <tr>
-              <td>Proprietor Name</td>
-              <td>Mr. Pushkar Srivastava</td>
-            </tr>
-            <tr>
-              <td>Annual Turnover</td>
-              <td><ul>
-                <li><span class="bullets">2011-12 Upto Rs. 50 Lakh</span></li>
-                <li><span class="bullets">2010-11 Upto Rs. 50 Lakh</span></li>
-                <li><span class="bullets">2009-10 Upto Rs. 50 Lakh</span></li>
-              </ul></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <div class="col l6">
-        <div class="row">
-          <div class="col l11 offset-l1 m11 offset-m1 s12">
-            <a href="#!" class="btn" onclick="Materialize.showStaggeredList('#staggered-test')">Our Clients</a>
-            <ul id="staggered-test" class="collapsible" data-collapsible="accordion">
-              <li style="opacity: 0;">
-                <div class="collapsible-header">Power Plants</div>
-                <div class="collapsible-body"><p>We have been supplying Digital Line Frequency Monitors, Temp cum humidity indicators, Megawatt Indicators to power plants of Uttar Pradesh, Madhya Pradesh, Chhatisgarh, Kerala and NTPCs unit at Unchahar, Tanda, Rihand, Shakti Nagar, Vindhya, Surat, Anta, Korba, Talcher etc.</p></div>
-              </li>
-              <li style="opacity: 0;">
-                <div class="collapsible-header">Sagar Industry</div>
-                <div class="collapsible-body"><p>Over the years we have been supplying Digital Tachometers, Temperature Indicators, Line Frequency Monitors, Weighing Scale monitors, Flow monitors, Bag counters and pH meters to prestigious mills of Balrampur group, Bajaj group, Dhampur group, Hargaon, Bannari Amman, Ponni sugars, Nirani sugars, KBD sugars to name a few. Our Weighing Scale Monitors and Flow monitors have been designed especially for installation in Sugar Industry. These products have contributed in improving the operating efficiency of the mills.</p></div>
-                
-              </li>
-              <li style="opacity: 0;">
-                <div class="collapsible-header">Others</div>
-                <div class="collapsible-body"><p>We have designed and installed large display panels for the Information Deptt in Bihar, NTPC power plants at Unchahar and Talcher etc. The data is fed from computers either by wires / telephone lines and fully wireless RF links. We have installed a large display system at The High Court in Patna where online case numbers are displayed at fourteen distant locations within the Court campus.</p></div>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col l11 offset-l1 m12 s12">
-            <div class="video-container">
-              <iframe width="533" height="315" src="https://www.youtube.com/embed/uSSOncrS_lI" frameborder="0" allowfullscreen></iframe>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col l4 offset-l4 m4 s12">
-        <table class="striped">
-          
-          <h3 class="headName">Infrastructure</h3>
-          <tbody>
-            <tr>
-              <td>Location Type</td>
-              <td>Urban</td>
-            </tr>
-            <tr>
-              <td>Buildinh Infrastructure</td>
-              <td>Permanent</td>
-            </tr>
-            <tr>
-              <td>Size of Premises</td>
-              <td>1000 square feet</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col l4 offset-l4 m4 s12">
-        <table class="striped">
-          
-          <h3 class="headName">Statutory Profile</h3>
-          <tbody>
-            <tr>
-              <td>Banker</td>
-              <td>State Bank of Hyderabad</td>
-            </tr>
-            <tr>
-              <td>PAN No.</td>
-              <td>AJITPS5690J</td>
-            </tr>
-            <tr>
-              <td>Registration Authority</td>
-              <td>Lucknow (Uttar Pradesh)</td>
-            </tr>
-            <tr>
-              <td>Registration No.</td>
-              <td>817771</td>
-            </tr>
-            <tr>
-              <td>Cnetral Sales Tax No.</td>
-              <td>09552100058C</td>
-            </tr>
-            <tr>
-              <td>Value Added Tax Registration No.</td>
-              <td>09552100058V</td>
-            </tr>
-            <tr>
-              <td>SSI No</td>
-              <td>090271100300</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-    <div class="row">
-      <div class="card-panel col l6 offset-l3">
-        <center>
-        <h2 class="headNamev2">Our Mission</h2>
-        <h5 class="headName1">To make reliable user friendly high-tech products at an economical cost. Provide value for money to customers and profits to the organization and the team</h5>
-        </center>
-      </div>
-    </div>
-    <div class="row">
-      <div class="card-panel col l8 offset-l2">
-        <center>
-        <h2 class="headNamev2" >Our Motto</h2>
-        <h5 class="headName1">“To design and build cost effective and innovative Data Display Panels according to clients’ requirements using field proven cutting edge technology and to satisfy them with our prompt and courteous services”.</h5>
-        </center>
-        <br>
-      </div>
-    </div>
-    <div class="row">
-      <div class="card-panel col l8 offset-l2">
-        <center>
-        <h2 class="headNamev2" >Quality Policy</h2>
-        <h5 class="headName1">
-        ELECTRO-MED accepts responsibility for complete product satisfaction of its customers. We exercise this responsibility through adequate training of our employees, adherence to proven procedures, total commitment to meeting and exceeding customer requirements and maintaining a company culture that fosters continuous improvement. Our objective is to deliver defect free products on time, every time</h5>
-        </center>
-      </div>
-    </div>
-    <center>
-    <img class="reponsive-img" src="company_profile.png" >
-    </center>
-    <br>  -->
     <footer class="page-footer">
         <div class="container">
           <div class="row">

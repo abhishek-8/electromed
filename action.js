@@ -1,31 +1,50 @@
 function set1(x) {
 
-if(x=='flow_monitor'){
-//document.getElementById('head_name').innerHTML='Flow Monitor';
+if(x=='true_color_display') {
+document.getElementById('pre1').innerHTML='Products';
+document.getElementById('pre2').innerHTML='LED Display';
+document.getElementById('curr').innerHTML='True Color HD Screen';	
 }
-else if(x=='led_display'){
-//document.getElementById('head_name').innerHTML='LED Display Board';
+else if(x=='tri_color_display') {
+	document.getElementById('pre1').innerHTML='Products';
+document.getElementById('pre2').innerHTML='LED Display';
+document.getElementById('curr').innerHTML='TRI Color Display';
+}
+else if(x=='uni_color_display') {
+	document.getElementById('pre1').innerHTML='Products';
+document.getElementById('pre2').innerHTML='LED Display';
+document.getElementById('curr').innerHTML='Uni Color Display';
+
+}
+
+else if(x=='token') {
+//document.getElementById('head_name').innerHTML='Token Display';
+document.getElementById('pre1').innerHTML='Products';
+document.getElementById('pre2').innerHTML='Products for Office';
+document.getElementById('curr').innerHTML='Token Display';
+
 document.getElementById('r1d1').innerHTML ='<span>Features:</span>';
-document.getElementById('r1d2').innerHTML ='<p class="bullets" style="display:inline;">Scrolling message displays are useful in describing the facilities available at your end</p>';
+document.getElementById('r1d2').innerHTML ='<p class="bullets" style="display:inline;">Token displays are extremely useful in bringing order in the waiting area.</p>';
 document.getElementById('r2d1').innerHTML ='';
-document.getElementById('r2d2').innerHTML ='<p class="bullets" style="display:inline;">They are also useful for guiding patients and attendants in maintaining hospital discipline and hygiene</p>';
+document.getElementById('r2d2').innerHTML ='<p class="bullets" style="display:inline;">Bright and large displays are clearly visible from a good distance.</p>';
 document.getElementById('r3d1').innerHTML ='';
-document.getElementById('r3d2').innerHTML ='<p class="bullets" style="display:inline;">They are also useful for showing pollution control and generation parameters</p>';
+document.getElementById('r3d2').innerHTML ='<p class="bullets" style="display:inline;">Numeric keypad unit with 05inch display</p>';
 document.getElementById('r4d1').innerHTML ='';
-document.getElementById('r4d2').innerHTML ='<p class="bullets" style="display:inline;">Available in RED color, TRI color and FULL color</p>';
-document.getElementById('r5d1').innerHTML ='';
-document.getElementById('r5d2').innerHTML ='<p class="bullets" style="display:inline;">USB interface, LAN and wireless communication</p>';
+document.getElementById('r4d2').innerHTML ='<p class="bullets" style="display:inline;">No. of digit is 03 and color of display is Red</p>';
+document.getElementById('r5d1').innerHTML ='<span>Options:</span>';
+document.getElementById('r5d2').innerHTML ='With Dot LED or With integrated 7 segment display';
 document.getElementById('r6d1').innerHTML ='';
 document.getElementById('r6d2').innerHTML ='';
 document.getElementById('r7d1').innerHTML ='';
 document.getElementById('r7d2').innerHTML ='';
 }
 
-else if(x=='industrial_display'){}
-//document.getElementById('head_name').innerHTML='Industrial Display';
-
 else if(x=='digital_clock') {
 //document.getElementById('head_name').innerHTML='Digital Clock';
+document.getElementById('pre1').innerHTML='Products';
+document.getElementById('pre2').innerHTML='Products for Office';
+document.getElementById('curr').innerHTML='Digital Clock';
+
 document.getElementById('r1d1').innerHTML ='<span>Features:</span>';
 document.getElementById('r1d2').innerHTML ='<p class="bullets" style="display:inline;">Micro-controller based design with or without GPS connectivity</p>';
 document.getElementById('r2d1').innerHTML ='';
@@ -42,14 +61,54 @@ document.getElementById('r7d1').innerHTML ='';
 document.getElementById('r7d2').innerHTML ='';
 }
 
-else if(x=='lfm'){}
+
+
+else if(x=='interest_rate_display_board'){
+//document.getElementById('head_name').innerHTML='Scrolling Display';
+document.getElementById('pre1').innerHTML='Products';
+document.getElementById('pre2').innerHTML='Products for Office';
+document.getElementById('curr').innerHTML='Industrial Rate Display Board';
+}
+
+
+
+else if(x=='scrolling_display'){
+//document.getElementById('head_name').innerHTML='Scrolling Display';
+document.getElementById('pre1').innerHTML='Products';
+document.getElementById('pre2').innerHTML='Products for Office';
+document.getElementById('curr').innerHTML='Scrolling Display';
+}
+
+if(x=='flow_monitor'){
+//document.getElementById('head_name').innerHTML='Flow Monitor';
+document.getElementById('pre1').innerHTML='Products';
+document.getElementById('pre2').innerHTML='Industrial Instruments';
+document.getElementById('curr').innerHTML='Flow Monitor';
+}
+
+else if(x=='lfm'){
 //document.getElementById('head_name').innerHTML='Line Frequency Monitor';
+document.getElementById('pre1').innerHTML='Products';
+document.getElementById('pre2').innerHTML='Industrial Instruments';
+document.getElementById('curr').innerHTML='Line Frequency Monitor';
 
-else if(x=='megawatt_pannel'){}
+}
+
+else if(x=='megawatt_panel'){
 //document.getElementById('head_name').innerHTML='Megawatt Pannel';
+document.getElementById('pre1').innerHTML='Products';
+document.getElementById('pre2').innerHTML='Industrial Instruments';
+document.getElementById('curr').innerHTML='Megawatt Panel';
+}
 
-else if(x=='process_n_indicator'){
+
+
+else if(x=='process_indicator'){
 //document.getElementById('head_name').innerHTML='Process and Indicator';
+document.getElementById('pre1').innerHTML='Products';
+document.getElementById('pre2').innerHTML='Industrial Instruments';
+document.getElementById('curr').innerHTML='Process Indicator';
+
 document.getElementById('r1d1').innerHTML ='<span>Features:</span>';
 document.getElementById('r1d2').innerHTML ='<p class="bullets" style="display:inline;">Used for the measurement of process parameters</p>';
 document.getElementById('r2d1').innerHTML ='';
@@ -91,11 +150,13 @@ document.getElementById('r7d2').innerHTML ='pH electrodes, buffer tablets';
 
 }
 
-else if(x=='scrolling_display'){}
-//document.getElementById('head_name').innerHTML='Scrolling Display';
 
 else if(x=='tachometer') {
 //document.getElementById('head_name').innerHTML='Tachometer';
+document.getElementById('pre1').innerHTML='Products';
+document.getElementById('pre2').innerHTML='Industrial Instruments';
+document.getElementById('curr').innerHTML='Tachometer';
+
 document.getElementById('r1d1').innerHTML ='<span>Features:</span>';
 document.getElementById('r1d2').innerHTML ='<p class="bullets" style="display:inline;">Non blinking display</p>';
 document.getElementById('r2d1').innerHTML ='';
@@ -114,6 +175,10 @@ document.getElementById('r7d2').innerHTML =' 230V ± 15%, 50Hz (standard)';
 
 else if(x=='temp_cont') {
 //document.getElementById('head_name').innerHTML='Temperature Controller';
+document.getElementById('pre1').innerHTML='Products';
+document.getElementById('pre2').innerHTML='Industrial Instruments';
+document.getElementById('curr').innerHTML='Temperature Controller';
+
 document.getElementById('r1d1').innerHTML ='<span>Features:</span>';
 document.getElementById('r1d2').innerHTML ='<p class="bullets" style="display:inline;">Potentiometer setting is available</p>';
 document.getElementById('r2d1').innerHTML ='';
@@ -133,6 +198,10 @@ document.getElementById('r7d2').innerHTML ='';
 
 else if(x=='twilight_switches') {
 //document.getElementById('head_name').innerHTML='Twilight Switches';
+document.getElementById('pre1').innerHTML='Products';
+document.getElementById('pre2').innerHTML='Industrial Instruments';
+document.getElementById('curr').innerHTML='Twilight Switches ';
+
 document.getElementById('r1d1').innerHTML ='Features';
 document.getElementById('r1d2').innerHTML ='<p class="bullets" style="display:inline;">Switches ON and OFF at dusk and dawn.</p>';
 document.getElementById('r2d1').innerHTML ='';
@@ -148,26 +217,21 @@ document.getElementById('r6d2').innerHTML ='<p class="bullets" style="display:in
 document.getElementById('r7d1').innerHTML ='';
 document.getElementById('r7d2').innerHTML ='';
 }
-else if(x=='token') {
-//document.getElementById('head_name').innerHTML='Token Display';
-document.getElementById('r1d1').innerHTML ='<span>Features:</span>';
-document.getElementById('r1d2').innerHTML ='<p class="bullets" style="display:inline;">Token displays are extremely useful in bringing order in the waiting area.</p>';
-document.getElementById('r2d1').innerHTML ='';
-document.getElementById('r2d2').innerHTML ='<p class="bullets" style="display:inline;">Bright and large displays are clearly visible from a good distance.</p>';
-document.getElementById('r3d1').innerHTML ='';
-document.getElementById('r3d2').innerHTML ='<p class="bullets" style="display:inline;">Numeric keypad unit with 05inch display</p>';
-document.getElementById('r4d1').innerHTML ='';
-document.getElementById('r4d2').innerHTML ='<p class="bullets" style="display:inline;">No. of digit is 03 and color of display is Red</p>';
-document.getElementById('r5d1').innerHTML ='<span>Options:</span>';
-document.getElementById('r5d2').innerHTML ='With Dot LED or With integrated 7 segment display';
-document.getElementById('r6d1').innerHTML ='';
-document.getElementById('r6d2').innerHTML ='';
-document.getElementById('r7d1').innerHTML ='';
-document.getElementById('r7d2').innerHTML ='';
+
+else if(x=='industrial_display'){
+//document.getElementById('head_name').innerHTML='Industrial Display';
+document.getElementById('pre1').innerHTML='Products';
+document.getElementById('pre2').innerHTML='Industrial Instruments';
+document.getElementById('curr').innerHTML='Industrial Display';
 }
+
 
 else if(x=='wsm'){
 //document.getElementById('head_name').innerHTML='Weighing Scale Monitor';
+document.getElementById('pre1').innerHTML='Products';
+document.getElementById('pre2').innerHTML='Industrial Instruments';
+document.getElementById('curr').innerHTML='Weighing Scale Monitor';
+
 document.getElementById('r1d1').innerHTML ='<span>Features:</span>';
 document.getElementById('r1d2').innerHTML ='<p class="bullets" style="display:inline;">Current hour, previous hour and real time clock</p>';
 document.getElementById('r2d1').innerHTML ='';
@@ -183,7 +247,29 @@ document.getElementById('r6d2').innerHTML ='';
 document.getElementById('r7d1').innerHTML ='';
 document.getElementById('r7d2').innerHTML ='';
 }
+/*
+else if(x=='led_display'){
+//document.getElementById('head_name').innerHTML='LED Display Board';
+document.getElementById('pre1').innerHTML='Products';
+document.getElementById('pre2').innerHTML='Industrial Instruments';
+document.getElementById('curr').innerHTML='LED Display';
 
+document.getElementById('r1d1').innerHTML ='<span>Features:</span>';
+document.getElementById('r1d2').innerHTML ='<p class="bullets" style="display:inline;">Scrolling message displays are useful in describing the facilities available at your end</p>';
+document.getElementById('r2d1').innerHTML ='';
+document.getElementById('r2d2').innerHTML ='<p class="bullets" style="display:inline;">They are also useful for guiding patients and attendants in maintaining hospital discipline and hygiene</p>';
+document.getElementById('r3d1').innerHTML ='';
+document.getElementById('r3d2').innerHTML ='<p class="bullets" style="display:inline;">They are also useful for showing pollution control and generation parameters</p>';
+document.getElementById('r4d1').innerHTML ='';
+document.getElementById('r4d2').innerHTML ='<p class="bullets" style="display:inline;">Available in RED color, TRI color and FULL color</p>';
+document.getElementById('r5d1').innerHTML ='';
+document.getElementById('r5d2').innerHTML ='<p class="bullets" style="display:inline;">USB interface, LAN and wireless communication</p>';
+document.getElementById('r6d1').innerHTML ='';
+document.getElementById('r6d2').innerHTML ='';
+document.getElementById('r7d1').innerHTML ='';
+document.getElementById('r7d2').innerHTML ='';
+}
+*/
 
 document.getElementById('product_image').innerHTML='<img style="border-radius:10px;" width="340" height="220" src=photos/'+x+'1.jpg'+' alt="">';
 document.getElementById('product_image1').innerHTML='<img style="border-radius:10px;" src=photos/'+x+'1.jpg'+' alt="" class="responsive-img">';
@@ -200,19 +286,20 @@ if ($('#r'+x+'d2').is(':empty') ){
 }
 }
 
-function set2(x){
-document.getElementById('product_image').innerHTML='<img style="border-radius:10px;" width="340" height="220" src=photos/'+x+'1.jpg'+' alt="">';
-
-}
-function set3(x){
-document.getElementById('product_image').innerHTML='<img style="border-radius:10px;" width="340" height="220" src=photos/'+x+'2.jpg'+' alt="">';
+function set2(x) {
+	document.getElementById('product_image').innerHTML='<img style="border-radius:10px;" width="340" height="220" src=photos/'+x+'1.jpg'+' alt="">';
 }
 
-function set4(x){
-document.getElementById('product_image').innerHTML='<img style="border-radius:10px;" width="340" height="220" src=photos/'+x+'3.jpg'+' alt="">';	
+function set3(x) {
+	document.getElementById('product_image').innerHTML='<img style="border-radius:10px;" width="340" height="220" src=photos/'+x+'2.jpg'+' alt="">';
 }
+
+function set4(x) {
+	document.getElementById('product_image').innerHTML='<img style="border-radius:10px;" width="340" height="220" src=photos/'+x+'3.jpg'+' alt="">';	
+}
+
 var i=1,j=1,k=500;
-function start(){
+function start() {
 start1();
 start2();
 setTimeout(function() {
@@ -222,6 +309,7 @@ setTimeout(function() {
   	start();
 }, 120);
 }
+
 function start1(){
 setTimeout(function() {
   document.getElementById('field2').innerHTML=j;
@@ -230,6 +318,7 @@ setTimeout(function() {
   	start1();
 }, 25);
 } 
+
 function start2(){
 setTimeout(function() {
 
@@ -240,9 +329,11 @@ setTimeout(function() {
   	start2();
 }, 20);
 }
+
 function Reset(){
 document.getElementById('info').innerHTML='Connect With Us';	
 }
+
 function info2(){
 document.getElementById('info').innerHTML='electro.med25@gmail.com'+' , '+'electromed3@rediffmail.com'+' , ' +'info@electromed.co.in';
 }
@@ -252,6 +343,7 @@ document.getElementById('info').innerHTML='+91 9415085804'+','+'+91-9415039393';
 function info3(){
 document.getElementById('info').innerHTML='D -17, Vivekanand Puri, Lucknow –226007 India';
 }
+
 
 function filter(x,z){
 	var y,k;
@@ -266,59 +358,92 @@ function filter(x,z){
 	if(x=='LED_display') {
 		y='LED Display';
 		
-		document.getElementById('p1').innerHTML='<img src="photos/lfm1.jpg">';
+		document.getElementById('p1').innerHTML='<img src="photos/true_color_display1.jpg" height="170">';
 		document.getElementById('d1').innerHTML='I am a very simple card. I am good at containing small bits of information.';
-		document.getElementById('p2').innerHTML='<img src="photos/lfm1.jpg">';
+		document.getElementById('l1').innerHTML='<a href="products.php?id=true_color_display&type=1">TRUE COLOR HD SCREEN</a>'
+
+		document.getElementById('p2').innerHTML='<img src="photos/tri_color_display1.jpg" height="170">';
 		document.getElementById('d2').innerHTML='I am a very simple card. I am good at containing small bits of information.';
-		document.getElementById('p3').innerHTML='<img src="photos/lfm1.jpg">';
-		document.getElementById('d3').innerHTML='I am a very simple card. I am good at containing small bits of information.';	
+		document.getElementById('l2').innerHTML='<a href="products.php?id=tri_color_display&type=1">TRI COLOR DISPLAY BOARDS</a>';
+
+		document.getElementById('p3').innerHTML='<img src="photos/uni_color_display1.jpg" height="170">';
+		document.getElementById('d3').innerHTML='I am a very simple card. I am good at containing small bits of information.';
+		document.getElementById('l3').innerHTML='<a href="products.php?id=uni_color_display&type=1">UNI COLOR DISPLAY BOARDS</a>'	
 	}
+
 	else if(x=='Product_for_office') {
 		y='Product for Office';
 		
-		document.getElementById('p1').innerHTML='<img src="photos/lfm1.jpg">';
+		document.getElementById('p1').innerHTML='<img src="photos/token1.jpg" height="170">';
 		document.getElementById('d1').innerHTML='I am a very simple card. I am good at containing small bits of information.';
-		document.getElementById('p2').innerHTML='<img src="photos/lfm1.jpg">';
+		document.getElementById('l1').innerHTML='<a href="products.php?id=token&type=2">TOKEN DISPLAY</a>'
+
+		document.getElementById('p2').innerHTML='<img src="photos/digital_clock1.jpg" height="170">';
 		document.getElementById('d2').innerHTML='I am a very simple card. I am good at containing small bits of information.';
-		document.getElementById('p3').innerHTML='<img src="photos/lfm1.jpg">';
+		document.getElementById('l2').innerHTML='<a href="products.php?id=digital_clock&type=2">DIGITAL CLOCKS</a>'
+
+		document.getElementById('p3').innerHTML='<img src="photos/interest_rate_display_board1.jpg" height="170">';
 		document.getElementById('d3').innerHTML='I am a very simple card. I am good at containing small bits of information.';
-		document.getElementById('p4').innerHTML='<img src="photos/lfm1.jpg">';
+		document.getElementById('l3').innerHTML='<a href="products.php?id=interest_rate_display_board&type=2" style="font-size:11px;">INTEREST RATE DISPLAY BOARD</a>'
+
+		document.getElementById('p4').innerHTML='<img src="photos/scrolling_display1.jpg" height="170">';
 		document.getElementById('d4').innerHTML='I am a very simple card. I am good at containing small bits of information.';
+		document.getElementById('l4').innerHTML='<a href="products.php?id=scrolling_display&type=2">SCROLLING DISPLAY</a>';
 	}
+
 	else if(x=='Featured_Projects') {
 		y='Featured Projects';
 		
-		document.getElementById('p1').innerHTML='<img src="photos/lfm1.jpg">';
+		document.getElementById('p1').innerHTML='<img src="photos/lfm1.jpg" height="170">';
 		document.getElementById('d1').innerHTML='I am a very simple card. I am good at containing small bits of information.';
-		document.getElementById('p2').innerHTML='<img src="photos/lfm1.jpg">';
+		document.getElementById('p2').innerHTML='<img src="photos/lfm1.jpg" height="170">';
 		document.getElementById('d2').innerHTML='I am a very simple card. I am good at containing small bits of information.';
-		document.getElementById('p3').innerHTML='<img src="photos/lfm1.jpg">';
+		document.getElementById('p3').innerHTML='<img src="photos/lfm1.jpg" height="170">';
 		document.getElementById('d3').innerHTML='I am a very simple card. I am good at containing small bits of information.';
 
 	}
 	else if(x=='Industrial_Instruments') {
 		y='Industrial Instruments';	
 		
-		document.getElementById('p1').innerHTML='<img src="photos/lfm1.jpg">';
+		document.getElementById('p1').innerHTML='<img src="photos/flow_monitor1.jpg" height="170">';
 		document.getElementById('d1').innerHTML='I am a very simple card. I am good at containing small bits of information.';
-		document.getElementById('p2').innerHTML='<img src="photos/lfm1.jpg">';
+		document.getElementById('l1').innerHTML='<a href="products.php?id=flow_monitor&type=4">Flow Monitor</a>'
+
+		document.getElementById('p2').innerHTML='<img src="photos/lfm1.jpg" height="170">';
 		document.getElementById('d2').innerHTML='I am a very simple card. I am good at containing small bits of information.';
-		document.getElementById('p3').innerHTML='<img src="photos/lfm1.jpg">';
+		document.getElementById('l2').innerHTML='<a href="products.php?id=lfm&type=4" style="font-size:13px;">Line Frequency Monitor</a>'
+
+		document.getElementById('p3').innerHTML='<img src="photos/megawatt_panel1.jpg" height="170">';
 		document.getElementById('d3').innerHTML='I am a very simple card. I am good at containing small bits of information.';
-		document.getElementById('p4').innerHTML='<img src="photos/lfm1.jpg">';
+		document.getElementById('l3').innerHTML='<a href="products.php?id=megawatt_panel&type=4">Megawatt Panel</a>'
+
+		document.getElementById('p4').innerHTML='<img src="photos/process_indicator1.jpg" height="170">';
 		document.getElementById('d4').innerHTML='I am a very simple card. I am good at containing small bits of information.';
-		document.getElementById('p5').innerHTML='<img src="photos/lfm1.jpg">';
-		document.getElementById('d5').innerHTML='I am a very simple card. I am good at containing small bits of information.';
-		document.getElementById('p6').innerHTML='<img src="photos/lfm1.jpg">';
+		document.getElementById('l4').innerHTML='<a href="products.php?id=process_indicator&type=4" style="font-size:13px;">Process Indicator</a>'
+
+		document.getElementById('p5').innerHTML='<img src="photos/ph_meter1.jpg" height="170">';
+		document.getElementById('d5').innerHTML='Measures pH of all types of liquids.'+'<br><br>';
+		document.getElementById('l5').innerHTML='<a href="products.php?id=ph_meter&type=4">Ph meter</a>'
+
+		document.getElementById('p6').innerHTML='<img src="photos/tachometer1.jpg" height="170">';
 		document.getElementById('d6').innerHTML='I am a very simple card. I am good at containing small bits of information.';
-		document.getElementById('p7').innerHTML='<img src="photos/lfm1.jpg">';
+		document.getElementById('l6').innerHTML='<a href="products.php?id=tachometer&type=4">Tachometer</a>'
+
+		document.getElementById('p7').innerHTML='<img src="photos/temp_cont1.jpg" height="170">';
 		document.getElementById('d7').innerHTML='I am a very simple card. I am good at containing small bits of information.';
-		document.getElementById('p8').innerHTML='<img src="photos/lfm1.jpg">';
+		document.getElementById('l7').innerHTML='<a href="products.php?id=temp_cont&type=4" style="font-size:12px;">Temperature Controller</a>'
+
+		document.getElementById('p8').innerHTML='<img src="photos/twilight_switches1.jpg" height="170">';
 		document.getElementById('d8').innerHTML='I am a very simple card. I am good at containing small bits of information.';
-		document.getElementById('p9').innerHTML='<img src="photos/lfm1.jpg">';
+		document.getElementById('l8').innerHTML='<a href="products.php?id=twilight_switches&type=4">Twilight Switch</a>'
+
+		document.getElementById('p9').innerHTML='<img src="photos/industrial_display1.jpg" height="170">';
 		document.getElementById('d9').innerHTML='I am a very simple card. I am good at containing small bits of information.';
-		document.getElementById('p10').innerHTML='<img src="photos/lfm1.jpg">';
+		document.getElementById('l9').innerHTML='<a href="products.php?id=industrial_display&type=4">Industrial Display Board</a>'
+
+		document.getElementById('p10').innerHTML='<img src="photos/wsm1.jpg" height="170">';
 		document.getElementById('d10').innerHTML='I am a very simple card. I am good at containing small bits of information.';
+		document.getElementById('l10').innerHTML='<a href="products.php?id=wsm&type=4" >Weight Scale Monitor</a>'
 	}
 	document.getElementById('category_name').innerHTML=y;	
 }

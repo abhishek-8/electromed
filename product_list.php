@@ -38,68 +38,81 @@ $z=$_GET['num'];
     </head>
     <body>
         <div class="dropdown-content" id="products">
-            <div class="container">
-          <div class="row">
-          <div class="col l2"><p class="dropdown_headName"><a href="product_list.php?id=LED_display&num=3">LED Display</a></p><hr></div>
-          <div class="col l3"><p class="dropdown_headName"><a href="product_list.php?id=Product_for_office&num=4">Products for Office</a></p><hr></div>
-          <div class="col l3"><p class="dropdown_headName"><a href="product_list.php?id=Featured_Projects&num=3">Featured Projects</a></p><hr></div>
+      <div class="container">
+        <div class="row">
+          <div class="col l4"><p class="dropdown_headName"><a href="product_list.php?id=LED_display&num=3">LED Display</a></p><hr></div>
+          <div class="col l4"><p class="dropdown_headName"><a href="product_list.php?id=Product_for_office&num=4">Products for Office</a></p><hr></div>
           <div class="col l4"><p class="dropdown_headName"><a href="product_list.php?id=Industrial_Instruments&num=10">Industrial Instruments</a></p><hr></div>
         </div>
-                <div class="row" style="margin-top:-50px;">
-                    <div class="col l2">
-                        <p class="product_name"><a href="products.php?id=">TRUE COLOR HD SCREEN</a></p>
-                        <p class="product_name"><a href="products.php?id=">TRI COLOR DISPLAY BOARDS</a></p>
-                        <p class="product_name"><a href="products.php?id=">UNI COLOR DISPLAY BOARDS</a></p>
-                        
-                    </div>
-                    <div class="col l3">
-                        <p class="product_name"><a href="products.php?id=token&type=2">TOKEN DISPLAY</a></p>
-                        <p class="product_name"><a href="products.php?id=digital_clock&type=2">DIGITAL CLOCKS</a></p>
-                        <p class="product_name"><a href="products.php?id=industrial_display&type=2">INDUSTRIAL DISPLAY</a></p>
-                        <p class="product_name"><a href="products.php?id=scrolling_display&type=2">SCROLLING DISPLAY</a></p>
-                    </div>
-                    <div class="col l3">
-                        <p class="product_name"><a href="products.php?id=">COACH GUIDANCE SYSTEM</a></p>
-                        <p class="product_name"><a href="products.php?id=">TRAIN INFORMATION BOARD</a></p>
-                        <p class="product_name"><a href="products.php?id=">POWER GENERATION DISPLAY BOARD</a></p>
-                        
-                    </div>
-                    <div class="col l4">
-                        <p class="product_name"><a href="products.php?id=flow_monitor&type=4">FLOW MONITOR</a></p>
-                        <p class="product_name"><a href="products.php?id=lfm&type=4">LINE FREQUENCY MONITOR</a></p>
-                        <p class="product_name"><a href="products.php?id=megawatt_pannel&type=4">MEGA WATT PANEL</a></p>
-                        <p class="product_name"><a href="products.php?id=process_n_indicator&type=4">PROCESS INDICATORS</a></p>
-                        <p class="product_name"><a href="products.php?id=ph_meter&type=4">PH METER</a></p>
-                        <p class="product_name"><a href="products.php?id=tachometer&type=4">TACHOMETER</a></p>
-                        <p class="product_name"><a href="products.php?id=temp_cont&type=4">TEMPERATURE CONTROLLER</a></p>
-                        <p class="product_name"><a href="products.php?id=twilight_switches&type=4">TWILIGHT SWITCHES</a></p>
-                        <p class="product_name"><a href="products.php?id=industrial_display&type=4">INDUSTRIAL DISPLAY</a></p>
-                        <p class="product_name"><a href="products.php?id=wsm&type=4">WEIGHING SCALE MONITOR</a></p>
-                    </div>
-                </div>
-            </div>
+        <div class="row" style="margin-top:-50px;">
+          <div class="col l4">
+            <p class="product_name"><a href="products.php?id=true_color_display&type=1">TRUE COLOR HD SCREEN</a></p>
+            <p class="product_name"><a href="products.php?id=tri_color_display&type=1">TRI COLOR DISPLAY BOARDS</a></p>
+            <p class="product_name"><a href="products.php?id=uni_color_display&type=1">UNI COLOR DISPLAY BOARDS</a></p>
+            
+          </div>
+          <div class="col l4">
+            <p class="product_name"><a href="products.php?id=token&type=2">TOKEN DISPLAY</a></p>
+            <p class="product_name"><a href="products.php?id=digital_clock&type=2">DIGITAL CLOCKS</a></p>
+            <p class="product_name"><a href="products.php?id=interest_rate_display_board&type=2">INTEREST RATE DISPLAY BOARD</a></p>
+            <p class="product_name"><a href="products.php?id=scrolling_display&type=2">SCROLLING DISPLAY</a></p>
+          </div>
+          
+          <div class="col l4">
+            <p class="product_name"><a href="products.php?id=flow_monitor&type=4">FLOW MONITOR</a></p>
+            <p class="product_name"><a href="products.php?id=lfm&type=4">LINE FREQUENCY MONITOR</a></p>
+            <p class="product_name"><a href="products.php?id=megawatt_panel&type=4">MEGA WATT PANEL</a></p>
+            <p class="product_name"><a href="products.php?id=process_indicator&type=4">PROCESS INDICATORS</a></p>
+            <p class="product_name"><a href="products.php?id=ph_meter&type=4">PH METER</a></p>
+            <p class="product_name"><a href="products.php?id=tachometer&type=4">TACHOMETER</a></p>
+            <p class="product_name"><a href="products.php?id=temp_cont&type=4">TEMPERATURE CONTROLLER</a></p>
+            <p class="product_name"><a href="products.php?id=twilight_switches&type=4">TWILIGHT SWITCHES</a></p>
+            <p class="product_name"><a href="products.php?id=industrial_display&type=4">INDUSTRIAL DISPLAY</a></p>
+            <p class="product_name"><a href="products.php?id=wsm&type=4">WEIGHING SCALE MONITOR</a></p>
+          </div>
         </div>
-        <div class="navbar-fixed">
-            <nav>
-                <div class="nav-wrapper container">
-                    <a id="logo-container" href="" class="brand-logo">Electro-med</a>
-                    <ul class="right hide-on-med-and-down">
-                        <li class="active"><a href="home.html" class="navLink">Home</a></li>
-                        <li><a href="about.html" class="navLink">About Us</a></li>
-                        <li><a href="product_list.php" class="dropdown-button navLink" data-activates="products">Products<i class="material-icons right">arrow_drop_down</i></a></li>
-                        <li><a href="contactForm.html" class="navLink">Contact Us</a></li>
-                    </ul>
-                    
-                    <!-- <ul id="nav-mobile" class="side-nav">
-                        <li><a href="home.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="" class="dropdown-button" data-activates="products">Products<i class="material-icons right">arrow_drop_down</i></a></li>
-                        <li><a href="contactForm.html">Contact Us</a></li>
-                    </ul>
-                    <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>-->
-                </div>
-            </nav>
+      </div>
+    </div>
+
+    <div class="dropdown-content" id="projects">
+      <div class="container">
+        <div class="row">
+        <div class="col l12">
+            <p class="product_name"><a href="#">COACH GUIDANCE SYSTEM</a></p>
+            <p class="product_name"><a href="#">TRAIN INFORMATION BOARD</a></p>
+            <p class="product_name"><a href="#">POWER GENERATION DISPLAY BOARD</a></p>
+            
+          </div>
+       </div>
+    </div>
+    </div>
+
+   <div class="navbar-fixed">
+      <nav>
+        <div class="nav-wrapper container">
+          <a id="logo-container" href="" class="brand-logo">Electro-med</a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="home.html" class="navLink">Home</a></li>
+            <li><a href="about.html" class="navLink">About Us</a></li>
+            <li class="active"><a href="#" class="dropdown-button navLink" data-activates="products">Products<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a href="#" class="dropdown-button navLink" data-activates="projects">Projects<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a href="contactForm.html" class="navLink">Contact Us</a></li>
+          </ul>
+          
+         <!-- <ul id="nav-mobile" class="side-nav">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="" class="dropdown-button" data-activates="products">Products<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a href="contactForm.html">Contact Us</a></li> 
+          </ul>
+
+          <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>-->
+
         </div>
+      </nav>
+    </div>
+
+
         <div class="container-fluid">
             <div class="row">
                 <div class="col l3">
@@ -108,11 +121,11 @@ $z=$_GET['num'];
                         <li style="opacity: 0;">
                             <div class="collapsible-header" onclick="filter('LED_display',3)">LED Display</div>
                             <div class="collapsible-body container"><br>
-                                <a href="products.php?id=">TRUE COLOR HD SCREEN</a><br>
+                                <a href="products.php?id=true_color_display&type=1">TRUE COLOR HD SCREEN</a><br>
                                 <hr>
-                                <a href="products.php?id=">TRI COLOR DISPLAY BOARDS</a><br>
+                                <a href="products.php?id=tri_color_display&type=1">TRI COLOR DISPLAY BOARDS</a><br>
                                 <hr>
-                                <a href="products.php?id=">UNI COLOR DISPLAY BOARDS</a><br>
+                                <a href="products.php?id=uni_color_display&type=1">UNI COLOR DISPLAY BOARDS</a><br>
                                 
                             </div>
                         </li>
@@ -124,7 +137,7 @@ $z=$_GET['num'];
                                 <hr>
                                 <a href="products.php?id=digital_clock&type=2">DIGITAL CLOCKS</a><br>
                                 <hr>
-                                <a href="products.php?id=industrial_display&type=2">INDUSTRIAL DISPLAY</a><br>
+                                <a href="products.php?id=interest_rate_display_board&type=2">INTEREST RATE DISPLAY BOARD</a><br>
                                 <hr>
                                 <a href="products.php?id=scrolling_display&type=2">SCROLLING DISPLAY</a><br>
                             </div>
@@ -137,9 +150,9 @@ $z=$_GET['num'];
                                 <hr>
                                 <a href="products.php?id=lfm&type=4">LINE FREQUENCY MONITOR</a><br>
                                 <hr>
-                                <a href="products.php?id=megawatt_pannel&type=4">MEGA WATT PANEL</a><br>
+                                <a href="products.php?id=megawatt_panel&type=4">MEGA WATT PANEL</a><br>
                                 <hr>
-                                <a href="products.php?id=process_n_indicator&type=4">PROCESS INDICATORS</a><br>
+                                <a href="products.php?id=process_indicator&type=4">PROCESS INDICATORS</a><br>
                                 <hr>
                                 <a href="products.php?id=ph_meter&type=4">PH METER</a><br>
                                 <hr>
@@ -177,8 +190,7 @@ $z=$_GET['num'];
                                 <div class="card-content">
                                     <p id="d1"></p>
                                 </div>
-                                <div class="card-action">
-                                    <a href="#">This is a link</a>
+                                <div class="card-action" id="l1">
                                 </div>
                             </div>
                         </div>
@@ -190,8 +202,7 @@ $z=$_GET['num'];
                                 <div class="card-content">
                                     <p id="d2"></p>
                                 </div>
-                                <div class="card-action">
-                                    <a href="#">This is a link</a>
+                                <div class="card-action" id="l2">
                                 </div>
                             </div>
                         </div>
@@ -203,8 +214,7 @@ $z=$_GET['num'];
                                 <div class="card-content">
                                     <p id="d3"></p>
                                 </div>
-                                <div class="card-action">
-                                    <a href="#">This is a link</a>
+                                <div class="card-action" id="l3">
                                 </div>
                             </div>
                         </div>
@@ -216,8 +226,7 @@ $z=$_GET['num'];
                                 <div class="card-content">
                                     <p id="d4"></p>
                                 </div>
-                                <div class="card-action">
-                                    <a href="#">This is a link</a>
+                                <div class="card-action" id="l4">
                                 </div>
                             </div>
                         </div>
@@ -232,8 +241,7 @@ $z=$_GET['num'];
                                 <div class="card-content">
                                     <p id="d5"></p>
                                 </div>
-                                <div class="card-action">
-                                    <a href="#">This is a link</a>
+                                <div class="card-action" id="l5">
                                 </div>
                             </div>
                         </div>
@@ -245,8 +253,7 @@ $z=$_GET['num'];
                                 <div class="card-content">
                                     <p id="d6"></p>
                                 </div>
-                                <div class="card-action">
-                                    <a href="#">This is a link</a>
+                                <div class="card-action" id="l6">
                                 </div>
                             </div>
                         </div>
@@ -258,8 +265,7 @@ $z=$_GET['num'];
                                 <div class="card-content">
                                     <p id="d7"></p>
                                 </div>
-                                <div class="card-action">
-                                    <a href="#">This is a link</a>
+                                <div class="card-action" id="l7">
                                 </div>
                             </div>
                         </div>
@@ -271,8 +277,7 @@ $z=$_GET['num'];
                                 <div class="card-content">
                                     <p id="d8"></p>
                                 </div>
-                                <div class="card-action">
-                                    <a href="#">This is a link</a>
+                                <div class="card-action" id="l8">
                                 </div>
                             </div>
                         </div>
@@ -286,8 +291,7 @@ $z=$_GET['num'];
                                 <div class="card-content">
                                     <p id="d9"></p>
                                 </div>
-                                <div class="card-action">
-                                    <a href="#">This is a link</a>
+                                <div class="card-action" id="l9">
                                 </div>
                             </div>
                         </div>
@@ -299,8 +303,8 @@ $z=$_GET['num'];
                                 <div class="card-content">
                                     <p id="d10"></p>
                                 </div>
-                                <div class="card-action">
-                                    <a href="#">This is a link</a>
+                                <div class="card-action" id="l10">
+                                    
                                 </div>
                             </div>
                         </div>

@@ -110,9 +110,6 @@ body{
   background-color:#e0e0e0;
   margin-top:570px;
 }
-#products {
-  margin-left:180px;
-}
 
 .caption h3{
   text-shadow: 2px 2px #000000;
@@ -157,7 +154,15 @@ body{
 #products{
   min-width: 1000px;
   max-height: 400px;
+  margin-left:180px;
   background-color: #263238;
+  font-family:'Abel',sans-serif;
+}
+#projects {
+  min-width:300px;
+  max-height:250px;
+  margin-right:80px;
+   background-color: #263238;
   font-family:'Abel',sans-serif;
 }
 .headName {
@@ -280,4 +285,3 @@ footer.page-footer {
   /* Support for IE. */
   font-feature-settings: 'liga';
 }
-

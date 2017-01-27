@@ -1,7 +1,9 @@
 <?php
 $x= $_GET['id'];
-$z=$_GET['num'];
+$z=$_GET['num'];    
 ?>
+
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -115,7 +117,7 @@ $z=$_GET['num'];
     </div>
 
 
-            <div class="parallax-container" style="height:370px;">
+    <div class="parallax-container" style="height:370px;margin-top:-25px;">
       <div class="parallax"><img height="380" src="circuits.jpg"></div>
       <h3 class="headNamev3 white-text">Overview</h3><br>
       <div class="container">
@@ -124,13 +126,14 @@ $z=$_GET['num'];
         
       </div>
     </div>
+
         <div class="container-fluid">
             <div class="row">
                 <div class="col l3"><br><br>
-                    <a href="#!" class="btn" onclick="Materialize.showStaggeredList('#staggered-test')">Categories</a>
+                    <a href="#!" class="btn red lighten-2" onclick="Materialize.showStaggeredList('#staggered-test')">Categories</a>
                     <ul id="staggered-test" class="collapsible" data-collapsible="accordion">
                         <li style="opacity: 0;">
-                            <div class="collapsible-header" onclick="filter('LED_display',3)">LED Display</div>
+                            <div class="collapsible-header <?php if($x=='LED_display') echo 'active'; ?>" onclick="filter('LED_display',3)">LED Display</div>
                             <div class="collapsible-body container"><br>
                                 <a href="products.php?id=true_color_display&type=1">TRUE COLOR HD SCREEN</a><br>
                                 <hr>
@@ -141,7 +144,7 @@ $z=$_GET['num'];
                             </div>
                         </li>
                         <li style="opacity: 0;">
-                            <div class="collapsible-header" onclick="filter('Product_for_office',4)">Product for Office</div>
+                            <div class="collapsible-header <?php if($x=='Product_for_office') echo 'active';  ?>" onclick="filter('Product_for_office',4)">Product for Office</div>
                             <div class="collapsible-body container"><br>
                                 
                                 <a href="products.php?id=token&type=2">TOKEN DISPLAY</a><br>
@@ -155,7 +158,7 @@ $z=$_GET['num'];
                             
                         </li>
                         <li style="opacity: 0;">
-                            <div class="collapsible-header" onclick="filter('Industrial_Instruments',10)">Industrial Instruments</div>
+                            <div class="collapsible-header <?php if($x=='Industrial_Instruments') echo 'active'; ?>" onclick="filter('Industrial_Instruments',10)">Industrial Instruments</div>
                             <div class="collapsible-body container"><br>
                                 <a href="products.php?id=flow_monitor&type=4">FLOW MONITOR</a><br>
                                 <hr>
@@ -179,7 +182,7 @@ $z=$_GET['num'];
                             </div>
                         </li>
                         <li style="opacity: 0;">
-                            <div class="collapsible-header" onclick="filter('projects',6)">Featured Projects</div>
+                            <div class="collapsible-header <?php if($x=='projects') echo 'active'; ?>" onclick="filter('projects',6)">Featured Projects</div>
                             <div class="collapsible-body container"><br>
                                 <a href="products.php?id=">COACH GUIDANCE SYSTEM</a><br>
                                 <hr>
@@ -190,6 +193,7 @@ $z=$_GET['num'];
                         </li>
                     </ul>
                 </div>
+
                 <div class="col l9">
                     <h3 class="headName" id="category_name"></h3>
                     <div class="row">

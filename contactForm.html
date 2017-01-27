@@ -27,9 +27,6 @@
         });
         $('select').material_select();
         $('.parallax').parallax();
-        $('#info').click(function(){ 
-            Reset(); });
-        
         });
         
         </script>
@@ -91,10 +88,10 @@
           <a id="logo-container" href="" class="brand-logo">Electro-med</a>
           <ul class="right hide-on-med-and-down">
             <li><a href="home.html" class="navLink">Home</a></li>
-            <li><a href="about.html" class="navLink">About Us</a></li>
-            <li><a href="#" class="dropdown-button navLink" data-activates="products">Products<i class="material-icons right">arrow_drop_down</i></a></li>
-            <li><a href="#" class="dropdown-button navLink" data-activates="projects">Projects<i class="material-icons right">arrow_drop_down</i></a></li>
-            <li class="active"><a href="contactForm.html" class="navLink">Contact Us</a></li>
+            <li><a href="about.html" class="navLink">About</a></li>
+            <li><a href="product_list.php?id=projects&num=6" class="dropdown-button navLink" data-activates="projects">Projects<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a href="product_list.php?id=LED_display&num=3" class="dropdown-button navLink" data-activates="products">Products<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li class="active"><a href="contactForm.html" class="navLink">Contact</a></li>
           </ul>
           
          <!-- <ul id="nav-mobile" class="side-nav">
@@ -120,13 +117,40 @@
             </div>
         </div>
         
-        <div class="row">
-            <h5 style="position:absolute;font-family:'Abel',sans-serif;padding-left: 35px;">We'd love to help you </h5>
-            <div class="hoverable col l6 offset-l4 m7 s12 card-panel" id="contactform">
+        <div class="row container">
+
+            
+            <div class="col l12 m12 s12" id="contactform">
+            <h4 style="position:relative;font-family:'Abel',sans-serif;">We'd love to help you </h4>
+            <hr class="style11">
                 <form>
-                    <div class="row">
-                        <div class="col l6">
+                <div class="row">
+                    <div class="col l4 m4 s4">
                         <div class="input-field">
+                                <i class="material-icons prefix">perm_identity</i>
+                                <input id="name" type="text" class="validate" style="background:white" required>
+                                <label for="name">Name</label>
+                            </div>
+                    </div>
+                    <div class="col l4 m4 s4">
+                        <div class="input-field">
+                                <i class="material-icons prefix">email</i>
+                                <input id="email" type="email" class="validate" style="background:white" required>
+                                <label for="email" data-error="invalid email">Email</label>
+                            </div>
+                    </div>
+                    <div class="col l4 m4 s4">
+                        <div class="input-field">
+                                <i class="material-icons prefix">phone</i>
+                                <input id="phone" type="tel" class="validate" style="background:white" required>
+                                <label for="phone">Phone</label>
+                            </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col l6 m6 s6">
+                        <div class="input-field" style="background:white;margin-left:45px;">
                                 <select>
                                     <option value="" disabled selected>Choose your Industry</option>
                                     <option value="1">Power</option>
@@ -135,104 +159,67 @@
                                     <option value="4">Others</option>
                                 </select>
                             </div>
-                            <div class="input-field">
-                                <input id="poi" type="text" class="validate">
-                                <label for="poi">Product of Interest</label>
+                    </div>
+                    <div class="col l6 m6 s6">
+                        <div class="input-field">
+                                <input id="poi" type="text" class="validate" style="background:white" required>
+                                <label for="poi">Products of Interest</label>
                             </div>
-                            <div class="input-field">
-                                <i class="material-icons prefix">perm_identity</i>
-                                <input id="name" type="text" class="validate">
-                                <label for="name">Name</label>
-                            </div>
-                            <div class="input-field">
-                                <i class="material-icons prefix">phone</i>
-                                <input id="phone" type="text" class="validate">
-                                <label for="phone">Phone</label>
-                            </div>
-                            <div class="input-field">
-                                <i class="material-icons prefix">email</i>
-                                <input id="email" type="email" class="validate">
-                                <label for="email">Email</label>
-                            </div>
-                            <div class="input-field">
-                                <i class="material-icons prefix">room</i>
-                                <input id="address" type="text" class="validate">
-                                <label for="address">Address</label>
-                            </div>
-                            <div class="input-field">
-                                <i class="material-icons prefix">perm_contact_calendar</i>
-                                <input id="designation" type="text" class="validate">
-                                <label for="designation">Designation</label>
-                            </div>
-                            <div class="input-field">
-                                <i class="material-icons prefix">work</i>
-                                <input id="company" type="text" class="validate">
-                                <label for="company">Company</label>
-                            </div>
-                            
-                        </div>
-                        <div class="col l6">
+                    </div>
+                </div>
+                    <div class="row">
+                        <div class="col l12 m12 s12">
                             <div class="input-field">
                                 <i class="material-icons prefix">message</i>
-                                <textarea id="qry" class="materialize-textarea"></textarea>
+                                <textarea id="qry" class="materialize-textarea" required style="min-height:180px;background: white"></textarea>
                                 <label for="qry">Write your query...</label>
                             </div>
                             <center><input type="submit" class="black btn" style="color:#ff9800;"></center>
                         </div>
                     </div>
                 </form>
+                <hr class="style11">
             </div>
         </div>
 
-        <div class="parallax-container" style="height:340px;">
-    <div class="parallax"><img src="pexels-photo-201761.jpeg"></div>
     <h3 class="headNamev3 black-text" id="info">Connect With Us</h3><br>
-    <div class="container">
     <div class="row">
-        <div class="col l3 offset-l1 s4" id="phone" onclick="info1();">
-            <i class="large material-icons" style="cursor:pointer;">phone</i>
-        </div>
-        <div class="col l3 offset-l1 s4" id="email" onclick="info2();">
-            <i class="large material-icons" style="cursor:pointer;">email</i>
-        </div>
-        <div class="col l3 offset-l1 s4" id="address" onclick="info3();">
+        <div class="col l1">
             <i class="large material-icons" style="cursor:pointer;">room</i>
         </div>
-    </div>
-    <div class="row">
-        <div class="col l3 offset-l1 s4">
-            <p>Phone</p>
+        <div class="col l2">
+            <div class="row"><h4 class="headName1">ADDRESS</h4></div>
+            <div class="row"><h5 class="headName1">D -17, Vivekanand Puri,
+              <br/>Lucknow –226007 India</h5></div>
         </div>
-        <div class="col l3 offset-l1 s4">
-            <p>Email</p>
+        <div class="col l1 offset-l1">
+            <i class="large material-icons" style="cursor:pointer;">phone</i>
         </div>
-        <div class="col l3 offset-l1 s4">
-            <p>Address</p>
+        <div class="col l2">
+            <div class="row"><h4 class="headName1">Give us a call</h4></div>
+            <div class="row"><h5 class="headName1">+91 9415085804<br>+91 9415039393</h5></div>
+        </div>
+        <div class="col l1 offset-l1">
+            <i class="large material-icons" style="cursor:pointer;">email</i>
+        </div>
+        <div class="col l2">
+            <div class="row"><h4 class="headName1">Send Us a mail</h4></div>
+            <div class="row"><h5 class="headName1">electro.med25@gmail.com<br>electromed3@rediffmail.com<br>info@electromed.co.in</h5></div>
         </div>
     </div>
-    </div>
-    </div>
+
+
 
 
         <h1 class="headName">Find Us</h1>
         <hr>
-            <div class="row" id="contactDetails">
-                <div class="col l4 s12">
-                    <h6><i class="material-icons prefix">email</i><span>EMAIL</span></h6>
-                    <p>electro.med25@gmail.com<br>
-                        electromed3@rediffmail.com<br>
-                    info@electromed.co.in</p>
-                    <h6><i class="material-icons prefix">phone</i><span>PHONE</span></h6>
-                    <p>+91 9415085804<br>
-                    +91-9415039393</p>
-                    
-                    <h6><i class="material-icons prefix">room</i><span>ADDRESS</span></h6>
-                    <p>D -17, Vivekanand Puri,
-                    Lucknow –226007 India</p>
-                </div>
-                <div id="col l8 s12 map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14234.872605313356!2d80.93281223137183!3d26.880694430260508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf8e238a7eafccff!2sELECTRO-MED!5e0!3m2!1sen!2sin!4v1484311290986" width="850" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <div class="row container" id="contactDetails">
+            <div class="overlay" onClick="style.pointerEvents='none'"></div>
+                <div id="col l12 m 12s12 map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14234.872605313356!2d80.93281223137183!3d26.880694430260508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf8e238a7eafccff!2sELECTRO-MED!5e0!3m2!1sen!2sin!4v1484311290986" width="850" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
                 </div></a>
             </div>
+
+
         <footer class="page-footer">
       <div class="container">
         <div class="row">

@@ -24,6 +24,8 @@ $z=$_GET['num'];
          <script src="action.js" type="text/javascript"></script>
         <script>
         $(document).ready(function(){
+            $('.parallax').parallax();
+            Materialize.showStaggeredList('#staggered-test');
          filter('<?php echo $x; ?>',<?php echo $z; ?>);   
         $('.collapsible').collapsible();
         $(".dropdown-button").dropdown({
@@ -93,10 +95,10 @@ $z=$_GET['num'];
           <a id="logo-container" href="" class="brand-logo">Electro-med</a>
           <ul class="right hide-on-med-and-down">
             <li><a href="home.html" class="navLink">Home</a></li>
-            <li><a href="about.html" class="navLink">About Us</a></li>
-            <li class="active"><a href="#" class="dropdown-button navLink" data-activates="products">Products<i class="material-icons right">arrow_drop_down</i></a></li>
-            <li><a href="#" class="dropdown-button navLink" data-activates="projects">Projects<i class="material-icons right">arrow_drop_down</i></a></li>
-            <li><a href="contactForm.html" class="navLink">Contact Us</a></li>
+            <li><a href="about.html" class="navLink">About</a></li>
+            <li><a href="product_list.php?id=projects&num=6" class="dropdown-button navLink" data-activates="projects">Projects<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li class="active"><a href="product_list.php?id=LED_display&num=3" class="dropdown-button navLink" data-activates="products">Products<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a href="contactForm.html" class="navLink">Contact</a></li>
           </ul>
           
          <!-- <ul id="nav-mobile" class="side-nav">
@@ -113,9 +115,18 @@ $z=$_GET['num'];
     </div>
 
 
+            <div class="parallax-container" style="height:370px;">
+      <div class="parallax"><img height="380" src="circuits.jpg"></div>
+      <h3 class="headNamev3 white-text">Overview</h3><br>
+      <div class="container">
+        
+        <h4 style="font-family: 'Open Sans Condensed', sans-serif;" class="white-text"><center></center></h4>
+        
+      </div>
+    </div>
         <div class="container-fluid">
             <div class="row">
-                <div class="col l3">
+                <div class="col l3"><br><br>
                     <a href="#!" class="btn" onclick="Materialize.showStaggeredList('#staggered-test')">Categories</a>
                     <ul id="staggered-test" class="collapsible" data-collapsible="accordion">
                         <li style="opacity: 0;">
@@ -168,7 +179,7 @@ $z=$_GET['num'];
                             </div>
                         </li>
                         <li style="opacity: 0;">
-                            <div class="collapsible-header" onclick="filter('Featured_Projects',3)">Featured Projects</div>
+                            <div class="collapsible-header" onclick="filter('projects',6)">Featured Projects</div>
                             <div class="collapsible-body container"><br>
                                 <a href="products.php?id=">COACH GUIDANCE SYSTEM</a><br>
                                 <hr>

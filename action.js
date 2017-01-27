@@ -3,17 +3,50 @@ function set1(x) {
 if(x=='true_color_display') {
 document.getElementById('pre1').innerHTML='Products';
 document.getElementById('pre2').innerHTML='LED Display';
-document.getElementById('curr').innerHTML='True Color HD Screen';	
+document.getElementById('curr').innerHTML='True Color HD Screen';
+
+
+		document.getElementById('ri1').innerHTML='<img src="photos/tri_color_display1.jpg" height="170">';
+		document.getElementById('rd1').innerHTML='I am a very simple card. I am good at containing small bits of information.';
+		document.getElementById('rl1').innerHTML='<a href="products.php?id=tri_color_display&type=1">TRI COLOR DISPLAY BOARDS</a>';
+
+		document.getElementById('ri2').innerHTML='<img src="photos/uni_color_display1.jpg" height="170">';
+		document.getElementById('rd2').innerHTML='I am a very simple card. I am good at containing small bits of information.';
+		document.getElementById('rl2').innerHTML='<a href="products.php?id=uni_color_display&type=1">UNI COLOR DISPLAY BOARDS</a>'	
+		$('#rel3').hide();
+		$('#rel4').hide();
 }
 else if(x=='tri_color_display') {
 	document.getElementById('pre1').innerHTML='Products';
 document.getElementById('pre2').innerHTML='LED Display';
 document.getElementById('curr').innerHTML='TRI Color Display';
+
+
+		document.getElementById('ri1').innerHTML='<img src="photos/true_color_display1.jpg" height="170">';
+		document.getElementById('rd1').innerHTML='I am a very simple card. I am good at containing small bits of information.';
+		document.getElementById('rl1').innerHTML='<a href="products.php?id=true_color_display&type=1">TRUE COLOR HD SCREEN</a>'
+
+		document.getElementById('ri2').innerHTML='<img src="photos/uni_color_display1.jpg" height="170">';
+		document.getElementById('rd2').innerHTML='I am a very simple card. I am good at containing small bits of information.';
+		document.getElementById('rl2').innerHTML='<a href="products.php?id=uni_color_display&type=1">UNI COLOR DISPLAY BOARDS</a>'
+		$('#rel3').hide();
+		$('#rel4').hide();	
 }
 else if(x=='uni_color_display') {
 	document.getElementById('pre1').innerHTML='Products';
 document.getElementById('pre2').innerHTML='LED Display';
 document.getElementById('curr').innerHTML='Uni Color Display';
+
+document.getElementById('ri1').innerHTML='<img src="photos/true_color_display1.jpg" height="170">';
+		document.getElementById('rd1').innerHTML='I am a very simple card. I am good at containing small bits of information.';
+		document.getElementById('rl1').innerHTML='<a href="products.php?id=true_color_display&type=1">TRUE COLOR HD SCREEN</a>'
+
+		document.getElementById('ri2').innerHTML='<img src="photos/tri_color_display1.jpg" height="170">';
+		document.getElementById('rd2').innerHTML='I am a very simple card. I am good at containing small bits of information.';
+		document.getElementById('rl2').innerHTML='<a href="products.php?id=tri_color_display&type=1">TRI COLOR DISPLAY BOARDS</a>';
+
+		$('#rel3').hide();
+		$('#rel4').hide();
 
 }
 
@@ -37,6 +70,20 @@ document.getElementById('r6d1').innerHTML ='';
 document.getElementById('r6d2').innerHTML ='';
 document.getElementById('r7d1').innerHTML ='';
 document.getElementById('r7d2').innerHTML ='';
+
+
+		document.getElementById('ri1').innerHTML='<img src="photos/digital_clock1.jpg" height="170">';
+		document.getElementById('rd1').innerHTML='I am a very simple card. I am good at containing small bits of information.';
+		document.getElementById('rl1').innerHTML='<a href="products.php?id=digital_clock&type=2">DIGITAL CLOCKS</a>'
+
+		document.getElementById('ri2').innerHTML='<img src="photos/interest_rate_display_board1.jpg" height="170">';
+		document.getElementById('rd2').innerHTML='I am a very simple card. I am good at containing small bits of information.';
+		document.getElementById('rl2').innerHTML='<a href="products.php?id=interest_rate_display_board&type=2" style="font-size:11px;">INTEREST RATE DISPLAY BOARD</a>'
+
+		document.getElementById('ri3').innerHTML='<img src="photos/scrolling_display1.jpg" height="170">';
+		document.getElementById('rd3').innerHTML='I am a very simple card. I am good at containing small bits of information.';
+		document.getElementById('rl3').innerHTML='<a href="products.php?id=scrolling_display&type=2">SCROLLING DISPLAY</a>';
+		$('#rel4').hide();
 }
 
 else if(x=='digital_clock') {
@@ -59,15 +106,41 @@ document.getElementById('r6d1').innerHTML ='';
 document.getElementById('r6d2').innerHTML ='';
 document.getElementById('r7d1').innerHTML ='';
 document.getElementById('r7d2').innerHTML ='';
+
+document.getElementById('ri1').innerHTML='<img src="photos/token1.jpg" height="170">';
+		document.getElementById('rd1').innerHTML='I am a very simple card. I am good at containing small bits of information.';
+		document.getElementById('rl1').innerHTML='<a href="products.php?id=token&type=2">TOKEN DISPLAY</a>'
+
+		document.getElementById('ri2').innerHTML='<img src="photos/interest_rate_display_board1.jpg" height="170">';
+		document.getElementById('rd2').innerHTML='I am a very simple card. I am good at containing small bits of information.';
+		document.getElementById('rl2').innerHTML='<a href="products.php?id=interest_rate_display_board&type=2" style="font-size:11px;">INTEREST RATE DISPLAY BOARD</a>'
+
+		document.getElementById('ri3').innerHTML='<img src="photos/scrolling_display1.jpg" height="170">';
+		document.getElementById('rd3').innerHTML='I am a very simple card. I am good at containing small bits of information.';
+		document.getElementById('rl3').innerHTML='<a href="products.php?id=scrolling_display&type=2">SCROLLING DISPLAY</a>';
+
+		$('#rel4').hide();
 }
 
 
 
 else if(x=='interest_rate_display_board'){
-//document.getElementById('head_name').innerHTML='Scrolling Display';
 document.getElementById('pre1').innerHTML='Products';
 document.getElementById('pre2').innerHTML='Products for Office';
 document.getElementById('curr').innerHTML='Industrial Rate Display Board';
+
+document.getElementById('ri1').innerHTML='<img src="photos/token1.jpg" height="170">';
+		document.getElementById('rd1').innerHTML='I am a very simple card. I am good at containing small bits of information.';
+		document.getElementById('rl1').innerHTML='<a href="products.php?id=token&type=2">TOKEN DISPLAY</a>'
+
+		document.getElementById('ri2').innerHTML='<img src="photos/digital_clock1.jpg" height="170">';
+		document.getElementById('rd2').innerHTML='I am a very simple card. I am good at containing small bits of information.';
+		document.getElementById('rl2').innerHTML='<a href="products.php?id=digital_clock&type=2">DIGITAL CLOCKS</a>'
+
+		document.getElementById('ri3').innerHTML='<img src="photos/scrolling_display1.jpg" height="170">';
+		document.getElementById('rd3').innerHTML='I am a very simple card. I am good at containing small bits of information.';
+		document.getElementById('rl3').innerHTML='<a href="products.php?id=scrolling_display&type=2">SCROLLING DISPLAY</a>';
+		$('#rel4').hide();
 }
 
 
@@ -77,6 +150,20 @@ else if(x=='scrolling_display'){
 document.getElementById('pre1').innerHTML='Products';
 document.getElementById('pre2').innerHTML='Products for Office';
 document.getElementById('curr').innerHTML='Scrolling Display';
+
+document.getElementById('ri1').innerHTML='<img src="photos/token1.jpg" height="170">';
+		document.getElementById('rd1').innerHTML='I am a very simple card. I am good at containing small bits of information.';
+		document.getElementById('rl1').innerHTML='<a href="products.php?id=token&type=2">TOKEN DISPLAY</a>'
+
+		document.getElementById('ri2').innerHTML='<img src="photos/digital_clock1.jpg" height="170">';
+		document.getElementById('rd2').innerHTML='I am a very simple card. I am good at containing small bits of information.';
+		document.getElementById('rl2').innerHTML='<a href="products.php?id=digital_clock&type=2">DIGITAL CLOCKS</a>'
+
+		document.getElementById('ri3').innerHTML='<img src="photos/interest_rate_display_board1.jpg" height="170">';
+		document.getElementById('rd3').innerHTML='I am a very simple card. I am good at containing small bits of information.';
+		document.getElementById('rl3').innerHTML='<a href="products.php?id=interest_rate_display_board&type=2" style="font-size:11px;">INTEREST RATE DISPLAY BOARD</a>'
+
+		$('#rel4').hide();
 }
 
 if(x=='flow_monitor'){
@@ -84,6 +171,23 @@ if(x=='flow_monitor'){
 document.getElementById('pre1').innerHTML='Products';
 document.getElementById('pre2').innerHTML='Industrial Instruments';
 document.getElementById('curr').innerHTML='Flow Monitor';
+
+
+		document.getElementById('ri1').innerHTML='<img src="photos/lfm1.jpg" height="170">';
+		document.getElementById('rd1').innerHTML='I am a very simple card. I am good at containing small bits of information.';
+		document.getElementById('rl1').innerHTML='<a href="products.php?id=lfm&type=4" style="font-size:13px;">Line Frequency Monitor</a>'
+
+		document.getElementById('ri2').innerHTML='<img src="photos/megawatt_panel1.jpg" height="170">';
+		document.getElementById('rd2').innerHTML='I am a very simple card. I am good at containing small bits of information.';
+		document.getElementById('rl2').innerHTML='<a href="products.php?id=megawatt_panel&type=4">Megawatt Panel</a>'
+
+		document.getElementById('ri3').innerHTML='<img src="photos/process_indicator1.jpg" height="170">';
+		document.getElementById('rd3').innerHTML='I am a very simple card. I am good at containing small bits of information.';
+		document.getElementById('rl3').innerHTML='<a href="products.php?id=process_indicator&type=4" style="font-size:13px;">Process Indicator</a>'
+
+		document.getElementById('ri4').innerHTML='<img src="photos/twilight_switches1.jpg" height="170">';
+		document.getElementById('rd4').innerHTML='I am a very simple card. I am good at containing small bits of information.';
+		document.getElementById('rl4').innerHTML='<a href="products.php?id=twilight_switches&type=4">Twilight Switch</a>'
 }
 
 else if(x=='lfm'){
@@ -92,6 +196,21 @@ document.getElementById('pre1').innerHTML='Products';
 document.getElementById('pre2').innerHTML='Industrial Instruments';
 document.getElementById('curr').innerHTML='Line Frequency Monitor';
 
+document.getElementById('ri1').innerHTML='<img src="photos/flow_monitor1.jpg" height="170">';
+		document.getElementById('rd1').innerHTML='I am a very simple card. I am good at containing small bits of information.';
+		document.getElementById('rl1').innerHTML='<a href="products.php?id=flow_monitor&type=4">Flow Monitor</a>'
+
+		document.getElementById('ri2').innerHTML='<img src="photos/megawatt_panel1.jpg" height="170">';
+		document.getElementById('rd2').innerHTML='I am a very simple card. I am good at containing small bits of information.';
+		document.getElementById('rl2').innerHTML='<a href="products.php?id=megawatt_panel&type=4">Megawatt Panel</a>'
+
+		document.getElementById('ri3').innerHTML='<img src="photos/process_indicator1.jpg" height="170">';
+		document.getElementById('rd3').innerHTML='I am a very simple card. I am good at containing small bits of information.';
+		document.getElementById('rl3').innerHTML='<a href="products.php?id=process_indicator&type=4" style="font-size:13px;">Process Indicator</a>'
+
+document.getElementById('ri4').innerHTML='<img src="photos/twilight_switches1.jpg" height="170">';
+		document.getElementById('rd4').innerHTML='I am a very simple card. I am good at containing small bits of information.';
+		document.getElementById('rl4').innerHTML='<a href="products.php?id=twilight_switches&type=4">Twilight Switch</a>'
 }
 
 else if(x=='megawatt_panel'){
@@ -99,6 +218,22 @@ else if(x=='megawatt_panel'){
 document.getElementById('pre1').innerHTML='Products';
 document.getElementById('pre2').innerHTML='Industrial Instruments';
 document.getElementById('curr').innerHTML='Megawatt Panel';
+
+document.getElementById('ri1').innerHTML='<img src="photos/flow_monitor1.jpg" height="170">';
+		document.getElementById('rd1').innerHTML='I am a very simple card. I am good at containing small bits of information.';
+		document.getElementById('rl1').innerHTML='<a href="products.php?id=flow_monitor&type=4">Flow Monitor</a>'
+
+		document.getElementById('ri2').innerHTML='<img src="photos/lfm1.jpg" height="170">';
+		document.getElementById('rd2').innerHTML='I am a very simple card. I am good at containing small bits of information.';
+		document.getElementById('rl2').innerHTML='<a href="products.php?id=lfm&type=4" style="font-size:13px;">Line Frequency Monitor</a>'
+
+		document.getElementById('ri3').innerHTML='<img src="photos/process_indicator1.jpg" height="170">';
+		document.getElementById('rd3').innerHTML='I am a very simple card. I am good at containing small bits of information.';
+		document.getElementById('rl3').innerHTML='<a href="products.php?id=process_indicator&type=4" style="font-size:13px;">Process Indicator</a>'
+
+		document.getElementById('ri4').innerHTML='<img src="photos/twilight_switches1.jpg" height="170">';
+		document.getElementById('rd4').innerHTML='I am a very simple card. I am good at containing small bits of information.';
+		document.getElementById('rl4').innerHTML='<a href="products.php?id=twilight_switches&type=4">Twilight Switch</a>'
 }
 
 
@@ -123,6 +258,24 @@ document.getElementById('r6d1').innerHTML ='<span>Display digit:</span>';
 document.getElementById('r6d2').innerHTML ='7 segment red LED display';
 document.getElementById('r7d1').innerHTML ='<span>Digit height:</span>';
 document.getElementById('r7d2').innerHTML ='12.5mm, 25mm, 50mm, 100mm, 150mm, 200mm,  300mm';
+
+
+document.getElementById('ri1').innerHTML='<img src="photos/flow_monitor1.jpg" height="170">';
+		document.getElementById('rd1').innerHTML='I am a very simple card. I am good at containing small bits of information.';
+		document.getElementById('rl1').innerHTML='<a href="products.php?id=flow_monitor&type=4">Flow Monitor</a>'
+
+		document.getElementById('ri2').innerHTML='<img src="photos/lfm1.jpg" height="170">';
+		document.getElementById('rd2').innerHTML='I am a very simple card. I am good at containing small bits of information.';
+		document.getElementById('rl2').innerHTML='<a href="products.php?id=lfm&type=4" style="font-size:13px;">Line Frequency Monitor</a>'
+
+		document.getElementById('ri3').innerHTML='<img src="photos/megawatt_panel1.jpg" height="170">';
+		document.getElementById('rd3').innerHTML='I am a very simple card. I am good at containing small bits of information.';
+		document.getElementById('rl3').innerHTML='<a href="products.php?id=megawatt_panel&type=4">Megawatt Panel</a>'
+
+		document.getElementById('ri4').innerHTML='<img src="photos/twilight_switches1.jpg" height="170">';
+		document.getElementById('rd4').innerHTML='I am a very simple card. I am good at containing small bits of information.';
+		document.getElementById('rl4').innerHTML='<a href="products.php?id=twilight_switches&type=4">Twilight Switch</a>'	
+
 }
 
 else if(x=='ph_meter') {
@@ -148,6 +301,24 @@ document.getElementById('r6d2').innerHTML ='Analog recorder output facility';
 document.getElementById('r7d1').innerHTML ='Accessories';
 document.getElementById('r7d2').innerHTML ='pH electrodes, buffer tablets';
 
+
+document.getElementById('ri1').innerHTML='<img src="photos/flow_monitor1.jpg" height="170">';
+		document.getElementById('rd1').innerHTML='I am a very simple card. I am good at containing small bits of information.';
+		document.getElementById('rl1').innerHTML='<a href="products.php?id=flow_monitor&type=4">Flow Monitor</a>'
+
+		document.getElementById('ri2').innerHTML='<img src="photos/lfm1.jpg" height="170">';
+		document.getElementById('rd2').innerHTML='I am a very simple card. I am good at containing small bits of information.';
+		document.getElementById('rl2').innerHTML='<a href="products.php?id=lfm&type=4" style="font-size:13px;">Line Frequency Monitor</a>'
+
+		document.getElementById('ri3').innerHTML='<img src="photos/megawatt_panel1.jpg" height="170">';
+		document.getElementById('rd3').innerHTML='I am a very simple card. I am good at containing small bits of information.';
+		document.getElementById('rl3').innerHTML='<a href="products.php?id=megawatt_panel&type=4">Megawatt Panel</a>'
+
+		document.getElementById('ri4').innerHTML='<img src="photos/process_indicator1.jpg" height="170">';
+		document.getElementById('rd4').innerHTML='I am a very simple card. I am good at containing small bits of information.';
+		document.getElementById('rl4').innerHTML='<a href="products.php?id=process_indicator&type=4" style="font-size:13px;">Process Indicator</a>'
+
+
 }
 
 
@@ -171,6 +342,24 @@ document.getElementById('r6d1').innerHTML ='<span>Transducer:</span>';
 document.getElementById('r6d2').innerHTML =' Magnetic pick-up with 5mtrs. Lead';
 document.getElementById('r7d1').innerHTML ='<span>Operating voltage:</span>';
 document.getElementById('r7d2').innerHTML =' 230V ± 15%, 50Hz (standard)';
+
+
+document.getElementById('ri1').innerHTML='<img src="photos/flow_monitor1.jpg" height="170">';
+		document.getElementById('rd1').innerHTML='I am a very simple card. I am good at containing small bits of information.';
+		document.getElementById('rl1').innerHTML='<a href="products.php?id=flow_monitor&type=4">Flow Monitor</a>'
+
+		document.getElementById('ri2').innerHTML='<img src="photos/lfm1.jpg" height="170">';
+		document.getElementById('rd2').innerHTML='I am a very simple card. I am good at containing small bits of information.';
+		document.getElementById('rl2').innerHTML='<a href="products.php?id=lfm&type=4" style="font-size:13px;">Line Frequency Monitor</a>'
+
+		document.getElementById('ri3').innerHTML='<img src="photos/megawatt_panel1.jpg" height="170">';
+		document.getElementById('rd3').innerHTML='I am a very simple card. I am good at containing small bits of information.';
+		document.getElementById('rl3').innerHTML='<a href="products.php?id=megawatt_panel&type=4">Megawatt Panel</a>'
+
+		document.getElementById('ri4').innerHTML='<img src="photos/process_indicator1.jpg" height="170">';
+		document.getElementById('rd4').innerHTML='I am a very simple card. I am good at containing small bits of information.';
+		document.getElementById('rl4').innerHTML='<a href="products.php?id=process_indicator&type=4" style="font-size:13px;">Process Indicator</a>'
+
 }
 
 else if(x=='temp_cont') {
@@ -194,6 +383,23 @@ document.getElementById('r6d2').innerHTML ='';
 document.getElementById('r7d1').innerHTML ='';
 document.getElementById('r7d2').innerHTML ='';
 
+
+document.getElementById('ri1').innerHTML='<img src="photos/flow_monitor1.jpg" height="170">';
+		document.getElementById('rd1').innerHTML='I am a very simple card. I am good at containing small bits of information.';
+		document.getElementById('rl1').innerHTML='<a href="products.php?id=flow_monitor&type=4">Flow Monitor</a>'
+
+		document.getElementById('ri2').innerHTML='<img src="photos/lfm1.jpg" height="170">';
+		document.getElementById('rd2').innerHTML='I am a very simple card. I am good at containing small bits of information.';
+		document.getElementById('rl2').innerHTML='<a href="products.php?id=lfm&type=4" style="font-size:13px;">Line Frequency Monitor</a>'
+
+		document.getElementById('ri3').innerHTML='<img src="photos/megawatt_panel1.jpg" height="170">';
+		document.getElementById('rd3').innerHTML='I am a very simple card. I am good at containing small bits of information.';
+		document.getElementById('rl3').innerHTML='<a href="products.php?id=megawatt_panel&type=4">Megawatt Panel</a>'
+
+		document.getElementById('ri4').innerHTML='<img src="photos/process_indicator1.jpg" height="170">';
+		document.getElementById('rd4').innerHTML='I am a very simple card. I am good at containing small bits of information.';
+		document.getElementById('rl4').innerHTML='<a href="products.php?id=process_indicator&type=4" style="font-size:13px;">Process Indicator</a>'
+
 }
 
 else if(x=='twilight_switches') {
@@ -216,6 +422,23 @@ document.getElementById('r6d1').innerHTML ='';
 document.getElementById('r6d2').innerHTML ='<p class="bullets" style="display:inline;">For (10, 16, 32, 63 and 100) amps. : 03</p>';
 document.getElementById('r7d1').innerHTML ='';
 document.getElementById('r7d2').innerHTML ='';
+
+document.getElementById('ri1').innerHTML='<img src="photos/flow_monitor1.jpg" height="170">';
+		document.getElementById('rd1').innerHTML='I am a very simple card. I am good at containing small bits of information.';
+		document.getElementById('rl1').innerHTML='<a href="products.php?id=flow_monitor&type=4">Flow Monitor</a>'
+
+		document.getElementById('ri2').innerHTML='<img src="photos/lfm1.jpg" height="170">';
+		document.getElementById('rd2').innerHTML='I am a very simple card. I am good at containing small bits of information.';
+		document.getElementById('rl2').innerHTML='<a href="products.php?id=lfm&type=4" style="font-size:13px;">Line Frequency Monitor</a>'
+
+		document.getElementById('ri3').innerHTML='<img src="photos/megawatt_panel1.jpg" height="170">';
+		document.getElementById('rd3').innerHTML='I am a very simple card. I am good at containing small bits of information.';
+		document.getElementById('rl3').innerHTML='<a href="products.php?id=megawatt_panel&type=4">Megawatt Panel</a>'
+
+		document.getElementById('ri4').innerHTML='<img src="photos/process_indicator1.jpg" height="170">';
+		document.getElementById('rd4').innerHTML='I am a very simple card. I am good at containing small bits of information.';
+		document.getElementById('rl4').innerHTML='<a href="products.php?id=process_indicator&type=4" style="font-size:13px;">Process Indicator</a>'
+
 }
 
 else if(x=='industrial_display'){
@@ -223,6 +446,23 @@ else if(x=='industrial_display'){
 document.getElementById('pre1').innerHTML='Products';
 document.getElementById('pre2').innerHTML='Industrial Instruments';
 document.getElementById('curr').innerHTML='Industrial Display';
+
+document.getElementById('ri1').innerHTML='<img src="photos/flow_monitor1.jpg" height="170">';
+		document.getElementById('rd1').innerHTML='I am a very simple card. I am good at containing small bits of information.';
+		document.getElementById('rl1').innerHTML='<a href="products.php?id=flow_monitor&type=4">Flow Monitor</a>'
+
+		document.getElementById('ri2').innerHTML='<img src="photos/lfm1.jpg" height="170">';
+		document.getElementById('rd2').innerHTML='I am a very simple card. I am good at containing small bits of information.';
+		document.getElementById('rl2').innerHTML='<a href="products.php?id=lfm&type=4" style="font-size:13px;">Line Frequency Monitor</a>'
+
+		document.getElementById('ri3').innerHTML='<img src="photos/megawatt_panel1.jpg" height="170">';
+		document.getElementById('rd3').innerHTML='I am a very simple card. I am good at containing small bits of information.';
+		document.getElementById('rl3').innerHTML='<a href="products.php?id=megawatt_panel&type=4">Megawatt Panel</a>'
+
+		document.getElementById('ri4').innerHTML='<img src="photos/process_indicator1.jpg" height="170">';
+		document.getElementById('rd4').innerHTML='I am a very simple card. I am good at containing small bits of information.';
+		document.getElementById('rl4').innerHTML='<a href="products.php?id=process_indicator&type=4" style="font-size:13px;">Process Indicator</a>'
+
 }
 
 
@@ -246,6 +486,23 @@ document.getElementById('r6d1').innerHTML ='';
 document.getElementById('r6d2').innerHTML ='';
 document.getElementById('r7d1').innerHTML ='';
 document.getElementById('r7d2').innerHTML ='';
+
+document.getElementById('ri1').innerHTML='<img src="photos/flow_monitor1.jpg" height="170">';
+		document.getElementById('rd1').innerHTML='I am a very simple card. I am good at containing small bits of information.';
+		document.getElementById('rl1').innerHTML='<a href="products.php?id=flow_monitor&type=4">Flow Monitor</a>'
+
+		document.getElementById('ri2').innerHTML='<img src="photos/lfm1.jpg" height="170">';
+		document.getElementById('rd2').innerHTML='I am a very simple card. I am good at containing small bits of information.';
+		document.getElementById('rl2').innerHTML='<a href="products.php?id=lfm&type=4" style="font-size:13px;">Line Frequency Monitor</a>'
+
+		document.getElementById('ri3').innerHTML='<img src="photos/megawatt_panel1.jpg" height="170">';
+		document.getElementById('rd3').innerHTML='I am a very simple card. I am good at containing small bits of information.';
+		document.getElementById('rl3').innerHTML='<a href="products.php?id=megawatt_panel&type=4">Megawatt Panel</a>'
+
+		document.getElementById('ri4').innerHTML='<img src="photos/process_indicator1.jpg" height="170">';
+		document.getElementById('rd4').innerHTML='I am a very simple card. I am good at containing small bits of information.';
+		document.getElementById('rl4').innerHTML='<a href="products.php?id=process_indicator&type=4" style="font-size:13px;">Process Indicator</a>'
+
 }
 /*
 else if(x=='led_display'){
@@ -330,19 +587,6 @@ setTimeout(function() {
 }, 20);
 }
 
-function Reset(){
-document.getElementById('info').innerHTML='Connect With Us';	
-}
-
-function info2(){
-document.getElementById('info').innerHTML='electro.med25@gmail.com'+' , '+'electromed3@rediffmail.com'+' , ' +'info@electromed.co.in';
-}
-function info1(){
-document.getElementById('info').innerHTML='+91 9415085804'+','+'+91-9415039393';
-}
-function info3(){
-document.getElementById('info').innerHTML='D -17, Vivekanand Puri, Lucknow –226007 India';
-}
 
 
 function filter(x,z){
@@ -391,15 +635,32 @@ function filter(x,z){
 		document.getElementById('l4').innerHTML='<a href="products.php?id=scrolling_display&type=2">SCROLLING DISPLAY</a>';
 	}
 
-	else if(x=='Featured_Projects') {
+	else if(x=='projects') {
 		y='Featured Projects';
 		
-		document.getElementById('p1').innerHTML='<img src="photos/lfm1.jpg" height="170">';
+		document.getElementById('p1').innerHTML='<img src="Proj/proj1.jpg" height="170">';
 		document.getElementById('d1').innerHTML='I am a very simple card. I am good at containing small bits of information.';
-		document.getElementById('p2').innerHTML='<img src="photos/lfm1.jpg" height="170">';
+		document.getElementById('l1').innerHTML='<a href="#">Project 1</a>';
+
+		document.getElementById('p2').innerHTML='<img src="Proj/proj2.jpg" height="170">';
 		document.getElementById('d2').innerHTML='I am a very simple card. I am good at containing small bits of information.';
-		document.getElementById('p3').innerHTML='<img src="photos/lfm1.jpg" height="170">';
+		document.getElementById('l2').innerHTML='<a href="#">Project 2</a>';
+
+		document.getElementById('p3').innerHTML='<img src="Proj/proj3.jpg" height="170">';
 		document.getElementById('d3').innerHTML='I am a very simple card. I am good at containing small bits of information.';
+		document.getElementById('l3').innerHTML='<a href="#">Project 3</a>';
+
+		document.getElementById('p4').innerHTML='<img src="Proj/proj4.jpg" height="170">';
+		document.getElementById('d4').innerHTML='I am a very simple card. I am good at containing small bits of information.';
+		document.getElementById('l4').innerHTML='<a href="#">Project 4</a>';
+
+		document.getElementById('p5').innerHTML='<img src="Proj/proj5.jpg" height="170">';
+		document.getElementById('d5').innerHTML='I am a very simple card. I am good at containing small bits of information.';
+		document.getElementById('l5').innerHTML='<a href="#">Project 5</a>';
+
+		document.getElementById('p6').innerHTML='<img src="Proj/proj6.jpg" height="170">';
+		document.getElementById('d6').innerHTML='I am a very simple card. I am good at containing small bits of information.';
+		document.getElementById('l6').innerHTML='<a href="#">Project 6</a>';
 
 	}
 	else if(x=='Industrial_Instruments') {

@@ -2,20 +2,18 @@
 $x= $_GET['id'];
 $type=$_GET['type'];
 $link='';
-
 if($type==1){
-    $link='product_list.php?id=LED_display&num=3';
+$link='product_list.php?id=LED_display&num=3';
 }
 else if($type==2){
-  $link='product_list.php?id=Product_for_office&num=4';
+$link='product_list.php?id=Product_for_office&num=4';
 }
 else if($type==3){
-  $link='product_list.php?id=Featured_Projects&num=3';
+$link='product_list.php?id=projects&num=3';
 }
 else if($type==4){
-  $link='product_list.php?id=Industrial_Instruments&num=10';
+$link='product_list.php?id=Industrial_Instruments&num=10';
 }
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -38,7 +36,7 @@ else if($type==4){
     <script src="action.js" type="text/javascript"></script>
     <script>
     $(document).ready(function(){
-        $('.parallax').parallax();
+    $('.parallax').parallax();
     $('#request_for_quote').hide();
     $('.materialboxed').materialbox();
     set1('<?php echo $x ?>');
@@ -112,45 +110,40 @@ else if($type==4){
         </div>
       </div>
     </div>
-
     <div class="dropdown-content" id="projects">
       <div class="container">
         <div class="row">
-        <div class="col l12">
+          <div class="col l12">
             <p class="product_name"><a href="#">COACH GUIDANCE SYSTEM</a></p>
             <p class="product_name"><a href="#">TRAIN INFORMATION BOARD</a></p>
             <p class="product_name"><a href="#">POWER GENERATION DISPLAY BOARD</a></p>
             
           </div>
-       </div>
+        </div>
+      </div>
     </div>
-    </div>
-
-   <div class="navbar-fixed">
+    <div class="navbar-fixed">
       <nav>
         <div class="nav-wrapper container">
           <a id="logo-container" href="" class="brand-logo">Electro-med</a>
           <ul class="right hide-on-med-and-down">
             <li><a href="home.html" class="navLink">Home</a></li>
-            <li><a href="about.html" class="navLink">About Us</a></li>
-            <li class="active"><a href="#" class="dropdown-button navLink" data-activates="products">Products<i class="material-icons right">arrow_drop_down</i></a></li>
-            <li><a href="#" class="dropdown-button navLink" data-activates="projects">Projects<i class="material-icons right">arrow_drop_down</i></a></li>
-            <li><a href="contactForm.html" class="navLink">Contact Us</a></li>
+            <li><a href="about.html" class="navLink">About</a></li>
+            <li><a href="product_list.php?id=projects&num=6" class="dropdown-button navLink" data-activates="projects">Projects<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li class="active"><a href="product_list.php?id=LED_display&num=3" class="dropdown-button navLink" data-activates="products">Products<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a href="contactForm.html" class="navLink">Contact</a></li>
           </ul>
           
-         <!-- <ul id="nav-mobile" class="side-nav">
+          <!-- <ul id="nav-mobile" class="side-nav">
             <li><a href="home.html">Home</a></li>
             <li><a href="about.html">About Us</a></li>
             <li><a href="" class="dropdown-button" data-activates="products">Products<i class="material-icons right">arrow_drop_down</i></a></li>
-            <li><a href="contactForm.html">Contact Us</a></li> 
+            <li><a href="contactForm.html">Contact Us</a></li>
           </ul>
-
           <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>-->
-
         </div>
       </nav>
     </div>
-
     
     <nav class="white">
       <div class="nav-wrapper container">
@@ -176,28 +169,27 @@ else if($type==4){
           <textarea name="" placeholder="Message" style="font-size:15px;"></textarea>
           <div class="row">
             <div class="col l4">
-              <button class="btn rqst_btn" type="submit" name="action">Submit
+              <button class="btn red lighten-2" type="submit" name="action">Submit
               <i class="material-icons right">send</i>
               </button>
             </div>
             <div class="col l4 offset-l4">
-              <a class="btn rqst_btn close" style="float:right">Close</a>
+              <a class="btn red lighten-2 close" style="float:right">Close</a>
             </div>
           </div>
         </form>
       </fieldset>
     </div>
     
-       <div class="parallax-container" style="height:340px;">
-    <div class="parallax"><img src="pexels-photo-201761.jpeg"></div>
-    <h3 class="headNamev3 black-text" id="info">Overview</h3><br>
-    <div class="container">
-    
-     <h4 style="font-family: 'Open Sans Condensed', sans-serif;"><center id="desc"></center></h4>
-         
+    <div class="parallax-container" style="height:370px;">
+      <div class="parallax"><img height="380" src="circuits.jpg"></div>
+      <h3 class="headNamev3 white-text" id="info">Overview</h3><br>
+      <div class="container">
+        
+        <h4 style="font-family: 'Open Sans Condensed', sans-serif;" class="white-text"><center id="desc"></center></h4>
+        
+      </div>
     </div>
-    </div>
-
     <div class="row" style="z-index:-1;margin-top:-25px;">
       <div class="col l12 s12 m12">
         <br>
@@ -210,178 +202,216 @@ else if($type==4){
           </div>
           <br><br>
           <div class="row">
-            <div class="col l3 offset-l1 m3 offset-m1 s3 offset-s1 btn1 hoverable" id="product_image1"></div>
-            <div class="col l3 m3 s3 btn2 hoverable" id="product_image2" style="margin-left:2px;margin-right:2px;"></div>
-            <div class="col l3 m3 s3 btn3 hoverable" id="product_image3"></div>
-          </div>
-          <div class="row">
-            <div class="col l5">
-              <button class="btn" style="font-size:13px;"><i class="material-icons left">library_books</i> 
-              Brochure</button>
-            </div>
-            <div class="col l5">
-              <button class="btn rqst" style="font-size:13px;">Request for quote</button>
-            </div>
+            <div class="col l3 offset-l1 m3 offset-m1 s3 offset-s1 btn1" id="product_image1"></div>
+            <div class="col l3 m3 s3 btn2" id="product_image2" style="margin-left:2px;margin-right:2px;"></div>
+            <div class="col l3 m3 s3 btn3" id="product_image3"></div>
           </div>
         </div>
         
         <div class="col l6 s11 m11" id="specs">
-       <!-- <h5 class="headName"><blockquote>Overview</blockquote></h5> -->
-       <!--
+          <!-- <h5 class="headName"><blockquote>Overview</blockquote></h5> -->
+          <!--
         <blockquote style="font-family: 'Open Sans Condensed', sans-serif;font-size:21px;">Overview</blockquote>
-          <div class="headNamev2"><center id="desc"></center></div>-->
-          <br><br><br>
-          <table class="striped responsive-table" style="line-height: 90%;">
-          <blockquote style="font-family: 'Open Sans Condensed', sans-serif;font-size:21px;">Specifications</blockquote>
-          <div class="headNamev2"><center id="desc"></center></div>
-          <col width="30%">
-          <col width="0.5%">
-          <col width="69.5%">
-            <tr id="r1">
-              <td class="table_specs" id="r1d1" style="vertical-align: top;"></td>
-              <td style="text-align:center" id="c1">:</td>
-              <td class="table_specs" id="r1d2" style="vertical-align: top;"></td>
-            </tr>
-            <tr>
-              <td class="table_specs" id="r2d1" style="vertical-align: top;"></td>
-              <td style="text-align:center" id="c2">:</td>
-              <td class="table_specs" id="r2d2" style="vertical-align: top;"></td>
-            </tr>
-            <tr>
-              <td class="table_specs" id="r3d1" style="vertical-align: top;"></td>
-              <td style="text-align:center" id="c3">:</td>
-              <td class="table_specs" id="r3d2" style="vertical-align: top;"></td>
-            </tr>
-            <tr>
-              <td class="table_specs" id="r4d1" style="vertical-align: top;"></td>
-              <td style="text-align:center" id="c4">:</td>
-              <td class="table_specs" id="r4d2" style="vertical-align: top;"></td>
-            </tr>
-            <tr>
-              <td class="table_specs" id="r5d1" style="vertical-align: top;"></td>
-              <td style="text-align:center" id="c5">:</td>
-              <td class="table_specs" id="r5d2" style="vertical-align: top;"></td>
-            </tr>
-            <tr>
-              <td class="table_specs" id="r6d1" style="vertical-align: top;"></td>
-              <td style="text-align:center" id="c6">:</td>
-              <td class="table_specs" id="r6d2" style="vertical-align: top;"></td>
-            </tr>
-            <tr>
-              <td class="table_specs" id="r7d1" style="vertical-align: top;"></td>
-              <td style="text-align:center" id="c7">:</td>
-              <td class="table_specs" id="r7d2" style="vertical-align: top;"></td>
-            </tr>
-          </table>
-          
-        </div>
-        
+        <div class="headNamev2"><center id="desc"></center></div>-->
+        <br><br><br>
+        <table class="striped responsive-table" style="line-height: 90%;">
+        <blockquote style="font-family: 'Open Sans Condensed', sans-serif;font-size:21px;">Technical Specifications</blockquote>
+        <div class="headNamev2"><center id="desc"></center></div>
+        <col width="30%">
+        <col width="0.5%">
+        <col width="69.5%">
+        <tr id="r1">
+          <td class="table_specs" id="r1d1" style="vertical-align: top;"></td>
+          <td style="text-align:center" id="c1">:</td>
+          <td class="table_specs" id="r1d2" style="vertical-align: top;"></td>
+        </tr>
+        <tr>
+          <td class="table_specs" id="r2d1" style="vertical-align: top;"></td>
+          <td style="text-align:center" id="c2">:</td>
+          <td class="table_specs" id="r2d2" style="vertical-align: top;"></td>
+        </tr>
+        <tr>
+          <td class="table_specs" id="r3d1" style="vertical-align: top;"></td>
+          <td style="text-align:center" id="c3">:</td>
+          <td class="table_specs" id="r3d2" style="vertical-align: top;"></td>
+        </tr>
+        <tr>
+          <td class="table_specs" id="r4d1" style="vertical-align: top;"></td>
+          <td style="text-align:center" id="c4">:</td>
+          <td class="table_specs" id="r4d2" style="vertical-align: top;"></td>
+        </tr>
+        <tr>
+          <td class="table_specs" id="r5d1" style="vertical-align: top;"></td>
+          <td style="text-align:center" id="c5">:</td>
+          <td class="table_specs" id="r5d2" style="vertical-align: top;"></td>
+        </tr>
+        <tr>
+          <td class="table_specs" id="r6d1" style="vertical-align: top;"></td>
+          <td style="text-align:center" id="c6">:</td>
+          <td class="table_specs" id="r6d2" style="vertical-align: top;"></td>
+        </tr>
+        <tr>
+          <td class="table_specs" id="r7d1" style="vertical-align: top;"></td>
+          <td style="text-align:center" id="c7">:</td>
+          <td class="table_specs" id="r7d2" style="vertical-align: top;"></td>
+        </tr>
+      </table><br>
+      <div class="row">
+        <button class="btn red lighten-2" style="font-size:13px;float:left;"><i class="material-icons left">library_books</i>Brochure</button>
+        <button class="btn rqst red lighten-2" style="font-size:13px;float:right;">Request for quote</button>
       </div>
     </div>
-    <div>
-      <br><br>
-      <h2 class="headNamev3 black-text">Related Products</h2>
-      <hr>
-      <br>
-      <div class="row" id="related_products">
+    
+  </div>
+</div>
+<div>
+  <br><br>
+  <h3 class="headName black-text">You may also be interested in...</h3>
+  <hr>
+  <br>
+  <div class="row" id="related_products">
+    
+    <div class="col s12 m7 l3" id="rel1">
+      <div class="card">
+        <div class="card-image" id="ri1">
+          
+        </div>
+        <div class="card-content">
+          <p id="rd1"></p>
+        </div>
+        <div class="card-action" id="rl1">
+        </div>
+      </div>
+    </div>
+
+    <div class="col s12 m7 l3" id="rel2">
+      <div class="card">
+        <div class="card-image" id="ri2">
+          
+        </div>
+        <div class="card-content">
+          <p id="rd2"></p>
+        </div>
+        <div class="card-action" id="rl2">
+        </div>
+      </div>
+    </div>
+
+    <div class="col s12 m7 l3" id="rel3">
+      <div class="card">
+        <div class="card-image" id="ri3">
+          
+        </div>
+        <div class="card-content">
+          <p id="rd3"></p>
+        </div>
+        <div class="card-action" id="rl3">
+        </div>
+      </div>
+    </div>
+
+    <div class="col s12 m7 l3" id="rel4">
+      <div class="card">
+        <div class="card-image" id="ri4">
+          
+        </div>
+        <div class="card-content">
+          <p id="rd4"></p>
+        </div>
+        <div class="card-action" id="rl4">
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</div>
+<br><br>
+<footer class="page-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col l3 s12">
+        <div class="row">
+          <h5 class="white-text"><strong>[ Electro-Med ]</strong></h5>
+          <p class="white-text foot" >Welcome to the leading company delivering services that combine quality,reliability and compliance.</p>
+        </div>
+        <div class="row">
+          <div class="col l5">
+            <h6 class="white-text">Follow Us: </h6>
+          </div>
+          <div class="col l2"><a href="" target="_blank">
+            <img title="LinkedIn" alt="LinkedIn" src="icons/linkedin.png" width="30" height="30" />
+          </a></div>
+          <div class="col l2">
+            <a href="" target="_blank" target="_blank">
+            <img title="Facebook" alt="Facebook" src="icons/facebook.png" width="30" height="30" /></a>
+          </div>
+          <div class="col l2"><a href="" target="_blank">
+            <img title="Google" alt="Google" src="icons/google.png" width="30" height="30" />
+          </a></div>
+        </div>
+      </div>
+      <div class="col l3 s12">
+        <h6 class="white-text"><strong>Our Links</strong></h6>
         
-        <div class="col l2 offset-l1 hoverable"><img style="border-radius:10px;" src='photos/temp_cont1.jpg'+' alt="" class="responsive-img">
-          <a>know more</a></div>
-          <div class="col l2 hoverable"><img style="border-radius:10px;" src='photos/temp_cont2.jpg'+' alt="" class="responsive-img">
-            <a>know more</a></div>
-            <div class="col l2 hoverable"><img style="border-radius:10px;" src='photos/twilight_switches1.jpg'+' alt="" class="responsive-img">
-              <a>know more</a></div>
-              <div class="col l2 hoverable"><img style="border-radius:10px;" src='photos/temp_cont1.jpg'+' alt="" class="responsive-img">
-                <a>know more</a></div>
-              </div>
-            </div>
-            <br><br>
-            <footer class="page-footer">
-              <div class="container">
-                <div class="row">
-                  <div class="col l3 s12">
-                    <div class="row">
-                      <h5 class="white-text"><strong>[ Electro-Med ]</strong></h5>
-                      <p class="white-text foot" >Welcome to the leading company delivering services that combine quality,reliability and compliance.</p>
-                    </div>
-                    <div class="row">
-                      <div class="col l5">
-                        <h6 class="white-text">Follow Us: </h6>
-                      </div>
-                      <div class="col l2"><a href="" target="_blank">
-                        <img title="LinkedIn" alt="LinkedIn" src="icons/linkedin.png" width="30" height="30" />
-                      </a></div>
-                      <div class="col l2">
-                        <a href="" target="_blank" target="_blank">
-                        <img title="Facebook" alt="Facebook" src="icons/facebook.png" width="30" height="30" /></a>
-                      </div>
-                      <div class="col l2"><a href="" target="_blank">
-                        <img title="Google" alt="Google" src="icons/google.png" width="30" height="30" />
-                      </a></div>
-                    </div>
-                  </div>
-                  <div class="col l3 s12">
-                    <h6 class="white-text"><strong>Our Links</strong></h6>
-                    
-                    <ul>
-                      <li><a class="white-text foot" href="#!">About Us</a></li>
-                      <li><a class="white-text foot" href="#!">Clients</a></li>
-                      <li><a class="white-text foot" href="#!">Coach Guidance System</a></li>
-                      <li><a class="white-text foot" href="#!">Contact Us</a></li>
-                      <li><a class="white-text foot" href="#!">Customers List</a></li>
-                      <li><a class="white-text foot" href="#!">Enquiry</a></li>
-                    </ul>
-                  </div>
-                  <div class="col l3 s12">
-                    <h6 class="white-text"><strong>Career</strong></h6>
-                    <ul>
-                      <li><a class="white-text foot" href="#!">Job/Apprenticeship</a></li>
-                    </ul>
-                  </div>
-                  <div class="col l3 s12">
-                    <h6 class="white-text"><strong>Contact Info</strong></h6>
-                    <div class="row">
-                      <div class="col l1"><i class="material-icons prefix blue-text">phone</i></div>
-                      <div class="col l8 offset-l1"><p class="white-text foot" style="display:inline;">9415039393</p></div>
-                    </div>
-                    
-                    <div class="row">
-                      <div class="col l1"><i class="material-icons prefix blue-text">email</i></div>
-                      <div class="col l8 offset-l1"><p class="white-text foot" style="display:inline;">electro.med25@gmail.com</p></div>
-                    </div>
-                    <div class="row">
-                      <div class="col l1"><i class="material-icons prefix blue-text">room</i></div>
-                      <div class="col l8 offset-l1"><p class="white-text foot" style="display:inline;">D -17, Vivekanand Puri,
-                      <br/>Lucknow –226007 India</p></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="fixed-action-btn horizontal">
-                <a class="btn-floating btn-large blue">
-                  <i class="large material-icons">phone</i>
-                </a>
-                <ul>
-                  <li><a href="" target="_blank">
-                    <img title="LinkedIn" alt="LinkedIn" src="icons/linkedin.png" width="35" height="35" />
-                  </a></li>
-                  <li><a href="" target="_blank" target="_blank">
-                  <img title="Facebook" alt="Facebook" src="icons/facebook.png" width="35" height="35" /></a></li>
-                  <li><a href="" target="_blank">
-                    <img title="Google" alt="Google" src="icons/google.png" width="35" height="35" />
-                  </a></li>
-                  <li><a href="" target="_blank">
-                    <img title="Yahoo" alt="RSS" src="icons/yahoo.png" width="35" height="35" />
-                  </a></li>
-                </ul>
-              </div>
-            </div>
-            <hr>
-            <div class="footer-copyright">
-              <div class="container foot">
-                © 2017 Copyright Electromed. All rights reserved.
-              </div>
-            </div>
-          </footer>
-        </body>
-      </html>
+        <ul>
+          <li><a class="white-text foot" href="#!">About Us</a></li>
+          <li><a class="white-text foot" href="#!">Clients</a></li>
+          <li><a class="white-text foot" href="#!">Coach Guidance System</a></li>
+          <li><a class="white-text foot" href="#!">Contact Us</a></li>
+          <li><a class="white-text foot" href="#!">Customers List</a></li>
+          <li><a class="white-text foot" href="#!">Enquiry</a></li>
+        </ul>
+      </div>
+      <div class="col l3 s12">
+        <h6 class="white-text"><strong>Career</strong></h6>
+        <ul>
+          <li><a class="white-text foot" href="#!">Job/Apprenticeship</a></li>
+        </ul>
+      </div>
+      <div class="col l3 s12">
+        <h6 class="white-text"><strong>Contact Info</strong></h6>
+        <div class="row">
+          <div class="col l1"><i class="material-icons prefix blue-text">phone</i></div>
+          <div class="col l8 offset-l1"><p class="white-text foot" style="display:inline;">9415039393</p></div>
+        </div>
+        
+        <div class="row">
+          <div class="col l1"><i class="material-icons prefix blue-text">email</i></div>
+          <div class="col l8 offset-l1"><p class="white-text foot" style="display:inline;">electro.med25@gmail.com</p></div>
+        </div>
+        <div class="row">
+          <div class="col l1"><i class="material-icons prefix blue-text">room</i></div>
+          <div class="col l8 offset-l1"><p class="white-text foot" style="display:inline;">D -17, Vivekanand Puri,
+          <br/>Lucknow –226007 India</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="fixed-action-btn horizontal">
+    <a class="btn-floating btn-large blue">
+      <i class="large material-icons">phone</i>
+    </a>
+    <ul>
+      <li><a href="" target="_blank">
+        <img title="LinkedIn" alt="LinkedIn" src="icons/linkedin.png" width="35" height="35" />
+      </a></li>
+      <li><a href="" target="_blank" target="_blank">
+      <img title="Facebook" alt="Facebook" src="icons/facebook.png" width="35" height="35" /></a></li>
+      <li><a href="" target="_blank">
+        <img title="Google" alt="Google" src="icons/google.png" width="35" height="35" />
+      </a></li>
+      <li><a href="" target="_blank">
+        <img title="Yahoo" alt="RSS" src="icons/yahoo.png" width="35" height="35" />
+      </a></li>
+    </ul>
+  </div>
+</div>
+<hr>
+<div class="footer-copyright">
+  <div class="container foot">
+    © 2017 Copyright Electromed. All rights reserved.
+  </div>
+</div>
+</footer>
+</body>
+</html>

@@ -3,17 +3,21 @@ body{
   width: 100%;
 }
 #contactPage {
-  background: #e1f5fe;
+  background: #b3e5fc ;
+}
+#about_page,#product_page,#category_page{
+  background: white;
+}
+.Overview {
+  height:370px;
+background-color:rgba(50,7,14,0.15); 
 }
 hr.style11 {
   height: 6px;
   background: url(http://ibrahimjabbari.com/english/images/hr-11.png) repeat-x 0 0;
-    border: 0;
+  border: 0;
 }
-/*
-.form-entry{
-  background: #e1f5fe;
-}*/
+
 .cover-pic{
    -webkit-filter: opacity(50%); /* Safari */
     filter: opacity(50%);
@@ -146,6 +150,9 @@ hr.style11 {
   margin-top:280px;
   z-index:1;
 }
+#product_image{
+  height:280px;
+}
 .rqst_btn {
   background:white;
   color:black;
@@ -216,14 +223,18 @@ span {
 
 nav {
   margin-top: -25px;
-  background:#212121;
+  background:#ef5350;
   font-family:'Abel',sans-serif;
 }
 
 nav :hover {
-    color:#ff9800;
+    color:#263238;
   }
  #products :hover {
+  color :#ff9800;
+  background-color:#263238;
+ }
+ #projects :hover {
   color :#ff9800;
   background-color:#263238;
  }

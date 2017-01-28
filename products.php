@@ -36,8 +36,8 @@ $link='product_list.php?id=Industrial_Instruments&num=10';
     <script src="action.js" type="text/javascript"></script>
     <script>
     $(document).ready(function(){
-    $('.parallax').parallax();
     $('#request_for_quote').hide();
+    $('.parallax').parallax();
     $('.materialboxed').materialbox();
     set1('<?php echo $x ?>');
     $(".btn1").click(function(){
@@ -148,9 +148,9 @@ $link='product_list.php?id=Industrial_Instruments&num=10';
     <nav class="white">
       <div class="nav-wrapper container">
         <div class="col s12">
-          <a href="" class="breadcrumb black-text" id="pre1"></a>
+          <a href="product_list.php?id=LED_display&num=3" class="breadcrumb black-text" id="pre1"></a>
           <a href="<?php echo $link; ?>" class="breadcrumb black-text" id="pre2"></a>
-          <a href="" class="breadcrumb black-text" style="font-size:25px" id="curr"></a>
+          <a href="" class="breadcrumb black-text" id="curr" style="font-size:24px;"></a>
         </div>
       </div>
     </nav>
@@ -160,7 +160,7 @@ $link='product_list.php?id=Industrial_Instruments&num=10';
       <!--<img src="contact.jpg">-->
       
       <fieldset id="rqst_form">
-        <legend class="white-text" style="position:relative; background:#212121;height: 40px;width: 100%;"><center>Request for quote</center></legend>
+        <legend class="white-text red lighten-1" style="position:relative;height: 40px;width: 100%;"><center>Request for quote</center></legend>
         <form>
           <input id="name" type="text" class="validate" placeholder="Name" style="font-size:15px;">
           <input id="email" type="email" class="validate" placeholder="Email" style="font-size:15px;">
@@ -169,34 +169,46 @@ $link='product_list.php?id=Industrial_Instruments&num=10';
           <textarea name="" placeholder="Message" style="font-size:15px;"></textarea>
           <div class="row">
             <div class="col l4">
-              <button class="btn red lighten-2" type="submit" name="action">Submit
+              <button class="btn red lighten-1" type="submit" name="action">Submit
               <i class="material-icons right">send</i>
               </button>
             </div>
             <div class="col l4 offset-l4">
-              <a class="btn red lighten-2 close" style="float:right">Close</a>
+              <a class="btn red lighten-1 close" style="float:right">Close</a>
             </div>
           </div>
         </form>
       </fieldset>
     </div>
     
-    <div class="parallax-container" style="height:370px;">
-      <div class="parallax"><img height="380" src="circuits.jpg"></div>
-      <h3 class="headNamev3 white-text" id="info">Overview</h3><br>
+    <div class="parallax-container Overview">
+      <div class="parallax" ><img src="circuits.jpg" height="380"></div>
+      <br>
+      <h3 class="headNamev3 black-text" id="info">Overview</h3><br>
       <div class="container">
         
-        <h4 style="font-family: 'Open Sans Condensed', sans-serif;" class="white-text"><center id="desc"></center></h4>
+        <h4 style="font-family: 'Open Sans Condensed', sans-serif;" class="black-text"><center id="desc"></center></h4>
         
       </div>
     </div>
-    <div class="row" style="z-index:-1;margin-top:-25px;">
+<!--
+    <div class="container-fluid Overview" style="height:370px;">
+    <br>
+      <h3 class="headNamev3 black-text" id="info">Overview</h3><br>
+      <div class="container">
+        
+        <h4 style="font-family: 'Open Sans Condensed', sans-serif;" class="black-text"><center id="desc"></center></h4>
+        
+      </div>
+    </div>-->
+
+    <div class="row" style="z-index:-1;margin-top:-50px;">
       <div class="col l12 s12 m12">
         <br>
-        <div class="col l5 s11 m11" id="product">
+        <div class="col l5 s12 m5" id="product">
           <div class="row">
             <br><br><br><br>
-            <div class="col l11 offset-l1 s12 materialboxed" id="product_image">
+            <div class="col l11 offset-l1 s11 offset-s1 m11 offset materialboxed" id="product_image">
               
             </div>
           </div>
@@ -208,52 +220,52 @@ $link='product_list.php?id=Industrial_Instruments&num=10';
           </div>
         </div>
         
-        <div class="col l6 s11 m11" id="specs">
+        <div class="col l6 s12 m6" id="specs">
           <!-- <h5 class="headName"><blockquote>Overview</blockquote></h5> -->
           <!--
         <blockquote style="font-family: 'Open Sans Condensed', sans-serif;font-size:21px;">Overview</blockquote>
         <div class="headNamev2"><center id="desc"></center></div>-->
         <br><br><br>
         <table class="striped responsive-table" style="line-height: 90%;">
-        <blockquote style="font-family: 'Open Sans Condensed', sans-serif;font-size:21px;">Technical Specifications</blockquote>
+        <blockquote style="font-family: 'Open Sans Condensed', sans-serif;font-size:21px;"><b><u>Technical Specifications</u></b></blockquote>
         <div class="headNamev2"><center id="desc"></center></div>
         <col width="30%">
         <col width="0.5%">
         <col width="69.5%">
         <tr id="r1">
-          <td class="table_specs" id="r1d1" style="vertical-align: top;"></td>
+          <td class="table_specs" style="vertical-align: top;"><b id="r1d1"></b></td>
           <td style="text-align:center" id="c1">:</td>
-          <td class="table_specs" id="r1d2" style="vertical-align: top;"></td>
+          <td class="table_specs" style="vertical-align: top;"><b id="r1d2"></b></td>
         </tr>
-        <tr>
-          <td class="table_specs" id="r2d1" style="vertical-align: top;"></td>
+        <tr id="r2">
+          <td class="table_specs" style="vertical-align: top;"><b id="r2d1"></b></td>
           <td style="text-align:center" id="c2">:</td>
-          <td class="table_specs" id="r2d2" style="vertical-align: top;"></td>
+          <td class="table_specs" style="vertical-align: top;"><b id="r2d2"></b></td>
         </tr>
-        <tr>
-          <td class="table_specs" id="r3d1" style="vertical-align: top;"></td>
+        <tr id="r3">
+          <td class="table_specs" style="vertical-align: top;"><b id="r3d1"></b></td>
           <td style="text-align:center" id="c3">:</td>
-          <td class="table_specs" id="r3d2" style="vertical-align: top;"></td>
+          <td class="table_specs" style="vertical-align: top;"><b id="r3d2"></b></td>
         </tr>
-        <tr>
-          <td class="table_specs" id="r4d1" style="vertical-align: top;"></td>
+        <tr id="r4">
+          <td class="table_specs" style="vertical-align: top;"><b id="r4d1"></b></td>
           <td style="text-align:center" id="c4">:</td>
-          <td class="table_specs" id="r4d2" style="vertical-align: top;"></td>
+          <td class="table_specs" style="vertical-align: top;"><b id="r4d2"></b></td>
         </tr>
-        <tr>
-          <td class="table_specs" id="r5d1" style="vertical-align: top;"></td>
+        <tr id="r5">
+          <td class="table_specs" style="vertical-align: top;"><b id="r5d1"></b></td>
           <td style="text-align:center" id="c5">:</td>
-          <td class="table_specs" id="r5d2" style="vertical-align: top;"></td>
+          <td class="table_specs" style="vertical-align: top;"><b id="r5d2"></b></td>
         </tr>
-        <tr>
-          <td class="table_specs" id="r6d1" style="vertical-align: top;"></td>
+        <tr id="r6">
+          <td class="table_specs" style="vertical-align: top;"><b id="r6d1"></b></td>
           <td style="text-align:center" id="c6">:</td>
-          <td class="table_specs" id="r6d2" style="vertical-align: top;"></td>
+          <td class="table_specs" style="vertical-align: top;"><b id="r6d2"></b></td>
         </tr>
-        <tr>
-          <td class="table_specs" id="r7d1" style="vertical-align: top;"></td>
+        <tr id="r7">
+          <td class="table_specs" style="vertical-align: top;"><b id="r7d1"></b></td>
           <td style="text-align:center" id="c7">:</td>
-          <td class="table_specs" id="r7d2" style="vertical-align: top;"></td>
+          <td class="table_specs" style="vertical-align: top;"><b id="r7d2"></b></td>
         </tr>
       </table><br>
       <div class="row">
@@ -271,7 +283,7 @@ $link='product_list.php?id=Industrial_Instruments&num=10';
   <br>
   <div class="row" id="related_products">
     
-    <div class="col s12 m7 l3" id="rel1">
+    <div class="col s6 m7 l3" id="rel1">
       <div class="card">
         <div class="card-image" id="ri1">
           
@@ -284,7 +296,7 @@ $link='product_list.php?id=Industrial_Instruments&num=10';
       </div>
     </div>
 
-    <div class="col s12 m7 l3" id="rel2">
+    <div class="col s6 m7 l3" id="rel2">
       <div class="card">
         <div class="card-image" id="ri2">
           
@@ -297,7 +309,7 @@ $link='product_list.php?id=Industrial_Instruments&num=10';
       </div>
     </div>
 
-    <div class="col s12 m7 l3" id="rel3">
+    <div class="col s6 m7 l3" id="rel3">
       <div class="card">
         <div class="card-image" id="ri3">
           
@@ -310,7 +322,7 @@ $link='product_list.php?id=Industrial_Instruments&num=10';
       </div>
     </div>
 
-    <div class="col s12 m7 l3" id="rel4">
+    <div class="col s6 m7 l3" id="rel4">
       <div class="card">
         <div class="card-image" id="ri4">
           
@@ -327,91 +339,92 @@ $link='product_list.php?id=Industrial_Instruments&num=10';
 </div>
 <br><br>
 <footer class="page-footer">
-  <div class="container">
-    <div class="row">
-      <div class="col l3 s12">
+      <div class="container">
         <div class="row">
-          <h5 class="white-text"><strong>[ Electro-Med ]</strong></h5>
-          <p class="white-text foot" >Welcome to the leading company delivering services that combine quality,reliability and compliance.</p>
-        </div>
-        <div class="row">
-          <div class="col l5">
-            <h6 class="white-text">Follow Us: </h6>
+          <div class="col l3 s12">
+            <div class="row">
+              <h5 class="white-text"><strong>[ Electro-Med ]</strong></h5>
+              <p class="white-text foot" >Welcome to the leading company delivering services that combine quality,reliability and compliance.</p>
+            </div>
+            <div class="row">
+              <div class="col l5 s5 m5">
+                <h6 class="white-text">Follow Us: </h6>
+              </div>
+              <div class="col l2 s2 m2"><a href="" target="_blank">
+                <img title="LinkedIn" alt="LinkedIn" src="icons/linkedin.png" width="30" height="30" />
+              </a></div>
+              <div class="col l2 s2 m2">
+                <a href="" target="_blank" target="_blank">
+                <img title="Facebook" alt="Facebook" src="icons/facebook.png" width="30" height="30" /></a>
+              </div>
+              <div class="col l2 s2 m2"><a href="" target="_blank">
+                <img title="Google" alt="Google" src="icons/google.png" width="30" height="30" />
+              </a></div>
+            </div>
           </div>
-          <div class="col l2"><a href="" target="_blank">
-            <img title="LinkedIn" alt="LinkedIn" src="icons/linkedin.png" width="30" height="30" />
-          </a></div>
-          <div class="col l2">
-            <a href="" target="_blank" target="_blank">
-            <img title="Facebook" alt="Facebook" src="icons/facebook.png" width="30" height="30" /></a>
+          <div class="col l3 s3 m3">
+            <h6 class="white-text"><strong>Our Links</strong></h6>
+            
+            <ul>
+              <li><a class="white-text foot" href="about.html">About Us</a></li>
+              <li><a class="white-text foot" href="contactForm.html">Contact Us</a></li>
+              <li><a class="white-text foot" href="product_list.php?id=LED_display&num=3">Products</a></li>
+            </ul>
           </div>
-          <div class="col l2"><a href="" target="_blank">
-            <img title="Google" alt="Google" src="icons/google.png" width="30" height="30" />
-          </a></div>
+          <div class="col l3 s3 m3">
+            <h6 class="white-text"><strong>Projects</strong></h6>
+            <ul>
+              <li><a class="white-text foot" href="#!">Project 1</a></li>
+              <li><a class="white-text foot" href="#!">Project 2</a></li>
+              <li><a class="white-text foot" href="#!">Project 3</a></li>
+              <li><a class="white-text foot" href="#!">Project 4</a></li>
+            </ul>
+          </div>
+          <div class="col l3 s3 m3">
+            <h6 class="white-text"><strong>Contact Info</strong></h6>
+            <div class="row">
+              <div class="col l1 s1 m1"><i class="material-icons prefix blue-text">phone</i></div>
+              <div class="col l8 offset-l1 s8 offset-s1 m8 offset-m1"><p class="white-text foot" style="display:inline;">9415039393</p></div>
+            </div>
+            
+            <div class="row">
+              <div class="col l1 s1 m1"><i class="material-icons prefix blue-text">email</i></div>
+              <div class="col l8 offset-l1 s8 offset-s1 m8 offset-m1"><p class="white-text foot" style="display:inline;">electro.med25@gmail.com</p></div>
+            </div>
+            <div class="row">
+              <div class="col l1 s1 m1"><i class="material-icons prefix blue-text">room</i></div>
+              <div class="col l8 offset-l1 s8 offset-s1 m8 offset-m1"><p class="white-text foot" style="display:inline;">D -17, Vivekanand Puri,
+              <br/>Lucknow –226007 India</p></div>
+            </div>
+          
+          </div>
         </div>
       </div>
-      <div class="col l3 s12">
-        <h6 class="white-text"><strong>Our Links</strong></h6>
-        
+      <div class="fixed-action-btn horizontal">
+        <a class="btn-floating btn-large red lighten-1">
+          <i class="large material-icons">phone</i>
+        </a>
         <ul>
-          <li><a class="white-text foot" href="#!">About Us</a></li>
-          <li><a class="white-text foot" href="#!">Clients</a></li>
-          <li><a class="white-text foot" href="#!">Coach Guidance System</a></li>
-          <li><a class="white-text foot" href="#!">Contact Us</a></li>
-          <li><a class="white-text foot" href="#!">Customers List</a></li>
-          <li><a class="white-text foot" href="#!">Enquiry</a></li>
+          <li><a href="" target="_blank">
+            <img title="LinkedIn" alt="LinkedIn" src="icons/linkedin.png" width="35" height="35" />
+          </a></li>
+          <li><a href="" target="_blank" target="_blank">
+          <img title="Facebook" alt="Facebook" src="icons/facebook.png" width="35" height="35" /></a></li>
+          <li><a href="" target="_blank">
+            <img title="Google" alt="Google" src="icons/google.png" width="35" height="35" />
+          </a></li>
+          <li><a href="" target="_blank">
+            <img title="Yahoo" alt="RSS" src="icons/yahoo.png" width="35" height="35" />
+          </a></li>
         </ul>
-      </div>
-      <div class="col l3 s12">
-        <h6 class="white-text"><strong>Career</strong></h6>
-        <ul>
-          <li><a class="white-text foot" href="#!">Job/Apprenticeship</a></li>
-        </ul>
-      </div>
-      <div class="col l3 s12">
-        <h6 class="white-text"><strong>Contact Info</strong></h6>
-        <div class="row">
-          <div class="col l1"><i class="material-icons prefix blue-text">phone</i></div>
-          <div class="col l8 offset-l1"><p class="white-text foot" style="display:inline;">9415039393</p></div>
-        </div>
-        
-        <div class="row">
-          <div class="col l1"><i class="material-icons prefix blue-text">email</i></div>
-          <div class="col l8 offset-l1"><p class="white-text foot" style="display:inline;">electro.med25@gmail.com</p></div>
-        </div>
-        <div class="row">
-          <div class="col l1"><i class="material-icons prefix blue-text">room</i></div>
-          <div class="col l8 offset-l1"><p class="white-text foot" style="display:inline;">D -17, Vivekanand Puri,
-          <br/>Lucknow –226007 India</p></div>
-        </div>
       </div>
     </div>
-  </div>
-  <div class="fixed-action-btn horizontal">
-    <a class="btn-floating btn-large blue">
-      <i class="large material-icons">phone</i>
-    </a>
-    <ul>
-      <li><a href="" target="_blank">
-        <img title="LinkedIn" alt="LinkedIn" src="icons/linkedin.png" width="35" height="35" />
-      </a></li>
-      <li><a href="" target="_blank" target="_blank">
-      <img title="Facebook" alt="Facebook" src="icons/facebook.png" width="35" height="35" /></a></li>
-      <li><a href="" target="_blank">
-        <img title="Google" alt="Google" src="icons/google.png" width="35" height="35" />
-      </a></li>
-      <li><a href="" target="_blank">
-        <img title="Yahoo" alt="RSS" src="icons/yahoo.png" width="35" height="35" />
-      </a></li>
-    </ul>
-  </div>
-</div>
-<hr>
-<div class="footer-copyright">
-  <div class="container foot">
-    © 2017 Copyright Electromed. All rights reserved.
-  </div>
-</div>
-</footer>
+    <hr>
+    <div class="footer-copyright">
+      <div class="container foot">
+        © 2017 Copyright Electromed. All rights reserved.
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

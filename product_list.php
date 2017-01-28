@@ -26,8 +26,8 @@ $z=$_GET['num'];
          <script src="action.js" type="text/javascript"></script>
         <script>
         $(document).ready(function(){
-            $('.parallax').parallax();
             Materialize.showStaggeredList('#staggered-test');
+            $('.parallax').parallax();
          filter('<?php echo $x; ?>',<?php echo $z; ?>);   
         $('.collapsible').collapsible();
         $(".dropdown-button").dropdown({
@@ -40,7 +40,7 @@ $z=$_GET['num'];
         
         </script>
     </head>
-    <body>
+    <body id="category_page">
         <div class="dropdown-content" id="products">
       <div class="container">
         <div class="row">
@@ -117,12 +117,13 @@ $z=$_GET['num'];
     </div>
 
 
-    <div class="parallax-container" style="height:370px;margin-top:-25px;">
-      <div class="parallax"><img height="380" src="circuits.jpg"></div>
-      <h3 class="headNamev3 white-text">Overview</h3><br>
+     <div class="parallax-container Overview">
+      <div class="parallax" ><img src="circuits.jpg" height="380"></div>
+      <br>
+      <h3 class="headNamev3 black-text" id="info">Overview</h3><br>
       <div class="container">
         
-        <h4 style="font-family: 'Open Sans Condensed', sans-serif;" class="white-text"><center></center></h4>
+        <h4 style="font-family: 'Open Sans Condensed', sans-serif;" class="black-text"><center id="desc"></center></h4>
         
       </div>
     </div>
@@ -327,100 +328,93 @@ $z=$_GET['num'];
                 </div>
             </div>
         </div>
-        <footer class="page-footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col l3 s12">
-                        <div class="row">
-                            <h5 class="white-text"><strong>[ Electro-Med ]</strong></h5>
-                            <p class="white-text foot" >Welcome to the leading company delivering services that combine quality,reliability and compliance.</p>
-                        </div>
-                        <div class="row">
-                            <div class="col l5">
-                                <h6 class="white-text">Follow Us: </h6>
-                            </div>
-                            <div class="col l2"><a href="" target="_blank">
-                                <img title="LinkedIn" alt="LinkedIn" src="icons/linkedin.png" width="30" height="30" />
-                            </a></div>
-                            <div class="col l2">
-                                <a href="" target="_blank" target="_blank">
-                                <img title="Facebook" alt="Facebook" src="icons/facebook.png" width="30" height="30" /></a>
-                            </div>
-                            <div class="col l2"><a href="" target="_blank">
-                                <img title="Google" alt="Google" src="icons/google.png" width="30" height="30" />
-                            </a></div>
-                        </div>
-                    </div>
-                    <div class="col l3 s12">
-                        <h6 class="white-text"><strong>Our Links</strong></h6>
-                        
-                        <ul>
-                            <li><a class="white-text foot" href="#!">About Us</a></li>
-                            <li><a class="white-text foot" href="#!">Clients</a></li>
-                            <li><a class="white-text foot" href="#!">Coach Guidance System</a></li>
-                            <li><a class="white-text foot" href="#!">Contact Us</a></li>
-                            <li><a class="white-text foot" href="#!">Customers List</a></li>
-                            <li><a class="white-text foot" href="#!">Enquiry</a></li>
-                        </ul>
-                    </div>
-                    <div class="col l3 s12">
-                        <h6 class="white-text"><strong>Career</strong></h6>
-                        <ul>
-                            <li><a class="white-text foot" href="#!">Job/Apprenticeship</a></li>
-                        </ul>
-                    </div>
-                    <div class="col l3 s12">
-                        <h6 class="white-text"><strong>Contact Info</strong></h6>
-                        <div class="row">
-                            <div class="col l1"><i class="material-icons prefix blue-text">phone</i></div>
-                            <div class="col l8 offset-l1"><p class="white-text foot" style="display:inline;">9415039393</p></div>
-                        </div>
-                        
-                        <div class="row">
-                            <div class="col l1"><i class="material-icons prefix blue-text">email</i></div>
-                            <div class="col l8 offset-l1"><p class="white-text foot" style="display:inline;">electro.med25@gmail.com</p></div>
-                        </div>
-                        <div class="row">
-                            <div class="col l1"><i class="material-icons prefix blue-text">room</i></div>
-                            <div class="col l8 offset-l1"><p class="white-text foot" style="display:inline;">D -17, Vivekanand Puri,
-                            <br/>Lucknow –226007 India</p></div>
-                        </div>
-                        <!-- <ul>
-                            <li><i class="material-icons prefix blue-text">phone</i><p class="white-text foot" style="display:inline;">9415039393</p></li>
-                            <li><i class="material-icons prefix blue-text">email</i><p class="white-text foot" style="display:inline;">  electro.med25@gmail.com</p></li>
-                            <li><i class="material-icons prefix blue-text">room</i><p class="white-text foot" style="display:inline;">D -17, Vivekanand Puri,
-                            <br/>Lucknow –226007 India</p></li>
-                            
-                            
-                        </ul> -->
-                    </div>
-                </div>
+       <footer class="page-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col l3 s12">
+            <div class="row">
+              <h5 class="white-text"><strong>[ Electro-Med ]</strong></h5>
+              <p class="white-text foot" >Welcome to the leading company delivering services that combine quality,reliability and compliance.</p>
             </div>
-            <div class="fixed-action-btn horizontal">
-                <a class="btn-floating btn-large blue">
-                    <i class="large material-icons">phone</i>
-                </a>
-                <ul>
-                    <li><a href="" target="_blank">
-                        <img title="LinkedIn" alt="LinkedIn" src="icons/linkedin.png" width="35" height="35" />
-                    </a></li>
-                    <li><a href="" target="_blank" target="_blank">
-                    <img title="Facebook" alt="Facebook" src="icons/facebook.png" width="35" height="35" /></a></li>
-                    <li><a href="" target="_blank">
-                        <img title="Google" alt="Google" src="icons/google.png" width="35" height="35" />
-                    </a></li>
-                    <li><a href="" target="_blank">
-                        <img title="Yahoo" alt="RSS" src="icons/yahoo.png" width="35" height="35" />
-                    </a></li>
-                </ul>
+            <div class="row">
+              <div class="col l5 s5 m5">
+                <h6 class="white-text">Follow Us: </h6>
+              </div>
+              <div class="col l2 s2 m2"><a href="" target="_blank">
+                <img title="LinkedIn" alt="LinkedIn" src="icons/linkedin.png" width="30" height="30" />
+              </a></div>
+              <div class="col l2 s2 m2">
+                <a href="" target="_blank" target="_blank">
+                <img title="Facebook" alt="Facebook" src="icons/facebook.png" width="30" height="30" /></a>
+              </div>
+              <div class="col l2 s2 m2"><a href="" target="_blank">
+                <img title="Google" alt="Google" src="icons/google.png" width="30" height="30" />
+              </a></div>
             </div>
+          </div>
+          <div class="col l3 s3 m3">
+            <h6 class="white-text"><strong>Our Links</strong></h6>
+            
+            <ul>
+              <li><a class="white-text foot" href="about.html">About Us</a></li>
+              <li><a class="white-text foot" href="contactForm.html">Contact Us</a></li>
+              <li><a class="white-text foot" href="product_list.php?id=LED_display&num=3">Products</a></li>
+            </ul>
+          </div>
+          <div class="col l3 s3 m3">
+            <h6 class="white-text"><strong>Projects</strong></h6>
+            <ul>
+              <li><a class="white-text foot" href="#!">Project 1</a></li>
+              <li><a class="white-text foot" href="#!">Project 2</a></li>
+              <li><a class="white-text foot" href="#!">Project 3</a></li>
+              <li><a class="white-text foot" href="#!">Project 4</a></li>
+            </ul>
+          </div>
+          <div class="col l3 s3 m3">
+            <h6 class="white-text"><strong>Contact Info</strong></h6>
+            <div class="row">
+              <div class="col l1 s1 m1"><i class="material-icons prefix blue-text">phone</i></div>
+              <div class="col l8 offset-l1 s8 offset-s1 m8 offset-m1"><p class="white-text foot" style="display:inline;">9415039393</p></div>
+            </div>
+            
+            <div class="row">
+              <div class="col l1 s1 m1"><i class="material-icons prefix blue-text">email</i></div>
+              <div class="col l8 offset-l1 s8 offset-s1 m8 offset-m1"><p class="white-text foot" style="display:inline;">electro.med25@gmail.com</p></div>
+            </div>
+            <div class="row">
+              <div class="col l1 s1 m1"><i class="material-icons prefix blue-text">room</i></div>
+              <div class="col l8 offset-l1 s8 offset-s1 m8 offset-m1"><p class="white-text foot" style="display:inline;">D -17, Vivekanand Puri,
+              <br/>Lucknow –226007 India</p></div>
+            </div>
+          
+          </div>
         </div>
-        <hr>
-        <div class="footer-copyright">
-            <div class="container foot">
-                © 2017 Copyright Electromed. All rights reserved.
-            </div>
-        </div>
-    </footer>
+      </div>
+      <div class="fixed-action-btn horizontal">
+        <a class="btn-floating btn-large red lighten-1">
+          <i class="large material-icons">phone</i>
+        </a>
+        <ul>
+          <li><a href="" target="_blank">
+            <img title="LinkedIn" alt="LinkedIn" src="icons/linkedin.png" width="35" height="35" />
+          </a></li>
+          <li><a href="" target="_blank" target="_blank">
+          <img title="Facebook" alt="Facebook" src="icons/facebook.png" width="35" height="35" /></a></li>
+          <li><a href="" target="_blank">
+            <img title="Google" alt="Google" src="icons/google.png" width="35" height="35" />
+          </a></li>
+          <li><a href="" target="_blank">
+            <img title="Yahoo" alt="RSS" src="icons/yahoo.png" width="35" height="35" />
+          </a></li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+    <div class="footer-copyright">
+      <div class="container foot">
+        © 2017 Copyright Electromed. All rights reserved.
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

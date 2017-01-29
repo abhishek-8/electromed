@@ -36,6 +36,10 @@ $link='product_list.php?id=Industrial_Instruments&num=10';
     <script src="action.js" type="text/javascript"></script>
     <script>
     $(document).ready(function(){
+      $(".top").click(function() {
+  $("html, body").animate({ scrollTop: 0 }, "fast");
+  return false;
+});
     $('#request_for_quote').hide();
     $('.parallax').parallax();
     $('.button-collapse').sideNav();
@@ -130,7 +134,7 @@ $link='product_list.php?id=Industrial_Instruments&num=10';
           <ul class="right hide-on-med-and-down">
             <li><a href="home.html" class="navLink">Home</a></li>
             <li><a href="about.html" class="navLink">About</a></li>
-            <li><a href="product_list.php?id=projects&num=6" class="dropdown-button navLink" data-activates="projects">Projects<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a href="projects.html" class="dropdown-button navLink" data-activates="projects">Projects<i class="material-icons right">arrow_drop_down</i></a></li>
             <li class="active"><a href="product_list.php?id=LED_display&num=3" class="dropdown-button navLink" data-activates="products">Products<i class="material-icons right">arrow_drop_down</i></a></li>
             <li><a href="contactForm.html" class="navLink">Contact</a></li>
           </ul>
@@ -138,7 +142,7 @@ $link='product_list.php?id=Industrial_Instruments&num=10';
           <ul id="nav-mobile" class="side-nav">
             <li><a href="home.html">Home</a></li>
             <li><a href="about.html">About Us</a></li>
-            <li><a href="product_list.php?id=projects&num=6">Projects<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a href="projects.html">Projects<i class="material-icons right">arrow_drop_down</i></a></li>
             <li class="active"><a href="product_list.php?id=LED_display&num=3">Products<i class="material-icons right">arrow_drop_down</i></a></li>
             <li><a href="contactForm.html">Contact Us</a></li> 
           </ul>
@@ -185,10 +189,10 @@ $link='product_list.php?id=Industrial_Instruments&num=10';
     <div class="parallax-container Overview">
       <div class="parallax" ><img src="circuits.jpg" height="380"></div>
       <br>
-      <h3 class="headNamev3 black-text" id="info">Overview</h3><br>
+      <h3 class="headNamev3 black-text" id="info">Overview</h3>
       <div class="container">
         
-        <h4 style="font-family: 'Open Sans Condensed', sans-serif;" class="black-text"><center id="desc"></center></h4>
+        <center><p class="black-text overview-text" id="desc"></p></center>
         
       </div>
     </div>
@@ -216,7 +220,7 @@ $link='product_list.php?id=Industrial_Instruments&num=10';
           <br><br>
           <div class="row">
             <div class="col l3 offset-l1 m3 offset-m1 s3 btn1" id="product_image1"></div>
-            <div class="col l3 m3 s3 btn2" id="product_image2" style="margin-left:2px;margin-right:2px;"></div>
+            <div class="col l3 m3 s3 btn2" id="product_image2"></div>
             <div class="col l3 m3 s3 btn3" id="product_image3"></div>
           </div>
         </div>
@@ -227,15 +231,15 @@ $link='product_list.php?id=Industrial_Instruments&num=10';
         <blockquote style="font-family: 'Open Sans Condensed', sans-serif;font-size:21px;">Overview</blockquote>
         <div class="headNamev2"><center id="desc"></center></div>-->
         <br><br><br>
-        <table class="striped responsive-table" style="line-height: 90%;">
+        <table class="striped" style="line-height: 100%;">
         <blockquote style="font-family: 'Open Sans Condensed', sans-serif;font-size:21px;"><b><u>Technical Specifications</u></b></blockquote>
         <col width="30%">
         <col width="0.5%">
         <col width="69.5%">
         <tr id="r1">
-          <td class="table_specs" style="vertical-align: top;"><b id="r1d1"></b></td>
+          <td class="table_specs key" style="vertical-align: top;"><b id="r1d1"></b></td>
           <td style="text-align:center" id="c1">:</td>
-          <td class="table_specs" style="vertical-align: top;"><b id="r1d2"></b></td>
+          <td class="table_specs value" style="vertical-align: top;"><b id="r1d2"></b></td>
         </tr>
         <tr id="r2">
           <td class="table_specs" style="vertical-align: top;"><b id="r2d1"></b></td>
@@ -292,11 +296,11 @@ $link='product_list.php?id=Industrial_Instruments&num=10';
         <div class="card-image" id="ri1">
           
         </div>
-        <div class="card-content">
-          <p id="rd1"></p>
-        </div>
         <div class="card-action" id="rl1">
         </div>
+        <div class="card-content" id="rd1">
+        </div>
+        
       </div>
     </div>
 
@@ -305,10 +309,9 @@ $link='product_list.php?id=Industrial_Instruments&num=10';
         <div class="card-image" id="ri2">
           
         </div>
-        <div class="card-content">
-          <p id="rd2"></p>
-        </div>
         <div class="card-action" id="rl2">
+        </div>
+        <div class="card-content" id="rd2">
         </div>
       </div>
     </div>
@@ -318,10 +321,9 @@ $link='product_list.php?id=Industrial_Instruments&num=10';
         <div class="card-image" id="ri3">
           
         </div>
-        <div class="card-content">
-          <p id="rd3"></p>
-        </div>
         <div class="card-action" id="rl3">
+        </div>
+        <div class="card-content" id="rd3">
         </div>
       </div>
     </div>
@@ -331,10 +333,9 @@ $link='product_list.php?id=Industrial_Instruments&num=10';
         <div class="card-image" id="ri4">
           
         </div>
-        <div class="card-content">
-          <p id="rd4"></p>
-        </div>
         <div class="card-action" id="rl4">
+        </div>
+        <div class="card-content" id="rd4">
         </div>
       </div>
     </div>
@@ -405,22 +406,10 @@ $link='product_list.php?id=Industrial_Instruments&num=10';
         </div>
       </div>
       <div class="fixed-action-btn horizontal">
-        <a class="btn-floating btn-large red lighten-1">
-          <i class="large material-icons">phone</i>
+        <a class="btn-floating btn-large red lighten-1 top">
+          <i class="large material-icons">navigation</i>
         </a>
-        <ul>
-          <li><a href="" target="_blank">
-            <img title="LinkedIn" alt="LinkedIn" src="icons/linkedin.png" width="35" height="35" />
-          </a></li>
-          <li><a href="" target="_blank" target="_blank">
-          <img title="Facebook" alt="Facebook" src="icons/facebook.png" width="35" height="35" /></a></li>
-          <li><a href="" target="_blank">
-            <img title="Google" alt="Google" src="icons/google.png" width="35" height="35" />
-          </a></li>
-          <li><a href="" target="_blank">
-            <img title="Yahoo" alt="RSS" src="icons/yahoo.png" width="35" height="35" />
-          </a></li>
-        </ul>
+      
       </div>
     </div>
     <hr>

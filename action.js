@@ -133,7 +133,7 @@ document.getElementById('r5d2').innerHTML ='With Dot LED or With integrated 7 se
 
 		document.getElementById('ri2').innerHTML='<img src="photos/interest_rate_display_board1.jpg" height="170">';
 		document.getElementById('rd2').innerHTML='Date, time, deposit period, interest rate is displayed on an attractive background.';
-		document.getElementById('rl2').innerHTML='<a href="products.php?id=interest_rate_display_board&type=2" style="font-size:11px;">INTEREST RATE DISPLAY BOARD</a>'
+		document.getElementById('rl2').innerHTML='<a href="products.php?id=interest_rate_display_board&type=2">INTEREST RATE DISPLAY BOARD</a>'
 
 		document.getElementById('ri3').innerHTML='<img src="photos/scrolling_display1.jpg" height="170">';
 		document.getElementById('rd3').innerHTML='High brightness. User can store and scroll a lot of messages';
@@ -167,7 +167,7 @@ document.getElementById('ri1').innerHTML='<img src="photos/token1.jpg" height="1
 
 		document.getElementById('ri2').innerHTML='<img src="photos/interest_rate_display_board1.jpg" height="170">';
 		document.getElementById('rd2').innerHTML='Date, time, deposit period, interest rate is displayed on an attractive background.';
-		document.getElementById('rl2').innerHTML='<a href="products.php?id=interest_rate_display_board&type=2" style="font-size:11px;">INTEREST RATE DISPLAY BOARD</a>'
+		document.getElementById('rl2').innerHTML='<a href="products.php?id=interest_rate_display_board&type=2">INTEREST RATE DISPLAY BOARD</a>'
 
 		document.getElementById('ri3').innerHTML='<img src="photos/scrolling_display1.jpg" height="170">';
 		document.getElementById('rd3').innerHTML='High brightness. User can store and scroll a lot of messages';
@@ -248,7 +248,7 @@ document.getElementById('ri1').innerHTML='<img src="photos/token1.jpg" height="1
 
 		document.getElementById('ri3').innerHTML='<img src="photos/interest_rate_display_board1.jpg" height="170">';
 		document.getElementById('rd3').innerHTML='Date, time, deposit period, interest rate is displayed on an attractive background.';
-		document.getElementById('rl3').innerHTML='<a href="products.php?id=interest_rate_display_board&type=2" style="font-size:11px;">INTEREST RATE DISPLAY BOARD</a>'
+		document.getElementById('rl3').innerHTML='<a href="products.php?id=interest_rate_display_board&type=2">INTEREST RATE DISPLAY BOARD</a>'
 
 		$('#rel4').hide();
 }
@@ -278,7 +278,7 @@ document.getElementById('r6d2').innerHTML ='hrs. & mins. With inbuilt battery; 2
 
 		document.getElementById('ri1').innerHTML='<img src="photos/lfm1.jpg" height="170">';
 		document.getElementById('rd1').innerHTML='Measures power line frequency, highly accurate reading and non blinking display. Microcontroller based design. ERTL tested.';
-		document.getElementById('rl1').innerHTML='<a href="products.php?id=lfm&type=4" style="font-size:13px;">Line Frequency Monitor</a>'
+		document.getElementById('rl1').innerHTML='<a href="products.php?id=lfm&type=4" >Line Frequency Monitor</a>'
 
 		document.getElementById('ri2').innerHTML='<img src="photos/megawatt_panel1.jpg" height="170">';
 		document.getElementById('rd2').innerHTML='Essential to power plants. Generation data can be displayed all over the plant.';
@@ -286,7 +286,7 @@ document.getElementById('r6d2').innerHTML ='hrs. & mins. With inbuilt battery; 2
 
 		document.getElementById('ri3').innerHTML='<img src="photos/process_indicator1.jpg" height="170">';
 		document.getElementById('rd3').innerHTML='Suitable for displaying process parameters like flow, temperature, level, speed, pH etc. Available in different digit heights.';
-		document.getElementById('rl3').innerHTML='<a href="products.php?id=process_indicator&type=4" style="font-size:13px;">Process Indicator</a>'
+		document.getElementById('rl3').innerHTML='<a href="products.php?id=process_indicator&type=4">Process Indicator</a>'
 
 		document.getElementById('ri4').innerHTML='<img src="photos/twilight_switches1.jpg" height="170">';
 		document.getElementById('rd4').innerHTML='Activates with respect to the ambient light,switches ON and OFF at dusk and dawn.';
@@ -320,7 +320,7 @@ document.getElementById('ri1').innerHTML='<img src="photos/flow_monitor1.jpg" he
 
 		document.getElementById('ri3').innerHTML='<img src="photos/process_indicator1.jpg" height="170">';
 		document.getElementById('rd3').innerHTML='Suitable for displaying process parameters like flow, temperature, level, speed, pH etc. Available in different digit heights.';
-		document.getElementById('rl3').innerHTML='<a href="products.php?id=process_indicator&type=4" style="font-size:13px;">Process Indicator</a>'
+		document.getElementById('rl3').innerHTML='<a href="products.php?id=process_indicator&type=4">Process Indicator</a>'
 
 document.getElementById('ri4').innerHTML='<img src="photos/twilight_switches1.jpg" height="170">';
 		document.getElementById('rd4').innerHTML='Activates with respect to the ambient light,switches ON and OFF at dusk and dawn.';
@@ -352,11 +352,11 @@ document.getElementById('ri1').innerHTML='<img src="photos/flow_monitor1.jpg" he
 
 		document.getElementById('ri2').innerHTML='<img src="photos/lfm1.jpg" height="170">';
 		document.getElementById('rd2').innerHTML='Measures power line frequency, highly accurate reading and non blinking display. Microcontroller based design. ERTL tested.';
-		document.getElementById('rl2').innerHTML='<a href="products.php?id=lfm&type=4" style="font-size:13px;">Line Frequency Monitor</a>'
+		document.getElementById('rl2').innerHTML='<a href="products.php?id=lfm&type=4">Line Frequency Monitor</a>'
 
 		document.getElementById('ri3').innerHTML='<img src="photos/process_indicator1.jpg" height="170">';
 		document.getElementById('rd3').innerHTML='Suitable for displaying process parameters like flow, temperature, level, speed, pH etc. Available in different digit heights.';
-		document.getElementById('rl3').innerHTML='<a href="products.php?id=process_indicator&type=4" style="font-size:13px;">Process Indicator</a>'
+		document.getElementById('rl3').innerHTML='<a href="products.php?id=process_indicator&type=4">Process Indicator</a>'
 
 		document.getElementById('ri4').innerHTML='<img src="photos/twilight_switches1.jpg" height="170">';
 		document.getElementById('rd4').innerHTML='Activates with respect to the ambient light,switches ON and OFF at dusk and dawn.';
@@ -395,7 +395,7 @@ document.getElementById('ri1').innerHTML='<img src="photos/flow_monitor1.jpg" he
 
 		document.getElementById('ri2').innerHTML='<img src="photos/lfm1.jpg" height="170">';
 		document.getElementById('rd2').innerHTML='Measures power line frequency, highly accurate reading and non blinking display. Microcontroller based design. ERTL tested.';
-		document.getElementById('rl2').innerHTML='<a href="products.php?id=lfm&type=4" style="font-size:13px;">Line Frequency Monitor</a>'
+		document.getElementById('rl2').innerHTML='<a href="products.php?id=lfm&type=4">Line Frequency Monitor</a>'
 
 		document.getElementById('ri3').innerHTML='<img src="photos/megawatt_panel1.jpg" height="170">';
 		document.getElementById('rd3').innerHTML='Essential to power plants. Generation data can be displayed all over the plant.';
@@ -436,7 +436,7 @@ document.getElementById('ri1').innerHTML='<img src="photos/flow_monitor1.jpg" he
 
 		document.getElementById('ri2').innerHTML='<img src="photos/lfm1.jpg" height="170">';
 		document.getElementById('rd2').innerHTML='Measures power line frequency, highly accurate reading and non blinking display. Microcontroller based design. ERTL tested.';
-		document.getElementById('rl2').innerHTML='<a href="products.php?id=lfm&type=4" style="font-size:13px;">Line Frequency Monitor</a>'
+		document.getElementById('rl2').innerHTML='<a href="products.php?id=lfm&type=4" >Line Frequency Monitor</a>'
 
 		document.getElementById('ri3').innerHTML='<img src="photos/megawatt_panel1.jpg" height="170">';
 		document.getElementById('rd3').innerHTML='Essential to power plants. Generation data can be displayed all over the plant.';
@@ -444,7 +444,7 @@ document.getElementById('ri1').innerHTML='<img src="photos/flow_monitor1.jpg" he
 
 		document.getElementById('ri4').innerHTML='<img src="photos/process_indicator1.jpg" height="170">';
 		document.getElementById('rd4').innerHTML='Suitable for displaying process parameters like flow, temperature, level, speed, pH etc. Available in different digit heights.';
-		document.getElementById('rl4').innerHTML='<a href="products.php?id=process_indicator&type=4" style="font-size:13px;">Process Indicator</a>'
+		document.getElementById('rl4').innerHTML='<a href="products.php?id=process_indicator&type=4">Process Indicator</a>'
 
 
 }
@@ -480,7 +480,7 @@ document.getElementById('ri1').innerHTML='<img src="photos/flow_monitor1.jpg" he
 
 		document.getElementById('ri2').innerHTML='<img src="photos/lfm1.jpg" height="170">';
 		document.getElementById('rd2').innerHTML='Measures power line frequency, highly accurate reading and non blinking display. Microcontroller based design. ERTL tested.';
-		document.getElementById('rl2').innerHTML='<a href="products.php?id=lfm&type=4" style="font-size:13px;">Line Frequency Monitor</a>'
+		document.getElementById('rl2').innerHTML='<a href="products.php?id=lfm&type=4">Line Frequency Monitor</a>'
 
 		document.getElementById('ri3').innerHTML='<img src="photos/megawatt_panel1.jpg" height="170">';
 		document.getElementById('rd3').innerHTML='Essential to power plants. Generation data can be displayed all over the plant.';
@@ -488,7 +488,7 @@ document.getElementById('ri1').innerHTML='<img src="photos/flow_monitor1.jpg" he
 
 		document.getElementById('ri4').innerHTML='<img src="photos/process_indicator1.jpg" height="170">';
 		document.getElementById('rd4').innerHTML='Suitable for displaying process parameters like flow, temperature, level, speed, pH etc. Available in different digit heights.';
-		document.getElementById('rl4').innerHTML='<a href="products.php?id=process_indicator&type=4" style="font-size:13px;">Process Indicator</a>'
+		document.getElementById('rl4').innerHTML='<a href="products.php?id=process_indicator&type=4">Process Indicator</a>'
 
 }
 
@@ -514,7 +514,7 @@ document.getElementById('ri1').innerHTML='<img src="photos/flow_monitor1.jpg" he
 
 		document.getElementById('ri2').innerHTML='<img src="photos/lfm1.jpg" height="170">';
 		document.getElementById('rd2').innerHTML='Measures power line frequency, highly accurate reading and non blinking display. Microcontroller based design. ERTL tested.';
-		document.getElementById('rl2').innerHTML='<a href="products.php?id=lfm&type=4" style="font-size:13px;">Line Frequency Monitor</a>'
+		document.getElementById('rl2').innerHTML='<a href="products.php?id=lfm&type=4">Line Frequency Monitor</a>'
 
 		document.getElementById('ri3').innerHTML='<img src="photos/megawatt_panel1.jpg" height="170">';
 		document.getElementById('rd3').innerHTML='Essential to power plants. Generation data can be displayed all over the plant.';
@@ -522,7 +522,7 @@ document.getElementById('ri1').innerHTML='<img src="photos/flow_monitor1.jpg" he
 
 		document.getElementById('ri4').innerHTML='<img src="photos/process_indicator1.jpg" height="170">';
 		document.getElementById('rd4').innerHTML='Suitable for displaying process parameters like flow, temperature, level, speed, pH etc. Available in different digit heights.';
-		document.getElementById('rl4').innerHTML='<a href="products.php?id=process_indicator&type=4" style="font-size:13px;">Process Indicator</a>'
+		document.getElementById('rl4').innerHTML='<a href="products.php?id=process_indicator&type=4">Process Indicator</a>'
 
 }
 
@@ -554,7 +554,7 @@ document.getElementById('ri1').innerHTML='<img src="photos/flow_monitor1.jpg" he
 
 		document.getElementById('ri2').innerHTML='<img src="photos/lfm1.jpg" height="170">';
 		document.getElementById('rd2').innerHTML='Measures power line frequency, highly accurate reading and non blinking display. Microcontroller based design. ERTL tested.';
-		document.getElementById('rl2').innerHTML='<a href="products.php?id=lfm&type=4" style="font-size:13px;">Line Frequency Monitor</a>'
+		document.getElementById('rl2').innerHTML='<a href="products.php?id=lfm&type=4">Line Frequency Monitor</a>'
 
 		document.getElementById('ri3').innerHTML='<img src="photos/megawatt_panel1.jpg" height="170">';
 		document.getElementById('rd3').innerHTML='Essential to power plants. Generation data can be displayed all over the plant.';
@@ -562,7 +562,7 @@ document.getElementById('ri1').innerHTML='<img src="photos/flow_monitor1.jpg" he
 
 		document.getElementById('ri4').innerHTML='<img src="photos/process_indicator1.jpg" height="170">';
 		document.getElementById('rd4').innerHTML='Suitable for displaying process parameters like flow, temperature, level, speed, pH etc. Available in different digit heights.';
-		document.getElementById('rl4').innerHTML='<a href="products.php?id=process_indicator&type=4" style="font-size:13px;">Process Indicator</a>'
+		document.getElementById('rl4').innerHTML='<a href="products.php?id=process_indicator&type=4">Process Indicator</a>'
 
 }
 
@@ -592,7 +592,7 @@ document.getElementById('ri1').innerHTML='<img src="photos/flow_monitor1.jpg" he
 
 		document.getElementById('ri2').innerHTML='<img src="photos/lfm1.jpg" height="170">';
 		document.getElementById('rd2').innerHTML='Measures power line frequency, highly accurate reading and non blinking display. Microcontroller based design. ERTL tested.';
-		document.getElementById('rl2').innerHTML='<a href="products.php?id=lfm&type=4" style="font-size:13px;">Line Frequency Monitor</a>'
+		document.getElementById('rl2').innerHTML='<a href="products.php?id=lfm&type=4">Line Frequency Monitor</a>'
 
 		document.getElementById('ri3').innerHTML='<img src="photos/megawatt_panel1.jpg" height="170">';
 		document.getElementById('rd3').innerHTML='Essential to power plants. Generation data can be displayed all over the plant.';
@@ -600,7 +600,7 @@ document.getElementById('ri1').innerHTML='<img src="photos/flow_monitor1.jpg" he
 
 		document.getElementById('ri4').innerHTML='<img src="photos/process_indicator1.jpg" height="170">';
 		document.getElementById('rd4').innerHTML='Suitable for displaying process parameters like flow, temperature, level, speed, pH etc. Available in different digit heights.';
-		document.getElementById('rl4').innerHTML='<a href="products.php?id=process_indicator&type=4" style="font-size:13px;">Process Indicator</a>'
+		document.getElementById('rl4').innerHTML='<a href="products.php?id=process_indicator&type=4">Process Indicator</a>'
 
 }
 
@@ -631,7 +631,7 @@ document.getElementById('ri1').innerHTML='<img src="photos/flow_monitor1.jpg" he
 
 		document.getElementById('ri2').innerHTML='<img src="photos/lfm1.jpg" height="170">';
 		document.getElementById('rd2').innerHTML='Measures power line frequency, highly accurate reading and non blinking display. Microcontroller based design. ERTL tested.';
-		document.getElementById('rl2').innerHTML='<a href="products.php?id=lfm&type=4" style="font-size:13px;">Line Frequency Monitor</a>'
+		document.getElementById('rl2').innerHTML='<a href="products.php?id=lfm&type=4">Line Frequency Monitor</a>'
 
 		document.getElementById('ri3').innerHTML='<img src="photos/megawatt_panel1.jpg" height="170">';
 		document.getElementById('rd3').innerHTML='Essential to power plants. Generation data can be displayed all over the plant.';
@@ -639,7 +639,7 @@ document.getElementById('ri1').innerHTML='<img src="photos/flow_monitor1.jpg" he
 
 		document.getElementById('ri4').innerHTML='<img src="photos/process_indicator1.jpg" height="170">';
 		document.getElementById('rd4').innerHTML='Suitable for displaying process parameters like flow, temperature, level, speed, pH etc. Available in different digit heights.';
-		document.getElementById('rl4').innerHTML='<a href="products.php?id=process_indicator&type=4" style="font-size:13px;">Process Indicator</a>'
+		document.getElementById('rl4').innerHTML='<a href="products.php?id=process_indicator&type=4">Process Indicator</a>'
 
 }
 
@@ -648,6 +648,10 @@ document.getElementById('product_image').innerHTML='<img style="border-radius:10
 document.getElementById('product_image1').innerHTML='<img style="border-radius:10px;" width="100" height="80" src=photos/'+x+'1.jpg'+' alt="">';
 document.getElementById('product_image2').innerHTML='<img style="border-radius:10px;" width="100" height="80" src=photos/'+x+'2.jpg'+' alt="" >';
 document.getElementById('product_image3').innerHTML='<img style="border-radius:10px;" width="100" height="80" src=photos/'+x+'3.jpg'+' alt="" >';
+
+$("img").error(function(){
+        $(this).hide();
+});
 
 var x,y;
 for(x=1;x<=7;x++) {
@@ -734,7 +738,7 @@ function filter(x,z){
 		y='Product for Office';
 		
 		document.getElementById('p1').innerHTML='<img src="photos/token1.jpg" height="170">';
-		document.getElementById('d1').innerHTML='Provides easiest way to inform the customer or patient about his / her status while waiting.';
+		document.getElementById('d1').innerHTML='Provides easiest way to inform the customer or patient about his/her status while waiting.';
 		document.getElementById('l1').innerHTML='<a href="products.php?id=token&type=2">TOKEN DISPLAY</a>'
 
 		document.getElementById('p2').innerHTML='<img src="photos/digital_clock1.jpg" height="170">';
@@ -743,7 +747,7 @@ function filter(x,z){
 
 		document.getElementById('p3').innerHTML='<img src="photos/interest_rate_display_board1.jpg" height="170">';
 		document.getElementById('d3').innerHTML='Date, time, deposit period, interest rate is displayed on an attractive background.';
-		document.getElementById('l3').innerHTML='<a href="products.php?id=interest_rate_display_board&type=2" style="font-size:11px;">INTEREST RATE DISPLAY BOARD</a>'
+		document.getElementById('l3').innerHTML='<a href="products.php?id=interest_rate_display_board&type=2">INTEREST RATE DISPLAY BOARD</a>'
 
 		document.getElementById('p4').innerHTML='<img src="photos/scrolling_display1.jpg" height="170">';
 		document.getElementById('d4').innerHTML='High brightness. User can store and scroll a lot of messages';
@@ -787,7 +791,7 @@ function filter(x,z){
 
 		document.getElementById('p2').innerHTML='<img src="photos/lfm1.jpg" height="170">';
 		document.getElementById('d2').innerHTML='Measures power line frequency, highly accurate reading and non blinking display. Microcontroller based design. ERTL tested.';
-		document.getElementById('l2').innerHTML='<a href="products.php?id=lfm&type=4" style="font-size:13px;">Line Frequency Monitor</a>'
+		document.getElementById('l2').innerHTML='<a href="products.php?id=lfm&type=4">Line Frequency Monitor</a>'
 
 		document.getElementById('p3').innerHTML='<img src="photos/megawatt_panel1.jpg" height="170">';
 		document.getElementById('d3').innerHTML='Essential to power plants. Generation data can be displayed all over the plant.';
@@ -795,7 +799,7 @@ function filter(x,z){
 
 		document.getElementById('p4').innerHTML='<img src="photos/process_indicator1.jpg" height="170">';
 		document.getElementById('d4').innerHTML='Suitable for displaying process parameters like flow, temperature, level, speed, pH etc. Available in different digit heights.';
-		document.getElementById('l4').innerHTML='<a href="products.php?id=process_indicator&type=4" style="font-size:13px;">Process Indicator</a>'
+		document.getElementById('l4').innerHTML='<a href="products.php?id=process_indicator&type=4">Process Indicator</a>'
 
 		document.getElementById('p5').innerHTML='<img src="photos/ph_meter1.jpg" height="170">';
 		document.getElementById('d5').innerHTML='Measures pH of all types of liquids.'+'<br><br>';
@@ -807,7 +811,7 @@ function filter(x,z){
 
 		document.getElementById('p7').innerHTML='<img src="photos/temp_cont1.jpg" height="170">';
 		document.getElementById('d7').innerHTML='Used in a variety of industrial applications like turbines, furnaces, blow moulding, etc.';
-		document.getElementById('l7').innerHTML='<a href="products.php?id=temp_cont&type=4" style="font-size:12px;">Temperature Controller</a>'
+		document.getElementById('l7').innerHTML='<a href="products.php?id=temp_cont&type=4">Temperature Controller</a>'
 
 		document.getElementById('p8').innerHTML='<img src="photos/twilight_switches1.jpg" height="170">';
 		document.getElementById('d8').innerHTML='Activates with respect to the ambient light,switches ON and OFF at dusk and dawn.';

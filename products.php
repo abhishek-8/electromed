@@ -207,13 +207,13 @@ $link='product_list.php?id=Industrial_Instruments&num=10';
       </div>
     </div>-->
 
-    <div class="row" style="z-index:-1;margin-top:-50px;">
+    <div class="row product-images" style="z-index:-1;margin-top:-50px;">
       <div class="col l12 s12 m12">
         <br>
         <div class="col l5 s12 m5" id="product">
           <div class="row">
             <br><br><br><br>
-            <div class="col l11 offset-l1 s11 m11 offset materialboxed" id="product_image">
+            <div class="col l11 offset-l1 s11 m11 materialboxed" id="product_image">
               
             </div>
           </div>
@@ -226,10 +226,6 @@ $link='product_list.php?id=Industrial_Instruments&num=10';
         </div>
         
         <div class="col l6 s12 m6" id="specs">
-          <!-- <h5 class="headName"><blockquote>Overview</blockquote></h5> -->
-          <!--
-        <blockquote style="font-family: 'Open Sans Condensed', sans-serif;font-size:21px;">Overview</blockquote>
-        <div class="headNamev2"><center id="desc"></center></div>-->
         <br><br><br>
         <table class="striped" style="line-height: 100%;">
         <blockquote style="font-family: 'Open Sans Condensed', sans-serif;font-size:21px;"><b><u>Technical Specifications</u></b></blockquote>

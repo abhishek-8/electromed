@@ -276,9 +276,9 @@ document.getElementById('r6d1').innerHTML ='Real time clock';
 document.getElementById('r6d2').innerHTML ='hrs. & mins. With inbuilt battery; 25mm high';
 
 
-		document.getElementById('ri1').innerHTML='<img src="photos/lfm1.jpg" height="170">';
-		document.getElementById('rd1').innerHTML='Measures power line frequency, highly accurate reading and non blinking display. Microcontroller based design. ERTL tested.';
-		document.getElementById('rl1').innerHTML='<a href="products.php?id=lfm&type=4" >Line Frequency Monitor</a>'
+		document.getElementById('ri4').innerHTML='<img src="photos/lfm1.jpg" height="170">';
+		document.getElementById('rd4').innerHTML='Measures power line frequency, highly accurate reading and non blinking display. Microcontroller based design. ERTL tested.';
+		document.getElementById('rl4').innerHTML='<a href="products.php?id=lfm&type=4" >Line Frequency Monitor</a>'
 
 		document.getElementById('ri2').innerHTML='<img src="photos/megawatt_panel1.jpg" height="170">';
 		document.getElementById('rd2').innerHTML='Essential to power plants. Generation data can be displayed all over the plant.';
@@ -288,9 +288,9 @@ document.getElementById('r6d2').innerHTML ='hrs. & mins. With inbuilt battery; 2
 		document.getElementById('rd3').innerHTML='Suitable for displaying process parameters like flow, temperature, level, speed, pH etc. Available in different digit heights.';
 		document.getElementById('rl3').innerHTML='<a href="products.php?id=process_indicator&type=4">Process Indicator</a>'
 
-		document.getElementById('ri4').innerHTML='<img src="photos/twilight_switches1.jpg" height="170">';
-		document.getElementById('rd4').innerHTML='Activates with respect to the ambient light,switches ON and OFF at dusk and dawn.';
-		document.getElementById('rl4').innerHTML='<a href="products.php?id=twilight_switches&type=4">Twilight Switch</a>'
+		document.getElementById('ri1').innerHTML='<img src="photos/twilight_switches1.jpg" height="170">';
+		document.getElementById('rd1').innerHTML='Activates with respect to the ambient light,switches ON and OFF at dusk and dawn.';
+		document.getElementById('rl1').innerHTML='<a href="products.php?id=twilight_switches&type=4">Twilight Switch</a>'
 }
 
 else if(x=='lfm'){

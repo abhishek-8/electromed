@@ -38,6 +38,7 @@ $link='product_list.php?id=Industrial_Instruments&num=10';
     $(document).ready(function(){
     $('#request_for_quote').hide();
     $('.parallax').parallax();
+    $('.button-collapse').sideNav();
     $('.materialboxed').materialbox();
     set1('<?php echo $x ?>');
     $(".btn1").click(function(){
@@ -134,31 +135,31 @@ $link='product_list.php?id=Industrial_Instruments&num=10';
             <li><a href="contactForm.html" class="navLink">Contact</a></li>
           </ul>
           
-          <!-- <ul id="nav-mobile" class="side-nav">
+          <ul id="nav-mobile" class="side-nav">
             <li><a href="home.html">Home</a></li>
             <li><a href="about.html">About Us</a></li>
-            <li><a href="" class="dropdown-button" data-activates="products">Products<i class="material-icons right">arrow_drop_down</i></a></li>
-            <li><a href="contactForm.html">Contact Us</a></li>
+            <li><a href="product_list.php?id=projects&num=6">Projects<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li class="active"><a href="product_list.php?id=LED_display&num=3">Products<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a href="contactForm.html">Contact Us</a></li> 
           </ul>
-          <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>-->
+
+          <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+
         </div>
       </nav>
     </div>
     
-    <nav class="white">
+    <nav class="white branches" >
       <div class="nav-wrapper container">
         <div class="col s12">
           <a href="product_list.php?id=LED_display&num=3" class="breadcrumb black-text" id="pre1"></a>
           <a href="<?php echo $link; ?>" class="breadcrumb black-text" id="pre2"></a>
-          <a href="" class="breadcrumb black-text" id="curr" style="font-size:24px;"></a>
+          <a href="" class="breadcrumb black-text" id="curr"></a>
         </div>
       </div>
     </nav>
-    <div class="z-depth-5 card-panel hoverable" id="request_for_quote">
-      <!--<legend class="white-text rqst headNamev2" style="position:relative; background: #e3f2fd;height:40px;width: 100%;"><center style="color:black;"></center></legend> -->
-      
-      <!--<img src="contact.jpg">-->
-      
+
+    <div class="z-depth-5 card-panel hoverable" id="request_for_quote">  
       <fieldset id="rqst_form">
         <legend class="white-text red lighten-1" style="position:relative;height: 40px;width: 100%;"><center>Request for quote</center></legend>
         <form>
@@ -208,13 +209,13 @@ $link='product_list.php?id=Industrial_Instruments&num=10';
         <div class="col l5 s12 m5" id="product">
           <div class="row">
             <br><br><br><br>
-            <div class="col l11 offset-l1 s11 offset-s1 m11 offset materialboxed" id="product_image">
+            <div class="col l11 offset-l1 s11 m11 offset materialboxed" id="product_image">
               
             </div>
           </div>
           <br><br>
           <div class="row">
-            <div class="col l3 offset-l1 m3 offset-m1 s3 offset-s1 btn1" id="product_image1"></div>
+            <div class="col l3 offset-l1 m3 offset-m1 s3 btn1" id="product_image1"></div>
             <div class="col l3 m3 s3 btn2" id="product_image2" style="margin-left:2px;margin-right:2px;"></div>
             <div class="col l3 m3 s3 btn3" id="product_image3"></div>
           </div>
@@ -228,7 +229,6 @@ $link='product_list.php?id=Industrial_Instruments&num=10';
         <br><br><br>
         <table class="striped responsive-table" style="line-height: 90%;">
         <blockquote style="font-family: 'Open Sans Condensed', sans-serif;font-size:21px;"><b><u>Technical Specifications</u></b></blockquote>
-        <div class="headNamev2"><center id="desc"></center></div>
         <col width="30%">
         <col width="0.5%">
         <col width="69.5%">
@@ -269,8 +269,8 @@ $link='product_list.php?id=Industrial_Instruments&num=10';
         </tr>
       </table><br>
       <div class="row">
-        <button class="btn red lighten-2" style="font-size:13px;float:left;"><i class="material-icons left">library_books</i>Brochure</button>
-        <button class="btn rqst red lighten-2" style="font-size:13px;float:right;">Request for quote</button>
+        <button class="btn red lighten-2 col l4 s5" style="font-size:13px;float:left;"><i class="material-icons left">library_books</i>Brochure</button>
+        <button class="btn rqst red lighten-2 l4 col s6" style="font-size:13px;float:right;">Request for quote</button>
       </div>
     </div>
     
@@ -278,8 +278,12 @@ $link='product_list.php?id=Industrial_Instruments&num=10';
 </div>
 <div>
   <br><br>
-  <h3 class="headName black-text">You may also be interested in...</h3>
-  <hr>
+  <div class="parallax-container related">
+      <div class="parallax" ><img src="circuits2.jpg" height="260"></div>
+      
+      <h3 class="related_text black-text center">YOU MAY ALSO BE INTERESTED IN...</h3>
+        
+    </div>
   <br>
   <div class="row" id="related_products">
     
@@ -338,7 +342,7 @@ $link='product_list.php?id=Industrial_Instruments&num=10';
   </div>
 </div>
 <br><br>
-<footer class="page-footer">
+  <footer class="page-footer">
       <div class="container">
         <div class="row">
           <div class="col l3 s12">
@@ -362,38 +366,38 @@ $link='product_list.php?id=Industrial_Instruments&num=10';
               </a></div>
             </div>
           </div>
-          <div class="col l3 s3 m3">
+          <div class="col l3 s12 m3">
             <h6 class="white-text"><strong>Our Links</strong></h6>
             
             <ul>
-              <li><a class="white-text foot" href="about.html">About Us</a></li>
-              <li><a class="white-text foot" href="contactForm.html">Contact Us</a></li>
-              <li><a class="white-text foot" href="product_list.php?id=LED_display&num=3">Products</a></li>
+              <li class="flink"><a class="white-text foot" href="about.html">About Us</a></li>
+              <li class="flink"><a class="white-text foot" href="contactForm.html">Contact Us</a></li>
+              <li class="flink"><a class="white-text foot" href="product_list.php?id=LED_display&num=3">Products</a></li>
             </ul>
           </div>
-          <div class="col l3 s3 m3">
+          <div class="col l3 s12 m3">
             <h6 class="white-text"><strong>Projects</strong></h6>
             <ul>
-              <li><a class="white-text foot" href="#!">Project 1</a></li>
-              <li><a class="white-text foot" href="#!">Project 2</a></li>
-              <li><a class="white-text foot" href="#!">Project 3</a></li>
-              <li><a class="white-text foot" href="#!">Project 4</a></li>
+              <li class="flink"><a class="white-text foot" href="#!">Project 1</a></li>
+              <li class="flink"><a class="white-text foot" href="#!">Project 2</a></li>
+              <li class="flink"><a class="white-text foot" href="#!">Project 3</a></li>
+              <li class="flink"><a class="white-text foot" href="#!">Project 4</a></li>
             </ul>
           </div>
-          <div class="col l3 s3 m3">
+          <div class="col l3 s12 m3">
             <h6 class="white-text"><strong>Contact Info</strong></h6>
             <div class="row">
               <div class="col l1 s1 m1"><i class="material-icons prefix blue-text">phone</i></div>
-              <div class="col l8 offset-l1 s8 offset-s1 m8 offset-m1"><p class="white-text foot" style="display:inline;">9415039393</p></div>
+              <div class="col l8 offset-l1 s11 m8 offset-m1"><p class="white-text foot" style="display:inline;">9415039393</p></div>
             </div>
             
             <div class="row">
               <div class="col l1 s1 m1"><i class="material-icons prefix blue-text">email</i></div>
-              <div class="col l8 offset-l1 s8 offset-s1 m8 offset-m1"><p class="white-text foot" style="display:inline;">electro.med25@gmail.com</p></div>
+              <div class="col l8 offset-l1 s11 m8 offset-m1"><p class="white-text foot" style="display:inline;">electro.med25@gmail.com</p></div>
             </div>
             <div class="row">
               <div class="col l1 s1 m1"><i class="material-icons prefix blue-text">room</i></div>
-              <div class="col l8 offset-l1 s8 offset-s1 m8 offset-m1"><p class="white-text foot" style="display:inline;">D -17, Vivekanand Puri,
+              <div class="col l8 offset-l1 s11 m8 offset-m1"><p class="white-text foot" style="display:inline;">D -17, Vivekanand Puri,
               <br/>Lucknow –226007 India</p></div>
             </div>
           

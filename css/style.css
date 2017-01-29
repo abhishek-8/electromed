@@ -4,6 +4,7 @@ body{
 }
 #contactPage {
   background: #b3e5fc ;
+  overflow-x: hidden;
 }
 #about_page,#product_page,#category_page{
   background: white;
@@ -135,21 +136,29 @@ hr.style11 {
 .bullets:before {
   content:"• ";
 }
-#product {
-  margin-left:15px;
+.related {
+height:80px;
+background-color:rgba(50,7,14,0.15); 
 }
 
-#specs{
+#request_for_quote{
+  position:fixed;
+  top:50;
+  z-index:10; 
+}
+ @media only screen and (min-width: 760px) {
+  #specs{
   margin-left:38px;
 }
-#request_for_quote{
-  /*background: linear-gradient(#e3f2fd,white );*/
-  position:absolute;
-  width:50%;
-  margin-left:400px;
-  margin-top:280px;
-  z-index:1;
+  #product {
+  margin-left:15px;
 }
+#request_for_quote{
+width:50%;
+margin-left:25%;
+}
+}
+
 #product_image{
   height:280px;
 }
@@ -205,6 +214,10 @@ hr.style11 {
 .headName1 {
   font-family: 'Abel', sans-serif;
 }
+.related_text {
+  font-family: 'Abel', sans-serif;
+ font-size:32px;
+}
 .dropdown_headName{
 line-height:100%;
 color:white;
@@ -223,7 +236,7 @@ span {
 
 nav {
   margin-top: -25px;
-  background:#ef5350;
+  background:#d32f2f;
   font-family:'Abel',sans-serif;
 }
 
@@ -242,7 +255,54 @@ nav :hover {
 nav .brand-logo{
   color:white;
 }
+#contact .icons{
+  font-size:64px;
+}
+#curr {
+  font-size:24px;
+}
+@media (max-width:499px){
+  .numerics {
+    font-size:22px;
+  }
+  
+  .related_text {
+    font-size:22px;
+  }
+  #contact .icons{
+font-size:35px;
+  }
+.flink {
+  display:inline;
+  padding:5px;
+}
+.branches {
+  height:110px;
+}
+.breadcrumb {
+  font-size:15px;
+}
+#curr {
+  font-size:18px;
+}
+#pre2,#curr{
+  margin-left:-6px;
+}
+.breadcrumb{
+  margin:0 -10px 0 -5px;
+}
+#c1,#c2,#c3,#c4,#c5,#c6,#c7 {
+  display:none;
+}
+#product_image1 img,#product_image2 img,#product_image3 img {
+  width:80px;
+  height:80px;
+}
+#desc {
+  font-size:24px;
+}
 
+}
 
 .breadcrumb:before{
   content:'\E5CC';

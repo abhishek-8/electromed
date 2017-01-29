@@ -116,7 +116,7 @@ document.getElementById('curr').innerHTML='Token Display';
 document.getElementById('desc').innerHTML='Token display system provides easiest way to inform the customer or patient about his / her status while waiting.';
 
 
-document.getElementById('r1d1').innerHTML ='Features:';
+document.getElementById('r1d1').innerHTML ='Features';
 document.getElementById('r1d2').innerHTML ='<p class="bullets" style="display:inline;">Token displays are extremely useful in bringing order in the waiting area.</p>';
 document.getElementById('r2d1').innerHTML ='';
 document.getElementById('r2d2').innerHTML ='<p class="bullets" style="display:inline;">Bright and large displays are clearly visible from a good distance.</p>';
@@ -147,18 +147,18 @@ document.getElementById('pre2').innerHTML='Products for Office';
 document.getElementById('curr').innerHTML='Digital Clock';
 
 
-document.getElementById('desc').innerHTML=':  LED Display Clocks are widely used in factories, offices, large public areas, shopping centers, warehouses and similar large areas.';
+document.getElementById('desc').innerHTML='LED Display Clocks are widely used in factories, offices, large public areas, shopping centers, warehouses and similar large areas.';
 
 
-document.getElementById('r1d1').innerHTML ='Features:';
+document.getElementById('r1d1').innerHTML ='Features';
 document.getElementById('r1d2').innerHTML ='<p class="bullets" style="display:inline;">Micro-controller based design with or without GPS connectivity</p>';
 document.getElementById('r2d1').innerHTML ='';
 document.getElementById('r2d2').innerHTML ='<p class="bullets" style="display:inline;">Inbuilt battery backup</p>';
-document.getElementById('r3d1').innerHTML ='For GPS clock:';
+document.getElementById('r3d1').innerHTML ='For GPS clock';
 document.getElementById('r3d2').innerHTML ='Automatic time setting from GPS satellite.';
-document.getElementById('r4d1').innerHTML ='Options:';
+document.getElementById('r4d1').innerHTML ='Options';
 document.getElementById('r4d2').innerHTML =' Double side clock or master/slave clock';
-document.getElementById('r5d1').innerHTML ='Clock format:';
+document.getElementById('r5d1').innerHTML ='Clock format';
 document.getElementById('r5d2').innerHTML ='12 Hrs. or 24 Hrs. (HH:MM:SECS or HH:MM)';
 
 document.getElementById('ri1').innerHTML='<img src="photos/token1.jpg" height="170">';
@@ -373,7 +373,7 @@ document.getElementById('curr').innerHTML='Process Indicator';
 document.getElementById('desc').innerHTML='Process indicators are suitable for displaying process parameters like flow, temperature, level, speed, pH etc. Available in different digit heights.';
 
 
-document.getElementById('r1d1').innerHTML ='<span>Features:</span>';
+document.getElementById('r1d1').innerHTML ='Features';
 document.getElementById('r1d2').innerHTML ='<p class="bullets" style="display:inline;">Used for the measurement of process parameters</p>';
 document.getElementById('r2d1').innerHTML ='';
 document.getElementById('r2d2').innerHTML ='<p class="bullets" style="display:inline;">Range can be set through push buttons from 0-9999 & zero setting is automatic</p>';
@@ -381,11 +381,11 @@ document.getElementById('r3d1').innerHTML ='';
 document.getElementById('r3d2').innerHTML ='<p class="bullets" style="display:inline;">4 digit LED display</p>';
 document.getElementById('r4d1').innerHTML ='';
 document.getElementById('r4d2').innerHTML ='<p class="bullets" style="display:inline;">Decimal placement is settable</p>';
-document.getElementById('r5d1').innerHTML ='<span>Input:</span>';
+document.getElementById('r5d1').innerHTML ='Input';
 document.getElementById('r5d2').innerHTML ='4 to 20 milli amp';
-document.getElementById('r6d1').innerHTML ='<span>Display digit:</span>';
+document.getElementById('r6d1').innerHTML ='Display digit';
 document.getElementById('r6d2').innerHTML ='7 segment red LED display';
-document.getElementById('r7d1').innerHTML ='<span>Digit height:</span>';
+document.getElementById('r7d1').innerHTML ='Digit height';
 document.getElementById('r7d2').innerHTML ='12.5mm, 25mm, 50mm, 100mm, 150mm, 200mm,  300mm';
 
 
@@ -458,7 +458,7 @@ document.getElementById('curr').innerHTML='Tachometer';
 document.getElementById('desc').innerHTML='Tachometers are used for monitoring the rpm of machines. The sensor is contactless. Ideal for sugar mills, heavy industries etc.';
 
 
-document.getElementById('r1d1').innerHTML ='Features:';
+document.getElementById('r1d1').innerHTML ='Features';
 document.getElementById('r1d2').innerHTML ='<p class="bullets" style="display:inline;">Non blinking display</p>';
 document.getElementById('r2d1').innerHTML ='';
 document.getElementById('r2d2').innerHTML ='<p class="bullets" style="display:inline;">4 digit LED display</p>';
@@ -466,11 +466,11 @@ document.getElementById('r3d1').innerHTML ='';
 document.getElementById('r3d2').innerHTML ='<p class="bullets" style="display:inline;">Non-contact speed sensing</p>';
 document.getElementById('r4d1').innerHTML ='';
 document.getElementById('r4d2').innerHTML ='<p class="bullets" style="display:inline;">High accuracy ( better than 0.1% ± 1 r.p.m)</p>';
-document.getElementById('r5d1').innerHTML ='Range:';
+document.getElementById('r5d1').innerHTML ='Range';
 document.getElementById('r5d2').innerHTML ='0-9999 rpm';
-document.getElementById('r6d1').innerHTML ='Transducer:';
+document.getElementById('r6d1').innerHTML ='Transducer';
 document.getElementById('r6d2').innerHTML =' Magnetic pick-up with 5mtrs. Lead';
-document.getElementById('r7d1').innerHTML ='Operating voltage:';
+document.getElementById('r7d1').innerHTML ='Operating voltage';
 document.getElementById('r7d2').innerHTML =' 230V ± 15%, 50Hz (standard)';
 
 
@@ -500,7 +500,7 @@ document.getElementById('curr').innerHTML='Temperature Controller';
 document.getElementById('desc').innerHTML='Temperature Controllers used in a variety of industrial applications like turbines, furnaces, blow moulding, etc. where the measurement/control of temperature is of vital importance.';
 
 
-document.getElementById('r1d1').innerHTML ='<span>Features:</span>';
+document.getElementById('r1d1').innerHTML ='Features';
 document.getElementById('r1d2').innerHTML ='<p class="bullets" style="display:inline;">Potentiometer setting is available</p>';
 document.getElementById('r2d1').innerHTML ='';
 document.getElementById('r2d2').innerHTML ='<p class="bullets" style="display:inline;">ON/OFF control action at pre-set levels is provided by a set of change-over contacts</p>';

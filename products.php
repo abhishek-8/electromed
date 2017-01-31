@@ -187,7 +187,7 @@ $link='product_list.php?id=Industrial_Instruments&num=10';
     </div>
     
     <div class="parallax-container Overview">
-      <div class="parallax" ><img src="circuits.jpg" height="380"></div>
+      <div class="parallax" ><img src="circuits.jpg" height="100%"></div>
       <br>
       <h3 class="headNamev3 black-text" id="info">Overview</h3>
       <div class="container">
@@ -196,16 +196,6 @@ $link='product_list.php?id=Industrial_Instruments&num=10';
         
       </div>
     </div>
-<!--
-    <div class="container-fluid Overview" style="height:370px;">
-    <br>
-      <h3 class="headNamev3 black-text" id="info">Overview</h3><br>
-      <div class="container">
-        
-        <h4 style="font-family: 'Open Sans Condensed', sans-serif;" class="black-text"><center id="desc"></center></h4>
-        
-      </div>
-    </div>-->
 
     <div class="row product-images" style="z-index:-1;margin-top:-50px;">
       <div class="col l12 s12 m12">

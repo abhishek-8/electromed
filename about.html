@@ -16,33 +16,22 @@
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">
     <script src="action.js" type="text/javascript"></script>
     <script>
     $(document).ready(function(){
-      $('.button-collapse').sideNav();
-    $(".dropdown-button").dropdown({
-    hover:true,
-    constrain_width: true,
-    gutter: 0,
-    belowOrigin: true
-    });
-   // $('.collapsible').collapsible();
-    $('.parallax').parallax();
-    
-    });
-    var once=0;
+     var once=0;
     $(window).scroll(function() {
    var hT = $('#numbers').offset().top,
        hH = $('#numbers').outerHeight(),
        wH = $(window).height(),
        wS = $(this).scrollTop();
-   if (wS > (hT+hH-wH)*(0.80) && once==0){
-    once=1;
-      start();// alert('you have scrolled to the h1!');
+   if (wS > (hT+hH-wH)*(0.90) && once==0){
+      once=1;
+      start();
    }
 });
-
+   });
     </script>
   </head>
   <body id="about_page">
@@ -132,7 +121,7 @@
     <p class="headNamev3" style="font-size:28px;"><br>ELECTROMED is an established and leading manufacturer of electronic products in India.We manufacture and assemble a comprehensive range of<br>moving as well as static electronic LED displays besides a wide range<br>of electronic instruments for industrial application.</p>
     </div>
     </div>
-    </div>
+    
     <br>
 
 
@@ -162,31 +151,92 @@
       </div>
     </div>
 
+
+
+
+<div class="row" id="timeline">
+  
+    <h1 class="headNamev3" style="color:#1b5e20;">Our History</h1>
+    <hr class="style11">
+    <div class="col s12 m9 l10 grey lighten-5">
+    <br><br>
+      <div id="introduction" class="section scrollspy">
+          <div class="container">
+          <h1 class="headName center" style="color:#1b5e20;">Introduction</h1>
+          <h4 class="headName1 center">
+          ELECTRO-MED has a team of dedicated engineers with varied experience in the field of electronic instrumentation, displays and microcontroller based systems. Led by our proprietor, Mr. Pushkar Srivastava, B E (IIT-Roorkee), we have been able to attain the satisfaction of our clients. His in depth knowledge and experience of 42years have helped us to position ourselves as a reputed name in this industry.
+                  </h4>
+            </div>
+      </div>
+
+      <div id="1970" class="section scrollspy">
+          <div class="container">
+          <h1 class="headName center" style="color:#1b5e20;">1970</h1>
+          <h4 class="headName1 center">
+Continuous innovation and rapid transformation have been themes throughout Electro-Med's history, which the company traces to the 1970s with the installation of relay testing system in RDSO, Lucknow. </h4><br>
+</div>
+      </div>
+
+      <div id="1990" class="section scrollspy">
+         <div class="container">
+          <h1 class="headName center" style="color:#1b5e20;">1990</h1>
+         <h4 class="headName1 center">
+The company built its reputation primarily as a high performance digital instruments manufacturer and supplier across in industrial sector in India. By the late 1990s, Electro-Med began offering a new breed of embedded solutions to clients—solutions that aligned organizations' technologies, and processes with their strategies.</h4><br>
+</div>
+      </div>
+      <div id="2010" class="section scrollspy">
+        <div class="container">
+        <h1 class="headName center" style="color:#1b5e20;">2010</h1>
+        <h4 class="headName1 center">
+Throughout its history, Electro-Med has expanded its offerings and capitalized on evolving emerging trends and technologies to benefit its clients.<br>
+The company pioneered embedded systems; led the deployment of electronic display boards, and digital instruments; and has established itself as a leader in today's marketplace.</h4>
+</div>
+      </div>
+    </div>
+
+    <div class="col hide-on-small-only m3 l2" id="timeline-scroller">
+      <ul class="section table-of-contents">
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#1970">1970</a></li>
+        <li><a href="#1990">1990</a></li>
+        <li><a href="#2010">2010</a></li>
+      </ul>
+    </div>
+  </div>
+<hr class="style11">
+
+
+
+
+
+  
+    
+
     <div class="parallax-container" id="numbers">
-    <div class="parallax"><img src="night-dark-blur-blurred.jpg"></div>
+    <div class="parallax"></div>
     <div class="row">
       <h1 class="headNamev3" style="color:#1b5e20;">A few facts about us</h1>
     </div>
     <div class="container">
     <div class="row">
-    <div class="col l2 m2 s2">
-    <h2 class="numerics" style="color:orange;" id="field1"></h2>
-    <h5 class="numerics" style="color:orange;" id="field1">Countries Served</h5>
+    <div class="col l2 m2 s4">
+    <h1 class="numerics" style="color:black;" id="field1"></h1>
+    <h4 class="numerics" style="color:black;" id="field1">Countries Served</h4>
 
     </div>
-    <div class="col l2 offset-l2 m2 offset-m2 s2 offset-s2">
-    <h2 class="numerics" style="color:orange;" id="field2"></h2>
-    <h5 class="numerics" style="color:orange;">Years on market</h5>
+    <div class="col l2 offset-l3 m2 offset-m2 s4">
+    <h1 class="numerics" style="color:black; " id="field2"></h1>
+    <h4 class="numerics" style="color:black;">Years on market</h4>
     
     </div>
-    <div class="col l2 offset-l2 m2 offset-m2 s2 offset-s2">
-    <h2 class="numerics" style="color:orange;" id="field3"></h2>
-    <h5 class="numerics" style="color:orange;">Number of projects</h5>
+    <div class="col l2 offset-l2 m2 offset-m2 s4">
+    <h1 class="numerics" style="color:black;" id="field3"></h1>
+    <h4 class="numerics" style="color:black;">Number of projects</h4>
     </div>
     
     </div>
     </div>
-</div>
+    </div>
 
     <div class="row" style="background:#42a5f5;color:white;">
       <div class="col l4 s12">
@@ -200,6 +250,7 @@
         We've helped more than 8k OEM customers and built over a hundred COTS products that have never been discontinued. Our commitment to quality-certified products, low prices, personable customer support, original solutions, and open source vision has allowed our business to flourish in a very competitive marketplace.</h5>
       </div>
     </div>
+
     <br><br><br><br>
     <div class="row">
       <div class="col l6 offset-l1 s12">
@@ -225,6 +276,70 @@
       </div>
     </div>
     <br><br><br><br>
+    
+        <div class="parallax-container white-text our_clients">
+            <div class="parallax"><img src="black-and-white-city-man-people.jpg"></div>
+            <h1 class="headNamev3" style="color:white;">Our Clients</h1>
+            <div class="container">
+                <p class="headNamev3 clients-overview">We are a client friendly organization. We deliver products as per client’s specific demands. With our advanced production facility and cutting edge technology, we are able to develop innovative and user-friendly products for our clients. </p>
+                <br>
+            <ul class="client-list">
+              <li><a href="#c1">Power Plants</a></li>
+              <li><a href="#c2">Sugar Mills</a></li>
+              <li><a href="#c3">Industry</a></li>
+              <li><a href="#c4">Others</a></li>
+            </ul>
+              </div>
+          
+        </div>
+
+        <div class="container-fluid white-text grey" id="c1">
+        
+            <h1 class="headNamev3" style="color:white;">Power Plants</h1>
+            <div class="container">
+                <p class="headNamev3">We have been supplying range of MW indicators to numerous power plants of Uttar Pradesh, Madhya Pradesh, Chhattisgarh, Kerala, Neyveli, TANGEDCO Chennai and NTPCs units etc. We manufacture and assemble a comprehensive range of LED display boards which shows environmental / pollution control parameters at NTPC Unchahar, NTPC Badarpur, NTPC Rihand, NTPC Tanda, and NTPC Sipat.
+Recently we have completed two more large display boards for NTPC Unchahar. </p>
+                <br>
+              </div>
+          
+        </div>
+
+
+        <div class="container-fluid white-text grey" id="c2">
+
+            <h1 class="headNamev3" style="color:white;">Sugar Mills</h1>
+            <div class="container">
+                <p class="headNamev3">Over the years we have been supplying Digital Tachometers, Temperature Indicators, Line Frequency Monitors, Weighing Scale monitors, Flow monitors, Bag counters and pH meters to prestigious mills of Balrampur group, Bajaj group, Dhampur group, Hargaon, Bannari Amman, Ponni sugars, Nirani sugars, KBD sugars to name a few. Our Weighing Scale Monitors and Flow monitors have been designed especially for installation in Sugar Industry. These products have contributed in improving the operating efficiency of the mills. </p>
+                <br>
+              </div>
+          
+        </div>
+
+
+        <div class="container-fluid white-text grey" id="c3">
+     
+            <h1 class="headNamev3" style="color:white;">Industry</h1>
+            <div class="container">
+                <p class="headNamev3">We provide a wide range of both moving or static electronic LED display and other electronic instruments for industrial application.
+ We have been supplying an environmental parameter display board to IISCO Steel Plant of Steel Authority Of India Limited, HINDALCO Renukoot, HINDALCO, Mahan & Hi-TECH Carbon. Recently we are working on two LED display boards of HINDALCO, Renukoot and one LED display board of HINDALCO Mahan.
+</p>
+                <br>
+              </div>
+          
+        </div>
+
+
+        <div class="container-fluid white-text grey" id="c4">
+            <h1 class="headNamev3" style="color:white;">Others</h1>
+            <div class="container">
+                <p class="headNamev3">We have installed a large display system at The High Court in Patna where online case numbers are displayed at fourteen distant locations within the Court campus.
+We provide wide range of independent as well as master/slave Clock with or without GPS for hospitals, clinics and Air force stations etc.
+</p>
+                <br>
+              </div>
+          
+        </div>
+
     <h1 class="headName">Product and Services</h1>
     <hr>
     <br>
@@ -437,5 +552,42 @@
       </div>
     </div>
   </footer>
+  <script>
+    $(document).ready(function(){
+      $('.scrollspy').scrollSpy();
+
+      $.fn.followTo = function (from,to) {
+    var $this = this,
+        $window = $(window);
+
+    $window.scroll(function (e) {
+        if ($window.scrollTop() < from || $window.scrollTop() > to ) {
+            $this.css({
+                position: 'relative',
+                left:1150
+            });
+        } else {
+            $this.css({
+                position: 'fixed',
+                top: 185,
+                left:1150
+            });
+        }
+    });
+};
+
+$('#timeline-scroller').followTo(1010,2530);
+    $('.button-collapse').sideNav();
+    $(".dropdown-button").dropdown({
+    hover:true,
+    constrain_width: true,
+    gutter: 0,
+    belowOrigin: true
+    });
+   // $('.collapsible').collapsible();
+    $('.parallax').parallax();
+    
+    });
+    </script>
   </body>
 </html>

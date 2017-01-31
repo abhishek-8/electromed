@@ -121,12 +121,12 @@ $z=$_GET['num'];
 
 
      <div class="parallax-container Overview" id="category-overview">
-      <div class="parallax" ><img src="circuits.jpg" height="380"></div>
+      <div class="parallax" ><img src="circuits.jpg" height="100%"></div>
       <br>
-    <h3 class="headNamev3 black-text" id="info">Overview</h3>
+    <h3 class="headNamev3 black-text">Overview</h3>
       <div class="container">
         
-        <center><p class="black-text overview-text" id="desc"></p></center>
+        <center><p class="black-text overview-text"></p></center>
         
       </div>
     </div>
@@ -188,7 +188,7 @@ $z=$_GET['num'];
                     </ul>
                 </div>
 
-                <div class="col l9 s12">
+                <div class="col l9 s12" id="category_products">
                     <h3 class="headName" id="category_name"></h3>
                     <div class="row">
                         <div class="col s12 m7 l3" id="c1">

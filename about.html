@@ -16,7 +16,7 @@
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sansita" rel="stylesheet">
     <script src="action.js" type="text/javascript"></script>
     <script>
     $(document).ready(function(){
@@ -153,16 +153,15 @@
 
 
 
-
-<div class="row" id="timeline">
-  
-    <h1 class="headNamev3" style="color:#1b5e20;">Our History</h1>
+    <h1 class="headName1 center" style="color:#1b5e20;">Our History</h1>
     <hr class="style11">
-    <div class="col s12 m9 l10 grey lighten-5">
+<div class="row grey lighten-5" id="timeline">
+
+    <div class="col s12 m9 l10">
     <br><br>
       <div id="introduction" class="section scrollspy">
           <div class="container">
-          <h1 class="headName center" style="color:#1b5e20;">Introduction</h1>
+         <!-- <h1 class="headName center" style="color:#1b5e20;">Introduction</h1>-->
           <h4 class="headName1 center">
           ELECTRO-MED has a team of dedicated engineers with varied experience in the field of electronic instrumentation, displays and microcontroller based systems. Led by our proprietor, Mr. Pushkar Srivastava, B E (IIT-Roorkee), we have been able to attain the satisfaction of our clients. His in depth knowledge and experience of 42years have helped us to position ourselves as a reputed name in this industry.
                   </h4>
@@ -208,7 +207,6 @@ The company pioneered embedded systems; led the deployment of electronic display
 
 
 
-
   
     
 
@@ -221,17 +219,17 @@ The company pioneered embedded systems; led the deployment of electronic display
     <div class="row">
     <div class="col l2 m2 s4">
     <h1 class="numerics" style="color:black;" id="field1"></h1>
-    <h4 class="numerics" style="color:black;" id="field1">Countries Served</h4>
+    <h4 class="numerics" style="color:black;" id="field-text1">Countries Served</h4>
 
     </div>
     <div class="col l2 offset-l3 m2 offset-m2 s4">
     <h1 class="numerics" style="color:black; " id="field2"></h1>
-    <h4 class="numerics" style="color:black;">Years on market</h4>
+    <h4 class="numerics" style="color:black;" id="field-text2">Years on market</h4>
     
     </div>
     <div class="col l2 offset-l2 m2 offset-m2 s4">
     <h1 class="numerics" style="color:black;" id="field3"></h1>
-    <h4 class="numerics" style="color:black;">Number of projects</h4>
+    <h4 class="numerics" style="color:black;" id="field-text3">Number of projects</h4>
     </div>
     
     </div>
@@ -283,19 +281,21 @@ The company pioneered embedded systems; led the deployment of electronic display
             <div class="container">
                 <p class="headNamev3 clients-overview">We are a client friendly organization. We deliver products as per client’s specific demands. With our advanced production facility and cutting edge technology, we are able to develop innovative and user-friendly products for our clients. </p>
                 <br>
+             <center>   
             <ul class="client-list">
               <li><a href="#c1">Power Plants</a></li>
               <li><a href="#c2">Sugar Mills</a></li>
               <li><a href="#c3">Industry</a></li>
               <li><a href="#c4">Others</a></li>
             </ul>
+          </center>
               </div>
           
         </div>
-
-        <div class="container-fluid white-text grey" id="c1">
+<div class="container-fluid" style="background-color:#78909c; ">
+        <div class="container-fluid white-text blue-grey darken-1" id="c1">
         
-            <h1 class="headNamev3" style="color:white;">Power Plants</h1>
+            <h1 class="headName1 center" style="color:white;">Power Plants</h1>
             <div class="container">
                 <p class="headNamev3">We have been supplying range of MW indicators to numerous power plants of Uttar Pradesh, Madhya Pradesh, Chhattisgarh, Kerala, Neyveli, TANGEDCO Chennai and NTPCs units etc. We manufacture and assemble a comprehensive range of LED display boards which shows environmental / pollution control parameters at NTPC Unchahar, NTPC Badarpur, NTPC Rihand, NTPC Tanda, and NTPC Sipat.
 Recently we have completed two more large display boards for NTPC Unchahar. </p>
@@ -305,9 +305,9 @@ Recently we have completed two more large display boards for NTPC Unchahar. </p>
         </div>
 
 
-        <div class="container-fluid white-text grey" id="c2">
+        <div class="container-fluid white-text blue-grey darken-1" id="c2">
 
-            <h1 class="headNamev3" style="color:white;">Sugar Mills</h1>
+            <h1 class="headName1 center" style="color:white;">Sugar Mills</h1>
             <div class="container">
                 <p class="headNamev3">Over the years we have been supplying Digital Tachometers, Temperature Indicators, Line Frequency Monitors, Weighing Scale monitors, Flow monitors, Bag counters and pH meters to prestigious mills of Balrampur group, Bajaj group, Dhampur group, Hargaon, Bannari Amman, Ponni sugars, Nirani sugars, KBD sugars to name a few. Our Weighing Scale Monitors and Flow monitors have been designed especially for installation in Sugar Industry. These products have contributed in improving the operating efficiency of the mills. </p>
                 <br>
@@ -316,9 +316,9 @@ Recently we have completed two more large display boards for NTPC Unchahar. </p>
         </div>
 
 
-        <div class="container-fluid white-text grey" id="c3">
+        <div class="container-fluid white-text blue-grey darken-1" id="c3">
      
-            <h1 class="headNamev3" style="color:white;">Industry</h1>
+            <h1 class="headName1 center" style="color:white;">Industry</h1>
             <div class="container">
                 <p class="headNamev3">We provide a wide range of both moving or static electronic LED display and other electronic instruments for industrial application.
  We have been supplying an environmental parameter display board to IISCO Steel Plant of Steel Authority Of India Limited, HINDALCO Renukoot, HINDALCO, Mahan & Hi-TECH Carbon. Recently we are working on two LED display boards of HINDALCO, Renukoot and one LED display board of HINDALCO Mahan.
@@ -329,8 +329,8 @@ Recently we have completed two more large display boards for NTPC Unchahar. </p>
         </div>
 
 
-        <div class="container-fluid white-text grey" id="c4">
-            <h1 class="headNamev3" style="color:white;">Others</h1>
+        <div class="container-fluid white-text blue-grey darken-1" id="c4">
+            <h1 class="headName1 center" style="color:white;">Others</h1>
             <div class="container">
                 <p class="headNamev3">We have installed a large display system at The High Court in Patna where online case numbers are displayed at fourteen distant locations within the Court campus.
 We provide wide range of independent as well as master/slave Clock with or without GPS for hospitals, clinics and Air force stations etc.
@@ -338,6 +338,7 @@ We provide wide range of independent as well as master/slave Clock with or witho
                 <br>
               </div>
           
+        </div>
         </div>
 
     <h1 class="headName">Product and Services</h1>
@@ -564,19 +565,19 @@ We provide wide range of independent as well as master/slave Clock with or witho
         if ($window.scrollTop() < from || $window.scrollTop() > to ) {
             $this.css({
                 position: 'relative',
-                left:1150
+                left:1050
             });
         } else {
             $this.css({
                 position: 'fixed',
                 top: 185,
-                left:1150
+                left:1050
             });
         }
     });
 };
 
-$('#timeline-scroller').followTo(1010,2530);
+$('#timeline-scroller').followTo(1010,2310);
     $('.button-collapse').sideNav();
     $(".dropdown-button").dropdown({
     hover:true,
@@ -586,6 +587,7 @@ $('#timeline-scroller').followTo(1010,2530);
     });
    // $('.collapsible').collapsible();
     $('.parallax').parallax();
+
     
     });
     </script>

@@ -223,7 +223,6 @@ margin-left:25%;
   margin-top:-25px;
 }
 #contact_us{
-  background-color: rgba(159,189,210, 0.7);
   height:370px;
 
 }
@@ -351,8 +350,8 @@ nav .brand-logo{
 .client_slider {
   max-height:415px;
 }
-/*
-.input-field .prefix.active{color:#b4070e;}*/
+
+.input-field .prefix.active{color:#2979ff;}
 .client_slider .slides {
    background: white; 
    max-height:355px;
@@ -363,22 +362,22 @@ nav .brand-logo{
   }
 
    input[type=text],input[type=password],input[type=email],input[type=url],input[type=time],input[type=date],input[type=datetime],input[type=datetime-local],input[type=tel],input[type=number],input[type=search],textarea.materialize-textarea{
-    background-color:#64b5f6;
+    background-color:#82b1ff;
     color:white;
     border:none;/*2px ridge;*/
     border-radius:5px;
     outline:none;
-    height:2.5rem;
+    height:2.7rem;
     width:100%;
     font-size:1rem;
-    margin:0 0 15px 0;
+    margin:0 0 3px 0;
     padding:0;
     box-shadow:none;
     box-sizing:content-box;
     transition:all 0.3s;
   }
-#contactForm form .input-field label{
-  color:#9e9e9e;
+ form .input-field label{
+  color:white;
   position:absolute;
   top:0.5rem;
   left:0.75rem;
@@ -386,7 +385,7 @@ nav .brand-logo{
   cursor:text;
   transition:.2s ease-out
 }
-#contactForm form .input-field{position:relative;margin-top:0.5rem;}
+ form .input-field{position:relative;margin-top:0.5rem;}
 #select_industry{
     width:45%;
     margin-left:45px;

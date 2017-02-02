@@ -19,10 +19,12 @@ $z=$_GET['num'];
         <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
         <!--Import jQuery before materialize.js-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>‌
+
         <!-- Compiled and minified JavaScript -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Coming+Soon|Pacifico|Shadows+Into+Light" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
          <script src="action.js" type="text/javascript"></script>
         <script>
         $(document).ready(function(){
@@ -95,7 +97,7 @@ $z=$_GET['num'];
    <div class="navbar-fixed">
       <nav>
         <div class="nav-wrapper container">
-          <a id="logo-container" href="" class="brand-logo">Electro-med</a>
+          <a id="logo-container" href="" class="brand-logo custom-text">Electro-med</a>
           <ul class="right hide-on-med-and-down">
             <li><a href="home.html" class="navLink">Home</a></li>
             <li><a href="about.html" class="navLink">About</a></li>
@@ -134,7 +136,7 @@ $z=$_GET['num'];
         <div class="container-fluid">
             <div class="row">
                 <div class="col l3 s12"><br><br>
-                    <a href="#!" class="btn red lighten-2 category-btn" onclick="Materialize.showStaggeredList('#staggered-test')">Categories</a>
+                    <a href="#!" class="btn blue darken-3 category-btn" onclick="Materialize.showStaggeredList('#staggered-test')">Categories</a>
                     <ul id="staggered-test" class="collapsible" data-collapsible="accordion">
                         <li style="opacity: 0;">
                             <div class="collapsible-header <?php if($x=='LED_display') echo 'active'; ?>" onclick="filter('LED_display',3)">LED Display</div>

@@ -10,6 +10,8 @@
         <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
         <!-- <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>  -->
         <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
         <!--Import jQuery before materialize.js-->
@@ -86,7 +88,7 @@
    <div class="navbar-fixed">
       <nav>
         <div class="nav-wrapper container">
-          <a id="logo-container" href="" class="brand-logo">Electro-med</a>
+          <a id="logo-container" href="" class="brand-logo custom-text">Electro-med</a>
           <ul class="right hide-on-med-and-down">
             <li><a href="home.html" class="navLink">Home</a></li>
             <li><a href="about.html" class="navLink">About</a></li>
@@ -125,9 +127,10 @@
 
             
             <div class="col l12 m12 s12" id="contactform">
-            <h4 class="white-text" style="position:relative;font-family:'Abel',sans-serif;">We'd love to help you </h4>
+            <p class="custom-text" style="color:#263238;font-size:26px;">We'd love to help you </p>
+            
             <hr class="style11"><br>
-                <form name="query_form" action="submit.php" method="post">
+                <form name="query_form" action="submit.php" method="post" id="qform">
                 <div class="row">
                     <div class="col l4 m4 s12">
                         <div class="input-field">
@@ -154,7 +157,7 @@
 
                 <div class="row">
                     <div class="col l6 m12 s12" id="select_industry">
-                        <div class="input-field" style="background-color: #263238;border:none;border-radius:5px;margin-top:0.5rem;padding-left:0.5rem;">
+                        <div class="input-field" style="background-color: #64b5f6;border:none;border-radius:5px;margin-top:0.5rem;padding-left:0.5rem;">
                                 <select required name="industry">
                                     <option value="">Choose your Industry ( mandatory )</option>
                                     <option value="Power">Power</option>
@@ -187,43 +190,42 @@
             </div>
         </div>
 </div>
-<div class="container-fluid">
-    <h3 class="headNamev3 black-text" id="info">Connect With Us</h3><br>
+<div class="container-fluid blue darken-2" style="background-color:#263238;">
+    <center><h4 class="custom-text white-text"><b>CONNECT WITH US</b></h4></center>
     <div class="row" id="contact">
         <div class="col l1 m1 s2">
-            <i class="icons material-icons">room</i>
+            <i class="icons material-icons white-text">room</i>
         </div>
         <div class="col l2 m2 s9">
-            <div class="row"><h4 class="headName1 ">ADDRESS</h4></div>
-            <div class="row"><h5 class="headName1 grey-text">D -17, Vivekanand Puri,
+            <div class="row"><h4 class="headName1 white-text"><b>ADDRESS<b></h4></div>
+            <div class="row"><h5 class="headName1 white-text">D -17, Vivekanand Puri,
               <br/>Lucknow –226007 India</h5></div>
         </div>
         <div class="col l1 offset-l1 m1 offset-m1 s2">
-            <i class="icons material-icons">phone</i>
+            <i class="icons material-icons white-text">phone</i>
         </div>
         <div class="col l2 m2 s9">
-            <div class="row"><h4 class="headName1">Give us a call</h4></div>
-            <div class="row"><h5 class="headName1 grey-text">+91 9415085804<br>+91 9415039393</h5></div>
+            <div class="row"><h4 class="headName1 white-text"><b>Give us a call</b></h4></div>
+            <div class="row"><h5 class="headName1 white-text">+91 9415085804<br>+91 9415039393</h5></div>
         </div>
         <div class="col l1 offset-l1 m1 offset-m1 s2">
-            <i class="icons material-icons">email</i>
+            <i class="icons material-icons white-text">email</i>
         </div>
         <div class="col l2 m2 s8">
-            <div class="row"><h4 class="headName1">Send Us a mail</h4></div>
-            <div class="row"><h5 class="headName1 grey-text">electro.med25@gmail.com<br>electromed3@rediffmail.com<br>info@electromed.co.in</h5></div>
+            <div class="row"><h4 class="headName1 white-text"><b>Send Us a mail</b></h4></div>
+            <div class="row"><h5 class="headName1 white-text">electro.med25@gmail.com<br>electromed3@rediffmail.com<br>info@electromed.co.in</h5></div>
         </div>
     </div>
 </div>
 
-        <h1 class="headName black-text">Find Us</h1>
-        <hr>
-            <div class="row container-fluid" id="contactDetails">
-            <div class="col l12 m12 s12">
-            <div class="overlay" onClick="style.pointerEvents='none'"></div>
-                <div id="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14234.872605313356!2d80.93281223137183!3d26.880694430260508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf8e238a7eafccff!2sELECTRO-MED!5e0!3m2!1sen!2sin!4v1484311290986" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <center><h2 class="custom-text" style="color:#263238;"><b>FIND US</b></h2></center>
+        
+            
+                   <div class="overlay" onClick="style.pointerEvents='none'"></div>
+                <div id="map" class="center"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14234.872605313356!2d80.93281223137183!3d26.880694430260508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf8e238a7eafccff!2sELECTRO-MED!5e0!3m2!1sen!2sin!4v1484311290986" width="100%" height="370" frameborder="0" style="border:none" allowfullscreen></iframe>
                 </div>
                </div> 
-            </div>
+           
 
 
        <footer class="page-footer">

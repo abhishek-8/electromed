@@ -40,7 +40,7 @@ body{
   background-color: rgba(0,10,59, 0.7);
 }
 #contactPage {
-  background-color: #455a64;
+  background-color: white;
   overflow-x: hidden;
 }
 #about_page,#product_page,#category_page{
@@ -190,10 +190,11 @@ background-color:rgba(50,7,14,0.15);
     width:45%;
     margin-left:45px;
   }
-#home_card1,#home_card2,#home_card3,#home_card4,#home_card5,#home_card6 {
+#home_card1,#home_card2,#home_card3,#home_card4,#home_card5,#home_card6 ,#home_card7,#home_card8,#home_card7{
 
     margin-left:6%; 
 }
+
   #product_image2 {
   margin-left:2px;
   margin-right:2px;
@@ -243,6 +244,9 @@ margin-left:25%;
    background-color: #263238;
   font-family:'Abel',sans-serif;
 }
+.custom-text{
+ font-family: 'Montserrat', sans-serif;
+ }
 .headName {
   opacity:0.6;
   text-align: center;
@@ -280,6 +284,7 @@ color:white;
   color:white;
 }
 
+
 span {
   color:#263238; 
   font-size:24px;
@@ -288,7 +293,8 @@ span {
 nav {
   margin-top: -25px;
  /* background:#d32f2f;*/
-  background:#b4070e;
+  /*background:#b4070e;*/
+  background: #1976d2;
   font-family:'Abel',sans-serif;
 }
 
@@ -356,8 +362,8 @@ nav .brand-logo{
     line-height:100%;
   }
 
-  input[type=text],input[type=password],input[type=email],input[type=url],input[type=time],input[type=date],input[type=datetime],input[type=datetime-local],input[type=tel],input[type=number],input[type=search],textarea.materialize-textarea{
-    background-color:#263238;
+   input[type=text],input[type=password],input[type=email],input[type=url],input[type=time],input[type=date],input[type=datetime],input[type=datetime-local],input[type=tel],input[type=number],input[type=search],textarea.materialize-textarea{
+    background-color:#64b5f6;
     color:white;
     border:none;/*2px ridge;*/
     border-radius:5px;
@@ -371,7 +377,7 @@ nav .brand-logo{
     box-sizing:content-box;
     transition:all 0.3s;
   }
-.input-field label{
+#contactForm form .input-field label{
   color:#9e9e9e;
   position:absolute;
   top:0.5rem;
@@ -380,7 +386,7 @@ nav .brand-logo{
   cursor:text;
   transition:.2s ease-out
 }
-.input-field{position:relative;margin-top:0.5rem;}
+#contactForm form .input-field{position:relative;margin-top:0.5rem;}
 #select_industry{
     width:45%;
     margin-left:45px;

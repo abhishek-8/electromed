@@ -17,25 +17,26 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Sansita" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
     <script src="action.js" type="text/javascript"></script>
     <script>
-    $(document).ready(function(){
-     var once=0;
+     $(document).ready(function(){
+    var once=0;
     $(window).scroll(function() {
-   var hT = $('#numbers').offset().top,
-       hH = $('#numbers').outerHeight(),
-       wH = $(window).height(),
-       wS = $(this).scrollTop();
-   if (wS > (hT+hH-wH)*(0.90) && once==0){
-      once=1;
-      start();
-   }
-});
-   });
+    var hT = $('#numbers').offset().top,
+    hH = $('#numbers').outerHeight(),
+    wH = $(window).height(),
+    wS = $(this).scrollTop();
+    if (wS > (hT+hH-wH)*(0.90) && once==0){
+    once=1;
+    start();
+    }
+    });
+    });
     </script>
   </head>
   <body id="about_page">
-   <div class="dropdown-content" id="products">
+    <div class="dropdown-content" id="products">
       <div class="container">
         <div class="row">
           <div class="col l4"><p class="dropdown_headName"><a href="product_list.php?id=LED_display&num=3">LED Display</a></p><hr></div>
@@ -71,24 +72,22 @@
         </div>
       </div>
     </div>
-
     <div class="dropdown-content" id="projects">
       <div class="container">
         <div class="row">
-        <div class="col l12">
+          <div class="col l12">
             <p class="product_name"><a href="#">COACH GUIDANCE SYSTEM</a></p>
             <p class="product_name"><a href="#">TRAIN INFORMATION BOARD</a></p>
             <p class="product_name"><a href="#">POWER GENERATION DISPLAY BOARD</a></p>
             
           </div>
-       </div>
+        </div>
+      </div>
     </div>
-    </div>
-
-   <div class="navbar-fixed">
+    <div class="navbar-fixed">
       <nav>
         <div class="nav-wrapper container">
-          <a id="logo-container" href="" class="brand-logo">Electro-med</a>
+          <a id="logo-container" href="" class="brand-logo custom-text">Electro-med</a>
           <ul class="right hide-on-med-and-down">
             <li><a href="home.html" class="navLink">Home</a></li>
             <li class="active"><a href="about.html" class="navLink">About</a></li>
@@ -97,148 +96,259 @@
             <li><a href="contactForm.html" class="navLink">Contact</a></li>
           </ul>
           
-         
+          
           <ul id="nav-mobile" class="side-nav">
             <li><a href="home.html">Home</a></li>
             <li class="active"><a href="about.html">About Us</a></li>
             <li><a href="projects.html">Projects<i class="material-icons right">arrow_drop_down</i></a></li>
             <li><a href="product_list.php?id=LED_display&num=3">Products<i class="material-icons right">arrow_drop_down</i></a></li>
-            <li><a href="contactForm.html">Contact Us</a></li> 
+            <li><a href="contactForm.html">Contact Us</a></li>
           </ul>
-
           <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-
         </div>
       </nav>
     </div>
-
     
-
     <div class="parallax-container" id="about_us">
-    <div class="parallax"><img src="bitcoin.jpg"></div>
-    <h1 class="headNamev3" style="color:white;">About Us</h1>
-    <div class="container">
-    <p class="headNamev3" style="font-size:28px;"><br>ELECTROMED is an established and leading manufacturer of electronic products in India.We manufacture and assemble a comprehensive range of<br>moving as well as static electronic LED displays besides a wide range<br>of electronic instruments for industrial application.</p>
-    </div>
-    </div>
-    
-    <br>
-
-
-    <div class="row">
-      <div class="col l5 offset-l1 m5 s12">
-      <br><br>
-        <div class="video-container">
-          <iframe width="533" height="315" src="https://www.youtube.com/embed/uSSOncrS_lI" frameborder="0" allowfullscreen></iframe>
-        </div>
-      </div>
-      <div class="col s5 offset-l1 m5 offset-m1 s12">
-        <div class="row">
-          <h4 class="headName">Contact and Support</h4>
-          <h4 class="headNamev2">D -17, Vivekanand Puri,Lucknow –226007 India</h4>
-        </div>
-        <div class="row">
-          <h4 class="headName">Quick facts</h4>
-          <ul>
-            <li><h4 class="headNamev2">32 years in business</h4></li>
-            <li><h4 class="headNamev2">Over 100 standard products</h4></li>
-            <li><h4 class="headNamev2">Offer custom hardware and software design services</h4></li>
-            <li><h4 class="headNamev2">Never discontinued a product</h4></li>
-            <li><h4 class="headNamev2">Fully operated in India</h4></li>
-            <li><h4 class="headNamev2">ISO-9001:2008 certified</h4></li>
-          </ul>
-        </div>
+      <div class="parallax"><img src="pexels-photo-129544.jpeg"></div>
+      <div class="container">
+        <p class="white-text custom-text" style="font-size:30px;text-align:center;"><br><br><b>WE ARE A LEADING MANUFACTURER OF ELECTRONIC PRODUCTS IN INDIA.</b></p>
       </div>
     </div>
-
-
-
-    <h1 class="headName1 center" style="color:#1b5e20;">Our History</h1>
-    <hr class="style11">
-<div class="row grey lighten-5" id="timeline">
-
-    <div class="col s12 m9 l10">
     <br><br>
-      <div id="introduction" class="section scrollspy">
-          <div class="container">
-         <!-- <h1 class="headName center" style="color:#1b5e20;">Introduction</h1>-->
-          <h4 class="headName1 center">
-          ELECTRO-MED has a team of dedicated engineers with varied experience in the field of electronic instrumentation, displays and microcontroller based systems. Led by our proprietor, Mr. Pushkar Srivastava, B E (IIT-Roorkee), we have been able to attain the satisfaction of our clients. His in depth knowledge and experience of 42years have helped us to position ourselves as a reputed name in this industry.
-                  </h4>
-            </div>
-      </div>
-
-      <div id="1970" class="section scrollspy">
-          <div class="container">
-          <h1 class="headName center" style="color:#1b5e20;">1970</h1>
-          <h4 class="headName1 center">
-Continuous innovation and rapid transformation have been themes throughout Electro-Med's history, which the company traces to the 1970s with the installation of relay testing system in RDSO, Lucknow. </h4><br>
-</div>
-      </div>
-
-      <div id="1990" class="section scrollspy">
-         <div class="container">
-          <h1 class="headName center" style="color:#1b5e20;">1990</h1>
-         <h4 class="headName1 center">
-The company built its reputation primarily as a high performance digital instruments manufacturer and supplier across in industrial sector in India. By the late 1990s, Electro-Med began offering a new breed of embedded solutions to clients—solutions that aligned organizations' technologies, and processes with their strategies.</h4><br>
-</div>
-      </div>
-      <div id="2010" class="section scrollspy">
-        <div class="container">
-        <h1 class="headName center" style="color:#1b5e20;">2010</h1>
-        <h4 class="headName1 center">
-Throughout its history, Electro-Med has expanded its offerings and capitalized on evolving emerging trends and technologies to benefit its clients.<br>
-The company pioneered embedded systems; led the deployment of electronic display boards, and digital instruments; and has established itself as a leader in today's marketplace.</h4>
-</div>
-      </div>
-    </div>
-
-    <div class="col hide-on-small-only m3 l2" id="timeline-scroller">
-      <ul class="section table-of-contents">
-        <li><a href="#introduction">Introduction</a></li>
-        <li><a href="#1970">1970</a></li>
-        <li><a href="#1990">1990</a></li>
-        <li><a href="#2010">2010</a></li>
-      </ul>
-    </div>
-  </div>
-<hr class="style11">
-
-
-
-
-  
-    
-
-    <div class="parallax-container" id="numbers">
-    <div class="parallax"></div>
-    <div class="row">
-      <h1 class="headNamev3" style="color:#1b5e20;">A few facts about us</h1>
-    </div>
+    <center><h2 class="custom-text" style="color:#263238;"><b>ABOUT US</b></h2></center>
+    <br><br>
+    <p class="custom-text" style="color:#263238;text-align:center;font-size:17px;">WE MANUFACTURE AND ASSEMBLE A COMPREHENSIVE RANGE OF MOVING AS WELL AS STATIC ELECTRONIC LED DISPLAYS BESIDES A WIDE RANGE OF ELECTRONIC INSTRUMENTS FOR INDUSTRIAL APPLICATION.</p>
+    <br><br>
+    <p class="custom-text" style="color:#263238;text-align:center;font-size:18px;">OUR MISSION</p>
     <div class="container">
-    <div class="row">
-    <div class="col l2 m2 s4">
-    <h1 class="numerics" style="color:black;" id="field1"></h1>
-    <h4 class="numerics" style="color:black;" id="field-text1">Countries Served</h4>
+      <center><p class="headName1" style="color:#616161;text-align:center;font-size:20px;">To make reliable user friendly high-tech products at an economical cost. Provide value for money to customers and profits to the organization and the team</p></center>
+    </div><br>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col l4 m4 s12">
+          <p class="custom-text" style="color:#263238;text-align:center;font-size:18px;">QUALITY POLICY</p>
+          <p class="headName1" style="color:#616161;text-align:center;font-size:20px;">We accept responsibility for complete product satisfaction of its customers. We exercise this responsibility through adequate training of our employees, exceeding customer requirements and maintaining a company culture that fosters continuous improvement. Our objective is to deliver defect free products on time, every time</p>
+        </div>
+        <div class="col l4 m4 s12">
+          <p class="custom-text" style="color:#263238;text-align:center;font-size:18px;">WHY ELECTROMED</p>
+          <p class="headName1" style="color:#616161;text-align:center;font-size:20px;">We have a team of dedicated engineers with varied experience in the field of electronic instrumentation, displays and microcontroller based systems. We have in-house R & D facility for the development of microprocessor based systems, design of PC Boards and mechanical assemblies.</p>
+        </div>
+        <div class="col l4 m4 s12">
+          <p class="custom-text" style="color:#263238;text-align:center;font-size:18px;">WHAT WE DO</p>
+          <p class="headName1" style="color:#616161;text-align:center;font-size:20px;">ELECTRO-MED is an established and leading manufacturer of electronic products in India. We manufacture and assemble a comprehensive range of moving as well as static electronic LED displays besides a wide range of electronic instruments for industrial application.</p>
+        </div>
+      </div>
+    </div>
+    <br><br>
+
+    <div class="container-fluid">
+
+      <div class="row">
+        <p class="custom-text" style="color:#263238;text-align:center;font-size:22px;">A FEW FACTS ABOUT US</p>
+      </div>
+
+      <div class="row" id="numbers">
+
+        <div class="col l2 m2 s4">
+          <p class="custom-text" style="color:#263238;text-align:center;font-size:42px;" id="field1"></p>
+          <br>
+          <p class="custom-text" style="color:#263238;text-align:center;font-size:22px;">COUNTRIES SERVED</p>
+        </div>
+
+        <div class="col l2 offset-l1 m2 offset-m2 s4">
+          <p class="custom-text" style="color:#263238;text-align:center;font-size:42px; " id="field2"></p>
+          <br>
+          <p class="custom-text" style="color:#263238;text-align:center;font-size:22px;">YEARS ON MARKET</p>
+        </div>
+
+        <div class="col l2 offset-l1 m2 offset-m2 s4">
+          <p class="custom-text" style="color:#263238;text-align:center;font-size:42px;" id="field3"></p>
+          <br>
+          <p class="custom-text" style="color:#263238;text-align:center;font-size:22px;">NUMBERS OF PROJECTS</p>
+        </div>
+
+        <div class="l5 offset-l1 s11 offset-s1">
+         <br>
+            <p class="headName1" style="color:#424242;text-align:left;font-size:20px;">Over 100 standard products</p>
+            <p class="headName1" style="color:#424242;text-align:left;font-size:20px;">Custom hardware and software design services</p>
+            <p class="headName1" style="color:#424242;text-align:left;font-size:20px;">Never discontinued a product</p>
+            <p class="headName1" style="color:#424242;text-align:left;font-size:20px;">Fully operated in India</p>
+            <p class="headName1" style="color:#424242;text-align:left;font-size:20px;">ISO-9001:2008 certified</p>
+         
+        </div>
+        
+      </div>
 
     </div>
-    <div class="col l2 offset-l3 m2 offset-m2 s4">
-    <h1 class="numerics" style="color:black; " id="field2"></h1>
-    <h4 class="numerics" style="color:black;" id="field-text2">Years on market</h4>
-    
-    </div>
-    <div class="col l2 offset-l2 m2 offset-m2 s4">
-    <h1 class="numerics" style="color:black;" id="field3"></h1>
-    <h4 class="numerics" style="color:black;" id="field-text3">Number of projects</h4>
-    </div>
-    
-    </div>
-    </div>
-    </div>
 
+    <br><br>
+    <center><h2 class="custom-text" style="color:#263238;"><b>OUR HISTORY</b></h2></center>
+    <br><br>
+    <hr class="style11">
+
+    <div class="row" id="timeline">
+      <div class="col s12 m9 l10">
+        <br><br>
+        <div id="introduction" class="section scrollspy">
+          <div class="container-fluid">
+            <!-- <h1 class="headName center" style="color:#1b5e20;">Introduction</h1>-->
+            <div class="row">
+            <div class="col l8 offset-l2">
+            <p class="headName1" style="color:#424242;text-align:center;font-size:20px;">
+            ELECTRO-MED has a team of dedicated engineers with varied experience in the field of electronic instrumentation, displays and microcontroller based systems. Led by our proprietor, Mr. Pushkar Srivastava, B E (IIT-Roorkee), we have been able to attain the satisfaction of our clients. His in depth knowledge and experience of 42years have helped us to position ourselves as a reputed name in this industry.
+            </p>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div id="1970" class="section scrollspy">
+          <div class="container-fluid">
+          <div class="row">
+          <div class="col l2 blue lighten-5">
+            <p class="custom-text" style="color:#263238;text-align:center;font-size:20px;">1970</p>
+            </div>
+            <div class="col l8">
+            <p class="headName1" style="color:#424242;text-align:center;font-size:20px;">
+            Continuous innovation and rapid transformation have been themes throughout Electro-Med's history, which the company traces to the 1970s with the installation of relay testing system in RDSO, Lucknow. </p><br>
+          </div>
+          </div>
+          </div>
+        </div>
+        <div id="1990" class="section scrollspy">
+          <div class="container-fluid">
+          <div class="row">
+          <div class="col l2 blue lighten-5">
+            <p class="custom-text" style="color:#263238;text-align:center;font-size:20px;">1990</p>
+            </div>
+            <div class="col l8">
+            <p class="headName1" style="color:#424242;text-align:center;font-size:20px;">
+            The company built its reputation primarily as a high performance digital instruments manufacturer and supplier across in industrial sector in India. By the late 1990s, Electro-Med began offering a new breed of embedded solutions to clients—solutions that aligned organizations' technologies, and processes with their strategies.</p><br>
+          </div>
+          </div>
+          </div>
+        </div>
+        <div id="2010" class="section scrollspy">
+          <div class="container-fluid">
+          <div class="row">
+          <div class="col l2 blue lighten-5">
+            <p class="custom-text" style="color:#263238;text-align:center;font-size:20px;">2010</p>
+            </div>
+            <div class="col l8">
+            <p class="headName1" style="color:#616161;text-align:center;font-size:20px;">
+            Throughout its history, Electro-Med has expanded its offerings and capitalized on evolving emerging trends and technologies to benefit its clients.<br>
+            The company pioneered embedded systems; led the deployment of electronic display boards, and digital instruments; and has established itself as a leader in today's marketplace.</p>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="col hide-on-small-only m3 l2" id="timeline-scroller">
+        <ul class="section table-of-contents">
+          <li><a href="#introduction">Introduction</a></li>
+          <li><a href="#1970">1970</a></li>
+          <li><a href="#1990">1990</a></li>
+          <li><a href="#2010">2010</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr class="style11">
+    
+    <center><h2 class="custom-text" style="color:#263238;"><b>OUR CLIENTS</b></h2></center>
+    <br>
+    <div class="container">
+     <p class="headName1" style="color:#616161;text-align:center;font-size:20px;">We are a client friendly organization. We deliver products as per client’s specific demands. With our advanced production facility and cutting edge technology, we are able to develop innovative and user-friendly products for our clients. </p>
+     </div>
+<br>
+     <div class="container-fluid" id="c1">
+        <p class="custom-text" style="color:#263238;text-align:center;font-size:26px;">POWER PLANTS</p>
+        <div class="container-fluid">
+        <div class="row">
+        <div class="col l4 s12">
+          <img src="power-plants.jpeg" class="responsive-img">
+        </div>
+        <div class="col l8"><br>
+          <p class="headName1" style="color:#616161;text-align:left;font-size:26px;">We have been supplying range of MW indicators to numerous power plants of Uttar Pradesh, Madhya Pradesh, Chhattisgarh, Kerala, Neyveli, TANGEDCO Chennai and NTPCs units etc. We manufacture and assemble a comprehensive range of LED display boards which shows environmental / pollution control parameters at NTPC Unchahar, NTPC Badarpur, NTPC Rihand, NTPC Tanda, and NTPC Sipat.
+          Recently we have completed two more large display boards for NTPC Unchahar. </p>
+          <br>
+          </div>
+         </div> 
+        </div>
+        
+      </div>
+
+      <br><br>
+      <div class="container-fluid" id="c2">
+      
+      <p class="custom-text" style="color:#263238;text-align:center;font-size:26px;">SUGAR MILLS</p>
+        
+        <div class="container-fluid">
+        <div class="row">
+      <div class="col l8">
+          <p class="headName1" style="color:#616161;text-align:center;font-size:26px;">Over the years we have been supplying Digital Tachometers, Temperature Indicators, Line Frequency Monitors, Weighing Scale monitors, Flow monitors, Bag counters and pH meters to prestigious mills of Balrampur group, Bajaj group, Dhampur group, Hargaon, Bannari Amman, Ponni sugars, Nirani sugars, KBD sugars to name a few. Our Weighing Scale Monitors and Flow monitors have been designed especially for installation in Sugar Industry. These products have contributed in improving the operating efficiency of the mills. </p>
+          <br>
+        </div>
+       
+      
+        <div class="col l4 s12">
+          <img src="power-plants.jpeg" class="responsive-img">
+        </div>
+         </div>
+        </div>
+        
+      </div>
+
+<br><br>
+<div class="container-fluid" id="c3">
+      
+      <p class="custom-text" style="color:#263238;text-align:center;font-size:26px;">INDUSTRY</p>
+        
+        <div class="container-fluid">
+        <div class="row">
+
+        <div class="col l4 s12">
+          <img src="power-plants.jpeg" class="responsive-img">
+        </div>
+         
+      <div class="col l8">
+          <p class="headName1" style="color:#616161;text-align:center;font-size:26px;">We provide a wide range of both moving or static electronic LED display and other electronic instruments for industrial application.
+            We have been supplying an environmental parameter display board to IISCO Steel Plant of Steel Authority Of India Limited, HINDALCO Renukoot, HINDALCO, Mahan & Hi-TECH Carbon. Recently we are working on two LED display boards of HINDALCO, Renukoot and one LED display board of HINDALCO Mahan.</p>
+          <br>
+        </div>
+       
+      </div>
+        </div>
+        
+      </div>
+<br><br>
+      <div class="container-fluid" id="c4">
+      
+      <p class="custom-text" style="color:#263238;text-align:center;font-size:26px;">OTHERS</p>
+        
+        <div class="container-fluid">
+        <div class="row">
+      <div class="col l8">
+          <p class="headName1" style="color:#616161;text-align:center;font-size:26px;">We have installed a large display system at The High Court in Patna where online case numbers are displayed at fourteen distant locations within the Court campus.
+            We provide wide range of independent as well as master/slave Clock with or without GPS for hospitals, clinics and Air force stations etc.</p>
+          <br>
+        </div>
+       
+      
+        <div class="col l4 s12">
+          <img src="power-plants.jpeg" class="responsive-img">
+        </div>
+         </div>
+        </div>
+        
+      </div>
+
+      
+
+    
+    <!--
     <div class="row" style="background:#42a5f5;color:white;">
       <div class="col l4 s12">
-      <img src="https://www.embeddedarm.com/images/about-facility-sign.jpg" height="325" width="100%">
+        <img src="https://www.embeddedarm.com/images/about-facility-sign.jpg" height="325" width="100%">
       </div>
       <div class="col l6 s12">
         <h3 class="headName">
@@ -248,7 +358,6 @@ The company pioneered embedded systems; led the deployment of electronic display
         We've helped more than 8k OEM customers and built over a hundred COTS products that have never been discontinued. Our commitment to quality-certified products, low prices, personable customer support, original solutions, and open source vision has allowed our business to flourish in a very competitive marketplace.</h5>
       </div>
     </div>
-
     <br><br><br><br>
     <div class="row">
       <div class="col l6 offset-l1 s12">
@@ -273,174 +382,11 @@ The company pioneered embedded systems; led the deployment of electronic display
         </h5>
       </div>
     </div>
+    -->
     <br><br><br><br>
     
-        <div class="parallax-container white-text our_clients">
-            <div class="parallax"><img src="black-and-white-city-man-people.jpg"></div>
-            <h1 class="headNamev3" style="color:white;">Our Clients</h1>
-            <div class="container">
-                <p class="headNamev3 clients-overview">We are a client friendly organization. We deliver products as per client’s specific demands. With our advanced production facility and cutting edge technology, we are able to develop innovative and user-friendly products for our clients. </p>
-                <br>
-             <center>   
-            <ul class="client-list">
-              <li><a href="#c1">Power Plants</a></li>
-              <li><a href="#c2">Sugar Mills</a></li>
-              <li><a href="#c3">Industry</a></li>
-              <li><a href="#c4">Others</a></li>
-            </ul>
-          </center>
-              </div>
-          
-        </div>
-<div class="container-fluid" style="background-color:#78909c; ">
-        <div class="container-fluid white-text blue-grey darken-1" id="c1">
-        
-            <h1 class="headName1 center" style="color:white;">Power Plants</h1>
-            <div class="container">
-                <p class="headNamev3">We have been supplying range of MW indicators to numerous power plants of Uttar Pradesh, Madhya Pradesh, Chhattisgarh, Kerala, Neyveli, TANGEDCO Chennai and NTPCs units etc. We manufacture and assemble a comprehensive range of LED display boards which shows environmental / pollution control parameters at NTPC Unchahar, NTPC Badarpur, NTPC Rihand, NTPC Tanda, and NTPC Sipat.
-Recently we have completed two more large display boards for NTPC Unchahar. </p>
-                <br>
-              </div>
-          
-        </div>
-
-
-        <div class="container-fluid white-text blue-grey darken-1" id="c2">
-
-            <h1 class="headName1 center" style="color:white;">Sugar Mills</h1>
-            <div class="container">
-                <p class="headNamev3">Over the years we have been supplying Digital Tachometers, Temperature Indicators, Line Frequency Monitors, Weighing Scale monitors, Flow monitors, Bag counters and pH meters to prestigious mills of Balrampur group, Bajaj group, Dhampur group, Hargaon, Bannari Amman, Ponni sugars, Nirani sugars, KBD sugars to name a few. Our Weighing Scale Monitors and Flow monitors have been designed especially for installation in Sugar Industry. These products have contributed in improving the operating efficiency of the mills. </p>
-                <br>
-              </div>
-          
-        </div>
-
-
-        <div class="container-fluid white-text blue-grey darken-1" id="c3">
-     
-            <h1 class="headName1 center" style="color:white;">Industry</h1>
-            <div class="container">
-                <p class="headNamev3">We provide a wide range of both moving or static electronic LED display and other electronic instruments for industrial application.
- We have been supplying an environmental parameter display board to IISCO Steel Plant of Steel Authority Of India Limited, HINDALCO Renukoot, HINDALCO, Mahan & Hi-TECH Carbon. Recently we are working on two LED display boards of HINDALCO, Renukoot and one LED display board of HINDALCO Mahan.
-</p>
-                <br>
-              </div>
-          
-        </div>
-
-
-        <div class="container-fluid white-text blue-grey darken-1" id="c4">
-            <h1 class="headName1 center" style="color:white;">Others</h1>
-            <div class="container">
-                <p class="headNamev3">We have installed a large display system at The High Court in Patna where online case numbers are displayed at fourteen distant locations within the Court campus.
-We provide wide range of independent as well as master/slave Clock with or without GPS for hospitals, clinics and Air force stations etc.
-</p>
-                <br>
-              </div>
-          
-        </div>
-        </div>
-
-    <h1 class="headName">Product and Services</h1>
-    <hr>
-    <br>
-    <div class="container">
-    <div class="row">
-      <div class="col l4 offset">
-        <div class="card">
-          <div class="card-image waves-effect waves-block waves-light">
-            <img class="activator" height="180" src="photos/lfm1.jpg">
-          </div>
-          <div class="card-content">
-            <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-            <p><a href="#">This is a link</a></p>
-          </div>
-          <div class="card-reveal">
-            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-            <p>Here is some more information about this product that is only revealed once clicked on.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col l4">
-        <div class="card">
-          <div class="card-image waves-effect waves-block waves-light">
-            <img class="activator" height="180" src="photos/twilight_switches1.jpg">
-          </div>
-          <div class="card-content">
-            <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-            <p><a href="#">This is a link</a></p>
-          </div>
-          <div class="card-reveal">
-            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-            <p>Here is some more information about this product that is only revealed once clicked on.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col l4">
-        <div class="card">
-          <div class="card-image waves-effect waves-block waves-light">
-            <img class="activator" height="180" src="photos/temp_cont1.jpg">
-          </div>
-          <div class="card-content">
-            <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-            <p><a href="#">This is a link</a></p>
-          </div>
-          <div class="card-reveal">
-            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-            <p>Here is some more information about this product that is only revealed once clicked on.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col l4">
-        <div class="card">
-          <div class="card-image waves-effect waves-block waves-light">
-            <img class="activator" height="180" src="photos/lfm1.jpg">
-          </div>
-          <div class="card-content">
-            <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-            <p><a href="#">This is a link</a></p>
-          </div>
-          <div class="card-reveal">
-            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-            <p>Here is some more information about this product that is only revealed once clicked on.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col l4">
-        <div class="card">
-          <div class="card-image waves-effect waves-block waves-light">
-            <img class="activator" height="180" src="photos/twilight_switches1.jpg">
-          </div>
-          <div class="card-content">
-            <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-            <p><a href="#">This is a link</a></p>
-          </div>
-          <div class="card-reveal">
-            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-            <p>Here is some more information about this product that is only revealed once clicked on.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col l4">
-        <div class="card parent">
-          <div class="card-image waves-effect waves-block waves-light">
-            <img class="activator" height="180" src="photos/temp_cont1.jpg">
-          </div>
-          <div class="card-content">
-            <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-            <p><a href="#">This is a link</a></p>
-          </div>
-          <div class="card-reveal">
-            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-            <p>Here is some more information about this product that is only revealed once clicked on.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-    <h2 class="headNamev3 blue lighten-3">Partner with us for...</h2>
+    
+    <h2 class="headNamev3 blue lighten-2">Partner with us for...</h2>
     <div class="row">
       <div class="col l3 offset-l2 m3 offset-m1 s4 ">
         <h2 class="center blue-text"><i class="material-icons medium">trending_up</i></h2>
@@ -465,7 +411,7 @@ We provide wide range of independent as well as master/slave Clock with or witho
     </div>
     <br>
     
-     <footer class="page-footer">
+    <footer class="page-footer">
       <div class="container">
         <div class="row">
           <div class="col l3 s12">
@@ -523,12 +469,12 @@ We provide wide range of independent as well as master/slave Clock with or witho
               <div class="col l8 offset-l1 s11 m8 offset-m1"><p class="white-text foot" style="display:inline;">D -17, Vivekanand Puri,
               <br/>Lucknow –226007 India</p></div>
             </div>
-          
+            
           </div>
         </div>
       </div>
       <div class="fixed-action-btn horizontal">
-        <a class="btn-floating btn-large red lighten-1">
+        <a class="btn-floating btn-large blue lighten-1">
           <i class="large material-icons">phone</i>
         </a>
         <ul>
@@ -554,42 +500,37 @@ We provide wide range of independent as well as master/slave Clock with or witho
     </div>
   </footer>
   <script>
-    $(document).ready(function(){
-      $('.scrollspy').scrollSpy();
-
-      $.fn.followTo = function (from,to) {
-    var $this = this,
-        $window = $(window);
-
-    $window.scroll(function (e) {
-        if ($window.scrollTop() < from || $window.scrollTop() > to ) {
-            $this.css({
-                position: 'relative',
-                left:1050
-            });
-        } else {
-            $this.css({
-                position: 'fixed',
-                top: 185,
-                left:1050
-            });
-        }
-    });
-};
-
-$('#timeline-scroller').followTo(1010,2310);
-    $('.button-collapse').sideNav();
-    $(".dropdown-button").dropdown({
-    hover:true,
-    constrain_width: true,
-    gutter: 0,
-    belowOrigin: true
-    });
-   // $('.collapsible').collapsible();
-    $('.parallax').parallax();
-
-    
-    });
-    </script>
-  </body>
+  $(document).ready(function(){
+    $('.scrollspy').scrollSpy();
+  $.fn.followTo = function (from,to) {
+  var $this = this,
+  $window = $(window);
+  $window.scroll(function (e) {
+  if ($window.scrollTop() < from || $window.scrollTop() > to ) {
+  $this.css({
+  position: 'relative',
+  left:1000
+  });
+  } else {
+  $this.css({
+  position: 'fixed',
+  top: 185,
+  left:1000
+  });
+  }
+  });
+  };
+  $('#timeline-scroller').followTo(1800,2710);
+  $('.button-collapse').sideNav();
+  $(".dropdown-button").dropdown({
+  hover:true,
+  constrain_width: true,
+  gutter: 0,
+  belowOrigin: true
+  });
+  $('.parallax').parallax();
+  
+  });
+  </script>
+</body>
 </html>

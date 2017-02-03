@@ -85,9 +85,9 @@ $z=$_GET['num'];
       <div class="container">
         <div class="row">
         <div class="col l12">
-            <p class="product_name"><a href="#">COACH GUIDANCE SYSTEM</a></p>
-            <p class="product_name"><a href="#">TRAIN INFORMATION BOARD</a></p>
-            <p class="product_name"><a href="#">POWER GENERATION DISPLAY BOARD</a></p>
+            <p class="product_name"><a href="project_page.php?id=ntpc_rihand"">NTPC RIHAND</a></p>
+            <p class="product_name"><a href="project_page.php?id=patna_high_court">PATNA HIGH COURT</a></p>
+            <p class="product_name"><a href="project_page.php?id=patna_railway_station">RAILWAY STATION DISPLAY</a></p>
             
           </div>
        </div>
@@ -136,7 +136,7 @@ $z=$_GET['num'];
         <div class="container-fluid">
             <div class="row">
                 <div class="col l3 s12"><br><br>
-                    <a href="#!" class="btn blue darken-3 category-btn" onclick="Materialize.showStaggeredList('#staggered-test')">Categories</a>
+                    <a href="#!" class="btn blue darken-2 category-btn" onclick="Materialize.showStaggeredList('#staggered-test')">Categories</a>
                     <ul id="staggered-test" class="collapsible" data-collapsible="accordion">
                         <li style="opacity: 0;">
                             <div class="collapsible-header <?php if($x=='LED_display') echo 'active'; ?>" onclick="filter('LED_display',3)">LED Display</div>
@@ -202,7 +202,9 @@ $z=$_GET['num'];
                              
                                 </div>
                                 <div class="card-content" id="d1">
+                                 
                                 </div>
+                                
                             </div>
                         </div>
                         <div class="col s12 m7 l3" id="c2">
@@ -395,7 +397,7 @@ $z=$_GET['num'];
         </div>
       </div>
       <div class="fixed-action-btn horizontal">
-        <a class="btn-floating btn-large red lighten-1">
+        <a class="btn-floating btn-large blue lighten-1">
           <i class="large material-icons">phone</i>
         </a>
         <ul>
@@ -417,6 +419,7 @@ $z=$_GET['num'];
     <div class="footer-copyright">
       <div class="container foot">
         © 2017 Copyright Electromed. All rights reserved.
+        <span style="float:right;color:#f5f5f5;font-size:12px;">Designed by Abhishek Tiwari</span>
       </div>
     </div>
   </footer>

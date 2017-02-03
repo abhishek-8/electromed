@@ -1,19 +1,5 @@
 <?php
 $x= $_GET['id'];
-$type=$_GET['type'];
-$link='';
-if($type==1){
-$link='product_list.php?id=LED_display&num=3';
-}
-else if($type==2){
-$link='product_list.php?id=Product_for_office&num=4';
-}
-else if($type==3){
-$link='product_list.php?id=projects&num=3';
-}
-else if($type==4){
-$link='product_list.php?id=Industrial_Instruments&num=10';
-}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -41,7 +27,6 @@ $link='product_list.php?id=Industrial_Instruments&num=10';
   $("html, body").animate({ scrollTop: 0 }, "fast");
   return false;
 });
-    $('#request_for_quote').hide();
     $('.parallax').parallax();
     $('.button-collapse').sideNav();
     $('.materialboxed').materialbox();
@@ -51,12 +36,6 @@ $link='product_list.php?id=Industrial_Instruments&num=10';
     set2('<?php echo $x ?>');
     $("#product_image").fadeIn("fast");
     });;
-    });
-    $('.rqst').click(function(){
-    $('#request_for_quote').show();
-    });
-    $('.close').click(function(){
-    $('#request_for_quote').hide();
     });
     $(".btn2").click(function(){
     $("#product_image").fadeOut('fast', function() {
@@ -79,6 +58,7 @@ $link='product_list.php?id=Industrial_Instruments&num=10';
     });
     </script>
   </head>
+
   <body id="product_page">
     <div class="dropdown-content" id="products">
       <div class="container">
@@ -116,6 +96,7 @@ $link='product_list.php?id=Industrial_Instruments&num=10';
         </div>
       </div>
     </div>
+    
     <div class="dropdown-content" id="projects">
       <div class="container">
         <div class="row">
@@ -128,6 +109,7 @@ $link='product_list.php?id=Industrial_Instruments&num=10';
        </div>
     </div>
     </div>
+
     <div class="navbar-fixed">
       <nav>
         <div class="nav-wrapper container">
@@ -135,16 +117,16 @@ $link='product_list.php?id=Industrial_Instruments&num=10';
           <ul class="right hide-on-med-and-down">
             <li><a href="home.html" class="navLink">Home</a></li>
             <li><a href="about.html" class="navLink">About</a></li>
-            <li><a href="projects.html" class="dropdown-button navLink" data-activates="projects">Projects<i class="material-icons right">arrow_drop_down</i></a></li>
-            <li class="active"><a href="product_list.php?id=LED_display&num=3" class="dropdown-button navLink" data-activates="products">Products<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li class="active"><a href="projects.html" class="dropdown-button navLink" data-activates="projects">Projects<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a href="product_list.php?id=LED_display&num=3" class="dropdown-button navLink" data-activates="products">Products<i class="material-icons right">arrow_drop_down</i></a></li>
             <li><a href="contactForm.html" class="navLink">Contact</a></li>
           </ul>
           
           <ul id="nav-mobile" class="side-nav">
             <li><a href="home.html">Home</a></li>
             <li><a href="about.html">About Us</a></li>
-            <li><a href="projects.html">Projects<i class="material-icons right">arrow_drop_down</i></a></li>
-            <li class="active"><a href="product_list.php?id=LED_display&num=3">Products<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li class="active"><a href="projects.html">Projects<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a href="product_list.php?id=LED_display&num=3">Products<i class="material-icons right">arrow_drop_down</i></a></li>
             <li><a href="contactForm.html">Contact Us</a></li> 
           </ul>
 
@@ -157,35 +139,12 @@ $link='product_list.php?id=Industrial_Instruments&num=10';
     <nav class="white branches" >
       <div class="nav-wrapper container">
         <div class="col s12">
-          <a href="product_list.php?id=LED_display&num=3" class="breadcrumb black-text" id="pre1"></a>
-          <a href="<?php echo $link; ?>" class="breadcrumb black-text" id="pre2"></a>
-          <a href="" class="breadcrumb black-text" id="curr"></a>
+          <a href="projects.html" class="breadcrumb black-text">Projects</a>
+          <a href="#" class="breadcrumb black-text" id="curr"></a>
         </div>
       </div>
     </nav>
 
-    <div class="z-depth-5 card-panel hoverable" id="request_for_quote">  
-      <fieldset id="rqst_form">
-        <legend class="white-text blue darken-2" style="position:relative;height: 40px;width: 100%;"><center>Request for quote</center></legend>
-        <form>
-          <input id="name" type="text" class="validate" placeholder="Name" style="font-size:15px;">
-          <input id="email" type="email" class="validate" placeholder="Email" style="font-size:15px;">
-          <input id="company" type="text" class="validate" placeholder="Company" style="font-size:15px;">
-          <input id="phone" type="text" class="validate" placeholder="Phone" style="font-size:15px;">
-          <textarea name="" placeholder="Message" style="font-size:15px;"></textarea>
-          <div class="row">
-            <div class="col l4">
-              <button class="btn blue darken-2" type="submit" name="action">Submit
-              <i class="material-icons right">send</i>
-              </button>
-            </div>
-            <div class="col l4 offset-l4">
-              <a class="btn blue darken-2 close" style="float:right">Close</a>
-            </div>
-          </div>
-        </form>
-      </fieldset>
-    </div>
     
     <div class="parallax-container Overview">
       <div class="parallax" ><img src="circuits.jpg" height="100%"></div>
@@ -259,10 +218,7 @@ $link='product_list.php?id=Industrial_Instruments&num=10';
           <td class="table_specs" style="vertical-align: top;"><b id="r7d2"></b></td>
         </tr>
       </table><br>
-      <div class="row">
-        <button class="btn blue darken-2 col l4 s5" style="font-size:13px;float:left;"><i class="material-icons left">library_books</i>Brochure</button>
-        <button class="btn rqst blue darken-2 l4 col s6" style="font-size:13px;float:right;">Request for quote</button>
-      </div>
+
     </div>
     
   </div>

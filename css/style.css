@@ -15,6 +15,15 @@ body{
   font-size:28px;
 }
 
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-floating):hover{
+  color:#64b5f6;
+}
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-floating){
+  color:#0d47a1;
+  margin-right:20px;
+  transition:color .3s ease;
+  text-transform:uppercase;
+}
 
 .client-list li {
   display:inline;
@@ -186,11 +195,17 @@ background-color:rgba(50,7,14,0.15);
   z-index:10; 
 }
  @media only screen and (min-width: 760px) {
+  #quick_facts{
+    width:23%;
+  }
+  #field1text ,#field2text,#field3text {
+  color:#263238;text-align:center;font-size:22px;
+}
   #select_industry{
     width:45%;
     margin-left:45px;
   }
-#home_card1,#home_card2,#home_card3,#home_card4,#home_card5,#home_card6 ,#home_card7,#home_card8,#home_card7{
+#home_card1,#home_card2,#home_card3,#home_card4,#home_card5,#home_card6 ,#home_card7,#home_card8,#home_card9{
 
     margin-left:6%; 
 }
@@ -262,6 +277,7 @@ margin-left:25%;
   font-family: 'Open Sans Condensed', sans-serif;
 }
 .table_specs {
+ 
  font-family: 'Open Sans Condensed', sans-serif;
  font-size:18px; 
 }
@@ -298,7 +314,7 @@ nav {
 }
 
 nav :hover {
-    color:#ff9800;
+    color:black;
   }
  #products :hover {
   color :#ff9800;
@@ -351,7 +367,6 @@ nav .brand-logo{
   max-height:415px;
 }
 
-.input-field .prefix.active{color:#2979ff;}
 .client_slider .slides {
    background: white; 
    max-height:355px;
@@ -360,36 +375,16 @@ nav .brand-logo{
     font-size:20px;
     line-height:100%;
   }
-
-   input[type=text],input[type=password],input[type=email],input[type=url],input[type=time],input[type=date],input[type=datetime],input[type=datetime-local],input[type=tel],input[type=number],input[type=search],textarea.materialize-textarea{
-    background-color:#82b1ff;
-    color:white;
-    border:none;/*2px ridge;*/
-    border-radius:5px;
-    outline:none;
-    height:2.7rem;
-    width:100%;
-    font-size:1rem;
-    margin:0 0 3px 0;
-    padding:0;
-    box-shadow:none;
-    box-sizing:content-box;
-    transition:all 0.3s;
-  }
- form .input-field label{
-  color:white;
-  position:absolute;
-  top:0.5rem;
-  left:0.75rem;
-  font-size:1rem;
-  cursor:text;
-  transition:.2s ease-out
+.card .card-action{
+  position:relative;
+  background-color:inherit;
+  padding:0;
+  border:none;
+  padding:4px;
+  padding-left:8%;
+  z-index:2;
 }
- form .input-field{position:relative;margin-top:0.5rem;}
-#select_industry{
-    width:45%;
-    margin-left:45px;
-  }
+   
 /* -----------------------Mobile phone screen size -------------*/
 
 @media (max-width:499px){ 
@@ -489,10 +484,6 @@ font-size:35px;
 #product_image2{
   margin-left:28px;
 }
-
-/*.breadcrumb{
-  margin:0 32px 0 15px;
-}*/
 
 #product_image1 img,#product_image2 img,#product_image3 img {
   width:80px;

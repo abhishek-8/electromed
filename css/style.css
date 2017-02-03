@@ -209,8 +209,10 @@ background-color:rgba(50,7,14,0.15);
 
     margin-left:6%; 
 }
-
-  #product_image2 {
+  #product_image1 {
+  margin-left:15%;  
+  }
+   #product_image2 {
   margin-left:2px;
   margin-right:2px;
   }
@@ -389,7 +391,7 @@ nav .brand-logo{
 
 @media (max-width:499px){ 
   #select_industry{
-    width:86%;
+    width:87%;
     float:right;
   }
   

@@ -27,7 +27,3 @@ input[type=text],input[type=password],input[type=email],input[type=url],input[ty
   transition:.2s ease-out
 }
   .input-field{position:relative;margin-top:0.5rem;}
-#select_industry{
-    width:45%;
-    margin-left:45px;
-  }

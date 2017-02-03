@@ -675,7 +675,7 @@ document.getElementById('ri1').innerHTML='<img src="photos/flow_monitor1.jpg" he
 else if(x=='ntpc_rihand') {
 	document.getElementById('curr').innerHTML='NTPC RIHAND';
 
-document.getElementById('desc').innerHTML='';
+//document.getElementById('desc').innerHTML='';
 
 
 document.getElementById('r1d1').innerHTML ='ON GATE';
@@ -694,26 +694,26 @@ document.getElementById('r6d2').innerHTML ='<p class="bullets" style="display:in
 
 document.getElementById('ri1').innerHTML='<img src="photos/patna_high_court1.jpg" height="170" alt="">';
 		document.getElementById('rd1').innerHTML='';
-		document.getElementById('rl1').innerHTML='<a href="products.php?id=flow_monitor&type=4">Flow Monitor</a>'
+		document.getElementById('rl1').innerHTML='<a href="project_page.php?id=patna_high_court">PATNA HIGH COURT</a>';
 
 		document.getElementById('ri2').innerHTML='<img src="photos/patna_railway_station1.jpg" height="170" alt="">';
 		document.getElementById('rd2').innerHTML='';
-		document.getElementById('rl2').innerHTML='<a href="products.php?id=lfm&type=4">Line Frequency Monitor</a>'
+		document.getElementById('rl2').innerHTML='<a href="project_page.php?id=patna_railway_station">RAILWAY STATION DISPLAY AT PATNA</a>';
 
-		document.getElementById('ri3').innerHTML='<img src="photos/proj4.jpg" height="170" alt="">';
+		document.getElementById('ri3').innerHTML='<img src="photos/panki1.jpg" height="170" alt="">';
 		document.getElementById('rd3').innerHTML='';
-		document.getElementById('rl3').innerHTML='<a href="products.php?id=megawatt_panel&type=4">Megawatt Panel</a>'
+		document.getElementById('rl3').innerHTML='<a href="project_page.php?id=panki">PANKI</a>';
 
-		document.getElementById('ri4').innerHTML='<img src="Proj/proj5.jpg" height="170" alt="">';
+		document.getElementById('ri4').innerHTML='<img src="photos/coach_guidance_system1.jpg" height="170" alt="">';
 		document.getElementById('rd4').innerHTML='';
-		document.getElementById('rl4').innerHTML='<a href="products.php?id=process_indicator&type=4">Process Indicator</a>'
+		document.getElementById('rl4').innerHTML='<a href="project_page.php?id=coach_guidance_system">COACH GUIDANCE SYSTEM</a>';
 
 }
 
 else if(x=='patna_high_court') {
 
 	document.getElementById('curr').innerHTML='Patna High Court';
-	document.getElementById('desc').innerHTML='';
+	//document.getElementById('desc').innerHTML='';
 
 
 document.getElementById('r1d1').innerHTML ='Features';
@@ -729,26 +729,26 @@ document.getElementById('r4d2').innerHTML ='<p class="bullets" style="display:in
 
 		document.getElementById('ri1').innerHTML='<img src="photos/ntpc_rihand1.jpg" height="170" alt="">';
 		document.getElementById('rd1').innerHTML='';
-		document.getElementById('rl1').innerHTML='<a href="products.php?id=flow_monitor&type=4">Flow Monitor</a>'
+		document.getElementById('rl1').innerHTML='<a href="project_page.php?id=ntpc_rihand">NTPC RIHAND</a>';
 
 		document.getElementById('ri2').innerHTML='<img src="photos/patna_railway_station1.jpg" height="170" alt="">';
 		document.getElementById('rd2').innerHTML='';
-		document.getElementById('rl2').innerHTML='<a href="products.php?id=lfm&type=4">Line Frequency Monitor</a>'
+		document.getElementById('rl2').innerHTML='<a href="project_page.php?id=patna_railway_station">RAILWAY STATION DISPLAY AT PATNA</a>';
 
-		document.getElementById('ri3').innerHTML='<img src="photos/proj4.jpg" height="170" alt="">';
+		document.getElementById('ri3').innerHTML='<img src="photos/panki1.jpg" height="170" alt="">';
 		document.getElementById('rd3').innerHTML='';
-		document.getElementById('rl3').innerHTML='<a href="products.php?id=megawatt_panel&type=4">Megawatt Panel</a>'
+		document.getElementById('rl3').innerHTML='<a href="project_page.php?id=panki">PANKI</a>';
 
-		document.getElementById('ri4').innerHTML='<img src="Proj/proj5.jpg" height="170" alt="">';
+		document.getElementById('ri4').innerHTML='<img src="photos/coach_guidance_system1.jpg" height="170" alt="">';
 		document.getElementById('rd4').innerHTML='';
-		document.getElementById('rl4').innerHTML='<a href="products.php?id=process_indicator&type=4">Process Indicator</a>'
+		document.getElementById('rl4').innerHTML='<a href="project_page.php?id=coach_guidance_system">COACH GUIDANCE SYSTEM</a>';
 
 }
 
 else if(x=='patna_railway_station') {
 
 	document.getElementById('curr').innerHTML='Railway Station Display at patna';
-	document.getElementById('desc').innerHTML='';
+	//document.getElementById('desc').innerHTML='';
 
 
 document.getElementById('r1d1').innerHTML ='Features';
@@ -762,22 +762,111 @@ document.getElementById('r3d2').innerHTML ='<p class="bullets" style="display:in
 
 		document.getElementById('ri1').innerHTML='<img src="photos/ntpc_rihand1.jpg" height="170" alt="">';
 		document.getElementById('rd1').innerHTML='';
-		document.getElementById('rl1').innerHTML='<a href="products.php?id=flow_monitor&type=4">Flow Monitor</a>'
+		document.getElementById('rl1').innerHTML='<a href="project_page.php?id=ntpc_rihand">NTPC RIHAND</a>';
 
 		document.getElementById('ri2').innerHTML='<img src="photos/patna_high_court1.jpg" height="170" alt="">';
 		document.getElementById('rd2').innerHTML='';
-		document.getElementById('rl2').innerHTML='<a href="products.php?id=lfm&type=4">Line Frequency Monitor</a>'
+		document.getElementById('rl2').innerHTML='<a href="project_page.php?id=patna_high_court">PATNA HIGH COURT</a>';
 
-		document.getElementById('ri3').innerHTML='<img src="photos/proj4.jpg" height="170" alt="">';
+		document.getElementById('ri3').innerHTML='<img src="photos/panki1.jpg" height="170" alt="">';
 		document.getElementById('rd3').innerHTML='';
-		document.getElementById('rl3').innerHTML='<a href="products.php?id=megawatt_panel&type=4">Megawatt Panel</a>'
+		document.getElementById('rl3').innerHTML='<a href="project_page.php?id=panki">PANKI</a>';
 
-		document.getElementById('ri4').innerHTML='<img src="Proj/proj5.jpg" height="170" alt="">';
+		document.getElementById('ri4').innerHTML='<img src="photos/coach_guidance_system1.jpg" height="170" alt="">';
 		document.getElementById('rd4').innerHTML='';
-		document.getElementById('rl4').innerHTML='<a href="products.php?id=process_indicator&type=4">Process Indicator</a>'
+		document.getElementById('rl4').innerHTML='<a href="project_page.php?id=coach_guidance_system">COACH GUIDANCE SYSTEM</a>';
 
 }
 
+else if(x=='shakti_bhawan') {
+
+	document.getElementById('curr').innerHTML='Shakti Bhawan';
+	//document.getElementById('desc').innerHTML='';
+
+
+document.getElementById('r1d1').innerHTML ='Features';
+document.getElementById('r1d2').innerHTML ='<p class="bullets" style="display:inline;">Display of various data from excel sheet</p>';
+document.getElementById('r2d1').innerHTML ='';
+document.getElementById('r2d2').innerHTML ='<p class="bullets" style="display:inline;">RS 485 communication</p>';
+
+
+
+		document.getElementById('ri1').innerHTML='<img src="photos/ntpc_rihand1.jpg" height="170" alt="">';
+		document.getElementById('rd1').innerHTML='';
+		document.getElementById('rl1').innerHTML='<a href="project_page.php?id=ntpc_rihand">NTPC RIHAND</a>';
+
+		document.getElementById('ri2').innerHTML='<img src="photos/patna_high_court1.jpg" height="170" alt="">';
+		document.getElementById('rd2').innerHTML='';
+		document.getElementById('rl2').innerHTML='<a href="project_page.php?id=patna_high_court">PATNA HIGH COURT</a>';
+
+		document.getElementById('ri3').innerHTML='<img src="photos/panki1.jpg" height="170" alt="">';
+		document.getElementById('rd3').innerHTML='';
+		document.getElementById('rl3').innerHTML='<a href="project_page.php?id=panki">PANKI</a>';
+
+		document.getElementById('ri4').innerHTML='<img src="photos/coach_guidance_system1.jpg" height="170" alt="">';
+		document.getElementById('rd4').innerHTML='';
+		document.getElementById('rl4').innerHTML='<a href="project_page.php?id=coach_guidance_system">COACH GUIDANCE SYSTEM</a>';
+
+}
+
+else if(x=='panki') {
+
+	document.getElementById('curr').innerHTML='Panki';
+	//document.getElementById('desc').innerHTML='';
+
+
+document.getElementById('r1d1').innerHTML ='Features';
+document.getElementById('r1d2').innerHTML ='<p class="bullets" style="display:inline;">Display of various data from excel sheet</p>';
+document.getElementById('r2d1').innerHTML ='';
+document.getElementById('r2d2').innerHTML ='<p class="bullets" style="display:inline;">RS 485 communication</p>';
+
+
+
+		document.getElementById('ri1').innerHTML='<img src="photos/ntpc_rihand1.jpg" height="170" alt="">';
+		document.getElementById('rd1').innerHTML='';
+		document.getElementById('rl1').innerHTML='<a href="project_page.php?id=ntpc_rihand">NTPC RIHAND</a>';
+
+		document.getElementById('ri2').innerHTML='<img src="photos/patna_high_court1.jpg" height="170" alt="">';
+		document.getElementById('rd2').innerHTML='';
+		document.getElementById('rl2').innerHTML='<a href="project_page.php?id=patna_high_court">PATNA HIGH COURT</a>';
+
+		document.getElementById('ri3').innerHTML='<img src="photos/shakti_bhawan1.jpg" height="170" alt="">';
+		document.getElementById('rd3').innerHTML='';
+		document.getElementById('rl3').innerHTML='<a href="project_page.php?id=shakti_bhawan">SHAKTI BHAWAN</a>';
+
+		document.getElementById('ri4').innerHTML='<img src="photos/coach_guidance_system1.jpg" height="170" alt="">';
+		document.getElementById('rd4').innerHTML='';
+		document.getElementById('rl4').innerHTML='<a href="project_page.php?id=coach_guidance_system">COACH GUIDANCE SYSTEM</a>';
+
+}
+else if(x=='coach_guidance_system') {
+
+	document.getElementById('curr').innerHTML='Coach Guidance System';
+	//document.getElementById('desc').innerHTML='';
+
+
+document.getElementById('r1d1').innerHTML ='Features';
+document.getElementById('r1d2').innerHTML ='<p class="bullets" style="display:inline;">Train, coach and platform number display through RS 485 communication.</p>';
+
+
+
+		document.getElementById('ri1').innerHTML='<img src="photos/ntpc_rihand1.jpg" height="170" alt="">';
+		document.getElementById('rd1').innerHTML='';
+		document.getElementById('rl1').innerHTML='<a href="project_page.php?id=ntpc_rihand">NTPC RIHAND</a>';
+
+		document.getElementById('ri2').innerHTML='<img src="photos/patna_high_court1.jpg" height="170" alt="">';
+		document.getElementById('rd2').innerHTML='';
+		document.getElementById('rl2').innerHTML='<a href="project_page.php?id=patna_high_court">PATNA HIGH COURT</a>';
+
+		document.getElementById('ri3').innerHTML='<img src="photos/panki1.jpg" height="170" alt="">';
+		document.getElementById('rd3').innerHTML='';
+		document.getElementById('rl3').innerHTML='<a href="project_page.php?id=panki">PANKI</a>';
+
+		document.getElementById('ri4').innerHTML='<img src="photos/shakti_bhawan1.jpg" height="170" alt="">';
+		document.getElementById('rd4').innerHTML='';
+		document.getElementById('rl4').innerHTML='<a href="project_page.php?id=shakti_bhawan">SHAKTI BHAWAN</a>';
+
+}
 document.getElementById('product_image').innerHTML='<img style="border-radius:10px;" width="100%" height="100%" src=photos/'+x+'1.jpg'+' alt="'+x+'">';
 document.getElementById('product_image1').innerHTML='<img style="border-radius:10px;" width="100" height="80" src=photos/'+x+'1.jpg'+' alt="'+x+'">';
 document.getElementById('product_image2').innerHTML='<img style="border-radius:10px;" width="100" height="80" src=photos/'+x+'2.jpg'+' alt="'+x+'" >';
@@ -862,28 +951,28 @@ function filter(x,z){
 
 		y='Featured Projects';
 		
-		document.getElementById('p1').innerHTML='<img src="Proj/ntpc_rihand1.jpg" height="170">';
+		document.getElementById('p1').innerHTML='<img src="photos/ntpc_rihand1.jpg" height="170">';
 		document.getElementById('l1').innerHTML='<a href="project_page.php?id=ntpc_rihand">NTPC RIHAND</a>';
 
-		document.getElementById('p2').innerHTML='<img src="Proj/patna_high_court1.jpg" height="170">';
+		document.getElementById('p2').innerHTML='<img src="photos/patna_high_court1.jpg" height="170">';
 		document.getElementById('d2').innerHTML='';
 		document.getElementById('l2').innerHTML='<a href="project_page.php?id=patna_high_court">PATNA HIGH COURT</a>';
 
-		document.getElementById('p3').innerHTML='<img src="Proj/patna_railway_station1.jpg" height="170">';
+		document.getElementById('p3').innerHTML='<img src="photos/patna_railway_station1.jpg" height="170">';
 		document.getElementById('d3').innerHTML='';
 		document.getElementById('l3').innerHTML='<a href="project_page.php?id=patna_railway_station">RAILWAY STATION DISPLAY AT PATNA</a>';
 
-		document.getElementById('p4').innerHTML='<img src="Proj/proj4.jpg" height="170">';
+		document.getElementById('p4').innerHTML='<img src="photos/shakti_bhawan1.jpg" height="170">';
 		document.getElementById('d4').innerHTML='';
-		document.getElementById('l4').innerHTML='<a href="#"></a>';
+		document.getElementById('l4').innerHTML='<a href="project_page.php?id=shakti_bhawan">SHAKTI BHAWAN</a>';
 
-		document.getElementById('p5').innerHTML='<img src="Proj/proj5.jpg" height="170">';
+		document.getElementById('p5').innerHTML='<img src="photos/panki1.jpg" height="170">';
 		document.getElementById('d5').innerHTML='';
-		document.getElementById('l5').innerHTML='<a href="#">PANKI</a>';
+		document.getElementById('l5').innerHTML='<a href="project_page.php?id=panki">PANKI</a>';
 
-		document.getElementById('p6').innerHTML='<img src="Proj/proj6.jpg" height="170">';
+		document.getElementById('p6').innerHTML='<img src="photos/coach_guidance_system1.jpg" height="170">';
 		document.getElementById('d6').innerHTML='';
-		document.getElementById('l6').innerHTML='<a href="#">COACH GUIDANCE SYSTEM</a>';
+		document.getElementById('l6').innerHTML='<a href="project_page.php?id=coach_guidance_system">COACH GUIDANCE SYSTEM</a>';
 
 	}
 	else if(x=='Industrial_Instruments') {

@@ -123,7 +123,9 @@ $link='product_list.php?id=Industrial_Instruments&num=10';
             <p class="product_name"><a href="project_page.php?id=ntpc_rihand"">NTPC RIHAND</a></p>
             <p class="product_name"><a href="project_page.php?id=patna_high_court">PATNA HIGH COURT</a></p>
             <p class="product_name"><a href="project_page.php?id=patna_railway_station">RAILWAY STATION DISPLAY</a></p>
-            
+            <p class="product_name"><a href="project_page.php?id=shakti_bhawan"">SHAKTI BHAWAN</a></p>
+            <p class="product_name"><a href="project_page.php?id=panki">PANKI</a></p>
+            <p class="product_name"><a href="project_page.php?id=coach_guidance_system">COACH GUIDANCE SYSTEM</a></p>
           </div>
        </div>
     </div>
@@ -167,7 +169,7 @@ $link='product_list.php?id=Industrial_Instruments&num=10';
     <div class="z-depth-5 card-panel hoverable" id="request_for_quote">  
       <fieldset id="rqst_form">
         <legend class="white-text blue darken-2" style="position:relative;height: 40px;width: 100%;"><center>Request for quote</center></legend>
-        <form>
+        <form action="home.html">
           <input id="name" type="text" class="validate" placeholder="Name" style="font-size:15px;">
           <input id="email" type="email" class="validate" placeholder="Email" style="font-size:15px;">
           <input id="company" type="text" class="validate" placeholder="Company" style="font-size:15px;">
@@ -366,10 +368,12 @@ $link='product_list.php?id=Industrial_Instruments&num=10';
           <div class="col l3 s12 m3">
             <h6 class="white-text"><strong>Projects</strong></h6>
             <ul>
-              <li class="flink"><a class="white-text foot" href="#!">Project 1</a></li>
-              <li class="flink"><a class="white-text foot" href="#!">Project 2</a></li>
-              <li class="flink"><a class="white-text foot" href="#!">Project 3</a></li>
-              <li class="flink"><a class="white-text foot" href="#!">Project 4</a></li>
+              <li class="flink"><a class="white-text foot" href="project_page.php?id=ntpc_rihand">NTPC Rihand</a></li>
+              <li class="flink"><a class="white-text foot" href="project_page.php?id=patna_high_court">Patna High Court</a></li>
+              <li class="flink"><a class="white-text foot" href="project_page.php?id=patna_railway_station">RAILWAY Station Display</a></li>
+              <li class="flink"><a class="white-text foot" href="project_page.php?id=shakti_bhawan"">SHAKTI BHAWAN</a></li>
+              <li class="flink"><a class="white-text foot" href="project_page.php?id=panki">PANKI</a></li>
+              <li class="flink"><a class="white-text foot" href="project_page.php?id=coach_guidance_system">COACH GUIDANCE SYSTEM</a></li>
             </ul>
           </div>
           <div class="col l3 s12 m3">

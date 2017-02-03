@@ -104,7 +104,9 @@ $x= $_GET['id'];
             <p class="product_name"><a href="project_page.php?id=ntpc_rihand"">NTPC RIHAND</a></p>
             <p class="product_name"><a href="project_page.php?id=patna_high_court">PATNA HIGH COURT</a></p>
             <p class="product_name"><a href="project_page.php?id=patna_railway_station">RAILWAY STATION DISPLAY</a></p>
-            
+            <p class="product_name"><a href="project_page.php?id=shakti_bhawan"">SHAKTI BHAWAN</a></p>
+            <p class="product_name"><a href="project_page.php?id=panki">PANKI</a></p>
+            <p class="product_name"><a href="project_page.php?id=coach_guidance_system">COACH GUIDANCE SYSTEM</a></p>
           </div>
        </div>
     </div>
@@ -146,7 +148,7 @@ $x= $_GET['id'];
     </nav>
 
     
-    <div class="parallax-container Overview">
+   <!-- <div class="parallax-container Overview">
       <div class="parallax" ><img src="circuits.jpg" height="100%"></div>
       <br>
       <center><h5 class="custom-text" style="color:#263238;" id="info">OVERVIEW</h5></center>
@@ -155,7 +157,7 @@ $x= $_GET['id'];
         <center><p class="black-text overview-text" id="desc"></p></center>
         
       </div>
-    </div>
+    </div>-->
 
     <div class="row product-images" style="z-index:-1;margin-top:-50px;">
       <div class="col l12 s12 m12">
@@ -322,10 +324,12 @@ $x= $_GET['id'];
           <div class="col l3 s12 m3">
             <h6 class="white-text"><strong>Projects</strong></h6>
             <ul>
-              <li class="flink"><a class="white-text foot" href="#!">Project 1</a></li>
-              <li class="flink"><a class="white-text foot" href="#!">Project 2</a></li>
-              <li class="flink"><a class="white-text foot" href="#!">Project 3</a></li>
-              <li class="flink"><a class="white-text foot" href="#!">Project 4</a></li>
+              <li class="flink"><a class="white-text foot" href="project_page.php?id=ntpc_rihand">NTPC Rihand</a></li>
+              <li class="flink"><a class="white-text foot" href="project_page.php?id=patna_high_court">Patna High Court</a></li>
+              <li class="flink"><a class="white-text foot" href="project_page.php?id=patna_railway_station">RAILWAY Station Display</a></li>
+              <li class="flink"><a class="white-text foot" href="project_page.php?id=shakti_bhawan"">SHAKTI BHAWAN</a></li>
+              <li class="flink"><a class="white-text foot" href="project_page.php?id=panki">PANKI</a></li>
+              <li class="flink"><a class="white-text foot" href="project_page.php?id=coach_guidance_system">COACH GUIDANCE SYSTEM</a></li>
             </ul>
           </div>
           <div class="col l3 s12 m3">

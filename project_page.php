@@ -60,7 +60,7 @@ $x= $_GET['id'];
   </head>
 
   <body id="product_page">
-    <div class="dropdown-content" id="products">
+    <div class="dropdown-content" id="products" style="z-index: 10;">
       <div class="container">
         <div class="row">
           <div class="col l4"><p class="dropdown_headName"><a href="product_list.php?id=LED_display&num=3">LED Display</a></p><hr></div>
@@ -97,7 +97,7 @@ $x= $_GET['id'];
       </div>
     </div>
     
-    <div class="dropdown-content" id="projects">
+    <div class="dropdown-content" id="projects" style="z-index: 10;">
       <div class="container">
         <div class="row">
         <div class="col l12">
@@ -119,6 +119,7 @@ $x= $_GET['id'];
           <ul class="right hide-on-med-and-down">
             <li><a href="home.html" class="navLink">Home</a></li>
             <li><a href="about.html" class="navLink">About</a></li>
+            <li><a href="clients.html" class="navLink">Our Clients</a></li>
             <li class="active"><a href="projects.html" class="dropdown-button navLink" data-activates="projects">Projects<i class="material-icons right">arrow_drop_down</i></a></li>
             <li><a href="product_list.php?id=LED_display&num=3" class="dropdown-button navLink" data-activates="products">Products<i class="material-icons right">arrow_drop_down</i></a></li>
             <li><a href="contactForm.html" class="navLink">Contact</a></li>
@@ -127,6 +128,7 @@ $x= $_GET['id'];
           <ul id="nav-mobile" class="side-nav">
             <li><a href="home.html">Home</a></li>
             <li><a href="about.html">About Us</a></li>
+            <li><a href="clients.html">Our Clients</a></li>
             <li class="active"><a href="projects.html">Projects<i class="material-icons right">arrow_drop_down</i></a></li>
             <li><a href="product_list.php?id=LED_display&num=3">Products<i class="material-icons right">arrow_drop_down</i></a></li>
             <li><a href="contactForm.html">Contact Us</a></li> 
@@ -137,7 +139,7 @@ $x= $_GET['id'];
         </div>
       </nav>
     </div>
-    
+    <div class="navbar-fixed" style="z-index:2">
     <nav class="white branches" >
       <div class="nav-wrapper container">
         <div class="col s12">
@@ -146,7 +148,7 @@ $x= $_GET['id'];
         </div>
       </div>
     </nav>
-
+</div>
     
    <!-- <div class="parallax-container Overview">
       <div class="parallax" ><img src="circuits.jpg" height="100%"></div>

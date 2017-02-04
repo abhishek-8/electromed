@@ -103,6 +103,7 @@ $z=$_GET['num'];
           <ul class="right hide-on-med-and-down">
             <li><a href="home.html" class="navLink">Home</a></li>
             <li><a href="about.html" class="navLink">About</a></li>
+            <li><a href="clients.html" class="navLink">Our Clients</a></li>
             <li><a href="projects.html" class="dropdown-button navLink" data-activates="projects">Projects<i class="material-icons right">arrow_drop_down</i></a></li>
             <li class="active"><a href="product_list.php?id=LED_display&num=3" class="dropdown-button navLink" data-activates="products">Products<i class="material-icons right">arrow_drop_down</i></a></li>
             <li><a href="contactForm.html" class="navLink">Contact</a></li>
@@ -112,6 +113,7 @@ $z=$_GET['num'];
           <ul id="nav-mobile" class="side-nav">
             <li><a href="home.html">Home</a></li>
             <li><a href="about.html">About Us</a></li>
+            <li><a href="clients.html">Our Clients</a></li>
             <li><a href="projects.html">Projects<i class="material-icons right">arrow_drop_down</i></a></li>
             <li class="active"><a href="product_list.php?id=LED_display&num=3">Products<i class="material-icons right">arrow_drop_down</i></a></li>
             <li><a href="contactForm.html">Contact Us</a></li> 

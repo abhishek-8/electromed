@@ -80,7 +80,7 @@ $link='product_list.php?id=Industrial_Instruments&num=10';
     </script>
   </head>
   <body id="product_page">
-    <div class="dropdown-content" id="products">
+    <div class="dropdown-content" id="products" style="position:fixed;z-index:10">
       <div class="container">
         <div class="row">
           <div class="col l4"><p class="dropdown_headName"><a href="product_list.php?id=LED_display&num=3">LED Display</a></p><hr></div>
@@ -116,7 +116,7 @@ $link='product_list.php?id=Industrial_Instruments&num=10';
         </div>
       </div>
     </div>
-    <div class="dropdown-content" id="projects">
+    <div class="dropdown-content" id="projects" style="z-index: 10;">
       <div class="container">
         <div class="row">
         <div class="col l12">
@@ -137,6 +137,7 @@ $link='product_list.php?id=Industrial_Instruments&num=10';
           <ul class="right hide-on-med-and-down">
             <li><a href="home.html" class="navLink">Home</a></li>
             <li><a href="about.html" class="navLink">About</a></li>
+            <li><a href="clients.html" class="navLink">Our Clients</a></li>
             <li><a href="projects.html" class="dropdown-button navLink" data-activates="projects">Projects<i class="material-icons right">arrow_drop_down</i></a></li>
             <li class="active"><a href="product_list.php?id=LED_display&num=3" class="dropdown-button navLink" data-activates="products">Products<i class="material-icons right">arrow_drop_down</i></a></li>
             <li><a href="contactForm.html" class="navLink">Contact</a></li>
@@ -145,6 +146,7 @@ $link='product_list.php?id=Industrial_Instruments&num=10';
           <ul id="nav-mobile" class="side-nav">
             <li><a href="home.html">Home</a></li>
             <li><a href="about.html">About Us</a></li>
+            <li><a href="clients.html">Our Clients</a></li>
             <li><a href="projects.html">Projects<i class="material-icons right">arrow_drop_down</i></a></li>
             <li class="active"><a href="product_list.php?id=LED_display&num=3">Products<i class="material-icons right">arrow_drop_down</i></a></li>
             <li><a href="contactForm.html">Contact Us</a></li> 
@@ -155,7 +157,7 @@ $link='product_list.php?id=Industrial_Instruments&num=10';
         </div>
       </nav>
     </div>
-    
+    <div class="navbar-fixed" style="z-index:1">
     <nav class="white branches" >
       <div class="nav-wrapper container">
         <div class="col s12">
@@ -165,6 +167,7 @@ $link='product_list.php?id=Industrial_Instruments&num=10';
         </div>
       </div>
     </nav>
+    </div>
 
     <div class="z-depth-5 card-panel hoverable" id="request_for_quote">  
       <fieldset id="rqst_form">
@@ -188,25 +191,12 @@ $link='product_list.php?id=Industrial_Instruments&num=10';
         </form>
       </fieldset>
     </div>
-    
-    <div class="parallax-container Overview">
-      <div class="parallax" ><img src="circuits.jpg" height="100%"></div>
-      <br>
-      <center><h5 class="custom-text" style="color:#263238;" id="info">OVERVIEW</h5></center>
-      <div class="container">
-        
-        <center><p class="black-text overview-text" id="desc"></p></center>
-        
-      </div>
-    </div>
 
-    <div class="row product-images" style="z-index:-1;margin-top:-50px;">
-      <div class="col l12 s12 m12">
-        <br>
+    <div class="row product-images">
         <div class="col l5 s12 m5" id="product">
           <div class="row">
-            <br><br><br><br>
-            <div class="col l11 offset-l1 s11 m11 materialboxed" id="product_image">
+          <br>
+            <div class="col l11 offset-l1 s12 m11 materialboxed" id="product_image">
               
             </div>
           </div>
@@ -217,8 +207,14 @@ $link='product_list.php?id=Industrial_Instruments&num=10';
             <div class="col l3 m3 s3 btn3" id="product_image3"></div>
           </div>
         </div>
-        
+
+
+
         <div class="col l6 s12 m6" id="specs">
+
+        <div style="overflow:visible;">
+        <blockquote style="font-family: 'Open Sans Condensed', sans-serif;font-size:21px;"><b><u id="info">Overview</u></b></blockquote>
+        <p class="black-text overview-text" id="desc"></p>
         <br><br><br>
         <table class="striped" style="line-height: 100%;">
         <blockquote style="font-family: 'Open Sans Condensed', sans-serif;font-size:21px;"><b><u>Technical Specifications</u></b></blockquote>
@@ -262,15 +258,22 @@ $link='product_list.php?id=Industrial_Instruments&num=10';
         </tr>
       </table><br>
       <div class="row">
-        <button class="btn blue darken-2 col l4 s5" style="font-size:13px;float:left;"><i class="material-icons left">library_books</i>Brochure</button>
-        <button class="btn rqst blue darken-2 l4 col s6" style="font-size:13px;float:right;">Request for quote</button>
+        <button class="btn blue darken-2 col l4 s5" id="dwnld-btn" ><i class="material-icons left">library_books</i>Brochure</button>
+        <button class="btn rqst blue darken-2 l4 col s6" id="rqst-btn" >Request for quote</button>
       </div>
     </div>
-    
-  </div>
+
+
+    </div>
+
+
 </div>
-<div>
+
+
+
+
   <br><br>
+  <div>
   <div class="parallax-container related">
       <div class="parallax" ><img src="circuits2.jpg" height="260"></div>
       

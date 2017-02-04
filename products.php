@@ -157,7 +157,7 @@ $link='product_list.php?id=Industrial_Instruments&num=10';
         </div>
       </nav>
     </div>
-    <div class="navbar-fixed" style="z-index:1">
+    <div class="navbar-fixed" style="z-index:9">
     <nav class="white branches" >
       <div class="nav-wrapper container">
         <div class="col s12">
@@ -213,9 +213,10 @@ $link='product_list.php?id=Industrial_Instruments&num=10';
         <div class="col l6 s12 m6" id="specs">
 
         <div style="overflow:visible;">
+        <br>
         <blockquote style="font-family: 'Open Sans Condensed', sans-serif;font-size:21px;"><b><u id="info">Overview</u></b></blockquote>
         <p class="black-text overview-text" id="desc"></p>
-        <br><br><br>
+        <br>
         <table class="striped" style="line-height: 100%;">
         <blockquote style="font-family: 'Open Sans Condensed', sans-serif;font-size:21px;"><b><u>Technical Specifications</u></b></blockquote>
         <col width="30%">
@@ -257,29 +258,24 @@ $link='product_list.php?id=Industrial_Instruments&num=10';
           <td class="table_specs" style="vertical-align: top;"><b id="r7d2"></b></td>
         </tr>
       </table><br>
-      <div class="row">
-        <button class="btn blue darken-2 col l4 s5" id="dwnld-btn" ><i class="material-icons left">library_books</i>Brochure</button>
-        <button class="btn rqst blue darken-2 l4 col s6" id="rqst-btn" >Request for quote</button>
-      </div>
+      
     </div>
 
 
     </div>
-
-
 </div>
 
+<div class="row">
+        <button class="btn blue darken-2 col l2 s5" id="dwnld-btn" ><i class="material-icons left">library_books</i>Brochure</button>
+        <button class="btn rqst blue darken-2 l2 col s6" id="rqst-btn" >Request for quote</button>
+      </div>
 
 
 
   <br><br>
   <div>
-  <div class="parallax-container related">
-      <div class="parallax" ><img src="circuits2.jpg" height="260"></div>
-      
-      <h3 class="related_text black-text center">YOU MAY ALSO BE INTERESTED IN...</h3>
-        
-    </div>
+ 
+        <p class="custom-text blue white-text" style="text-align:center;font-size:22px;padding-top:2px;line-height: 60px">YOU MAY ALSO BE INTERESTED IN...</p> 
   <br>
   <div class="row" id="related_products">
     
@@ -399,7 +395,7 @@ $link='product_list.php?id=Industrial_Instruments&num=10';
           </div>
         </div>
       </div>
-      <div class="fixed-action-btn horizontal">
+      <div class="fixed-action-btn horizontal" id="navigation">
         <a class="btn-floating btn-large blue darken-2 top">
           <i class="large material-icons">navigation</i>
         </a>

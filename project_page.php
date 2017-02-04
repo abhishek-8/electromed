@@ -139,7 +139,7 @@ $x= $_GET['id'];
         </div>
       </nav>
     </div>
-    <div class="navbar-fixed" style="z-index:2">
+    <div class="navbar-fixed" style="z-index:9">
     <nav class="white branches" >
       <div class="nav-wrapper container">
         <div class="col s12">
@@ -229,12 +229,9 @@ $x= $_GET['id'];
 </div>
 <div>
   <br><br>
-  <div class="parallax-container related">
-      <div class="parallax" ><img src="circuits2.jpg" height="260"></div>
-      
-      <h3 class="related_text black-text center">YOU MAY ALSO BE INTERESTED IN...</h3>
-        
-    </div>
+   
+        <p class="custom-text blue white-text" style="text-align:center;font-size:22px;padding-top:2px;line-height: 60px">YOU MAY ALSO BE INTERESTED IN...</p> 
+   
   <br>
   <div class="row" id="related_products">
     

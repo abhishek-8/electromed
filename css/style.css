@@ -3,6 +3,20 @@
 body{
   width: 100%;
 }
+
+body::-webkit-scrollbar
+{
+  width: 10px;
+  background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar-thumb
+{
+  border-radius: 2px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: #1976d2;
+}
+blockquote{margin:20px 0;padding-left:1.5rem;border-left:5px solid #1976d2}
 .our_clients{
   background-color: rgba( 55,10,0, 0.7);
   height:390px;
@@ -10,7 +24,9 @@ body{
 .our_clients div p {
   font-size:26px;  
 }
-
+#about_page #field1 ,#about_page #field2,#about_page #field3 {
+  font-size:72px;
+}
 #c1 div p,#c2 div p ,#c3 div p ,#c4 div p {
   font-size:28px;
 }
@@ -36,13 +52,21 @@ body{
    padding:21px;
 }
 
+
 @media only screen and (min-width: 800px) {
+
+  #no-of-prj , #years-on-market {
+    margin-left:5%;
+  }
+  #navigation {
+    display:none;
+  }
   .bullets:before {
   content:"• ";
 }
   #specs::-webkit-scrollbar
 {
-  width: 12px;
+  width: 6px;
   background-color: #F5F5F5;
 }
 
@@ -52,9 +76,11 @@ body{
   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
   background-color: #1976d2;
 }
+
   #specs {
-  overflow-x:hidden;overflow-y:auto;height:500px;
+  overflow-x:hidden;overflow-y:auto;height:470px;
   }
+
   .client-list li {
    margin-right:1%;
   }
@@ -210,9 +236,24 @@ background-color:rgba(50,7,14,0.15);
   top:50;
   z-index:10; 
 }
+
  @media only screen and (min-width: 760px) {
+}
+
+#dwnld-btn {
+  font-size:15px;
+  margin-left:46%;
+  }
+  #rqst-btn{
+    font-size:15px;
+    margin-left:12%;
+  } 
   #quick_facts{
-    width:23%;
+    margin-left:7%;
+
+  }
+  .cntdwn {
+    margin-left:6%;
   }
   #field1text ,#field2text,#field3text {
   color:#263238;text-align:center;font-size:22px;
@@ -403,17 +444,25 @@ nav .brand-logo{
   padding-left:8%;
   z-index:2;
 }
-   
-#dwnld-btn {
-  font-size:15px;float:left;
-  }
-  #rqst-btn{
-    font-size:15px;float:right;
-  } 
+
 
 /* -----------------------Mobile phone screen size -------------*/
 
 @media (max-width:499px){ 
+
+#quick_facts {
+  width:100%;
+    margin-left:2%;
+  }
+
+
+#about_page #field1 ,#about_page #field2, #about_page #field3 {
+  font-size:42px;
+}
+
+#about_page #field1text ,#about_page #field2text , #about_page #field3text {
+  font-size:16px;
+}
   #dwnld-btn {
   font-size:12px;float:left;
   }

@@ -103,7 +103,7 @@ $z=$_GET['num'];
           <ul class="right hide-on-med-and-down">
             <li><a href="home.html" class="navLink">Home</a></li>
             <li><a href="about.html" class="navLink">About</a></li>
-            <li><a href="clients.html" class="navLink">Our Clients</a></li>
+            <li><a href="clients.html" class="navLink">Clients</a></li>
             <li><a href="projects.html" class="dropdown-button navLink" data-activates="projects">Projects<i class="material-icons right">arrow_drop_down</i></a></li>
             <li class="active"><a href="product_list.php?id=LED_display&num=3" class="dropdown-button navLink" data-activates="products">Products<i class="material-icons right">arrow_drop_down</i></a></li>
             <li><a href="contactForm.html" class="navLink">Contact</a></li>
@@ -113,7 +113,7 @@ $z=$_GET['num'];
           <ul id="nav-mobile" class="side-nav">
             <li><a href="home.html">Home</a></li>
             <li><a href="about.html">About Us</a></li>
-            <li><a href="clients.html">Our Clients</a></li>
+            <li><a href="clients.html">Clients</a></li>
             <li><a href="projects.html">Projects<i class="material-icons right">arrow_drop_down</i></a></li>
             <li class="active"><a href="product_list.php?id=LED_display&num=3">Products<i class="material-icons right">arrow_drop_down</i></a></li>
             <li><a href="contactForm.html">Contact Us</a></li> 
@@ -125,7 +125,7 @@ $z=$_GET['num'];
       </nav>
     </div>
 
-
+<!--
      <div class="parallax-container Overview" id="category-overview">
       <div class="parallax" ><img src="circuits.jpg" height="100%"></div>
       <br>
@@ -135,7 +135,7 @@ $z=$_GET['num'];
         <center><p class="black-text overview-text"></p></center>
         
       </div>
-    </div>
+    </div>-->
 
         <div class="container-fluid">
             <div class="row">
@@ -202,10 +202,10 @@ $z=$_GET['num'];
                                 <div class="card-image" id="p1">
                                     
                                 </div>
-                                <div class="card-action" id="l1">
+                                <div class="card-action custom-text" id="l1">
                              
                                 </div>
-                                <div class="card-content" id="d1">
+                                <div class="card-content" id="d1" style="border:1px inset">
                                  
                                 </div>
                                 
@@ -216,9 +216,9 @@ $z=$_GET['num'];
                                 <div class="card-image" id="p2">
                                     
                                 </div>
-                                <div class="card-action" id="l2">
+                                <div class="card-action custom-text" id="l2">
                                 </div>
-                                <div class="card-content" id="d2">
+                                <div class="card-content" id="d2" style="border:1px inset">
                                  
                                 </div>
                                 
@@ -229,9 +229,9 @@ $z=$_GET['num'];
                                 <div class="card-image" id="p3">
                                     
                                 </div>
-                                <div class="card-action" id="l3">
+                                <div class="card-action custom-text" id="l3">
                                 </div>
-                                <div class="card-content" id="d3">
+                                <div class="card-content" id="d3" style="border:1px inset">
                                     
                                 </div>
                                 
@@ -239,12 +239,12 @@ $z=$_GET['num'];
                         </div>
                         <div class="col s12 m7 l3" id="c4">
                             <div class="card">
-                                <div class="card-image" id="p4">
+                                <div class="card-image " id="p4">
                                     
                                 </div>
-                                <div class="card-action" id="l4">
+                                <div class="card-action custom-text" id="l4">
                                 </div>
-                                <div class="card-content" id="d4">
+                                <div class="card-content" id="d4" style="border:1px inset">
                                    
                                 </div>
                                 
@@ -258,9 +258,9 @@ $z=$_GET['num'];
                                 <div class="card-image" id="p5">
                                    
                                 </div>
-                                <div class="card-action" id="l5">
+                                <div class="card-action custom-text" id="l5">
                                 </div>
-                                <div class="card-content" id="d5">
+                                <div class="card-content" id="d5" style="border:1px inset">
                                     
                                 </div>
                                 
@@ -271,9 +271,9 @@ $z=$_GET['num'];
                                 <div class="card-image" id="p6">
                                     
                                 </div>
-                                <div class="card-action" id="l6">
+                                <div class="card-action custom-text" id="l6">
                                 </div>
-                                <div class="card-content" id="d6">
+                                <div class="card-content" id="d6" style="border:1px inset">
                                 
                                 </div>
                                 
@@ -284,9 +284,9 @@ $z=$_GET['num'];
                                 <div class="card-image" id="p7">
                                     
                                 </div>
-                                <div class="card-action" id="l7">
+                                <div class="card-action custom-text" id="l7">
                                 </div>
-                                <div class="card-content" id="d7">
+                                <div class="card-content" id="d7" style="border:1px inset">
                                 
                                 </div>
                                 
@@ -297,9 +297,9 @@ $z=$_GET['num'];
                                 <div class="card-image" id="p8">
                                     
                                 </div>
-                                <div class="card-action" id="l8">
+                                <div class="card-action custom-text" id="l8">
                                 </div>
-                                <div class="card-content" id="d8">
+                                <div class="card-content" id="d8" style="border:1px inset">
                                     
                                 </div>
                                 
@@ -312,9 +312,9 @@ $z=$_GET['num'];
                                 <div class="card-image" id="p9">
 
                                 </div>
-                                <div class="card-action" id="l9">
+                                <div class="card-action custom-text" id="l9">
                                 </div>
-                                <div class="card-content" id="d9">
+                                <div class="card-content" id="d9" style="border:1px inset">
                                     
                                 </div>
                                 
@@ -325,10 +325,10 @@ $z=$_GET['num'];
                                 <div class="card-image" id="p10">
 
                                 </div>
-                                <div class="card-action" id="l10">
+                                <div class="card-action custom-text" id="l10">
                                     
                                 </div>
-                                <div class="card-content" id="d10">
+                                <div class="card-content" id="d10" style="border:1px inset">
                                     
                                 </div>
                                 

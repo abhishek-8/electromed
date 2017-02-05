@@ -2,6 +2,7 @@
  
 body{
   width: 100%;
+  background-color:white; 
 }
 
 body::-webkit-scrollbar
@@ -40,6 +41,13 @@ blockquote{margin:20px 0;padding-left:1.5rem;border-left:5px solid #1976d2}
   transition:color .3s ease;
   text-transform:uppercase;
 }
+
+.card-action{
+  position:relative;
+  background-color:
+  inherit;border-top:1px solid rgba(160,160,160,0.2);
+  margin-top: 3px;
+  z-index:2;}
 
 .client-list li {
   display:inline;
@@ -228,7 +236,6 @@ hr.style11 {
 
 .related {
 height:80px;
-background-color:rgba(50,7,14,0.15); 
 }
 
 #request_for_quote {
@@ -238,14 +245,15 @@ background-color:rgba(50,7,14,0.15);
 }
 
  @media only screen and (min-width: 760px) {
-}
 
 #dwnld-btn {
   font-size:15px;
-  margin-left:46%;
+  width:14%;
+  margin-left:56%;
   }
   #rqst-btn{
     font-size:15px;
+    width:14%;
     margin-left:12%;
   } 
   #quick_facts{
@@ -267,19 +275,16 @@ background-color:rgba(50,7,14,0.15);
     margin-left:6%; 
 }
   #product_image1 {
-  margin-left:15%;  
+  margin-left:4%;  
   }
    #product_image2 {
   margin-left:2px;
   margin-right:2px;
   }
   #specs{
-  margin-left:40px;
-  width:52%;
+  width:56%;
 }
-  #product {
-  margin-left:15px;
-}
+
 #request_for_quote{
 width:50%;
 margin-left:25%;
@@ -289,10 +294,7 @@ margin-left:25%;
 #product_image{
   height:280px;
 }
-.rqst_btn {
-  background:white;
-  color:black;
-}
+
 
 #about_us,#contact_us {
   margin-top:-25px;
@@ -464,10 +466,12 @@ nav .brand-logo{
   font-size:16px;
 }
   #dwnld-btn {
-  font-size:12px;float:left;
+  font-size:12px;
+  margin-left:2%;
   }
   #rqst-btn{
-    font-size:12px;float:right;
+    font-size:12px;
+    margin-left:4%;
   } 
   #select_industry{
     width:87%;

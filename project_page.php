@@ -27,6 +27,8 @@ $x= $_GET['id'];
   $("html, body").animate({ scrollTop: 0 }, "fast");
   return false;
 });
+
+    Materialize.showStaggeredList('#staggered-test');
     $('.parallax').parallax();
     $('.button-collapse').sideNav();
     $('.materialboxed').materialbox();
@@ -149,18 +151,30 @@ $x= $_GET['id'];
       </div>
     </nav>
 </div>
-    
-   <!-- <div class="parallax-container Overview">
-      <div class="parallax" ><img src="circuits.jpg" height="100%"></div>
-      <br>
-      <center><h5 class="custom-text" style="color:#263238;" id="info">OVERVIEW</h5></center>
-      <div class="container">
-        
-        <center><p class="black-text overview-text" id="desc"></p></center>
-        
-      </div>
-    </div>-->
+<div class="row">
+<div class="col l2 m2 s12"><br><br>
+                    <a href="#!" class="btn blue darken-2 category-btn" onclick="Materialize.showStaggeredList('#staggered-test')" style="width:100%;">Projects</a>
+                    <ul id="staggered-test" class="collapsible" data-collapsible="accordion">
+                         <li style="opacity: 0;">
+                            <div class="collapsible-header active">Featured Projects</div>
+                            <div class="collapsible-body container-fluid" style="line-height:72%;"><br>
+                                <a href="project_page.php?id=ntpc_rihand" style="font-size:12px;padding-left:10%;<?php if($x=='ntpc_rihand') echo 'color:red'; ?>">NTPC RIHAND</a><br>
+                                <hr>
+                                <a href="project_page.php?id=patna_high_court" style="font-size:12px;padding-left:10%;<?php if($x=='patna_high_court') echo 'color:red'; ?>">PATNA HIGH COURT</a><br>
+                                <hr>
+                                <a href="project_page.php?id=patna_railway_station" style="font-size:12px;padding-left:10%;<?php if($x=='patna_railway_station') echo 'color:red'; ?>">RAILWAY STATION DISPLAY</a><br>
+                                <hr>
+                                <a href="project_page.php?id=shakti_bhawan" style="font-size:12px;padding-left:10%;<?php if($x=='shakti_bhawan') echo 'color:red'; ?>">SHAKTI BHAWAN</a><br>
+                                <hr>
+                                <a href="project_page.php?id=panki" style="font-size:12px;padding-left:10%;<?php if($x=='panki') echo 'color:red'; ?>">PANKI</a><br>
+                                <hr>
+                                <a href="project_page.php?id=coach_guidance_system" style="font-size:12px;padding-left:10%;<?php if($x=='coach_guidance_system') echo 'color:red'; ?>">COACH GUIDANCE SYSTEM</a><br><br>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
 
+<div class="col l10 m10 s12">
     <div class="row product-images" style="z-index:-1;margin-top:-50px;">
       <div class="col l12 s12 m12">
         <br>
@@ -226,6 +240,8 @@ $x= $_GET['id'];
     </div>
     
   </div>
+</div>
+</div>
 </div>
 <div>
   <br><br>

@@ -140,55 +140,55 @@ $z=$_GET['num'];
         <div class="container-fluid">
             <div class="row">
                 <div class="col l3 s12"><br><br>
-                    <a href="#!" class="btn blue darken-2 category-btn" onclick="Materialize.showStaggeredList('#staggered-test')">Categories</a>
+                    <a href="#!" class="btn blue darken-2 category-btn" onclick="Materialize.showStaggeredList('#staggered-test')" style="width:100%">Categories</a>
                     <ul id="staggered-test" class="collapsible" data-collapsible="accordion">
                         <li style="opacity: 0;">
-                            <div class="collapsible-header <?php if($x=='LED_display') echo 'active'; ?>" onclick="filter('LED_display',3)">LED Display</div>
-                            <div class="collapsible-body container"><br>
-                                <a href="products.php?id=true_color_display&type=1">TRUE COLOR HD SCREEN</a><br>
+                            <div class="collapsible-header <?php if($x=='LED_display') echo 'active'; ?>" onclick="filter('LED_display',3)" >LED Display</div>
+                            <div class="collapsible-body container-fluid" style="line-height:72%;"><br>
+                                <a href="products.php?id=true_color_display&type=1" style="font-size:12px;padding-left:10%">TRUE COLOR HD SCREEN</a><br>
                                 <hr>
-                                <a href="products.php?id=tri_color_display&type=1">TRI COLOR DISPLAY BOARDS</a><br>
+                                <a href="products.php?id=tri_color_display&type=1" style="font-size:12px;padding-left:10%">TRI COLOR DISPLAY BOARDS</a><br>
                                 <hr>
-                                <a href="products.php?id=uni_color_display&type=1">UNI COLOR DISPLAY BOARDS</a><br>
+                                <a href="products.php?id=uni_color_display&type=1" style="font-size:12px;padding-left:10%">UNI COLOR DISPLAY BOARDS</a><br><br>
                                 
                             </div>
                         </li>
                         <li style="opacity: 0;">
-                            <div class="collapsible-header <?php if($x=='Product_for_office') echo 'active';  ?>" onclick="filter('Product_for_office',4)">Product for Office</div>
-                            <div class="collapsible-body container"><br>
+                            <div class="collapsible-header <?php if($x=='Product_for_office') echo 'active';  ?>" onclick="filter('Product_for_office',4)" >Product for Office</div>
+                            <div class="collapsible-body container-fluid" style="line-height:72%;"><br>
                                 
-                                <a href="products.php?id=token&type=2">TOKEN DISPLAY</a><br>
+                                <a href="products.php?id=token&type=2" style="font-size:12px;padding-left:10%">TOKEN DISPLAY</a><br>
                                 <hr>
-                                <a href="products.php?id=digital_clock&type=2">DIGITAL CLOCKS</a><br>
+                                <a href="products.php?id=digital_clock&type=2" style="font-size:12px;padding-left:10%">DIGITAL CLOCKS</a><br>
                                 <hr>
-                                <a href="products.php?id=interest_rate_display_board&type=2">INTEREST RATE DISPLAY BOARD</a><br>
+                                <a href="products.php?id=interest_rate_display_board&type=2" style="font-size:12px;padding-left:10%">INTEREST RATE DISPLAY BOARD</a><br>
                                 <hr>
-                                <a href="products.php?id=scrolling_display&type=2">SCROLLING DISPLAY</a><br>
+                                <a href="products.php?id=scrolling_display&type=2" style="font-size:12px;padding-left:10%">SCROLLING DISPLAY</a><br><br>
                             </div>
                             
                         </li>
                         <li style="opacity: 0;">
-                            <div class="collapsible-header <?php if($x=='Industrial_Instruments') echo 'active'; ?>" onclick="filter('Industrial_Instruments',10)">Industrial Instruments</div>
-                            <div class="collapsible-body container"><br>
-                                <a href="products.php?id=flow_monitor&type=4">FLOW MONITOR</a><br>
+                            <div class="collapsible-header <?php if($x=='Industrial_Instruments') echo 'active'; ?>" onclick="filter('Industrial_Instruments',10)" >Industrial Instruments</div>
+                            <div class="collapsible-body container-fluid" style="line-height:72%;"><br>
+                                <a href="products.php?id=flow_monitor&type=4" style="font-size:12px;padding-left:10%">FLOW MONITOR</a><br>
                                 <hr>
-                                <a href="products.php?id=lfm&type=4">LINE FREQUENCY MONITOR</a><br>
+                                <a href="products.php?id=lfm&type=4" style="font-size:12px;padding-left:10%">LINE FREQUENCY MONITOR</a><br>
                                 <hr>
-                                <a href="products.php?id=megawatt_panel&type=4">MEGA WATT PANEL</a><br>
+                                <a href="products.php?id=megawatt_panel&type=4" style="font-size:12px;padding-left:10%">MEGA WATT PANEL</a><br>
                                 <hr>
-                                <a href="products.php?id=process_indicator&type=4">PROCESS INDICATORS</a><br>
+                                <a href="products.php?id=process_indicator&type=4" style="font-size:12px;padding-left:10%">PROCESS INDICATORS</a><br>
                                 <hr>
-                                <a href="products.php?id=ph_meter&type=4">PH METER</a><br>
+                                <a href="products.php?id=ph_meter&type=4" style="font-size:12px;padding-left:10%">PH METER</a><br>
                                 <hr>
-                                <a href="products.php?id=tachometer&type=4">TACHOMETER</a><br>
+                                <a href="products.php?id=tachometer&type=4" style="font-size:12px;padding-left:10%">TACHOMETER</a><br>
                                 <hr>
-                                <a href="products.php?id=temp_cont&type=4">TEMPERATURE CONTROLLER</a><br>
+                                <a href="products.php?id=temp_cont&type=4" style="font-size:12px;padding-left:10%">TEMPERATURE CONTROLLER</a><br>
                                 <hr>
-                                <a href="products.php?id=twilight_switches&type=4">TWILIGHT SWITCHES</a><br>
+                                <a href="products.php?id=twilight_switches&type=4" style="font-size:12px;padding-left:10%">TWILIGHT SWITCHES</a><br>
                                 <hr>
-                                <a href="products.php?id=industrial_display&type=4">INDUSTRIAL DISPLAY</a><br>
+                                <a href="products.php?id=industrial_display&type=4" style="font-size:12px;padding-left:10%">INDUSTRIAL DISPLAY</a><br>
                                 <hr>
-                                <a href="products.php?id=wsm&type=4">WEIGHING SCALE MONITOR</a><br>
+                                <a href="products.php?id=wsm&type=4" style="font-size:12px;padding-left:10%">WEIGHING SCALE MONITOR</a><br><br>
                             </div>
                         </li>
                     </ul>

@@ -192,55 +192,55 @@ $link='product_list.php?id=Industrial_Instruments&num=10';
     <div class="row">
       <div class="col l2 m2 s12">
         <br>
-        <a href="#!" class="btn blue darken-2 category-btn" style="width:100%" onclick="Materialize.showStaggeredList('#staggered-test')">Categories</a>
+        <a href="#!" class="btn blue darken-2 category-btn" style="width:100%" onclick="Materialize.showStaggeredList('#staggered-test')">Products</a>
         <ul id="staggered-test" class="collapsible" data-collapsible="accordion">
           <li style="opacity: 0;">
-            <div class="collapsible-header active">LED Display</div>
+            <div class="collapsible-header <?php if($type==1) echo 'active'; ?>">LED Display</div>
             <div class="collapsible-body container-fluid" style="line-height:72%;"><br>
-              <a href="products.php?id=true_color_display&type=1" style="font-size:12px;padding-left:10%">TRUE COLOR HD SCREEN</a><br>
+              <a href="products.php?id=true_color_display&type=1" style="font-size:12px;padding-left:10%;<?php if($x=='true_color_display') echo 'color:red'; ?>">TRUE COLOR HD SCREEN</a><br>
               <hr>
-              <a href="products.php?id=tri_color_display&type=1" style="font-size:12px;padding-left:10%">TRI COLOR DISPLAY BOARDS</a><br>
+              <a href="products.php?id=tri_color_display&type=1" style="font-size:12px;padding-left:10%;<?php if($x=='tri_color_display') echo 'color:red'; ?>">TRI COLOR DISPLAY BOARDS</a><br>
               <hr>
-              <a href="products.php?id=uni_color_display&type=1" style="font-size:12px;padding-left:10%">UNI COLOR DISPLAY BOARDS</a><br><br>
+              <a href="products.php?id=uni_color_display&type=1" style="font-size:12px;padding-left:10%;<?php if($x=='uni_color_display') echo 'color:red'; ?>">UNI COLOR DISPLAY BOARDS</a><br><br>
               
             </div>
           </li>
           <li style="opacity: 0;">
-            <div class="collapsible-header">Product for Office</div>
+            <div class="collapsible-header <?php if($type==2) echo 'active'; ?>">Product for Office</div>
             <div class="collapsible-body container-fluid" style="line-height:72%;"><br>
               
-              <a href="products.php?id=token&type=2" style="font-size:12px;padding-left:10%">TOKEN DISPLAY</a><br>
+              <a href="products.php?id=token&type=2" style="font-size:12px;padding-left:10%;<?php if($x=='token') echo 'color:red'; ?>">TOKEN DISPLAY</a><br>
               <hr>
-              <a href="products.php?id=digital_clock&type=2" style="font-size:12px;padding-left:10%">DIGITAL CLOCKS</a><br>
+              <a href="products.php?id=digital_clock&type=2" style="font-size:12px;padding-left:10%;<?php if($x=='digital_clock') echo 'color:red'; ?>">DIGITAL CLOCKS</a><br>
               <hr>
-              <a href="products.php?id=interest_rate_display_board&type=2" style="font-size:12px;padding-left:10%">INTEREST RATE DISPLAY BOARD</a><br>
+              <a href="products.php?id=interest_rate_display_board&type=2" style="font-size:12px;padding-left:10%;<?php if($x=='interest_rate_display_board') echo 'color:red'; ?>">INTEREST RATE DISPLAY BOARD</a><br>
               <hr>
-              <a href="products.php?id=scrolling_display&type=2" style="font-size:12px;padding-left:10%">SCROLLING DISPLAY</a><br><br>
+              <a href="products.php?id=scrolling_display&type=2" style="font-size:12px;padding-left:10%;<?php if($x=='scrolling_display') echo 'color:red'; ?>">SCROLLING DISPLAY</a><br><br>
             </div>
             
           </li>
           <li style="opacity: 0;">
-            <div class="collapsible-header">Industrial Instruments</div>
+            <div class="collapsible-header <?php if($type==4) echo 'active'; ?>">Industrial Instruments</div>
             <div class="collapsible-body container-fluid" style="line-height:72%;"><br>
-              <a href="products.php?id=flow_monitor&type=4" style="font-size:12px;padding-left:10%">FLOW MONITOR</a><br>
+              <a href="products.php?id=flow_monitor&type=4" style="font-size:12px;padding-left:10%;<?php if($x=='flow_monitor') echo 'color:red'; ?>">FLOW MONITOR</a><br>
               <hr>
-              <a href="products.php?id=lfm&type=4" style="font-size:12px;padding-left:10%">LINE FREQUENCY MONITOR</a><br>
+              <a href="products.php?id=lfm&type=4" style="font-size:12px;padding-left:10%;<?php if($x=='lfm') echo 'color:red'; ?>">LINE FREQUENCY MONITOR</a><br>
               <hr>
-              <a href="products.php?id=megawatt_panel&type=4" style="font-size:12px;padding-left:10%">MEGA WATT PANEL</a><br>
+              <a href="products.php?id=megawatt_panel&type=4" style="font-size:12px;padding-left:10%;<?php if($x=='megawatt_panel') echo 'color:red'; ?>">MEGA WATT PANEL</a><br>
               <hr>
-              <a href="products.php?id=process_indicator&type=4" style="font-size:12px;padding-left:10%">PROCESS INDICATORS</a><br>
+              <a href="products.php?id=process_indicator&type=4" style="font-size:12px;padding-left:10%;<?php if($x=='process_indicator') echo 'color:red'; ?>">PROCESS INDICATORS</a><br>
               <hr>
-              <a href="products.php?id=ph_meter&type=4" style="font-size:12px;padding-left:10%">PH METER</a><br>
+              <a href="products.php?id=ph_meter&type=4" style="font-size:12px;padding-left:10%;<?php if($x=='ph_meter') echo 'color:red'; ?>">PH METER</a><br>
               <hr>
-              <a href="products.php?id=tachometer&type=4" style="font-size:12px;padding-left:10%">TACHOMETER</a><br>
+              <a href="products.php?id=tachometer&type=4" style="font-size:12px;padding-left:10%;<?php if($x=='tachometer') echo 'color:red'; ?>">TACHOMETER</a><br>
               <hr>
-              <a href="products.php?id=temp_cont&type=4" style="font-size:12px;padding-left:10%">TEMPERATURE CONTROLLER</a><br>
+              <a href="products.php?id=temp_cont&type=4" style="font-size:12px;padding-left:10%;<?php if($x=='temp_cont') echo 'color:red'; ?>">TEMPERATURE CONTROLLER</a><br>
               <hr>
-              <a href="products.php?id=twilight_switches&type=4" style="font-size:12px;padding-left:10%">TWILIGHT SWITCHES</a><br>
+              <a href="products.php?id=twilight_switches&type=4" style="font-size:12px;padding-left:10%;<?php if($x=='twilight_switches') echo 'color:red'; ?>">TWILIGHT SWITCHES</a><br>
               <hr>
-              <a href="products.php?id=industrial_display&type=4" style="font-size:12px;padding-left:10%">INDUSTRIAL DISPLAY</a><br>
+              <a href="products.php?id=industrial_display&type=4" style="font-size:12px;padding-left:10%;<?php if($x=='industrial_display') echo 'color:red'; ?>">INDUSTRIAL DISPLAY</a><br>
               <hr>
-              <a href="products.php?id=wsm&type=4" style="font-size:12px;padding-left:10%">WEIGHING SCALE MONITOR</a><br><br>
+              <a href="products.php?id=wsm&type=4" style="font-size:12px;padding-left:10%;<?php if($x=='wsm') echo 'color:red'; ?>">WEIGHING SCALE MONITOR</a><br><br>
             </div>
           </li>
         </ul>

@@ -134,23 +134,23 @@ $link='product_list.php?id=Industrial_Instruments&num=10';
     <div class="navbar-fixed">
       <nav>
         <div class="nav-wrapper container">
-          <a id="logo-container" href="" class="brand-logo custom-text">Electro-med</a>
+          <a id="logo-container" href="home.html" class="brand-logo custom-text">Electro-med</a>
           <ul class="right hide-on-med-and-down">
             <li><a href="home.html" class="navLink">Home</a></li>
-            <li><a href="about.html" class="navLink">About</a></li>
-            <li><a href="clients.html" class="navLink">Clients</a></li>
+             <li class="active"><a href="product_list.php?id=LED_display&num=3" class="dropdown-button navLink" data-activates="products">Products<i class="material-icons right">arrow_drop_down</i></a></li>
             <li><a href="projects.html" class="dropdown-button navLink" data-activates="projects">Projects<i class="material-icons right">arrow_drop_down</i></a></li>
-            <li class="active"><a href="product_list.php?id=LED_display&num=3" class="dropdown-button navLink" data-activates="products">Products<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a href="clients.html" class="navLink">Clients</a></li>
+            <li><a href="about.html" class="navLink">About</a></li>
             <li><a href="contactForm.html" class="navLink">Contact</a></li>
           </ul>
           
           <ul id="nav-mobile" class="side-nav">
             <li><a href="home.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="clients.html">Clients</a></li>
-            <li><a href="projects.html">Projects<i class="material-icons right">arrow_drop_down</i></a></li>
             <li class="active"><a href="product_list.php?id=LED_display&num=3">Products<i class="material-icons right">arrow_drop_down</i></a></li>
-            <li><a href="contactForm.html">Contact Us</a></li>
+            <li><a href="projects.html">Projects<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a href="clients.html">Clients</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contactForm.html">Contact Us</a></li> 
           </ul>
           <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
         </div>
@@ -268,41 +268,55 @@ $link='product_list.php?id=Industrial_Instruments&num=10';
             <blockquote style="font-family: 'Open Sans Condensed', sans-serif;font-size:21px;"><b><u id="info">Overview</u></b></blockquote>
             <p class="black-text overview-text" id="desc"></p>
             <br>
-            <table class="striped" style="line-height: 100%;">
-            <blockquote style="font-family: 'Open Sans Condensed', sans-serif;font-size:21px;"><b><u>Technical Specifications</u></b></blockquote>
+
+        <table id="myTable" class="striped" style="line-height: 100%;">
+          <blockquote style="font-family: 'Open Sans Condensed', sans-serif;font-size:21px;"><b><u>Features</u></b></blockquote>
             <col width="30%">
             <col width="0.5%">
             <col width="69.5%">
+
             <tr id="r1">
               <td class="table_specs key" style="vertical-align: top;"><b id="r1d1"></b></td>
               <td style="text-align:center" id="c1">:</td>
               <td class="table_specs value" style="vertical-align: top;"><b id="r1d2"></b></td>
             </tr>
+        
+
+
             <tr id="r2">
               <td class="table_specs" style="vertical-align: top;"><b id="r2d1"></b></td>
               <td style="text-align:center" id="c2">:</td>
               <td class="table_specs" style="vertical-align: top;"><b id="r2d2"></b></td>
             </tr>
+
+            
+
             <tr id="r3">
               <td class="table_specs" style="vertical-align: top;"><b id="r3d1"></b></td>
               <td style="text-align:center" id="c3">:</td>
               <td class="table_specs" style="vertical-align: top;"><b id="r3d2"></b></td>
             </tr>
+                  
             <tr id="r4">
               <td class="table_specs" style="vertical-align: top;"><b id="r4d1"></b></td>
               <td style="text-align:center" id="c4">:</td>
               <td class="table_specs" style="vertical-align: top;"><b id="r4d2"></b></td>
             </tr>
+
+
             <tr id="r5">
               <td class="table_specs" style="vertical-align: top;"><b id="r5d1"></b></td>
               <td style="text-align:center" id="c5">:</td>
               <td class="table_specs" style="vertical-align: top;"><b id="r5d2"></b></td>
             </tr>
+
+
             <tr id="r6">
               <td class="table_specs" style="vertical-align: top;"><b id="r6d1"></b></td>
               <td style="text-align:center" id="c6">:</td>
               <td class="table_specs" style="vertical-align: top;"><b id="r6d2"></b></td>
             </tr>
+
             <tr id="r7">
               <td class="table_specs" style="vertical-align: top;"><b id="r7d1"></b></td>
               <td style="text-align:center" id="c7">:</td>
@@ -380,9 +394,9 @@ $link='product_list.php?id=Industrial_Instruments&num=10';
     <div class="row">
       <div class="col l3 s12">
         <div class="row">
-          <h5 class="white-text"><strong>[ Electro-Med ]</strong></h5>
-          <p class="white-text foot" >Welcome to the leading company delivering services that combine quality,reliability and compliance.</p>
-        </div>
+              <h5 class="white-text"><strong>Electro-Med</strong></h5>
+              <p class="white-text foot" >We manufacture and assemble a comprehensive range of electronic displays and instruments for industrial application.</p>
+            </div>
         <div class="row">
           <div class="col l5 s5 m5">
             <h6 class="white-text">Follow Us: </h6>
@@ -399,7 +413,7 @@ $link='product_list.php?id=Industrial_Instruments&num=10';
           </a></div>
         </div>
       </div>
-      <div class="col l3 s12 m3">
+      <div class="col l2 offset-l1 s12 m2 offset-m1">
         <h6 class="white-text"><strong>Our Links</strong></h6>
         
         <ul>
@@ -420,7 +434,8 @@ $link='product_list.php?id=Industrial_Instruments&num=10';
         </ul>
       </div>
       <div class="col l3 s12 m3">
-        <h6 class="white-text"><strong>Contact Info</strong></h6>
+        <h6 class="white-text"><strong>Contact Info</strong></h6><br>
+        <br>
         <div class="row">
           <div class="col l1 s1 m1"><i class="material-icons prefix blue-text">phone</i></div>
           <div class="col l8 offset-l1 s11 m8 offset-m1"><p class="white-text foot" style="display:inline;">9415039393</p></div>

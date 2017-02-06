@@ -22,10 +22,11 @@ blockquote{margin:20px 0;padding-left:1.5rem;border-left:5px solid #1976d2}
   background-color: rgba( 55,10,0, 0.7);
   height:390px;
 }
+
 .our_clients div p {
   font-size:26px;  
 }
-#about_page #field1 ,#about_page #field2,#about_page #field3 {
+#home_page #field1 ,#home_page #field2,#home_page #field3 {
   font-size:72px;
 }
 #c1 div p,#c2 div p ,#c3 div p ,#c4 div p {
@@ -292,7 +293,8 @@ margin-left:25%;
 }
 
 #product_image{
-  height:280px;
+  height:285px;
+  width:100%;
 }
 
 
@@ -306,7 +308,7 @@ margin-left:25%;
 #products{
   min-width: 1000px;
   max-height: 400px;
-  margin-left:180px;
+  margin-left:300px;
   background-color: #263238;
   font-family:'Abel',sans-serif;
 }
@@ -398,13 +400,20 @@ nav .brand-logo{
 }
 #product_page .card-action , #category_page .card-action{
   line-height: 95%;
+  background-color:#e0f2f1;
+  height:45px;
+  padding-top: 0;
+
 }
 #product_page .card-content, #category_page .card-content {
-  height: 48px;
-  line-height: 25%;
-    white-space: nowrap; 
+  background-color:#e0f2f1;
+  height: 25px;
+  padding-top: 5px;
+  line-height: 20%;
+  white-space: nowrap; 
   overflow: hidden;
   text-overflow: ellipsis;  
+  font-size:14px;
 }
 .overview-text {
   font-size:20px;
@@ -412,7 +421,7 @@ nav .brand-logo{
 }
  .product-images img ,#category_products img ,#related_products img{
   display:block;
-  border-radius:2px 2px 0 0;
+  border-radius:1px 1px 0 0;
   position:relative;
   left:0;
   right:0;
@@ -458,11 +467,11 @@ nav .brand-logo{
   }
 
 
-#about_page #field1 ,#about_page #field2, #about_page #field3 {
+#home_page #field1 ,#home_page #field2, #home_page #field3 {
   font-size:42px;
 }
 
-#about_page #field1text ,#about_page #field2text , #about_page #field3text {
+#home_page #field1text ,#home_page #field2text , #home_page #field3text {
   font-size:16px;
 }
   #dwnld-btn {
@@ -517,7 +526,7 @@ nav .brand-logo{
   z-index:100;
 }
   #poi{
-    width:93%;
+    width:92.5%;
     float:right;
     text-indent: 15px;
   }

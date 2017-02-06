@@ -117,22 +117,22 @@ $x= $_GET['id'];
     <div class="navbar-fixed">
       <nav>
         <div class="nav-wrapper container">
-          <a id="logo-container" href="" class="brand-logo custom-text">Electro-med</a>
+          <a id="logo-container" href="home.html" class="brand-logo custom-text">Electro-med</a>
           <ul class="right hide-on-med-and-down">
             <li><a href="home.html" class="navLink">Home</a></li>
-            <li><a href="about.html" class="navLink">About</a></li>
-            <li><a href="clients.html" class="navLink">Clients</a></li>
+             <li><a href="product_list.php?id=LED_display&num=3" class="dropdown-button navLink" data-activates="products">Products<i class="material-icons right">arrow_drop_down</i></a></li>
             <li class="active"><a href="projects.html" class="dropdown-button navLink" data-activates="projects">Projects<i class="material-icons right">arrow_drop_down</i></a></li>
-            <li><a href="product_list.php?id=LED_display&num=3" class="dropdown-button navLink" data-activates="products">Products<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a href="clients.html" class="navLink">Clients</a></li>
+            <li><a href="about.html" class="navLink">About</a></li>
             <li><a href="contactForm.html" class="navLink">Contact</a></li>
           </ul>
           
           <ul id="nav-mobile" class="side-nav">
             <li><a href="home.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="clients.html">Clients</a></li>
-            <li class="active"><a href="projects.html">Projects<i class="material-icons right">arrow_drop_down</i></a></li>
             <li><a href="product_list.php?id=LED_display&num=3">Products<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li class="active"><a href="projects.html">Projects<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a href="clients.html">Clients</a></li>
+            <li><a href="about.html">About Us</a></li>
             <li><a href="contactForm.html">Contact Us</a></li> 
           </ul>
 
@@ -174,14 +174,13 @@ $x= $_GET['id'];
                     </ul>
                 </div>
 
-<div class="col l10 m10 s12">
+<div class="col l8 m8 s12">
     <div class="row product-images" style="z-index:-1;margin-top:-50px;">
-      <div class="col l12 s12 m12">
-        <br>
-        <div class="col l5 s12 m5" id="product">
+        
+        <div class="col l12 s12 m12" id="product">
           <div class="row">
             <br><br><br><br>
-            <div class="col l11 offset-l1 s11 m11 materialboxed" id="product_image">
+            <div class="col l12 s12 m12" id="product_image">
               
             </div>
           </div>
@@ -193,10 +192,10 @@ $x= $_GET['id'];
           </div>
         </div>
         
-        <div class="col l6 s12 m6" id="specs">
+        <div class="col l4 s12 m4" id="specs" style="width:100%;">
         <br><br><br>
         <table class="striped" style="line-height: 100%;">
-        <blockquote style="font-family: 'Open Sans Condensed', sans-serif;font-size:21px;"><b><u>Technical Specifications</u></b></blockquote>
+        <blockquote style="font-family: 'Open Sans Condensed', sans-serif;font-size:21px;"><b><u>Features</u></b></blockquote>
         <col width="30%">
         <col width="0.5%">
         <col width="69.5%">
@@ -238,15 +237,23 @@ $x= $_GET['id'];
       </table><br>
 
     </div>
-    
-  </div>
+
 </div>
 </div>
+<div class="col l2 m2 s12">
+<br><br>
+             <p class="custom-text" style="color:#263238;font-size:15px;">Location :-</p> 
+              <p class="custom-text" style="color:#263238;font-size:18px;">Lucknow</p>
+             <p class="custom-text" style="color:#263238;font-size:15px;">Year of Completion :-</p>
+             <p class="custom-text" style="color:#263238;font-size:18px;">2016</p> 
 </div>
+</div>
+
+
 <div>
   <br><br>
    
-        <p class="custom-text blue white-text" style="text-align:center;font-size:22px;padding-top:2px;line-height: 60px">YOU MAY ALSO BE INTERESTED IN...</p> 
+        <p class="custom-text blue white-text" style="text-align:center;font-size:22px;padding-top:2px;line-height: 60px">OTHER PROJECTS</p> 
    
   <br>
   <div class="row" id="related_products">
@@ -308,8 +315,8 @@ $x= $_GET['id'];
         <div class="row">
           <div class="col l3 s12">
             <div class="row">
-              <h5 class="white-text"><strong>[ Electro-Med ]</strong></h5>
-              <p class="white-text foot" >Welcome to the leading company delivering services that combine quality,reliability and compliance.</p>
+              <h5 class="white-text"><strong>Electro-Med</strong></h5>
+              <p class="white-text foot" >We manufacture and assemble a comprehensive range of electronic displays and instruments for industrial application.</p>
             </div>
             <div class="row">
               <div class="col l5 s5 m5">
@@ -327,7 +334,7 @@ $x= $_GET['id'];
               </a></div>
             </div>
           </div>
-          <div class="col l3 s12 m3">
+          <div class="col l2 offset-l1 s12 m2 offset-m1">
             <h6 class="white-text"><strong>Our Links</strong></h6>
             
             <ul>
@@ -348,7 +355,7 @@ $x= $_GET['id'];
             </ul>
           </div>
           <div class="col l3 s12 m3">
-            <h6 class="white-text"><strong>Contact Info</strong></h6>
+            <h6 class="white-text"><strong>Contact Info</strong></h6><br>
             <div class="row">
               <div class="col l1 s1 m1"><i class="material-icons prefix blue-text">phone</i></div>
               <div class="col l8 offset-l1 s11 m8 offset-m1"><p class="white-text foot" style="display:inline;">9415039393</p></div>

@@ -99,23 +99,23 @@ $z=$_GET['num'];
    <div class="navbar-fixed">
       <nav>
         <div class="nav-wrapper container">
-          <a id="logo-container" href="" class="brand-logo custom-text">Electro-med</a>
+          <a id="logo-container" href="home.html" class="brand-logo custom-text">Electro-med</a>
           <ul class="right hide-on-med-and-down">
             <li><a href="home.html" class="navLink">Home</a></li>
-            <li><a href="about.html" class="navLink">About</a></li>
-            <li><a href="clients.html" class="navLink">Clients</a></li>
+             <li class="active"><a href="product_list.php?id=LED_display&num=3" class="dropdown-button navLink" data-activates="products">Products<i class="material-icons right">arrow_drop_down</i></a></li>
             <li><a href="projects.html" class="dropdown-button navLink" data-activates="projects">Projects<i class="material-icons right">arrow_drop_down</i></a></li>
-            <li class="active"><a href="product_list.php?id=LED_display&num=3" class="dropdown-button navLink" data-activates="products">Products<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a href="clients.html" class="navLink">Clients</a></li>
+            <li><a href="about.html" class="navLink">About</a></li>
             <li><a href="contactForm.html" class="navLink">Contact</a></li>
           </ul>
           
 
           <ul id="nav-mobile" class="side-nav">
             <li><a href="home.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="clients.html">Clients</a></li>
-            <li><a href="projects.html">Projects<i class="material-icons right">arrow_drop_down</i></a></li>
             <li class="active"><a href="product_list.php?id=LED_display&num=3">Products<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a href="projects.html">Projects<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a href="clients.html">Clients</a></li>
+            <li><a href="about.html">About Us</a></li>
             <li><a href="contactForm.html">Contact Us</a></li> 
           </ul>
 
@@ -205,7 +205,7 @@ $z=$_GET['num'];
                                 <div class="card-action custom-text" id="l1">
                              
                                 </div>
-                                <div class="card-content" id="d1" style="border:1px inset">
+                                <div class="card-content" id="d1" >
                                  
                                 </div>
                                 
@@ -218,7 +218,7 @@ $z=$_GET['num'];
                                 </div>
                                 <div class="card-action custom-text" id="l2">
                                 </div>
-                                <div class="card-content" id="d2" style="border:1px inset">
+                                <div class="card-content" id="d2">
                                  
                                 </div>
                                 
@@ -231,7 +231,7 @@ $z=$_GET['num'];
                                 </div>
                                 <div class="card-action custom-text" id="l3">
                                 </div>
-                                <div class="card-content" id="d3" style="border:1px inset">
+                                <div class="card-content" id="d3">
                                     
                                 </div>
                                 
@@ -244,7 +244,7 @@ $z=$_GET['num'];
                                 </div>
                                 <div class="card-action custom-text" id="l4">
                                 </div>
-                                <div class="card-content" id="d4" style="border:1px inset">
+                                <div class="card-content" id="d4">
                                    
                                 </div>
                                 
@@ -260,7 +260,7 @@ $z=$_GET['num'];
                                 </div>
                                 <div class="card-action custom-text" id="l5">
                                 </div>
-                                <div class="card-content" id="d5" style="border:1px inset">
+                                <div class="card-content" id="d5" >
                                     
                                 </div>
                                 
@@ -273,7 +273,7 @@ $z=$_GET['num'];
                                 </div>
                                 <div class="card-action custom-text" id="l6">
                                 </div>
-                                <div class="card-content" id="d6" style="border:1px inset">
+                                <div class="card-content" id="d6">
                                 
                                 </div>
                                 
@@ -286,7 +286,7 @@ $z=$_GET['num'];
                                 </div>
                                 <div class="card-action custom-text" id="l7">
                                 </div>
-                                <div class="card-content" id="d7" style="border:1px inset">
+                                <div class="card-content" id="d7" >
                                 
                                 </div>
                                 
@@ -299,7 +299,7 @@ $z=$_GET['num'];
                                 </div>
                                 <div class="card-action custom-text" id="l8">
                                 </div>
-                                <div class="card-content" id="d8" style="border:1px inset">
+                                <div class="card-content" id="d8" >
                                     
                                 </div>
                                 
@@ -314,7 +314,7 @@ $z=$_GET['num'];
                                 </div>
                                 <div class="card-action custom-text" id="l9">
                                 </div>
-                                <div class="card-content" id="d9" style="border:1px inset">
+                                <div class="card-content" id="d9">
                                     
                                 </div>
                                 
@@ -328,7 +328,7 @@ $z=$_GET['num'];
                                 <div class="card-action custom-text" id="l10">
                                     
                                 </div>
-                                <div class="card-content" id="d10" style="border:1px inset">
+                                <div class="card-content" id="d10">
                                     
                                 </div>
                                 
@@ -343,8 +343,8 @@ $z=$_GET['num'];
         <div class="row">
           <div class="col l3 s12">
             <div class="row">
-              <h5 class="white-text"><strong>[ Electro-Med ]</strong></h5>
-              <p class="white-text foot" >Welcome to the leading company delivering services that combine quality,reliability and compliance.</p>
+              <h5 class="white-text"><strong>Electro-Med</strong></h5>
+              <p class="white-text foot" >We manufacture and assemble a comprehensive range of electronic displays and instruments for industrial application.</p>
             </div>
             <div class="row">
               <div class="col l5 s5 m5">
@@ -362,7 +362,7 @@ $z=$_GET['num'];
               </a></div>
             </div>
           </div>
-          <div class="col l3 s12 m3">
+          <div class="col l2 offset-l1 s12 m2 offset-m1">
             <h6 class="white-text"><strong>Our Links</strong></h6>
             
             <ul>
@@ -383,7 +383,7 @@ $z=$_GET['num'];
             </ul>
           </div>
           <div class="col l3 s12 m3">
-            <h6 class="white-text"><strong>Contact Info</strong></h6>
+            <h6 class="white-text"><strong>Contact Info</strong></h6><br>
             <div class="row">
               <div class="col l1 s1 m1"><i class="material-icons prefix blue-text">phone</i></div>
               <div class="col l8 offset-l1 s11 m8 offset-m1"><p class="white-text foot" style="display:inline;">9415039393</p></div>

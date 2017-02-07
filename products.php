@@ -437,16 +437,16 @@ $link='product_list.php?id=Industrial_Instruments&num=10';
         <h6 class="white-text"><strong>Contact Info</strong></h6><br>
         <br>
         <div class="row">
-          <div class="col l1 s1 m1"><i class="material-icons prefix blue-text">phone</i></div>
+          <div class="col l1 s1 m1"><i class="material-icons prefix blue-text text-darken-2">phone</i></div>
           <div class="col l8 offset-l1 s11 m8 offset-m1"><p class="white-text foot" style="display:inline;">9415039393</p></div>
         </div>
         
         <div class="row">
-          <div class="col l1 s1 m1"><i class="material-icons prefix blue-text">email</i></div>
+          <div class="col l1 s1 m1"><i class="material-icons prefix blue-text text-darken-2">email</i></div>
           <div class="col l8 offset-l1 s11 m8 offset-m1"><p class="white-text foot" style="display:inline;">electro.med25@gmail.com</p></div>
         </div>
         <div class="row">
-          <div class="col l1 s1 m1"><i class="material-icons prefix blue-text">room</i></div>
+          <div class="col l1 s1 m1"><i class="material-icons prefix blue-text text-darken-2">room</i></div>
           <div class="col l8 offset-l1 s11 m8 offset-m1"><p class="white-text foot" style="display:inline;">D -17, Vivekanand Puri,
           <br/>Lucknow –226007 India</p></div>
         </div>

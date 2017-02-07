@@ -174,13 +174,12 @@ $x= $_GET['id'];
                     </ul>
                 </div>
 
-<div class="col l8 m8 s12">
-    <div class="row product-images" style="z-index:-1;margin-top:-50px;">
-        
-        <div class="col l12 s12 m12" id="product">
-          <div class="row">
-            <br><br><br><br>
-            <div class="col l12 s12 m12" id="product_image">
+<div class="col l10 m10 s12">  
+<div class="row">  
+        <div class="col l10 s12 m10" id="product">
+          <div class="row" id="project-image">
+            <br><br>
+            <div class="col l12 s12 m12 project_image" id="product_image">
               
             </div>
           </div>
@@ -191,10 +190,35 @@ $x= $_GET['id'];
             <div class="col l3 m3 s3 btn3" id="product_image3"></div>
           </div>
         </div>
+
+        <div class="col l2 m2 s12">
+            <br><br>
+         <table class="striped" style="line-height:2%">
+          <tr>
+            <td style="padding:4px"> <p class="custom-text" style="color:#263238;font-size:15px;">Location</p> 
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:4px"> <p class="custom-text " style="color:#263238;font-size:18px;">Lucknow</p></td>
+          </tr>
+          <tr>
+            <td style="padding:4px"><p class="custom-text " style="color:#263238;font-size:15px;">Year of Completion</p></td>
+          </tr>
+          <tr>
+            <td style="padding:4px"> <p class="custom-text" style="color:#263238;font-size:18px;">2016</p> </td>
+          </tr>
+          </table>
+          </div>
+          </div>
         
-        <div class="col l4 s12 m4" id="specs" style="width:100%;">
-        <br><br><br>
-        <table class="striped" style="line-height: 100%;">
+        
+
+</div>
+</div>
+
+<div class="row">
+  <div class="col l12 s12 m12" style="width:100%;">
+        <table class="striped" style="line-height: 110%;">
         <blockquote style="font-family: 'Open Sans Condensed', sans-serif;font-size:21px;"><b><u>Features</u></b></blockquote>
         <col width="30%">
         <col width="0.5%">
@@ -234,29 +258,14 @@ $x= $_GET['id'];
           <td style="text-align:center" id="c7">:</td>
           <td class="table_specs" style="vertical-align: top;"><b id="r7d2"></b></td>
         </tr>
-      </table><br>
-
+      </table>
     </div>
+</div>
 
-</div>
-</div>
-<div class="col l2 m2 s12">
 <br><br>
-             <p class="custom-text" style="color:#263238;font-size:15px;">Location :-</p> 
-              <p class="custom-text" style="color:#263238;font-size:18px;">Lucknow</p>
-             <p class="custom-text" style="color:#263238;font-size:15px;">Year of Completion :-</p>
-             <p class="custom-text" style="color:#263238;font-size:18px;">2016</p> 
-</div>
-</div>
-
-
 <div>
-  <br><br>
-   
-        <p class="custom-text blue white-text" style="text-align:center;font-size:22px;padding-top:2px;line-height: 60px">OTHER PROJECTS</p> 
-   
-  <br>
-  <div class="row" id="related_products">
+  <p class="custom-text blue white-text" style="text-align:center;font-size:22px;padding-top:2px;line-height: 60px;">OTHER PROJECTS</p> 
+   <div class="row" id="related_products">
     
     <div class="col s6 m7 l3" id="rel1">
       <div class="card">
@@ -309,7 +318,7 @@ $x= $_GET['id'];
     
   </div>
 </div>
-<br><br>
+
   <footer class="page-footer">
       <div class="container">
         <div class="row">
@@ -357,16 +366,16 @@ $x= $_GET['id'];
           <div class="col l3 s12 m3">
             <h6 class="white-text"><strong>Contact Info</strong></h6><br>
             <div class="row">
-              <div class="col l1 s1 m1"><i class="material-icons prefix blue-text">phone</i></div>
+              <div class="col l1 s1 m1"><i class="material-icons prefix blue-text text-darken-2">phone</i></div>
               <div class="col l8 offset-l1 s11 m8 offset-m1"><p class="white-text foot" style="display:inline;">9415039393</p></div>
             </div>
             
             <div class="row">
-              <div class="col l1 s1 m1"><i class="material-icons prefix blue-text">email</i></div>
+              <div class="col l1 s1 m1"><i class="material-icons prefix blue-text text-darken-2">email</i></div>
               <div class="col l8 offset-l1 s11 m8 offset-m1"><p class="white-text foot" style="display:inline;">electro.med25@gmail.com</p></div>
             </div>
             <div class="row">
-              <div class="col l1 s1 m1"><i class="material-icons prefix blue-text">room</i></div>
+              <div class="col l1 s1 m1"><i class="material-icons prefix blue-text text-darken-2">room</i></div>
               <div class="col l8 offset-l1 s11 m8 offset-m1"><p class="white-text foot" style="display:inline;">D -17, Vivekanand Puri,
               <br/>Lucknow –226007 India</p></div>
             </div>

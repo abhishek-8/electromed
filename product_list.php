@@ -137,9 +137,17 @@ $z=$_GET['num'];
       </div>
     </div>-->
 
+
+<!--
+<center><h4 class="custom-text blue lighten-3 white-text headings" style="text-align:center;padding-top:1px;padding-bottom:1px;line-height: 50px"><b id="category_name"></b></h4></center>
+-->
+ 
+   
+
         <div class="container-fluid">
+       
             <div class="row">
-                <div class="col l3 s12"><br><br>
+                <div class="col l3 s12">
                     <a href="#!" class="btn blue darken-2 category-btn" onclick="Materialize.showStaggeredList('#staggered-test')" style="width:100%">Categories</a>
                     <ul id="staggered-test" class="collapsible" data-collapsible="accordion">
                         <li style="opacity: 0;">
@@ -194,8 +202,9 @@ $z=$_GET['num'];
                     </ul>
                 </div>
 
+
                 <div class="col l9 s12" id="category_products">
-                    <h3 class="headName" id="category_name"></h3>
+                    <center><h3 class="custom-text ctgry-name" style="text-align:center;padding:0;color:#263238"><b id="category_name"></b></h3></center><br><br>
                     <div class="row">
                         <div class="col s12 m7 l3" id="c1">
                             <div class="card">
@@ -385,16 +394,16 @@ $z=$_GET['num'];
           <div class="col l3 s12 m3">
             <h6 class="white-text"><strong>Contact Info</strong></h6><br>
             <div class="row">
-              <div class="col l1 s1 m1"><i class="material-icons prefix blue-text">phone</i></div>
+              <div class="col l1 s1 m1"><i class="material-icons prefix blue-text text-darken-2">phone</i></div>
               <div class="col l8 offset-l1 s11 m8 offset-m1"><p class="white-text foot" style="display:inline;">9415039393</p></div>
             </div>
             
             <div class="row">
-              <div class="col l1 s1 m1"><i class="material-icons prefix blue-text">email</i></div>
+              <div class="col l1 s1 m1"><i class="material-icons prefix blue-text text-darken-2">email</i></div>
               <div class="col l8 offset-l1 s11 m8 offset-m1"><p class="white-text foot" style="display:inline;">electro.med25@gmail.com</p></div>
             </div>
             <div class="row">
-              <div class="col l1 s1 m1"><i class="material-icons prefix blue-text">room</i></div>
+              <div class="col l1 s1 m1"><i class="material-icons prefix blue-text text-darken-2">room</i></div>
               <div class="col l8 offset-l1 s11 m8 offset-m1"><p class="white-text foot" style="display:inline;">D -17, Vivekanand Puri,
               <br/>Lucknow –226007 India</p></div>
             </div>

@@ -1,4 +1,4 @@
-var i=1,j=1,k=500;
+var i=1,j=10,k=500;
 function start() {
 
   	if(j>42)
@@ -18,7 +18,7 @@ setTimeout(function() {
   if(i<5)
   	i++;
   if(j<42)
-  	j+=5;
+  	j+=6;
   if(k<1024 )
   	k+=80;
   
@@ -52,6 +52,8 @@ var table = document.getElementById("myTable");
 
 cell1.innerHTML ='<blockquote class="headName1" style="font-size:21px;"><b><u>Technical Specifications</u></b></blockquote>';
 cell1.colSpan="3";
+cell1.style.backgroundColor="white";
+cell1.style.lineHeight="32px";
 
 document.getElementById('r5d1').innerHTML ='Module size';
 document.getElementById('r5d2').innerHTML ='256 mm x 128 mm';
@@ -99,6 +101,9 @@ var table = document.getElementById("myTable");
 
 cell1.innerHTML ='<blockquote class="headName1" style="font-size:21px;"><b><u>Technical Specifications</u></b></blockquote>';
 cell1.colSpan="3";
+cell1.style.backgroundColor="white";
+cell1.style.lineHeight="32px";
+
 document.getElementById('r7d1').innerHTML ='Line spacing';
 document.getElementById('r7d2').innerHTML ='10 mm';
 
@@ -140,6 +145,9 @@ var table = document.getElementById("myTable");
 
 cell1.innerHTML ='<blockquote class="headName1" style="font-size:21px;"><b><u>Technical Specifications</u></b></blockquote>';
 cell1.colSpan="3";
+cell1.style.backgroundColor="white";
+cell1.style.lineHeight="32px";
+
 
 document.getElementById('r7d1').innerHTML ='Line spacing';
 document.getElementById('r7d2').innerHTML ='10 mm';
@@ -219,6 +227,9 @@ var table = document.getElementById("myTable");
 
 cell1.innerHTML ='<blockquote class="headName1" style="font-size:21px;"><b><u>Technical Specifications</u></b></blockquote>';
 cell1.colSpan="3";
+cell1.style.backgroundColor="white";
+cell1.style.lineHeight="32px";
+
 
 document.getElementById('r5d1').innerHTML ='Clock format';
 document.getElementById('r5d2').innerHTML ='12 Hrs. or 24 Hrs. (HH:MM:SECS or HH:MM)';
@@ -263,6 +274,9 @@ var table = document.getElementById("myTable");
 
 cell1.innerHTML ='<blockquote class="headName1" style="font-size:21px;"><b><u>Technical Specifications</u></b></blockquote>';
 cell1.colSpan="3";
+cell1.style.backgroundColor="white";
+cell1.style.lineHeight="32px";
+
 
 document.getElementById('r5d1').innerHTML ='No. of lines';
 document.getElementById('r5d2').innerHTML ='12-16';
@@ -341,6 +355,9 @@ var table = document.getElementById("myTable");
 
 cell1.innerHTML ='<blockquote class="headName1" style="font-size:21px;"><b><u>Technical Specifications</u></b></blockquote>';
 cell1.colSpan="3";
+cell1.style.backgroundColor="white";
+cell1.style.lineHeight="32px";
+
 
 document.getElementById('r2d1').innerHTML ='Flow rate';
 document.getElementById('r2d2').innerHTML ='4 digits; 50mm high';
@@ -391,6 +408,9 @@ var table = document.getElementById("myTable");
 
 cell1.innerHTML ='<blockquote class="headName1" style="font-size:21px;"><b><u>Technical Specifications</u></b></blockquote>';
 cell1.colSpan="3";
+cell1.style.backgroundColor="white";
+cell1.style.lineHeight="32px";
+
 
 document.getElementById('r3d1').innerHTML ='Display size';
 document.getElementById('r3d2').innerHTML ='0.5 inch to 4 inches';
@@ -474,6 +494,9 @@ var table = document.getElementById("myTable");
 
 cell1.innerHTML ='<blockquote class="headName1" style="font-size:21px;"><b><u>Technical Specifications</u></b></blockquote>';
 cell1.colSpan="3";
+cell1.style.backgroundColor="white";
+cell1.style.lineHeight="32px";
+
 
 document.getElementById('r5d1').innerHTML ='Input';
 document.getElementById('r5d2').innerHTML ='4 to 20 milli amp';
@@ -519,6 +542,9 @@ var table = document.getElementById("myTable");
 
 cell1.innerHTML ='<blockquote class="headName1" style="font-size:21px;"><b><u>Technical Specifications</u></b></blockquote>';
 cell1.colSpan="3";
+cell1.style.backgroundColor="white";
+cell1.style.lineHeight="32px";
+
 
 document.getElementById('r2d1').innerHTML ='Range';
 document.getElementById('r2d2').innerHTML ='for pH: 0-14pH for mV: (-1999) mV to (+1999) mV (optional)';
@@ -577,6 +603,9 @@ var table = document.getElementById("myTable");
 
 cell1.innerHTML ='<blockquote class="headName1" style="font-size:21px;"><b><u>Technical Specifications</u></b></blockquote>';
 cell1.colSpan="3";
+cell1.style.backgroundColor="white";
+cell1.style.lineHeight="32px";
+
 
 document.getElementById('r5d1').innerHTML ='Range';
 document.getElementById('r5d2').innerHTML ='0-9999 rpm';
@@ -659,6 +688,9 @@ var table = document.getElementById("myTable");
 
 cell1.innerHTML ='<blockquote class="headName1" style="font-size:21px;"><b><u>Technical Specifications</u></b></blockquote>';
 cell1.colSpan="3";
+cell1.style.backgroundColor="white";
+cell1.style.lineHeight="32px";
+
 
 document.getElementById('r4d1').innerHTML ='Contact rating';
 document.getElementById('r4d2').innerHTML ='(5, 10, 16, 25, 32, 63, 100) Amps.';
@@ -747,6 +779,9 @@ var table = document.getElementById("myTable");
 
 cell1.innerHTML ='<blockquote class="headName1" style="font-size:21px;"><b><u>Technical Specifications</u></b></blockquote>';
 cell1.colSpan="3";
+cell1.style.backgroundColor="white";
+cell1.style.lineHeight="32px";
+
 
 document.getElementById('r5d1').innerHTML ='Totalizer';
 document.getElementById('r5d2').innerHTML ='6 digit electronic counter';
@@ -789,9 +824,9 @@ document.getElementById('r5d2').innerHTML ='<p class="bullets" style="display:in
 document.getElementById('r6d1').innerHTML ='';
 document.getElementById('r6d2').innerHTML ='<p class="bullets" style="display:inline;">Entry through either RS 485 or inbuilt keyboard</p>';
 
-	document.getElementById('ri2').innerHTML='<a href="project_page.php?id=patna_high_court"><img src="photos/patna_high_court1.jpg" height="170" alt=""></a>';
-		document.getElementById('rd2').innerHTML='';
-		document.getElementById('rl2').innerHTML='<br><a href="project_page.php?id=patna_high_court">PATNA HIGH COURT</a>';
+	document.getElementById('ri1').innerHTML='<a href="project_page.php?id=patna_high_court"><img src="photos/patna_high_court1.jpg" height="170" alt=""></a>';
+		document.getElementById('rd1').innerHTML='';
+		document.getElementById('rl1').innerHTML='<br><a href="project_page.php?id=patna_high_court">PATNA HIGH COURT</a>';
 		
 document.getElementById('ri2').innerHTML='<a href="project_page.php?id=patna_railway_station"><img src="photos/patna_railway_station1.jpg" height="170" alt=""></a>';
 		document.getElementById('rd2').innerHTML='';
@@ -928,9 +963,9 @@ document.getElementById('r2d2').innerHTML ='<p class="bullets" style="display:in
 		document.getElementById('rd2').innerHTML='';
 		document.getElementById('rl2').innerHTML='<br><a href="project_page.php?id=patna_high_court">PATNA HIGH COURT</a>';
 
-		document.getElementById('ri4').innerHTML='<a href="project_page.php?id=shakti_bhawan"><img src="photos/shakti_bhawan1.jpg" height="170" alt=""></a>';
-		document.getElementById('rd4').innerHTML='';
-		document.getElementById('rl4').innerHTML='<br><a href="project_page.php?id=shakti_bhawan">SHAKTI BHAWAN</a>';
+		document.getElementById('ri3').innerHTML='<a href="project_page.php?id=shakti_bhawan"><img src="photos/shakti_bhawan1.jpg" height="170" alt=""></a>';
+		document.getElementById('rd3').innerHTML='';
+		document.getElementById('rl3').innerHTML='<br><a href="project_page.php?id=shakti_bhawan">SHAKTI BHAWAN</a>';
 
 		document.getElementById('ri4').innerHTML='<a href="project_page.php?id=coach_guidance_system"><img src="photos/coach_guidance_system1.jpg" height="170" alt=""></a>';
 		document.getElementById('rd4').innerHTML='';

@@ -1,12 +1,9 @@
 var i=1,j=10,k=500;
 function start() {
-
   	if(j>42)
   		j = 42;
-
   	if(k>1024) 
   		k = 1024;
-
   	if(i>5) 
   		i = 5;
 
@@ -28,7 +25,6 @@ if(  i!=5 || j!=42 || k!=1024 	)
 }
 
 function set1(x) {
-
 if(x=='true_color_display') {
 document.getElementById('pre1').innerHTML='Products';
 document.getElementById('pre2').innerHTML='LED Display';
@@ -298,7 +294,6 @@ document.getElementById('ri1').innerHTML='<a href="products.php?id=token&type=2"
 
 
 else if(x=='scrolling_display'){
-//document.getElementById('head_name').innerHTML='Scrolling Display';
 document.getElementById('pre1').innerHTML='Products';
 document.getElementById('pre2').innerHTML='Products for Office';
 document.getElementById('curr').innerHTML='Scrolling Display';
@@ -338,7 +333,6 @@ document.getElementById('ri1').innerHTML='<a href="products.php?id=token&type=2"
 }
 
 if(x=='flow_monitor'){
-//document.getElementById('head_name').innerHTML='Flow Monitor';
 document.getElementById('pre1').innerHTML='Products';
 document.getElementById('pre2').innerHTML='Industrial Instruments';
 document.getElementById('curr').innerHTML='Flow Monitor';
@@ -805,10 +799,41 @@ document.getElementById('ri1').innerHTML='<a href="products.php?id=flow_monitor&
 
 }
 
-else if(x=='ntpc_rihand') {
-	document.getElementById('curr').innerHTML='NTPC RIHAND';
 
-//document.getElementById('desc').innerHTML='';
+document.getElementById('product_image').innerHTML='<img style="border-radius:10px;" width="100%" height="100%" src=photos/'+x+'1.jpg'+' alt="'+x+'">';
+document.getElementById('product_image1').innerHTML='<img style="border-radius:10px;" width="100" height="80" src=photos/'+x+'1.jpg'+' alt="'+x+'">';
+document.getElementById('product_image2').innerHTML='<img style="border-radius:10px;" width="100" height="80" src=photos/'+x+'2.jpg'+' alt="'+x+'" >';
+document.getElementById('product_image3').innerHTML='<img style="border-radius:10px;" width="100" height="80" src=photos/'+x+'3.jpg'+' alt="'+x+'" >';
+
+$("img").error(function(){
+        $(this).hide();
+});
+
+var x,y;
+for(x=1;x<=7;x++) {
+if ($('#r'+x+'d2').is(':empty') ){
+  $('#r'+x).hide();
+}
+}
+}
+
+function set2(x) {
+	document.getElementById('product_image').innerHTML='<img style="border-radius:10px;" width="100%" height="100%" src=photos/'+x+'1.jpg'+' alt="'+x+'">';
+}
+
+function set3(x) {
+	document.getElementById('product_image').innerHTML='<img style="border-radius:10px;" width="100%" height="100%" src=photos/'+x+'2.jpg'+' alt="'+x+'">';
+}
+
+function set4(x) {
+	document.getElementById('product_image').innerHTML='<img style="border-radius:10px;" width="100%" height="100%" src=photos/'+x+'3.jpg'+' alt="'+x+'">';	
+}
+
+
+function set5(x) {
+
+ if(x=='ntpc_rihand') {
+	document.getElementById('curr').innerHTML='NTPC RIHAND';
 
 
 document.getElementById('r1d1').innerHTML ='ON GATE';
@@ -840,13 +865,15 @@ document.getElementById('ri4').innerHTML='<a href="project_page.php?id=coach_gui
 		document.getElementById('rd4').innerHTML='';
 		document.getElementById('rl4').innerHTML='<br><a href="project_page.php?id=coach_guidance_system">COACH GUIDANCE SYSTEM</a>';
 
+			document.getElementById('project_image1').innerHTML='<img style="border-radius:10px;" width="100%" height="100%" src=photos/'+x+'1.jpg'+' alt="'+x+'">';
+document.getElementById('project_image2').innerHTML='<img style="border-radius:10px;" width="100%" height="100%" src=photos/'+x+'2.jpg'+' alt="'+x+'">';
+document.getElementById('project_image3').innerHTML='<img style="border-radius:10px;" width="100%" height="100%" src=photos/'+x+'1.jpg'+' alt="'+x+'" >';
 
 }
 
 else if(x=='patna_high_court') {
 
 	document.getElementById('curr').innerHTML='Patna High Court';
-	//document.getElementById('desc').innerHTML='';
 
 
 document.getElementById('r1d1').innerHTML ='';
@@ -876,12 +903,15 @@ document.getElementById('ri4').innerHTML='<a href="project_page.php?id=coach_gui
 		document.getElementById('rd4').innerHTML='';
 		document.getElementById('rl4').innerHTML='<br><a href="project_page.php?id=coach_guidance_system">COACH GUIDANCE SYSTEM</a>';
 
+	document.getElementById('project_image1').innerHTML='<img style="border-radius:10px;" width="100%" height="100%" src=photos/'+x+'1.jpg'+' alt="'+x+'">';
+document.getElementById('project_image2').innerHTML='<img style="border-radius:10px;" width="100%" height="100%" src=photos/'+x+'1.jpg'+' alt="'+x+'">';
+document.getElementById('project_image3').innerHTML='<img style="border-radius:10px;" width="100%" height="100%" src=photos/'+x+'1.jpg'+' alt="'+x+'" >';
+
 }
 
 else if(x=='patna_railway_station') {
 
 	document.getElementById('curr').innerHTML='Railway Station Display at patna';
-	//document.getElementById('desc').innerHTML='';
 
 
 document.getElementById('r1d1').innerHTML ='';
@@ -909,12 +939,16 @@ document.getElementById('ri4').innerHTML='<a href="project_page.php?id=coach_gui
 		document.getElementById('rd4').innerHTML='';
 		document.getElementById('rl4').innerHTML='<br><a href="project_page.php?id=coach_guidance_system">COACH GUIDANCE SYSTEM</a>';
 
+			document.getElementById('project_image1').innerHTML='<img style="border-radius:10px;" width="100%" height="100%" src=photos/'+x+'1.jpg'+' alt="'+x+'">';
+document.getElementById('project_image2').innerHTML='<img style="border-radius:10px;" width="100%" height="100%" src=photos/'+x+'2.jpg'+' alt="'+x+'">';
+document.getElementById('project_image3').innerHTML='<img style="border-radius:10px;" width="100%" height="100%" src=photos/'+x+'1.jpg'+' alt="'+x+'" >';
+
+
 }
 
 else if(x=='shakti_bhawan') {
 
 	document.getElementById('curr').innerHTML='Shakti Bhawan';
-	//document.getElementById('desc').innerHTML='';
 
 
 document.getElementById('r1d1').innerHTML ='';
@@ -940,12 +974,16 @@ document.getElementById('ri4').innerHTML='<a href="project_page.php?id=coach_gui
 		document.getElementById('rd4').innerHTML='';
 		document.getElementById('rl4').innerHTML='<br><a href="project_page.php?id=coach_guidance_system">COACH GUIDANCE SYSTEM</a>';
 
+	document.getElementById('project_image1').innerHTML='<img style="border-radius:10px;" width="100%" height="100%" src=photos/'+x+'1.jpg'+' alt="'+x+'">';
+document.getElementById('project_image2').innerHTML='<img style="border-radius:10px;" width="100%" height="100%" src=photos/'+x+'1.jpg'+' alt="'+x+'">';
+document.getElementById('project_image3').innerHTML='<img style="border-radius:10px;" width="100%" height="100%" src=photos/'+x+'1.jpg'+' alt="'+x+'" >';
+
+
 }
 
 else if(x=='panki') {
 
 	document.getElementById('curr').innerHTML='Panki';
-	//document.getElementById('desc').innerHTML='';
 
 
 document.getElementById('r1d1').innerHTML ='';
@@ -970,12 +1008,16 @@ document.getElementById('r2d2').innerHTML ='<p class="bullets" style="display:in
 		document.getElementById('ri4').innerHTML='<a href="project_page.php?id=coach_guidance_system"><img src="photos/coach_guidance_system1.jpg" height="170" alt=""></a>';
 		document.getElementById('rd4').innerHTML='';
 		document.getElementById('rl4').innerHTML='<br><a href="project_page.php?id=coach_guidance_system">COACH GUIDANCE SYSTEM</a>';
+	
+	document.getElementById('project_image1').innerHTML='<img style="border-radius:10px;" width="100%" height="100%" src=photos/'+x+'1.jpg'+' alt="'+x+'">';
+document.getElementById('project_image2').innerHTML='<img style="border-radius:10px;" width="100%" height="100%" src=photos/'+x+'1.jpg'+' alt="'+x+'">';
+document.getElementById('project_image3').innerHTML='<img style="border-radius:10px;" width="100%" height="100%" src=photos/'+x+'1.jpg'+' alt="'+x+'" >';
+
 
 }
 else if(x=='coach_guidance_system') {
 
 	document.getElementById('curr').innerHTML='Coach Guidance System';
-	//document.getElementById('desc').innerHTML='';
 
 
 document.getElementById('r1d1').innerHTML ='';
@@ -998,12 +1040,12 @@ document.getElementById('r1d2').innerHTML ='<p class="bullets" style="display:in
 		document.getElementById('ri4').innerHTML='<a href="project_page.php?id=shakti_bhawan"><img src="photos/shakti_bhawan1.jpg" height="170" alt=""></a>';
 		document.getElementById('rd4').innerHTML='';
 		document.getElementById('rl4').innerHTML='<br><a href="project_page.php?id=shakti_bhawan">SHAKTI BHAWAN</a>';
+document.getElementById('project_image1').innerHTML='<img style="border-radius:10px;" width="100%" height="100%" src=photos/'+x+'1.jpg'+' alt="'+x+'">';
+document.getElementById('project_image2').innerHTML='<img style="border-radius:10px;" width="100%" height="100%" src=photos/'+x+'2.jpg'+' alt="'+x+'">';
+document.getElementById('project_image3').innerHTML='<img style="border-radius:10px;" width="100%" height="100%" src=photos/'+x+'3.jpg'+' alt="'+x+'" >';
+
 
 }
-document.getElementById('product_image').innerHTML='<img style="border-radius:10px;" width="100%" height="100%" src=photos/'+x+'1.jpg'+' alt="'+x+'">';
-document.getElementById('product_image1').innerHTML='<img style="border-radius:10px;" width="100" height="80" src=photos/'+x+'1.jpg'+' alt="'+x+'">';
-document.getElementById('product_image2').innerHTML='<img style="border-radius:10px;" width="100" height="80" src=photos/'+x+'2.jpg'+' alt="'+x+'" >';
-document.getElementById('product_image3').innerHTML='<img style="border-radius:10px;" width="100" height="80" src=photos/'+x+'3.jpg'+' alt="'+x+'" >';
 
 $("img").error(function(){
         $(this).hide();
@@ -1013,27 +1055,9 @@ var x,y;
 for(x=1;x<=7;x++) {
 if ($('#r'+x+'d2').is(':empty') ){
   $('#r'+x).hide();
-}/*
-if( x>1 && $('#heading'+x).is(':empty') )
-$('#h'+x).hide();*/
 }
 }
-
-function set2(x) {
-	document.getElementById('product_image').innerHTML='<img style="border-radius:10px;" width="100%" height="100%" src=photos/'+x+'1.jpg'+' alt="'+x+'">';
 }
-
-function set3(x) {
-	document.getElementById('product_image').innerHTML='<img style="border-radius:10px;" width="100%" height="100%" src=photos/'+x+'2.jpg'+' alt="'+x+'">';
-}
-
-function set4(x) {
-	document.getElementById('product_image').innerHTML='<img style="border-radius:10px;" width="100%" height="100%" src=photos/'+x+'3.jpg'+' alt="'+x+'">';	
-}
-
-
-
-
 
 function filter(x,z){
 	var y,k;

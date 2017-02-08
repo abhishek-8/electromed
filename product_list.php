@@ -26,22 +26,7 @@ $z=$_GET['num'];
         <link href="https://fonts.googleapis.com/css?family=Coming+Soon|Pacifico|Shadows+Into+Light" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
          <script src="action.js" type="text/javascript"></script>
-        <script>
-        $(document).ready(function(){
-            Materialize.showStaggeredList('#staggered-test');
-            $('.parallax').parallax();
-            $('.button-collapse').sideNav();
-         filter('<?php echo $x; ?>',<?php echo $z; ?>);   
-        $('.collapsible').collapsible();
-        $(".dropdown-button").dropdown({
-        hover:true,
-        constrain_width: true,
-        gutter: 0,
-        belowOrigin: true
-        });
-        });
         
-        </script>
     </head>
     <body id="category_page">
         <div class="dropdown-content" id="products">
@@ -125,30 +110,11 @@ $z=$_GET['num'];
       </nav>
     </div>
 
-<!--
-     <div class="parallax-container Overview" id="category-overview">
-      <div class="parallax" ><img src="circuits.jpg" height="100%"></div>
-      <br>
-    <h3 class="headNamev3 black-text">Overview</h3>
-      <div class="container">
-        
-        <center><p class="black-text overview-text"></p></center>
-        
-      </div>
-    </div>-->
-
-
-<!--
-<center><h4 class="custom-text blue lighten-3 white-text headings" style="text-align:center;padding-top:1px;padding-bottom:1px;line-height: 50px"><b id="category_name"></b></h4></center>
--->
- 
-   
-
         <div class="container-fluid">
        
             <div class="row">
-                <div class="col l3 s12">
-                    <a href="#!" class="btn blue darken-2 category-btn" onclick="Materialize.showStaggeredList('#staggered-test')" style="width:100%">Categories</a>
+                <div class="col l3 m3 s12">
+                    <a href="#!" class="btn blue darken-2 category-btn" onclick="Materialize.showStaggeredList('#staggered-test')" style="width:100%;">Categories</a>
                     <ul id="staggered-test" class="collapsible" data-collapsible="accordion">
                         <li style="opacity: 0;">
                             <div class="collapsible-header <?php if($x=='LED_display') echo 'active'; ?>" onclick="filter('LED_display',3)" >LED Display</div>
@@ -203,8 +169,8 @@ $z=$_GET['num'];
                 </div>
 
 
-                <div class="col l9 s12" id="category_products">
-                    <center><h3 class="custom-text ctgry-name" style="text-align:center;padding:0;color:#263238"><b id="category_name"></b></h3></center><br><br>
+                <div class="col l9 m9 s12" id="category_products">
+                    <center><h3 class="custom-text ctgry-name" style="text-align:center;color:#263238"><b id="category_name"></b></h3></center><br><br>
                     <div class="row">
                         <div class="col s12 m7 l3" id="c1">
                             <div class="card">
@@ -411,24 +377,7 @@ $z=$_GET['num'];
           </div>
         </div>
       </div>
-      <div class="fixed-action-btn horizontal">
-        <a class="btn-floating btn-large blue lighten-1">
-          <i class="large material-icons">phone</i>
-        </a>
-        <ul>
-          <li><a href="" target="_blank">
-            <img title="LinkedIn" alt="LinkedIn" src="icons/linkedin.png" width="35" height="35" />
-          </a></li>
-          <li><a href="" target="_blank" target="_blank">
-          <img title="Facebook" alt="Facebook" src="icons/facebook.png" width="35" height="35" /></a></li>
-          <li><a href="" target="_blank">
-            <img title="Google" alt="Google" src="icons/google.png" width="35" height="35" />
-          </a></li>
-          <li><a href="" target="_blank">
-            <img title="Yahoo" alt="RSS" src="icons/yahoo.png" width="35" height="35" />
-          </a></li>
-        </ul>
-      </div>
+      
     </div>
     <hr>
     <div class="footer-copyright">
@@ -438,5 +387,21 @@ $z=$_GET['num'];
       </div>
     </div>
   </footer>
+  <script>
+        $(document).ready(function(){
+            Materialize.showStaggeredList('#staggered-test');
+            $('.parallax').parallax();
+            $('.button-collapse').sideNav();
+         filter('<?php echo $x; ?>',<?php echo $z; ?>);   
+        $('.collapsible').collapsible();
+        $(".dropdown-button").dropdown({
+        hover:true,
+        constrain_width: true,
+        gutter: 0,
+        belowOrigin: true
+        });
+        });
+        
+        </script>
 </body>
 </html>

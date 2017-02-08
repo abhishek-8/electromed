@@ -6,7 +6,7 @@ $x= $_GET['id'];
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-    <title>Products</title>
+    <title>Projects</title>
     <!-- CSS  -->
     <!--Import Google Icon Font-->
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -21,44 +21,7 @@ $x= $_GET['id'];
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
     <script src="action.js" type="text/javascript"></script>
-    <script>
-    $(document).ready(function(){
-      $(".top").click(function() {
-  $("html, body").animate({ scrollTop: 0 }, "fast");
-  return false;
-});
-
-    Materialize.showStaggeredList('#staggered-test');
-    $('.parallax').parallax();
-    $('.button-collapse').sideNav();
-    $('.materialboxed').materialbox();
-    set1('<?php echo $x ?>');
-    $(".btn1").click(function(){
-    $("#product_image").fadeOut('fast', function() {
-    set2('<?php echo $x ?>');
-    $("#product_image").fadeIn("fast");
-    });;
-    });
-    $(".btn2").click(function(){
-    $("#product_image").fadeOut('fast', function() {
-    set3('<?php echo $x ?>');
-    $("#product_image").fadeIn("fast");
-    });;
-    });
-    $(".btn3").click(function(){
-    $("#product_image").fadeOut('fast', function() {
-    set4('<?php echo $x ?>');
-    $("#product_image").fadeIn("fast");
-    });;
-    });
-    $(".dropdown-button").dropdown({
-    hover:true,
-    constrain_width: true,
-    gutter: 0,
-    belowOrigin: true
-    });
-    });
-    </script>
+  
   </head>
 
   <body id="product_page">
@@ -177,20 +140,22 @@ $x= $_GET['id'];
 <div class="col l10 m10 s12">  
 <div class="row">  
         <div class="col l10 s12 m10" id="product">
-          <div class="row" id="project-image">
-            <br><br>
-            <div class="col l12 s12 m12 project_image" id="product_image">
-              
-            </div>
-          </div>
-          <br><br>
-          <div class="row">
-            <div class="col l3 offset-l1 m3 offset-m1 s3 btn1" id="product_image1"></div>
-            <div class="col l3 m3 s3 btn2" id="product_image2"></div>
-            <div class="col l3 m3 s3 btn3" id="product_image3"></div>
+        <div class="slider">
+       
+            <ul class="slides">
+              <li class="project_image" id="project_image1">
+                
+              </li>
+              <li class="project_image" id="project_image2">
+                
+              </li>
+              <li class="project_image" id="project_image3">
+                
+              </li>
+            </ul>
           </div>
         </div>
-
+      
         <div class="col l2 m2 s12">
             <br><br>
          <table class="striped" style="line-height:2%">
@@ -398,5 +363,43 @@ $x= $_GET['id'];
       </div>
     </div>
   </footer>
+    <script>
+    $(document).ready(function(){
+      $(".top").click(function() {
+  $("html, body").animate({ scrollTop: 0 }, "fast");
+  return false;
+});
+$('.slider').slider({full_width: true});
+    Materialize.showStaggeredList('#staggered-test');
+    $('.parallax').parallax();
+    $('.button-collapse').sideNav();
+    $('.materialboxed').materialbox();
+    set5('<?php echo $x ?>');
+    $(".btn1").click(function(){
+    $("#product_image").fadeOut('fast', function() {
+    set2('<?php echo $x ?>');
+    $("#product_image").fadeIn("fast");
+    });;
+    });
+    $(".btn2").click(function(){
+    $("#product_image").fadeOut('fast', function() {
+    set3('<?php echo $x ?>');
+    $("#product_image").fadeIn("fast");
+    });;
+    });
+    $(".btn3").click(function(){
+    $("#product_image").fadeOut('fast', function() {
+    set4('<?php echo $x ?>');
+    $("#product_image").fadeIn("fast");
+    });;
+    });
+    $(".dropdown-button").dropdown({
+    hover:true,
+    constrain_width: true,
+    gutter: 0,
+    belowOrigin: true
+    });
+    });
+    </script>
 </body>
 </html>

@@ -35,50 +35,17 @@ $link='product_list.php?id=Industrial_Instruments&num=10';
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
     <script src="action.js" type="text/javascript"></script>
-    <script>
+   <script>
     $(document).ready(function(){
-    $(".top").click(function() {
-    $("html, body").animate({ scrollTop: 0 }, "fast");
-    return false;
-    });
-    Materialize.showStaggeredList('#staggered-test');
-    $('#request_for_quote').hide();
-    $('.parallax').parallax();
-    $('.button-collapse').sideNav();
-    $('.materialboxed').materialbox();
-    set1('<?php echo $x ?>');
-    $(".btn1").click(function(){
-    $("#product_image").fadeOut('fast', function() {
-    set2('<?php echo $x ?>');
-    $("#product_image").fadeIn("fast");
-    });;
-    });
-    $('.rqst').click(function(){
+        $('#request_for_quote').hide();
+        $('.rqst').click(function(){
     $('#request_for_quote').show();
     });
     $('.close').click(function(){
     $('#request_for_quote').hide();
     });
-    $(".btn2").click(function(){
-    $("#product_image").fadeOut('fast', function() {
-    set3('<?php echo $x ?>');
-    $("#product_image").fadeIn("fast");
-    });;
     });
-    $(".btn3").click(function(){
-    $("#product_image").fadeOut('fast', function() {
-    set4('<?php echo $x ?>');
-    $("#product_image").fadeIn("fast");
-    });;
-    });
-    $(".dropdown-button").dropdown({
-    hover:true,
-    constrain_width: true,
-    gutter: 0,
-    belowOrigin: true
-    });
-    });
-    </script>
+ </script>
   </head>
   <body id="product_page">
     <div class="dropdown-content" id="products" style="position:fixed;z-index:10">
@@ -263,7 +230,7 @@ $link='product_list.php?id=Industrial_Instruments&num=10';
             </div>
           </div>
           <div class="col l6 s12 m6" id="specs">
-            <div style="overflow:visible;">
+          
               <br>
             <blockquote style="font-family: 'Open Sans Condensed', sans-serif;font-size:21px;"><b><u id="info">Overview</u></b></blockquote>
             <p class="black-text overview-text" id="desc"></p>
@@ -324,7 +291,7 @@ $link='product_list.php?id=Industrial_Instruments&num=10';
             </tr>
           </table><br>
           
-        </div>
+        
       </div>
     </div>
   </div>
@@ -469,5 +436,45 @@ $link='product_list.php?id=Industrial_Instruments&num=10';
   </div>
 </div>
 </footer>
+ <script>
+    $(document).ready(function(){
+      
+    $(".top").click(function() {
+    $("html, body").animate({ scrollTop: 0 }, "fast");
+    return false;
+    });
+    Materialize.showStaggeredList('#staggered-test');
+    
+    $('.parallax').parallax();
+    $('.button-collapse').sideNav();
+    $('.materialboxed').materialbox();
+    set1('<?php echo $x ?>');
+    $(".btn1").click(function(){
+    $("#product_image").fadeOut('fast', function() {
+    set2('<?php echo $x ?>');
+    $("#product_image").fadeIn("fast");
+    });;
+    });
+    
+    $(".btn2").click(function(){
+    $("#product_image").fadeOut('fast', function() {
+    set3('<?php echo $x ?>');
+    $("#product_image").fadeIn("fast");
+    });;
+    });
+    $(".btn3").click(function(){
+    $("#product_image").fadeOut('fast', function() {
+    set4('<?php echo $x ?>');
+    $("#product_image").fadeIn("fast");
+    });;
+    });
+    $(".dropdown-button").dropdown({
+    hover:true,
+    constrain_width: true,
+    gutter: 0,
+    belowOrigin: true
+    });
+    });
+    </script>
 </body>
 </html>

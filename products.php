@@ -22,8 +22,7 @@ $link='product_list.php?id=Industrial_Instruments&num=10';
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
     <title>Products</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
-    <!-- <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>  -->
+    <link rel="stylesheet" href="css/materialize.min.css">
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <!--Import jQuery before materialize.js-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>‌
@@ -264,7 +263,7 @@ $link='product_list.php?id=Industrial_Instruments&num=10';
           
               <br>
             <blockquote class="headName1" style="font-size:21px;"><u id="info">Overview</u></blockquote>
-            <p class="black-text overview-text" id="desc"></p>
+            <p class="overview-text" id="desc"></p>
             <br>
 
         <table id="myTable" class="striped" style="line-height: 100%;">

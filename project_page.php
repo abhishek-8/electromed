@@ -10,8 +10,7 @@ $x= $_GET['id'];
     <!-- CSS  -->
     <!--Import Google Icon Font-->
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ropa+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
     <!-- <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>  -->
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
@@ -182,46 +181,46 @@ $x= $_GET['id'];
 </div>
 
 <div class="row">
-  <div class="col l12 s12 m12" style="width:100%;">
+  <div class="col l6 offset-l3 s12 m6 offset-m3">
         <table class="striped" style="line-height: 110%;">
-        <blockquote style="font-family: 'Open Sans Condensed', sans-serif;font-size:21px;"><b><u>Features</u></b></blockquote>
+        <blockquote class="headName1" style="font-size:21px;"><u>Features</u></blockquote>
         <col width="30%">
         <col width="0.5%">
         <col width="69.5%">
         <tr id="r1">
           <td class="table_specs key" style="vertical-align: top;"><b id="r1d1"></b></td>
           <td style="text-align:center" id="c1">:</td>
-          <td class="table_specs value" style="vertical-align: top;"><b id="r1d2"></b></td>
+          <td class="table_specs value" style="vertical-align: top;" id="r1d2"></td>
         </tr>
         <tr id="r2">
           <td class="table_specs" style="vertical-align: top;"><b id="r2d1"></b></td>
           <td style="text-align:center" id="c2">:</td>
-          <td class="table_specs" style="vertical-align: top;"><b id="r2d2"></b></td>
+          <td class="table_specs" style="vertical-align: top;" id="r2d2"></td>
         </tr>
         <tr id="r3">
           <td class="table_specs" style="vertical-align: top;"><b id="r3d1"></b></td>
           <td style="text-align:center" id="c3">:</td>
-          <td class="table_specs" style="vertical-align: top;"><b id="r3d2"></b></td>
+          <td class="table_specs" style="vertical-align: top;" id="r3d2"></td>
         </tr>
         <tr id="r4">
           <td class="table_specs" style="vertical-align: top;"><b id="r4d1"></b></td>
           <td style="text-align:center" id="c4">:</td>
-          <td class="table_specs" style="vertical-align: top;"><b id="r4d2"></b></td>
+          <td class="table_specs" style="vertical-align: top;" id="r4d2"></td>
         </tr>
         <tr id="r5">
           <td class="table_specs" style="vertical-align: top;"><b id="r5d1"></b></td>
           <td style="text-align:center" id="c5">:</td>
-          <td class="table_specs" style="vertical-align: top;"><b id="r5d2"></b></td>
+          <td class="table_specs" style="vertical-align: top;" id="r5d2"></td>
         </tr>
         <tr id="r6">
           <td class="table_specs" style="vertical-align: top;"><b id="r6d1"></b></td>
           <td style="text-align:center" id="c6">:</td>
-          <td class="table_specs" style="vertical-align: top;"><b id="r6d2"></b></td>
+          <td class="table_specs" style="vertical-align: top;" id="r6d2"></td>
         </tr>
         <tr id="r7">
           <td class="table_specs" style="vertical-align: top;"><b id="r7d1"></b></td>
           <td style="text-align:center" id="c7">:</td>
-          <td class="table_specs" style="vertical-align: top;"><b id="r7d2"></b></td>
+          <td class="table_specs" style="vertical-align: top;" id="r7d2"></td>
         </tr>
       </table>
     </div>

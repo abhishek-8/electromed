@@ -12,8 +12,10 @@ $z=$_GET['num'];
         <title>Product Category</title>
         <!-- CSS  -->
         <!--Import Google Icon Font-->
-        <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+        
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
         <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Ropa+Sans" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
         <!-- <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>  -->
         <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
@@ -22,8 +24,6 @@ $z=$_GET['num'];
 
         <!-- Compiled and minified JavaScript -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
          <script src="action.js" type="text/javascript"></script>
         
     </head>
@@ -118,11 +118,11 @@ $z=$_GET['num'];
                         <li style="opacity: 0;">
                             <div class="collapsible-header <?php if($x=='LED_display') echo 'active'; ?>" onclick="filter('LED_display',3)" >LED Display</div>
                             <div class="collapsible-body container-fluid" style="line-height:72%;"><br>
-                                <a href="products.php?id=true_color_display&type=1" style="font-size:12px;padding-left:10%">TRUE COLOR HD SCREEN</a><br>
+                                <a href="products.php?id=true_color_display&type=1" style="font-size:14px;padding-left:10%">TRUE COLOR HD SCREEN</a><br>
                                 <hr>
-                                <a href="products.php?id=tri_color_display&type=1" style="font-size:12px;padding-left:10%">TRI COLOR DISPLAY BOARDS</a><br>
+                                <a href="products.php?id=tri_color_display&type=1" style="font-size:14px;padding-left:10%">TRI COLOR DISPLAY BOARDS</a><br>
                                 <hr>
-                                <a href="products.php?id=uni_color_display&type=1" style="font-size:12px;padding-left:10%">UNI COLOR DISPLAY BOARDS</a><br><br>
+                                <a href="products.php?id=uni_color_display&type=1" style="font-size:14px;padding-left:10%">UNI COLOR DISPLAY BOARDS</a><br><br>
                                 
                             </div>
                         </li>
@@ -130,38 +130,38 @@ $z=$_GET['num'];
                             <div class="collapsible-header <?php if($x=='Product_for_office') echo 'active';  ?>" onclick="filter('Product_for_office',4)" >Product for Office</div>
                             <div class="collapsible-body container-fluid" style="line-height:72%;"><br>
                                 
-                                <a href="products.php?id=token&type=2" style="font-size:12px;padding-left:10%">TOKEN DISPLAY</a><br>
+                                <a href="products.php?id=token&type=2" style="font-size:14px;padding-left:10%">TOKEN DISPLAY</a><br>
                                 <hr>
-                                <a href="products.php?id=digital_clock&type=2" style="font-size:12px;padding-left:10%">DIGITAL CLOCKS</a><br>
+                                <a href="products.php?id=digital_clock&type=2" style="font-size:14px;padding-left:10%">DIGITAL CLOCKS</a><br>
                                 <hr>
-                                <a href="products.php?id=interest_rate_display_board&type=2" style="font-size:12px;padding-left:10%">INTEREST RATE DISPLAY BOARD</a><br>
+                                <a href="products.php?id=interest_rate_display_board&type=2" style="font-size:14px;padding-left:10%">INTEREST RATE DISPLAY BOARD</a><br>
                                 <hr>
-                                <a href="products.php?id=scrolling_display&type=2" style="font-size:12px;padding-left:10%">SCROLLING DISPLAY</a><br><br>
+                                <a href="products.php?id=scrolling_display&type=2" style="font-size:14px;padding-left:10%">SCROLLING DISPLAY</a><br><br>
                             </div>
                             
                         </li>
                         <li style="opacity: 0;">
                             <div class="collapsible-header <?php if($x=='Industrial_Instruments') echo 'active'; ?>" onclick="filter('Industrial_Instruments',10)" >Industrial Instruments</div>
                             <div class="collapsible-body container-fluid" style="line-height:72%;"><br>
-                                <a href="products.php?id=flow_monitor&type=4" style="font-size:12px;padding-left:10%">FLOW MONITOR</a><br>
+                                <a href="products.php?id=flow_monitor&type=4" style="font-size:14px;padding-left:10%">FLOW MONITOR</a><br>
                                 <hr>
-                                <a href="products.php?id=lfm&type=4" style="font-size:12px;padding-left:10%">LINE FREQUENCY MONITOR</a><br>
+                                <a href="products.php?id=lfm&type=4" style="font-size:14px;padding-left:10%">LINE FREQUENCY MONITOR</a><br>
                                 <hr>
-                                <a href="products.php?id=megawatt_panel&type=4" style="font-size:12px;padding-left:10%">MEGA WATT PANEL</a><br>
+                                <a href="products.php?id=megawatt_panel&type=4" style="font-size:14px;padding-left:10%">MEGA WATT PANEL</a><br>
                                 <hr>
-                                <a href="products.php?id=process_indicator&type=4" style="font-size:12px;padding-left:10%">PROCESS INDICATORS</a><br>
+                                <a href="products.php?id=process_indicator&type=4" style="font-size:14px;padding-left:10%">PROCESS INDICATORS</a><br>
                                 <hr>
-                                <a href="products.php?id=ph_meter&type=4" style="font-size:12px;padding-left:10%">PH METER</a><br>
+                                <a href="products.php?id=ph_meter&type=4" style="font-size:14px;padding-left:10%">PH METER</a><br>
                                 <hr>
-                                <a href="products.php?id=tachometer&type=4" style="font-size:12px;padding-left:10%">TACHOMETER</a><br>
+                                <a href="products.php?id=tachometer&type=4" style="font-size:14px;padding-left:10%">TACHOMETER</a><br>
                                 <hr>
-                                <a href="products.php?id=temp_cont&type=4" style="font-size:12px;padding-left:10%">TEMPERATURE CONTROLLER</a><br>
+                                <a href="products.php?id=temp_cont&type=4" style="font-size:14px;padding-left:10%">TEMPERATURE CONTROLLER</a><br>
                                 <hr>
-                                <a href="products.php?id=twilight_switches&type=4" style="font-size:12px;padding-left:10%">TWILIGHT SWITCHES</a><br>
+                                <a href="products.php?id=twilight_switches&type=4" style="font-size:14px;padding-left:10%">TWILIGHT SWITCHES</a><br>
                                 <hr>
-                                <a href="products.php?id=industrial_display&type=4" style="font-size:12px;padding-left:10%">INDUSTRIAL DISPLAY</a><br>
+                                <a href="products.php?id=industrial_display&type=4" style="font-size:14px;padding-left:10%">INDUSTRIAL DISPLAY</a><br>
                                 <hr>
-                                <a href="products.php?id=wsm&type=4" style="font-size:12px;padding-left:10%">WEIGHING SCALE MONITOR</a><br><br>
+                                <a href="products.php?id=wsm&type=4" style="font-size:14px;padding-left:10%">WEIGHING SCALE MONITOR</a><br><br>
                             </div>
                         </li>
                     </ul>

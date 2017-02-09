@@ -46,7 +46,7 @@ var table = document.getElementById("myTable");
     var row = table.insertRow(4);
     var cell1 = row.insertCell(0); 
 
-cell1.innerHTML ='<blockquote class="headName1" style="font-size:21px;"><b><u>Technical Specifications</u></b></blockquote>';
+cell1.innerHTML ='<blockquote class="headName1" style="font-size:21px;"><u>Technical Specifications</u></blockquote>';
 cell1.colSpan="3";
 cell1.style.backgroundColor="white";
 cell1.style.lineHeight="32px";
@@ -95,7 +95,7 @@ var table = document.getElementById("myTable");
     var row = table.insertRow(6);
     var cell1 = row.insertCell(0); 
 
-cell1.innerHTML ='<blockquote class="headName1" style="font-size:21px;"><b><u>Technical Specifications</u></b></blockquote>';
+cell1.innerHTML ='<blockquote class="headName1" style="font-size:21px;"><u>Technical Specifications</u></blockquote>';
 cell1.colSpan="3";
 cell1.style.backgroundColor="white";
 cell1.style.lineHeight="32px";
@@ -139,7 +139,7 @@ var table = document.getElementById("myTable");
     var row = table.insertRow(6);
     var cell1 = row.insertCell(0); 
 
-cell1.innerHTML ='<blockquote class="headName1" style="font-size:21px;"><b><u>Technical Specifications</u></b></blockquote>';
+cell1.innerHTML ='<blockquote class="headName1" style="font-size:21px;"><u>Technical Specifications</u></blockquote>';
 cell1.colSpan="3";
 cell1.style.backgroundColor="white";
 cell1.style.lineHeight="32px";
@@ -221,7 +221,7 @@ var table = document.getElementById("myTable");
     var row = table.insertRow(4);
     var cell1 = row.insertCell(0); 
 
-cell1.innerHTML ='<blockquote class="headName1" style="font-size:21px;"><b><u>Technical Specifications</u></b></blockquote>';
+cell1.innerHTML ='<blockquote class="headName1" style="font-size:21px;"><u>Technical Specifications</u></blockquote>';
 cell1.colSpan="3";
 cell1.style.backgroundColor="white";
 cell1.style.lineHeight="32px";
@@ -268,7 +268,7 @@ var table = document.getElementById("myTable");
     var row = table.insertRow(4);
     var cell1 = row.insertCell(0); 
 
-cell1.innerHTML ='<blockquote class="headName1" style="font-size:21px;"><b><u>Technical Specifications</u></b></blockquote>';
+cell1.innerHTML ='<blockquote class="headName1" style="font-size:21px;"><u>Technical Specifications</u></blockquote>';
 cell1.colSpan="3";
 cell1.style.backgroundColor="white";
 cell1.style.lineHeight="32px";
@@ -347,7 +347,7 @@ var table = document.getElementById("myTable");
     var row = table.insertRow(2);
     var cell1 = row.insertCell(0); 
 
-cell1.innerHTML ='<blockquote class="headName1" style="font-size:21px;"><b><u>Technical Specifications</u></b></blockquote>';
+cell1.innerHTML ='<blockquote class="headName1" style="font-size:21px;"><u>Technical Specifications</u></blockquote>';
 cell1.colSpan="3";
 cell1.style.backgroundColor="white";
 cell1.style.lineHeight="32px";
@@ -400,7 +400,7 @@ var table = document.getElementById("myTable");
     var row = table.insertRow(2);
     var cell1 = row.insertCell(0); 
 
-cell1.innerHTML ='<blockquote class="headName1" style="font-size:21px;"><b><u>Technical Specifications</u></b></blockquote>';
+cell1.innerHTML ='<blockquote class="headName1" style="font-size:21px;"><u>Technical Specifications</u></blockquote>';
 cell1.colSpan="3";
 cell1.style.backgroundColor="white";
 cell1.style.lineHeight="32px";
@@ -486,7 +486,7 @@ var table = document.getElementById("myTable");
     var row = table.insertRow(4);
     var cell1 = row.insertCell(0); 
 
-cell1.innerHTML ='<blockquote class="headName1" style="font-size:21px;"><b><u>Technical Specifications</u></b></blockquote>';
+cell1.innerHTML ='<blockquote class="headName1" style="font-size:21px;"><u>Technical Specifications</u></blockquote>';
 cell1.colSpan="3";
 cell1.style.backgroundColor="white";
 cell1.style.lineHeight="32px";
@@ -534,7 +534,7 @@ var table = document.getElementById("myTable");
     var row = table.insertRow(1);
     var cell1 = row.insertCell(0); 
 
-cell1.innerHTML ='<blockquote class="headName1" style="font-size:21px;"><b><u>Technical Specifications</u></b></blockquote>';
+cell1.innerHTML ='<blockquote class="headName1" style="font-size:21px;"><u>Technical Specifications</u></blockquote>';
 cell1.colSpan="3";
 cell1.style.backgroundColor="white";
 cell1.style.lineHeight="32px";
@@ -595,7 +595,7 @@ var table = document.getElementById("myTable");
     var row = table.insertRow(4);
     var cell1 = row.insertCell(0); 
 
-cell1.innerHTML ='<blockquote class="headName1" style="font-size:21px;"><b><u>Technical Specifications</u></b></blockquote>';
+cell1.innerHTML ='<blockquote class="headName1" style="font-size:21px;"><u>Technical Specifications</u></blockquote>';
 cell1.colSpan="3";
 cell1.style.backgroundColor="white";
 cell1.style.lineHeight="32px";
@@ -680,7 +680,7 @@ var table = document.getElementById("myTable");
     var row = table.insertRow(3);
     var cell1 = row.insertCell(0); 
 
-cell1.innerHTML ='<blockquote class="headName1" style="font-size:21px;"><b><u>Technical Specifications</u></b></blockquote>';
+cell1.innerHTML ='<blockquote class="headName1" style="font-size:21px;"><u>Technical Specifications</u></blockquote>';
 cell1.colSpan="3";
 cell1.style.backgroundColor="white";
 cell1.style.lineHeight="32px";
@@ -771,7 +771,7 @@ var table = document.getElementById("myTable");
     var row = table.insertRow(4);
     var cell1 = row.insertCell(0); 
 
-cell1.innerHTML ='<blockquote class="headName1" style="font-size:21px;"><b><u>Technical Specifications</u></b></blockquote>';
+cell1.innerHTML ='<blockquote class="headName1" style="font-size:21px;"><u>Technical Specifications</u></blockquote>';
 cell1.colSpan="3";
 cell1.style.backgroundColor="white";
 cell1.style.lineHeight="32px";

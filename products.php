@@ -25,7 +25,7 @@ $link='product_list.php?id=Industrial_Instruments&num=10';
     <!--Import Google Icon Font-->
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ropa+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
     <!-- <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>  -->
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
@@ -196,16 +196,16 @@ $link='product_list.php?id=Industrial_Instruments&num=10';
     <div class="row">
       <div class="col l2 m2 s12">
         <br>
-        <a href="#!" class="btn blue darken-2 category-btn" style="width:100%" onclick="Materialize.showStaggeredList('#staggered-test')">Products</a>
+        <a a href="product_list.php?id=LED_display&num=3" class="btn blue darken-2 category-btn" style="width:100%" onclick="Materialize.showStaggeredList('#staggered-test')">Products</a>
         <ul id="staggered-test" class="collapsible" data-collapsible="accordion">
           <li style="opacity: 0;">
             <div class="collapsible-header <?php if($type==1) echo 'active'; ?>">LED Display</div>
             <div class="collapsible-body container-fluid" style="line-height:72%;"><br>
-              <a href="products.php?id=true_color_display&type=1" style="font-size:12px;padding-left:10%;<?php if($x=='true_color_display') echo 'color:red'; ?>">TRUE COLOR HD SCREEN</a><br>
+              <a href="products.php?id=true_color_display&type=1" style="font-size:14px;padding-left:10%;<?php if($x=='true_color_display') echo 'color:red'; ?>">TRUE COLOR HD SCREEN</a><br>
               <hr>
-              <a href="products.php?id=tri_color_display&type=1" style="font-size:12px;padding-left:10%;<?php if($x=='tri_color_display') echo 'color:red'; ?>">TRI COLOR DISPLAY BOARDS</a><br>
+              <a href="products.php?id=tri_color_display&type=1" style="font-size:14px;padding-left:10%;<?php if($x=='tri_color_display') echo 'color:red'; ?>">TRI COLOR DISPLAY BOARDS</a><br>
               <hr>
-              <a href="products.php?id=uni_color_display&type=1" style="font-size:12px;padding-left:10%;<?php if($x=='uni_color_display') echo 'color:red'; ?>">UNI COLOR DISPLAY BOARDS</a><br><br>
+              <a href="products.php?id=uni_color_display&type=1" style="font-size:14px;padding-left:10%;<?php if($x=='uni_color_display') echo 'color:red'; ?>">UNI COLOR DISPLAY BOARDS</a><br><br>
               
             </div>
           </li>
@@ -213,38 +213,38 @@ $link='product_list.php?id=Industrial_Instruments&num=10';
             <div class="collapsible-header <?php if($type==2) echo 'active'; ?>">Product for Office</div>
             <div class="collapsible-body container-fluid" style="line-height:72%;"><br>
               
-              <a href="products.php?id=token&type=2" style="font-size:12px;padding-left:10%;<?php if($x=='token') echo 'color:red'; ?>">TOKEN DISPLAY</a><br>
+              <a href="products.php?id=token&type=2" style="font-size:14px;padding-left:10%;<?php if($x=='token') echo 'color:red'; ?>">TOKEN DISPLAY</a><br>
               <hr>
-              <a href="products.php?id=digital_clock&type=2" style="font-size:12px;padding-left:10%;<?php if($x=='digital_clock') echo 'color:red'; ?>">DIGITAL CLOCKS</a><br>
+              <a href="products.php?id=digital_clock&type=2" style="font-size:14px;padding-left:10%;<?php if($x=='digital_clock') echo 'color:red'; ?>">DIGITAL CLOCKS</a><br>
               <hr>
-              <a href="products.php?id=interest_rate_display_board&type=2" style="font-size:12px;padding-left:10%;<?php if($x=='interest_rate_display_board') echo 'color:red'; ?>">INTEREST RATE DISPLAY BOARD</a><br>
+              <a href="products.php?id=interest_rate_display_board&type=2" style="font-size:14px;padding-left:10%;<?php if($x=='interest_rate_display_board') echo 'color:red'; ?>">INTEREST RATE DISPLAY BOARD</a><br>
               <hr>
-              <a href="products.php?id=scrolling_display&type=2" style="font-size:12px;padding-left:10%;<?php if($x=='scrolling_display') echo 'color:red'; ?>">SCROLLING DISPLAY</a><br><br>
+              <a href="products.php?id=scrolling_display&type=2" style="font-size:14px;padding-left:10%;<?php if($x=='scrolling_display') echo 'color:red'; ?>">SCROLLING DISPLAY</a><br><br>
             </div>
             
           </li>
           <li style="opacity: 0;">
             <div class="collapsible-header <?php if($type==4) echo 'active'; ?>">Industrial Instruments</div>
             <div class="collapsible-body container-fluid" style="line-height:72%;"><br>
-              <a href="products.php?id=flow_monitor&type=4" style="font-size:12px;padding-left:10%;<?php if($x=='flow_monitor') echo 'color:red'; ?>">FLOW MONITOR</a><br>
+              <a href="products.php?id=flow_monitor&type=4" style="font-size:14px;padding-left:10%;<?php if($x=='flow_monitor') echo 'color:red'; ?>">FLOW MONITOR</a><br>
               <hr>
-              <a href="products.php?id=lfm&type=4" style="font-size:12px;padding-left:10%;<?php if($x=='lfm') echo 'color:red'; ?>">LINE FREQUENCY MONITOR</a><br>
+              <a href="products.php?id=lfm&type=4" style="font-size:14px;padding-left:10%;<?php if($x=='lfm') echo 'color:red'; ?>">LINE FREQUENCY MONITOR</a><br>
               <hr>
-              <a href="products.php?id=megawatt_panel&type=4" style="font-size:12px;padding-left:10%;<?php if($x=='megawatt_panel') echo 'color:red'; ?>">MEGA WATT PANEL</a><br>
+              <a href="products.php?id=megawatt_panel&type=4" style="font-size:14px;padding-left:10%;<?php if($x=='megawatt_panel') echo 'color:red'; ?>">MEGA WATT PANEL</a><br>
               <hr>
-              <a href="products.php?id=process_indicator&type=4" style="font-size:12px;padding-left:10%;<?php if($x=='process_indicator') echo 'color:red'; ?>">PROCESS INDICATORS</a><br>
+              <a href="products.php?id=process_indicator&type=4" style="font-size:14px;padding-left:10%;<?php if($x=='process_indicator') echo 'color:red'; ?>">PROCESS INDICATORS</a><br>
               <hr>
-              <a href="products.php?id=ph_meter&type=4" style="font-size:12px;padding-left:10%;<?php if($x=='ph_meter') echo 'color:red'; ?>">PH METER</a><br>
+              <a href="products.php?id=ph_meter&type=4" style="font-size:14px;padding-left:10%;<?php if($x=='ph_meter') echo 'color:red'; ?>">PH METER</a><br>
               <hr>
-              <a href="products.php?id=tachometer&type=4" style="font-size:12px;padding-left:10%;<?php if($x=='tachometer') echo 'color:red'; ?>">TACHOMETER</a><br>
+              <a href="products.php?id=tachometer&type=4" style="font-size:14px;padding-left:10%;<?php if($x=='tachometer') echo 'color:red'; ?>">TACHOMETER</a><br>
               <hr>
-              <a href="products.php?id=temp_cont&type=4" style="font-size:12px;padding-left:10%;<?php if($x=='temp_cont') echo 'color:red'; ?>">TEMPERATURE CONTROLLER</a><br>
+              <a href="products.php?id=temp_cont&type=4" style="font-size:14px;padding-left:10%;<?php if($x=='temp_cont') echo 'color:red'; ?>">TEMPERATURE CONTROLLER</a><br>
               <hr>
-              <a href="products.php?id=twilight_switches&type=4" style="font-size:12px;padding-left:10%;<?php if($x=='twilight_switches') echo 'color:red'; ?>">TWILIGHT SWITCHES</a><br>
+              <a href="products.php?id=twilight_switches&type=4" style="font-size:14px;padding-left:10%;<?php if($x=='twilight_switches') echo 'color:red'; ?>">TWILIGHT SWITCHES</a><br>
               <hr>
-              <a href="products.php?id=industrial_display&type=4" style="font-size:12px;padding-left:10%;<?php if($x=='industrial_display') echo 'color:red'; ?>">INDUSTRIAL DISPLAY</a><br>
+              <a href="products.php?id=industrial_display&type=4" style="font-size:14px;padding-left:10%;<?php if($x=='industrial_display') echo 'color:red'; ?>">INDUSTRIAL DISPLAY</a><br>
               <hr>
-              <a href="products.php?id=wsm&type=4" style="font-size:12px;padding-left:10%;<?php if($x=='wsm') echo 'color:red'; ?>">WEIGHING SCALE MONITOR</a><br><br>
+              <a href="products.php?id=wsm&type=4" style="font-size:14px;padding-left:10%;<?php if($x=='wsm') echo 'color:red'; ?>">WEIGHING SCALE MONITOR</a><br><br>
             </div>
           </li>
         </ul>
@@ -269,12 +269,12 @@ $link='product_list.php?id=Industrial_Instruments&num=10';
           <div class="col l6 s12 m6" id="specs">
           
               <br>
-            <blockquote style="font-family: 'Open Sans Condensed', sans-serif;font-size:21px;"><b><u id="info">Overview</u></b></blockquote>
+            <blockquote class="headName1" style="font-size:21px;"><u id="info">Overview</u></blockquote>
             <p class="black-text overview-text" id="desc"></p>
             <br>
 
         <table id="myTable" class="striped" style="line-height: 100%;">
-          <blockquote style="font-family: 'Open Sans Condensed', sans-serif;font-size:21px;"><b><u>Features</u></b></blockquote>
+          <blockquote class="headName1" style="font-size:21px;"><u>Features</u></blockquote>
             <col width="30%">
             <col width="0.5%">
             <col width="69.5%">
@@ -282,7 +282,7 @@ $link='product_list.php?id=Industrial_Instruments&num=10';
             <tr id="r1">
               <td class="table_specs key" style="vertical-align: top;"><b id="r1d1"></b></td>
               <td style="text-align:center" id="c1">:</td>
-              <td class="table_specs value" style="vertical-align: top;"><b id="r1d2"></b></td>
+              <td class="table_specs value" style="vertical-align: top;" id="r1d2"></td>
             </tr>
         
 
@@ -290,7 +290,7 @@ $link='product_list.php?id=Industrial_Instruments&num=10';
             <tr id="r2">
               <td class="table_specs" style="vertical-align: top;"><b id="r2d1"></b></td>
               <td style="text-align:center" id="c2">:</td>
-              <td class="table_specs" style="vertical-align: top;"><b id="r2d2"></b></td>
+              <td class="table_specs" style="vertical-align: top;" id="r2d2"></td>
             </tr>
 
             
@@ -298,33 +298,33 @@ $link='product_list.php?id=Industrial_Instruments&num=10';
             <tr id="r3">
               <td class="table_specs" style="vertical-align: top;"><b id="r3d1"></b></td>
               <td style="text-align:center" id="c3">:</td>
-              <td class="table_specs" style="vertical-align: top;"><b id="r3d2"></b></td>
+              <td class="table_specs" style="vertical-align: top;" id="r3d2"></td>
             </tr>
                   
             <tr id="r4">
               <td class="table_specs" style="vertical-align: top;"><b id="r4d1"></b></td>
               <td style="text-align:center" id="c4">:</td>
-              <td class="table_specs" style="vertical-align: top;"><b id="r4d2"></b></td>
+              <td class="table_specs" style="vertical-align: top;" id="r4d2"></td>
             </tr>
 
 
             <tr id="r5">
               <td class="table_specs" style="vertical-align: top;"><b id="r5d1"></b></td>
               <td style="text-align:center" id="c5">:</td>
-              <td class="table_specs" style="vertical-align: top;"><b id="r5d2"></b></td>
+              <td class="table_specs" style="vertical-align: top;" id="r5d2"></td>
             </tr>
 
 
             <tr id="r6">
               <td class="table_specs" style="vertical-align: top;"><b id="r6d1"></b></td>
               <td style="text-align:center" id="c6">:</td>
-              <td class="table_specs" style="vertical-align: top;"><b id="r6d2"></b></td>
+              <td class="table_specs" style="vertical-align: top;" id="r6d2"></td>
             </tr>
 
             <tr id="r7">
               <td class="table_specs" style="vertical-align: top;"><b id="r7d1"></b></td>
               <td style="text-align:center" id="c7">:</td>
-              <td class="table_specs" style="vertical-align: top;"><b id="r7d2"></b></td>
+              <td class="table_specs" style="vertical-align: top;" id="r7d2"></td>
             </tr>
           </table><br>
           

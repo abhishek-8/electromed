@@ -10,11 +10,9 @@ $x= $_GET['id'];
     <!-- CSS  -->
     <!--Import Google Icon Font-->
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Ropa+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
     <!-- <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>  -->
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
     <!--Import jQuery before materialize.js-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>‌
     <!-- Compiled and minified JavaScript -->
@@ -113,24 +111,25 @@ $x= $_GET['id'];
       </div>
     </nav>
 </div>
+
 <div class="row">
-<div class="col l2 m2 s12"><br><br>
+        <div class="col l2 m2 s12"><br><br>
                     <a href="#!" class="btn blue darken-2 category-btn" onclick="Materialize.showStaggeredList('#staggered-test')" style="width:100%;">Projects</a>
                     <ul id="staggered-test" class="collapsible" data-collapsible="accordion">
                          <li style="opacity: 0;">
                             <div class="collapsible-header active">Featured Projects</div>
                             <div class="collapsible-body container-fluid" style="line-height:72%;"><br>
-                                <a href="project_page.php?id=ntpc_rihand" style="font-size:12px;padding-left:10%;<?php if($x=='ntpc_rihand') echo 'color:red'; ?>">NTPC RIHAND</a><br>
+                                <a href="project_page.php?id=ntpc_rihand" style="font-size:14px;padding-left:10%;<?php if($x=='ntpc_rihand') echo 'color:red'; ?>">NTPC RIHAND</a><br>
                                 <hr>
-                                <a href="project_page.php?id=patna_high_court" style="font-size:12px;padding-left:10%;<?php if($x=='patna_high_court') echo 'color:red'; ?>">PATNA HIGH COURT</a><br>
+                                <a href="project_page.php?id=patna_high_court" style="font-size:14px;padding-left:10%;<?php if($x=='patna_high_court') echo 'color:red'; ?>">PATNA HIGH COURT</a><br>
                                 <hr>
-                                <a href="project_page.php?id=patna_railway_station" style="font-size:12px;padding-left:10%;<?php if($x=='patna_railway_station') echo 'color:red'; ?>">RAILWAY STATION DISPLAY</a><br>
+                                <a href="project_page.php?id=patna_railway_station" style="font-size:14px;padding-left:10%;<?php if($x=='patna_railway_station') echo 'color:red'; ?>">RAILWAY STATION DISPLAY</a><br>
                                 <hr>
-                                <a href="project_page.php?id=shakti_bhawan" style="font-size:12px;padding-left:10%;<?php if($x=='shakti_bhawan') echo 'color:red'; ?>">SHAKTI BHAWAN</a><br>
+                                <a href="project_page.php?id=shakti_bhawan" style="font-size:14px;padding-left:10%;<?php if($x=='shakti_bhawan') echo 'color:red'; ?>">SHAKTI BHAWAN</a><br>
                                 <hr>
-                                <a href="project_page.php?id=panki" style="font-size:12px;padding-left:10%;<?php if($x=='panki') echo 'color:red'; ?>">PANKI</a><br>
+                                <a href="project_page.php?id=panki" style="font-size:14px;padding-left:10%;<?php if($x=='panki') echo 'color:red'; ?>">PANKI</a><br>
                                 <hr>
-                                <a href="project_page.php?id=coach_guidance_system" style="font-size:12px;padding-left:10%;<?php if($x=='coach_guidance_system') echo 'color:red'; ?>">COACH GUIDANCE SYSTEM</a><br><br>
+                                <a href="project_page.php?id=coach_guidance_system" style="font-size:14px;padding-left:10%;<?php if($x=='coach_guidance_system') echo 'color:red'; ?>">COACH GUIDANCE SYSTEM</a><br><br>
                             </div>
                         </li>
                     </ul>

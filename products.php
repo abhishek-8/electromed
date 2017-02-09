@@ -24,12 +24,9 @@ $link='product_list.php?id=Industrial_Instruments&num=10';
     <!-- CSS  -->
     <!--Import Google Icon Font-->
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Ropa+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
     <!-- <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>  -->
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
     <!--Import jQuery before materialize.js-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>‌
     <!-- Compiled and minified JavaScript -->
@@ -437,8 +434,9 @@ $link='product_list.php?id=Industrial_Instruments&num=10';
           <li class="flink"><a class="white-text foot" href="project_page.php?id=coach_guidance_system">COACH GUIDANCE SYSTEM</a></li>
         </ul>
       </div>
+
       <div class="col l3 s12 m3">
-        <h6 class="white-text"><strong>Contact Info</strong></h6><br>
+        <h6 class="white-text"><strong>Contact Info</strong></h6>
         <br>
         <div class="row">
           <div class="col l1 s1 m1"><i class="material-icons prefix blue-text text-darken-2">phone</i></div>

@@ -32,7 +32,6 @@ $link='product_list.php?id=Industrial_Instruments&num=10';
     <script src="action.js" type="text/javascript"></script>
    <script>
     $(document).ready(function(){
-        $('#request_for_quote').hide();
         $('.rqst').click(function(){
     $('#request_for_quote').show();
     });

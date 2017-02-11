@@ -31,49 +31,10 @@ $link='product_list.php?id=Industrial_Instruments&num=10';
     <script src="action.js" type="text/javascript"></script>
    <script>
     $(document).ready(function(){
-        $('.rqst').click(function(){
-    $('#request_for_quote').show();
-    });
-    $('.close').click(function(){
-    $('#request_for_quote').hide();
-    });
-  
-      
-    $(".top").click(function() {
-    $("html, body").animate({ scrollTop: 0 }, "fast");
-    return false;
-    });
+      $('.parallax').parallax();
     Materialize.showStaggeredList('#staggered-test');
-    
-    $('.parallax').parallax();
     $('.button-collapse').sideNav();
     $('.materialboxed').materialbox();
-    set1('<?php echo $x ?>');
-    $(".btn1").click(function(){
-    $("#product_image").fadeOut('fast', function() {
-    set2('<?php echo $x ?>');
-    $("#product_image").fadeIn("fast");
-    });;
-    });
-    
-    $(".btn2").click(function(){
-    $("#product_image").fadeOut('fast', function() {
-    set3('<?php echo $x ?>');
-    $("#product_image").fadeIn("fast");
-    });;
-    });
-    $(".btn3").click(function(){
-    $("#product_image").fadeOut('fast', function() {
-    set4('<?php echo $x ?>');
-    $("#product_image").fadeIn("fast");
-    });;
-    });
-    $(".dropdown-button").dropdown({
-    hover:true,
-    constrain_width: true,
-    gutter: 0,
-    belowOrigin: true
-    });
     });
  </script>
   </head>
@@ -467,6 +428,44 @@ $link='product_list.php?id=Industrial_Instruments&num=10';
   </div>
 </div>
 </footer>
- 
+ <script>
+    $(document).ready(function(){
+        $('.rqst').click(function(){
+    $('#request_for_quote').show();
+    });
+    $('.close').click(function(){
+    $('#request_for_quote').hide();
+    });
+    $(".top").click(function() {
+    $("html, body").animate({ scrollTop: 0 }, "fast");
+    return false;
+    });
+    set1('<?php echo $x ?>');
+    $(".btn1").click(function(){
+    $("#product_image").fadeOut('fast', function() {
+    set2('<?php echo $x ?>');
+    $("#product_image").fadeIn("fast");
+    });;
+    });
+    $(".btn2").click(function(){
+    $("#product_image").fadeOut('fast', function() {
+    set3('<?php echo $x ?>');
+    $("#product_image").fadeIn("fast");
+    });;
+    });
+    $(".btn3").click(function(){
+    $("#product_image").fadeOut('fast', function() {
+    set4('<?php echo $x ?>');
+    $("#product_image").fadeIn("fast");
+    });;
+    });
+    $(".dropdown-button").dropdown({
+    hover:true,
+    constrain_width: true,
+    gutter: 0,
+    belowOrigin: true
+    });
+    });
+ </script>
 </body>
 </html>

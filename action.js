@@ -29,7 +29,7 @@ if(x=='true_color_display') {
 document.getElementById('pre1').innerHTML='Products';
 document.getElementById('pre2').innerHTML='LED Display';
 document.getElementById('curr').innerHTML='True Color HD Screen';
-
+document.getElementById('title').innerHTML='True Color HD Screen';
 document.getElementById('desc').innerHTML='True color HD screen “offers advanced resolution, brightness and clarity and shows colors in their most natural tones, as they were meant to be seen.” ';
 
 
@@ -75,6 +75,7 @@ else if(x=='tri_color_display') {
 	document.getElementById('pre1').innerHTML='Products';
 document.getElementById('pre2').innerHTML='LED Display';
 document.getElementById('curr').innerHTML='TRI Color Display';
+document.getElementById('title').innerHTML='TRI Color Display';
 
 document.getElementById('desc').innerHTML='TRI color display board is applauded for the features like compact design, low electricity consumption and user friendly functions.';
 
@@ -117,7 +118,7 @@ else if(x=='uni_color_display') {
 	document.getElementById('pre1').innerHTML='Products';
 document.getElementById('pre2').innerHTML='LED Display';
 document.getElementById('curr').innerHTML='Uni Color Display';
-
+document.getElementById('title').innerHTML='Uni Color Display';
 
 document.getElementById('desc').innerHTML='UNI color display board is one of the most presentable for pollution & Environment control parameters.';
 
@@ -166,7 +167,7 @@ else if(x=='token') {
 document.getElementById('pre1').innerHTML='Products';
 document.getElementById('pre2').innerHTML='Products for Office';
 document.getElementById('curr').innerHTML='Token Display';
-
+document.getElementById('title').innerHTML='Token Display';
 
 document.getElementById('desc').innerHTML='Token display system provides easiest way to inform the customer or patient about his / her status while waiting.';
 
@@ -203,7 +204,7 @@ else if(x=='digital_clock') {
 document.getElementById('pre1').innerHTML='Products';
 document.getElementById('pre2').innerHTML='Products for Office';
 document.getElementById('curr').innerHTML='Digital Clock';
-
+document.getElementById('title').innerHTML='Digital Clock';
 
 document.getElementById('desc').innerHTML='LED Display Clocks are widely used in factories, offices, large public areas, shopping centers, warehouses and similar large areas.';
 
@@ -251,7 +252,7 @@ else if(x=='interest_rate_display_board'){
 document.getElementById('pre1').innerHTML='Products';
 document.getElementById('pre2').innerHTML='Products for Office';
 document.getElementById('curr').innerHTML='Industrial Rate Display Board';
-
+document.getElementById('title').innerHTML='Industrial Rate Display Board';
 document.getElementById('desc').innerHTML='Interest Rate Display Board is ideal for banks. Date, time, deposit period, interest rate is displayed on an attractive background. ';
 
 
@@ -297,7 +298,7 @@ else if(x=='scrolling_display'){
 document.getElementById('pre1').innerHTML='Products';
 document.getElementById('pre2').innerHTML='Products for Office';
 document.getElementById('curr').innerHTML='Scrolling Display';
-
+document.getElementById('title').innerHTML='Scrolling Display';
 
 document.getElementById('desc').innerHTML='Scrolling Display is having high brightness. User can store and scroll a lot of messages. Ideal for hospitals, pathologies, banks, shops etc.';
 
@@ -336,7 +337,7 @@ if(x=='flow_monitor'){
 document.getElementById('pre1').innerHTML='Products';
 document.getElementById('pre2').innerHTML='Industrial Instruments';
 document.getElementById('curr').innerHTML='Flow Monitor';
-
+document.getElementById('title').innerHTML='Flow Monitor';
 document.getElementById('desc').innerHTML='Flow monitor is an advanced display system to monitor juice and water flow parameters. It has a Totalizer which gives error free total fluid flow over the season. Transfer from current hour to previous hour occurs when hour of clock changes (synchronized with clock)';
 
 
@@ -386,7 +387,7 @@ else if(x=='lfm'){
 document.getElementById('pre1').innerHTML='Products';
 document.getElementById('pre2').innerHTML='Industrial Instruments';
 document.getElementById('curr').innerHTML='Line Frequency Monitor';
-
+document.getElementById('title').innerHTML='Line Frequency Monitor';
 
 document.getElementById('desc').innerHTML='Line Frequency Monitors is used to measures power line frequency, highly accurate reading and non blinking display. Microcontroller based design. ERTL tested.';
 
@@ -431,7 +432,7 @@ else if(x=='megawatt_panel'){
 document.getElementById('pre1').innerHTML='Products';
 document.getElementById('pre2').innerHTML='Industrial Instruments';
 document.getElementById('curr').innerHTML='Megawatt Panel';
-
+document.getElementById('title').innerHTML='Megawatt Panel';
 document.getElementById('desc').innerHTML='Megawatt Panels are essential to power plants. Generation data can be displayed all over the plant.';
 
 
@@ -469,7 +470,7 @@ else if(x=='process_indicator') {
 document.getElementById('pre1').innerHTML='Products';
 document.getElementById('pre2').innerHTML='Industrial Instruments';
 document.getElementById('curr').innerHTML='Process Indicator';
-
+document.getElementById('title').innerHTML='Process Indicator';
 document.getElementById('desc').innerHTML='Process indicators are suitable for displaying process parameters like flow, temperature, level, speed, pH etc. Available in different digit heights.';
 
 
@@ -522,7 +523,7 @@ else if(x=='ph_meter') {
 document.getElementById('pre1').innerHTML='Products';
 document.getElementById('pre2').innerHTML='Industrial Instruments';
 document.getElementById('curr').innerHTML='Ph Meter';
-
+document.getElementById('title').innerHTML='Ph Meter';
 document.getElementById('desc').innerHTML='These are used to measure pH of all types of liquids. We supply the pH meters with combination electrode, electrode stand with clamp and temperature compensation.';
 
 
@@ -578,7 +579,7 @@ else if(x=='tachometer') {
 document.getElementById('pre1').innerHTML='Products';
 document.getElementById('pre2').innerHTML='Industrial Instruments';
 document.getElementById('curr').innerHTML='Tachometer';
-
+document.getElementById('title').innerHTML='Tachometer';
 document.getElementById('desc').innerHTML='Tachometers are used for monitoring the rpm of machines. The sensor is contactless. Ideal for sugar mills, heavy industries etc.';
 
 
@@ -631,7 +632,7 @@ else if(x=='temp_cont') {
 document.getElementById('pre1').innerHTML='Products';
 document.getElementById('pre2').innerHTML='Industrial Instruments';
 document.getElementById('curr').innerHTML='Temperature Controller';
-
+document.getElementById('title').innerHTML='Temperature Controller';
 document.getElementById('desc').innerHTML='Temperature Controllers used in a variety of industrial applications like turbines, furnaces, blow moulding, etc. where the measurement/control of temperature is of vital importance.';
 
 
@@ -665,7 +666,7 @@ else if(x=='twilight_switches') {
 document.getElementById('pre1').innerHTML='Products';
 document.getElementById('pre2').innerHTML='Industrial Instruments';
 document.getElementById('curr').innerHTML='Twilight Switches ';
-
+document.getElementById('title').innerHTML='Twilight Switches ';
 document.getElementById('desc').innerHTML='Twilight switch activates with respect to the ambient light. The device as its name suggests, switches ON and OFF at dusk and dawn.';
 
 
@@ -716,7 +717,7 @@ else if(x=='industrial_display'){
 document.getElementById('pre1').innerHTML='Products';
 document.getElementById('pre2').innerHTML='Industrial Instruments';
 document.getElementById('curr').innerHTML='Industrial Display';
-
+document.getElementById('title').innerHTML='Industrial Display';
 document.getElementById('desc').innerHTML=': Industrial displays are made to customer specifications. All sorts of calculations can be done internally and displayed.';
 
 
@@ -754,7 +755,7 @@ else if(x=='wsm'){
 document.getElementById('pre1').innerHTML='Products';
 document.getElementById('pre2').innerHTML='Industrial Instruments';
 document.getElementById('curr').innerHTML='Weighing Scale Monitor';
-
+document.getElementById('title').innerHTML='Weighing Scale Monitor';
 document.getElementById('desc').innerHTML='WSM is used to monitoring the number of tippings of juice and water Fully automatic operation and convenience of remote display.';
 
 
@@ -834,7 +835,7 @@ function set5(x) {
 
  if(x=='ntpc_rihand') {
 	document.getElementById('curr').innerHTML='NTPC RIHAND';
-
+document.getElementById('title').innerHTML='NTPC RIHAND';
 
 document.getElementById('r1d1').innerHTML ='ON GATE';
 document.getElementById('r1d2').innerHTML ='<p class="bullets" style="display:inline;">Online Display Of Pollution Parameters</p>';
@@ -874,7 +875,7 @@ document.getElementById('project_image3').innerHTML='<img style="border-radius:1
 else if(x=='patna_high_court') {
 
 	document.getElementById('curr').innerHTML='Patna High Court';
-
+document.getElementById('title').innerHTML='Patna High Court';
 
 document.getElementById('r1d1').innerHTML ='';
 document.getElementById('r1d2').innerHTML ='<p class="bullets" style="display:inline;">Online Display Of court case numbers of 40 courts.</p>';
@@ -912,7 +913,7 @@ document.getElementById('project_image3').innerHTML='<img style="border-radius:1
 else if(x=='patna_railway_station') {
 
 	document.getElementById('curr').innerHTML='Railway Station Display at patna';
-
+	document.getElementById('title').innerHTML='Railway Station Display at patna';
 
 document.getElementById('r1d1').innerHTML ='';
 document.getElementById('r1d2').innerHTML ='<p class="bullets" style="display:inline;">RS485 communication</p>';
@@ -949,7 +950,7 @@ document.getElementById('project_image3').innerHTML='<img style="border-radius:1
 else if(x=='shakti_bhawan') {
 
 	document.getElementById('curr').innerHTML='Shakti Bhawan';
-
+	document.getElementById('title').innerHTML='Shakti Bhawan';
 
 document.getElementById('r1d1').innerHTML ='';
 document.getElementById('r1d2').innerHTML ='<p class="bullets" style="display:inline;">Display of various data from excel sheet</p>';
@@ -984,7 +985,7 @@ document.getElementById('project_image3').innerHTML='<img style="border-radius:1
 else if(x=='panki') {
 
 	document.getElementById('curr').innerHTML='Panki';
-
+	document.getElementById('title').innerHTML='Panki';
 
 document.getElementById('r1d1').innerHTML ='';
 document.getElementById('r1d2').innerHTML ='<p class="bullets" style="display:inline;">Display of various data from excel sheet</p>';
@@ -1018,7 +1019,7 @@ document.getElementById('project_image3').innerHTML='<img style="border-radius:1
 else if(x=='coach_guidance_system') {
 
 	document.getElementById('curr').innerHTML='Coach Guidance System';
-
+document.getElementById('title').innerHTML='Coach Guidance System';
 
 document.getElementById('r1d1').innerHTML ='';
 document.getElementById('r1d2').innerHTML ='<p class="bullets" style="display:inline;">Train, coach and platform number display through RS 485 communication.</p>';

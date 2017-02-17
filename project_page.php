@@ -6,7 +6,7 @@ $x= $_GET['id'];
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-    <title>Projects</title>
+    <title id="title"></title>
     <!-- CSS  -->
     <link rel="stylesheet" href="css/materialize.min.css">
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
@@ -98,7 +98,7 @@ $x= $_GET['id'];
         </div>
       </nav>
     </div>
-    <div class="navbar-fixed" style="z-index:9">
+    <div class="navbar brdcrmb" style="z-index:9">
     <nav class="white branches" >
       <div class="nav-wrapper container">
         <div class="col s12">
@@ -132,7 +132,8 @@ $x= $_GET['id'];
                     </ul>
                 </div>
 
-<div class="col l10 m10 s12">  
+<div class="col l10 m10 s12"> 
+<br> 
 <div class="row">  
         <div class="col l10 s12 m10" id="product">
         <div class="slider">

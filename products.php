@@ -20,7 +20,7 @@ $link='product_list.php?id=Industrial_Instruments&num=10';
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-    <title>Products</title>
+    <title id="title"></title>
 
     <link rel="stylesheet" href="css/materialize.min.css">
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
@@ -114,7 +114,7 @@ $link='product_list.php?id=Industrial_Instruments&num=10';
         </div>
       </nav>
     </div>
-    <div class="navbar-fixed" style="z-index:9">
+    <div class="navbar brdcrmb" style="z-index:9">
       <nav class="white branches" >
         <div class="nav-wrapper container">
           <div class="col s12">
@@ -147,6 +147,7 @@ $link='product_list.php?id=Industrial_Instruments&num=10';
         </form>
       </fieldset>
     </div>
+ 
     <div class="row">
       <div class="col l2 m2 s12">
         <br>
@@ -294,7 +295,7 @@ $link='product_list.php?id=Industrial_Instruments&num=10';
 <br><br>
 <div>
   
-  <p class="custom-text blue white-text" style="text-align:center;font-size:22px;padding-top:2px;line-height: 60px">YOU MAY ALSO BE INTERESTED IN...</p>
+  <p class="custom-text blue darken-2 white-text" style="text-align:center;font-size:22px;padding-top:2px;line-height: 60px">YOU MAY ALSO BE INTERESTED IN...</p>
   <br>
   <div class="row" id="related_products">
     

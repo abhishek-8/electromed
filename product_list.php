@@ -309,7 +309,7 @@ $z=$_GET['num'];
       <footer class="page-footer">
       <div class="container">
         <div class="row">
-          <div class="col l3 s12">
+          <div class="col l3 m3 s12">
             <div class="row">
               <h5 class="white-text"><strong>Electro-Med</strong></h5>
               <p class="white-text foot" >We manufacture and assemble a comprehensive range of electronic displays and instruments for industrial application.</p>
@@ -337,17 +337,18 @@ $z=$_GET['num'];
               <li class="flink"><a class="white-text foot" href="about.html">About Us</a></li>
               <li class="flink"><a class="white-text foot" href="contactForm.html">Contact Us</a></li>
               <li class="flink"><a class="white-text foot" href="product_list.php?id=LED_display&num=3">Products</a></li>
+              <li class="flink"><a class="white-text foot" href="projects.html">Projects</a></li>
             </ul>
           </div>
           <div class="col l3 s12 m3">
-            <h6 class="white-text"><strong>Projects</strong></h6>
+            <h6 class="white-text"><strong>Products</strong></h6>
             <ul>
-              <li class="flink"><a class="white-text foot" href="project_page.php?id=ntpc_rihand">NTPC Rihand</a></li>
-              <li class="flink"><a class="white-text foot" href="project_page.php?id=patna_high_court">Patna High Court</a></li>
-              <li class="flink"><a class="white-text foot" href="project_page.php?id=patna_railway_station">RAILWAY Station Display</a></li>
-              <li class="flink"><a class="white-text foot" href="project_page.php?id=shakti_bhawan"">SHAKTI BHAWAN</a></li>
-              <li class="flink"><a class="white-text foot" href="project_page.php?id=panki">PANKI</a></li>
-              <li class="flink"><a class="white-text foot" href="project_page.php?id=coach_guidance_system">COACH GUIDANCE SYSTEM</a></li>
+              <li class="flink"><a class="white-text foot" href="products.php?id=true_color_display&type=1">TRUE COLOR HD SCREEN</a></li>
+              <li class="flink"><a class="white-text foot" href="products.php?id=flow_monitor&type=4">FLOW MONITOR</a></li>
+              <li class="flink"><a class="white-text foot" href="products.php?id=process_indicator&type=4">PROCESS INDICATORS</a></li>
+              <li class="flink"><a class="white-text foot" href="products.php?id=tachometer&type=4">TACHOMETER</a></li>
+              <li class="flink"><a class="white-text foot" href="products.php?id=twilight_switches&type=4">TWILIGHT SWITCHES</a></li>
+              <li class="flink"><a class="white-text foot" href="products.php?id=industrial_display&type=4">INDUSTRIAL DISPLAY</a></li>
             </ul>
           </div>
           <div class="col l3 s12 m3">
@@ -366,17 +367,18 @@ $z=$_GET['num'];
               <div class="col l8 offset-l1 s11 m8 offset-m1"><p class="white-text foot" style="display:inline;">D -17, Vivekanand Puri,
               <br/>Lucknow –226007 India</p></div>
             </div>
-          
+            
           </div>
         </div>
       </div>
-      
-    </div>
+    
     <hr>
     <div class="footer-copyright">
-      <div class="container foot">
-        © 2017 Copyright Electromed. All rights reserved.
-        <span style="float:right;color:#f5f5f5;font-size:12px;">Designed by Abhishek Tiwari</span>
+      <div class="container foot row">
+      <div class="col l4 m4 s12">© 2017 Copyright Electromed. All rights reserved.</div>
+       <div class="col l4 offset-l4 m4 offset-m4 s12"> 
+        <span style="color:#f5f5f5;font-size:12px;">Designed by Abhishek Tiwari</span>
+        </div>
       </div>
     </div>
   </footer>

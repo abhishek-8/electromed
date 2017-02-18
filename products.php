@@ -2,17 +2,90 @@
 $x= $_GET['id'];
 $type=$_GET['type'];
 $link='';
+$title='';
+$desc='';
 if($type==1){
 $link='product_list.php?id=LED_display&num=3';
+if($x=='true_color_display'){
+  $title='True Color Display';
+  $desc='True color HD screen “offers advanced resolution, brightness and clarity and shows colors in their most natural tones, as they were meant to be seen.” ';
 }
+else if($x=='tri_color_display'){
+  $title='Tri Color Display';
+  $desc='TRI color display board is applauded for the features like compact design, low electricity consumption and user friendly functions.';
+}
+else{
+  $title='Uni Color Display';
+  $desc='UNI color display board is one of the most presentable for pollution & Environment control parameters.';
+}
+}
+
 else if($type==2){
 $link='product_list.php?id=Product_for_office&num=4';
+if($x=='token'){
+  $title='Token';
+  $desc='Token display system provides easiest way to inform the customer or patient about his / her status while waiting.';
 }
+else if($x=='digital_clock'){
+  $title='Digital Clock';
+  $desc='LED Display Clocks are widely used in factories, offices, large public areas, shopping centers, warehouses and similar large areas';
+}
+else if($x=='interest_rate_display_board'){
+  $title='Interest Rate Display Board';
+  $desc='Interest Rate Display Board is ideal for banks. Date, time, deposit period, interest rate is displayed on an attractive background.';
+}
+else{
+  $title='Scrolling Display';
+  $desc='Scrolling Display is having high brightness. User can store and scroll a lot of messages. Ideal for hospitals, pathologies, banks, shops etc.';
+}
+}
+
 else if($type==3){
 $link='product_list.php?id=projects&num=3';
+
 }
 else if($type==4){
 $link='product_list.php?id=Industrial_Instruments&num=10';
+if($x=='flow_monitor'){
+  $title='Flow Monitor';
+  $desc='Flow monitor is an advanced display system to monitor juice and water flow parameters. It has a Totalizer which gives error free total fluid flow over the season. Transfer from current hour to previous hour occurs when hour of clock changes (synchronized with clock)';
+}
+else if($x=='lfm'){
+  $title='Line Frequency Monitor';
+  $desc='Line Frequency Monitors is used to measures power line frequency, highly accurate reading and non blinking display. Microcontroller based design. ERTL tested.';
+}
+else if($x=='megawatt_panel'){
+  $title='Mega Watt Panel';
+  $desc='Megawatt Panels are essential to power plants. Generation data can be displayed all over the plant.';
+}
+else if($x=='process_indicator'){
+  $title='Process Indicator';
+  $desc='Process indicators are suitable for displaying process parameters like flow, temperature, level, speed, pH etc. Available in different digit heights.';
+}
+else if($x=='ph_meter'){
+  $title='Ph Meter';
+  $desc='Ph meters are used to measure pH of all types of liquids. We supply the pH meters with combination electrode, electrode stand with clamp and temperature compensation.';
+}
+else if($x=='tachometer'){
+  $title='Tachometer';
+  $desc='Tachometers are used for monitoring the rpm of machines. The sensor is contactless. Ideal for sugar mills, heavy industries etc';
+}
+else if($x=='temp_cont'){
+  $title='Temperature Controller';
+  $desc='Temperature Controllers used in a variety of industrial applications like turbines, furnaces, blow moulding, etc. where the measurement/control of temperature is of vital importance.';
+}
+else if($x=='twilight_switches'){
+  $title='Twilight Switches';
+  $desc='Twilight switch activates with respect to the ambient light. The device as its name suggests, switches ON and OFF at dusk and dawn.';
+}
+else if($x=='industrial_display'){
+  $title='Industrial Display';
+  $desc='Industrial displays are made to customer specifications. All sorts of calculations can be done internally and displayed.';
+}
+else{ 
+  $title='Weighing Scale Monitor';
+  $desc='WSM is used to monitoring the number of tippings of juice and water Fully automatic operation and convenience of remote display.';
+}
 }
 ?>
 <!DOCTYPE html>
@@ -20,7 +93,8 @@ $link='product_list.php?id=Industrial_Instruments&num=10';
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-    <title id="title"></title>
+    <meta name="description" content="<?php echo $desc; ?>" />
+    <title><?php echo $title; ?></title>
 
     <link rel="stylesheet" href="css/materialize.min.css">
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
@@ -198,7 +272,7 @@ $link='product_list.php?id=Industrial_Instruments&num=10';
       <div class="nav-wrapper container" style="float:left">
             <a href="product_list.php?id=LED_display&num=3" class="breadcrumb black-text">Products</a>
             <a href="<?php echo $link; ?>" class="breadcrumb black-text" id="pre2"></a>
-            <a href="" class="breadcrumb black-text" id="curr"></a>
+            <a href="!#" class="breadcrumb black-text" id="curr"><?php echo $title; ?></a>
         </div>
         <div class="row product-images">
           <div class="col l5 s12 m5" id="product">
@@ -219,7 +293,7 @@ $link='product_list.php?id=Industrial_Instruments&num=10';
           
               <br>
             <blockquote class="headName1" style="font-size:21px;"><u id="info">Overview</u></blockquote>
-            <p class="overview-text" id="desc"></p>
+            <p class="overview-text"><?php echo $desc; ?></p>
             <br>
 
         <table id="myTable" class="striped" style="line-height: 100%;">
@@ -343,86 +417,81 @@ $link='product_list.php?id=Industrial_Instruments&num=10';
 </div>
 <br><br>
 <footer class="page-footer">
-  <div class="container">
-    <div class="row">
-      <div class="col l3 s12">
+      <div class="container">
         <div class="row">
+          <div class="col l3 m3 s12">
+            <div class="row">
               <h5 class="white-text"><strong>Electro-Med</strong></h5>
               <p class="white-text foot" >We manufacture and assemble a comprehensive range of electronic displays and instruments for industrial application.</p>
             </div>
-        <div class="row">
-          <div class="col l5 s5 m5">
-            <h6 class="white-text">Follow Us: </h6>
+            <div class="row">
+              <div class="col l5 s5 m5">
+                <h6 class="white-text">Follow Us: </h6>
+              </div>
+              <div class="col l2 s2 m2"><a href="" target="_blank">
+                <img title="LinkedIn" alt="LinkedIn" src="icons/linkedin.png" width="30" height="30" />
+              </a></div>
+              <div class="col l2 s2 m2">
+                <a href="" target="_blank" target="_blank">
+                <img title="Facebook" alt="Facebook" src="icons/facebook.png" width="30" height="30" /></a>
+              </div>
+              <div class="col l2 s2 m2"><a href="" target="_blank">
+                <img title="Google" alt="Google" src="icons/google.png" width="30" height="30" />
+              </a></div>
+            </div>
           </div>
-          <div class="col l2 s2 m2"><a href="" target="_blank">
-            <img title="LinkedIn" alt="LinkedIn" src="icons/linkedin.png" width="30" height="30" />
-          </a></div>
-          <div class="col l2 s2 m2">
-            <a href="" target="_blank" target="_blank">
-            <img title="Facebook" alt="Facebook" src="icons/facebook.png" width="30" height="30" /></a>
+          <div class="col l2 offset-l1 s12 m2 offset-m1">
+            <h6 class="white-text"><strong>Our Links</strong></h6>
+            
+            <ul>
+              <li class="flink"><a class="white-text foot" href="about.html">About Us</a></li>
+              <li class="flink"><a class="white-text foot" href="contactForm.html">Contact Us</a></li>
+              <li class="flink"><a class="white-text foot" href="product_list.php?id=LED_display&num=3">Products</a></li>
+              <li class="flink"><a class="white-text foot" href="projects.html">Projects</a></li>
+            </ul>
           </div>
-          <div class="col l2 s2 m2"><a href="" target="_blank">
-            <img title="Google" alt="Google" src="icons/google.png" width="30" height="30" />
-          </a></div>
+          <div class="col l3 s12 m3">
+            <h6 class="white-text"><strong>Products</strong></h6>
+            <ul>
+              <li class="flink"><a class="white-text foot" href="products.php?id=true_color_display&type=1">TRUE COLOR HD SCREEN</a></li>
+              <li class="flink"><a class="white-text foot" href="products.php?id=flow_monitor&type=4">FLOW MONITOR</a></li>
+              <li class="flink"><a class="white-text foot" href="products.php?id=process_indicator&type=4">PROCESS INDICATORS</a></li>
+              <li class="flink"><a class="white-text foot" href="products.php?id=tachometer&type=4">TACHOMETER</a></li>
+              <li class="flink"><a class="white-text foot" href="products.php?id=twilight_switches&type=4">TWILIGHT SWITCHES</a></li>
+              <li class="flink"><a class="white-text foot" href="products.php?id=industrial_display&type=4">INDUSTRIAL DISPLAY</a></li>
+            </ul>
+          </div>
+          <div class="col l3 s12 m3">
+            <h6 class="white-text"><strong>Contact Info</strong></h6><br>
+            <div class="row">
+              <div class="col l1 s1 m1"><i class="material-icons prefix blue-text text-darken-2">phone</i></div>
+              <div class="col l8 offset-l1 s11 m8 offset-m1"><p class="white-text foot" style="display:inline;">9415039393</p></div>
+            </div>
+            
+            <div class="row">
+              <div class="col l1 s1 m1"><i class="material-icons prefix blue-text text-darken-2">email</i></div>
+              <div class="col l8 offset-l1 s11 m8 offset-m1"><p class="white-text foot" style="display:inline;">electro.med25@gmail.com</p></div>
+            </div>
+            <div class="row">
+              <div class="col l1 s1 m1"><i class="material-icons prefix blue-text text-darken-2">room</i></div>
+              <div class="col l8 offset-l1 s11 m8 offset-m1"><p class="white-text foot" style="display:inline;">D -17, Vivekanand Puri,
+              <br/>Lucknow –226007 India</p></div>
+            </div>
+            
+          </div>
         </div>
       </div>
-      <div class="col l2 offset-l1 s12 m2 offset-m1">
-        <h6 class="white-text"><strong>Our Links</strong></h6>
-        
-        <ul>
-          <li class="flink"><a class="white-text foot" href="about.html">About Us</a></li>
-          <li class="flink"><a class="white-text foot" href="contactForm.html">Contact Us</a></li>
-          <li class="flink"><a class="white-text foot" href="product_list.php?id=LED_display&num=3">Products</a></li>
-        </ul>
-      </div>
-      <div class="col l3 s12 m3">
-        <h6 class="white-text"><strong>Projects</strong></h6>
-        <ul>
-          <li class="flink"><a class="white-text foot" href="project_page.php?id=ntpc_rihand">NTPC Rihand</a></li>
-          <li class="flink"><a class="white-text foot" href="project_page.php?id=patna_high_court">Patna High Court</a></li>
-          <li class="flink"><a class="white-text foot" href="project_page.php?id=patna_railway_station">RAILWAY Station Display</a></li>
-          <li class="flink"><a class="white-text foot" href="project_page.php?id=shakti_bhawan"">SHAKTI BHAWAN</a></li>
-          <li class="flink"><a class="white-text foot" href="project_page.php?id=panki">PANKI</a></li>
-          <li class="flink"><a class="white-text foot" href="project_page.php?id=coach_guidance_system">COACH GUIDANCE SYSTEM</a></li>
-        </ul>
-      </div>
-
-      <div class="col l3 s12 m3">
-        <h6 class="white-text"><strong>Contact Info</strong></h6>
-        <br>
-        <div class="row">
-          <div class="col l1 s1 m1"><i class="material-icons prefix blue-text text-darken-2">phone</i></div>
-          <div class="col l8 offset-l1 s11 m8 offset-m1"><p class="white-text foot" style="display:inline;">9415039393</p></div>
+    
+    <hr>
+    <div class="footer-copyright">
+      <div class="container foot row">
+      <div class="col l4 m4 s12">© 2017 Copyright Electromed. All rights reserved.</div>
+       <div class="col l4 offset-l4 m4 offset-m4 s12"> 
+        <span style="color:#f5f5f5;font-size:12px;">Designed by Abhishek Tiwari</span>
         </div>
-        
-        <div class="row">
-          <div class="col l1 s1 m1"><i class="material-icons prefix blue-text text-darken-2">email</i></div>
-          <div class="col l8 offset-l1 s11 m8 offset-m1"><p class="white-text foot" style="display:inline;">electro.med25@gmail.com</p></div>
-        </div>
-        <div class="row">
-          <div class="col l1 s1 m1"><i class="material-icons prefix blue-text text-darken-2">room</i></div>
-          <div class="col l8 offset-l1 s11 m8 offset-m1"><p class="white-text foot" style="display:inline;">D -17, Vivekanand Puri,
-          <br/>Lucknow –226007 India</p></div>
-        </div>
-        
       </div>
     </div>
-  </div>
-  <div class="fixed-action-btn horizontal" id="navigation">
-    <a class="btn-floating btn-large blue darken-2 top">
-      <i class="large material-icons">navigation</i>
-    </a>
-    
-  </div>
-</div>
-<hr>
-<div class="footer-copyright">
-  <div class="container foot">
-    © 2017 Copyright Electromed. All rights reserved.
-    <span style="float:right;color:#f5f5f5;font-size:12px;">Designed by Abhishek Tiwari</span>
-  </div>
-</div>
-</footer>
+  </footer>
  <script>
     $(document).ready(function(){
         $('.rqst').click(function(){

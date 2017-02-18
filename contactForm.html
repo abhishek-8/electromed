@@ -99,112 +99,96 @@
         </div>
         
         <div class="container-fluid">
-            <div class="row container" >
+            <div class="row" >
                 
-                <div class="col l12 m12 s12" id="contactform">
-                    <p class="custom-text" style="color:#263238;font-size:26px;">We'd love to help you </p>
-                    
+                
+                <div class="col l6 m7 s12" id="contactform">
+                <p class="custom-text" style="color:#263238;font-size:26px;">We'd love to help you </p>    
                     <hr class="style11"><br>
                     <form name="query_form" action="submit.php" method="post" id="qform">
                         <div class="row">
+    
+                            <div class="col l6 m6 s12">
 
-                            <div class="col l4 m4 s12">
+                                <div class="col l12 m12 s12">
                                 <div class="input-field">
                                     <i class="material-icons prefix">perm_identity</i>
                                     <input id="name" name="name" type="text" class="validate" required>
                                     <label for="name">Name</label>
                                 </div>
-                            </div>
+                                </div><br><br><br>
 
-                            <div class="col l4 m4 s12">
+                                <div class="col l12 m12 s12">
                                 <div class="input-field">
                                     <i class="material-icons prefix">email</i>
                                     <input id="email" name="email" type="email" class="validate" required>
                                     <label for="email" data-error="invalid">Email</label>
                                 </div>
-                            </div>
+                                </div><br><br><br>
 
-                            <div class="col l4 m4 s12">
+                                <div class="col l12 m12 s12">
                                 <div class="input-field">
                                     <i class="material-icons prefix">phone</i>
                                     <input id="phone" name="phone" type="tel" class="validate" required>
                                     <label for="phone">Phone</label>
                                 </div>
-                            </div>
+                                </div><br><br><br>
 
-                        </div>
-
-                        <div class="row">
-
-                            <div class="col l6 m6 s12" >
-                                <div class="input-field" >
-                                <i class="material-icons prefix" style="color:white">email</i>
-                                    <input id="poi" name="poi" type="text" class="validate" required>
-                                    <label for="poi">Products of Interest</label>
-                                </div>
-                            </div>
-
-                            <div class="col l6 m6 s12 contact-page-form">
-                               
+                                <div class="col l12 m12 s12 contact-page-form">
                                 <div class="input-field">
-                                <i class="material-icons prefix" style="color:white">email</i>
+                                
+                <img class="prefix" alt="factory" src="icons/factory.svg" width="20" height="28" style="padding-right: 12px" />
                                     <select required name="industry">
-                                        <option value="">Choose your Industry</option>
+                                        <option value="">Industry</option>
                                         <option value="Power">Power</option>
                                         <option value="Sugar">Sugar</option>
                                         <option value="Railway">Railway</option>
                                         <option value="Others">Others</option>
                                     </select>
                                 </div>
+                            </div><br><br><br>
+
                             </div>
 
-                            
+                            <div class="col l6 m6 s12">
+                                <div class="col l12 m12 s12" >
+                                <div class="input-field" >
+                                <i class="material-icons prefix">shopping_cart</i>
+                                    <input id="poi" name="poi" type="text" class="validate" required>
+                                    <label for="poi">Products of Interest</label>
+                                </div>
+                                </div><br><br><br>
 
-                        </div>
-                        <div class="row">
-                            <div class="col l12 m12 s12">
+                                <div class="col l12 m12 s12">
                                 <div class="input-field">
                                     <i class="material-icons prefix">message</i>
-                                    <textarea id="qry" name="query" class="materialize-textarea" required style="min-height:180px;"></textarea>
+                                    <textarea id="qry" name="query" class="materialize-textarea" required style="min-height:128px;"></textarea>
                                     <label for="qry">Write your query...</label>
                                 </div><br>
-                                <center><input type="submit" class="blue darken-5 btn" style="width:45%;border-radius:5px;"></center>
+                                
+                                </div>
                             </div>
-                        </div>
+
+                            <center><input type="submit" class="blue darken-5 btn" style="width:40%;border-radius:5px;"></center>
+                            </div>
                     </form>
                     <hr class="style11">
                     <br>
                 </div>
-            </div>
-        </div>
-        <div class="container-fluid">
-            <center><h5 class="custom-text" style="color:#263238;"><b>CONTACT INFORMATION</b></h5></center>
-            <br>
-            <div class="row" id="contact">
-                <div class="col l1 m1 s2">
-                    <i class="icons material-icons grey-text">room</i>
-                </div>
-                <div class="col l2 m2 s9">
-                    <div class="row"><p class="custom-text" style="color:#263238;text-align:center;font-size:18px;">ADDRESS</p></div>
-                    <div class="row"><p class="custom-text" style="color:#263238;text-align:center;font-size:18px;">D-17,Vivekanand Puri,
-                    <br/>Lucknow –226007 India</p></div>
-                </div>
-                <div class="col l1 offset-l1 m1 offset-m1 s2">
-                    <i class="icons material-icons grey-text">phone</i>
-                </div>
-                <div class="col l2 m2 s9">
-                    <div class="row"><p class="custom-text" style="color:#263238;text-align:center;font-size:18px;">GIVE US A CALL</p></div>
-                    <div class="row"><p class="custom-text" style="color:#263238;text-align:center;font-size:18px;">+91 941 508 5804<br>+91 941 503 9393</p></div>
-                </div>
-                <div class="col l1 offset-l1 m1 offset-m1 s2">
-                    <i class="icons material-icons grey-text">email</i>
-                </div>
-                <div class="col l2 m2 s8">
-                    <div class="row"><p class="custom-text" style="color:#263238;text-align:center;font-size:18px;">SEND US A MAIL</p></div>
-                    <div class="row"><p class="custom-text" style="color:#263238;text-align:center;font-size:18px;">electro.med25@gmail.com<br>electromed3@rediffmail.com<br>info@electromed.co.in</p></div>
+                <div class="col l3 m3 s11 offset-s1" id="contactinfo">
+                <p class="custom-text" style="color:#263238;font-size:22px;line-height:90%">Address</p>
+                    <p class="headName1" style="font-size:18px;line-height:90%">D-17, Vivekanand Puri,
+                    <br/>Lucknow –226007 India</p>
+                    <p class="headName1">Monday-Saturday : <span style="font-size:18px;line-height:10%">9:00 to 5:30 PM (IST)</span></p>
+                    <p class="custom-text" style="color:#263238;font-size:22px;line-height:90%">Phone</p>
+                    <p class="headName1" style="font-size:18px;line-height:90%">+91 941 508 5804<br>+91 941 503 9393</p>
+                    <p class="custom-text" style="color:#263238;font-size:22px;line-height:90%">Email</p>
+                    <p class="headName1" style="font-size:18px;line-height:90%">electro.med25@gmail.com<br>electromed3@rediffmail.com<br>info@electromed.co.in</p> 
+                    
                 </div>
             </div>
         </div>
+
         <center><h2 class="custom-text" style="color:#263238;"><b>FIND US</b></h2></center>
         
         

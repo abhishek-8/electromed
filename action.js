@@ -26,7 +26,6 @@ if(  i!=5 || j!=42 || k!=1024 	)
 
 function set1(x) {
 if(x=='true_color_display') {
-document.getElementById('pre1').innerHTML='Products';
 document.getElementById('pre2').innerHTML='LED Display';
 document.getElementById('curr').innerHTML='True Color HD Screen';
 document.getElementById('title').innerHTML='True Color HD Screen';
@@ -72,7 +71,6 @@ document.getElementById('r7d2').innerHTML ='4 mm';
 }
 
 else if(x=='tri_color_display') {
-	document.getElementById('pre1').innerHTML='Products';
 document.getElementById('pre2').innerHTML='LED Display';
 document.getElementById('curr').innerHTML='TRI Color Display';
 document.getElementById('title').innerHTML='TRI Color Display';
@@ -115,7 +113,6 @@ document.getElementById('r7d2').innerHTML ='10 mm';
 		$('#rel4').hide();	
 }
 else if(x=='uni_color_display') {
-	document.getElementById('pre1').innerHTML='Products';
 document.getElementById('pre2').innerHTML='LED Display';
 document.getElementById('curr').innerHTML='Uni Color Display';
 document.getElementById('title').innerHTML='Uni Color Display';
@@ -164,7 +161,6 @@ document.getElementById('ri1').innerHTML='<a href="products.php?id=true_color_di
 }
 
 else if(x=='token') {
-document.getElementById('pre1').innerHTML='Products';
 document.getElementById('pre2').innerHTML='Products for Office';
 document.getElementById('curr').innerHTML='Token Display';
 document.getElementById('title').innerHTML='Token Display';
@@ -201,7 +197,6 @@ document.getElementById('r5d2').innerHTML ='With Dot LED or With integrated 7 se
 
 else if(x=='digital_clock') {
 
-document.getElementById('pre1').innerHTML='Products';
 document.getElementById('pre2').innerHTML='Products for Office';
 document.getElementById('curr').innerHTML='Digital Clock';
 document.getElementById('title').innerHTML='Digital Clock';
@@ -249,7 +244,6 @@ document.getElementById('ri1').innerHTML='<a href="products.php?id=token&type=2"
 
 
 else if(x=='interest_rate_display_board'){
-document.getElementById('pre1').innerHTML='Products';
 document.getElementById('pre2').innerHTML='Products for Office';
 document.getElementById('curr').innerHTML='Industrial Rate Display Board';
 document.getElementById('title').innerHTML='Industrial Rate Display Board';
@@ -295,7 +289,6 @@ document.getElementById('ri1').innerHTML='<a href="products.php?id=token&type=2"
 
 
 else if(x=='scrolling_display'){
-document.getElementById('pre1').innerHTML='Products';
 document.getElementById('pre2').innerHTML='Products for Office';
 document.getElementById('curr').innerHTML='Scrolling Display';
 document.getElementById('title').innerHTML='Scrolling Display';
@@ -334,7 +327,6 @@ document.getElementById('ri1').innerHTML='<a href="products.php?id=token&type=2"
 }
 
 if(x=='flow_monitor'){
-document.getElementById('pre1').innerHTML='Products';
 document.getElementById('pre2').innerHTML='Industrial Instruments';
 document.getElementById('curr').innerHTML='Flow Monitor';
 document.getElementById('title').innerHTML='Flow Monitor';
@@ -384,7 +376,6 @@ document.getElementById('r6d2').innerHTML ='hrs. & mins. With inbuilt battery; 2
 }
 
 else if(x=='lfm'){
-document.getElementById('pre1').innerHTML='Products';
 document.getElementById('pre2').innerHTML='Industrial Instruments';
 document.getElementById('curr').innerHTML='Line Frequency Monitor';
 document.getElementById('title').innerHTML='Line Frequency Monitor';
@@ -429,7 +420,6 @@ document.getElementById('ri4').innerHTML='<a href="products.php?id=twilight_swit
 }
 
 else if(x=='megawatt_panel'){
-document.getElementById('pre1').innerHTML='Products';
 document.getElementById('pre2').innerHTML='Industrial Instruments';
 document.getElementById('curr').innerHTML='Megawatt Panel';
 document.getElementById('title').innerHTML='Megawatt Panel';
@@ -467,7 +457,6 @@ document.getElementById('ri1').innerHTML='<a href="products.php?id=flow_monitor&
 
 
 else if(x=='process_indicator') {
-document.getElementById('pre1').innerHTML='Products';
 document.getElementById('pre2').innerHTML='Industrial Instruments';
 document.getElementById('curr').innerHTML='Process Indicator';
 document.getElementById('title').innerHTML='Process Indicator';
@@ -520,7 +509,6 @@ document.getElementById('r7d2').innerHTML ='12.5mm, 25mm, 50mm, 100mm, 150mm, 20
 }
 
 else if(x=='ph_meter') {
-document.getElementById('pre1').innerHTML='Products';
 document.getElementById('pre2').innerHTML='Industrial Instruments';
 document.getElementById('curr').innerHTML='Ph Meter';
 document.getElementById('title').innerHTML='Ph Meter';
@@ -576,7 +564,6 @@ document.getElementById('ri1').innerHTML='<a href="products.php?id=flow_monitor&
 
 
 else if(x=='tachometer') {
-document.getElementById('pre1').innerHTML='Products';
 document.getElementById('pre2').innerHTML='Industrial Instruments';
 document.getElementById('curr').innerHTML='Tachometer';
 document.getElementById('title').innerHTML='Tachometer';
@@ -629,7 +616,6 @@ document.getElementById('ri1').innerHTML='<a href="products.php?id=flow_monitor&
 }
 
 else if(x=='temp_cont') {
-document.getElementById('pre1').innerHTML='Products';
 document.getElementById('pre2').innerHTML='Industrial Instruments';
 document.getElementById('curr').innerHTML='Temperature Controller';
 document.getElementById('title').innerHTML='Temperature Controller';
@@ -663,7 +649,6 @@ document.getElementById('ri1').innerHTML='<a href="products.php?id=flow_monitor&
 }
 
 else if(x=='twilight_switches') {
-document.getElementById('pre1').innerHTML='Products';
 document.getElementById('pre2').innerHTML='Industrial Instruments';
 document.getElementById('curr').innerHTML='Twilight Switches ';
 document.getElementById('title').innerHTML='Twilight Switches ';
@@ -714,7 +699,6 @@ document.getElementById('ri1').innerHTML='<a href="products.php?id=flow_monitor&
 }
 
 else if(x=='industrial_display'){
-document.getElementById('pre1').innerHTML='Products';
 document.getElementById('pre2').innerHTML='Industrial Instruments';
 document.getElementById('curr').innerHTML='Industrial Display';
 document.getElementById('title').innerHTML='Industrial Display';
@@ -752,7 +736,6 @@ document.getElementById('ri1').innerHTML='<a href="products.php?id=flow_monitor&
 
 
 else if(x=='wsm'){
-document.getElementById('pre1').innerHTML='Products';
 document.getElementById('pre2').innerHTML='Industrial Instruments';
 document.getElementById('curr').innerHTML='Weighing Scale Monitor';
 document.getElementById('title').innerHTML='Weighing Scale Monitor';

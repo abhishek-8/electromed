@@ -98,19 +98,10 @@ $x= $_GET['id'];
         </div>
       </nav>
     </div>
-    <div class="navbar brdcrmb" style="z-index:9">
-    <nav class="white branches" >
-      <div class="nav-wrapper container">
-        <div class="col s12">
-          <a href="projects.html" class="breadcrumb black-text">Projects</a>
-          <a href="#" class="breadcrumb black-text" id="curr"></a>
-        </div>
-      </div>
-    </nav>
-</div>
+   
 
 <div class="row">
-        <div class="col l2 m2 s12"><br><br>
+        <div class="col l2 m2 s12">
                     <a href="#!" class="btn blue darken-2 category-btn" onclick="Materialize.showStaggeredList('#staggered-test')" style="width:100%;">Projects</a>
                     <ul id="staggered-test" class="collapsible" data-collapsible="accordion">
                          <li style="opacity: 0;">
@@ -133,7 +124,10 @@ $x= $_GET['id'];
                 </div>
 
 <div class="col l10 m10 s12"> 
-<br> 
+<div class="nav-wrapper container">
+          <a href="projects.html" class="breadcrumb black-text" id="pre2">Projects</a>
+          <a href="#" class="breadcrumb black-text" id="curr"></a>
+      </div> 
 <div class="row">  
         <div class="col l10 s12 m10" id="product">
         <div class="slider">
@@ -153,7 +147,7 @@ $x= $_GET['id'];
         </div>
       
         <div class="col l2 m2 s12">
-            <br><br>
+          
          <table class="striped" style="line-height:2%">
           <tr>
             <td style="padding:4px"> <p class="custom-text" style="color:#263238;font-size:15px;">Location</p> 

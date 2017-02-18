@@ -114,17 +114,6 @@ $link='product_list.php?id=Industrial_Instruments&num=10';
         </div>
       </nav>
     </div>
-    <div class="navbar brdcrmb" style="z-index:9">
-      <nav class="white branches" >
-        <div class="nav-wrapper container">
-          <div class="col s12">
-            <a href="product_list.php?id=LED_display&num=3" class="breadcrumb black-text" id="pre1"></a>
-            <a href="<?php echo $link; ?>" class="breadcrumb black-text" id="pre2"></a>
-            <a href="" class="breadcrumb black-text" id="curr"></a>
-          </div>
-        </div>
-      </nav>
-    </div>
     <div class="z-depth-5 card-panel hoverable" id="request_for_quote">
       <fieldset id="rqst_form">
         <legend class="white-text blue darken-2" style="position:relative;height: 40px;width: 100%;"><center>Request for quote</center></legend>
@@ -147,10 +136,10 @@ $link='product_list.php?id=Industrial_Instruments&num=10';
         </form>
       </fieldset>
     </div>
- 
+ <br>
     <div class="row">
       <div class="col l2 m2 s12">
-        <br>
+        
         <a a href="product_list.php?id=LED_display&num=3" class="btn blue darken-2 category-btn" style="width:100%" onclick="Materialize.showStaggeredList('#staggered-test')">Products</a>
         <ul id="staggered-test" class="collapsible" data-collapsible="accordion">
           <li style="opacity: 0;">
@@ -206,6 +195,11 @@ $link='product_list.php?id=Industrial_Instruments&num=10';
       </div>
       
       <div class="col l10 m10 s12">
+      <div class="nav-wrapper container" style="float:left">
+            <a href="product_list.php?id=LED_display&num=3" class="breadcrumb black-text">Products</a>
+            <a href="<?php echo $link; ?>" class="breadcrumb black-text" id="pre2"></a>
+            <a href="" class="breadcrumb black-text" id="curr"></a>
+        </div>
         <div class="row product-images">
           <div class="col l5 s12 m5" id="product">
             <div class="row">

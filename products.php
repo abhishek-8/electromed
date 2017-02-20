@@ -166,9 +166,9 @@ else{
     <div class="navbar-fixed">
       <nav>
         <div class="nav-wrapper container">
-          <a id="logo-container" href="home.html" class="brand-logo custom-text">Electro-med</a>
+          <a id="logo-container" href="index.html" class="brand-logo custom-text">Electro-med</a>
           <ul class="right hide-on-med-and-down">
-            <li><a href="home.html" class="navLink">Home</a></li>
+            <li><a href="index.html" class="navLink">Home</a></li>
              <li class="active"><a href="product_list.php?id=LED_display&num=3" class="dropdown-button navLink" data-activates="products">Products<i class="material-icons right">arrow_drop_down</i></a></li>
             <li><a href="projects.html" class="dropdown-button navLink" data-activates="projects">Projects<i class="material-icons right">arrow_drop_down</i></a></li>
             <li><a href="clients.html" class="navLink">Clients</a></li>
@@ -177,7 +177,7 @@ else{
           </ul>
           
           <ul id="nav-mobile" class="side-nav">
-            <li><a href="home.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li class="active"><a href="product_list.php?id=LED_display&num=3">Products<i class="material-icons right">arrow_drop_down</i></a></li>
             <li><a href="projects.html">Projects<i class="material-icons right">arrow_drop_down</i></a></li>
             <li><a href="clients.html">Clients</a></li>
@@ -191,12 +191,12 @@ else{
     <div class="z-depth-5 card-panel hoverable" id="request_for_quote">
       <fieldset id="rqst_form">
         <legend class="white-text blue darken-2" style="position:relative;height: 40px;width: 100%;"><center>Request for quote</center></legend>
-        <form action="home.html">
-          <input id="name" type="text" class="validate" placeholder="Name" style="font-size:15px;">
-          <input id="email" type="email" class="validate" placeholder="Email" style="font-size:15px;">
-          <input id="company" type="text" class="validate" placeholder="Company" style="font-size:15px;">
-          <input id="phone" type="text" class="validate" placeholder="Phone" style="font-size:15px;">
-          <textarea name="" placeholder="Message" style="font-size:15px;"></textarea>
+        <form action="submit.php" method="post" >
+          <input id="name" type="text" name="name" class="validate" placeholder="Name" style="font-size:15px;">
+          <input id="email" type="email" name="email" class="validate" placeholder="Email" style="font-size:15px;">
+          <input id="company" type="text" name="industry" class="validate" placeholder="Company" style="font-size:15px;">
+          <input id="phone" type="text" class="validate" name="phone" placeholder="Phone" style="font-size:15px;">
+          <textarea name="query" placeholder="Message" style="font-size:15px;"></textarea>
           <div class="row">
             <div class="col l4">
               <button class="btn blue darken-2" type="submit" name="action">Submit

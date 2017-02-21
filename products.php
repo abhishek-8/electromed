@@ -105,7 +105,8 @@ else{
     <script src="action.js" type="text/javascript"></script>
    <script>
     $(document).ready(function(){
-      $('.parallax').parallax();
+     if($(window).width()<=500)
+     window.scroll(0,270); 
     Materialize.showStaggeredList('#staggered-test');
     $('.button-collapse').sideNav();
     $('.materialboxed').materialbox();
@@ -487,7 +488,7 @@ else{
       <div class="container foot row">
       <div class="col l4 m4 s12">© 2017 Copyright Electromed. All rights reserved.</div>
        <div class="col l4 offset-l4 m4 offset-m4 s12"> 
-        <span style="color:#f5f5f5;font-size:12px;">Designed by Abhishek Tiwari</span>
+       Designed by <a href="https://www.linkedin.com/in/abhishek-tiwari-55b994130/"><span style="color:#f5f5f5;font-size:12px;">Abhishek Tiwari</span></a>
         </div>
       </div>
     </div>

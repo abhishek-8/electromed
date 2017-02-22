@@ -35,7 +35,7 @@ $subject = "My subject";
 $headers = "From: tiwari.abhishek428@gmail.com" . "\r\n" .
 "CC: abhinav2506293@gmail.com";
 $txt='Name : '.$name.'<br>'.'Phone : '.$phone.'<br>'.'Email : '.$email.'<br>'.'Product of interest : '.$product_of_interest.'<br>'.'Industry : '.$industry.'<br>'.'Query : '.$query;
-echo $txt;
+
 if (!mail($to,$subject,$txt,$headers)) {
 echo '<p class="custom-text" style="color:#263238;text-align:center;font-size:17px;"><br><br><br>Not Sent<br><a href="contactForm.html" onclick="goBack()"><u>Go Back</u></a></p>';
 }

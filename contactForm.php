@@ -1,9 +1,14 @@
+<?php
+$res='';
+$done='false';
+include('submit.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-        <title>Contact Us</title>
+        <title>Contact</title>
         <!-- CSS  -->
         <link rel="stylesheet" href="css/materialize.min.css">
         <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
@@ -74,7 +79,7 @@
                         <li><a href="projects.html" class="dropdown-button navLink" data-activates="projects">Projects<i class="material-icons right">arrow_drop_down</i></a></li>
                         <li><a href="clients.html" class="navLink">Clients</a></li>
                         <li><a href="about.html" class="navLink">About</a></li>
-                        <li class="active"><a href="contactForm.html" class="navLink">Contact</a></li>
+                        <li class="active"><a href="contactForm.php" class="navLink">Contact</a></li>
                     </ul>
                     
                     <ul id="nav-mobile" class="side-nav">
@@ -83,13 +88,15 @@
                         <li><a href="projects.html">Projects<i class="material-icons right">arrow_drop_down</i></a></li>
                         <li><a href="clients.html">Clients</a></li>
                         <li><a href="about.html">About Us</a></li>
-                        <li class="active"><a href="contactForm.html">Contact Us</a></li>
+                        <li class="active"><a href="contactForm.php">Contact Us</a></li>
                     </ul>
                     <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
                 </div>
             </nav>
         </div>
-        
+        <div class="z-depth-5 card-panel hoverable" id="popup">
+      <p class="custom-text" style="color:#263238;text-align:center;font-size:17px;"><?php echo $res; ?><br><a href=""><u>Go Back</u></a></p>
+    </div>
         <div class="parallax-container" id="contact_us">
             <div class="parallax"><img src="contact.jpg"></div>
             <div class="container"><br>
@@ -100,12 +107,10 @@
         
         <div class="container-fluid">
             <div class="row" >
-                
-                
                 <div class="col l6 m7 s12" id="contactform">
                 <p class="custom-text" style="color:#263238;font-size:26px;">We'd love to help you </p>    
                     <hr class="style11"><br>
-                    <form name="query_form" action="submit.php" method="post" id="qform">
+                    <form name="query_form" action="" method="post" id="qform">
                         <div class="row">
     
                             <div class="col l6 m6 s12">
@@ -169,7 +174,7 @@
                                 </div>
                             </div>
 
-                            <center><input type="submit" class="blue darken-5 btn" style="width:40%;border-radius:5px;"></center>
+                            <center><input type="submit" name="submit" class="blue darken-5 btn" style="width:40%;border-radius:5px;"></center>
                             </div>
                     </form>
                     <hr class="style11">
@@ -211,7 +216,7 @@
             
             <ul>
               <li class="flink"><a class="white-text foot" href="about.html">About Us</a></li>
-              <li class="flink"><a class="white-text foot" href="contactForm.html">Contact Us</a></li>
+              <li class="flink"><a class="white-text foot" href="contactForm.php">Contact Us</a></li>
               <li class="flink"><a class="white-text foot" href="product_list.php?id=LED_display&num=3">Products</a></li>
               <li class="flink"><a class="white-text foot" href="projects.html">Projects</a></li>
             </ul>
@@ -252,7 +257,7 @@
     <div class="footer-copyright">
       <div class="container foot row">
       <div class="col l4 m4 s12">© 2017 Copyright Electromed. All rights reserved.</div>
-       <div class="col l4 offset-l4 m4 offset-m4 s12"> 
+       <div class="col l3 offset-l5 m3 offset-m5 s12"> 
        Designed by <a href="https://www.linkedin.com/in/abhishek-tiwari-55b994130/"><span style="color:#f5f5f5;font-size:12px;">Abhishek Tiwari</span></a>
         </div>
       </div>
@@ -260,6 +265,8 @@
   </footer>
 <script>
 $(document).ready(function(){
+    if(<?php echo $done; ?>==true)
+      $('#popup').show();
 $('.button-collapse').sideNav();
 $(".dropdown-button").dropdown({
 hover:true,

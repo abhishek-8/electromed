@@ -4,6 +4,9 @@ $type=$_GET['type'];
 $link='';
 $title='';
 $desc='';
+$res='';
+$done='false';
+include('submit.php');
 if($type==1){
 $link='product_list.php?id=LED_display&num=3';
 if($x=='true_color_display'){
@@ -174,7 +177,7 @@ else{
             <li><a href="projects.html" class="dropdown-button navLink" data-activates="projects">Projects<i class="material-icons right">arrow_drop_down</i></a></li>
             <li><a href="clients.html" class="navLink">Clients</a></li>
             <li><a href="about.html" class="navLink">About</a></li>
-            <li><a href="contactForm.html" class="navLink">Contact</a></li>
+            <li><a href="contactForm.php" class="navLink">Contact</a></li>
           </ul>
           
           <ul id="nav-mobile" class="side-nav">
@@ -183,7 +186,7 @@ else{
             <li><a href="projects.html">Projects<i class="material-icons right">arrow_drop_down</i></a></li>
             <li><a href="clients.html">Clients</a></li>
             <li><a href="about.html">About Us</a></li>
-            <li><a href="contactForm.html">Contact Us</a></li> 
+            <li><a href="contactForm.php">Contact Us</a></li> 
           </ul>
           <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
         </div>
@@ -192,15 +195,16 @@ else{
     <div class="z-depth-5 card-panel hoverable" id="request_for_quote">
       <fieldset id="rqst_form">
         <legend class="white-text blue darken-2" style="position:relative;height: 40px;width: 100%;"><center>Request for quote</center></legend>
-        <form action="submit.php" method="post" >
-          <input id="name" type="text" name="name" class="validate" placeholder="Name" style="font-size:15px;">
-          <input id="email" type="email" name="email" class="validate" placeholder="Email" style="font-size:15px;">
-          <input id="company" type="text" name="industry" class="validate" placeholder="Company" style="font-size:15px;">
-          <input id="phone" type="text" class="validate" name="phone" placeholder="Phone" style="font-size:15px;">
-          <textarea name="query" placeholder="Message" style="font-size:15px;"></textarea>
+        <form action="" method="post">
+          <input id="name" type="text" name="name" class="validate" placeholder="Name" required style="font-size:15px;">
+          <input id="email" type="email" name="email" class="validate" placeholder="Email" required style="font-size:15px;">
+          <input id="poi" type="text" name="poi" value='<?php echo $title; ?>'>
+          <input id="company" type="text" name="industry" class="validate" placeholder="Company" required style="font-size:15px;">
+          <input id="phone" type="text" class="validate" name="phone" placeholder="Phone" required style="font-size:15px;">
+          <textarea name="query" placeholder="Message" required style="font-size:15px;"></textarea>
           <div class="row">
             <div class="col l4">
-              <button class="btn blue darken-2" type="submit" name="action">Submit
+              <button class="btn blue darken-2" type="submit" name="submit" id="submit">Submit
               <i class="material-icons right">send</i>
               </button>
             </div>
@@ -210,6 +214,9 @@ else{
           </div>
         </form>
       </fieldset>
+    </div>
+    <div class="z-depth-5 card-panel hoverable" id="popup">
+      <p class="custom-text" style="color:#263238;text-align:center;font-size:17px;"><?php echo $res; ?><br><a href=""><u>Go Back</u></a></p>
     </div>
  <br>
     <div class="row">
@@ -291,7 +298,6 @@ else{
             </div>
           </div>
           <div class="col l6 s12 m6" id="specs">
-          
               <br>
             <blockquote class="headName1" style="font-size:21px;"><u id="info">Overview</u></blockquote>
             <p class="overview-text"><?php echo $desc; ?></p>
@@ -431,7 +437,7 @@ else{
             
             <ul>
               <li class="flink"><a class="white-text foot" href="about.html">About Us</a></li>
-              <li class="flink"><a class="white-text foot" href="contactForm.html">Contact Us</a></li>
+              <li class="flink"><a class="white-text foot" href="contactForm.php">Contact Us</a></li>
               <li class="flink"><a class="white-text foot" href="product_list.php?id=LED_display&num=3">Products</a></li>
               <li class="flink"><a class="white-text foot" href="projects.html">Projects</a></li>
             </ul>
@@ -472,7 +478,7 @@ else{
     <div class="footer-copyright">
       <div class="container foot row">
       <div class="col l4 m4 s12">© 2017 Copyright Electromed. All rights reserved.</div>
-       <div class="col l4 offset-l4 m4 offset-m4 s12"> 
+       <div class="col l3 offset-l5 m3 offset-m5 s12"> 
        Designed by <a href="https://www.linkedin.com/in/abhishek-tiwari-55b994130/"><span style="color:#f5f5f5;font-size:12px;">Abhishek Tiwari</span></a>
         </div>
       </div>
@@ -480,6 +486,8 @@ else{
   </footer>
  <script>
     $(document).ready(function(){
+      if(<?php echo $done; ?>==true)
+      $('#popup').show();
         $('.rqst').click(function(){
     $('#request_for_quote').show();
     });

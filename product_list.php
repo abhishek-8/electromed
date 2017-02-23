@@ -84,7 +84,7 @@ $z=$_GET['num'];
             <li><a href="projects.html" class="dropdown-button navLink" data-activates="projects">Projects<i class="material-icons right">arrow_drop_down</i></a></li>
             <li><a href="clients.html" class="navLink">Clients</a></li>
             <li><a href="about.html" class="navLink">About</a></li>
-            <li><a href="contactForm.html" class="navLink">Contact</a></li>
+            <li><a href="contactForm.php" class="navLink">Contact</a></li>
           </ul>
           
 
@@ -94,7 +94,7 @@ $z=$_GET['num'];
             <li><a href="projects.html">Projects<i class="material-icons right">arrow_drop_down</i></a></li>
             <li><a href="clients.html">Clients</a></li>
             <li><a href="about.html">About Us</a></li>
-            <li><a href="contactForm.html">Contact Us</a></li> 
+            <li><a href="contactForm.php">Contact Us</a></li> 
           </ul>
 
           <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
@@ -320,7 +320,7 @@ $z=$_GET['num'];
             
             <ul>
               <li class="flink"><a class="white-text foot" href="about.html">About Us</a></li>
-              <li class="flink"><a class="white-text foot" href="contactForm.html">Contact Us</a></li>
+              <li class="flink"><a class="white-text foot" href="contactForm.php">Contact Us</a></li>
               <li class="flink"><a class="white-text foot" href="product_list.php?id=LED_display&num=3">Products</a></li>
               <li class="flink"><a class="white-text foot" href="projects.html">Projects</a></li>
             </ul>
@@ -361,7 +361,7 @@ $z=$_GET['num'];
     <div class="footer-copyright">
       <div class="container foot row">
       <div class="col l4 m4 s12">© 2017 Copyright Electromed. All rights reserved.</div>
-       <div class="col l4 offset-l4 m4 offset-m4 s12"> 
+       <div class="col l3 offset-l5 m3 offset-m5 s12"> 
        Designed by <a href="https://www.linkedin.com/in/abhishek-tiwari-55b994130/"><span style="color:#f5f5f5;font-size:12px;">Abhishek Tiwari</span></a>
         </div>
       </div>

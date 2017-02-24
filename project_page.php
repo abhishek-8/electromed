@@ -2,30 +2,37 @@
 $x= $_GET['id'];
 $title='';
 $location='';
+$map='';
 $yoc='2016';
 if($x=='ntpc_rihand'){
 $title='Digital Display board';
 $location='NTPC Rihand';
+$map='<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14576.191755048914!2d82.7905225946748!3d24.029374604958385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398f2c59eb5f2831%3A0x8b1e37bb4691047f!2sRihand+Power+Station!5e0!3m2!1sen!2sin!4v1487947886125" width="100%" height="370" frameborder="0" style="border:0" allowfullscreen></iframe>';
 }
 else if($x=='patna_high_court'){
 $title='Patna High Court';
 $location='Patna High Court';
+$map='<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7217.581307511619!2d85.121066579728!3d25.608762195407312!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed583f19555555%3A0x6d4c4f90b4050300!2sPatna+High+Court!5e0!3m2!1sen!2sin!4v1487948411002" width="100%" height="370" frameborder="0" style="border:0" allowfullscreen></iframe>';
 }
 else if($x=='patna_railway_station'){
 $title='Railway Station Display';
 $location='Patna';
+$map='<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3598.048553971305!2d85.13494831466679!3d25.60330278370897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed58688297a6f3%3A0x7b2558c82fd5ff4b!2sPatna+Junction!5e0!3m2!1sen!2sin!4v1487948676815" width="100%" height="370" frameborder="0" style="border:0" allowfullscreen></iframe>';
 }
 else if($x=='shakti_bhawan'){
 $title='Shakti Bhawan';
-$location='Shakti Bhawan';
+$location='Lucknow';
+$map='<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.664026429286!2d80.94674901469645!3d26.85063638315426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bfd0f27dee041%3A0x942567ca68f40ddb!2sShakti+Bhawan!5e0!3m2!1sen!2sin!4v1487948795701" width="100%" height="370" frameborder="0" style="border:0" allowfullscreen></iframe>';
 }
 else if($x=='panki'){
 $title='Panki';
-$location='Panki';
+$location='Kanpur';
+$map='<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28571.43760828574!2d80.22869768609372!3d26.474106102563944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399c37c8be4e98d9%3A0xc11b3cde1dcabdea!2sPanki%2C+Kanpur%2C+Uttar+Pradesh!5e0!3m2!1sen!2sin!4v1487948921911" width="100%" height="370" frameborder="0" style="border:0" allowfullscreen></iframe>';
 }
 else{
 $title='Coach Guidance System';
 $location='Lucknow';
+$map='<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.2779857773626!2d80.92220891469601!3d26.831109283162796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bfc4b9651ff11%3A0xb37481d152899549!2sLucknow+Charbagh+railway+station!5e0!3m2!1sen!2sin!4v1487949020259" width="100%" height="370" frameborder="0" style="border:0" allowfullscreen></iframe>';
 }
 ?>
 <!DOCTYPE html>
@@ -243,7 +250,9 @@ $location='Lucknow';
       </table>
     </div>
 </div>
-
+<div class="overlay" onClick="style.pointerEvents='none'"></div>
+        <div id="map" class="center"><?php echo $map; ?>
+        </div>
 <br><br>
 <div>
   <p class="custom-text blue white-text" style="text-align:center;font-size:22px;padding-top:2px;line-height: 60px;">OTHER PROJECTS</p> 

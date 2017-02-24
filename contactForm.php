@@ -200,7 +200,7 @@ include('submit.php');
         <div class="overlay" onClick="style.pointerEvents='none'"></div>
         <div id="map" class="center"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14234.872605313356!2d80.93281223137183!3d26.880694430260508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf8e238a7eafccff!2sELECTRO-MED!5e0!3m2!1sen!2sin!4v1484311290986" width="100%" height="370" frameborder="0" style="border:none" allowfullscreen></iframe>
         </div>
-    </div>
+ 
     
    <footer class="page-footer">
       <div class="container">

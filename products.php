@@ -18,15 +18,15 @@ else if($x=='tri_color_display'){
   $desc='TRI color display board is applauded for the features like compact design, low electricity consumption and user friendly functions.';
 }
 else{
-  $title='Uni Color Display';
-  $desc='UNI color display board is one of the most presentable for pollution & Environment control parameters.';
+  $title='Single Color Display';
+  $desc='Single color display board is one of the most presentable for pollution & Environment control parameters.';
 }
 }
 
 else if($type==2){
 $link='product_list.php?id=Product_for_office&num=4';
 if($x=='token'){
-  $title='Token';
+  $title='Digital Token';
   $desc='Token display system provides easiest way to inform the customer or patient about his / her status while waiting.';
 }
 else if($x=='digital_clock'){
@@ -34,11 +34,11 @@ else if($x=='digital_clock'){
   $desc='LED Display Clocks are widely used in factories, offices, large public areas, shopping centers, warehouses and similar large areas';
 }
 else if($x=='interest_rate_display_board'){
-  $title='Interest Rate Display Board';
+  $title='Digital Interest Rate Display Board';
   $desc='Interest Rate Display Board is ideal for banks. Date, time, deposit period, interest rate is displayed on an attractive background.';
 }
 else{
-  $title='Scrolling Display';
+  $title='Digital Scrolling Display';
   $desc='Scrolling Display is having high brightness. User can store and scroll a lot of messages. Ideal for hospitals, pathologies, banks, shops etc.';
 }
 }
@@ -50,43 +50,43 @@ $link='product_list.php?id=projects&num=3';
 else if($type==4){
 $link='product_list.php?id=Industrial_Instruments&num=10';
 if($x=='flow_monitor'){
-  $title='Flow Monitor';
+  $title='Digital Flow Monitor';
   $desc='Flow monitor is an advanced display system to monitor juice and water flow parameters. It has a Totalizer which gives error free total fluid flow over the season. Transfer from current hour to previous hour occurs when hour of clock changes (synchronized with clock)';
 }
 else if($x=='lfm'){
-  $title='Line Frequency Monitor';
+  $title='Digital Line Frequency Monitor';
   $desc='Line Frequency Monitors is used to measures power line frequency, highly accurate reading and non blinking display. Microcontroller based design. ERTL tested.';
 }
 else if($x=='megawatt_panel'){
-  $title='Mega Watt Panel';
+  $title='Digital Mega Watt Panel';
   $desc='Megawatt Panels are essential to power plants. Generation data can be displayed all over the plant.';
 }
 else if($x=='process_indicator'){
-  $title='Process Indicator';
+  $title='Digital Process Indicator';
   $desc='Process indicators are suitable for displaying process parameters like flow, temperature, level, speed, pH etc. Available in different digit heights.';
 }
 else if($x=='ph_meter'){
-  $title='Ph Meter';
+  $title='Digital Ph Meter';
   $desc='Ph meters are used to measure pH of all types of liquids. We supply the pH meters with combination electrode, electrode stand with clamp and temperature compensation.';
 }
 else if($x=='tachometer'){
-  $title='Tachometer';
+  $title='Digital Tachometer';
   $desc='Tachometers are used for monitoring the rpm of machines. The sensor is contactless. Ideal for sugar mills, heavy industries etc';
 }
 else if($x=='temp_cont'){
-  $title='Temperature Controller';
+  $title='Digital Temperature Controller';
   $desc='Temperature Controllers used in a variety of industrial applications like turbines, furnaces, blow moulding, etc. where the measurement/control of temperature is of vital importance.';
 }
 else if($x=='twilight_switches'){
-  $title='Twilight Switches';
+  $title='Digital Twilight Switches';
   $desc='Twilight switch activates with respect to the ambient light. The device as its name suggests, switches ON and OFF at dusk and dawn.';
 }
 else if($x=='industrial_display'){
-  $title='Industrial Display';
+  $title='Digital Industrial Display';
   $desc='Industrial displays are made to customer specifications. All sorts of calculations can be done internally and displayed.';
 }
 else{ 
-  $title='Weighing Scale Monitor';
+  $title='Digital Weighing Scale Monitor';
   $desc='WSM is used to monitoring the number of tippings of juice and water Fully automatic operation and convenience of remote display.';
 }
 }
@@ -97,7 +97,7 @@ else{
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
     <meta name="description" content="<?php echo $desc; ?>" />
-    <title><?php echo $title; ?></title>
+    <title><?php echo $title; ?> - Manufacturer and supplier - Electromed</title>
 
     <link rel="stylesheet" href="css/materialize.min.css">
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
@@ -128,7 +128,7 @@ else{
           <div class="col l4">
             <p class="product_name"><a href="products.php?id=true_color_display&type=1">TRUE COLOR HD SCREEN</a></p>
             <p class="product_name"><a href="products.php?id=tri_color_display&type=1">TRI COLOR DISPLAY BOARDS</a></p>
-            <p class="product_name"><a href="products.php?id=uni_color_display&type=1">UNI COLOR DISPLAY BOARDS</a></p>
+            <p class="product_name"><a href="products.php?id=uni_color_display&type=1">SINGLE COLOR DISPLAY BOARDS</a></p>
             
           </div>
           <div class="col l4">
@@ -231,7 +231,7 @@ else{
               <hr>
               <a href="products.php?id=tri_color_display&type=1" style="font-size:14px;padding-left:10%;<?php if($x=='tri_color_display') echo 'color:red'; ?>">TRI COLOR DISPLAY BOARDS</a><br>
               <hr>
-              <a href="products.php?id=uni_color_display&type=1" style="font-size:14px;padding-left:10%;<?php if($x=='uni_color_display') echo 'color:red'; ?>">UNI COLOR DISPLAY BOARDS</a><br><br>
+              <a href="products.php?id=uni_color_display&type=1" style="font-size:14px;padding-left:10%;<?php if($x=='uni_color_display') echo 'color:red'; ?>">SINGLE COLOR DISPLAY BOARDS</a><br><br>
               
             </div>
           </li>
@@ -478,9 +478,6 @@ else{
     <div class="footer-copyright">
       <div class="container foot row">
       <div class="col l4 m4 s12">© 2017 Copyright Electromed. All rights reserved.</div>
-       <div class="col l3 offset-l5 m3 offset-m5 s12"> 
-       Designed by <a href="https://www.linkedin.com/in/abhishek-tiwari-55b994130/"><span style="color:#f5f5f5;font-size:12px;">Abhishek Tiwari</span></a>
-        </div>
       </div>
     </div>
   </footer>

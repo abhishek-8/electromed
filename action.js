@@ -59,9 +59,9 @@ document.getElementById('r7d2').innerHTML ='4 mm';
 		document.getElementById('rd1').innerHTML='Compact design, low electricity consumption and user friendly functions.'+'<br><br>';
 		document.getElementById('rl1').innerHTML='<br><a href="products.php?id=tri_color_display&type=1">TRI COLOR DISPLAY BOARDS</a>';
 
-		document.getElementById('ri2').innerHTML='<a href="products.php?id=uni_color_display&type=1"><img src="photos/uni_color_display1.jpg" height="170" alt="uni color display"></a>';
+		document.getElementById('ri2').innerHTML='<a href="products.php?id=uni_color_display&type=1"><img src="photos/uni_color_display1.jpg" height="170" alt="single color display"></a>';
 		document.getElementById('rd2').innerHTML='One of the most presentable for pollution & Environment control parameters.';
-		document.getElementById('rl2').innerHTML='<br><a href="products.php?id=uni_color_display&type=1">UNI COLOR DISPLAY BOARDS</a>'		
+		document.getElementById('rl2').innerHTML='<br><a href="products.php?id=uni_color_display&type=1">SINGLE COLOR DISPLAY BOARDS</a>'		
 		$('#rel3').hide();
 		$('#rel4').hide();
 }
@@ -97,9 +97,9 @@ document.getElementById('r7d2').innerHTML ='10 mm';
 		document.getElementById('rd1').innerHTML='Advanced resolution, brightness and clarity and shows colors in their most natural tones.';
 		document.getElementById('rl1').innerHTML='<br><a href="products.php?id=true_color_display&type=1">TRUE COLOR HD SCREEN</a>'
 
-		document.getElementById('ri2').innerHTML='<a href="products.php?id=uni_color_display&type=1"><img src="photos/uni_color_display1.jpg" height="170" alt="uni color display"></a>';
+		document.getElementById('ri2').innerHTML='<a href="products.php?id=uni_color_display&type=1"><img src="photos/uni_color_display1.jpg" height="170" alt="single color display"></a>';
 		document.getElementById('rd2').innerHTML='One of the most presentable for pollution & Environment control parameters.';
-		document.getElementById('rl2').innerHTML='<br><a href="products.php?id=uni_color_display&type=1">UNI COLOR DISPLAY BOARDS</a>'
+		document.getElementById('rl2').innerHTML='<br><a href="products.php?id=uni_color_display&type=1">SINGLE COLOR DISPLAY BOARDS</a>'
 		$('#rel3').hide();
 		$('#rel4').hide();	
 }
@@ -995,9 +995,9 @@ function filter(x,z){
 		document.getElementById('d2').innerHTML='Compact design, low electricity consumption and user friendly functions.'+'<br><br>';
 		document.getElementById('l2').innerHTML='<br><a href="products.php?id=tri_color_display&type=1">TRI COLOR DISPLAY BOARDS</a>';
 
-		document.getElementById('p3').innerHTML='<a href="products.php?id=uni_color_display&type=1"><img src="photos/uni_color_display1.jpg" height="170" alt="uni color display"></a>';
+		document.getElementById('p3').innerHTML='<a href="products.php?id=uni_color_display&type=1"><img src="photos/uni_color_display1.jpg" height="170" alt="single color display"></a>';
 		document.getElementById('d3').innerHTML='One of the most presentable for pollution & Environment control parameters.';
-		document.getElementById('l3').innerHTML='<br><a href="products.php?id=uni_color_display&type=1">UNI COLOR DISPLAY BOARDS</a>'	
+		document.getElementById('l3').innerHTML='<br><a href="products.php?id=uni_color_display&type=1">SINGLE COLOR DISPLAY BOARDS</a>'	
 	}
 
 	else if(x=='Product_for_office') {

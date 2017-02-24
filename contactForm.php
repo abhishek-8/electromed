@@ -8,7 +8,7 @@ include('submit.php');
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-        <title>Contact</title>
+        <title>Contact - Manufacturer and supplier of LED display and Digital Instruments - Electromed</title>
         <!-- CSS  -->
         <link rel="stylesheet" href="css/materialize.min.css">
         <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
@@ -30,7 +30,7 @@ include('submit.php');
                     <div class="col l4">
                         <p class="product_name"><a href="products.php?id=true_color_display&type=1">TRUE COLOR HD SCREEN</a></p>
                         <p class="product_name"><a href="products.php?id=tri_color_display&type=1">TRI COLOR DISPLAY BOARDS</a></p>
-                        <p class="product_name"><a href="products.php?id=uni_color_display&type=1">UNI COLOR DISPLAY BOARDS</a></p>
+                        <p class="product_name"><a href="products.php?id=uni_color_display&type=1">SINGLE COLOR DISPLAY BOARDS</a></p>
                         
                     </div>
                     <div class="col l4">
@@ -257,9 +257,6 @@ include('submit.php');
     <div class="footer-copyright">
       <div class="container foot row">
       <div class="col l4 m4 s12">© 2017 Copyright Electromed. All rights reserved.</div>
-       <div class="col l3 offset-l5 m3 offset-m5 s12"> 
-       Designed by <a href="https://www.linkedin.com/in/abhishek-tiwari-55b994130/"><span style="color:#f5f5f5;font-size:12px;">Abhishek Tiwari</span></a>
-        </div>
       </div>
     </div>
   </footer>

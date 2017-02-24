@@ -1,18 +1,32 @@
 <?php
 $x= $_GET['id'];
 $title='';
-if($x=='ntpc_rihand')
-$title='NTPC Rihand';
-else if($x=='patna_high_court')
+$location='';
+$yoc='2016';
+if($x=='ntpc_rihand'){
+$title='Digital Display board';
+$location='NTPC Rihand';
+}
+else if($x=='patna_high_court'){
 $title='Patna High Court';
-else if($x=='patna_railway_station')
-$title='Patna Railway Station';
-else if($x=='shakti_bhawan')
+$location='Patna High Court';
+}
+else if($x=='patna_railway_station'){
+$title='Railway Station Display';
+$location='Patna';
+}
+else if($x=='shakti_bhawan'){
 $title='Shakti Bhawan';
-else if($x=='panki')
+$location='Shakti Bhawan';
+}
+else if($x=='panki'){
 $title='Panki';
-else
+$location='Panki';
+}
+else{
 $title='Coach Guidance System';
+$location='Lucknow';
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -43,7 +57,7 @@ $title='Coach Guidance System';
           <div class="col l4">
             <p class="product_name"><a href="products.php?id=true_color_display&type=1">TRUE COLOR HD SCREEN</a></p>
             <p class="product_name"><a href="products.php?id=tri_color_display&type=1">TRI COLOR DISPLAY BOARDS</a></p>
-            <p class="product_name"><a href="products.php?id=uni_color_display&type=1">UNI COLOR DISPLAY BOARDS</a></p>
+            <p class="product_name"><a href="products.php?id=uni_color_display&type=1">SINGLE COLOR DISPLAY BOARDS</a></p>
             
           </div>
           <div class="col l4">
@@ -163,17 +177,17 @@ $title='Coach Guidance System';
           
          <table class="striped" style="line-height:2%">
           <tr>
-            <td style="padding:4px"> <p class="custom-text" style="color:#263238;font-size:15px;">Location</p> 
+            <td style="padding:4px"><p class="custom-text" style="color:#263238;font-size:15px;">Location</p> 
             </td>
           </tr>
           <tr>
-            <td style="padding:4px"> <p class="custom-text " style="color:#263238;font-size:18px;">Lucknow</p></td>
+            <td style="padding:4px"><p class="custom-text" style="color:#263238;font-size:17px;"><?php echo $location; ?></p></td>
           </tr>
           <tr>
             <td style="padding:4px"><p class="custom-text " style="color:#263238;font-size:15px;">Year of Completion</p></td>
           </tr>
           <tr>
-            <td style="padding:4px"> <p class="custom-text" style="color:#263238;font-size:18px;">2016</p> </td>
+            <td style="padding:4px"><p class="custom-text" style="color:#263238;font-size:17px;"><?php echo $yoc; ?></p></td>
           </tr>
           </table>
           </div>
@@ -342,9 +356,6 @@ $title='Coach Guidance System';
     <div class="footer-copyright">
       <div class="container foot row">
       <div class="col l4 m4 s12">© 2017 Copyright Electromed. All rights reserved.</div>
-       <div class="col l3 offset-l5 m3 offset-m5 s12"> 
-       Designed by <a href="https://www.linkedin.com/in/abhishek-tiwari-55b994130/"><span style="color:#f5f5f5;font-size:12px;">Abhishek Tiwari</span></a>
-        </div>
       </div>
     </div>
   </footer>

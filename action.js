@@ -147,7 +147,7 @@ document.getElementById('ri1').innerHTML='<a href="products.php?id=true_color_di
 
 }
 
-else if(x=='token') {
+else if(x=='token_display') {
 document.getElementById('pre2').innerHTML='Products for Office';
 
 
@@ -206,9 +206,9 @@ cell1.style.lineHeight="32px";
 document.getElementById('r5d1').innerHTML ='Clock format';
 document.getElementById('r5d2').innerHTML ='12 Hrs. or 24 Hrs. (HH:MM:SECS or HH:MM)';
 
-document.getElementById('ri1').innerHTML='<a href="products.php?id=token&type=2"><img src="photos/token1.jpg" height="170" alt="token"></a>';
+document.getElementById('ri1').innerHTML='<a href="products.php?id=token_display&type=2"><img src="photos/token_display1.jpg" height="170" alt="token_display"></a>';
 		document.getElementById('rd1').innerHTML='Provides easiest way to inform the customer or patient about his / her status while waiting.';
-		document.getElementById('rl1').innerHTML='<br><a href="products.php?id=token&type=2">TOKEN DISPLAY</a>'
+		document.getElementById('rl1').innerHTML='<br><a href="products.php?id=token_display&type=2">TOKEN DISPLAY</a>'
 
 		document.getElementById('ri2').innerHTML='<a href="products.php?id=interest_rate_display_board&type=2"><img src="photos/interest_rate_display_board1.jpg" height="170" alt="interest rate display board"></a>';
 		document.getElementById('rd2').innerHTML='Date, time, deposit period, interest rate is displayed on an attractive background.';
@@ -248,9 +248,9 @@ cell1.style.lineHeight="32px";
 document.getElementById('r5d1').innerHTML ='No. of lines';
 document.getElementById('r5d2').innerHTML ='12-16';
 
-document.getElementById('ri1').innerHTML='<a href="products.php?id=token&type=2"><img src="photos/token1.jpg" height="170" alt="token"><a/>';
+document.getElementById('ri1').innerHTML='<a href="products.php?id=token_display&type=2"><img src="photos/token_display1.jpg" height="170" alt="token_display"><a/>';
 		document.getElementById('rd1').innerHTML='Provides easiest way to inform the customer or patient about his / her status while waiting.';
-		document.getElementById('rl1').innerHTML='<br><a href="products.php?id=token&type=2">TOKEN DISPLAY</a>'
+		document.getElementById('rl1').innerHTML='<br><a href="products.php?id=token_display&type=2">TOKEN DISPLAY</a>'
 
 		document.getElementById('ri2').innerHTML='<a href="products.php?id=digital_clock&type=2"><img src="photos/digital_clock1.jpg" height="170" alt="digital clock"></a>';
 		document.getElementById('rd2').innerHTML='Used in factories, offices, large public areas, shopping centers, warehouses and similar large areas.';
@@ -284,9 +284,9 @@ document.getElementById('r6d2').innerHTML ='<p class="bullets" style="display:in
 document.getElementById('r7d1').innerHTML ='Language supported: ';
 document.getElementById('r7d2').innerHTML ='English/Hindi';
 
-document.getElementById('ri1').innerHTML='<a href="products.php?id=token&type=2"><img src="photos/token1.jpg" height="170" alt="token"></a>';
+document.getElementById('ri1').innerHTML='<a href="products.php?id=token_display&type=2"><img src="photos/token_display1.jpg" height="170" alt="token_display"></a>';
 		document.getElementById('rd1').innerHTML='Provides easiest way to inform the customer or patient about his / her status while waiting.';
-		document.getElementById('rl1').innerHTML='<br><a href="products.php?id=token&type=2">TOKEN DISPLAY</a>'
+		document.getElementById('rl1').innerHTML='<br><a href="products.php?id=token_display&type=2">TOKEN DISPLAY</a>'
 
 		document.getElementById('ri2').innerHTML='<a href="products.php?id=digital_clock&type=2"><img src="photos/digital_clock1.jpg" height="170" alt="digital clock"></a>';
 		document.getElementById('rd2').innerHTML='Used in factories, offices, large public areas, shopping centers, warehouses and similar large areas.';
@@ -1003,9 +1003,9 @@ function filter(x,z){
 	else if(x=='Product_for_office') {
 		y='Product for Office';
 		
-		document.getElementById('p1').innerHTML='<a href="products.php?id=token&type=2"><img src="photos/token1.jpg" height="170" alt="token"></a>';
+		document.getElementById('p1').innerHTML='<a href="products.php?id=token_display&type=2"><img src="photos/token_display1.jpg" height="170" alt="token_display"></a>';
 		document.getElementById('d1').innerHTML='Provides easiest way to inform the customer or patient about his/her status while waiting.';
-		document.getElementById('l1').innerHTML='<br><a href="products.php?id=token&type=2">TOKEN DISPLAY<br><br></a>'
+		document.getElementById('l1').innerHTML='<br><a href="products.php?id=token_display&type=2">TOKEN DISPLAY<br><br></a>'
 
 		document.getElementById('p2').innerHTML='<a href="products.php?id=digital_clock&type=2"><img src="photos/digital_clock1.jpg" height="170" alt="digital clock"></a>';
 		document.getElementById('d2').innerHTML='Used in factories, offices, large public areas, shopping centers, warehouses and similar large areas.';

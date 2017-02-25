@@ -68,7 +68,7 @@ $map='<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.27
             
           </div>
           <div class="col l4">
-            <p class="product_name"><a href="products.php?id=token&type=2">TOKEN DISPLAY</a></p>
+            <p class="product_name"><a href="products.php?id=token_display&type=2">TOKEN DISPLAY</a></p>
             <p class="product_name"><a href="products.php?id=digital_clock&type=2">DIGITAL CLOCKS</a></p>
             <p class="product_name"><a href="products.php?id=interest_rate_display_board&type=2">INTEREST RATE DISPLAY BOARD</a></p>
             <p class="product_name"><a href="products.php?id=scrolling_display&type=2">SCROLLING DISPLAY</a></p>
@@ -112,19 +112,19 @@ $map='<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.27
           <ul class="right hide-on-med-and-down">
             <li><a href="index.html" class="navLink">Home</a></li>
              <li><a href="product_list.php?id=LED_display&num=3" class="dropdown-button navLink" data-activates="products">Products<i class="material-icons right">arrow_drop_down</i></a></li>
-            <li class="active"><a href="projects.html" class="dropdown-button navLink" data-activates="projects">Projects<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li class="active"><a href="project_list.html" class="dropdown-button navLink" data-activates="projects">Projects<i class="material-icons right">arrow_drop_down</i></a></li>
             <li><a href="clients.html" class="navLink">Clients</a></li>
             <li><a href="about.html" class="navLink">About</a></li>
-            <li><a href="contactForm.php" class="navLink">Contact</a></li>
+            <li><a href="contact.php" class="navLink">Contact</a></li>
           </ul>
           
           <ul id="nav-mobile" class="side-nav">
             <li><a href="index.html">Home</a></li>
             <li><a href="product_list.php?id=LED_display&num=3">Products<i class="material-icons right">arrow_drop_down</i></a></li>
-            <li class="active"><a href="projects.html">Projects<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li class="active"><a href="project_list.html">Projects<i class="material-icons right">arrow_drop_down</i></a></li>
             <li><a href="clients.html">Clients</a></li>
             <li><a href="about.html">About Us</a></li>
-            <li><a href="contactForm.php">Contact Us</a></li> 
+            <li><a href="contact.php">Contact Us</a></li> 
           </ul>
 
           <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
@@ -136,7 +136,7 @@ $map='<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.27
 
 <div class="row">
         <div class="col l2 m2 s12">
-                    <a href="projects.html" class="btn blue darken-2 category-btn" onclick="Materialize.showStaggeredList('#staggered-test')" style="width:100%;">Projects</a>
+                    <a href="project_list.html" class="btn blue darken-2 category-btn" onclick="Materialize.showStaggeredList('#staggered-test')" style="width:100%;">Projects</a>
                     <ul id="staggered-test" class="collapsible" data-collapsible="accordion">
                          <li style="opacity: 0;">
                             <div class="collapsible-header active">Featured Projects</div>
@@ -159,7 +159,7 @@ $map='<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.27
 
 <div class="col l10 m10 s12"> 
 <div class="nav-wrapper container">
-          <a href="projects.html" class="breadcrumb black-text" id="pre2">Projects</a>
+          <a href="project_list.html" class="breadcrumb black-text" id="pre2">Projects</a>
           <a href="#" class="breadcrumb black-text" id="curr"><?php echo $title; ?></a>
       </div> 
 <div class="row">  
@@ -324,9 +324,9 @@ $map='<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.27
             
             <ul>
               <li class="flink"><a class="white-text foot" href="about.html">About Us</a></li>
-              <li class="flink"><a class="white-text foot" href="contactForm.php">Contact Us</a></li>
+              <li class="flink"><a class="white-text foot" href="contact.php">Contact Us</a></li>
               <li class="flink"><a class="white-text foot" href="product_list.php?id=LED_display&num=3">Products</a></li>
-              <li class="flink"><a class="white-text foot" href="projects.html">Projects</a></li>
+              <li class="flink"><a class="white-text foot" href="project_list.html">Projects</a></li>
             </ul>
           </div>
           <div class="col l3 s12 m3">

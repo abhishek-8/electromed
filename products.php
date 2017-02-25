@@ -25,7 +25,7 @@ else{
 
 else if($type==2){
 $link='product_list.php?id=Product_for_office&num=4';
-if($x=='token'){
+if($x=='token_display'){
   $title='Digital Token';
   $desc='Token display system provides easiest way to inform the customer or patient about his / her status while waiting.';
 }
@@ -53,7 +53,7 @@ if($x=='flow_monitor'){
   $title='Digital Flow Monitor';
   $desc='Flow monitor is an advanced display system to monitor juice and water flow parameters. It has a Totalizer which gives error free total fluid flow over the season. Transfer from current hour to previous hour occurs when hour of clock changes (synchronized with clock)';
 }
-else if($x=='lfm'){
+else if($x=='line_frequency_monitor'){
   $title='Digital Line Frequency Monitor';
   $desc='Line Frequency Monitors is used to measures power line frequency, highly accurate reading and non blinking display. Microcontroller based design. ERTL tested.';
 }
@@ -73,9 +73,9 @@ else if($x=='tachometer'){
   $title='Digital Tachometer';
   $desc='Tachometers are used for monitoring the rpm of machines. The sensor is contactless. Ideal for sugar mills, heavy industries etc';
 }
-else if($x=='temp_cont'){
+else if($x=='temperature_controller'){
   $title='Digital Temperature Controller';
-  $desc='Temperature Controllers used in a variety of industrial applications like turbines, furnaces, blow moulding, etc. where the measurement/control of temperature is of vital importance.';
+  $desc='Temperature Controllers are used in a variety of industrial applications like turbines, furnaces, blow moulding, etc. where the measurement/control of temperature is of vital importance.';
 }
 else if($x=='twilight_switches'){
   $title='Digital Twilight Switches';
@@ -87,7 +87,7 @@ else if($x=='industrial_display'){
 }
 else{ 
   $title='Digital Weighing Scale Monitor';
-  $desc='WSM is used to monitoring the number of tippings of juice and water Fully automatic operation and convenience of remote display.';
+  $desc='Weighing Scale Monitor is used to monitoring the number of tippings of juice and water Fully automatic operation and convenience of remote display.';
 }
 }
 ?>
@@ -132,7 +132,7 @@ else{
             
           </div>
           <div class="col l4">
-            <p class="product_name"><a href="products.php?id=token&type=2">TOKEN DISPLAY</a></p>
+            <p class="product_name"><a href="products.php?id=token_display&type=2">TOKEN DISPLAY</a></p>
             <p class="product_name"><a href="products.php?id=digital_clock&type=2">DIGITAL CLOCKS</a></p>
             <p class="product_name"><a href="products.php?id=interest_rate_display_board&type=2">INTEREST RATE DISPLAY BOARD</a></p>
             <p class="product_name"><a href="products.php?id=scrolling_display&type=2">SCROLLING DISPLAY</a></p>
@@ -174,19 +174,19 @@ else{
           <ul class="right hide-on-med-and-down">
             <li><a href="index.html" class="navLink">Home</a></li>
              <li class="active"><a href="product_list.php?id=LED_display&num=3" class="dropdown-button navLink" data-activates="products">Products<i class="material-icons right">arrow_drop_down</i></a></li>
-            <li><a href="projects.html" class="dropdown-button navLink" data-activates="projects">Projects<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a href="project_list.html" class="dropdown-button navLink" data-activates="projects">Projects<i class="material-icons right">arrow_drop_down</i></a></li>
             <li><a href="clients.html" class="navLink">Clients</a></li>
             <li><a href="about.html" class="navLink">About</a></li>
-            <li><a href="contactForm.php" class="navLink">Contact</a></li>
+            <li><a href="contact.php" class="navLink">Contact</a></li>
           </ul>
           
           <ul id="nav-mobile" class="side-nav">
             <li><a href="index.html">Home</a></li>
             <li class="active"><a href="product_list.php?id=LED_display&num=3">Products<i class="material-icons right">arrow_drop_down</i></a></li>
-            <li><a href="projects.html">Projects<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a href="project_list.html">Projects<i class="material-icons right">arrow_drop_down</i></a></li>
             <li><a href="clients.html">Clients</a></li>
             <li><a href="about.html">About Us</a></li>
-            <li><a href="contactForm.php">Contact Us</a></li> 
+            <li><a href="contact.php">Contact Us</a></li> 
           </ul>
           <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
         </div>
@@ -239,7 +239,7 @@ else{
             <div class="collapsible-header <?php if($type==2) echo 'active'; ?>">Product for Office</div>
             <div class="collapsible-body container-fluid" style="line-height:72%;"><br>
               
-              <a href="products.php?id=token&type=2" style="font-size:14px;padding-left:10%;<?php if($x=='token') echo 'color:red'; ?>">TOKEN DISPLAY</a><br>
+              <a href="products.php?id=token_display&type=2" style="font-size:14px;padding-left:10%;<?php if($x=='token_display') echo 'color:red'; ?>">TOKEN DISPLAY</a><br>
               <hr>
               <a href="products.php?id=digital_clock&type=2" style="font-size:14px;padding-left:10%;<?php if($x=='digital_clock') echo 'color:red'; ?>">DIGITAL CLOCKS</a><br>
               <hr>
@@ -254,7 +254,7 @@ else{
             <div class="collapsible-body container-fluid" style="line-height:72%;"><br>
               <a href="products.php?id=flow_monitor&type=4" style="font-size:14px;padding-left:10%;<?php if($x=='flow_monitor') echo 'color:red'; ?>">FLOW MONITOR</a><br>
               <hr>
-              <a href="products.php?id=lfm&type=4" style="font-size:14px;padding-left:10%;<?php if($x=='lfm') echo 'color:red'; ?>">LINE FREQUENCY MONITOR</a><br>
+              <a href="products.php?id=line_frequency_monitor&type=4" style="font-size:14px;padding-left:10%;<?php if($x=='line_frequency_monitor') echo 'color:red'; ?>">LINE FREQUENCY MONITOR</a><br>
               <hr>
               <a href="products.php?id=megawatt_panel&type=4" style="font-size:14px;padding-left:10%;<?php if($x=='megawatt_panel') echo 'color:red'; ?>">MEGA WATT PANEL</a><br>
               <hr>
@@ -264,13 +264,13 @@ else{
               <hr>
               <a href="products.php?id=tachometer&type=4" style="font-size:14px;padding-left:10%;<?php if($x=='tachometer') echo 'color:red'; ?>">TACHOMETER</a><br>
               <hr>
-              <a href="products.php?id=temp_cont&type=4" style="font-size:14px;padding-left:10%;<?php if($x=='temp_cont') echo 'color:red'; ?>">TEMPERATURE CONTROLLER</a><br>
+              <a href="products.php?id=temperature_controller&type=4" style="font-size:14px;padding-left:10%;<?php if($x=='temperature_controller') echo 'color:red'; ?>">TEMPERATURE CONTROLLER</a><br>
               <hr>
               <a href="products.php?id=twilight_switches&type=4" style="font-size:14px;padding-left:10%;<?php if($x=='twilight_switches') echo 'color:red'; ?>">TWILIGHT SWITCHES</a><br>
               <hr>
               <a href="products.php?id=industrial_display&type=4" style="font-size:14px;padding-left:10%;<?php if($x=='industrial_display') echo 'color:red'; ?>">INDUSTRIAL DISPLAY</a><br>
               <hr>
-              <a href="products.php?id=wsm&type=4" style="font-size:14px;padding-left:10%;<?php if($x=='wsm') echo 'color:red'; ?>">WEIGHING SCALE MONITOR</a><br><br>
+              <a href="products.php?id=weighing_scale_monitor&type=4" style="font-size:14px;padding-left:10%;<?php if($x=='weighing_scale_monitor') echo 'color:red'; ?>">WEIGHING SCALE MONITOR</a><br><br>
             </div>
           </li>
         </ul>
@@ -437,9 +437,9 @@ else{
             
             <ul>
               <li class="flink"><a class="white-text foot" href="about.html">About Us</a></li>
-              <li class="flink"><a class="white-text foot" href="contactForm.php">Contact Us</a></li>
+              <li class="flink"><a class="white-text foot" href="contact.php">Contact Us</a></li>
               <li class="flink"><a class="white-text foot" href="product_list.php?id=LED_display&num=3">Products</a></li>
-              <li class="flink"><a class="white-text foot" href="projects.html">Projects</a></li>
+              <li class="flink"><a class="white-text foot" href="project_list.html">Projects</a></li>
             </ul>
           </div>
           <div class="col l3 s12 m3">

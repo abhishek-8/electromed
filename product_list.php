@@ -37,7 +37,7 @@ $z=$_GET['num'];
             
           </div>
           <div class="col l4">
-            <p class="product_name"><a href="products.php?id=token&type=2">TOKEN DISPLAY</a></p>
+            <p class="product_name"><a href="products.php?id=token_display&type=2">TOKEN DISPLAY</a></p>
             <p class="product_name"><a href="products.php?id=digital_clock&type=2">DIGITAL CLOCKS</a></p>
             <p class="product_name"><a href="products.php?id=interest_rate_display_board&type=2">INTEREST RATE DISPLAY BOARD</a></p>
             <p class="product_name"><a href="products.php?id=scrolling_display&type=2">SCROLLING DISPLAY</a></p>
@@ -81,20 +81,20 @@ $z=$_GET['num'];
           <ul class="right hide-on-med-and-down">
             <li><a href="index.html" class="navLink">Home</a></li>
              <li class="active"><a href="product_list.php?id=LED_display&num=3" class="dropdown-button navLink" data-activates="products">Products<i class="material-icons right">arrow_drop_down</i></a></li>
-            <li><a href="projects.html" class="dropdown-button navLink" data-activates="projects">Projects<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a href="project_list.html" class="dropdown-button navLink" data-activates="projects">Projects<i class="material-icons right">arrow_drop_down</i></a></li>
             <li><a href="clients.html" class="navLink">Clients</a></li>
             <li><a href="about.html" class="navLink">About</a></li>
-            <li><a href="contactForm.php" class="navLink">Contact</a></li>
+            <li><a href="contact.php" class="navLink">Contact</a></li>
           </ul>
           
 
           <ul id="nav-mobile" class="side-nav">
             <li><a href="index.html">Home</a></li>
             <li class="active"><a href="product_list.php?id=LED_display&num=3">Products<i class="material-icons right">arrow_drop_down</i></a></li>
-            <li><a href="projects.html">Projects<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a href="project_list.html">Projects<i class="material-icons right">arrow_drop_down</i></a></li>
             <li><a href="clients.html">Clients</a></li>
             <li><a href="about.html">About Us</a></li>
-            <li><a href="contactForm.php">Contact Us</a></li> 
+            <li><a href="contact.php">Contact Us</a></li> 
           </ul>
 
           <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
@@ -124,7 +124,7 @@ $z=$_GET['num'];
                             <div class="collapsible-header <?php if($x=='Product_for_office') echo 'active';  ?>" onclick="filter('Product_for_office',4)" >Product for Office</div>
                             <div class="collapsible-body container-fluid" style="line-height:72%;"><br>
                                 
-                                <a href="products.php?id=token&type=2" style="font-size:14px;padding-left:10%">TOKEN DISPLAY</a><br>
+                                <a href="products.php?id=token_display&type=2" style="font-size:14px;padding-left:10%">TOKEN DISPLAY</a><br>
                                 <hr>
                                 <a href="products.php?id=digital_clock&type=2" style="font-size:14px;padding-left:10%">DIGITAL CLOCKS</a><br>
                                 <hr>
@@ -139,7 +139,7 @@ $z=$_GET['num'];
                             <div class="collapsible-body container-fluid" style="line-height:72%;"><br>
                                 <a href="products.php?id=flow_monitor&type=4" style="font-size:14px;padding-left:10%">FLOW MONITOR</a><br>
                                 <hr>
-                                <a href="products.php?id=lfm&type=4" style="font-size:14px;padding-left:10%">LINE FREQUENCY MONITOR</a><br>
+                                <a href="products.php?id=line_frequency_monitor&type=4" style="font-size:14px;padding-left:10%">LINE FREQUENCY MONITOR</a><br>
                                 <hr>
                                 <a href="products.php?id=megawatt_panel&type=4" style="font-size:14px;padding-left:10%">MEGA WATT PANEL</a><br>
                                 <hr>
@@ -149,13 +149,13 @@ $z=$_GET['num'];
                                 <hr>
                                 <a href="products.php?id=tachometer&type=4" style="font-size:14px;padding-left:10%">TACHOMETER</a><br>
                                 <hr>
-                                <a href="products.php?id=temp_cont&type=4" style="font-size:14px;padding-left:10%">TEMPERATURE CONTROLLER</a><br>
+                                <a href="products.php?id=temperature_controller&type=4" style="font-size:14px;padding-left:10%">TEMPERATURE CONTROLLER</a><br>
                                 <hr>
                                 <a href="products.php?id=twilight_switches&type=4" style="font-size:14px;padding-left:10%">TWILIGHT SWITCHES</a><br>
                                 <hr>
                                 <a href="products.php?id=industrial_display&type=4" style="font-size:14px;padding-left:10%">INDUSTRIAL DISPLAY</a><br>
                                 <hr>
-                                <a href="products.php?id=wsm&type=4" style="font-size:14px;padding-left:10%">WEIGHING SCALE MONITOR</a><br><br>
+                                <a href="products.php?id=weighing_scale_monitor&type=4" style="font-size:14px;padding-left:10%">WEIGHING SCALE MONITOR</a><br><br>
                             </div>
                         </li>
                     </ul>
@@ -320,9 +320,9 @@ $z=$_GET['num'];
             
             <ul>
               <li class="flink"><a class="white-text foot" href="about.html">About Us</a></li>
-              <li class="flink"><a class="white-text foot" href="contactForm.php">Contact Us</a></li>
+              <li class="flink"><a class="white-text foot" href="contact.php">Contact Us</a></li>
               <li class="flink"><a class="white-text foot" href="product_list.php?id=LED_display&num=3">Products</a></li>
-              <li class="flink"><a class="white-text foot" href="projects.html">Projects</a></li>
+              <li class="flink"><a class="white-text foot" href="project_list.html">Projects</a></li>
             </ul>
           </div>
           <div class="col l3 s12 m3">

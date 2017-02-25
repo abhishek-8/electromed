@@ -328,9 +328,9 @@ document.getElementById('r6d1').innerHTML ='Real time clock';
 document.getElementById('r6d2').innerHTML ='hrs. & mins. With inbuilt battery; 25mm high';
 
 
-		document.getElementById('ri4').innerHTML='<a href="products.php?id=lfm&type=4" ><img src="photos/lfm1.jpg" height="170" alt="line frequency monitor"></a>';
+		document.getElementById('ri4').innerHTML='<a href="products.php?id=line_frequency_monitor&type=4" ><img src="photos/line_frequency_monitor1.jpg" height="170" alt="line frequency monitor"></a>';
 		document.getElementById('rd4').innerHTML='Measures power line frequency, highly accurate reading and non blinking display. Microcontroller based design. ERTL tested.';
-		document.getElementById('rl4').innerHTML='<br><a href="products.php?id=lfm&type=4" >Line Frequency Monitor</a>'
+		document.getElementById('rl4').innerHTML='<br><a href="products.php?id=line_frequency_monitor&type=4" >Line Frequency Monitor</a>'
 
 		document.getElementById('ri2').innerHTML='<a href="products.php?id=megawatt_panel&type=4"><img src="photos/megawatt_panel1.jpg" height="170" alt="megawatt panel"></a>';
 		document.getElementById('rd2').innerHTML='Essential to power plants. Generation data can be displayed all over the plant.';
@@ -345,7 +345,7 @@ document.getElementById('r6d2').innerHTML ='hrs. & mins. With inbuilt battery; 2
 		document.getElementById('rl1').innerHTML='<br><a href="products.php?id=twilight_switches&type=4">Twilight Switch</a>'
 }
 
-else if(x=='lfm'){
+else if(x=='line_frequency_monitor'){
 document.getElementById('pre2').innerHTML='Industrial Instruments';
 
 
@@ -405,9 +405,9 @@ document.getElementById('ri1').innerHTML='<a href="products.php?id=flow_monitor&
 		document.getElementById('rd1').innerHTML='Advanced display system to monitor juice and water flow parameters.';
 		document.getElementById('rl1').innerHTML='<br><a href="products.php?id=flow_monitor&type=4">Flow Monitor</a>'
 
-		document.getElementById('ri2').innerHTML='<a href="products.php?id=lfm&type=4"><img src="photos/lfm1.jpg" height="170" alt="line frequency monitor"></a>';
+		document.getElementById('ri2').innerHTML='<a href="products.php?id=line_frequency_monitor&type=4"><img src="photos/line_frequency_monitor1.jpg" height="170" alt="line frequency monitor"></a>';
 		document.getElementById('rd2').innerHTML='Measures power line frequency, highly accurate reading and non blinking display. Microcontroller based design. ERTL tested.';
-		document.getElementById('rl2').innerHTML='<br><a href="products.php?id=lfm&type=4">Line Frequency Monitor</a>'
+		document.getElementById('rl2').innerHTML='<br><a href="products.php?id=line_frequency_monitor&type=4">Line Frequency Monitor</a>'
 
 		document.getElementById('ri3').innerHTML='<a href="products.php?id=process_indicator&type=4"><img src="photos/process_indicator1.jpg" height="170" alt="process indicator"></a>';
 		document.getElementById('rd3').innerHTML='Suitable for displaying process parameters like flow, temperature, level, speed, pH etc. Available in different digit heights.';
@@ -454,9 +454,9 @@ document.getElementById('r7d2').innerHTML ='12.5mm, 25mm, 50mm, 100mm, 150mm, 20
 		document.getElementById('rd1').innerHTML='Advanced display system to monitor juice and water flow parameters.';
 		document.getElementById('rl1').innerHTML='<br><a href="products.php?id=flow_monitor&type=4">Flow Monitor</a>'
 
-		document.getElementById('ri2').innerHTML='<a href="products.php?id=lfm&type=4"><img src="photos/lfm1.jpg" height="170" alt="line frequency monitor"></a>';
+		document.getElementById('ri2').innerHTML='<a href="products.php?id=line_frequency_monitor&type=4"><img src="photos/line_frequency_monitor1.jpg" height="170" alt="line frequency monitor"></a>';
 		document.getElementById('rd2').innerHTML='Measures power line frequency, highly accurate reading and non blinking display. Microcontroller based design. ERTL tested.';
-		document.getElementById('rl2').innerHTML='<br><a href="products.php?id=lfm&type=4">Line Frequency Monitor</a>'
+		document.getElementById('rl2').innerHTML='<br><a href="products.php?id=line_frequency_monitor&type=4">Line Frequency Monitor</a>'
 
 		document.getElementById('ri3').innerHTML='<a href="products.php?id=megawatt_panel&type=4"><img src="photos/megawatt_panel1.jpg" height="170" alt="megawatt panel"></a>';
 		document.getElementById('rd3').innerHTML='Essential to power plants. Generation data can be displayed all over the plant.';
@@ -503,9 +503,9 @@ document.getElementById('ri1').innerHTML='<a href="products.php?id=flow_monitor&
 		document.getElementById('rd1').innerHTML='Advanced display system to monitor juice and water flow parameters.';
 		document.getElementById('rl1').innerHTML='<br><a href="products.php?id=flow_monitor&type=4">Flow Monitor</a>'
 
-		document.getElementById('ri2').innerHTML='<a href="products.php?id=lfm&type=4" ><img src="photos/lfm1.jpg" height="170" alt="line frequency monitor"></a>';
+		document.getElementById('ri2').innerHTML='<a href="products.php?id=line_frequency_monitor&type=4" ><img src="photos/line_frequency_monitor1.jpg" height="170" alt="line frequency monitor"></a>';
 		document.getElementById('rd2').innerHTML='Measures power line frequency, highly accurate reading and non blinking display. Microcontroller based design. ERTL tested.';
-		document.getElementById('rl2').innerHTML='<br><a href="products.php?id=lfm&type=4" >Line Frequency Monitor</a>'
+		document.getElementById('rl2').innerHTML='<br><a href="products.php?id=line_frequency_monitor&type=4" >Line Frequency Monitor</a>'
 
 		document.getElementById('ri3').innerHTML='<a href="products.php?id=megawatt_panel&type=4"><img src="photos/megawatt_panel1.jpg" height="170" alt="megawatt panel"></a>';
 		document.getElementById('rd3').innerHTML='Essential to power plants. Generation data can be displayed all over the plant.';
@@ -554,9 +554,9 @@ document.getElementById('ri1').innerHTML='<a href="products.php?id=flow_monitor&
 		document.getElementById('rd1').innerHTML='Advanced display system to monitor juice and water flow parameters.';
 		document.getElementById('rl1').innerHTML='<br><a href="products.php?id=flow_monitor&type=4">Flow Monitor</a>'
 
-		document.getElementById('ri2').innerHTML='<a href="products.php?id=lfm&type=4"><img src="photos/lfm1.jpg" height="170" alt="line frequency monitor"></a>';
+		document.getElementById('ri2').innerHTML='<a href="products.php?id=line_frequency_monitor&type=4"><img src="photos/line_frequency_monitor1.jpg" height="170" alt="line frequency monitor"></a>';
 		document.getElementById('rd2').innerHTML='Measures power line frequency, highly accurate reading and non blinking display. Microcontroller based design. ERTL tested.';
-		document.getElementById('rl2').innerHTML='<br><a href="products.php?id=lfm&type=4">Line Frequency Monitor</a>'
+		document.getElementById('rl2').innerHTML='<br><a href="products.php?id=line_frequency_monitor&type=4">Line Frequency Monitor</a>'
 
 		document.getElementById('ri3').innerHTML='<a href="products.php?id=megawatt_panel&type=4"><img src="photos/megawatt_panel1.jpg" height="170" alt="megawatt panel"></a>';
 		document.getElementById('rd3').innerHTML='Essential to power plants. Generation data can be displayed all over the plant.';
@@ -568,7 +568,7 @@ document.getElementById('ri1').innerHTML='<a href="products.php?id=flow_monitor&
 
 }
 
-else if(x=='temp_cont') {
+else if(x=='temperature_controller') {
 document.getElementById('pre2').innerHTML='Industrial Instruments';
 
 
@@ -584,9 +584,9 @@ document.getElementById('ri1').innerHTML='<a href="products.php?id=flow_monitor&
 		document.getElementById('rd1').innerHTML='Advanced display system to monitor juice and water flow parameters.';
 		document.getElementById('rl1').innerHTML='<br><a href="products.php?id=flow_monitor&type=4">Flow Monitor</a>'
 
-		document.getElementById('ri2').innerHTML='<a href="products.php?id=lfm&type=4"><img src="photos/lfm1.jpg" height="170" alt="line frequency monitor"></a>';
+		document.getElementById('ri2').innerHTML='<a href="products.php?id=line_frequency_monitor&type=4"><img src="photos/line_frequency_monitor1.jpg" height="170" alt="line frequency monitor"></a>';
 		document.getElementById('rd2').innerHTML='Measures power line frequency, highly accurate reading and non blinking display. Microcontroller based design. ERTL tested.';
-		document.getElementById('rl2').innerHTML='<br><a href="products.php?id=lfm&type=4">Line Frequency Monitor</a>'
+		document.getElementById('rl2').innerHTML='<br><a href="products.php?id=line_frequency_monitor&type=4">Line Frequency Monitor</a>'
 
 		document.getElementById('ri3').innerHTML='<a href="products.php?id=megawatt_panel&type=4"><img src="photos/megawatt_panel1.jpg" height="170" alt="megawatt panel"></a>';
 		document.getElementById('rd3').innerHTML='Essential to power plants. Generation data can be displayed all over the plant.';
@@ -631,9 +631,9 @@ document.getElementById('ri1').innerHTML='<a href="products.php?id=flow_monitor&
 		document.getElementById('rd1').innerHTML='Advanced display system to monitor juice and water flow parameters.';
 		document.getElementById('rl1').innerHTML='<br><a href="products.php?id=flow_monitor&type=4">Flow Monitor</a>'
 
-		document.getElementById('ri2').innerHTML='<a href="products.php?id=lfm&type=4"><img src="photos/lfm1.jpg" height="170" alt="line frequency monitor"></a>';
+		document.getElementById('ri2').innerHTML='<a href="products.php?id=line_frequency_monitor&type=4"><img src="photos/line_frequency_monitor1.jpg" height="170" alt="line frequency monitor"></a>';
 		document.getElementById('rd2').innerHTML='Measures power line frequency, highly accurate reading and non blinking display. Microcontroller based design. ERTL tested.';
-		document.getElementById('rl2').innerHTML='<br><a href="products.php?id=lfm&type=4">Line Frequency Monitor</a>'
+		document.getElementById('rl2').innerHTML='<br><a href="products.php?id=line_frequency_monitor&type=4">Line Frequency Monitor</a>'
 
 		document.getElementById('ri3').innerHTML='<a href="products.php?id=megawatt_panel&type=4"><img src="photos/megawatt_panel1.jpg" height="170" alt="megawatt panel"></a>';
 		document.getElementById('rd3').innerHTML='Essential to power plants. Generation data can be displayed all over the plant.';
@@ -665,9 +665,9 @@ document.getElementById('ri1').innerHTML='<a href="products.php?id=flow_monitor&
 		document.getElementById('rd1').innerHTML='Advanced display system to monitor juice and water flow parameters.';
 		document.getElementById('rl1').innerHTML='<br><a href="products.php?id=flow_monitor&type=4">Flow Monitor</a>'
 
-		document.getElementById('ri2').innerHTML='<a href="products.php?id=lfm&type=4"><img src="photos/lfm1.jpg" height="170" alt="line frequency monitor"></a>';
+		document.getElementById('ri2').innerHTML='<a href="products.php?id=line_frequency_monitor&type=4"><img src="photos/line_frequency_monitor1.jpg" height="170" alt="line frequency monitor"></a>';
 		document.getElementById('rd2').innerHTML='Measures power line frequency, highly accurate reading and non blinking display. Microcontroller based design. ERTL tested.';
-		document.getElementById('rl2').innerHTML='<br><a href="products.php?id=lfm&type=4">Line Frequency Monitor</a>'
+		document.getElementById('rl2').innerHTML='<br><a href="products.php?id=line_frequency_monitor&type=4">Line Frequency Monitor</a>'
 
 		document.getElementById('ri3').innerHTML='<a href="products.php?id=megawatt_panel&type=4"><img src="photos/megawatt_panel1.jpg" height="170" alt="megawatt panel"></a>';
 		document.getElementById('rd3').innerHTML='Essential to power plants. Generation data can be displayed all over the plant.';
@@ -679,7 +679,7 @@ document.getElementById('ri1').innerHTML='<a href="products.php?id=flow_monitor&
 }
 
 
-else if(x=='wsm'){
+else if(x=='weighing_scale_monitor'){
 document.getElementById('pre2').innerHTML='Industrial Instruments';
 
 
@@ -710,9 +710,9 @@ document.getElementById('ri1').innerHTML='<a href="products.php?id=flow_monitor&
 		document.getElementById('rd1').innerHTML='Advanced display system to monitor juice and water flow parameters.';
 		document.getElementById('rl1').innerHTML='<br><a href="products.php?id=flow_monitor&type=4">Flow Monitor</a>'
 
-		document.getElementById('ri2').innerHTML='<a href="products.php?id=lfm&type=4"><img src="photos/lfm1.jpg" height="170" alt="line frequency monitor"></a>';
+		document.getElementById('ri2').innerHTML='<a href="products.php?id=line_frequency_monitor&type=4"><img src="photos/line_frequency_monitor1.jpg" height="170" alt="line frequency monitor"></a>';
 		document.getElementById('rd2').innerHTML='Measures power line frequency, highly accurate reading and non blinking display. Microcontroller based design. ERTL tested.';
-		document.getElementById('rl2').innerHTML='<br><a href="products.php?id=lfm&type=4">Line Frequency Monitor</a>'
+		document.getElementById('rl2').innerHTML='<br><a href="products.php?id=line_frequency_monitor&type=4">Line Frequency Monitor</a>'
 
 		document.getElementById('ri3').innerHTML='<a href="products.php?id=megawatt_panel&type=4"><img src="photos/megawatt_panel1.jpg" height="170" alt="megawatt panel"></a>';
 		document.getElementById('rd3').innerHTML='Essential to power plants. Generation data can be displayed all over the plant.';
@@ -1050,9 +1050,9 @@ function filter(x,z){
 		document.getElementById('d1').innerHTML='Advanced display system to monitor juice and water flow parameters.';
 		document.getElementById('l1').innerHTML='<br><a href="products.php?id=flow_monitor&type=4">Flow Monitor<br><br></a>'
 
-		document.getElementById('p2').innerHTML='<a href="products.php?id=lfm&type=4"><img src="photos/lfm1.jpg" height="170" alt="line frequency monitor"></a>';
+		document.getElementById('p2').innerHTML='<a href="products.php?id=line_frequency_monitor&type=4"><img src="photos/line_frequency_monitor1.jpg" height="170" alt="line frequency monitor"></a>';
 		document.getElementById('d2').innerHTML='Measures power line frequency, highly accurate reading and non blinking display. Microcontroller based design. ERTL tested.';
-		document.getElementById('l2').innerHTML='<br><a href="products.php?id=lfm&type=4">Line Frequency Monitor</a>'
+		document.getElementById('l2').innerHTML='<br><a href="products.php?id=line_frequency_monitor&type=4">Line Frequency Monitor</a>'
 
 		document.getElementById('p3').innerHTML='<a href="products.php?id=megawatt_panel&type=4"><img src="photos/megawatt_panel1.jpg" height="170" alt="megawatt panel"></a>';
 		document.getElementById('d3').innerHTML='Essential to power plants. Generation data can be displayed all over the plant.';
@@ -1070,9 +1070,9 @@ function filter(x,z){
 		document.getElementById('d6').innerHTML='Used for monitoring the rpm of machines. The sensor is contactless.';
 		document.getElementById('l6').innerHTML='<br><a href="products.php?id=tachometer&type=4">Tachometer<br><br></a>'
 
-		document.getElementById('p7').innerHTML='<a href="products.php?id=temp_cont&type=4"><img src="photos/temp_cont1.jpg" height="170" alt="temperature controller"></a>';
+		document.getElementById('p7').innerHTML='<a href="products.php?id=temperature_controller&type=4"><img src="photos/temperature_controller1.jpg" height="170" alt="temperature controller"></a>';
 		document.getElementById('d7').innerHTML='Used in a variety of industrial applications like turbines, furnaces, blow moulding, etc.';
-		document.getElementById('l7').innerHTML='<br><a href="products.php?id=temp_cont&type=4">Temperature Controller</a>'
+		document.getElementById('l7').innerHTML='<br><a href="products.php?id=temperature_controller&type=4">Temperature Controller</a>'
 
 		document.getElementById('p8').innerHTML='<a href="products.php?id=twilight_switches&type=4"><img src="photos/twilight_switches1.jpg" height="170" alt="twilight switches"></a>';
 		document.getElementById('d8').innerHTML='Activates with respect to the ambient light,switches ON and OFF at dusk and dawn.';
@@ -1082,9 +1082,9 @@ function filter(x,z){
 		document.getElementById('d9').innerHTML='All sorts of calculations can be done internally and displayed.';
 		document.getElementById('l9').innerHTML='<br><a href="products.php?id=industrial_display&type=4">Industrial Display Board</a>'
 
-		document.getElementById('p10').innerHTML='<a href="products.php?id=wsm&type=4"><img src="photos/wsm1.jpg" height="170" alt="weight scale monitor"></a>';
+		document.getElementById('p10').innerHTML='<a href="products.php?id=weighing_scale_monitor&type=4"><img src="photos/weighing_scale_monitor1.jpg" height="170" alt="weight scale monitor"></a>';
 		document.getElementById('d10').innerHTML='Monitors the number of tippings of juice and water Fully automatic operation and convenience of remote display.';
-		document.getElementById('l10').innerHTML='<br><a href="products.php?id=wsm&type=4">Weight Scale Monitor<br><br></a>'
+		document.getElementById('l10').innerHTML='<br><a href="products.php?id=weighing_scale_monitor&type=4">Weight Scale Monitor<br><br></a>'
 	}
 	document.getElementById('category_name').innerHTML=y;	
 }

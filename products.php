@@ -29,22 +29,22 @@ $link='product_list.php?id=Product_for_office&num=4';
 if($x=='token_display'){
   $title='Digital Token';
   $desc='Token display system provides easiest way to inform the customer or patient about his / her status while waiting.';
-  $brochure='TOKEN DISPLAY.jpg';
+  $brochure='Token Display';
 }
 else if($x=='digital_clock'){
   $title='Digital Clock';
   $desc='LED Display Clocks are widely used in factories, offices, large public areas, shopping centers, warehouses and similar large areas';
-  $brochure='digital clock.jpg';
+  $brochure='digital clock';
 }
 else if($x=='interest_rate_display_board'){
   $title='Digital Interest Rate Display Board';
   $desc='Interest Rate Display Board is ideal for banks. Date, time, deposit period, interest rate is displayed on an attractive background.';
-$brochure='interest rate display board.pdf';
+$brochure='interest rate display board';
 }
 else{
   $title='Digital Scrolling Display';
   $desc='Scrolling Display is having high brightness. User can store and scroll a lot of messages. Ideal for hospitals, pathologies, banks, shops etc.';
-  $brochure='scrolling display.jpg';
+  $brochure='Scrolling Display';
 }
 }
 
@@ -57,42 +57,42 @@ $link='product_list.php?id=Industrial_Instruments&num=10';
 if($x=='flow_monitor'){
   $title='Digital Flow Monitor';
   $desc='Flow monitor is an advanced display system to monitor juice and water flow parameters. It has a Totalizer which gives error free total fluid flow over the season. Transfer from current hour to previous hour occurs when hour of clock changes (synchronized with clock)';
-$brochure='flow monitor.jpg';
+$brochure='flow monitor';
 }
 else if($x=='line_frequency_monitor'){
   $title='Digital Line Frequency Monitor';
   $desc='Line Frequency Monitors is used to measures power line frequency, highly accurate reading and non blinking display. Microcontroller based design. ERTL tested.';
-  $brochure='line frequency monitor.jpg';
+  $brochure='line frequency monitor';
 }
 else if($x=='megawatt_panel'){
   $title='Digital Mega Watt Panel';
   $desc='Megawatt Panels are essential to power plants. Generation data can be displayed all over the plant.';
-  $brochure='mega watt panels.jpg';
+  $brochure='mega watt panels';
 }
 else if($x=='process_indicator'){
   $title='Digital Process Indicator';
   $desc='Process indicators are suitable for displaying process parameters like flow, temperature, level, speed, pH etc. Available in different digit heights.';
-  $brochure='process indicator.jpg';
+  $brochure='process indicator';
 }
 else if($x=='ph_meter'){
   $title='Digital Ph Meter';
   $desc='Ph meters are used to measure pH of all types of liquids. We supply the pH meters with combination electrode, electrode stand with clamp and temperature compensation.';
-  $brochure='ph meter.jpg';
+  $brochure='ph meter';
 }
 else if($x=='tachometer'){
   $title='Digital Tachometer';
   $desc='Tachometers are used for monitoring the rpm of machines. The sensor is contactless. Ideal for sugar mills, heavy industries etc';
-$brochure='tachometer.jpg';
+$brochure='tachometer';
 }
 else if($x=='temperature_controller'){
   $title='Digital Temperature Controller';
   $desc='Temperature Controllers are used in a variety of industrial applications like turbines, furnaces, blow moulding, etc. where the measurement/control of temperature is of vital importance.';
-  $brochure='Temperature Controller.pdf';
+  $brochure='Temperature Controller';
 }
 else if($x=='twilight_switches'){
   $title='Digital Twilight Switches';
   $desc='Twilight switch activates with respect to the ambient light. The device as its name suggests, switches ON and OFF at dusk and dawn.';
-$brochure='twilight switch.pdf';
+$brochure='Twilight Switch';
 }
 else if($x=='industrial_display'){
   $title='Digital Industrial Display';
@@ -101,7 +101,7 @@ else if($x=='industrial_display'){
 else{ 
   $title='Digital Weighing Scale Monitor';
   $desc='Weighing Scale Monitor is used to monitoring the number of tippings of juice and water Fully automatic operation and convenience of remote display.';
-  $brochure='weighing scale monitor.pdf';
+  $brochure='weighing scale monitor';
 }
 }
 ?>
@@ -378,7 +378,7 @@ else{
   </div>
 </div>
 <div class="row">
-  <a href="Brochures/<?php echo $brochure; ?>" class="btn blue darken-2 col l2 s5" id="dwnld-btn" download><i class="material-icons left">library_books</i>Brochure</a>
+  <a href="Brochures/<?php echo $brochure; ?>.pdf" class="btn blue darken-2 col l2 s5" id="dwnld-btn" download><i class="material-icons left">library_books</i>Brochure</a>
   <button class="btn rqst blue darken-2 l2 col s6" id="rqst-btn" >Request for quote</button>
 </div>
 <br><br>

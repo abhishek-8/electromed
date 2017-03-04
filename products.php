@@ -213,9 +213,9 @@ else{
           <input id="name" type="text" name="name" class="validate" placeholder="Name" required style="font-size:15px;">
           <input id="email" type="email" name="email" class="validate" placeholder="Email" required style="font-size:15px;">
           <input id="poi" type="text" name="poi" value='<?php echo $title; ?>'>
-          <input id="company" type="text" name="industry" class="validate" placeholder="Company" required style="font-size:15px;">
+          <input id="company" type="text" name="industry" class="validate" placeholder="Company" style="font-size:15px;">
           <input id="phone" type="text" class="validate" name="phone" placeholder="Phone" required style="font-size:15px;">
-          <textarea name="query" placeholder="Message" required style="font-size:15px;"></textarea>
+          <textarea name="query" placeholder="Message" style="font-size:15px;"></textarea>
           <div class="row">
             <div class="col l4">
               <button class="btn blue darken-2" type="submit" name="submit" id="submit">Submit
@@ -230,7 +230,7 @@ else{
       </fieldset>
     </div>
     <div class="z-depth-5 card-panel hoverable" id="popup">
-      <p class="custom-text" style="color:#263238;text-align:center;font-size:17px;"><?php echo $res; ?><br><a href=""><u>Go Back</u></a></p>
+      <p class="custom-text" style="color:#263238;text-align:center;font-size:17px;"><?php echo $res; ?><br><br><a href=""><u>Close</u></a></p>
     </div>
  <br>
     <div class="row">
@@ -471,12 +471,12 @@ else{
             <h6 class="white-text"><strong>Contact Info</strong></h6><br>
             <div class="row">
               <div class="col l1 s1 m1"><i class="material-icons prefix blue-text text-darken-2">phone</i></div>
-              <div class="col l8 offset-l1 s11 m8 offset-m1"><p class="white-text foot" style="display:inline;">9415039393</p></div>
+              <div class="col l8 offset-l1 s11 m8 offset-m1"><p class="white-text foot" style="display:inline;">+91 941 503 9393</p></div>
             </div>
             
             <div class="row">
               <div class="col l1 s1 m1"><i class="material-icons prefix blue-text text-darken-2">email</i></div>
-              <div class="col l8 offset-l1 s11 m8 offset-m1"><p class="white-text foot" style="display:inline;">electro.med25@gmail.com</p></div>
+              <div class="col l8 offset-l1 s11 m8 offset-m1"><p class="white-text foot" style="display:inline;">info@electromed.co.in</p></div>
             </div>
             <div class="row">
               <div class="col l1 s1 m1"><i class="material-icons prefix blue-text text-darken-2">room</i></div>

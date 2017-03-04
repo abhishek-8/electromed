@@ -93,7 +93,7 @@ include('submit.php');
             </nav>
         </div>
         <div class="z-depth-5 card-panel hoverable" id="popup">
-      <p class="custom-text" style="color:#263238;text-align:center;font-size:17px;"><?php echo $res; ?><br><a href=""><u>Go Back</u></a></p>
+      <p class="custom-text" style="color:#263238;text-align:center;font-size:17px;"><?php echo $res; ?><br><br><a href=""><u>Close</u></a></p>
     </div>
         <div class="parallax-container" id="contact_us">
             <div class="parallax"><img src="contact.jpg"></div>
@@ -141,7 +141,7 @@ include('submit.php');
                                 <div class="input-field">
                                 
                 <img class="prefix" alt="factory" src="jdev/icons/factory.svg" width="20" height="28" style="padding-right: 12px" />
-                                    <select required name="industry">
+                                    <select name="industry">
                                         <option value="">Industry</option>
                                         <option value="Power">Power</option>
                                         <option value="Sugar">Sugar</option>
@@ -157,7 +157,7 @@ include('submit.php');
                                 <div class="col l12 m12 s12" >
                                 <div class="input-field" >
                                 <i class="material-icons prefix">shopping_cart</i>
-                                    <input id="poi" name="poi" type="text" class="validate" required>
+                                    <input id="poi" name="poi" type="text" class="validate">
                                     <label for="poi">Products of Interest</label>
                                 </div>
                                 </div><br><br><br>
@@ -186,7 +186,7 @@ include('submit.php');
                     <p class="custom-text" style="color:#263238;font-size:22px;line-height:90%">Phone</p>
                     <p class="headName1" style="font-size:18px;line-height:90%">+91 941 508 5804<br>+91 941 503 9393</p>
                     <p class="custom-text" style="color:#263238;font-size:22px;line-height:90%">Email</p>
-                    <p class="headName1" style="font-size:18px;line-height:90%">electro.med25@gmail.com<br>electromed3@rediffmail.com<br>info@electromed.co.in</p> 
+                    <p class="headName1" style="font-size:18px;line-height:90%">sales@electromed.co.in<br>support@electromed.co.in<br>info@electromed.co.in</p> 
                     
                 </div>
             </div>
@@ -234,12 +234,12 @@ include('submit.php');
             <h6 class="white-text"><strong>Contact Info</strong></h6><br>
             <div class="row">
               <div class="col l1 s1 m1"><i class="material-icons prefix blue-text text-darken-2">phone</i></div>
-              <div class="col l8 offset-l1 s11 m8 offset-m1"><p class="white-text foot" style="display:inline;">9415039393</p></div>
+              <div class="col l8 offset-l1 s11 m8 offset-m1"><p class="white-text foot" style="display:inline;">+91 941 503 9393</p></div>
             </div>
             
             <div class="row">
               <div class="col l1 s1 m1"><i class="material-icons prefix blue-text text-darken-2">email</i></div>
-              <div class="col l8 offset-l1 s11 m8 offset-m1"><p class="white-text foot" style="display:inline;">electro.med25@gmail.com</p></div>
+              <div class="col l8 offset-l1 s11 m8 offset-m1"><p class="white-text foot" style="display:inline;">info@electromed.co.in</p></div>
             </div>
             <div class="row">
               <div class="col l1 s1 m1"><i class="material-icons prefix blue-text text-darken-2">room</i></div>

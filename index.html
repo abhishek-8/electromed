@@ -155,7 +155,7 @@
       </div>
     </div><br>
     <div class="container-fluid" style="background-color:#f0f0f0; ">
-      <div class="row">
+      <div class="row" id="head1">
         <p class="custom-text blue darken-4 white-text" style="text-align:center;font-size:30px;padding-top:2px;line-height: 60px">A FEW FACTS ABOUT US</p>
       </div>
       <br>
@@ -184,9 +184,10 @@
     </div>
     <div class="container-fluid" style="background-color:#fafafa;">
       <div class="container-fluid"><br><br>
-        <p class="custom-text blue darken-4 white-text" style="text-align:center;font-size:30px;padding-top:2px;line-height: 60px">OUR RECENT PROJECTS</p>
+        <p class="custom-text blue darken-4 white-text" id="head2" style="text-align:center;font-size:30px;padding-top:2px;line-height: 60px">OUR RECENT PROJECTS</p>
                 <br><br>
-        <div class="row">
+        <div id="below2">
+        <div class="row" >
           <div class="col l3 m3 s12" id="home_card1">
             <div class="card parent">
               <div class="card-image image1 waves-effect waves-block waves-light">
@@ -250,6 +251,7 @@
               
             </div>
           </div>
+        </div>
         </div><br>
       </div>
     </div>
@@ -435,6 +437,40 @@
     </footer>
     <script>
     $(document).ready(function(){
+      if($(window).width() > 760 ) {
+
+      $.fn.followTo = function (pos,pos1,n) {
+    var $this = this,
+    x='',
+        $window = $(window);
+if(n==1)x='#numbers';
+else if (n==2)x='#below2';
+
+    $window.scroll(function (e) {
+        if ($window.scrollTop() > pos && $window.scrollTop() < pos1) {
+            $this.css({
+                position: 'fixed',
+                width: '100%',
+                "z-index": "100",
+                top: 22
+            });
+            $(x).css({
+              "margin-top": "130px"
+            });
+        } else {
+            $this.css({
+                position: 'relative',
+                top: 0
+            });
+            $(x).css({
+              "margin-top": "0px"
+            });
+        }
+    });
+};
+$('#head1').followTo(1216,1700,1);
+$('#head2').followTo(1780,2500,2);
+}
     var once=0;
     $(window).scroll(function() {
     var hT = $('#numbers').offset().top,

@@ -142,16 +142,14 @@ else{
           <div class="col l4">
             <p class="product_name"><a href="products.php?id=true_color_display&type=1">TRUE COLOR HD SCREEN</a></p>
             <p class="product_name"><a href="products.php?id=tri_color_display&type=1">TRI COLOR DISPLAY BOARDS</a></p>
-            <p class="product_name"><a href="products.php?id=uni_color_display&type=1">SINGLE COLOR DISPLAY BOARDS</a></p>
-            
+            <p class="product_name"><a href="products.php?id=uni_color_display&type=1">SINGLE COLOR DISPLAY BOARDS</a></p> 
           </div>
           <div class="col l4">
             <p class="product_name"><a href="products.php?id=token_display&type=2">TOKEN DISPLAY</a></p>
             <p class="product_name"><a href="products.php?id=digital_clock&type=2">DIGITAL CLOCKS</a></p>
             <p class="product_name"><a href="products.php?id=interest_rate_display_board&type=2">INTEREST RATE DISPLAY BOARD</a></p>
             <p class="product_name"><a href="products.php?id=scrolling_display&type=2">SCROLLING DISPLAY</a></p>
-          </div>
-          
+          </div> 
           <div class="col l4">
             <p class="product_name"><a href="products.php?id=flow_monitor&type=4">FLOW MONITOR</a></p>
             <p class="product_name"><a href="products.php?id=line_frequency_monitor&type=4">LINE FREQUENCY MONITOR</a></p>
@@ -192,8 +190,7 @@ else{
             <li><a href="clients.html" class="navLink">Clients</a></li>
             <li><a href="about.html" class="navLink">About</a></li>
             <li><a href="contact.php" class="navLink">Contact</a></li>
-          </ul>
-          
+          </ul> 
           <ul id="nav-mobile" class="side-nav">
             <li><a href="index.html">Home</a></li>
             <li class="active"><a href="product_list.php?id=LED_display&num=3">Products<i class="material-icons right">arrow_drop_down</i></a></li>
@@ -208,7 +205,7 @@ else{
     </div>
     <div class="z-depth-5 card-panel hoverable" id="request_for_quote">
       <fieldset id="rqst_form">
-        <legend class="white-text blue darken-2" style="position:relative;height: 40px;width: 100%;"><center>Request for quote</center></legend>
+        <legend class="white-text blue darken-2" style="position:relative;height: 40px;width: 100%;border-radius:3px"><center class="headNamev2" style="padding-top:3px">Request for quote</center></legend>
         <form action="" method="post">
           <input id="name" type="text" name="name" class="validate" placeholder="Name" required style="font-size:15px;">
           <input id="email" type="email" name="email" class="validate" placeholder="Email" required style="font-size:15px;">
@@ -384,7 +381,7 @@ else{
 <br><br>
 <div>
   
-  <p class="custom-text blue darken-2 white-text" style="text-align:center;font-size:22px;padding-top:2px;line-height: 60px">YOU MAY ALSO BE INTERESTED IN...</p>
+  <p class="custom-text blue darken-4 white-text" style="text-align:center;font-size:22px;padding-top:2px;line-height: 60px">YOU MAY ALSO BE INTERESTED IN...</p>
   <br>
   <div class="row" id="related_products">
     

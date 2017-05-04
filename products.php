@@ -166,20 +166,7 @@ else{
         </div>
       </div>
     </div>
-    <div class="dropdown-content" id="projects" style="z-index: 10;">
-      <div class="container">
-        <div class="row">
-          <div class="col l12">
-            <p class="product_name"><a href="project_page.php?id=ntpc_rihand"">NTPC RIHAND</a></p>
-            <p class="product_name"><a href="project_page.php?id=patna_high_court">PATNA HIGH COURT</a></p>
-            <p class="product_name"><a href="project_page.php?id=patna_railway_station">RAILWAY STATION DISPLAY</a></p>
-            <p class="product_name"><a href="project_page.php?id=shakti_bhawan"">SHAKTI BHAWAN</a></p>
-            <p class="product_name"><a href="project_page.php?id=panki">PANKI</a></p>
-            <p class="product_name"><a href="project_page.php?id=coach_guidance_system">COACH GUIDANCE SYSTEM</a></p>
-          </div>
-        </div>
-      </div>
-    </div>
+    
     <div class="navbar-fixed">
       <nav>
         <div class="nav-wrapper container">
@@ -194,7 +181,7 @@ else{
           <ul id="nav-mobile" class="side-nav">
             <li><a href="index.html">Home</a></li>
             <li class="active"><a href="product_list.php?id=LED_display&num=3">Products<i class="material-icons right">arrow_drop_down</i></a></li>
-            <li><a href="project_list.html">Projects<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a href="project_list.html">Projects</a></li>
             <li><a href="about.html">About Us</a></li>
             <li><a href="contact.php">Contact Us</a></li> 
           </ul>

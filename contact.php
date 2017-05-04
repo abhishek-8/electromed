@@ -53,20 +53,7 @@ include('submit.php');
                 </div>
             </div>
         </div>
-        <div class="dropdown-content" id="projects">
-            <div class="container">
-                <div class="row">
-                    <div class="col l12">
-                        <p class="product_name"><a href="project_page.php?id=ntpc_rihand"">NTPC RIHAND</a></p>
-                        <p class="product_name"><a href="project_page.php?id=patna_high_court">PATNA HIGH COURT</a></p>
-                        <p class="product_name"><a href="project_page.php?id=patna_railway_station">RAILWAY STATION DISPLAY</a></p>
-                        <p class="product_name"><a href="project_page.php?id=shakti_bhawan"">SHAKTI BHAWAN</a></p>
-                        <p class="product_name"><a href="project_page.php?id=panki">PANKI</a></p>
-                        <p class="product_name"><a href="project_page.php?id=coach_guidance_system">COACH GUIDANCE SYSTEM</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
+       
         <div class="navbar-fixed">
             <nav>
                 <div class="nav-wrapper container">
@@ -74,7 +61,7 @@ include('submit.php');
                     <ul class="right hide-on-med-and-down">
                         <li><a href="index.html" class="navLink">Home</a></li>
                         <li><a href="product_list.php?id=LED_display&num=3" class="dropdown-button navLink" data-activates="products">Products<i class="material-icons right">arrow_drop_down</i></a></li>
-                        <li><a href="project_list.html" class="dropdown-button navLink" data-activates="projects">Projects<i class="material-icons right">arrow_drop_down</i></a></li>
+                        <li><a href="project_list.html" class="dropdown-button navLink" data-activates="projects">Projects</a></li>
                         <li><a href="about.html" class="navLink">About</a></li>
                         <li class="active"><a href="contact.php" class="navLink">Contact</a></li>
                     </ul>
@@ -82,7 +69,7 @@ include('submit.php');
                     <ul id="nav-mobile" class="side-nav">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="product_list.php?id=LED_display&num=3">Products<i class="material-icons right">arrow_drop_down</i></a></li>
-                        <li><a href="project_list.html">Projects<i class="material-icons right">arrow_drop_down</i></a></li>
+                        <li><a href="project_list.html">Projects</a></li>
                         <li><a href="about.html">About Us</a></li>
                         <li class="active"><a href="contact.php">Contact Us</a></li>
                     </ul>
@@ -194,7 +181,7 @@ include('submit.php');
         
         
         <div class="overlay" onClick="style.pointerEvents='none'"></div>
-        <div id="map" class="center"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14234.872605313356!2d80.93281223137183!3d26.880694430260508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf8e238a7eafccff!2sELECTRO-MED!5e0!3m2!1sen!2sin!4v1484311290986" width="100%" height="370" frameborder="0" style="border:none" allowfullscreen></iframe>
+        <div id="map" class="center"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14234.872605313356!2d80.93281223137183!3d26.880694430260508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf8e238a7eafccff!2sELECTRO-MED!5e0!3m2!1sen!2sin!4v1484311290986&zoom=5" width="100%" height="370" frameborder="0" style="border:none" allowfullscreen></iframe>
         </div>
  
     

@@ -131,6 +131,7 @@ else{
  </script>
   </head>
   <body id="product_page">
+  <?php include_once("analyticstracking.php") ?>
     <div class="dropdown-content" id="products" style="position:fixed;z-index:10">
       <div class="container">
         <div class="row">

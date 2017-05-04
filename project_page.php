@@ -53,6 +53,7 @@ $map='<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.27
   </head>
 
   <body id="product_page">
+  <?php include_once("analyticstracking.php") ?>
     <div class="dropdown-content" id="products" style="z-index: 10;">
       <div class="container">
         <div class="row">

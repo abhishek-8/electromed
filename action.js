@@ -1084,7 +1084,7 @@ function filter(x,z){
 
 		document.getElementById('p10').innerHTML='<a href="products.php?id=weighing_scale_monitor&type=4"><img src="photos/weighing_scale_monitor1.jpg" height="170" alt="weight scale monitor"></a>';
 		document.getElementById('d10').innerHTML='Monitors the number of tippings of juice and water Fully automatic operation and convenience of remote display.';
-		document.getElementById('l10').innerHTML='<br><a href="products.php?id=weighing_scale_monitor&type=4">Weight Scale Monitor<br><br></a>'
+		document.getElementById('l10').innerHTML='<br><a href="products.php?id=weighing_scale_monitor&type=4">Weighing Scale Monitor<br><br></a>'
 	}
 	document.getElementById('category_name').innerHTML=y;	
 }

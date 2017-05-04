@@ -22,6 +22,7 @@ $z=$_GET['num'];
         
     </head>
     <body id="category_page">
+    <?php include_once("analyticstracking.php") ?>
         <div class="dropdown-content" id="products">
       <div class="container">
         <div class="row">

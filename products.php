@@ -174,7 +174,7 @@ else{
           <ul class="right hide-on-med-and-down">
             <li><a href="index.html" class="navLink">Home</a></li>
              <li class="active"><a href="product_list.php?id=LED_display&num=3" class="dropdown-button navLink" data-activates="products">Products<i class="material-icons right">arrow_drop_down</i></a></li>
-            <li><a href="project_list.html" class="dropdown-button navLink" data-activates="projects">Projects<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a href="project_list.html" class="dropdown-button navLink" data-activates="projects">Projects</a></li>
             <li><a href="about.html" class="navLink">About</a></li>
             <li><a href="contact.php" class="navLink">Contact</a></li>
           </ul> 

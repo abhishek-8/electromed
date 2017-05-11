@@ -54,7 +54,7 @@ $map='<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.27
 
   <body id="product_page">
   <?php include_once("analyticstracking.php") ?>
-    <div class="dropdown-content" id="products" style="z-index: 10;">
+    <!--div class="dropdown-content" id="products" style="z-index: 10;">
       <div class="container">
         <div class="row">
           <div class="col l4"><p class="dropdown_headName"><a href="product_list.php?id=LED_display&num=3">LED Display</a></p><hr></div>
@@ -89,7 +89,7 @@ $map='<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.27
           </div>
         </div>
       </div>
-    </div>
+    </div-->
     
     
     <div class="navbar-fixed">
@@ -98,7 +98,7 @@ $map='<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.27
           <a id="logo-container" href="index.html" class="brand-logo custom-text">Electro-med</a>
           <ul class="right hide-on-med-and-down">
             <li><a href="index.html" class="navLink">Home</a></li>
-             <li><a href="product_list.php?id=LED_display&num=3" class="dropdown-button navLink" data-activates="products">Products<i class="material-icons right">arrow_drop_down</i></a></li>
+             <li><a href="product_list.php?id=LED_display&num=3" class="dropdown-button navLink" data-activates="products">Products<!--i class="material-icons right">arrow_drop_down</i--></a></li>
             <li class="active"><a href="project_list.html" class="dropdown-button navLink" data-activates="projects">Projects</a></li>
             <li><a href="about.html" class="navLink">About</a></li>
             <li><a href="contact.php" class="navLink">Contact</a></li>

@@ -17,66 +17,26 @@ include('submit.php');
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>‌
         <!-- Compiled and minified JavaScript -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+
+        <link rel="import" href="include/includes.html">
+
     </head>
     <body id="contactPage">
-        <!--div class="dropdown-content" id="products">
-            <div class="container">
-                <div class="row">
-                    <div class="col l4"><p class="dropdown_headName"><a href="product_list.php?id=LED_display&num=3">LED Display</a></p><hr></div>
-                    <div class="col l4"><p class="dropdown_headName"><a href="product_list.php?id=Product_for_office&num=4">Products for Office</a></p><hr></div>
-                    <div class="col l4"><p class="dropdown_headName"><a href="product_list.php?id=Industrial_Instruments&num=10">Industrial Instruments</a></p><hr></div>
-                </div>
-                <div class="row" style="margin-top:-50px;">
-                    <div class="col l4">
-                        <p class="product_name"><a href="products.php?id=true_color_display&type=1">TRUE COLOR HD SCREEN</a></p>
-                        <p class="product_name"><a href="products.php?id=tri_color_display&type=1">TRI COLOR DISPLAY BOARDS</a></p>
-                        <p class="product_name"><a href="products.php?id=uni_color_display&type=1">SINGLE COLOR DISPLAY BOARDS</a></p>    
-                    </div>
-                    <div class="col l4">
-                        <p class="product_name"><a href="products.php?id=token_display&type=2">TOKEN DISPLAY</a></p>
-                        <p class="product_name"><a href="products.php?id=digital_clock&type=2">DIGITAL CLOCKS</a></p>
-                        <p class="product_name"><a href="products.php?id=interest_rate_display_board&type=2">INTEREST RATE DISPLAY BOARD</a></p>
-                        <p class="product_name"><a href="products.php?id=scrolling_display&type=2">SCROLLING DISPLAY</a></p>
-                    </div>
-                    <div class="col l4">
-                        <p class="product_name"><a href="products.php?id=flow_monitor&type=4">FLOW MONITOR</a></p>
-                        <p class="product_name"><a href="products.php?id=line_frequency_monitor&type=4">LINE FREQUENCY MONITOR</a></p>
-                        <p class="product_name"><a href="products.php?id=megawatt_panel&type=4">MEGA WATT PANEL</a></p>
-                        <p class="product_name"><a href="products.php?id=process_indicator&type=4">PROCESS INDICATORS</a></p>
-                        <p class="product_name"><a href="products.php?id=ph_meter&type=4">PH METER</a></p>
-                        <p class="product_name"><a href="products.php?id=tachometer&type=4">TACHOMETER</a></p>
-                        <p class="product_name"><a href="products.php?id=temperature_controller&type=4">TEMPERATURE CONTROLLER</a></p>
-                        <p class="product_name"><a href="products.php?id=twilight_switches&type=4">TWILIGHT SWITCHES</a></p>
-                        <p class="product_name"><a href="products.php?id=industrial_display&type=4">INDUSTRIAL DISPLAY</a></p>
-                        <p class="product_name"><a href="products.php?id=weighing_scale_monitor&type=4">WEIGHING SCALE MONITOR</a></p>
-                    </div>
-                </div>
-            </div>
-        </div-->
-       
-        <div class="navbar-fixed">
-            <nav>
-                <div class="nav-wrapper container">
-                    <a id="logo-container" href="index.html" class="brand-logo custom-text">Electro-med</a>
-                    <ul class="right hide-on-med-and-down">
-                        <li><a href="index.html" class="navLink">Home</a></li>
-                        <li><a href="product_list.php?id=LED_display&num=3" class="dropdown-button navLink" data-activates="products">Products<!--i class="material-icons right">arrow_drop_down</i--></a></li>
-                        <li><a href="project_list.html" class="dropdown-button navLink" data-activates="projects">Projects</a></li>
-                        <li><a href="about.html" class="navLink">About</a></li>
-                        <li class="active"><a href="contact.php" class="navLink">Contact</a></li>
-                    </ul>
-                    
-                    <ul id="nav-mobile" class="side-nav">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="product_list.php?id=LED_display&num=3">Products<i class="material-icons right">arrow_drop_down</i></a></li>
-                        <li><a href="project_list.html">Projects</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li class="active"><a href="contact.php">Contact Us</a></li>
-                    </ul>
-                    <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-                </div>
-            </nav>
-        </div>
+    
+    <!-- ====================================================== -->
+    <!-- Top NavBar -->
+    <script>
+        var link = document.querySelector('link[rel="import"]');
+        var content = link.import;
+
+        // Grab DOM from warning.html's document.
+        var el = content.querySelector('.top-navbar');
+
+        document.body.appendChild(el.cloneNode(true));
+    </script>
+
+    <!-- ====================================================== -->
+
         <div class="z-depth-5 card-panel hoverable" id="popup">
       <p class="custom-text" style="color:#263238;text-align:center;font-size:17px;"><?php echo $res; ?><br><br><a href=""><u>Close</u></a></p>
     </div>
@@ -184,65 +144,21 @@ include('submit.php');
         <div id="map" class="center"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14234.872605313356!2d80.93281223137183!3d26.880694430260508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf8e238a7eafccff!2sELECTRO-MED!5e0!3m2!1sen!2sin!4v1484311290986&zoom=5" width="100%" height="370" frameborder="0" style="border:none" allowfullscreen></iframe>
         </div>
  
+    <!-- ====================================================== -->
+    <!-- Footer -->
+    <script>
+        var link = document.querySelector('link[rel="import"]');
+        var content = link.import;
+
+        // Grab DOM from warning.html's document.
+        var el = content.querySelector('.page-footer');
+
+        document.body.appendChild(el.cloneNode(true));
+    </script>
+
+    <!-- ====================================================== -->
     
-   <footer class="page-footer">
-      <div class="container">
-        <div class="row">
-          <div class="col l3 m3 s12">
-            <div class="row">
-              <h5 class="white-text"><strong>Electro-Med</strong></h5>
-              <p class="white-text foot" >We manufacture and assemble a comprehensive range of electronic displays and instruments for industrial application.</p>
-            </div>
-          </div>
-          <div class="col l2 offset-l1 s12 m2 offset-m1">
-            <h6 class="white-text"><strong>Our Links</strong></h6>
-            
-            <ul>
-              <li class="flink"><a class="white-text foot" href="about.html">About Us</a></li>
-              <li class="flink"><a class="white-text foot" href="contact.php">Contact Us</a></li>
-              <li class="flink"><a class="white-text foot" href="product_list.php?id=LED_display&num=3">Products</a></li>
-              <li class="flink"><a class="white-text foot" href="project_list.html">Projects</a></li>
-            </ul>
-          </div>
-          <div class="col l3 s12 m3">
-            <h6 class="white-text"><strong>Products</strong></h6>
-            <ul>
-              <li class="flink"><a class="white-text foot" href="products.php?id=true_color_display&type=1">TRUE COLOR HD SCREEN</a></li>
-              <li class="flink"><a class="white-text foot" href="products.php?id=flow_monitor&type=4">FLOW MONITOR</a></li>
-              <li class="flink"><a class="white-text foot" href="products.php?id=process_indicator&type=4">PROCESS INDICATORS</a></li>
-              <li class="flink"><a class="white-text foot" href="products.php?id=tachometer&type=4">TACHOMETER</a></li>
-              <li class="flink"><a class="white-text foot" href="products.php?id=twilight_switches&type=4">TWILIGHT SWITCHES</a></li>
-              <li class="flink"><a class="white-text foot" href="products.php?id=industrial_display&type=4">INDUSTRIAL DISPLAY</a></li>
-            </ul>
-          </div>
-          <div class="col l3 s12 m3">
-            <h6 class="white-text"><strong>Contact Info</strong></h6><br>
-            <div class="row">
-              <div class="col l1 s1 m1"><i class="material-icons prefix blue-text text-darken-2">phone</i></div>
-              <div class="col l8 offset-l1 s11 m8 offset-m1"><p class="white-text foot" style="display:inline;">+91 941 503 9393</p></div>
-            </div>
-            
-            <div class="row">
-              <div class="col l1 s1 m1"><i class="material-icons prefix blue-text text-darken-2">email</i></div>
-              <div class="col l8 offset-l1 s11 m8 offset-m1"><p class="white-text foot" style="display:inline;">info@electromed.co.in</p></div>
-            </div>
-            <div class="row">
-              <div class="col l1 s1 m1"><i class="material-icons prefix blue-text text-darken-2">room</i></div>
-              <div class="col l8 offset-l1 s11 m8 offset-m1"><p class="white-text foot" style="display:inline;">D -17, Vivekanand Puri,
-              <br/>Lucknow –226007 India</p></div>
-            </div>
-            
-          </div>
-        </div>
-      </div>
-    
-    <hr>
-    <div class="footer-copyright">
-      <div class="container foot row">
-      <div class="col l4 m4 s12">© 2017 Copyright Electromed. All rights reserved.</div>
-      </div>
-    </div>
-  </footer>
+
 <script>
 $(document).ready(function(){
     if(<?php echo $done; ?>==true)

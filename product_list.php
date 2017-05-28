@@ -149,8 +149,13 @@ $z=$_GET['num'];
 
 
                 <div class="col l9 m9 s12" id="category_products">
-                    <center><h3 class="custom-text ctgry-name" style="text-align:center;color:#263238"><b id="category_name"></b></h3></center><br><br>
+                    <!--center><h3 class="custom-text ctgry-name" style="text-align:center;color:#263238"><b id="category_name"></b></h3></center><br><br-->
+                    <h2 class="custom-text" style="text-align:center;padding-top:3px;padding-bottom:3px;line-height: 60px"><b>LED&ensp;Screens</b></h2>
+                    <p class="custom-text" style="color:#263238;text-align:center;font-size:17px;">High resolution LED screens capable of playing videos and displaying technical data both indoors/outdoors.</p>
+    
                     <div class="row">
+                
+
                         <div class="col s12 m7 l3" id="c1">
                             <div class="card">
                                 <div class="card-image" id="p1">
@@ -191,6 +196,10 @@ $z=$_GET['num'];
                                 
                             </div>
                         </div>
+                    </div>
+                    <h2 class="custom-text" style="text-align:center;padding-top:3px;padding-bottom:3px;line-height: 60px"><b>Products&ensp;for&ensp;Office</b></h2>
+                     <div class="row">
+
                         <div class="col s12 m7 l3" id="c4">
                             <div class="card">
                                 <div class="card-image " id="p4">
@@ -204,9 +213,7 @@ $z=$_GET['num'];
                                 
                             </div>
                         </div>
-                    </div>
 
-                     <div class="row">
                         <div class="col s12 m7 l3" id="c5">
                             <div class="card">
                                 <div class="card-image" id="p5">
@@ -246,6 +253,9 @@ $z=$_GET['num'];
                                 
                             </div>
                         </div>
+                    </div>
+                    <h2 class="custom-text" style="text-align:center;padding-top:3px;padding-bottom:3px;line-height: 60px"><b>Industrial&ensp;Instruments</b></h2>
+                    <div class="row">
                         <div class="col s12 m7 l3" id="c8">
                             <div class="card">
                                 <div class="card-image" id="p8">
@@ -259,16 +269,14 @@ $z=$_GET['num'];
                                 
                             </div>
                         </div>
-                    </div>
-                    <div class="row">
                         <div class="col s12 m7 l3" id="c9">
                             <div class="card">
                                 <div class="card-image" id="p9">
-
+                                   
                                 </div>
                                 <div class="card-action custom-text" id="l9">
                                 </div>
-                                <div class="card-content" id="d9">
+                                <div class="card-content" id="d9" >
                                     
                                 </div>
                                 
@@ -277,18 +285,100 @@ $z=$_GET['num'];
                         <div class="col s12 m7 l3" id="c10">
                             <div class="card">
                                 <div class="card-image" id="p10">
-
-                                </div>
-                                <div class="card-action custom-text" id="l10">
                                     
                                 </div>
+                                <div class="card-action custom-text" id="l10">
+                                </div>
                                 <div class="card-content" id="d10">
+                                
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="col s12 m7 l3" id="c11">
+                            <div class="card">
+                                <div class="card-image" id="p11">
+                                    
+                                </div>
+                                <div class="card-action custom-text" id="l11">
+                                </div>
+                                <div class="card-content" id="d11" >
+                                
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>        
+                    <div class="row">
+                        <div class="col s12 m7 l3" id="c12">
+                            <div class="card">
+                                <div class="card-image" id="p12">
+                                    
+                                </div>
+                                <div class="card-action custom-text" id="l12">
+                                </div>
+                                <div class="card-content" id="d12" >
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="col s12 m7 l3" id="c13">
+                            <div class="card">
+                                <div class="card-image" id="p13">
+                                   
+                                </div>
+                                <div class="card-action custom-text" id="l13">
+                                </div>
+                                <div class="card-content" id="d13" >
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="col s12 m7 l3" id="c14">
+                            <div class="card">
+                                <div class="card-image" id="p14">
+                                    
+                                </div>
+                                <div class="card-action custom-text" id="l14">
+                                </div>
+                                <div class="card-content" id="d14">
+                                
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="col s12 m7 l3" id="c15">
+                            <div class="card">
+                                <div class="card-image" id="p15">
+                                    
+                                </div>
+                                <div class="card-action custom-text" id="l15">
+                                </div>
+                                <div class="card-content" id="d15" >
+                                
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>        
+                    <div class="row">
+                        <div class="col s12 m7 l3" id="c16">
+                            <div class="card">
+                                <div class="card-image" id="p16">
+                                    
+                                </div>
+                                <div class="card-action custom-text" id="l16">
+                                </div>
+                                <div class="card-content" id="d16" >
                                     
                                 </div>
                                 
                             </div>
                         </div>
                     </div>
+                    
                 </div>
             </div>
         </div>

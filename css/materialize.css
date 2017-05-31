@@ -2621,7 +2621,7 @@ a {
 blockquote {
   margin: 20px 0;
   padding-left: 1.5rem;
-  border-left: 5px solid #ee6e73;
+  border-left: 5px solid #ee6e73; 
 }
 
 i {
@@ -4186,7 +4186,7 @@ nav .input-field label.active {
 
 .navbar-fixed {
   position: relative;
-  height: 56px;
+  height: 46px;
   z-index: 997;
 }
 
@@ -4196,11 +4196,11 @@ nav .input-field label.active {
 
 @media only screen and (min-width: 601px) {
   nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
-    height: 64px;
-    line-height: 64px;
+    height: 44px;
+    line-height: 44px;
   }
   .navbar-fixed {
-    height: 64px;
+    height: 44px;
   }
 }
 
@@ -4630,7 +4630,7 @@ small {
 }
 
 .card .card-action a:not(.btn):not(.btn-large):not(.btn-floating) {
-  color: #ffab40;
+  color: #263238;
   margin-right: 20px;
   transition: color .3s ease;
   text-transform: uppercase;

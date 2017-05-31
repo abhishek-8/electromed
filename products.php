@@ -116,9 +116,11 @@ else{
     <link rel="stylesheet" href="css/materialize.min.css">
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <!--Import jQuery before materialize.js-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>‌
+    <!--script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script-->‌
+    <script src="js/jquery.min.js"></script>‌
     <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+    <!--script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script-->
+    <script src="js/materialize.min.js"></script>
     <script src="action.js" type="text/javascript"></script>
    <script>
     $(document).ready(function(){
@@ -180,7 +182,7 @@ else{
     <div class="row">
       <div class="col l2 m2 s12">
         
-        <a a href="product_list.php?id=LED_display&num=3" class="btn blue darken-2 category-btn" style="width:100%" onclick="Materialize.showStaggeredList('#staggered-test')">Products</a>
+        <a a href="product_list.php?id=LED_display&num=3" class="btn blue darken-4 category-btn" style="width:100%" onclick="Materialize.showStaggeredList('#staggered-test')">Products</a>
         <ul id="staggered-test" class="collapsible" data-collapsible="accordion">
           <li style="opacity: 0;">
             <div class="collapsible-header <?php if($type==1) echo 'active'; ?>">LED Display</div>
@@ -322,13 +324,13 @@ else{
   </div>
 </div>
 <div class="row">
-  <a href="Brochures/<?php echo $brochure; ?>.pdf" class="btn blue darken-2 col l2 s5" id="dwnld-btn" download><i class="material-icons left">library_books</i>Brochure</a>
-  <button class="btn rqst blue darken-2 l2 col s6" id="rqst-btn" >Request for quote</button>
+  <a href="Brochures/<?php echo $brochure; ?>.pdf" class="btn blue darken-4 col l2 s5" id="dwnld-btn" download><i class="material-icons left">library_books</i>Brochure</a>
+  <button class="btn rqst blue darken-4 l2 col s6" id="rqst-btn" >Request for quote</button>
 </div>
 <br><br>
 <div>
   
-  <p class="custom-text blue darken-4 white-text" style="text-align:center;font-size:22px;padding-top:2px;line-height: 60px">YOU MAY ALSO BE INTERESTED IN...</p>
+  <p class="custom-text blue-grey darken-4 white-text" style="text-align:center;font-size:22px;padding-top:2px;line-height: 60px">YOU MAY ALSO BE INTERESTED IN...</p>
   <br>
   <div class="row" id="related_products">
     

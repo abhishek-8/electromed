@@ -18,7 +18,7 @@ include('submit.php');
         <!-- Compiled and minified JavaScript -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
 
-        <link rel="import" href="include/includes.html">
+        <link rel="import" href="includes.html">
 
     </head>
     <body id="contactPage">

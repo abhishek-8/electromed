@@ -9,18 +9,18 @@ $brochure='';
 $done='false';
 include('submit.php');
 if($type==1){
-$link='product_list.php?id=LED_display&num=3';
-if($x=='true_color_display'){
-  $title='True Color Display';
-  $desc='True color HD screen “offers advanced resolution, brightness and clarity and shows colors in their most natural tones, as they were meant to be seen.” ';
+$link='product_list.php?id=LED_Wall&num=3';
+if($x=='hd_led_wall'){
+  $title='HD LED Wall';
+  $desc='HD LED wall “offers advanced resolution, brightness and clarity and shows colors in their most natural tones, as they were meant to be seen.” ';
 }
-else if($x=='tri_color_display'){
-  $title='Tri Color Display';
-  $desc='TRI color display board is applauded for the features like compact design, low electricity consumption and user friendly functions.';
+else if($x=='tri_color_led_wall'){
+  $title='Tri Color LED Wall';
+  $desc='TRI color LED wall is applauded for the features like compact design, low electricity consumption and user friendly functions.';
 }
 else{
-  $title='Single Color Display';
-  $desc='Single color display board is one of the most presentable for pollution & Environment control parameters.';
+  $title='Unicolor LED Wall';
+  $desc='Single color LED wall is one of the most presentable for pollution & Environment control parameters.';
 }
 }
 
@@ -129,13 +129,12 @@ else{
     $('.materialboxed').materialbox();
     });
  </script>
-
- <link rel="import" href="include/includes.html">
+          <link rel="import" href="includes.html">
 
   </head>
   <body id="product_page">
   <?php include_once("analyticstracking.php") ?>
-    
+
     <!-- ====================================================== -->
     <!-- Top NavBar -->
     <script>
@@ -149,6 +148,7 @@ else{
     </script>
 
     <!-- ====================================================== -->
+
 
     <div class="z-depth-5 card-panel hoverable" id="request_for_quote">
       <fieldset id="rqst_form">
@@ -183,18 +183,18 @@ else{
         <a a href="product_list.php?id=LED_display&num=3" class="btn blue darken-2 category-btn" style="width:100%" onclick="Materialize.showStaggeredList('#staggered-test')">Products</a>
         <ul id="staggered-test" class="collapsible" data-collapsible="accordion">
           <li style="opacity: 0;">
-            <div class="collapsible-header <?php if($type==1) echo 'active'; ?>">LED Display</div>
+            <div class="collapsible-header <?php if($type==1) echo 'active'; ?>">LED WALL</div>
             <div class="collapsible-body container-fluid" style="line-height:72%;"><br>
-              <a href="products.php?id=true_color_display&type=1" style="font-size:14px;padding-left:10%;<?php if($x=='true_color_display') echo 'color:red'; ?>">TRUE COLOR HD SCREEN</a><br>
+              <a href="products.php?id=hd_led_wall&type=1" style="font-size:14px;padding-left:10%;<?php if($x=='hd_led_wall') echo 'color:red'; ?>">HD LED WALL</a><br>
               <hr>
-              <a href="products.php?id=tri_color_display&type=1" style="font-size:14px;padding-left:10%;<?php if($x=='tri_color_display') echo 'color:red'; ?>">TRI COLOR DISPLAY BOARDS</a><br>
+              <a href="products.php?id=tri_color_led_wall&type=1" style="font-size:14px;padding-left:10%;<?php if($x=='tri_color_led_wall') echo 'color:red'; ?>">TRI COLOR LED WALL</a><br>
               <hr>
-              <a href="products.php?id=uni_color_display&type=1" style="font-size:14px;padding-left:10%;<?php if($x=='uni_color_display') echo 'color:red'; ?>">SINGLE COLOR DISPLAY BOARDS</a><br><br>
+              <a href="products.php?id=unicolor_led_wall&type=1" style="font-size:14px;padding-left:10%;<?php if($x=='unicolor_led_wall') echo 'color:red'; ?>">UNICOLOR LED WALL</a><br><br>
               
             </div>
           </li>
           <li style="opacity: 0;">
-            <div class="collapsible-header <?php if($type==2) echo 'active'; ?>">Product for Office</div>
+            <div class="collapsible-header <?php if($type==2) echo 'active'; ?>">PRODUCTS FOR OFFICE</div>
             <div class="collapsible-body container-fluid" style="line-height:72%;"><br>
               
               <a href="products.php?id=token_display&type=2" style="font-size:14px;padding-left:10%;<?php if($x=='token_display') echo 'color:red'; ?>">TOKEN DISPLAY</a><br>
@@ -208,7 +208,7 @@ else{
             
           </li>
           <li style="opacity: 0;">
-            <div class="collapsible-header <?php if($type==4) echo 'active'; ?>">Industrial Instruments</div>
+            <div class="collapsible-header <?php if($type==4) echo 'active'; ?>">INDUSTRIAL INSTRUMENTS</div>
             <div class="collapsible-body container-fluid" style="line-height:72%;"><br>
               <a href="products.php?id=flow_monitor&type=4" style="font-size:14px;padding-left:10%;<?php if($x=='flow_monitor') echo 'color:red'; ?>">FLOW MONITOR</a><br>
               <hr>
@@ -244,9 +244,7 @@ else{
           <div class="col l5 s12 m5" id="product">
             <div class="row">
               <br>
-              <div class="col l12 s12 m11 materialboxed" id="product_image">
-                
-              </div>
+              <div class="col l12 s12 m11 materialboxed" id="product_image"></div>
             </div>
             <br><br>
             <div class="row">
@@ -261,126 +259,70 @@ else{
             <p class="overview-text"><?php echo $desc; ?></p>
             <br>
 
+        <!-- ====================================================== -->
+        <!-- FEATURES -->
+
         <table id="myTable" class="striped" style="line-height: 100%;">
           <blockquote class="headName1" style="font-size:21px;"><u>Features</u></blockquote>
             <col width="30%">
             <col width="0.5%">
             <col width="69.5%">
 
-            <tr id="r1">
-              <td class="table_specs key" style="vertical-align: top;"><b id="r1d1"></b></td>
-              <td style="text-align:center" id="c1">:</td>
-              <td class="table_specs value" style="vertical-align: top;" id="r1d2"></td>
-            </tr>
-        
+            <?php 
+              $d1="d1";
+              $d2="d2";
+              for ($i = 1; $i <= 7; $i++) {
+                echo "<tr id=\"r$i\">
+                        <td class=\"table_specs key\" style=\"vertical-align: top;\"><b id=\"r$i$d1\"></b></td>
+                        <td style=\"text-align:center\" id=\"c$i\">:</td>
+                        <td class=\"table_specs value\" style=\"vertical-align: top;\" id=\"r$i$d2\"></td>
+                      </tr>";
+              };
+            ?>
+        </table><br> 
 
+        <!-- ====================================================== -->
 
-            <tr id="r2">
-              <td class="table_specs" style="vertical-align: top;"><b id="r2d1"></b></td>
-              <td style="text-align:center" id="c2">:</td>
-              <td class="table_specs" style="vertical-align: top;" id="r2d2"></td>
-            </tr>
-
-            
-
-            <tr id="r3">
-              <td class="table_specs" style="vertical-align: top;"><b id="r3d1"></b></td>
-              <td style="text-align:center" id="c3">:</td>
-              <td class="table_specs" style="vertical-align: top;" id="r3d2"></td>
-            </tr>
-                  
-            <tr id="r4">
-              <td class="table_specs" style="vertical-align: top;"><b id="r4d1"></b></td>
-              <td style="text-align:center" id="c4">:</td>
-              <td class="table_specs" style="vertical-align: top;" id="r4d2"></td>
-            </tr>
-
-
-            <tr id="r5">
-              <td class="table_specs" style="vertical-align: top;"><b id="r5d1"></b></td>
-              <td style="text-align:center" id="c5">:</td>
-              <td class="table_specs" style="vertical-align: top;" id="r5d2"></td>
-            </tr>
-
-
-            <tr id="r6">
-              <td class="table_specs" style="vertical-align: top;"><b id="r6d1"></b></td>
-              <td style="text-align:center" id="c6">:</td>
-              <td class="table_specs" style="vertical-align: top;" id="r6d2"></td>
-            </tr>
-
-            <tr id="r7">
-              <td class="table_specs" style="vertical-align: top;"><b id="r7d1"></b></td>
-              <td style="text-align:center" id="c7">:</td>
-              <td class="table_specs" style="vertical-align: top;" id="r7d2"></td>
-            </tr>
-          </table><br>
-          
-        
       </div>
     </div>
   </div>
 </div>
+
+
 <div class="row">
   <a href="Brochures/<?php echo $brochure; ?>.pdf" class="btn blue darken-2 col l2 s5" id="dwnld-btn" download><i class="material-icons left">library_books</i>Brochure</a>
   <button class="btn rqst blue darken-2 l2 col s6" id="rqst-btn" >Request for quote</button>
 </div>
 <br><br>
-<div>
-  
+
+
+<!-- ====================================================== -->
+<!-- You may be interested in -->
+
+<div>  
   <p class="custom-text blue darken-4 white-text" style="text-align:center;font-size:22px;padding-top:2px;line-height: 60px">YOU MAY ALSO BE INTERESTED IN...</p>
   <br>
   <div class="row" id="related_products">
     
-    <div class="col s6 m7 l3" id="rel1">
-      <div class="card">
-        <div class="card-image" id="ri1">
-          
-        </div>
-        <div class="card-action" id="rl1">
-        </div>
-        <div class="card-content" id="rd1">
-        </div>
-        
-      </div>
-    </div>
-    <div class="col s6 m7 l3" id="rel2">
-      <div class="card">
-        <div class="card-image" id="ri2">
-          
-        </div>
-        <div class="card-action" id="rl2">
-        </div>
-        <div class="card-content" id="rd2">
-        </div>
-      </div>
-    </div>
-    <div class="col s6 m7 l3" id="rel3">
-      <div class="card">
-        <div class="card-image" id="ri3">
-          
-        </div>
-        <div class="card-action" id="rl3">
-        </div>
-        <div class="card-content" id="rd3">
-        </div>
-      </div>
-    </div>
-    <div class="col s6 m7 l3" id="rel4">
-      <div class="card">
-        <div class="card-image" id="ri4">
-          
-        </div>
-        <div class="card-action" id="rl4">
-        </div>
-        <div class="card-content" id="rd4">
-        </div>
-      </div>
-    </div>
-    
+    <?php 
+      for ($i = 1; $i <= 4; $i++) {
+        echo "<div class=\"col s6 m7 l3\" id=\"rel$i\">
+                <div class=\"card\">
+                  <div class=\"card-image\" id=\"ri$i\"></div>
+                  <div class=\"card-action\" id=\"rl$i\"></div>
+                  <div class=\"card-content\" id=\"rd$i\"></div>
+                </div>
+              </div>";
+      };
+    ?>
   </div>
 </div>
+
+<!-- ====================================================== -->
+    
+    
 <br><br>
+
 
     <!-- ====================================================== -->
     <!-- Footer -->
@@ -395,6 +337,8 @@ else{
     </script>
 
     <!-- ====================================================== -->
+
+
 
  <script>
     $(document).ready(function(){

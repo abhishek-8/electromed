@@ -49,7 +49,7 @@ $map='<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.27
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
     <script src="action.js" type="text/javascript"></script>
-    <link rel="import" href="include/includes.html">
+    <link rel="import" href="includes.html">
 
   </head>
 

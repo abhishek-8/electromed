@@ -25,8 +25,8 @@ if(  i!=5 || j!=42 || k!=1024 	)
 }
 
 function set1(x) {
-if(x=='true_color_display') {
-document.getElementById('pre2').innerHTML='LED Display';
+if(x=='hd_led_wall') {
+document.getElementById('pre2').innerHTML='LED Wall';
 
 document.getElementById('r1d1').innerHTML ='';
 document.getElementById('r1d2').innerHTML ='<p class="bullets" style="display:inline;">USB interface</p>';
@@ -55,19 +55,19 @@ document.getElementById('r7d2').innerHTML ='4 mm';
 
 
 	
-		document.getElementById('ri1').innerHTML='<a href="products.php?id=tri_color_display&type=1"><img src="photos/tri_color_display1.jpg" height="170" alt="tri color display"></a>';
+		document.getElementById('ri1').innerHTML='<a href="products.php?id=tri_color_led_wall&type=1"><img src="photos/tri_color_led_wall1.jpg" height="170" alt="tri color display"></a>';
 		document.getElementById('rd1').innerHTML='Compact design, low electricity consumption and user friendly functions.'+'<br><br>';
-		document.getElementById('rl1').innerHTML='<br><a href="products.php?id=tri_color_display&type=1">TRI COLOR DISPLAY BOARDS</a>';
+		document.getElementById('rl1').innerHTML='<br><a href="products.php?id=tri_color_led_wall&type=1">TRI COLOR LED WALL</a>';
 
-		document.getElementById('ri2').innerHTML='<a href="products.php?id=uni_color_display&type=1"><img src="photos/uni_color_display1.jpg" height="170" alt="single color display"></a>';
+		document.getElementById('ri2').innerHTML='<a href="products.php?id=unicolor_display&type=1"><img src="photos/unicolor_led_wall1.jpg" height="170" alt="single color display"></a>';
 		document.getElementById('rd2').innerHTML='One of the most presentable for pollution & Environment control parameters.';
-		document.getElementById('rl2').innerHTML='<br><a href="products.php?id=uni_color_display&type=1">SINGLE COLOR DISPLAY BOARDS</a>'		
+		document.getElementById('rl2').innerHTML='<br><a href="products.php?id=unicolor_led_wall&type=1">UNICOLOR LED WALL</a>'		
 		$('#rel3').hide();
 		$('#rel4').hide();
 }
 
-else if(x=='tri_color_display') {
-document.getElementById('pre2').innerHTML='LED Display';
+else if(x=='tri_color_led_wall') {
+document.getElementById('pre2').innerHTML='LED Wall';
 
 document.getElementById('r1d1').innerHTML ='';
 document.getElementById('r1d2').innerHTML ='<p class="bullets" style="display:inline;">LED Panel (Red, Green and Yellow)</p>';
@@ -93,18 +93,18 @@ cell1.style.lineHeight="32px";
 document.getElementById('r7d1').innerHTML ='Line spacing';
 document.getElementById('r7d2').innerHTML ='10 mm';
 
-		document.getElementById('ri1').innerHTML='<a href="products.php?id=true_color_display&type=1"><img src="photos/true_color_display1.jpg" height="170" alt="true color display"></a>';
+		document.getElementById('ri1').innerHTML='<a href="products.php?id=hd_led_wall&type=1"><img src="photos/hd_led_wall1.jpg" height="170" alt="true color display"></a>';
 		document.getElementById('rd1').innerHTML='Advanced resolution, brightness and clarity and shows colors in their most natural tones.';
-		document.getElementById('rl1').innerHTML='<br><a href="products.php?id=true_color_display&type=1">TRUE COLOR HD SCREEN</a>'
+		document.getElementById('rl1').innerHTML='<br><a href="products.php?id=hd_led_wall&type=1">HD LED WALL</a>'
 
-		document.getElementById('ri2').innerHTML='<a href="products.php?id=uni_color_display&type=1"><img src="photos/uni_color_display1.jpg" height="170" alt="single color display"></a>';
+		document.getElementById('ri2').innerHTML='<a href="products.php?id=unicolor_display&type=1"><img src="photos/unicolor_led_wall1.jpg" height="170" alt="single color display"></a>';
 		document.getElementById('rd2').innerHTML='One of the most presentable for pollution & Environment control parameters.';
-		document.getElementById('rl2').innerHTML='<br><a href="products.php?id=uni_color_display&type=1">SINGLE COLOR DISPLAY BOARDS</a>'
+		document.getElementById('rl2').innerHTML='<br><a href="products.php?id=unicolor_display&type=1">UNICOLOR LED WALL</a>'
 		$('#rel3').hide();
 		$('#rel4').hide();	
 }
-else if(x=='uni_color_display') {
-document.getElementById('pre2').innerHTML='LED Display';
+else if(x=='unicolor_led_wall') {
+document.getElementById('pre2').innerHTML='LED Wall';
 
 
 document.getElementById('r1d1').innerHTML ='';
@@ -134,13 +134,13 @@ document.getElementById('r7d1').innerHTML ='Line spacing';
 document.getElementById('r7d2').innerHTML ='10 mm';
 
 
-document.getElementById('ri1').innerHTML='<a href="products.php?id=true_color_display&type=1"><img src="photos/true_color_display1.jpg" height="170" alt="true color display"></a>';
+document.getElementById('ri1').innerHTML='<a href="products.php?id=hd_led_wall&type=1"><img src="photos/hd_led_wall1.jpg" height="170" alt="true color display"></a>';
 		document.getElementById('rd1').innerHTML='Advanced resolution, brightness and clarity and shows colors in their most natural tones.';
-		document.getElementById('rl1').innerHTML='<br><a href="products.php?id=true_color_display&type=1">TRUE COLOR HD SCREEN</a>'
+		document.getElementById('rl1').innerHTML='<br><a href="products.php?id=hd_led_wall&type=1">HD LED WALL</a>'
 
-		document.getElementById('ri2').innerHTML='<a href="products.php?id=tri_color_display&type=1"><img src="photos/tri_color_display1.jpg" height="170" alt="tri color display"></a>';
+		document.getElementById('ri2').innerHTML='<a href="products.php?id=tri_color_led_wall&type=1"><img src="photos/tri_color_led_wall1.jpg" height="170" alt="tri color display"></a>';
 		document.getElementById('rd2').innerHTML='Compact design, low electricity consumption and user friendly functions.'+'<br><br>';
-		document.getElementById('rl2').innerHTML='<br><a href="products.php?id=tri_color_display&type=1">TRI COLOR DISPLAY BOARDS</a>';
+		document.getElementById('rl2').innerHTML='<br><a href="products.php?id=tri_color_led_wall&type=1">TRI COLOR LED WALL</a>';
 
 		$('#rel3').hide();
 		$('#rel4').hide();
@@ -976,9 +976,9 @@ if ($('#r'+x+'d2').is(':empty') ){
 
 function filter(x,z){
 	var y,k;
-	if (x!='projects'){
-		z=16;
-	}
+//	if (x!='projects'){
+//		z=16;
+//	}
 	for(k=1;k<=10;k++) {
 		if(k<=z)
 			$('#c'+k).show();
@@ -986,84 +986,84 @@ function filter(x,z){
 			$('#c'+k).hide();
 	}
 
-	if(x!='projects') {
-		y='LED Display';
+	if(x=='LED_Wall') {
+		y='LED Wall';
 		
-		document.getElementById('p1').innerHTML='<a href="products.php?id=true_color_display&type=1"><img src="photos/true_color_display1.jpg" height="170" alt="true color display"></a>';
+		document.getElementById('p1').innerHTML='<a href="products.php?id=hd_led_wall&type=1"><img src="photos/hd_led_wall1.jpg" height="170" alt="true color display"></a>';
 		document.getElementById('d1').innerHTML='Advanced resolution, brightness and clarity and shows colors in their most natural tones.';
-		document.getElementById('l1').innerHTML='<br><a href="products.php?id=true_color_display&type=1">TRUE COLOR HD SCREEN<br><br></a>'
+		document.getElementById('l1').innerHTML='<br><a href="products.php?id=hd_led_wall&type=1">HD LED WALL<br><br></a>'
 
-		document.getElementById('p2').innerHTML='<a href="products.php?id=tri_color_display&type=1"><img src="photos/tri_color_display1.jpg" height="170" alt="tri color display"></a>';
+		document.getElementById('p2').innerHTML='<a href="products.php?id=tri_color_led_wall&type=1"><img src="photos/tri_color_led_wall1.jpg" height="170" alt="tri color display"></a>';
 		document.getElementById('d2').innerHTML='Compact design, low electricity consumption and user friendly functions.'+'<br><br>';
-		document.getElementById('l2').innerHTML='<br><a href="products.php?id=tri_color_display&type=1">TRI COLOR DISPLAY BOARDS</a>';
+		document.getElementById('l2').innerHTML='<br><a href="products.php?id=tri_color_led_wall&type=1">TRI COLOR LED WALL</a>';
 
-		document.getElementById('p3').innerHTML='<a href="products.php?id=uni_color_display&type=1"><img src="photos/uni_color_display1.jpg" height="170" alt="single color display"></a>';
+		document.getElementById('p3').innerHTML='<a href="products.php?id=unicolor_led_wall&type=1"><img src="photos/unicolor_led_wall1.jpg" height="170" alt="single color display"></a>';
 		document.getElementById('d3').innerHTML='One of the most presentable for pollution & Environment control parameters.';
-		document.getElementById('l3').innerHTML='<br><a href="products.php?id=uni_color_display&type=1">SINGLE COLOR DISPLAY BOARDS</a>'	
-	//}
+		document.getElementById('l3').innerHTML='<br><a href="products.php?id=unicolor_led_wall&type=1">UNICOLOR DISPLAY BOARDS</a>'	
+	}
 
-	//else if(x=='Product_for_office') {
-	//	y='Product for Office';
+	else if(x=='Product_for_office') {
+		y='Product for Office';
 		
-		document.getElementById('p4').innerHTML='<a href="products.php?id=token_display&type=2"><img src="photos/token_display1.jpg" height="170" alt="token_display"></a>';
-		document.getElementById('d4').innerHTML='Provides easiest way to inform the customer or patient about his/her status while waiting.';
-		document.getElementById('l4').innerHTML='<br><a href="products.php?id=token_display&type=2">TOKEN DISPLAY<br><br></a>'
+		document.getElementById('p1').innerHTML='<a href="products.php?id=token_display&type=2"><img src="photos/token_display1.jpg" height="170" alt="token_display"></a>';
+		document.getElementById('d1').innerHTML='Provides easiest way to inform the customer or patient about his/her status while waiting.';
+		document.getElementById('l1').innerHTML='<br><a href="products.php?id=token_display&type=2">TOKEN DISPLAY<br><br></a>'
 
-		document.getElementById('p5').innerHTML='<a href="products.php?id=digital_clock&type=2"><img src="photos/digital_clock1.jpg" height="170" alt="digital clock"></a>';
-		document.getElementById('d5').innerHTML='Used in factories, offices, large public areas, shopping centers, warehouses and similar large areas.';
-		document.getElementById('l5').innerHTML='<br><a href="products.php?id=digital_clock&type=2">DIGITAL CLOCKS<br><br></a>'
+		document.getElementById('p2').innerHTML='<a href="products.php?id=digital_clock&type=2"><img src="photos/digital_clock1.jpg" height="170" alt="digital clock"></a>';
+		document.getElementById('d2').innerHTML='Used in factories, offices, large public areas, shopping centers, warehouses and similar large areas.';
+		document.getElementById('l2').innerHTML='<br><a href="products.php?id=digital_clock&type=2">DIGITAL CLOCKS<br><br></a>'
 
-		document.getElementById('p6').innerHTML='<a href="products.php?id=interest_rate_display_board&type=2"><img src="photos/interest_rate_display_board1.jpg" height="170" alt="interest rate display board"></a>';
-		document.getElementById('d6').innerHTML='Date, time, deposit period, interest rate is displayed on an attractive background.';
-		document.getElementById('l6').innerHTML='<br><a href="products.php?id=interest_rate_display_board&type=2">INTEREST RATE DISPLAY BOARD</a>'
+		document.getElementById('p3').innerHTML='<a href="products.php?id=interest_rate_display_board&type=2"><img src="photos/interest_rate_display_board1.jpg" height="170" alt="interest rate display board"></a>';
+		document.getElementById('d3').innerHTML='Date, time, deposit period, interest rate is displayed on an attractive background.';
+		document.getElementById('l3').innerHTML='<br><a href="products.php?id=interest_rate_display_board&type=2">INTEREST RATE DISPLAY BOARD</a>'
 
-		document.getElementById('p7').innerHTML='<a href="products.php?id=scrolling_display&type=2"><img src="photos/scrolling_display1.jpg" height="170" alt="scrolling display"></a>';
-		document.getElementById('d7').innerHTML='High brightness. User can store and scroll a lot of messages';
-		document.getElementById('l7').innerHTML='<br><a href="products.php?id=scrolling_display&type=2">SCROLLING DISPLAY<br><br></a>';
-//	}
+		document.getElementById('p4').innerHTML='<a href="products.php?id=scrolling_display&type=2"><img src="photos/scrolling_display1.jpg" height="170" alt="scrolling display"></a>';
+		document.getElementById('d4').innerHTML='High brightness. User can store and scroll a lot of messages';
+		document.getElementById('l4').innerHTML='<br><a href="products.php?id=scrolling_display&type=2">SCROLLING DISPLAY<br><br></a>';
+	}
 
-//	else if(x=='Industrial_Instruments') {
-//		y='Industrial Instruments';	
+	else if(x=='Industrial_Instruments') {
+		y='Industrial Instruments';	
 		
-		document.getElementById('p8').innerHTML='<a href="products.php?id=flow_monitor&type=4"><img src="photos/flow_monitor1.jpg" height="170" alt="flow monitor"></a>';
-		document.getElementById('d8').innerHTML='Advanced display system to monitor juice and water flow parameters.';
-		document.getElementById('l8').innerHTML='<br><a href="products.php?id=flow_monitor&type=4">Flow Monitor<br><br></a>'
+		document.getElementById('p1').innerHTML='<a href="products.php?id=flow_monitor&type=4"><img src="photos/flow_monitor1.jpg" height="170" alt="flow monitor"></a>';
+		document.getElementById('d1').innerHTML='Advanced display system to monitor juice and water flow parameters.';
+		document.getElementById('l1').innerHTML='<br><a href="products.php?id=flow_monitor&type=4">Flow Monitor<br><br></a>'
 
-		document.getElementById('p9').innerHTML='<a href="products.php?id=line_frequency_monitor&type=4"><img src="photos/line_frequency_monitor1.jpg" height="170" alt="line frequency monitor"></a>';
-		document.getElementById('d9').innerHTML='Measures power line frequency, highly accurate reading and non blinking display. Microcontroller based design. ERTL tested.';
-		document.getElementById('l9').innerHTML='<br><a href="products.php?id=line_frequency_monitor&type=4">Line Frequency Monitor</a>'
+		document.getElementById('p2').innerHTML='<a href="products.php?id=line_frequency_monitor&type=4"><img src="photos/line_frequency_monitor1.jpg" height="170" alt="line frequency monitor"></a>';
+		document.getElementById('d2').innerHTML='Measures power line frequency, highly accurate reading and non blinking display. Microcontroller based design. ERTL tested.';
+		document.getElementById('l2').innerHTML='<br><a href="products.php?id=line_frequency_monitor&type=4">Line Frequency Monitor</a>'
 
-		document.getElementById('p10').innerHTML='<a href="products.php?id=megawatt_panel&type=4"><img src="photos/megawatt_panel1.jpg" height="170" alt="megawatt panel"></a>';
-		document.getElementById('d10').innerHTML='Essential to power plants. Generation data can be displayed all over the plant.';
-		document.getElementById('l10').innerHTML='<br><a href="products.php?id=megawatt_panel&type=4">Megawatt Panel<br><br></a>'
+		document.getElementById('p3').innerHTML='<a href="products.php?id=megawatt_panel&type=4"><img src="photos/megawatt_panel1.jpg" height="170" alt="megawatt panel"></a>';
+		document.getElementById('d3').innerHTML='Essential to power plants. Generation data can be displayed all over the plant.';
+		document.getElementById('l3').innerHTML='<br><a href="products.php?id=megawatt_panel&type=4">Megawatt Panel<br><br></a>'
 
-		document.getElementById('p11').innerHTML='<a href="products.php?id=process_indicator&type=4"><img src="photos/process_indicator1.jpg" height="170" alt="process indicator"></a>';
-		document.getElementById('d11').innerHTML='Suitable for displaying process parameters like flow, temperature, level, speed, pH etc. Available in different digit heights.';
-		document.getElementById('l11').innerHTML='<br><a href="products.php?id=process_indicator&type=4">Process Indicator<br><br></a>'
+		document.getElementById('p4').innerHTML='<a href="products.php?id=process_indicator&type=4"><img src="photos/process_indicator1.jpg" height="170" alt="process indicator"></a>';
+		document.getElementById('d4').innerHTML='Suitable for displaying process parameters like flow, temperature, level, speed, pH etc. Available in different digit heights.';
+		document.getElementById('l4').innerHTML='<br><a href="products.php?id=process_indicator&type=4">Process Indicator<br><br></a>'
 
-		document.getElementById('p12').innerHTML='<a href="products.php?id=ph_meter&type=4"><img src="photos/ph_meter1.jpg" height="170" alt="ph meter"></a>';
-		document.getElementById('d12').innerHTML='Measures pH of all types of liquids.'+'<br><br>';
-		document.getElementById('l12').innerHTML='<br><a href="products.php?id=ph_meter&type=4">Ph meter<br><br></a>'
+		document.getElementById('p5').innerHTML='<a href="products.php?id=ph_meter&type=4"><img src="photos/ph_meter1.jpg" height="170" alt="ph meter"></a>';
+		document.getElementById('d5').innerHTML='Measures pH of all types of liquids.'+'<br><br>';
+		document.getElementById('l5').innerHTML='<br><a href="products.php?id=ph_meter&type=4">Ph meter<br><br></a>'
 
-		document.getElementById('p13').innerHTML='<a href="products.php?id=tachometer&type=4"><img src="photos/tachometer1.jpg" height="170" alt="tachometer"></a>';
-		document.getElementById('d13').innerHTML='Used for monitoring the rpm of machines. The sensor is contactless.';
-		document.getElementById('l13').innerHTML='<br><a href="products.php?id=tachometer&type=4">Tachometer<br><br></a>'
+		document.getElementById('p6').innerHTML='<a href="products.php?id=tachometer&type=4"><img src="photos/tachometer1.jpg" height="170" alt="tachometer"></a>';
+		document.getElementById('d6').innerHTML='Used for monitoring the rpm of machines. The sensor is contactless.';
+		document.getElementById('l6').innerHTML='<br><a href="products.php?id=tachometer&type=4">Tachometer<br><br></a>'
 
-		document.getElementById('p14').innerHTML='<a href="products.php?id=temperature_controller&type=4"><img src="photos/temperature_controller1.jpg" height="170" alt="temperature controller"></a>';
-		document.getElementById('d14').innerHTML='Used in a variety of industrial applications like turbines, furnaces, blow moulding, etc.';
-		document.getElementById('l14').innerHTML='<br><a href="products.php?id=temperature_controller&type=4">Temperature Controller</a>'
+		document.getElementById('p7').innerHTML='<a href="products.php?id=temperature_controller&type=4"><img src="photos/temperature_controller1.jpg" height="170" alt="temperature controller"></a>';
+		document.getElementById('d7').innerHTML='Used in a variety of industrial applications like turbines, furnaces, blow moulding, etc.';
+		document.getElementById('l7').innerHTML='<br><a href="products.php?id=temperature_controller&type=4">Temperature Controller</a>'
 
-		document.getElementById('p15').innerHTML='<a href="products.php?id=twilight_switches&type=4"><img src="photos/twilight_switches1.jpg" height="170" alt="twilight switches"></a>';
-		document.getElementById('d15').innerHTML='Activates with respect to the ambient light,switches ON and OFF at dusk and dawn.';
-		document.getElementById('l15').innerHTML='<br><a href="products.php?id=twilight_switches&type=4">Twilight Switch<br><br></a>'
+		document.getElementById('p8').innerHTML='<a href="products.php?id=twilight_switches&type=4"><img src="photos/twilight_switches1.jpg" height="170" alt="twilight switches"></a>';
+		document.getElementById('d8').innerHTML='Activates with respect to the ambient light,switches ON and OFF at dusk and dawn.';
+		document.getElementById('l8').innerHTML='<br><a href="products.php?id=twilight_switches&type=4">Twilight Switch<br><br></a>'
 
-		document.getElementById('p16').innerHTML='<a href="products.php?id=industrial_display&type=4"><img src="photos/industrial_display1.jpg" height="170" alt="industrial display"></a>';
-		document.getElementById('d16').innerHTML='All sorts of calculations can be done internally and displayed.';
-		document.getElementById('l16').innerHTML='<br><a href="products.php?id=industrial_display&type=4">Industrial Display Board</a>'
+		document.getElementById('p9').innerHTML='<a href="products.php?id=industrial_display&type=4"><img src="photos/industrial_display1.jpg" height="170" alt="industrial display"></a>';
+		document.getElementById('d9').innerHTML='All sorts of calculations can be done internally and displayed.';
+		document.getElementById('l9').innerHTML='<br><a href="products.php?id=industrial_display&type=4">Industrial Display Board</a>'
 
-		document.getElementById('p17').innerHTML='<a href="products.php?id=weighing_scale_monitor&type=4"><img src="photos/weighing_scale_monitor1.jpg" height="170" alt="weight scale monitor"></a>';
-		document.getElementById('d17').innerHTML='Monitors the number of tippings of juice and water Fully automatic operation and convenience of remote display.';
-		document.getElementById('l17').innerHTML='<br><a href="products.php?id=weighing_scale_monitor&type=4">Weighing Scale Monitor<br><br></a>'
+		document.getElementById('p10').innerHTML='<a href="products.php?id=weighing_scale_monitor&type=4"><img src="photos/weighing_scale_monitor1.jpg" height="170" alt="weight scale monitor"></a>';
+		document.getElementById('d10').innerHTML='Monitors the number of tippings of juice and water Fully automatic operation and convenience of remote display.';
+		document.getElementById('l10').innerHTML='<br><a href="products.php?id=weighing_scale_monitor&type=4">Weighing Scale Monitor<br><br></a>'
 	}
 	else if(x=='projects') {
 	

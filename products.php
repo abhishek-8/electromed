@@ -241,6 +241,8 @@ else{
             <a href="" class="breadcrumb black-text" id="curr"><?php echo $title; ?></a>
         </div>
         <div class="row product-images">
+          
+          <!-- 3 Product images -->    
           <div class="col l5 s12 m5" id="product">
             <div class="row">
               <br>
@@ -253,6 +255,8 @@ else{
               <div class="col l3 m3 s3 btn3" id="product_image3"></div>
             </div>
           </div>
+          <!-- ============================================= -->    
+
           <div class="col l6 s12 m6" id="specs">
               <br>
             <blockquote class="headName1" style="font-size:21px;"><u id="info">Overview</u></blockquote>

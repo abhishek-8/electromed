@@ -142,6 +142,10 @@ $map='<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.27
 </div>
 </div>
 
+
+<!-- ====================================================== -->
+<!-- FEATURES -->
+
 <div class="row">
   <div class="col l6 offset-l3 s12 m6 offset-m3">
         <table class="striped" style="line-height: 110%;">
@@ -149,103 +153,55 @@ $map='<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.27
         <col width="30%">
         <col width="0.5%">
         <col width="69.5%">
-        <tr id="r1">
-          <td class="table_specs key" style="vertical-align: top;"><b id="r1d1"></b></td>
-          <td style="text-align:center" id="c1">:</td>
-          <td class="table_specs value" style="vertical-align: top;" id="r1d2"></td>
-        </tr>
-        <tr id="r2">
-          <td class="table_specs" style="vertical-align: top;"><b id="r2d1"></b></td>
-          <td style="text-align:center" id="c2">:</td>
-          <td class="table_specs" style="vertical-align: top;" id="r2d2"></td>
-        </tr>
-        <tr id="r3">
-          <td class="table_specs" style="vertical-align: top;"><b id="r3d1"></b></td>
-          <td style="text-align:center" id="c3">:</td>
-          <td class="table_specs" style="vertical-align: top;" id="r3d2"></td>
-        </tr>
-        <tr id="r4">
-          <td class="table_specs" style="vertical-align: top;"><b id="r4d1"></b></td>
-          <td style="text-align:center" id="c4">:</td>
-          <td class="table_specs" style="vertical-align: top;" id="r4d2"></td>
-        </tr>
-        <tr id="r5">
-          <td class="table_specs" style="vertical-align: top;"><b id="r5d1"></b></td>
-          <td style="text-align:center" id="c5">:</td>
-          <td class="table_specs" style="vertical-align: top;" id="r5d2"></td>
-        </tr>
-        <tr id="r6">
-          <td class="table_specs" style="vertical-align: top;"><b id="r6d1"></b></td>
-          <td style="text-align:center" id="c6">:</td>
-          <td class="table_specs" style="vertical-align: top;" id="r6d2"></td>
-        </tr>
-        <tr id="r7">
-          <td class="table_specs" style="vertical-align: top;"><b id="r7d1"></b></td>
-          <td style="text-align:center" id="c7">:</td>
-          <td class="table_specs" style="vertical-align: top;" id="r7d2"></td>
-        </tr>
+        <?php 
+          $d1="d1";
+          $d2="d2";
+          for ($i = 1; $i <= 7; $i++) {
+            echo "<tr id=\"r$i\">
+                    <td class=\"table_specs key\" style=\"vertical-align: top;\"><b id=\"r$i$d1\"></b></td>
+                    <td style=\"text-align:center\" id=\"c$i\">:</td>
+                    <td class=\"table_specs value\" style=\"vertical-align: top;\" id=\"r$i$d2\"></td>
+                  </tr>";
+          };
+        ?>
+
+
       </table>
     </div>
 </div>
+
+<!-- ====================================================== -->
+
+
+<!-- ====================================================== -->
+<!-- Other projects -->    
+
 <div class="overlay" onClick="style.pointerEvents='none'"></div>
         <div id="map" class="center"><?php echo $map; ?>
         </div>
 <br><br>
 <div>
-  <p class="custom-text blue white-text" style="text-align:center;font-size:22px;padding-top:2px;line-height: 60px;">OTHER PROJECTS</p> 
+  <p class="custom-text blue darken-3 white-text" style="text-align:center;font-size:22px;padding-top:2px;line-height: 60px;">OTHER PROJECTS</p> 
    <div class="row" id="related_products">
     
-    <div class="col s6 m7 l3" id="rel1">
-      <div class="card">
-        <div class="card-image" id="ri1">
-          
-        </div>
-        <div class="card-action" id="rl1">
-        </div>
-        <div class="card-content" id="rd1">
-        </div>
-        
-      </div>
-    </div>
+    <?php 
+      for ($i = 1; $i <= 4; $i++) {
+        echo "<div class=\"col s6 m7 l3\" id=\"rel$i\">
+                <div class=\"card\">
+                  <div class=\"card-image\" id=\"ri$i\"></div>
+                  <div class=\"card-action\" id=\"rl$i\"></div>
+                  <div class=\"card-content\" id=\"rd$i\"></div>
+                </div>
+              </div>";
+      };
+    ?>
 
-    <div class="col s6 m7 l3" id="rel2">
-      <div class="card">
-        <div class="card-image" id="ri2">
-          
-        </div>
-        <div class="card-action" id="rl2">
-        </div>
-        <div class="card-content" id="rd2">
-        </div>
-      </div>
-    </div>
-
-    <div class="col s6 m7 l3" id="rel3">
-      <div class="card">
-        <div class="card-image" id="ri3">
-          
-        </div>
-        <div class="card-action" id="rl3">
-        </div>
-        <div class="card-content" id="rd3">
-        </div>
-      </div>
-    </div>
-
-    <div class="col s6 m7 l3" id="rel4">
-      <div class="card">
-        <div class="card-image" id="ri4">
-          
-        </div>
-        <div class="card-action" id="rl4">
-        </div>
-        <div class="card-content" id="rd4">
-        </div>
-      </div>
-    </div>
     
   </div>
 </div>
+
+<!-- ====================================================== -->
+<!-- Footer -->    
 
     <script>
         var link = document.querySelector('link[rel="import"]');
@@ -257,8 +213,7 @@ $map='<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.27
         document.body.appendChild(el.cloneNode(true));
     </script>
 
-    <!-- ====================================================== -->
-
+<!-- ====================================================== -->
 
     <script>
     $(document).ready(function(){

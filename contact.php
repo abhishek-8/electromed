@@ -117,7 +117,7 @@ include('submit.php');
                                 </div>
                             </div>
 
-                            <center><input type="submit" name="submit" class="blue darken-5 btn" style="width:40%;border-radius:5px;"></center>
+                            <center><input type="submit" name="submit" class="red accent-4 btn" style="width:40%;border-radius:5px;"></center>
                             </div>
                     </form>
                     <hr class="style11">

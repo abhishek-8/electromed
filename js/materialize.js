@@ -4332,7 +4332,8 @@ $(document).ready(function(){
     var anchor = btn.find('> a').first();
     var menu = btn.find('> ul').first();
     var backdrop = $('<div class="fab-backdrop"></div>');
-    var fabColor = anchor.css('background-color');
+    var fabColor = anchor.css('background-color',getRandomColor());
+    
     anchor.append(backdrop);
 
     offsetX = btnRect.left - (windowWidth / 2) + (btnRect.width / 2);
@@ -4349,6 +4350,7 @@ $(document).ready(function(){
       'text-align': 'center',
       width: '100%',
       bottom: 0,
+      color: red,
       left: 0,
       transform: 'translateX(' + offsetX + 'px)',
       transition: 'none'

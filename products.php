@@ -118,7 +118,7 @@ else{
     <!--Import jQuery before materialize.js-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>‌
     <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+    <script src="js/materialize.js"></script>
     <script src="action.js" type="text/javascript"></script>
    <script>
     $(document).ready(function(){
@@ -304,13 +304,14 @@ else{
 <!-- You may be interested in -->
 
 <div>  
-  <p class="custom-text blue darken-4 white-text" style="text-align:center;font-size:22px;padding-top:2px;line-height: 60px">YOU MAY ALSO BE INTERESTED IN...</p>
+  <p class="custom-text red accent-4 white-text" style="text-align:center;font-size:22px;padding-top:2px;line-height: 60px">YOU MAY ALSO BE INTERESTED IN...</p>
   <br>
   <div class="row" id="related_products">
     
-    <?php 
+    <?php
+    echo "<div class=\"col s12 m12 l10 offset-l1\">" ;        
       for ($i = 1; $i <= 4; $i++) {
-        echo "<div class=\"col s6 m7 l3\" id=\"rel$i\">
+        echo "<div class=\"col s6 m7 l2\" id=\"rel$i\">
                 <div class=\"card\">
                   <div class=\"card-image\" id=\"ri$i\"></div>
                   <div class=\"card-action\" id=\"rl$i\"></div>
@@ -318,6 +319,7 @@ else{
                 </div>
               </div>";
       };
+      echo "</div>";
     ?>
   </div>
 </div>

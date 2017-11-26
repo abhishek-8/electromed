@@ -1,27 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
     <title>Clients - Pioneer in sugar mills,power plants, and heavy industry - Electromed, Lucknow</title>
     <!-- CSS  -->
     <link rel="stylesheet" href="css/materialize.min.css">
-    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
     <!--Import jQuery before materialize.js-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>‌
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
     <style>
-    .container-fluid img{margin-left:auto;margin-right:auto;display:block;height:auto;width:100%}
+        .container-fluid img {
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            height: auto;
+            width: 100%
+        }
     </style>
     <link rel="import" href="includes.html">
 
-  </head>
-  <body id="clients_page">
+</head>
+
+<body id="clients_page">
 
     <!-- ====================================================== -->
     <!-- Top NavBar -->
-    <script>
+    <!--script>
         var link = document.querySelector('link[rel="import"]');
         var content = link.import;
 
@@ -29,210 +37,365 @@
         var el = content.querySelector('.top-navbar');
 
         document.body.appendChild(el.cloneNode(true));
-    </script>
+    </script-->
+
+
+    <!-- Dropdown Menu-->
+
+    <!-- Dropdown Menu-->
+
+    <div class="top-navbar">
+        <div class="dropdown-content" id="products">
+            <div class="container">
+                <div class="row">
+                    <div class="col l4">
+                        <p class="dropdown_headName"><a href="product_list.php?id=LED_Wall&num=3">LED WALL</a>
+                        </p>
+                        <hr>
+                    </div>
+                    <div class="col l4">
+                        <p class="dropdown_headName"><a href="product_list.php?id=Product_for_office&num=4">PRODUCTS FOR OFFICE</a>
+                        </p>
+                        <hr>
+                    </div>
+                    <div class="col l4">
+                        <p class="dropdown_headName"><a href="product_list.php?id=Industrial_Instruments&num=10">INDUSTRIAL INSTRUMENTS</a>
+                        </p>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row" style="margin-top:-50px;">
+                    <div class="col l4">
+                        <p class="product_name"><a href="products.php?id=hd_led_wall&type=1">HD LED WALL</a>
+                        </p>
+                        <p class="product_name"><a href="products.php?id=tri_color_led_wall&type=1">TRI COLOR LED WALL</a>
+                        </p>
+                        <p class="product_name"><a href="products.php?id=unicolor_led_wall&type=1">UNICOLOR LED WALL</a>
+                        </p>
+
+                    </div>
+                    <div class="col l4">
+                        <p class="product_name"><a href="products.php?id=token_display&type=2">TOKEN DISPLAY</a>
+                        </p>
+                        <p class="product_name"><a href="products.php?id=digital_clock&type=2">DIGITAL CLOCKS</a>
+                        </p>
+                        <p class="product_name"><a href="products.php?id=interest_rate_display_board&type=2">INTEREST RATE DISPLAY BOARD</a>
+                        </p>
+                        <p class="product_name"><a href="products.php?id=scrolling_display&type=2">SCROLLING DISPLAY</a>
+                        </p>
+                    </div>
+
+                    <div class="col l4">
+                        <p class="product_name"><a href="products.php?id=flow_monitor&type=4">FLOW MONITOR</a>
+                        </p>
+                        <p class="product_name"><a href="products.php?id=line_frequency_monitor&type=4">LINE FREQUENCY MONITOR</a>
+                        </p>
+                        <p class="product_name"><a href="products.php?id=megawatt_panel&type=4">MEGA WATT PANEL</a>
+                        </p>
+                        <p class="product_name"><a href="products.php?id=process_indicator&type=4">PROCESS INDICATORS</a>
+                        </p>
+                        <p class="product_name"><a href="products.php?id=ph_meter&type=4">PH METER</a>
+                        </p>
+                        <p class="product_name"><a href="products.php?id=tachometer&type=4">TACHOMETER</a>
+                        </p>
+                        <p class="product_name"><a href="products.php?id=temperature_controller&type=4">TEMPERATURE CONTROLLER</a>
+                        </p>
+                        <p class="product_name"><a href="products.php?id=twilight_switches&type=4">TWILIGHT SWITCHES</a>
+                        </p>
+                        <p class="product_name"><a href="products.php?id=industrial_display&type=4">INDUSTRIAL DISPLAY</a>
+                        </p>
+                        <p class="product_name"><a href="products.php?id=weighing_scale_monitor&type=4">WEIGHING SCALE MONITOR</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="navbar-fixed">
+            <nav>
+                <div class="nav-wrapper container">
+                    <a id="logo-container" href="index.html" class="brand-logo"><img src="LOGO.jpg" style="max-height: 56px;max-width: 150%;">
+                    </a>
+                    <ul class="right hide-on-med-and-down">
+                        <!--li><a href="index.html" class="navLink">HOME</a></li-->
+                        <li><a href="product_list.php?id=LED_Wall&num=3" class="dropdown-button black-text navLink" data-activates="products"><b>PRODUCTS</b><i class="material-icons right">arrow_drop_down</i></a>
+                        </li>
+                        <li><a href="project_list.html" class="dropdown-button black-text navLink" data-activates="projects"><b>PROJECTS</b></a>
+                        </li>
+                        <li><a href="about.html" class="navLink black-text"><b>ABOUT</b></a>
+                        </li>
+                        <li><a href="contact.php" class="navLink black-text"><b>CONTACT</b></a>
+                        </li>
+                    </ul>
+
+
+                    <ul id="nav-mobile" class="side-nav">
+                        <li><a href="index.html">Home</a>
+                        </li>
+                        <li><a href="product_list.php?id=LED_Wall&num=3">Products<i class="material-icons right">arrow_drop_down</i></a>
+                        </li>
+                        <li><a href="project_list.html">Projects</a>
+                        </li>
+                        <li><a href="about.html">About Us</a>
+                        </li>
+                        <li><a href="contact.php">Contact Us</a>
+                        </li>
+                    </ul>
+
+                    <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons" style="padding-left: 0px;">menu</i></a>
+
+                </div>
+            </nav>
+        </div>
+    </div>
+
+
 
     <!-- ====================================================== -->
 
 
     <div class="parallax-container" id="about_us">
-      <div class="parallax client-cover"><img src="hands.jpg"></div>
-      <div class="container">
-        <p class="white-text custom-text" style="font-size:30px;text-align:center;"><br><br><b>WE ARE MORE THAN JUST YET ANOTHER ELECTRONIC SYSTEMS COMPANY.THAT IS BECAUSE OUR ENRICHED CLIENTS SPEAK FOR US.</b></p>
-      </div>
+        <div class="parallax client-cover"><img src="hands.jpg">
+        </div>
+        <div class="container">
+            <p class="white-text custom-text" style="font-size:30px;text-align:center;">
+                <br>
+                <br><b>WE ARE MORE THAN JUST YET ANOTHER ELECTRONIC SYSTEMS COMPANY.THAT IS BECAUSE OUR ENRICHED CLIENTS SPEAK FOR US.</b>
+            </p>
+        </div>
     </div>
-    <center><h2 class="custom-text" style="text-align:center;padding-top:3px;padding-bottom:3px;line-height: 60px"><b>OUR CLIENTS</b></h2></center>
+    <center>
+        <h2 class="custom-text" style="text-align:center;padding-top:3px;padding-bottom:3px;line-height: 60px"><b>OUR CLIENTS</b></h2>
+    </center>
     <br>
     <div class="container">
-      <p class="headName1" style="color:#616161;text-align:center;font-size:20px;">We are a client friendly organization. We deliver products as per client’s specific demands. With our advanced production facility and cutting edge technology, we are able to develop innovative and user-friendly products for our clients. </p>
+        <p class="headName1" style="color:#616161;text-align:center;font-size:20px;">We are a client friendly organization. We deliver products as per client’s specific demands. With our advanced production facility and cutting edge technology, we are able to develop innovative and user-friendly products for our clients. </p>
     </div>
     <br>
 
     <div class="forLargescreen">
-    <div class="container-fluid" id="c1">
-        <div class="row">
+        <div class="container-fluid" id="c1">
+            <div class="row">
 
-          <div class="col l4 m4 s12 client-image">
-          <div class="row"><br>
-          <div class="col l6 m12 s6"><img class="client" src="client_logos/POWER/power7.png"></div>
-          <div class="col l6 m12 s6"><img class="client" src="client_logos/POWER/power2.png"></div>
-          <div class="col l6 m12 s6"><img class="client" src="client_logos/POWER/power3.png"></div>
-          <div class="col l6 m12 s6"><img class="client" src="client_logos/POWER/power4.jpg"></div>
-           <!-- <img src="power-plants.jpeg">-->
-           </div>
-          </div>
-          <div class="col l8 m8 s12 client-text">
-            <p class="custom-text client-image" style="color:#263238;text-align:center;font-size:26px;">POWER PLANTS</p>
-            <p class="headName1 client-text" style="color:#616161;text-align:left;font-size:22px;">We have been supplying range of MW indicators to numerous power plants of Uttar Pradesh, Madhya Pradesh, Chhattisgarh, Kerala, Neyveli, TANGEDCO Chennai and NTPCs units etc. We manufacture and assemble a comprehensive range of LED display boards which shows environmental / pollution control parameters at NTPC Unchahar, NTPC Badarpur, NTPC Rihand, NTPC Tanda, and NTPC Sipat.
-            Recently we have completed two more large display boards for NTPC Unchahar. </p>
-          </div>
+                <div class="col l4 m4 s12 client-image">
+                    <div class="row">
+                        <br>
+                        <div class="col l6 m12 s6"><img class="client" src="client_logos/POWER/power7.png">
+                        </div>
+                        <div class="col l6 m12 s6"><img class="client" src="client_logos/POWER/power2.png">
+                        </div>
+                        <div class="col l6 m12 s6"><img class="client" src="client_logos/POWER/power3.png">
+                        </div>
+                        <div class="col l6 m12 s6"><img class="client" src="client_logos/POWER/power4.jpg">
+                        </div>
+                        <!-- <img src="power-plants.jpeg">-->
+                    </div>
+                </div>
+                <div class="col l8 m8 s12 client-text">
+                    <p class="custom-text client-image" style="color:#263238;text-align:center;font-size:26px;">POWER PLANTS</p>
+                    <p class="headName1 client-text" style="color:#616161;text-align:left;font-size:22px;">We have been supplying range of MW indicators to numerous power plants of Uttar Pradesh, Madhya Pradesh, Chhattisgarh, Kerala, Neyveli, TANGEDCO Chennai and NTPCs units etc. We manufacture and assemble a comprehensive range of LED display boards which shows environmental / pollution control parameters at NTPC Unchahar, NTPC Badarpur, NTPC Rihand, NTPC Tanda, and NTPC Sipat. Recently we have completed two more large display boards for NTPC Unchahar. </p>
+                </div>
+            </div>
+
         </div>
-    
-    </div>
-    <br><br>
-    <div class="container-fluid" id="c2">
+        <br>
+        <br>
+        <div class="container-fluid" id="c2">
 
-        <div class="row">
-          <div class="col l8 m8 s12 client-text">
-            <p class="custom-text" style="color:#263238;text-align:center;font-size:26px;">SUGAR MILLS</p>
-            <p class="headName1 client-text" style="color:#616161;text-align:left;font-size:22px;">Over the years we have been supplying Digital Tachometers, Temperature Indicators, Line Frequency Monitors, Weighing Scale monitors, Flow monitors, Bag counters and pH meters to prestigious mills of Balrampur group, Bajaj group, Dhampur group, Hargaon, Bannari Amman, Ponni sugars, Nirani sugars, KBD sugars to name a few. Our Weighing Scale Monitors and Flow monitors have been designed especially for installation in Sugar Industry. These products have contributed in improving the operating efficiency of the mills. </p>
-            <br>
-          </div> 
-          <div class="col l4 m4 s12 client-image"><br><br>
-          <div class="row">
-          <div class="col l6 m12 s6"><img class="client" src="client_logos/SUGAR/sugar6.gif"></div>
-          <div class="col l6 m12 s6"><img class="client" src="client_logos/SUGAR/sugar1.jpg"></div>
-          <div class="col l6 m12 s6"><img class="client" src="client_logos/SUGAR/sugar2.png"></div>
-          <div class="col l6 m12 s6"><img class="client" src="client_logos/SUGAR/sugar3.jpg"></div>
+            <div class="row">
+                <div class="col l8 m8 s12 client-text">
+                    <p class="custom-text" style="color:#263238;text-align:center;font-size:26px;">SUGAR MILLS</p>
+                    <p class="headName1 client-text" style="color:#616161;text-align:left;font-size:22px;">Over the years we have been supplying Digital Tachometers, Temperature Indicators, Line Frequency Monitors, Weighing Scale monitors, Flow monitors, Bag counters and pH meters to prestigious mills of Balrampur group, Bajaj group, Dhampur group, Hargaon, Bannari Amman, Ponni sugars, Nirani sugars, KBD sugars to name a few. Our Weighing Scale Monitors and Flow monitors have been designed especially for installation in Sugar Industry. These products have contributed in improving the operating efficiency of the mills. </p>
+                    <br>
+                </div>
+                <div class="col l4 m4 s12 client-image">
+                    <br>
+                    <br>
+                    <div class="row">
+                        <div class="col l6 m12 s6"><img class="client" src="client_logos/SUGAR/sugar6.gif">
+                        </div>
+                        <div class="col l6 m12 s6"><img class="client" src="client_logos/SUGAR/sugar1.jpg">
+                        </div>
+                        <div class="col l6 m12 s6"><img class="client" src="client_logos/SUGAR/sugar2.png">
+                        </div>
+                        <div class="col l6 m12 s6"><img class="client" src="client_logos/SUGAR/sugar3.jpg">
+                        </div>
 
-           </div>
-  
-          </div>
+                    </div>
+
+                </div>
+            </div>
+
         </div>
-      
-    </div>
-    <br><br>
-    <div class="container-fluid" id="c3">  
- 
-        <div class="row">
-          <div class="col l4 m4 s12 client-image">
-          <div class="row">
-          <div class="col l6 m6 s6"><img class="client"  src="client_logos/INDUSTRY/industry3.jpg"></div>
-          <div class="col l6 m6 s6"><img class="client"  src="client_logos/INDUSTRY/industry2.jpg"></div>
-          
-          <div class="col l6 m12 s6"><img class="client"  src="client_logos/INDUSTRY/industry5.png"></div>
-          <div class="col l6 m12 s6"><img class="client"  src="client_logos/INDUSTRY/industry6.gif"></div>
+        <br>
+        <br>
+        <div class="container-fluid" id="c3">
 
-           </div>
-  
-          </div>
-          
-          <div class="col l8 m8 s12 client-text">
-            <p class="custom-text" style="color:#263238;text-align:center;font-size:26px;">INDUSTRY</p>
-            <p class="headName1" style="color:#616161;text-align:left;font-size:22px;">We provide a wide range of both moving or static electronic LED display and other electronic instruments for industrial application.
-            We have been supplying an environmental parameter display board to IISCO Steel Plant of Steel Authority Of India Limited, HINDALCO Renukoot, HINDALCO, Mahan & Hi-TECH Carbon. Recently we are working on two LED display boards of HINDALCO, Renukoot and one LED display board of HINDALCO Mahan.</p>
-          </div>
+            <div class="row">
+                <div class="col l4 m4 s12 client-image">
+                    <div class="row">
+                        <div class="col l6 m6 s6"><img class="client" src="client_logos/INDUSTRY/industry3.jpg">
+                        </div>
+                        <div class="col l6 m6 s6"><img class="client" src="client_logos/INDUSTRY/industry2.jpg">
+                        </div>
+
+                        <div class="col l6 m12 s6"><img class="client" src="client_logos/INDUSTRY/industry5.png">
+                        </div>
+                        <div class="col l6 m12 s6"><img class="client" src="client_logos/INDUSTRY/industry6.gif">
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col l8 m8 s12 client-text">
+                    <p class="custom-text" style="color:#263238;text-align:center;font-size:26px;">INDUSTRY</p>
+                    <p class="headName1" style="color:#616161;text-align:left;font-size:22px;">We provide a wide range of both moving or static electronic LED display and other electronic instruments for industrial application. We have been supplying an environmental parameter display board to IISCO Steel Plant of Steel Authority Of India Limited, HINDALCO Renukoot, HINDALCO, Mahan & Hi-TECH Carbon. Recently we are working on two LED display boards of HINDALCO, Renukoot and one LED display board of HINDALCO Mahan.</p>
+                </div>
+            </div>
+
         </div>
-     
-    </div>
-    <br><br>
-    <div class="container-fluid" id="c4">
-    
-        <div class="row">
-          <div class="col l8 m8 s12 client-text">
-            <p class="custom-text" style="color:#263238;text-align:center;font-size:26px;">OTHERS</p>
-            <p class="headName1" style="color:#616161;text-align:left;font-size:22px;">We have installed a large display system at The High Court in Patna where online case numbers are displayed at fourteen distant locations within the Court campus.
-            We provide wide range of independent as well as master/slave Clock with or without GPS for hospitals, clinics and Air force stations etc.</p>
-            <br>
-          </div>
-          <div class="col l4 m4 s12 client-image" ><br><br>
-          <div class="row">
-          <div class="col l6 m12 s6"><img class="client" src="client_logos/others/others1.gif"></div>
-          <div class="col l6 m12 s6"><img class="client" src="client_logos/others/others4.png"></div>
-          <div class="col l6 m12 s6"><img class="client" src="client_logos/others/others7.png"></div>
-          <div class="col l6 m12 s6"><img class="client" src="client_logos/others/others2.png"></div>
+        <br>
+        <br>
+        <div class="container-fluid" id="c4">
 
-           </div>
+            <div class="row">
+                <div class="col l8 m8 s12 client-text">
+                    <p class="custom-text" style="color:#263238;text-align:center;font-size:26px;">OTHERS</p>
+                    <p class="headName1" style="color:#616161;text-align:left;font-size:22px;">We have installed a large display system at The High Court in Patna where online case numbers are displayed at fourteen distant locations within the Court campus. We provide wide range of independent as well as master/slave Clock with or without GPS for hospitals, clinics and Air force stations etc.</p>
+                    <br>
+                </div>
+                <div class="col l4 m4 s12 client-image">
+                    <br>
+                    <br>
+                    <div class="row">
+                        <div class="col l6 m12 s6"><img class="client" src="client_logos/others/others1.gif">
+                        </div>
+                        <div class="col l6 m12 s6"><img class="client" src="client_logos/others/others4.png">
+                        </div>
+                        <div class="col l6 m12 s6"><img class="client" src="client_logos/others/others7.png">
+                        </div>
+                        <div class="col l6 m12 s6"><img class="client" src="client_logos/others/others2.png">
+                        </div>
 
-          </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
-    </div>
     </div>
 
     <div class="forSmallscreen">
-    <div class="container-fluid" id="c1">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col l4 m4 s12 client-image" style="top:0">
-            <div class="row">
-          <div class="col l6 m12 s3"><img class="client" src="client_logos/POWER/power7.png"></div>
-          <div class="col l6 m12 s3"><img class="client" src="client_logos/POWER/power2.png"></div>
-          <div class="col l6 m12 s3"><img class="client" src="client_logos/POWER/power3.png"></div>
-          <div class="col l6 m12 s3"><img class="client" src="client_logos/POWER/power4.jpg"></div>
-  
-           </div>
-          </div>
-          <div class="col l8 m8 s12 client-text">
-            <p class="custom-text client-image" style="color:#263238;text-align:center;font-size:26px;">POWER PLANTS</p>
-            <p class="headName1 client-text" style="color:#616161;text-align:justify;font-size:22px;">We have been supplying range of MW indicators to numerous power plants of Uttar Pradesh, Madhya Pradesh, Chhattisgarh, Kerala, Neyveli, TANGEDCO Chennai and NTPCs units etc. We manufacture and assemble a comprehensive range of LED display boards which shows environmental / pollution control parameters at NTPC Unchahar, NTPC Badarpur, NTPC Rihand, NTPC Tanda, and NTPC Sipat.
-            Recently we have completed two more large display boards for NTPC Unchahar. </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <br><br>
-    <div class="container-fluid" id="c2">
-      <div class="container-fluid">
-        <div class="row">
-        <div class="col l4 s12 client-image">
-            <div class="row">
-          <div class="col l6 m12 s3"><img class="client" src="client_logos/SUGAR/sugar6.gif"></div>
-          <div class="col l6 m12 s3"><img class="client" src="client_logos/SUGAR/sugar1.jpg"></div>
-          <div class="col l6 m12 s3"><img class="client" src="client_logos/SUGAR/sugar2.png"></div>
-          <div class="col l6 m12 s3"><img class="client" src="client_logos/SUGAR/sugar3.jpg"></div>
+        <div class="container-fluid" id="c1">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col l4 m4 s12 client-image" style="top:0">
+                        <div class="row">
+                            <div class="col l6 m12 s3"><img class="client" src="client_logos/POWER/power7.png">
+                            </div>
+                            <div class="col l6 m12 s3"><img class="client" src="client_logos/POWER/power2.png">
+                            </div>
+                            <div class="col l6 m12 s3"><img class="client" src="client_logos/POWER/power3.png">
+                            </div>
+                            <div class="col l6 m12 s3"><img class="client" src="client_logos/POWER/power4.jpg">
+                            </div>
 
-           </div>
-          </div>
-          <div class="col l8 client-text">
-            <p class="custom-text" style="color:#263238;text-align:center;font-size:26px;">SUGAR MILLS</p>
-            <p class="headName1 client-text" style="color:#616161;text-align:justify;font-size:22px;">Over the years we have been supplying Digital Tachometers, Temperature Indicators, Line Frequency Monitors, Weighing Scale monitors, Flow monitors, Bag counters and pH meters to prestigious mills of Balrampur group, Bajaj group, Dhampur group, Hargaon, Bannari Amman, Ponni sugars, Nirani sugars, KBD sugars to name a few. Our Weighing Scale Monitors and Flow monitors have been designed especially for installation in Sugar Industry. These products have contributed in improving the operating efficiency of the mills. </p>
-            <br>
-          </div> 
-          
+                        </div>
+                    </div>
+                    <div class="col l8 m8 s12 client-text">
+                        <p class="custom-text client-image" style="color:#263238;text-align:center;font-size:26px;">POWER PLANTS</p>
+                        <p class="headName1 client-text" style="color:#616161;text-align:justify;font-size:22px;">We have been supplying range of MW indicators to numerous power plants of Uttar Pradesh, Madhya Pradesh, Chhattisgarh, Kerala, Neyveli, TANGEDCO Chennai and NTPCs units etc. We manufacture and assemble a comprehensive range of LED display boards which shows environmental / pollution control parameters at NTPC Unchahar, NTPC Badarpur, NTPC Rihand, NTPC Tanda, and NTPC Sipat. Recently we have completed two more large display boards for NTPC Unchahar. </p>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      
-    </div>
-    <br><br>
-    <div class="container-fluid" id="c3">  
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col l4 s12 client-image">
-           <div class="row">
-          <div class="col l6 m6 s3"><img class="client"  src="client_logos/INDUSTRY/industry3.jpg"></div>
-          <div class="col l6 m6 s3"><img class="client"  src="client_logos/INDUSTRY/industry2.jpg"></div>
-          
-          <div class="col l6 m12 s3"><img class="client"  src="client_logos/INDUSTRY/industry5.png"></div>
-          <div class="col l6 m12 s3"><img class="client"  src="client_logos/INDUSTRY/industry6.gif"></div>
-      
-           </div>
-          </div>
-          
-          <div class="col l8 m8 s12 client-text">
-            <p class="custom-text" style="color:#263238;text-align:center;font-size:26px;">INDUSTRY</p>
-            <p class="headName1" style="color:#616161;text-align:justify;font-size:22px;">We provide a wide range of both moving or static electronic LED display and other electronic instruments for industrial application.
-            We have been supplying an environmental parameter display board to IISCO Steel Plant of Steel Authority Of India Limited, HINDALCO Renukoot, HINDALCO, Mahan & Hi-TECH Carbon. Recently we are working on two LED display boards of HINDALCO, Renukoot and one LED display board of HINDALCO Mahan.</p>
-          </div>
+        <br>
+        <br>
+        <div class="container-fluid" id="c2">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col l4 s12 client-image">
+                        <div class="row">
+                            <div class="col l6 m12 s3"><img class="client" src="client_logos/SUGAR/sugar6.gif">
+                            </div>
+                            <div class="col l6 m12 s3"><img class="client" src="client_logos/SUGAR/sugar1.jpg">
+                            </div>
+                            <div class="col l6 m12 s3"><img class="client" src="client_logos/SUGAR/sugar2.png">
+                            </div>
+                            <div class="col l6 m12 s3"><img class="client" src="client_logos/SUGAR/sugar3.jpg">
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col l8 client-text">
+                        <p class="custom-text" style="color:#263238;text-align:center;font-size:26px;">SUGAR MILLS</p>
+                        <p class="headName1 client-text" style="color:#616161;text-align:justify;font-size:22px;">Over the years we have been supplying Digital Tachometers, Temperature Indicators, Line Frequency Monitors, Weighing Scale monitors, Flow monitors, Bag counters and pH meters to prestigious mills of Balrampur group, Bajaj group, Dhampur group, Hargaon, Bannari Amman, Ponni sugars, Nirani sugars, KBD sugars to name a few. Our Weighing Scale Monitors and Flow monitors have been designed especially for installation in Sugar Industry. These products have contributed in improving the operating efficiency of the mills. </p>
+                        <br>
+                    </div>
+
+                </div>
+            </div>
+
         </div>
-      </div>
-    </div>
-    <br><br>
-    <div class="container-fluid" id="c4">
-      <div class="container-fluid">
-        <div class="row">
-        <div class="col l4 s12 client-image" >
-            <div class="row">
-          <div class="col l6 m12 s3"><img class="client" src="client_logos/others/others1.gif"></div>
-          <div class="col l6 m12 s3"><img class="client" src="client_logos/others/others4.png"></div>
-          <div class="col l6 m12 s3"><img class="client" src="client_logos/others/others7.png"></div>
-          <div class="col l6 m12 s3"><img class="client" src="client_logos/others/others2.png"></div>
-          
-           </div>
-          </div>
-          <div class="col l8 m8 s12 client-text">
-            <p class="custom-text" style="color:#263238;text-align:center;font-size:26px;">OTHERS</p>
-            <p class="headName1" style="color:#616161;text-align:justify;font-size:22px;">We have installed a large display system at The High Court in Patna where online case numbers are displayed at fourteen distant locations within the Court campus.
-            We provide wide range of independent as well as master/slave Clock with or without GPS for hospitals, clinics and Air force stations etc.</p>
-            <br>
-          </div>
-          
+        <br>
+        <br>
+        <div class="container-fluid" id="c3">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col l4 s12 client-image">
+                        <div class="row">
+                            <div class="col l6 m6 s3"><img class="client" src="client_logos/INDUSTRY/industry3.jpg">
+                            </div>
+                            <div class="col l6 m6 s3"><img class="client" src="client_logos/INDUSTRY/industry2.jpg">
+                            </div>
+
+                            <div class="col l6 m12 s3"><img class="client" src="client_logos/INDUSTRY/industry5.png">
+                            </div>
+                            <div class="col l6 m12 s3"><img class="client" src="client_logos/INDUSTRY/industry6.gif">
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col l8 m8 s12 client-text">
+                        <p class="custom-text" style="color:#263238;text-align:center;font-size:26px;">INDUSTRY</p>
+                        <p class="headName1" style="color:#616161;text-align:justify;font-size:22px;">We provide a wide range of both moving or static electronic LED display and other electronic instruments for industrial application. We have been supplying an environmental parameter display board to IISCO Steel Plant of Steel Authority Of India Limited, HINDALCO Renukoot, HINDALCO, Mahan & Hi-TECH Carbon. Recently we are working on two LED display boards of HINDALCO, Renukoot and one LED display board of HINDALCO Mahan.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div> 
-    </div>
+        <br>
+        <br>
+        <div class="container-fluid" id="c4">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col l4 s12 client-image">
+                        <div class="row">
+                            <div class="col l6 m12 s3"><img class="client" src="client_logos/others/others1.gif">
+                            </div>
+                            <div class="col l6 m12 s3"><img class="client" src="client_logos/others/others4.png">
+                            </div>
+                            <div class="col l6 m12 s3"><img class="client" src="client_logos/others/others7.png">
+                            </div>
+                            <div class="col l6 m12 s3"><img class="client" src="client_logos/others/others2.png">
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col l8 m8 s12 client-text">
+                        <p class="custom-text" style="color:#263238;text-align:center;font-size:26px;">OTHERS</p>
+                        <p class="headName1" style="color:#616161;text-align:justify;font-size:22px;">We have installed a large display system at The High Court in Patna where online case numbers are displayed at fourteen distant locations within the Court campus. We provide wide range of independent as well as master/slave Clock with or without GPS for hospitals, clinics and Air force stations etc.</p>
+                        <br>
+                    </div>
+
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- ====================================================== -->
     <!-- Footer -->
-    <script>
+    <!--script>
         var link = document.querySelector('link[rel="import"]');
         var content = link.import;
 
@@ -240,22 +403,100 @@
         var el = content.querySelector('.page-footer');
 
         document.body.appendChild(el.cloneNode(true));
-    </script>
+    </script-->
+
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col l3 m3 s12">
+                    <div class="row">
+                        <h5 class="white-text"><strong>Electro-Med</strong></h5>
+                        <p class="white-text foot">We manufacture and assemble a comprehensive range of electronic displays and instruments for industrial application.</p>
+                    </div>
+                </div>
+                <div class="col l2 offset-l1 s12 m2 offset-m1">
+                    <h6 class="white-text"><strong>Our Links</strong></h6>
+
+                    <ul>
+                        <li class="flink"><a class="white-text foot" href="about.html">About Us</a>
+                        </li>
+                        <li class="flink"><a class="white-text foot" href="contact.php">Contact Us</a>
+                        </li>
+                        <li class="flink"><a class="white-text foot" href="product_list.php?id=LED_display&num=3">Products</a>
+                        </li>
+                        <li class="flink"><a class="white-text foot" href="project_list.html">Projects</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col l3 s12 m3">
+                    <h6 class="white-text"><strong>Products</strong></h6>
+                    <ul>
+                        <li class="flink"><a class="white-text foot" href="products.php?id=hd_video_wall&type=1">HD LED WALL</a>
+                        </li>
+                        <li class="flink"><a class="white-text foot" href="products.php?id=flow_monitor&type=4">FLOW MONITOR</a>
+                        </li>
+                        <li class="flink"><a class="white-text foot" href="products.php?id=process_indicator&type=4">PROCESS INDICATORS</a>
+                        </li>
+                        <li class="flink"><a class="white-text foot" href="products.php?id=tachometer&type=4">TACHOMETER</a>
+                        </li>
+                        <li class="flink"><a class="white-text foot" href="products.php?id=twilight_switches&type=4">TWILIGHT SWITCHES</a>
+                        </li>
+                        <li class="flink"><a class="white-text foot" href="products.php?id=industrial_display&type=4">INDUSTRIAL DISPLAY</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col l3 s12 m3">
+                    <h6 class="white-text"><strong>Contact Info</strong></h6>
+                    <br>
+                    <div class="row">
+                        <div class="col l1 s1 m1"><i class="material-icons prefix white-text text-darken-2">phone</i>
+                        </div>
+                        <div class="col l8 offset-l1 s11 m8 offset-m1">
+                            <p class="white-text foot" style="display:inline;">+91 941 503 9393</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col l1 s1 m1"><i class="material-icons prefix white-text text-darken-2" ">email</i></div>
+          <div class="col l8 offset-l1 s11 m8 offset-m1 "><p class="white-text foot " style="display:inline; ">info@electromed.co.in</p></div>
+        </div>
+        <div class="row ">
+          <div class="col l1 s1 m1 "><i class="material-icons prefix white-text text-darken-2 "">room</i>
+                        </div>
+                        <div class="col l8 offset-l1 s11 m8 offset-m1">
+                            <p class="white-text foot" style="display:inline;">D -17, Vivekanand Puri,
+                                <br/>Lucknow –226007 India</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <hr>
+        <div class="footer-copyright">
+            <div class="container foot row">
+                <div class="col l4 m4 s12">© 2017 Copyright Electromed. All rights reserved.</div>
+            </div>
+        </div>
+    </footer>
+
 
     <!-- ====================================================== -->
 
 
-  <script>
-  $(document).ready(function(){
-  $('.button-collapse').sideNav();
-  $(".dropdown-button").dropdown({
-  hover:true,
-  constrain_width: true,
-  gutter: 0,
-  belowOrigin: true
-  });
-  $('.parallax').parallax();
-  });
-  </script>
+    <script>
+        $(document).ready(function() {
+            $('.button-collapse').sideNav();
+            $(".dropdown-button").dropdown({
+                hover: true,
+                constrain_width: true,
+                gutter: 0,
+                belowOrigin: true
+            });
+            $('.parallax').parallax();
+        });
+    </script>
 </body>
+
 </html>

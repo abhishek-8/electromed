@@ -305,7 +305,7 @@ document.getElementById('pre2').innerHTML='Industrial Instruments';
 
 document.getElementById('r1d1').innerHTML ='';
 document.getElementById('r1d2').innerHTML ='Input 4-20m from flow transducer';
-
+	
 var table = document.getElementById("myTable");
     var row = table.insertRow(2);
     var cell1 = row.insertCell(0); 

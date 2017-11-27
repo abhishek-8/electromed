@@ -303,17 +303,17 @@ if(x=='flow_monitor'){
 document.getElementById('pre2').innerHTML='Industrial Instruments';
 
 
-document.getElementById('r1d1').innerHTML ='';
+/*document.getElementById('r1d1').innerHTML ='';
 document.getElementById('r1d2').innerHTML ='Input 4-20m from flow transducer';
 	
 var table = document.getElementById("myTable");
-    var row = table.insertRow(2);
-    var cell1 = row.insertCell(0); 
+//    var row = table.insertRow(2);
+//    var cell1 = row.insertCell(0); 
 
-cell1.innerHTML ='<blockquote class="headName1" style="font-size:21px;"><u>Technical Specifications</u></blockquote>';
-cell1.colSpan="3";
-cell1.style.backgroundColor="white";
-cell1.style.lineHeight="32px";
+//cell1.innerHTML ='<blockquote class="headName1" style="font-size:21px;"><u>Technical Specifications</u></blockquote>';
+//cell1.colSpan="3";
+//cell1.style.backgroundColor="white";
+//cell1.style.lineHeight="32px";
 
 
 document.getElementById('r2d1').innerHTML ='Flow rate';
@@ -326,7 +326,7 @@ document.getElementById('r5d1').innerHTML ='Totalizer';
 document.getElementById('r5d2').innerHTML ='6 digits; 12.5mm high electronic counter';
 document.getElementById('r6d1').innerHTML ='Real time clock';
 document.getElementById('r6d2').innerHTML ='hrs. & mins. With inbuilt battery; 25mm high';
-
+*/
 
 		document.getElementById('ri4').innerHTML='<a href="products.php?id=line_frequency_monitor&type=4" ><img src="photos/line_frequency_monitor1.jpg" height="170" alt="line frequency monitor"></a>';
 		document.getElementById('rd4').innerHTML='Measures power line frequency, highly accurate reading and non blinking display. Microcontroller based design. ERTL tested.';

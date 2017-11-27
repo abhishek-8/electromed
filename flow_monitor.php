@@ -2,9 +2,9 @@
     $x= $_GET['id'];
     $type=$_GET['type'];
     $link='';
+    $features='';
     $title='';
     $desc='';
-    $res='';
     $brochure='';
     $done='false';
     include('submit.php');
@@ -57,9 +57,12 @@
     if($x=='flow_monitor'){
       $title='Digital Flow Monitor';
       $desc='Flow monitors are used for the display and monitoring of flow of liquids.
-      <br><br>Flow monitors are connected to the flow transducers with 4-20 mA output. It has a totalizer which gives error free total fluid flow over the season, day or hour, as required. The unit is synchronized with an internal Real Time Clock, which is used to transition from one cycle to the next.
-    ';
-    $brochure='flow monitor';
+      <br><br>Flow monitors are connected to the flow transducers with 4-20 mA output. It has a totalizer which gives error free total fluid flow over the season, day or hour, as required. <br><br>The unit is synchronized with an internal Real Time Clock, which is used to transition from one cycle to the next.';
+      $brochure='flow monitor';
+      $features = array("Fully automatic operation","Foolproof counting","Large display visible from distance","Remote display available","Large switching range","Low switching hysteresis","High switching accuracy","Continuous switching point set by operator","4-20mA retransmission");   
+      $specs = array("Input","4-20 mA","Type","Jumbo Display","Power Supply","230V AC, 50 Hz","Range","<li>0-9999 (4 ½ digits)<br><li>0-99999 (5 ½ digits)","Totalizer (Optional)","<li>Hourly<li>Daily<li>Seasonal","Memory","Current and Previous cycle","Standard Display","Clock: 25 mm,<br>Flow rate: 50 mm<br>Current hour: 100 mm<br>Previous hour: 100 mm");
+      $applications = array("Continuous flow indication","Cooling systems");      
+      $users = array("Sugar mills","Chemical industry","Pharmaceutical industry","Research and Development");
     }
     else if($x=='line_frequency_monitor'){
       $title='Digital Line Frequency Monitor';
@@ -111,7 +114,7 @@
 <html lang="en">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
         <meta name="description" content="<?php echo $desc; ?>" />
         <title><?php echo $title; ?> - Manufacturer and supplier - Electromed, Lucknow</title>
         <link rel="stylesheet" href="css/materialize.min.css">
@@ -142,13 +145,14 @@
             fclose($myfile);
             ?> 
         <!-- ====================================================== -->
+        <!-- Request for quote popup -->
         <div class="z-depth-5 card-panel hoverable" id="request_for_quote">
             <fieldset id="rqst_form">
                 <legend class="white-text red accent-4" style="position:relative;height: 40px;width: 100%;border-radius:3px">
                     <center class="headNamev2" style="padding-top:3px">Request for quote</center>
                 </legend>
                 <form action="" method="post">
-                    <input id="name" type="text" name="name" class="validate" placeholder="Name" required style="font-size:15px;">
+                    <input id="name" type="text" name="name" class="validate" placeholder="Name" required style="font-size:15px; color: #000000;">
                     <input id="email" type="email" name="email" class="validate" placeholder="Email" required style="font-size:15px;">
                     <input id="poi" type="text" name="poi" value='<?php echo $title; ?>'>
                     <input id="company" type="text" name="industry" class="validate" placeholder="Company" style="font-size:15px;">
@@ -167,14 +171,19 @@
                 </form>
             </fieldset>
         </div>
+        <!-- ====================================================== -->
+        <!-- Enlarged Image Popup -->
         <div class="z-depth-5 card-panel hoverable" id="popup">
-            <p class="custom-text" style="color:#263238;text-align:center;font-size:17px;"><?php echo $res; ?><br><br><a href=""><u>Close</u></a></p>
+            <p class="custom-text" style="color:#263238;text-align:center;font-size:17px;"><br><br><a href=""><u>Close</u></a></p>
         </div>
         <br>
+        <!-- ====================================================== -->
+        <!-- ====================================================== -->
         <div class="row">
+            <!-- Product List Sidebar -->
             <div class="col l2 m2 s12">
                 <!-- ====================================================== -->
-                <!-- Product List Sidebar -->
+                <!-- Product List Sidebar File Import -->
                 <?php
                     $myfile = fopen("include/product-list-sidebar.php", "r") or die("Unable to open file!");
                     echo fread($myfile,filesize("include/product-list-sidebar.php"));
@@ -183,14 +192,16 @@
                 <!-- ====================================================== -->
             </div>
             <div class="col l10 m10 s12">
+                <!-- BreadCrumbs -->
                 <div class="nav-wrapper container" style="float:left">
                     <a href="product_list.php?id=LED_display&num=3" class="breadcrumb black-text">Products</a>
                     <a href="<?php echo $link; ?>" class="breadcrumb black-text" id="pre2"></a>
                     <a href="" class="breadcrumb black-text" id="curr"><?php echo $title; ?></a>
                 </div>
+                <!-- Product Images -->
                 <div class="row product-images">
                     <!-- 3 Product images -->    
-                    <div class="col l5 s12 m5" id="product">
+                    <div class="col l3 s12 m5" id="product">
                         <div class="row">
                             <br>
                             <div class="col l12 s12 m11 materialboxed" id="product_image"></div>
@@ -203,30 +214,90 @@
                         </div>
                     </div>
                     <!-- ============================================= -->    
-                    <div class="col l6 s12 m6" id="specs">
-                        <br>
+                    <div class="col l9 s12 m6">
                         <blockquote class="headName1" style="font-size:21px;"><u id="info">Overview</u></blockquote>
                         <p class="overview-text"><?php echo $desc; ?></p>
-                        <br>
                         <!-- ====================================================== -->
                         <!-- FEATURES -->
-                        <table id="myTable" class="striped" style="line-height: 100%;">
-                            <blockquote class="headName1" style="font-size:21px;"><u>Features</u></blockquote>
-                            <col width="30%">
-                            <col width="0.5%">
-                            <col width="69.5%">
-                            <?php 
-                                $d1="d1";
-                                $d2="d2";
-                                for ($i = 1; $i <= 7; $i++) {
-                                  echo "<tr id=\"r$i\">
-                                          <td class=\"table_specs key\" style=\"vertical-align: top;\"><b id=\"r$i$d1\"></b></td>
-                                          <td style=\"text-align:center\" id=\"c$i\">:</td>
-                                          <td class=\"table_specs value\" style=\"vertical-align: top;\" id=\"r$i$d2\"></td>
-                                        </tr>";
-                                };
-                                ?>
-                        </table>
+                        <blockquote class="headName1" style="font-size:21px;"><u>Features</u></blockquote>
+                        <?php
+                          echo "<table id=\"myTable\" class=\"striped\" style=\"line-height: 100%;\">
+                            <col width=\"5%\"><col width=\"47%\"><col width=\"47%\">";
+                            $len = count($features);
+                            for( $i=0;$i<$len/2;$i++ ){ 
+                              echo "<tr><td></td>";
+                              for( $j=0;$j<2;$j++){ 
+                                $a=$i*2+$j;
+                                if($a==$len){break;}
+                                echo "<td class=\"table_specs key\" style=\"vertical-align: top;\"><li>$features[$a]</td>";
+                             }
+                              echo "</tr>";
+                            }                       
+                          echo "</table>"; 
+                        ?>
+
+                        <!-- ====================================================== -->
+                        <!-- TECHNICAL SPECIFICATIONS -->
+                        <blockquote class="headName1" style="font-size:21px;"><u>Technical Specifications</u></blockquote>
+                        <p><b> Can be made to order as per user’s requirement.</b></p>
+                        <?php
+                          echo "<table id=\"myTable\" class=\"striped\" style=\"line-height: 100%;\">
+                            <col width=\"5%\"><col width=\"30%\"><col width=\"10%\"><col width=\"55%\">";
+                            $len = count($specs);
+                            for( $i=0;$i<$len;$i++ ){ 
+                              echo "<tr><td></td>";
+                              echo "<td class=\"table_specs key\" style=\"vertical-align: top;\">$specs[$i]</td>";
+                              echo "<td class=\"table_specs key\" style=\"vertical-align: top;\">:</td>";
+                              $i++;
+                              echo "<td class=\"table_specs key\" style=\"vertical-align: top;\">$specs[$i]</td>";
+                              echo "</tr>";
+                            }                       
+                          echo "</table>"; 
+                        ?>
+                        
+                        <!-- ====================================================== -->
+                        <!-- APPLICATIONS -->
+                        <?php
+                          $len = count($applications);
+                          if ($len!=0){
+                          echo "<table id=\"myTable\" class=\"striped\" style=\"line-height: 100%;\">
+                            <col width=\"5%\"><col width=\"47%\"><col width=\"47%\">";
+                            echo "<blockquote class=\"headName1\" style=\"font-size:21px;\"><u>Applications</u></blockquote>";
+                            for( $i=0;$i<$len/2;$i++ ){ 
+                              echo "<tr><td></td>";
+                              for( $j=0;$j<2;$j++){ 
+                                $a=$i*2+$j;
+                                if($a==$len){break;}
+                                echo "<td class=\"table_specs key\" style=\"vertical-align: top;\"><li>$applications[$a]</td>";
+                             }
+                              echo "</tr>";
+                            }                       
+                            echo "</table>"; 
+                          }
+                        ?>
+                        <!-- ====================================================== -->
+                        <!-- USERS -->
+                        <?php
+                          $len = count($users);
+                          if ($len!=0){
+                          echo "<table id=\"myTable\" class=\"striped\" style=\"line-height: 100%;\">
+                            <col width=\"5%\"><col width=\"47%\"><col width=\"47%\">";
+                            echo "<blockquote class=\"headName1\" style=\"font-size:21px;\"><u>Typical Users</u></blockquote>";
+                            for( $i=0;$i<$len/2;$i++ ){ 
+                              echo "<tr><td></td>";
+                              for( $j=0;$j<2;$j++){ 
+                                $a=$i*2+$j;
+                                if($a==$len){break;}
+                                echo "<td class=\"table_specs key\" style=\"vertical-align: top;\"><li>$users[$a]</td>";
+                             }
+                              echo "</tr>";
+                            }                       
+                            echo "</table>"; 
+                          }
+                        ?>
+                        
+
+
                         <br> 
                         <!-- ====================================================== -->
                     </div>

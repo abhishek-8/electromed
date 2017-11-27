@@ -50,3 +50,45 @@
                             </div>
                         </li>
                     </ul>
+
+                     <script>
+    $(document).ready(function(){
+      if(<?php echo $done; ?>==true)
+      $('#popup').show();
+        $('.rqst').click(function(){
+    $('#request_for_quote').show();
+    });
+    $('.close').click(function(){
+    $('#request_for_quote').hide();
+    });
+    $(".top").click(function() {
+    $("html, body").animate({ scrollTop: 0 }, "fast");
+    return false;
+    });
+    set1('<?php echo $x ?>');
+    $(".btn1").click(function(){
+    $("#product_image").fadeOut('fast', function() {
+    set2('<?php echo $x ?>');
+    $("#product_image").fadeIn("fast");
+    });;
+    });
+    $(".btn2").click(function(){
+    $("#product_image").fadeOut('fast', function() {
+    set3('<?php echo $x ?>');
+    $("#product_image").fadeIn("fast");
+    });;
+    });
+    $(".btn3").click(function(){
+    $("#product_image").fadeOut('fast', function() {
+    set4('<?php echo $x ?>');
+    $("#product_image").fadeIn("fast");
+    });;
+    });
+    $(".dropdown-button").dropdown({
+    hover:true,
+    constrain_width: true,
+    gutter: 0,
+    belowOrigin: true
+    });
+    });
+ </script>

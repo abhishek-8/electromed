@@ -36,11 +36,11 @@ RewriteRule ^office/(.*)$ /products\.php?id=$1&type=2 [R=301,NC,L]
 RewriteRule ^industrial/(.*)$ /products\.php?id=$1&type=4 [R=301,NC,L]
 RewriteRule ^led_screen/(.*)$ /products\.php?id=$1&type=1 [R=301,NC,L]
 
-#RewriteRule ^industrial/(.*) /error.html
+#RewriteRule ^industrial/(.*) /error.php
 
 RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
 RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
 
-ErrorDocument 403 /error.html
-ErrorDocument 404 /error.html
-ErrorDocument 500 /error.html
+ErrorDocument 403 /error.php
+ErrorDocument 404 /error.php
+ErrorDocument 500 /error.php

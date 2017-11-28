@@ -303,31 +303,6 @@ if(x=='flow_monitor'){
 document.getElementById('pre2').innerHTML='Industrial Instruments';
 
 
-/*document.getElementById('r1d1').innerHTML ='';
-document.getElementById('r1d2').innerHTML ='Input 4-20m from flow transducer';
-	
-var table = document.getElementById("myTable");
-//    var row = table.insertRow(2);
-//    var cell1 = row.insertCell(0); 
-
-//cell1.innerHTML ='<blockquote class="headName1" style="font-size:21px;"><u>Technical Specifications</u></blockquote>';
-//cell1.colSpan="3";
-//cell1.style.backgroundColor="white";
-//cell1.style.lineHeight="32px";
-
-
-document.getElementById('r2d1').innerHTML ='Flow rate';
-document.getElementById('r2d2').innerHTML ='4 digits; 50mm high';
-document.getElementById('r3d1').innerHTML ='Current hour';
-document.getElementById('r3d2').innerHTML ='3 digits; 100mm high';
-document.getElementById('r4d1').innerHTML ='Previous hour';
-document.getElementById('r4d2').innerHTML ='3 digits; 100mm high';
-document.getElementById('r5d1').innerHTML ='Totalizer';
-document.getElementById('r5d2').innerHTML ='6 digits; 12.5mm high electronic counter';
-document.getElementById('r6d1').innerHTML ='Real time clock';
-document.getElementById('r6d2').innerHTML ='hrs. & mins. With inbuilt battery; 25mm high';
-*/
-
 		document.getElementById('ri4').innerHTML='<a href="products.php?id=line_frequency_monitor&type=4" ><img src="photos/line_frequency_monitor1.jpg" height="170" alt="line frequency monitor"></a>';
 		document.getElementById('rd4').innerHTML='Measures power line frequency, highly accurate reading and non blinking display. Microcontroller based design. ERTL tested.';
 		document.getElementById('rl4').innerHTML='<br><a href="products.php?id=line_frequency_monitor&type=4" >Line Frequency Monitor</a>'
@@ -348,25 +323,6 @@ document.getElementById('r6d2').innerHTML ='hrs. & mins. With inbuilt battery; 2
 else if(x=='line_frequency_monitor'){
 document.getElementById('pre2').innerHTML='Industrial Instruments';
 
-
-
-document.getElementById('r1d1').innerHTML ='';
-document.getElementById('r1d2').innerHTML ='<p class="bullets" style="display:inline;">Measures line frequency accurately up to 2 decimal places</p>';
-document.getElementById('r2d1').innerHTML ='';
-document.getElementById('r2d2').innerHTML ='<p class="bullets" style="display:inline;">High and low frequency set points also available</p>';
-
-var table = document.getElementById("myTable");
-    var row = table.insertRow(2);
-    var cell1 = row.insertCell(0); 
-
-cell1.innerHTML ='<blockquote class="headName1" style="font-size:21px;"><u>Technical Specifications</u></blockquote>';
-cell1.colSpan="3";
-cell1.style.backgroundColor="white";
-cell1.style.lineHeight="32px";
-
-
-document.getElementById('r3d1').innerHTML ='Display size';
-document.getElementById('r3d2').innerHTML ='0.5 inch to 4 inches';
 
 
 document.getElementById('ri1').innerHTML='<a href="products.php?id=flow_monitor&type=4"><img src="photos/flow_monitor1.jpg" height="170" alt="flow_monitor"></a>';
@@ -423,33 +379,6 @@ document.getElementById('ri1').innerHTML='<a href="products.php?id=flow_monitor&
 else if(x=='process_indicator') {
 document.getElementById('pre2').innerHTML='Industrial Instruments';
 
-document.getElementById('r1d1').innerHTML ='';
-document.getElementById('r1d2').innerHTML ='<p class="bullets" style="display:inline;">Used for the measurement of process parameters</p>';
-document.getElementById('r2d1').innerHTML ='';
-document.getElementById('r2d2').innerHTML ='<p class="bullets" style="display:inline;">Range can be set through push buttons from 0-9999 & zero setting is automatic</p>';
-document.getElementById('r3d1').innerHTML ='';
-document.getElementById('r3d2').innerHTML ='<p class="bullets" style="display:inline;">4 digit LED display</p>';
-document.getElementById('r4d1').innerHTML ='';
-document.getElementById('r4d2').innerHTML ='<p class="bullets" style="display:inline;">Decimal placement is settable</p>';
-
-var table = document.getElementById("myTable");
-    var row = table.insertRow(4);
-    var cell1 = row.insertCell(0); 
-
-cell1.innerHTML ='<blockquote class="headName1" style="font-size:21px;"><u>Technical Specifications</u></blockquote>';
-cell1.colSpan="3";
-cell1.style.backgroundColor="white";
-cell1.style.lineHeight="32px";
-
-
-document.getElementById('r5d1').innerHTML ='Input';
-document.getElementById('r5d2').innerHTML ='4 to 20 milli amp';
-document.getElementById('r6d1').innerHTML ='Display digit';
-document.getElementById('r6d2').innerHTML ='7 segment red LED display';
-document.getElementById('r7d1').innerHTML ='Digit height';
-document.getElementById('r7d2').innerHTML ='12.5mm, 25mm, 50mm, 100mm, 150mm, 200mm,  300mm';
-
-
         document.getElementById('ri1').innerHTML='<a href="products.php?id=flow_monitor&type=4"><img src="photos/flow_monitor1.jpg" height="170" alt="flow_monitor"></a>';
 		document.getElementById('rd1').innerHTML='Advanced display system to monitor juice and water flow parameters.';
 		document.getElementById('rl1').innerHTML='<br><a href="products.php?id=flow_monitor&type=4">Flow Monitor</a>'
@@ -470,33 +399,6 @@ document.getElementById('r7d2').innerHTML ='12.5mm, 25mm, 50mm, 100mm, 150mm, 20
 
 else if(x=='ph_meter') {
 document.getElementById('pre2').innerHTML='Industrial Instruments';
-
-
-document.getElementById('r1d1').innerHTML ='';
-document.getElementById('r1d2').innerHTML ='3 ½ digit LED display';
-
-var table = document.getElementById("myTable");
-    var row = table.insertRow(1);
-    var cell1 = row.insertCell(0); 
-
-cell1.innerHTML ='<blockquote class="headName1" style="font-size:21px;"><u>Technical Specifications</u></blockquote>';
-cell1.colSpan="3";
-cell1.style.backgroundColor="white";
-cell1.style.lineHeight="32px";
-
-
-document.getElementById('r2d1').innerHTML ='Range';
-document.getElementById('r2d2').innerHTML ='for pH: 0-14pH for mV: (-1999) mV to (+1999) mV (optional)';
-document.getElementById('r3d1').innerHTML ='Temperature compensation';
-document.getElementById('r3d2').innerHTML ='0-100degC (manual)';
-document.getElementById('r4d1').innerHTML ='Accuracy';
-document.getElementById('r4d2').innerHTML ='±1 mV ±1count';
-document.getElementById('r5d1').innerHTML ='Resolution';
-document.getElementById('r5d2').innerHTML ='0.01 pH; 1mV';
-document.getElementById('r6d1').innerHTML ='Options';
-document.getElementById('r6d2').innerHTML ='Analog recorder output facility';
-document.getElementById('r7d1').innerHTML ='Accessories';
-document.getElementById('r7d2').innerHTML ='pH electrodes, buffer tablets';
 
 
 document.getElementById('ri1').innerHTML='<a href="products.php?id=flow_monitor&type=4"><img src="photos/flow_monitor1.jpg" height="170" alt="flow_monitor"></a>';
@@ -522,34 +424,6 @@ document.getElementById('ri1').innerHTML='<a href="products.php?id=flow_monitor&
 else if(x=='tachometer') {
 document.getElementById('pre2').innerHTML='Industrial Instruments';
 
-
-document.getElementById('r1d1').innerHTML ='';
-document.getElementById('r1d2').innerHTML ='<p class="bullets" style="display:inline;">Non blinking display</p>';
-document.getElementById('r2d1').innerHTML ='';
-document.getElementById('r2d2').innerHTML ='<p class="bullets" style="display:inline;">4 digit LED display</p>';
-document.getElementById('r3d1').innerHTML ='';
-document.getElementById('r3d2').innerHTML ='<p class="bullets" style="display:inline;">Non-contact speed sensing</p>';
-document.getElementById('r4d1').innerHTML ='';
-document.getElementById('r4d2').innerHTML ='<p class="bullets" style="display:inline;">High accuracy ( better than 0.1% ± 1 r.p.m)</p>';
-
-var table = document.getElementById("myTable");
-    var row = table.insertRow(4);
-    var cell1 = row.insertCell(0); 
-
-cell1.innerHTML ='<blockquote class="headName1" style="font-size:21px;"><u>Technical Specifications</u></blockquote>';
-cell1.colSpan="3";
-cell1.style.backgroundColor="white";
-cell1.style.lineHeight="32px";
-
-
-document.getElementById('r5d1').innerHTML ='Range';
-document.getElementById('r5d2').innerHTML ='0-9999 rpm';
-document.getElementById('r6d1').innerHTML ='Transducer';
-document.getElementById('r6d2').innerHTML =' Magnetic pick-up with 5mtrs. Lead';
-document.getElementById('r7d1').innerHTML ='Operating voltage';
-document.getElementById('r7d2').innerHTML =' 230V ± 15%, 50Hz (standard)';
-
-
 document.getElementById('ri1').innerHTML='<a href="products.php?id=flow_monitor&type=4"><img src="photos/flow_monitor1.jpg" height="170"></a>';
 		document.getElementById('rd1').innerHTML='Advanced display system to monitor juice and water flow parameters.';
 		document.getElementById('rl1').innerHTML='<br><a href="products.php?id=flow_monitor&type=4">Flow Monitor</a>'
@@ -572,13 +446,6 @@ else if(x=='temperature_controller') {
 document.getElementById('pre2').innerHTML='Industrial Instruments';
 
 
-document.getElementById('r1d1').innerHTML ='';
-document.getElementById('r1d2').innerHTML ='<p class="bullets" style="display:inline;">Potentiometer setting is available</p>';
-document.getElementById('r2d1').innerHTML ='';
-document.getElementById('r2d2').innerHTML ='<p class="bullets" style="display:inline;">ON/OFF control action at pre-set levels is provided by a set of change-over contacts</p>';
-document.getElementById('r3d1').innerHTML ='';
-document.getElementById('r3d2').innerHTML ='<p class="bullets" style="display:inline;">Available for single set point or dual set point</p>';
-
 
 document.getElementById('ri1').innerHTML='<a href="products.php?id=flow_monitor&type=4"><img src="photos/flow_monitor1.jpg" height="170" alt="flow_monitor"></a>';
 		document.getElementById('rd1').innerHTML='Advanced display system to monitor juice and water flow parameters.';
@@ -595,7 +462,6 @@ document.getElementById('ri1').innerHTML='<a href="products.php?id=flow_monitor&
 		document.getElementById('ri4').innerHTML='<a href="products.php?id=process_indicator&type=4"><img src="photos/process_indicator1.jpg" height="170" alt="process indicator"></a>';
 		document.getElementById('rd4').innerHTML='Suitable for displaying process parameters like flow, temperature, level, speed, pH etc. Available in different digit heights.';
 		document.getElementById('rl4').innerHTML='<br><a href="products.php?id=process_indicator&type=4">Process Indicator</a>'
-
 }
 
 else if(x=='twilight_switches') {

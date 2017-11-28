@@ -54,6 +54,7 @@
     }
     else if($type==4){
     $link='product_list.php?id=Industrial_Instruments&num=10';
+    $related = array('');
     if($x=='flow_monitor'){
       $title='Digital Flow Monitor';
       $desc='Flow monitors are used for the display and monitoring of flow of liquids.
@@ -66,8 +67,13 @@
     }
     else if($x=='line_frequency_monitor'){
       $title='Digital Line Frequency Monitor';
-      $desc='Line Frequency Monitors is used to measures power line frequency, highly accurate reading and non blinking display. Microcontroller based design. ERTL tested.';
+      $desc='Line Frequency Monitor is a device used to measure the power line frequency accurately.<br><br>
+      The unit is microcontroller based and gives an accuracy of more than 0.02%. It is used in power generation and load dispatching centers, process industries etc, where the monitoring of line frequency is utmost important.';
       $brochure='line frequency monitor';
+      $features = array("•  Large display visible from distance","• Remote display available","•  Real Time Clock and printer facility available");   
+      $specs = array("Measurement Range  40-60 Hz","Operating Voltage","230 V AC","Number of digits","4","Resolution","0.01 Hz","Accuracy","0.02%","Display Period","1 Sec","Operating Temperature","50° C max","Casing","Metallic enclosures duly powder coated","Memory", "Max value, Min value");
+      $applications = array("Check output of frequency-regulated and unregulated DC to AC converters","Verify accuracy and stability of synchronous motors and clocks","Monitor frequency of mobile and portable generation under load","Continuously monitor frequency in engineering and laboratories when delicate experiments are performed or calibration is taking place");      
+      $users = array("Power Plants","Sugar mills","Load dispatching");      
     }
     else if($x=='megawatt_panel'){
       $title='Digital Mega Watt Panel';

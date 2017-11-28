@@ -4,8 +4,13 @@
     $link='';
     $title='';
     $desc='';
-    $res='';
+    $features='';
+    $sensing='';
     $brochure='';
+    $specs='';
+    $applications='';
+    $users='';
+
     $done='false';
     include('submit.php');
     if($type==1){
@@ -54,17 +59,66 @@
     }
     else if($type==4){
     $link='product_list.php?id=Industrial_Instruments&num=10';
+    $related = array('');
     if($x=='flow_monitor'){
       $title='Digital Flow Monitor';
-      $desc='Flow monitors are used for the display and monitoring of flow of liquids.
-      <br><br>Flow monitors are connected to the flow transducers with 4-20 mA output. It has a totalizer which gives error free total fluid flow over the season, day or hour, as required. The unit is synchronized with an internal Real Time Clock, which is used to transition from one cycle to the next.
-    ';
-    $brochure='flow monitor';
+      $desc='Flow monitors are used for the display and monitoring of flow of liquids.<br><br>
+      Flow monitors are connected to the flow transducers with 4-20 mA output. It has a totalizer which gives error free total fluid flow over the season, day or hour, as required. <br><br>
+      The unit is synchronized with an internal Real Time Clock, which is used to transition from one cycle to the next.';
+      $brochure='flow monitor';
+      $features = array("Fully automatic operation",
+        "Foolproof counting",
+        "Large display visible from distance",
+        "Remote display available",
+        "Large switching range",
+        "Low switching hysteresis",
+        "High switching accuracy",
+        "Continuous switching point set by operator",
+        "4-20mA retransmission");   
+      $specs = array(
+        "Input","4-20 mA",
+        "Type","Jumbo Display",
+        "Power Supply","230V AC, 50 Hz",
+        "Range","<li>0-9999 (4 ½ digits)<br><li>0-99999 (5 ½ digits)",
+        "Totalizer (Optional)","<li>Hourly<li>Daily<li>Seasonal",
+        "Memory","Current and Previous cycle","Standard Display",
+        "Clock: 25 mm,<br>Flow rate: 50 mm<br>Current hour: 100 mm<br>Previous hour: 100 mm");
+      $applications = array(
+        "Continuous flow indication",
+        "Cooling systems");      
+      $users = array(
+        "Sugar mills",
+        "Chemical industry",
+        "Pharmaceutical industry",
+        "Research and Development");
     }
     else if($x=='line_frequency_monitor'){
       $title='Digital Line Frequency Monitor';
-      $desc='Line Frequency Monitors is used to measures power line frequency, highly accurate reading and non blinking display. Microcontroller based design. ERTL tested.';
+      $desc='Line Frequency Monitor is a device used to measure the power line frequency accurately.<br><br>
+      The unit is microcontroller based and gives an accuracy of more than 0.02%. It is used in power generation and load dispatching centers, process industries etc, where the monitoring of line frequency is utmost important.';
       $brochure='line frequency monitor';
+      $features = array(
+        "Large display visible from distance",
+        "Remote display available",
+        "Real Time Clock and printer facility available");   
+      $specs = array(
+        "Measurement Range","40-60 Hz",
+        "Operating Voltage","230 V AC",
+        "Number of digits","4",
+        "Resolution","0.01 Hz",
+        "Accuracy","0.02%",
+        "Display Period","1 Sec",
+        "Operating Temperature","50° C max",
+        "Casing","Metallic enclosures duly powder coated",
+        "Memory", "Max value, Min value");
+      $applications = array(
+        "Check output of frequency-regulated and unregulated DC to AC converters",
+        "Verify accuracy and stability of synchronous motors and clocks",
+        "Monitor frequency of mobile and portable generation under load",
+        "Continuously monitor frequency in engineering and laboratories when delicate experiments are performed or calibration is taking place");      
+      $users = array("Power Plants",
+        "Sugar mills",
+        "Load dispatching");      
     }
     else if($x=='megawatt_panel'){
       $title='Digital Mega Watt Panel';
@@ -73,23 +127,168 @@
     }
     else if($x=='process_indicator'){
       $title='Digital Process Indicator';
-      $desc='Process indicators are suitable for displaying process parameters like flow, temperature, level, speed, pH etc. Available in different digit heights.';
+      $desc='Process indicators are typically display units for a 4-20mA signal input. They are suitable for displaying process parameters like flow rate, temperature, level speed, pH, etc at remote locations.<br><br> 
+        It senses signal from any closed loop current source and displays the corresponding value of data.<br><br>
+        Our range of process indicators are available in a variety of display types and sizes, ranging from simple seven segment displays to high density video walls.';
       $brochure='process indicator';
+      $features=array(
+        "Range (Span) can be set from 0 to 9999",
+        "Microcontroller based meters with low VA burden",
+        "Programming of parameter values",
+        "Four switches for on-site programming",
+        "Touch proof voltage and current terminals",
+        "Senses value from any closed loop sensor",
+        "Fully automatic operation",
+        "Large display visible from distance",
+        "Remote display available",
+        "Signal retransmission available");
+      $specs=array(
+        "Input","4-20 mA",
+        "Type","Jumbo Display",
+        "Power Supply","230V AC, 50 Hz",
+        "Range","<li>0-9999 (4 digits)<br><li>0-99999 (5 digits)",
+        "Limit settings","Separate relays for high and low limit setting",
+        "Optional Features",
+          "<li>4-20mA retransmission available
+          <li>RS485 modbus protocol communicable
+          <li>Wireless transmission to slave unit");
+      $applications=array(
+        "Process value measurement and control",
+        "|Large displays in plant area");
+      $users=array(
+        "Power Plants",
+        "Sugar Mills");
     }
     else if($x=='ph_meter'){
       $title='Digital Ph Meter';
-      $desc='Ph meters are used to measure pH of all types of liquids. We supply the pH meters with combination electrode, electrode stand with clamp and temperature compensation.';
+      $desc="A pH meter is a scientific instrument that measures the hydrogen-ion activity in water-based solutions, indicating its acidity or alkalinity expressed as pH.<br><br>
+        Electromed offers a high accuracy digital pH meter, the EPH-100 D, by with very high input impedance and minimal long term drift.
+        <blockquote class=\"headName1\" style=\"font-size:21px;\"><u>Sensing</u></blockquote>
+        It measures the difference in electrical potentials between a pH electrode and reference electrode.";
       $brochure='ph meter';
+      $features=array(
+        "Very high input impedance",
+        "Large display visible from distance",
+        "Remote display available",
+        "Signal retransmission available");
+      $specs=array(
+        "Range", "pH:0-14",
+        "Type", "LED Display",
+        "Power Supply",  "230V AC, 50 Hz",
+        "Readout", "3 ½ digits",
+        "Accuracy",  "+- 0.1pH",
+        "Temperature Compensation", "0-100° C Manual",
+        "Input Impedance", "10 MΩ",
+        "Resolution", "0.01pH; 1mV",
+        "Operating Temperature", "0-50° C",
+        "Optional Features", "4-20mA retransmission available");
+      $applications=array();
+      $users=array(
+        "Chemical Industry",
+        "Pharmaceutical Industry",
+        "Water purifier plants",
+        "Effluent treatment plants",
+        "Sugar mills");
     }
     else if($x=='tachometer'){
       $title='Digital Tachometer';
-      $desc='Tachometers are used for monitoring the rpm of machines. The sensor is contactless. Ideal for sugar mills, heavy industries etc';
-    $brochure='tachometer';
+      $desc="A tachometer is an instrument which measures the working speed of an engine, or any rotating object, typically in revolutions per minute.<br><br>
+        The digital tachomter model ETM 400 D is a versatile device to monitor the r.p.m. of any rotating object without any physical contact. It can adapted for event counting apart from r.p.m measurements.<br><br>
+        Accurate monitoring of r.p.m. has made ETM 400D tachometer a popular choice in sugar, paper, and textile industries.";
+      $sensing="For non contact speed sensing, tachometer ETM 400D is offered alongwith a magnetic pickup. This pickup is mounted against a gear wheel which is fixed on the rotating shaft. The gear wheel has 60 evenly spaced slots/teeth on it. The air gap between the pickup and the gear teeth is adjusted at 3mm for proper pulse generation.";
+      $brochure='tachometer';
+      $features=array(
+        "Microcontroller based meters with low VA burden",
+        "Contactless speed sensing",
+        "Digital readout on non blinking display",
+        "Rapid sampling rate",
+        "Large display visible from distance",
+        "Remote display available");
+      $specs=array(
+        "Range", "0-999 r.p.m.",
+        "Type", "Jumbo Display",
+        "Power Supply", "230V AC, 50 Hz",
+        "Accuracy", "Greater than 0.01% or +- 1 r.p.m",
+        "Display Period", "1 second",
+        "Operating Temperature", "0-50° C",
+        "Optional Features", "4-20mA retransmission available");
+      $applications=array();  
+      $users=array("Sugar Industry",
+        "Paper Industry",
+        "Textile",
+        "Machine Tools",
+        "Cable and wire drawing",
+        "Food processing",
+        "Automobile",
+        "Plastics");
     }
     else if($x=='temperature_controller'){
       $title='Digital Temperature Controller';
-      $desc='Temperature Controllers are used in a variety of industrial applications like turbines, furnaces, blow moulding, etc. where the measurement/control of temperature is of vital importance.';
+      $desc="Temperature controllers find wide usage in a variety of industrial applications like turbines, furnaces, blow molding, etc, where the measurement/control of temperature is of vital importance. Base on state-of-the-art technology, ELECTROMED offers its digital temperature controller.";
+      $sensing=array("<b>Type</b>","<b>Sensor</b>","<b>Practical (°C)</b>","<b>Ideal Range (°C)</b>","<b>Worst case accuracy (°C)</b>",
+        "RTD", "Pt100", "-200 to 600", "-100 to 500", "+-1",
+        "K", "Chromel/Alumel",  "-100 to 1373", "0 to 1200", "+-2",
+        "J", "Iron/Constantan", "-100 to 760", "0 to 500", "+-2",
+        "R", "Pt/Pt-12% Rh", "0 to 1767 600","1600",  "+-2",
+        "S", "Pt/Pt-10% Rh", "0 to 1767 600", "1600", "+- 2");
       $brochure='Temperature Controller';
+      $features=array(
+        "Microcontroller based meters",
+        "Digital readout on non blinking display",
+        "Rapid sampling rate",
+        "Fully automatic operation",
+        "Large display visible from distance",
+        "Remote display available",
+        "Signal retransmission available");
+      $specs=array(
+        "Cold junction compensation", "Automatic (for Thermocouple)",
+        "Type", "Jumbo Display",
+        "Power Supply", "230V AC, 50 Hz",
+        "Sampling Period", "1 second",
+        "Display Period", "2 seconds",
+        "Operating Temperature", "0-50° C",
+        "Optional Features",
+          "<li>4-20mA retransmission available
+          <li>Wireless transmission to slave unit");
+      $applications=array(
+        "Clean room monitoring",
+        "Environment chambers",
+        "Conditioned cold storage");
+      $users=array("Furnaces","
+        Blow molding",
+        "Turbines");
+    }
+    else if($x=='temp_hum_indicator'){
+      $title='Temperature Humidity Indicator';
+      $desc="Temperature Humidity indicator find wide usage in a variety of applications like labs, warehouses, instrument rooms etc.<br><br>
+        Electromed offers low cost, high precision ambient temperature humidity indicators which work seamlessly without any human intervention. Our modules are pre-calibrated and are easy to use.
+        <blockquote class=\"headName1\" style=\"font-size:21px;\"><u>Sensing</u></blockquote>
+        Our temperature humidity indicator comes with an inbuilt state-of-the-art sensor, and is ready to use. It does not require any calibration at user end. ";
+      $brochure='Temperature Controller';
+      $features=array(
+        "Dual 4-20mA retransmission output for data acquisition",
+        "Microcontroller based meters",
+        "Integrated RH and Temperature sensor",
+        "Digital readout on non blinking display",
+        "Rapid sampling rate",
+        "Large display visible from distance",
+        "Remote display available");
+      $specs=array(
+        "Temperature Range", "-15°to 65° C",
+        "Humidity Range", "5.0 to 99.9% RH",
+        "Type", "Jumbo Display",
+        "Power Supply", "230V AC, 50 Hz",
+        "Display Period", "1 seconds",
+        "Operating Temperature", "0-50° C",
+        "Optional Features",
+          "<li>4-20mA retransmission available
+          <li>RS485 modbus protocol communicable
+          <li>Wireless transmission to slave unit");
+      $applications=array(
+        "Clean room monitoring",
+        "Environment chambers",
+        "Conditioned cold storage");
+      $users=array();
     }
     else if($x=='twilight_switches'){
       $title='Digital Twilight Switches';
@@ -106,12 +305,43 @@
       $brochure='weighing scale monitor';
     }
     }
-    ?>
+
+    function loadFile($file){
+      $myfile = fopen("include/$file", "r") or die("Unable to open file!");
+      echo fread($myfile,filesize("include/$file"));
+      fclose($myfile);
+    }
+
+    function printBullets($arr) {
+      $len = count($arr);
+      echo "<table id=\"myTable\" class=\"\" style=\"line-height: 100%;\">";
+      if($len>4){
+        echo "<col width=\"5%\"><col width=\"47%\"><col width=\"47%\">";
+        for( $i=0;$i<$len/2;$i++ ){ 
+          echo "<tr><td></td>";
+          for( $j=0;$j<2;$j++){ 
+            $a=$i*2+$j;
+            if($a==$len){break;}
+              echo "<td class=\"table_specs key\" style=\"vertical-align: top;\"><li>$arr[$a]</td>";
+            }
+            echo "</tr>";
+          }
+        }                       
+        else{
+          echo "<col width=\"5%\"><col width=\"95%\">";
+          for( $i=0;$i<$len;$i++ ){ 
+            echo "<tr><td></td><td class=\"table_specs key\" style=\"vertical-align: top;\"><li>$arr[$i]</td></tr>";
+          }
+        }                       
+        echo "</table>"; 
+      }
+
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
         <meta name="description" content="<?php echo $desc; ?>" />
         <title><?php echo $title; ?> - Manufacturer and supplier - Electromed, Lucknow</title>
         <link rel="stylesheet" href="css/materialize.min.css">
@@ -136,19 +366,16 @@
         <?php include_once("analyticstracking.php") ?>
         <!-- ====================================================== -->
         <!-- Top NavBar -->
-        <?php
-            $myfile = fopen("include/navbar.php", "r") or die("Unable to open file!");
-            echo fread($myfile,filesize("include/navbar.php"));
-            fclose($myfile);
-            ?> 
+        <?php loadFile('navbar.php') ?> 
         <!-- ====================================================== -->
+        <!-- Request for quote popup -->
         <div class="z-depth-5 card-panel hoverable" id="request_for_quote">
             <fieldset id="rqst_form">
                 <legend class="white-text red accent-4" style="position:relative;height: 40px;width: 100%;border-radius:3px">
                     <center class="headNamev2" style="padding-top:3px">Request for quote</center>
                 </legend>
                 <form action="" method="post">
-                    <input id="name" type="text" name="name" class="validate" placeholder="Name" required style="font-size:15px;">
+                    <input id="name" type="text" name="name" class="validate" placeholder="Name" required style="font-size:15px; color: #000000;">
                     <input id="email" type="email" name="email" class="validate" placeholder="Email" required style="font-size:15px;">
                     <input id="poi" type="text" name="poi" value='<?php echo $title; ?>'>
                     <input id="company" type="text" name="industry" class="validate" placeholder="Company" style="font-size:15px;">
@@ -167,30 +394,33 @@
                 </form>
             </fieldset>
         </div>
+        <!-- ====================================================== -->
+        <!-- Enlarged Image Popup -->
         <div class="z-depth-5 card-panel hoverable" id="popup">
-            <p class="custom-text" style="color:#263238;text-align:center;font-size:17px;"><?php echo $res; ?><br><br><a href=""><u>Close</u></a></p>
+            <p class="custom-text" style="color:#263238;text-align:center;font-size:17px;"><br><br><a href=""><u>Close</u></a></p>
         </div>
         <br>
+        <!-- ====================================================== -->
+        <!-- ====================================================== -->
         <div class="row">
+            <!-- Product List Sidebar -->
             <div class="col l2 m2 s12">
                 <!-- ====================================================== -->
-                <!-- Product List Sidebar -->
-                <?php
-                    $myfile = fopen("include/product-list-sidebar.php", "r") or die("Unable to open file!");
-                    echo fread($myfile,filesize("include/product-list-sidebar.php"));
-                    fclose($myfile);
-                    ?> 
+                <!-- Product List Sidebar File Import -->
+                <?php loadFile('product-list-sidebar.php'); ?> 
                 <!-- ====================================================== -->
             </div>
             <div class="col l10 m10 s12">
+                <!-- BreadCrumbs -->
                 <div class="nav-wrapper container" style="float:left">
                     <a href="product_list.php?id=LED_display&num=3" class="breadcrumb black-text">Products</a>
                     <a href="<?php echo $link; ?>" class="breadcrumb black-text" id="pre2"></a>
                     <a href="" class="breadcrumb black-text" id="curr"><?php echo $title; ?></a>
                 </div>
+                <!-- Product Images -->
                 <div class="row product-images">
                     <!-- 3 Product images -->    
-                    <div class="col l5 s12 m5" id="product">
+                    <div class="col l3 s12 m5" id="product">
                         <div class="row">
                             <br>
                             <div class="col l12 s12 m11 materialboxed" id="product_image"></div>
@@ -203,30 +433,81 @@
                         </div>
                     </div>
                     <!-- ============================================= -->    
-                    <div class="col l6 s12 m6" id="specs">
-                        <br>
-                        <blockquote class="headName1" style="font-size:21px;"><u id="info">Overview</u></blockquote>
-                        <p class="overview-text"><?php echo $desc; ?></p>
-                        <br>
+                    <div class="col l9 s12 m6">
+                        <blockquote class="headName1" style="font-size:20px;background-color: #eeeeee;height: 30px;"><u id="info">Overview</u></blockquote>
+                        <p class="overview-text">
+                        <?php 
+                          echo $desc; 
+                        ?>
+                        </p>
+
+                        <!-- ====================================================== -->
+                        <!-- SENSING TABLE-->
+                        <?php
+                          if ($x=='temperature_controller'){
+                            $len = count($sensing);
+                            echo "<blockquote class=\"headName1\" style=\"font-size:20px;background-color: #eeeeee;height: 30px;\"><u>Sensing</u></blockquote>
+                              <table class=\"responsive-table bordered centered\" style=\"line-height: 100%;\">
+                              <col width=\"12%\"><col width=\"22%\"><col width=\"22%\"><col width=\"22%\"><col width=\"22%\">";
+                            for( $i=0;$i<$len;$i+=5){
+                              echo "<tr>";
+                              for($j=0;$j<5;$j++){
+                                $a = $i + $j ;
+                                echo "<td>$sensing[$a]</td>";
+                              }
+                              echo "</tr>";
+                            }
+                            echo "</table>";
+                          }
+                        ?>
+
                         <!-- ====================================================== -->
                         <!-- FEATURES -->
-                        <table id="myTable" class="striped" style="line-height: 100%;">
-                            <blockquote class="headName1" style="font-size:21px;"><u>Features</u></blockquote>
-                            <col width="30%">
-                            <col width="0.5%">
-                            <col width="69.5%">
-                            <?php 
-                                $d1="d1";
-                                $d2="d2";
-                                for ($i = 1; $i <= 7; $i++) {
-                                  echo "<tr id=\"r$i\">
-                                          <td class=\"table_specs key\" style=\"vertical-align: top;\"><b id=\"r$i$d1\"></b></td>
-                                          <td style=\"text-align:center\" id=\"c$i\">:</td>
-                                          <td class=\"table_specs value\" style=\"vertical-align: top;\" id=\"r$i$d2\"></td>
-                                        </tr>";
-                                };
-                                ?>
-                        </table>
+                        
+                        <?php 
+                          echo "<blockquote class=\"headName1\" style=\"font-size:20px;background-color: #eeeeee;height: 30px;\"><u>Features</u></blockquote>";
+                          printBullets($features); 
+                        ?>
+
+                        <!-- ====================================================== -->
+                        <!-- TECHNICAL SPECIFICATIONS -->
+                        <blockquote class="headName1" style="font-size:20px;background-color: #eeeeee;height: 30px;""><u>Technical Specifications</u></blockquote>
+                        <p><b>&ensp;&ensp;&ensp;&ensp; Can be made to order as per user’s requirement.</b></p>
+                        <?php
+                          echo "<table id=\"myTable\" class=\"striped bordered\" style=\"line-height: 100%;\">
+                            <col width=\"5%\"><col width=\"30%\"><col width=\"10%\"><col width=\"55%\">";
+                            $len = count($specs);
+                            for( $i=0;$i<$len;$i++ ){ 
+                              echo "<tr><td></td>";
+                              echo "<td class=\"table_specs key\" style=\"vertical-align: top;\">$specs[$i]</td>";
+                              echo "<td class=\"table_specs key\" style=\"vertical-align: top;\"><b>:</b></td>";
+                              $i++;
+                              echo "<td class=\"table_specs key\" style=\"vertical-align: top;\">$specs[$i]</td>";
+                              echo "</tr>";
+                            }                       
+                          echo "</table>"; 
+                        ?>
+                        
+                        <!-- ====================================================== -->
+                        <!-- APPLICATIONS -->
+                        <?php  
+                          $len = count($applications);
+                          if ($len!=0){
+                            echo "<blockquote class=\"headName1\" style=\"font-size:20px;background-color: #eeeeee;height: 30px;\"><u>Applications</u></blockquote>";
+                            printBullets($applications);
+                            }
+                          ?>
+                        <!-- ====================================================== -->
+
+                        <!-- USERS -->
+                        <?php
+                          $len = count($users);
+                          if ($len!=0){
+                            echo "<blockquote class=\"headName1\" style=\"font-size:20px;background-color: #eeeeee;height: 30px;\"><u>Typical Users</u></blockquote>";
+                            printBullets($users);
+                            }
+                          ?>                      
+
                         <br> 
                         <!-- ====================================================== -->
                     </div>
@@ -263,45 +544,43 @@
         <br><br>
         <!-- ====================================================== -->
         <!-- Footer -->
-        <?php
-            $myfile = fopen("include/footer.php", "r") or die("Unable to open file!");
-            echo fread($myfile,filesize("include/footer.php"));
-            fclose($myfile);
-            ?> 
+        <?php loadFile('footer.php'); ?> 
         <!-- ====================================================== -->
         <script>
             $(document).ready(function(){
               if(<?php echo $done; ?>==true)
-              $('#popup').show();
-                $('.rqst').click(function(){
-            $('#request_for_quote').show();
+                $('#popup').show();
+              $('.rqst').click(function(){
+              $('#request_for_quote').show();
             });
             $('.close').click(function(){
-            $('#request_for_quote').hide();
+              $('#request_for_quote').hide();
             });
             $(".top").click(function() {
-            $("html, body").animate({ scrollTop: 0 }, "fast");
-            return false;
+              $("html, body").animate({ scrollTop: 0 }, "fast");
+              return false;
             });
             set1('<?php echo $x ?>');
             $(".btn1").click(function(){
-            $("#product_image").fadeOut('fast', function() {
-            set2('<?php echo $x ?>');
-            $("#product_image").fadeIn("fast");
-            });;
+              $("#product_image").fadeOut('fast', function() {
+                set2('<?php echo $x ?>');
+                $("#product_image").fadeIn("fast");
+              });;
             });
+            
             $(".btn2").click(function(){
-            $("#product_image").fadeOut('fast', function() {
-            set3('<?php echo $x ?>');
-            $("#product_image").fadeIn("fast");
-            });;
+              $("#product_image").fadeOut('fast', function() {
+                set3('<?php echo $x ?>');
+                $("#product_image").fadeIn("fast");
+              });;
             });
             $(".btn3").click(function(){
-            $("#product_image").fadeOut('fast', function() {
-            set4('<?php echo $x ?>');
-            $("#product_image").fadeIn("fast");
-            });;
+              $("#product_image").fadeOut('fast', function() {
+                set4('<?php echo $x ?>');
+                $("#product_image").fadeIn("fast");
+              });;
             });
+            
             $(".dropdown-button").dropdown({
             hover:true,
             constrain_width: true,

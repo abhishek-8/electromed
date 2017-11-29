@@ -1,6 +1,6 @@
 <?php
-$x            = $_GET['id'];
-$type         = $_GET['type'];
+$_x            = $_GET['id'];
+$_type         = $_GET['type'];
 $link         = '';
 $category     = '';
 $title        = '';
@@ -13,16 +13,17 @@ $applications = '';
 $users        = '';
 $display      = '';
 $done         = 'false';
+$type         = $_type;
 include('submit.php');
 
 /* LED Wall */
-if ($type == 1) {
+if ($_type == 1) {
     $category='LED Wall';
     $link = 'product_list.php?id=LED_Wall&num=3';
-    if ($x == 'hd_led_wall') {
+    if ($_x == 'hd_led_wall') {
         $title = 'HD LED Wall';
         $desc  = 'HD LED wall “offers advanced resolution, brightness and clarity and shows colors in their most natural tones, as they were meant to be seen.” ';
-    } else if ($x == 'tri_color_led_wall') {
+    } else if ($_x == 'tri_color_led_wall') {
         $title = 'Tri Color LED Wall';
         $desc  = 'TRI color LED wall is applauded for the features like compact design, low electricity consumption and user friendly functions.';
     } else {
@@ -31,19 +32,19 @@ if ($type == 1) {
     }
 }
 
-else if ($type == 2) {
+else if ($_type == 2) {
     $category='';
 
     $link = 'product_list.php?id=Product_for_office&num=4';
-    if ($x == 'token_display') {
+    if ($_x == 'token_display') {
         $title    = 'Digital Token';
         $desc     = 'Token display system provides easiest way to inform the customer or patient about his / her status while waiting.';
         $brochure = 'Token Display';
-    } else if ($x == 'digital_clock') {
+    } else if ($_x == 'digital_clock') {
         $title    = 'Digital Clock';
         $desc     = 'LED Display Clocks are widely used in factories, offices, large public areas, shopping centers, warehouses and similar large areas';
         $brochure = 'digital clock';
-    } else if ($x == 'interest_rate_display_board') {
+    } else if ($_x == 'interest_rate_display_board') {
         $title    = 'Digital Interest Rate Display Board';
         $desc     = 'Interest Rate Display Board is ideal for banks. Date, time, deposit period, interest rate is displayed on an attractive background.';
         $brochure = 'interest rate display board';
@@ -54,14 +55,14 @@ else if ($type == 2) {
     }
 }
 
-else if ($type == 3) {
+else if ($_type == 3) {
     $link = 'product_list.php?id=projects&num=3';
         $category='LED Wall';
 
 }
 
 /* Digital Instruments */
-else if ($type == 4) {
+else if ($_type == 4) {
     $category='Digital Instruments';
 
     $link    = 'product_list.php?id=Industrial_Instruments&num=10';
@@ -81,7 +82,7 @@ else if ($type == 4) {
         "Connected via RS485, LAN."
     );
     
-    if ($x == 'flow_monitor') {
+    if ($_x == 'flow_monitor') {
         $title        = 'Digital Flow Monitor';
         $desc         = 'Flow monitors are used for the display and monitoring of flow of liquids.<br><br>
           Flow monitors are connected to the flow transducers with 4-20 mA output. It has a totalizer which gives error free total fluid flow over the season, day or hour, as required. <br><br>
@@ -124,7 +125,7 @@ else if ($type == 4) {
             "Pharmaceutical industry",
             "Research and Development"
         );
-    } else if ($x == 'line_frequency_monitor') {
+    } else if ($_x == 'line_frequency_monitor') {
         $title        = 'Digital Line Frequency Monitor';
         $desc         = 'Line Frequency Monitor is a device used to measure the power line frequency accurately.<br><br>
       The unit is microcontroller based and gives an accuracy of more than 0.02%. It is used in power generation and load dispatching centers, process industries etc, where the monitoring of line frequency is utmost important.';
@@ -165,11 +166,11 @@ else if ($type == 4) {
             "Sugar mills",
             "Load dispatching"
         );
-    } else if ($x == 'megawatt_panel') {
+    } else if ($_x == 'megawatt_panel') {
         $title    = 'Digital Mega Watt Panel';
         $desc     = 'Megawatt Panels are essential to power plants. Generation data can be displayed all over the plant.';
         $brochure = 'mega watt panels';
-    } else if ($x == 'process_indicator') {
+    } else if ($_x == 'process_indicator') {
         $title        = 'Digital Process Indicator';
         $desc         = 'Process indicators are typically display units for a 4-20mA signal input. They are suitable for displaying process parameters like flow rate, temperature, level speed, pH, etc at remote locations.<br><br> 
         It senses signal from any closed loop current source and displays the corresponding value of data.<br><br>
@@ -211,7 +212,7 @@ else if ($type == 4) {
             "Power Plants",
             "Sugar Mills"
         );
-    } else if ($x == 'ph_meter') {
+    } else if ($_x == 'ph_meter') {
         $title        = 'Digital Ph Meter';
         $desc         = "A pH meter is a scientific instrument that measures the hydrogen-ion activity in water-based solutions, indicating its acidity or alkalinity expressed as pH.<br><br>
         Electromed offers a high accuracy digital pH meter, the EPH-100 D, by with very high input impedance and minimal long term drift.
@@ -254,7 +255,7 @@ else if ($type == 4) {
             "Effluent treatment plants",
             "Sugar mills"
         );
-    } else if ($x == 'tachometer') {
+    } else if ($_x == 'tachometer') {
         $title        = 'Digital Tachometer';
         $desc         = "A tachometer is an instrument which measures the working speed of an engine, or any rotating object, typically in revolutions per minute.<br><br>
         The digital tachomter model ETM 400 D is a versatile device to monitor the r.p.m. of any rotating object without any physical contact. It can adapted for event counting apart from r.p.m measurements.<br><br>
@@ -296,7 +297,7 @@ else if ($type == 4) {
             "Automobile",
             "Plastics"
         );
-    } else if ($x == 'temperature_controller') {
+    } else if ($_x == 'temperature_controller') {
         $title        = 'Digital Temperature Controller';
         $desc         = "Temperature controllers find wide usage in a variety of industrial applications like turbines, furnaces, blow molding, etc, where the measurement/control of temperature is of vital importance. Base on state-of-the-art technology, ELECTROMED offers its digital temperature controller.";
         $sensing      = array(
@@ -369,7 +370,7 @@ else if ($type == 4) {
         Blow molding",
             "Turbines"
         );
-    } else if ($x == 'temp_hum_indicator') {
+    } else if ($_x == 'temp_hum_indicator') {
         $title        = 'Temperature Humidity Indicator';
         $desc         = "Temperature Humidity indicator find wide usage in a variety of applications like labs, warehouses, instrument rooms etc.<br><br>
         Electromed offers low cost, high precision ambient temperature humidity indicators which work seamlessly without any human intervention. Our modules are pre-calibrated and are easy to use.
@@ -409,11 +410,11 @@ else if ($type == 4) {
             "Conditioned cold storage"
         );
         $users        = array();
-    } else if ($x == 'twilight_switches') {
+    } else if ($_x == 'twilight_switches') {
         $title    = 'Digital Twilight Switches';
         $desc     = 'Twilight switch activates with respect to the ambient light. The device as its name suggests, switches ON and OFF at dusk and dawn.';
         $brochure = 'Twilight Switch';
-    } else if ($x == 'industrial_display') {
+    } else if ($_x == 'industrial_display') {
         $title = 'Digital Industrial Display';
         $desc  = 'Industrial displays are made to customer specifications. All sorts of calculations can be done internally and displayed.';
     } else {
@@ -424,7 +425,7 @@ else if ($type == 4) {
 }
 
 /* Rate Display Board*/
-else if ($type==6){
+else if ($_type==6){
     $category='Rate Display Board';
 
     $link    = 'product_list.php?id=rate_display_board&num=4';
@@ -445,33 +446,33 @@ else if ($type==6){
               "Power Supply", "230V AC, 50 Hz");
     $applications = array();
         
-    if ($x == 'interest_rate_display_board') {
+    if ($_x == 'interest_rate_display_board') {
         $title        = 'Interest Rate Display';
         $desc         = 'Interest rate displays are commonly used in banks. We can customize the display as per your requirement.';
         $brochure     = '';
         $users        = array("Banks");
     }
-    else if ($x == 'gold_rate_display') {
+    else if ($_x == 'gold_rate_display') {
         $title        = 'Gold Rate Display';
         $desc         = 'Jewellery rate displays are commonly used in jewellery shops. We can customize the display as per your requirement.';
         $brochure     = '';
         $users        = array("Jewellery Shop");
     }
-    else if ($x == 'stock_display') {
+    else if ($_x == 'stock_display') {
         $title        = 'Stock Inventory Display';
         $desc         = 'Stock Inventory displays are used to display the quantity of various items in the stock. We can customize the display as per your requirement.';
         $brochure     = '';
         $users        = array();
     }
-    else if ($x == 'petrol_pump_display') {
+    else if ($_x == 'petrol_pump_display') {
         $title        = 'Petrol Pump Display';
         $desc         = 'Petrol pump display is used to display the price of petrol/diesel at petrol pumps. The rate can be automatically updated via SMS or LAN network connection. We can customize the display as per your requirement.';
         $brochure     = '';
         $users        = array();
     }
 }
-
-else if ($type==6){
+/* Token Display */
+else if ($_type==8){
     $category='Rate Display Board';
 
     $link    = 'product_list.php?id=rate_display_board&num=4';
@@ -479,7 +480,7 @@ else if ($type==6){
     $display = array();
     $applications = array();
         
-    if ($x == 'interest_rate_display_board') {
+    if ($_x == 'interest_rate_display_board') {
         $title        = 'Interest Rate Display';
         $desc         = 'Interest rate displays are commonly used in banks. We can customize the display as per your requirement.';
         $brochure     = '';
@@ -499,25 +500,30 @@ else if ($type==6){
 
         $users        = array("Banks");
     }
-    else if ($x == 'gold_rate_display') {
+    else if ($_x == 'token_display') {
         $title        = 'Gold Rate Display';
-        $desc         = 'Jewellery rate displays are commonly used in jewellery shops. We can customize the display as per your requirement.';
+        $desc         = 'Token dispensers provide an efficient way to manage queues in a variety of places such as banks, hospitals, parking lots, restaurants etc.<br><br>
+          When a customer wants to enter a queue, he/she presses the button, and a token is automatically dispensed from ther machine. The token has a serial number, date, time, etc on printed on it. The customer retains the token till the time his token number is announced.<br><br>
+            This system eliminates long standing queues in offices, thus spacing both space and energy.';
         $brochure     = '';
-    $features     = array(
-              "High bright 7 segment LED Displays",
-              "Non fading cast grade acrylic front panels",
-              "Front panels designed as per user",
-              "Date and time display with battery backup",
-              "Data entry through keyboard/PC/TV Remote");
-    $specs        = array(
-              "Lighting Type", "7 segment LED",
-              "Digit Size", "1 inch",
-              "Display Color", "Red",
-              "Display Function", "Numbers and texts",
-              "Memory", "Yes, with internal battery backup",
-              "Power Supply", "230V AC, 50 Hz");
+       $features     = array(
+              "16x2 console display",
+              "Manual reset program",
+              "Auto/ Manual token serial number reset",
+              "300 tokens per 20 meter paper roll",
+              "Lightweight and user-friendly");
+       $specs        = array(
+              "Display", "16x2 LCD display",
+                "Resolution", "203 Dpi, 8 dots/mm",
+        "Paper Width",  "57 mm, 84 dots",
+              "Printing Speed", "25 mm/sec",
+        "Power",  "230V AC 50 Hz, 5 watts max");
 
-        $users        = array("Jewellery Shop");
+        $users        = array("Banks",
+        "Hospitals",
+        "Restaurants",
+        "Service centers",
+        "Parking lots");
     }
 }
 
@@ -638,8 +644,29 @@ function printTable($arr){
             <div class="col l2 m2 s12">
                 <!-- ====================================================== -->
                 <!-- Product List Sidebar File Import -->
-                <?php loadFile('product-list-sidebar.php'); ?> 
+                <?php include('include/product-list-sidebar.php'); ?> 
                 <!-- ====================================================== -->
+            
+
+        <!-- You may be interested in -->
+        <!--div>
+            <p class="custom-text red accent-4 white-text" style="text-align:center;font-size:22px;padding-top:2px;line-height: 60px">YOU MAY ALSO BE INTERESTED IN...</p>
+            <br>
+            <div class="row" id="related_products">
+                <!?php
+                      for ($i = 1; $i <= 2; $i++) {
+                        echo "<div class=\"col s6 m7 l12\" id=\"rel$i\">
+                                <div class=\"card\">
+                                  <div class=\"card-image\" id=\"ri$i\"></div>
+                                  <div class=\"card-action\" id=\"rl$i\"></div>
+                                  <div class=\"card-content\" id=\"rd$i\"></div>
+                                </div>
+                              </div>";
+                      };
+                    ?>
+            </div>
+        </div-->
+
             </div>
             <div class="col l10 m10 s12">
                 <!-- BreadCrumbs -->
@@ -675,7 +702,7 @@ function printTable($arr){
                         <!-- ====================================================== -->
                         <!-- SENSING TABLE-->
                         <?php
-                          if ($x=='temperature_controller'){
+                          if ($_x=='temperature_controller'){
                             $len = count($sensing);
                             echo "<blockquote class=\"headName1\" style=\"font-size:20px;background-color: #eeeeee;height: 30px;\"><u>Sensing</u></blockquote>
                               <table class=\"responsive-table bordered centered\" style=\"line-height: 100%;\">
@@ -747,30 +774,10 @@ function printTable($arr){
             <a href="Brochures/<?php echo $brochure; ?>.pdf" class="btn red accent-4 col l2 s5" id="dwnld-btn" download><i class="material-icons left">library_books</i>Brochure</a>
             <button class="btn rqst red accent-4 l2 col s6" id="rqst-btn" >Request for quote</button>
         </div>
-        <br><br>
+        <br>
+
         <!-- ====================================================== -->
-        <!-- You may be interested in -->
-        <!--div>
-            <p class="custom-text red accent-4 white-text" style="text-align:center;font-size:22px;padding-top:2px;line-height: 60px">YOU MAY ALSO BE INTERESTED IN...</p>
-            <br>
-            <div class="row" id="related_products">
-                <!?php
-                    echo "<div class=\"col s12 m12 l12\">" ;        
-                      for ($i = 1; $i <= 4; $i++) {
-                        echo "<div class=\"col s6 m7 l3\" id=\"rel$i\">
-                                <div class=\"card\">
-                                  <div class=\"card-image\" id=\"ri$i\"></div>
-                                  <div class=\"card-action\" id=\"rl$i\"></div>
-                                  <div class=\"card-content\" id=\"rd$i\"></div>
-                                </div>
-                              </div>";
-                      };
-                      echo "</div>";
-                    ?>
-            </div>
-        </div-->
-        <!-- ====================================================== -->
-        <br><br>
+        <br>
         <!-- ====================================================== -->
         <!-- Footer -->
         <?php loadFile('footer.php'); ?> 
@@ -789,28 +796,30 @@ function printTable($arr){
               $("html, body").animate({ scrollTop: 0 }, "fast");
               return false;
             });
-            set1('<?php echo $x ?>');
+            set1('<?php echo $_x ?>');
             $(".btn1").click(function(){
               $("#product_image").fadeOut('fast', function() {
-                set2('<?php echo $x ?>');
+                set2('<?php echo $_x ?>');
                 $("#product_image").fadeIn("fast");
               });;
             });
             
             $(".btn2").click(function(){
               $("#product_image").fadeOut('fast', function() {
-                set3('<?php echo $x ?>');
+                set3('<?php echo $_x ?>');
                 $("#product_image").fadeIn("fast");
               });;
             });
             $(".btn3").click(function(){
               $("#product_image").fadeOut('fast', function() {
-                set4('<?php echo $x ?>');
+                set4('<?php echo $_x ?>');
                 $("#product_image").fadeIn("fast");
               });;
             });
             
             });
+
+
         </script>
     </body>
 </html>

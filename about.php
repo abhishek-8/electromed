@@ -17,11 +17,8 @@
     <body id="about_page">
         <!-- ====================================================== -->
         <!-- Top NavBar -->
-        <?php
-            $myfile = fopen("include/navbar.php", "r") or die("Unable to open file!");
-            echo fread($myfile,filesize("include/navbar.php"));
-            fclose($myfile);
-            ?> 
+        <?php include('include/navbar.php'); ?> 
+
         <!-- ====================================================== -->
         <div class="parallax-container" id="about_us">
             <div class="parallax"><img src="images/circuit-board-resistor.jpeg">

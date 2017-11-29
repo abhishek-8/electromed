@@ -22,11 +22,7 @@
     <body id="contactPage">
         <!-- ====================================================== -->
         <!-- Top NavBar -->
-        <?php
-            $myfile = fopen("include/navbar.php", "r") or die("Unable to open file!");
-            echo fread($myfile,filesize("include/navbar.php"));
-            fclose($myfile);
-            ?> 
+        <?php include('include/navbar.php'); ?> 
         <!-- ====================================================== -->
         <div class="z-depth-5 card-panel hoverable" id="popup">
             <p class="custom-text" style="color:#263238;text-align:center;font-size:17px;"><?php echo $res; ?><br><br><a href=""><u>Close</u></a></p>

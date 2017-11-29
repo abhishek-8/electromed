@@ -1,94 +1,116 @@
-                   <a href="#!" class="btn red accent-4 category-btn" onclick="Materialize.showStaggeredList('#staggered-test')" style="width:100%;">Categories</a>
-                    <ul id="staggered-test" class="collapsible" data-collapsible="accordion">
-                        <li style="opacity: 0;">
-                            <div class="collapsible-header <?php if($x=='LED_display') echo 'active'; ?>" onclick="filter('LED_Wall',3)" >LED WALL</div>
-                            <div class="collapsible-body container-fluid" style="line-height:72%;"><br>
-                                <a href="products.php?id=hd_led_wall&type=1" style="font-size:14px;padding-left:10%">HD LED WALL</a><br>
-                                <hr>
-                                <a href="products.php?id=tri_color_led_wall&type=1" style="font-size:14px;padding-left:10%">TRI COLOR LED WALL</a><br>
-                                <hr>
-                                <a href="products.php?id=unicolor_led_wall&type=1" style="font-size:14px;padding-left:10%">UNICOLOR LED WALL</a><br><br>
-                                
-                            </div>
-                        </li>
-                        <li style="opacity: 0;">
-                            <div class="collapsible-header <?php if($x=='Product_for_office') echo 'active';  ?>" onclick="filter('Product_for_office',4)" >PRODUCTS FOR OFFICE</div>
-                            <div class="collapsible-body container-fluid" style="line-height:72%;"><br>
-                                
-                                <a href="products.php?id=token_display&type=2" style="font-size:14px;padding-left:10%">TOKEN DISPLAY</a><br>
-                                <hr>
-                                <a href="products.php?id=digital_clock&type=2" style="font-size:14px;padding-left:10%">DIGITAL CLOCKS</a><br>
-                                <hr>
-                                <a href="products.php?id=interest_rate_display_board&type=2" style="font-size:14px;padding-left:10%">INTEREST RATE DISPLAY BOARD</a><br>
-                                <hr>
-                                <a href="products.php?id=scrolling_display&type=2" style="font-size:14px;padding-left:10%">SCROLLING DISPLAY</a><br><br>
-                            </div>
-                            
-                        </li>
-                        <li style="opacity: 0;">
-                            <div class="collapsible-header <?php if($x=='Industrial_Instruments') echo 'active'; ?>" onclick="filter('Industrial_Instruments',10)" >INDUSTRIAL INSTRUMENTS</div>
-                            <div class="collapsible-body container-fluid" style="line-height:72%;"><br>
-                                <a href="products.php?id=flow_monitor&type=4" style="font-size:14px;padding-left:10%">FLOW MONITOR</a><br>
-                                <hr>
-                                <a href="products.php?id=line_frequency_monitor&type=4" style="font-size:14px;padding-left:10%">LINE FREQUENCY MONITOR</a><br>
-                                <hr>
-                                <a href="products.php?id=megawatt_panel&type=4" style="font-size:14px;padding-left:10%">MEGA WATT PANEL</a><br>
-                                <hr>
-                                <a href="products.php?id=process_indicator&type=4" style="font-size:14px;padding-left:10%">PROCESS INDICATORS</a><br>
-                                <hr>
-                                <a href="products.php?id=ph_meter&type=4" style="font-size:14px;padding-left:10%">PH METER</a><br>
-                                <hr>
-                                <a href="products.php?id=tachometer&type=4" style="font-size:14px;padding-left:10%">TACHOMETER</a><br>
-                                <hr>
-                                <a href="products.php?id=temperature_controller&type=4" style="font-size:14px;padding-left:10%">TEMPERATURE CONTROLLER</a><br>
-                                <hr>
-                                <a href="products.php?id=twilight_switches&type=4" style="font-size:14px;padding-left:10%">TWILIGHT SWITCHES</a><br>
-                                <hr>
-                                <a href="products.php?id=industrial_display&type=4" style="font-size:14px;padding-left:10%">INDUSTRIAL DISPLAY</a><br>
-                                <hr>
-                                <a href="products.php?id=weighing_scale_monitor&type=4" style="font-size:14px;padding-left:10%">WEIGHING SCALE MONITOR</a><br><br>
-                            </div>
-                        </li>
-                    </ul>
+<?php
 
-                     <script>
-    $(document).ready(function(){
-      if(<?php echo $done; ?>==true)
-      $('#popup').show();
-        $('.rqst').click(function(){
-    $('#request_for_quote').show();
-    });
-    $('.close').click(function(){
-    $('#request_for_quote').hide();
-    });
-    $(".top").click(function() {
-    $("html, body").animate({ scrollTop: 0 }, "fast");
-    return false;
-    });
-    set1('<?php echo $x ?>');
-    $(".btn1").click(function(){
-    $("#product_image").fadeOut('fast', function() {
-    set2('<?php echo $x ?>');
-    $("#product_image").fadeIn("fast");
-    });;
-    });
-    $(".btn2").click(function(){
-    $("#product_image").fadeOut('fast', function() {
-    set3('<?php echo $x ?>');
-    $("#product_image").fadeIn("fast");
-    });;
-    });
-    $(".btn3").click(function(){
-    $("#product_image").fadeOut('fast', function() {
-    set4('<?php echo $x ?>');
-    $("#product_image").fadeIn("fast");
-    });;
-    });
-    $(".dropdown-button").dropdown({
-    hover:true,
-    constrain_width: true,
-    gutter: 0,
-    belowOrigin: true
-    });
-    });
- </script>
+function createSidebarItem($arr,$type){
+  $len = count($arr);
+  $x = $GLOBALS['_x'];
+  for ($i=0;$i<$len/2;$i++){
+    $a=$i*2;
+    $b=$a+1;
+    echo "<a href=\"products.php?id=$arr[$b]&type=$type\" style=\"font-size:14px;padding-left:10%; "; if($x==$arr[$b]){ echo ' color:red; ';} echo "\" >$arr[$a] </a><br>";
+    if( $i!=($len/2)-1 ){echo "<hr>";}
+  }
+  echo "<br>";
+}
+
+function createSidebarTitle($name,$type){
+
+          $_type = $GLOBALS['_type'];
+          echo "<li style=\"opacity: 0;\">
+            <div class=\"collapsible-header ";
+             if($type==$_type){ echo 'active';} 
+
+             echo ">$name</div>
+
+            <div class=\"collapsible-body container-fluid\" style=\"line-height:72%;\"><br>";
+
+                createSidebarItem($GLOBALS['arr4'],$GLOBALS['type4']);
+
+echo "
+                     </div>
+          </li>
+";
+
+}
+?>
+
+
+
+        <a a href="product_list.php?id=LED_display&num=3" class="btn red accent-4 category-btn" style="width:100%" onclick="Materialize.showStaggeredList('#staggered-test')">Products</a>
+        <ul id="staggered-test" class="collapsible" data-collapsible="accordion">
+          <li style="opacity: 0;">
+            <div class="collapsible-header <?php if($_type==1) echo 'active'; ?>">LED Display</div>
+            <div class="collapsible-body container-fluid" style="line-height:72%;"><br>
+              <?php if($_type==1) echo 'active'; ?>
+              <?php 
+                createSidebarItem($arr1,$type1);
+              ?>
+              
+            </div>
+          </li>
+          <li style="opacity: 0;">
+            <div class="collapsible-header <?php if($_type==2) echo 'active'; ?>">Single Line Display</div>
+            <div class="collapsible-body container-fluid" style="line-height:72%;"><br>
+              
+            <?php 
+                createSidebarItem($arr2,$type2);
+            ?>
+
+            </div>
+            
+          <li style="opacity: 0;">
+            <div class="collapsible-header <?php if($_type==2) echo 'active'; ?>">Embedded Solutions</div>
+            <div class="collapsible-body container-fluid" style="line-height:72%;"><br>
+              
+            </div>
+
+
+
+          </li>
+          <li style="opacity: 0;">
+            <div class="collapsible-header <?php if($_type==4){ echo 'active';} ?>">Digital Instruments</div>
+            <div class="collapsible-body container-fluid" style="line-height:72%;"><br>
+
+            <?php 
+                createSidebarItem($arr4,$type4);
+            ?>
+            </div>
+          </li>
+
+                    <li style="opacity: 0;">
+            <div class="collapsible-header <?php if($_type==5) echo 'active'; ?>">Automatic Switches</div>
+            <div class="collapsible-body container-fluid" style="line-height:72%;"><br>
+              
+            <?php 
+                createSidebarItem($arr5,$type5);
+            ?>
+
+            </div>
+          <li style="opacity: 0;">
+            <div class="collapsible-header <?php if($_type==6) echo 'active'; ?>">Rate Display Board</div>
+            <div class="collapsible-body container-fluid" style="line-height:72%;"><br>
+              
+            <?php 
+                createSidebarItem($arr6,$type6);
+            ?>
+
+            </div>
+          <li style="opacity: 0;">
+            <div class="collapsible-header <?php if($_type==7) echo 'active'; ?>">Industrial Clocks</div>
+            <div class="collapsible-body container-fluid" style="line-height:72%;"><br>
+              
+            <?php 
+                createSidebarItem($arr7,$type7);
+            ?>
+
+            </div>
+          <li style="opacity: 0;">
+            <div class="collapsible-header <?php if($_type==8) echo 'active'; ?>">Token Management</div>
+            <div class="collapsible-body container-fluid" style="line-height:72%;"><br>
+              
+            <?php 
+                createSidebarItem($arr8,$type8);
+            ?>
+
+            </div>
+
+        </ul>

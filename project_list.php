@@ -20,11 +20,7 @@
 
     <!-- ====================================================== -->
     <!-- Top NavBar -->
-         <?php
-            $myfile = fopen("include/navbar.php", "r") or die("Unable to open file!");
-            echo fread($myfile,filesize("include/navbar.php"));
-            fclose($myfile);
-            ?> 
+    <?php include('include/navbar.php'); ?> 
 
     <!-- ====================================================== -->
 

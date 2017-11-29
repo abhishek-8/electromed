@@ -15,28 +15,26 @@
         <!-- Compiled and minified JavaScript -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
         <script src="action.js" type="text/javascript"></script>
-        <link rel="import" href="includes.html">
     </head>
     <body id="category_page">
         <?php include_once("analyticstracking.php") ?>
         <!-- ====================================================== -->
         <!-- Top NavBar -->
-        <?php
-            $myfile = fopen("include/navbar.php", "r") or die("Unable to open file!");
-            echo fread($myfile,filesize("include/navbar.php"));
-            fclose($myfile);
-            ?> 
+        <?php include('include/navbar.php'); ?> 
+
         <!-- ====================================================== -->
         <div class="container-fluid">
             <div class="row">
                 <div class="col l3 m3 s12" id="product-list-sidebar-div">
                     <!-- ====================================================== -->
                     <!-- Product List Sidebar -->
-                    <?php
+                            <?php include('include/product-list-sidebar.php'); ?> 
+
+                    <!--?php
                         $myfile = fopen("include/product-list-sidebar.php", "r") or die("Unable to open file!");
                         echo fread($myfile,filesize("include/product-list-sidebar.php"));
                         fclose($myfile);
-                        ?> 
+                        ?--> 
                     <!-- ====================================================== -->
                 </div>
                 <div class="col l9 m9 s12" id="category_products">
@@ -73,12 +71,6 @@
                 $('.button-collapse').sideNav();
              filter('<?php echo $x; ?>',<?php echo $z; ?>);   
             $('.collapsible').collapsible();
-            $(".dropdown-button").dropdown({
-            hover:true,
-            constrain_width: true,
-            gutter: 0,
-            belowOrigin: true
-            });
             });
             
         </script>

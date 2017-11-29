@@ -1,6 +1,6 @@
 <?php 
 
-    function createListItems($arr,$type){
+    function createNavbarItems($arr,$type){
         $len = count($arr);
         for( $i=0;$i<$len;$i+=2 ){
             $a=$i+1;
@@ -8,7 +8,7 @@
         }
     }
 
-    function createListTitle($x,$y,$n){
+    function createNavbarTitle($x,$y,$n){
         echo "<p class=\"dropdown_headName\"><a href=\"product_list.php?id=$y&num=$n\" style=\"padding-top:15px;font-size:18px;\"><b><u>$x</u></b></a></p>";
     }
 ?>
@@ -20,68 +20,69 @@
 
             <div class="row">
                 <?php
+
                     echo "<div class=\"col l4\">";
                     
 
-                    createListTitle("LED WALL","LED_Wall","3");
-                    $arr=array(
+                    createNavbarTitle("EMBEDDED SOLUTIONS","","0");
+
+
+                    createNavbarTitle("LED WALL","LED_Wall","3");
+                    $arr1=array(
                         "DIGITAL SIGNAGE","",
                         "FULL COLOR LED WALL","hd_led_wall",
                         "TRI COLOR LED WALL","tri_color_led_wall",
                         "SINGLE COLOR LED WALL","unicolor_led_wall",
                         "PARAMETER WALL","");
-                    $type=1;
-                    createListItems($arr,$type);
+                    $type1=1;
+                    createNavbarItems($arr1,$type1);
 
 
-                    createListTitle("SINGLE LINE DISPLAY","","4");
-                    $arr=array(
+                    createNavbarTitle("SINGLE LINE DISPLAY","","4");
+                    $arr2=array(
                         "SCROLLING DISPLAY","scolling_display",
                         "ONLINE DISPLAY","",
                         "PARAMETER DISPLAY","",
                         "SMS DISPLAY","");
-                    $type=2;
-                    createListItems($arr,$type);
+                    $type2=2;
+                    createNavbarItems($arr2,$type2);
                     
                     echo "</div><div class=\"col l4\">";
 
 
-                    createListTitle("RATE DISPLAY BOARD","rate_display_board","4");
-                    $arr=array(
+                    createNavbarTitle("RATE DISPLAY BOARD","rate_display_board","4");
+                    $arr6=array(
                         "INTEREST RATE DISPLAY","interest_rate_display_board",
                         "GOLD RATE DISPLAY","gold_rate_display",
                         "STOCK INVENTORY DISPLAY","stock_display",
                         "PETROL PUMP DISPLAY","petrol_pump_display");
-                    $type=6;
-                    createListItems($arr,$type);
+                    $type6=6;
+                    createNavbarItems($arr6,$type6);
 
 
-                    createListTitle("AUTOMATIC SWITCHES","","4");
-                    $arr=array(
+                    createNavbarTitle("AUTOMATIC SWITCHES","","4");
+                    $arr5=array(
                         "TWILIGHT SWITCH","",
                         "PUMP CONTROLLER","",
                         "TEMPERATURE CONTROLLER","temperature_controller",
                         "TIMER SWITCHES","");
-                    $type=4;
-                    createListItems($arr,$type);
+                    $type5=5;
+                    createNavbarItems($arr5,$type6);
 
 
-                    createListTitle("INDUSTRIAL CLOCKS","","2");
-                    $arr=array(
+                    createNavbarTitle("INDUSTRIAL CLOCKS","","2");
+                    $arr7=array(
                         "DIGITAL CLOCKS","digital_clocks",
                         "GPS CLOCKS","");
-                    $type=2;
-                    createListItems($arr,$type);
+                    $type7=7;
+                    createNavbarItems($arr7,$type7);
 
 
                     echo "</div><div class=\"col l4\">";
 
  
-                    createListTitle("EMBEDDED SOLUTIONS","","0");
-
- 
-                    createListTitle("DIGITAL INSTRUMENTS","Industrial_instruments","9");
-                    $arr=array(
+                    createNavbarTitle("DIGITAL INSTRUMENTS","Industrial_instruments","10");
+                    $arr4=array(
                         "FLOW MONITOR","flow_monitor",
                         "LINE FREQUENCY MONITOR","line_frequency_monitor",
                         "MEGA WATT PANEL","megawatt_panel",
@@ -90,17 +91,18 @@
                         "TACHOMETER","tachometer",
                         "TWILIGHT SWITCHES","twilight_switches",
                         "INDUSTRIAL DISPLAY","industrial_display",
+                        "ISOLATED CONVERTER","isolated_converter",
                         "WEIGHING SCALE MONITOR","weighing_scale_monitor");
-                    $type=4;
-                    createListItems($arr,$type);
+                    $type4=4;
+                    createNavbarItems($arr4,$type4);
  
 
-                    createListTitle("TOKEN MANAGEMENT","","2");
-                    $arr=array(
+                    createNavbarTitle("TOKEN MANAGEMENT","","2");
+                    $arr8=array(
                         "TOKEN DISPENSER","",
-                        "TOKEN DISPLAY","");
-                    $type=4;
-                    createListItems($arr,$type);
+                        "TOKEN DISPLAY","token_display");
+                    $type8=8;
+                    createNavbarItems($arr8,$type8);
 
                     echo "</div>";
                 ?>       

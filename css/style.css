@@ -154,15 +154,40 @@ nav .button-collapse i {
 
 #home_content{margin-top:570px}.caption h3{text-shadow:2px 2px #000}.caption{margin-top:100px}.numerics{font-family:'Sansita',sans-serif}.related{height:80px}#popup,#request_for_quote{position:fixed;top:50;z-index:10;display:none}#popup{top:250px;z-index:11;border-radius:3%;border:4px solid rgba(211,211,211,.5)}@media only screen and (min-width:760px){.client_slider{max-height:610px;min-height:610px}.client_slider .slides{position:relative;background:#fff}.client_slider .slides,.client_slider .slides li{max-height:580px;min-height:580px}.client_slider .indicators{position:relative}.client_slider .slides li img{height:50%}.forSmallscreen{display:none}#contactinfo{margin-top:80px}.ctgry-name{line-height:0}#project-image #product_image{height:400px}#dwnld-btn,#rqst-btn{font-size:15px;width:14%;margin-left:53%}#rqst-btn{margin-left:15%}#quick_facts{margin-left:7%}#field1text,#field2text,#field3text{color:#263238;text-align:center;font-size:22px}#home_card1,#home_card2,#home_card3,#home_card4,#home_card5,#home_card6,#home_card7,#home_card8,#home_card9,.cntdwn{margin-left:6%}#product_image1{margin-left:4%}#product_image2{margin-left:2px;margin-right:2px}
 
-#request_for_quote{width:50%;margin-left:25%}#popup{width:35%;margin-left:32%}}#product_image{height:285px;width:100%}#about_us,#contact_us{margin-top:-25px}#contact_us{height:370px}#products,#projects{background-color:#263238;font-family:'Ropa Sans',sans-serif}#products{margin-left:300px;min-width:1000px;max-height:400px}.btn1,.btn2,.btn3{cursor:pointer}#projects{min-width:300px;max-height:250px;margin-right:80px}.custom-text{font-family:'Montserrat',sans-serif}.headName{opacity:.6;text-align:center;font-family:'Ropa Sans',sans-serif}.headNamev3{text-align:center;color:#fff}.headNamev2,.headNamev3,.table_specs{font-family:'Ropa Sans',sans-serif}.headNamev2{opacity:.7;font-size:22px}.table_specs{font-size:18px}
+#request_for_quote{width:50%;margin-left:25%}#popup{width:35%;margin-left:32%}}#product_image{height:285px;width:100%}#about_us,#contact_us{margin-top:-25px}#contact_us{height:370px}
+#products,#projects{background-color:#263238;font-family:'Ropa Sans',sans-serif}
+
+/*to change height of dropdown menu*/
+#products{margin-left:300px;min-width:1000px;max-height:500px}
+.dropdown-content {
+  background-color: #fff;
+  margin: 0;
+  display: none;
+  min-width: 50px;
+  max-height: 650px;
+  overflow-y: auto;
+  opacity: 0;
+  position: absolute;
+  z-index: 999;
+  will-change: width, height;
+}
+.product_name{line-height:100%;font-size: 12px;}span{color:#263238}
+
+
+
+.btn1,.btn2,.btn3{cursor:pointer}#projects{min-width:300px;max-height:250px;margin-right:80px}.custom-text{font-family:'Montserrat',sans-serif}.headName{opacity:.6;text-align:center;font-family:'Ropa Sans',sans-serif}.headNamev3{text-align:center;color:#fff}.headNamev2,.headNamev3,.table_specs{font-family:'Ropa Sans',sans-serif}.headNamev2{opacity:.7;font-size:22px}.table_specs{font-size:18px}
 
 .card .card-action{font-size:16px;font-weight:700}
 
 .btn,.card .card-action,.card-title,.category-btn,.collapsible-body,.collapsible-header,.headName1,.related_text,nav{font-family:'Ropa Sans',sans-serif}
 
 
-.related_text{font-size:32px}.dropdown_headName{line-height:100%;color:#fff}.product_name{line-height:100%}span{color:#263238}nav{margin-top:-25px;background:#1976d2}nav :hover{color:#000}#products :hover,#projects :hover{color:#ff9800;background-color:#263238}
+.related_text{font-size:32px}.dropdown_headName{line-height:100%;color:#fff}
+
+nav{margin-top:-25px;background:#1976d2}
+nav :hover{color:#000}#products :hover,#projects :hover{color:#ff9800;background-color:#263238}
 .dropdown_headName :hover,nav .brand-logo{color:#fff}
+
 
 #contact .icons{font-size:64px}#curr{font-size:20px}
 

@@ -1,64 +1,109 @@
+<?php 
+
+    function createListItems($arr,$type){
+        $len = count($arr);
+        for( $i=0;$i<$len;$i+=2 ){
+            $a=$i+1;
+            echo "<p class=\"product_name\"><a href=\"products.php?id=$arr[$a]&type=$type\">&ensp;&ensp;$arr[$i]</a></p>";
+        }
+    }
+
+    function createListTitle($x,$y,$n){
+        echo "<p class=\"dropdown_headName\"><a href=\"product_list.php?id=$y&num=$n\" style=\"padding-top:15px;font-size:18px;\"><b><u>$x</u></b></a></p>";
+    }
+?>
+
+
 <div class="top-navbar">
     <div class="dropdown-content" id="products">
         <div class="container">
+
             <div class="row">
-                <div class="col l4">
-                    <p class="dropdown_headName"><a href="product_list.php?id=LED_Wall&num=3">LED WALL</a>
-                    </p>
-                    <hr>
-                </div>
-                <div class="col l4">
-                    <p class="dropdown_headName"><a href="product_list.php?id=Product_for_office&num=4">PRODUCTS FOR OFFICE</a>
-                    </p>
-                    <hr>
-                </div>
-                <div class="col l4">
-                    <p class="dropdown_headName"><a href="product_list.php?id=Industrial_Instruments&num=10">INDUSTRIAL INSTRUMENTS</a>
-                    </p>
-                    <hr>
-                </div>
-            </div>
-            <div class="row" style="margin-top:-50px;">
-                <div class="col l4">
-                    <p class="product_name"><a href="products.php?id=hd_led_wall&type=1">HD LED WALL</a>
-                    </p>
-                    <p class="product_name"><a href="products.php?id=tri_color_led_wall&type=1">TRI COLOR LED WALL</a>
-                    </p>
-                    <p class="product_name"><a href="products.php?id=unicolor_led_wall&type=1">UNICOLOR LED WALL</a>
-                    </p>
-                </div>
-                <div class="col l4">
-                    <p class="product_name"><a href="products.php?id=token_display&type=2">TOKEN DISPLAY</a>
-                    </p>
-                    <p class="product_name"><a href="products.php?id=digital_clock&type=2">DIGITAL CLOCKS</a>
-                    </p>
-                    <p class="product_name"><a href="products.php?id=interest_rate_display_board&type=2">INTEREST RATE DISPLAY BOARD</a>
-                    </p>
-                    <p class="product_name"><a href="products.php?id=scrolling_display&type=2">SCROLLING DISPLAY</a>
-                    </p>
-                </div>
-                <div class="col l4">
-                    <p class="product_name"><a href="products.php?id=flow_monitor&type=4">FLOW MONITOR</a>
-                    </p>
-                    <p class="product_name"><a href="products.php?id=line_frequency_monitor&type=4">LINE FREQUENCY MONITOR</a>
-                    </p>
-                    <p class="product_name"><a href="products.php?id=megawatt_panel&type=4">MEGA WATT PANEL</a>
-                    </p>
-                    <p class="product_name"><a href="products.php?id=process_indicator&type=4">PROCESS INDICATORS</a>
-                    </p>
-                    <p class="product_name"><a href="products.php?id=ph_meter&type=4">PH METER</a>
-                    </p>
-                    <p class="product_name"><a href="products.php?id=tachometer&type=4">TACHOMETER</a>
-                    </p>
-                    <p class="product_name"><a href="products.php?id=temperature_controller&type=4">TEMPERATURE CONTROLLER</a>
-                    </p>
-                    <p class="product_name"><a href="products.php?id=twilight_switches&type=4">TWILIGHT SWITCHES</a>
-                    </p>
-                    <p class="product_name"><a href="products.php?id=industrial_display&type=4">INDUSTRIAL DISPLAY</a>
-                    </p>
-                    <p class="product_name"><a href="products.php?id=weighing_scale_monitor&type=4">WEIGHING SCALE MONITOR</a>
-                    </p>
-                </div>
+                <?php
+                    echo "<div class=\"col l4\">";
+                    
+
+                    createListTitle("LED WALL","LED_Wall","3");
+                    $arr=array(
+                        "DIGITAL SIGNAGE","",
+                        "FULL COLOR LED WALL","hd_led_wall",
+                        "TRI COLOR LED WALL","tri_color_led_wall",
+                        "SINGLE COLOR LED WALL","unicolor_led_wall",
+                        "PARAMETER WALL","");
+                    $type=1;
+                    createListItems($arr,$type);
+
+
+                    createListTitle("SINGLE LINE DISPLAY","","4");
+                    $arr=array(
+                        "SCROLLING DISPLAY","scolling_display",
+                        "ONLINE DISPLAY","",
+                        "PARAMETER DISPLAY","",
+                        "SMS DISPLAY","");
+                    $type=2;
+                    createListItems($arr,$type);
+                    
+                    echo "</div><div class=\"col l4\">";
+
+
+                    createListTitle("RATE DISPLAY BOARD","rate_display_board","4");
+                    $arr=array(
+                        "INTEREST RATE DISPLAY","interest_rate_display_board",
+                        "GOLD RATE DISPLAY","gold_rate_display",
+                        "STOCK INVENTORY DISPLAY","stock_display",
+                        "PETROL PUMP DISPLAY","petrol_pump_display");
+                    $type=6;
+                    createListItems($arr,$type);
+
+
+                    createListTitle("AUTOMATIC SWITCHES","","4");
+                    $arr=array(
+                        "TWILIGHT SWITCH","",
+                        "PUMP CONTROLLER","",
+                        "TEMPERATURE CONTROLLER","temperature_controller",
+                        "TIMER SWITCHES","");
+                    $type=4;
+                    createListItems($arr,$type);
+
+
+                    createListTitle("INDUSTRIAL CLOCKS","","2");
+                    $arr=array(
+                        "DIGITAL CLOCKS","digital_clocks",
+                        "GPS CLOCKS","");
+                    $type=2;
+                    createListItems($arr,$type);
+
+
+                    echo "</div><div class=\"col l4\">";
+
+ 
+                    createListTitle("EMBEDDED SOLUTIONS","","0");
+
+ 
+                    createListTitle("DIGITAL INSTRUMENTS","Industrial_instruments","9");
+                    $arr=array(
+                        "FLOW MONITOR","flow_monitor",
+                        "LINE FREQUENCY MONITOR","line_frequency_monitor",
+                        "MEGA WATT PANEL","megawatt_panel",
+                        "PROCESS INDICATORS","process_indicator",
+                        "PH METER","ph_meter",
+                        "TACHOMETER","tachometer",
+                        "TWILIGHT SWITCHES","twilight_switches",
+                        "INDUSTRIAL DISPLAY","industrial_display",
+                        "WEIGHING SCALE MONITOR","weighing_scale_monitor");
+                    $type=4;
+                    createListItems($arr,$type);
+ 
+
+                    createListTitle("TOKEN MANAGEMENT","","2");
+                    $arr=array(
+                        "TOKEN DISPENSER","",
+                        "TOKEN DISPLAY","");
+                    $type=4;
+                    createListItems($arr,$type);
+
+                    echo "</div>";
+                ?>       
             </div>
         </div>
     </div>
@@ -96,12 +141,13 @@
 </div>
 <script>
     $(document).ready(function(){
-    $(".dropdown-button").dropdown({
-    hover:true,
-    constrain_width: true,
-    gutter: 0,
-    belowOrigin: true
+        $(".dropdown-button").dropdown({
+            hover:true,
+            constrain_width: true,
+            gutter: 0,
+            belowOrigin: true
+        });
+        $('.button-collapse').sideNav();
     });
-    $('.button-collapse').sideNav();
-    });
+
 </script>

@@ -4017,11 +4017,11 @@ nav {
 }
 
 nav.nav-extended {
-  height: auto;
+  height: 1000px;
 }
 
 nav.nav-extended .nav-wrapper {
-  height: auto;
+  height: 100px;
 }
 
 nav a {

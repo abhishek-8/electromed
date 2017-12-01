@@ -5,13 +5,13 @@ $link         = '';
 $category     = '';
 $title        = '';
 $desc         = '';
-$features     = '';
+$features     = array();
 $sensing      = '';
 $brochure     = '';
-$specs        = '';
-$applications = '';
-$users        = '';
-$display      = '';
+$specs        = array();
+$applications = array();
+$users        = array();
+$display      = array(); 
 $done         = 'false';
 $type         = $_type;
 include('submit.php');
@@ -128,7 +128,7 @@ else if ($_type == 4) {
     } else if ($_x == 'line_frequency_monitor') {
         $title        = 'Digital Line Frequency Monitor';
         $desc         = 'Line Frequency Monitor is a device used to measure the power line frequency accurately.<br><br>
-      The unit is microcontroller based and gives an accuracy of more than 0.02%. It is used in power generation and load dispatching centers, process industries etc, where the monitoring of line frequency is utmost important.';
+        The unit is microcontroller based and gives an accuracy of more than 0.02%. It is used in power generation and load dispatching centers, process industries etc, where the monitoring of line frequency is utmost important.';
         $brochure     = 'line frequency monitor';
         $features     = array(
             "Large display visible from distance",
@@ -170,6 +170,25 @@ else if ($_type == 4) {
         $title    = 'Digital Mega Watt Panel';
         $desc     = 'Megawatt Panels are essential to power plants. Generation data can be displayed all over the plant.';
         $brochure = 'mega watt panels';
+        $features = array(
+          "Fully automatic operation",
+          "Programming of parameter values",
+          "Four switches for on-site programming",
+          "Large display visible from distance",
+          "Remote display available",
+          "Signal retransmission available");
+        $specs = array(
+          "Input", "4-20 mA",
+          "Type", "Jumbo Display",
+          "Power Supply", "230V AC, 50 Hz",
+          "Limit settings", "Separate relays for high and low limit setting",
+          "Optional Features",
+            "<li>4-20mA retransmission available
+            <li>Wireless transmission to slave unit");
+        $applications = array(
+          "Power Generation Display",
+          "Line Frequency Display");
+        $users=array("Power Plants");
     } else if ($_x == 'process_indicator') {
         $title        = 'Digital Process Indicator';
         $desc         = 'Process indicators are typically display units for a 4-20mA signal input. They are suitable for displaying process parameters like flow rate, temperature, level speed, pH, etc at remote locations.<br><br> 
@@ -215,9 +234,7 @@ else if ($_type == 4) {
     } else if ($_x == 'ph_meter') {
         $title        = 'Digital Ph Meter';
         $desc         = "A pH meter is a scientific instrument that measures the hydrogen-ion activity in water-based solutions, indicating its acidity or alkalinity expressed as pH.<br><br>
-        Electromed offers a high accuracy digital pH meter, the EPH-100 D, by with very high input impedance and minimal long term drift.
-        <blockquote class=\"headName1\" style=\"font-size:20px;background-color: #eeeeee;height: 30px;\"><u>Sensing</u></blockquote>
-        It measures the difference in electrical potentials between a pH electrode and reference electrode.";
+        Electromed offers a high accuracy digital pH meter, the EPH-100 D, by with very high input impedance and minimal long term drift.".
         $brochure     = 'ph meter';
         $features     = array(
             "Very high input impedance",
@@ -297,7 +314,83 @@ else if ($_type == 4) {
             "Automobile",
             "Plastics"
         );
-    } else if ($_x == 'temperature_controller') {
+    } else if ($_x == 'temp_hum_indicator') {
+        $title        = 'Temperature Humidity Indicator';
+        $desc         = "Temperature Humidity indicator find wide usage in a variety of applications like labs, warehouses, instrument rooms etc.<br><br>
+        Electromed offers low cost, high precision ambient temperature humidity indicators which work seamlessly without any human intervention. Our modules are pre-calibrated and are easy to use.
+        <blockquote class=\"headName1\" style=\"font-size:21px;\"><u>Sensing</u></blockquote>
+        Our temperature humidity indicator comes with an inbuilt state-of-the-art sensor, and is ready to use. It does not require any calibration at user end. ";
+        $brochure     = 'Temperature Controller';
+        $features     = array(
+            "Dual 4-20mA retransmission output for data acquisition",
+            "Microcontroller based meters",
+            "Integrated RH and Temperature sensor",
+            "Digital readout on non blinking display",
+            "Rapid sampling rate",
+            "Large display visible from distance",
+            "Remote display available"
+        );
+        $specs        = array(
+            "Temperature Range",
+            "-15°to 65° C",
+            "Humidity Range",
+            "5.0 to 99.9% RH",
+            "Type",
+            "Jumbo Display",
+            "Power Supply",
+            "230V AC, 50 Hz",
+            "Display Period",
+            "1 seconds",
+            "Operating Temperature",
+            "0-50° C",
+            "Optional Features",
+            "<li>4-20mA retransmission available
+          <li>RS485 modbus protocol communicable
+          <li>Wireless transmission to slave unit"
+        );
+        $applications = array(
+            "Clean room monitoring",
+            "Environment chambers",
+            "Conditioned cold storage"
+        );
+        $users        = array();
+    } else if ($_x == 'industrial_display') {
+        $title = 'Digital Industrial Display';
+        $desc  = 'Industrial displays are made to customer specifications. All sorts of calculations can be done internally and displayed.';
+    } else if ($_x == 'isolated_converter') {
+      $title = 'Isolted Converter';
+      $desc = 'Isolated Converters provide insolation between signals and the control room equipments. This saves the control room instruments from damage due to accidental application of high voltage or induced voltages on the input signal.<br><br>
+      Isolated converters are available with multiple outputs. They can also act as signal distributors when used with more number of outputs.<br><br>
+      A typical application could be where the signal has to go for indication on local panel, field control room, main control room and DCS System.<br><br>
+      For indication on different panels, the current/voltage output can be used with low cost panel meters.';
+      $brochure = '';
+      $specs = array(
+        "Input", "4-20 mA or 1-5V DC linear inputs",
+        "Loading",
+          "<li>5mA max for voltage output
+          <li>200 ohms max for current output",
+        "Calibration","By indivisual zero & zero & span pots for each output",
+        "CMRR", "Better than 150dB",
+        "Power Supply", "230 VAC, 50%",
+        "Ambient Temperature", "0-50 °C");
+      $applications = array(
+        "Isolate input signal from equipments",
+        "Signal Distribution");
+    } else if( $_x=='weighing_scale_monitor' ){
+        $title    = 'Digital Weighing Scale Monitor';
+        $desc     = 'Weighing Scale Monitor is used to monitoring the number of tippings of juice and water Fully automatic operation and convenience of remote display.';
+        $brochure = 'weighing scale monitor';
+    }
+    
+}
+
+/*Automatic Switches */
+else if($_type == 5){
+    $category='Digital Instruments';
+
+    $link    = 'product_list.php?id=Industrial_Instruments&num=10';
+    $related = array();
+    if ($_x == 'temperature_controller') {
         $title        = 'Digital Temperature Controller';
         $desc         = "Temperature controllers find wide usage in a variety of industrial applications like turbines, furnaces, blow molding, etc, where the measurement/control of temperature is of vital importance. Base on state-of-the-art technology, ELECTROMED offers its digital temperature controller.";
         $sensing      = array(
@@ -370,57 +463,11 @@ else if ($_type == 4) {
         Blow molding",
             "Turbines"
         );
-    } else if ($_x == 'temp_hum_indicator') {
-        $title        = 'Temperature Humidity Indicator';
-        $desc         = "Temperature Humidity indicator find wide usage in a variety of applications like labs, warehouses, instrument rooms etc.<br><br>
-        Electromed offers low cost, high precision ambient temperature humidity indicators which work seamlessly without any human intervention. Our modules are pre-calibrated and are easy to use.
-        <blockquote class=\"headName1\" style=\"font-size:21px;\"><u>Sensing</u></blockquote>
-        Our temperature humidity indicator comes with an inbuilt state-of-the-art sensor, and is ready to use. It does not require any calibration at user end. ";
-        $brochure     = 'Temperature Controller';
-        $features     = array(
-            "Dual 4-20mA retransmission output for data acquisition",
-            "Microcontroller based meters",
-            "Integrated RH and Temperature sensor",
-            "Digital readout on non blinking display",
-            "Rapid sampling rate",
-            "Large display visible from distance",
-            "Remote display available"
-        );
-        $specs        = array(
-            "Temperature Range",
-            "-15°to 65° C",
-            "Humidity Range",
-            "5.0 to 99.9% RH",
-            "Type",
-            "Jumbo Display",
-            "Power Supply",
-            "230V AC, 50 Hz",
-            "Display Period",
-            "1 seconds",
-            "Operating Temperature",
-            "0-50° C",
-            "Optional Features",
-            "<li>4-20mA retransmission available
-          <li>RS485 modbus protocol communicable
-          <li>Wireless transmission to slave unit"
-        );
-        $applications = array(
-            "Clean room monitoring",
-            "Environment chambers",
-            "Conditioned cold storage"
-        );
-        $users        = array();
-    } else if ($_x == 'twilight_switches') {
+    }
+    else if ($_x == 'twilight_switches') {
         $title    = 'Digital Twilight Switches';
         $desc     = 'Twilight switch activates with respect to the ambient light. The device as its name suggests, switches ON and OFF at dusk and dawn.';
         $brochure = 'Twilight Switch';
-    } else if ($_x == 'industrial_display') {
-        $title = 'Digital Industrial Display';
-        $desc  = 'Industrial displays are made to customer specifications. All sorts of calculations can be done internally and displayed.';
-    } else {
-        $title    = 'Digital Weighing Scale Monitor';
-        $desc     = 'Weighing Scale Monitor is used to monitoring the number of tippings of juice and water Fully automatic operation and convenience of remote display.';
-        $brochure = 'weighing scale monitor';
     }
 }
 
@@ -471,38 +518,89 @@ else if ($_type==6){
         $users        = array();
     }
 }
+
+/* Digital Clocks */
+else if ($_type==7 ){
+  $category='Industrial Clocks';
+
+  $link    = 'product_list.php?id=Industrial_Clock&num=2';
+  $related = array();
+  if ( $_x=='digital_clock'){
+    $title= 'Digital Clock';
+    $desc = 'Electromed offers customized digital clocks in a number of display types, including P10 LED type, seven segment display, LCD Display. The clocks can be in varying shapes, sizes and color as per the user’s requirement.';
+    $features=array("Fully automatic operation",
+      "Large display visible from distance",
+      "Can be connected to slave clocks",
+      "To In-Built Battery Backup",
+      "Time Displays In 24 Hrs Format (Hh:Mm: Ss)");
+    $specs=array("Type", "Red Colored LED with high brightness and long visibility",
+      "MCD range", "Minimum 1000, viewing angle 110 degree One lakh operating hours",
+      "Digit size","8 inches x 4.5 inches",
+      "Display","Hours, Minutes Seconds (HH:MM:SS) (6 digits)",
+      "Hours", "12/24 hours with blinking colon",
+      "Housing", "Mild sheet steel fabricated, powder coated, full elegant acrylic cover",
+      "Accuracy", "Highly accurate RTC / GPS optional",
+      "Clock setting", "Push to ON switches at one side of the clock to Increase Hours Minutes by 1 count",
+      "GPS Receiver",  "Optional GPS clock",
+      "Power supply", "190-240 V AC",
+      "Dimension(Cabinet)", "31 inchesx 10 inches x 3.5 inches (L x H x W)",
+      "PCB type", "Glass Epoxy",
+      "Controller type", "Microcontroller based",
+      "Power Supply", "230V AC, 50 Hz");
+  }
+  else if( $_x=='gps_clock' ){
+    $title='GPS Clock';
+    $desc = 'Electromed offers GPS digital clocks in a number of display types, including P10 LED type, seven segment display, LCD Display. The clocks can be in varying shapes, sizes and color as per the user’s requirement.<br><br>
+    The clock synchronizes its time a GPS satellite, which eliminates the need for manual setting of the time. The GPS clock can be easily connected to a slave unit, which would ensure that the time displayed in all the clocks in your premises is accurate.';
+    $features=array("Fully automatic operation",
+      "Large display visible from distance",
+      "Can be connected to slave clocks",
+      "Time Synchronizes With Slaves For Every Second.",
+      "Gps Master Synchronization With Gps Time.",
+      "To In-Built Battery Backup",
+      "Time Displays In 24 Hrs Format (Hh:Mm: Ss)",
+      "Auto Change Over To Internal Rtc Clock Working In Case Of Gps Failure With Led Indication On Front Side.");
+    $specs=array("Type", "Red Colored LED with high brightness and long visibility",
+      "MCD range", "Minimum 1000, viewing angle 110 degree One lakh operating hours",
+      "Digit size","8 inches x 4.5 inches",
+      "Display","Hours, Minutes Seconds (HH:MM:SS) (6 digits)",
+      "Hours", "12/24 hours with blinking colon",
+      "Housing", "Mild sheet steel fabricated, powder coated, full elegant acrylic cover",
+      "Accuracy", "Highly accurate RTC / GPS optional",
+      "Clock setting", "Push to ON switches at one side of the clock to Increase Hours Minutes by 1 count",
+      "Power supply", "190-240 V AC",
+      "Dimension(Cabinet)", "31 inchesx 10 inches x 3.5 inches (L x H x W)",
+      "PCB type", "Glass Epoxy",
+      "Controller type", "Microcontroller based",
+      "Power Supply", "230V AC, 50 Hz");
+  }
+}
+
 /* Token Display */
 else if ($_type==8){
-    $category='Rate Display Board';
+    $category='Token Management';
 
-    $link    = 'product_list.php?id=rate_display_board&num=4';
+    $link    = 'product_list.php?id=&num=4';
     $related = array('');
     $display = array();
     $applications = array();
         
-    if ($_x == 'interest_rate_display_board') {
-        $title        = 'Interest Rate Display';
-        $desc         = 'Interest rate displays are commonly used in banks. We can customize the display as per your requirement.';
+    if ($_x == 'token_display') {
+        $title        = 'Token Display';
+        $desc         = 'The token display system is a system which is used to announce and display the required token number. It is useful in areas where managing customer queues is of utmost importance. ';
         $brochure     = '';
     $features     = array(
-              "High bright 7 segment LED Displays",
-              "Non fading cast grade acrylic front panels",
-              "Front panels designed as per user",
-              "Date and time display with battery backup",
-              "Data entry through keyboard/PC/TV Remote");
-    $specs        = array(
-              "Lighting Type", "7 segment LED",
-              "Digit Size", "1 inch",
-              "Display Color", "Red",
-              "Display Function", "Numbers and texts",
-              "Memory", "Yes, with internal battery backup",
-              "Power Supply", "230V AC, 50 Hz");
+      "Large display visible from 20ft",
+      "Multilingual voice announcement",
+      "Auto announcement available",
+      "Wireless data transmission available");
+    $specs        = array();
 
         $users        = array("Banks");
     }
-    else if ($_x == 'token_display') {
-        $title        = 'Gold Rate Display';
-        $desc         = 'Token dispensers provide an efficient way to manage queues in a variety of places such as banks, hospitals, parking lots, restaurants etc.<br><br>
+    else if ($_x == 'token_printer') {
+        $title        = 'Token Printer';
+        $desc         = 'Token printers provide an efficient way to manage queues in a variety of places such as banks, hospitals, parking lots, restaurants etc.<br><br>
           When a customer wants to enter a queue, he/she presses the button, and a token is automatically dispensed from ther machine. The token has a serial number, date, time, etc on printed on it. The customer retains the token till the time his token number is announced.<br><br>
             This system eliminates long standing queues in offices, thus spacing both space and energy.';
         $brochure     = '';
@@ -518,12 +616,12 @@ else if ($_type==8){
         "Paper Width",  "57 mm, 84 dots",
               "Printing Speed", "25 mm/sec",
         "Power",  "230V AC 50 Hz, 5 watts max");
-
-        $users        = array("Banks",
-        "Hospitals",
-        "Restaurants",
-        "Service centers",
-        "Parking lots");
+        $users        = array(
+          "Banks",
+          "Hospitals",
+          "Restaurants",
+          "Service centers",
+          "Parking lots");
     }
 }
 
@@ -571,6 +669,10 @@ function printTable($arr){
         echo "</tr>";
     }
     echo "</table>";
+}
+
+function printHeading($a){
+  echo "<blockquote class=\"headName1\" style=\"font-size:20px;background-color: #eeeeee;height: 30px;\"><u>$a</u></blockquote>";
 }
 
 ?><!DOCTYPE html>
@@ -676,10 +778,18 @@ function printTable($arr){
                     <a href="" class="breadcrumb black-text" id="curr"><?php echo $title; ?></a>
                 </div>
                 <!-- Product Images -->
-                <div class="row product-images">
+                
                     <!-- 3 Product images -->    
-                    <div class="col l3 s12 m5" id="product">
-                        <div class="row">
+                    <?php 
+                    if ($_type!=1){
+                      echo "<div class=\"row product-images\">";
+                      echo "<div class=\"col l3 s12 m5\" id=\"product\">";
+                    }
+                    else{
+                      echo "<div class=\"row -images\">";
+                      echo "<div class=\"col l12 s12 m5\" id=\"product\">";
+                    }
+                    ?>    <div class="row">
                             <br>
                             <div class="col l12 s12 m11 materialboxed" id="product_image"></div>
                         </div>
@@ -688,21 +798,38 @@ function printTable($arr){
                             <div class="col l3 m3 s3 btn1" id="product_image1"></div>
                             <div class="col l3 m3 s3 btn2" id="product_image2"></div>
                             <div class="col l3 m3 s3 btn3" id="product_image3"></div>
+
+                        <!--?php
+
+
+                        echo "<div class=\"col l3 m3 s3 btn1\"><img style=\"border-radius:10px;\" width=\"100%\" height=\"100%\" src=photos/$_x1.jpg alt=$_x \"></div>";
+                                                    <div class="col l3 m3 s3 btn2" id="product_image2"></div>
+                                                    <div class="col l3 m3 s3 btn3" id="product_image3"></div>
+                        ?-->
+
+
                         </div>
                     </div>
                     <!-- ============================================= -->    
                     <div class="col l9 s12 m6">
                         <blockquote class="headName1" style="font-size:20px;background-color: #eeeeee;height: 30px;"><u id="info">Overview</u></blockquote>
                         <p class="overview-text">
-                        <?php 
-                          echo $desc; 
-                        ?>
+                        <?php echo "$desc"; ?>
                         </p>
 
                         <!-- ====================================================== -->
-                        <!-- SENSING TABLE-->
+                        <!-- SENSING -->
                         <?php
-                          if ($_x=='temperature_controller'){
+                          if ($_x=='ph_meter'){
+                            printHeading("Sensing");
+                            echo "It measures the difference in electrical potentials between a pH electrode and reference electrode.";
+                          } 
+                          if ($_x=='isolated_converter'){
+                            printHeading("Isolation");
+                            echo "1500V DC optical and galvanic isolation between input, power supply, and each of the outputs (AC power supply)";
+                            $display = array();
+                          } 
+                          else if ($_x=='temperature_controller'){
                             $len = count($sensing);
                             echo "<blockquote class=\"headName1\" style=\"font-size:20px;background-color: #eeeeee;height: 30px;\"><u>Sensing</u></blockquote>
                               <table class=\"responsive-table bordered centered\" style=\"line-height: 100%;\">
@@ -722,9 +849,12 @@ function printTable($arr){
                         <!-- ====================================================== -->
                         <!-- FEATURES -->
                         
-                        <?php 
-                          echo "<blockquote class=\"headName1\" style=\"font-size:20px;background-color: #eeeeee;height: 30px;\"><u>Features</u></blockquote>";
+                        <?php
+                          $len = count($features); 
+                          if($len!=0){
+                          printHeading("Features");
                           printBullets($features); 
+                        }
                         ?>
 
                         <!-- ====================================================== -->
@@ -732,7 +862,7 @@ function printTable($arr){
                         <?php  
                           $len = count($applications);
                           if ($len!=0){
-                            echo "<blockquote class=\"headName1\" style=\"font-size:20px;background-color: #eeeeee;height: 30px;\"><u>Applications</u></blockquote>";
+                            printHeading("Applications");
                             printBullets($applications);
                             }
                           ?>
@@ -742,16 +872,41 @@ function printTable($arr){
                         <?php
                           $len = count($users);
                           if ($len!=0){
-                            echo "<blockquote class=\"headName1\" style=\"font-size:20px;background-color: #eeeeee;height: 30px;\"><u>Typical Users</u></blockquote>";
+                            printHeading("Typical Users");
                             printBullets($users);
                             }
-                          ?>                      
+                          ?>
 
                         <!-- ====================================================== -->
                         <!-- TECHNICAL SPECIFICATIONS -->
-                        <blockquote class="headName1" style="font-size:20px;background-color: #eeeeee;height: 30px;"><u>Technical Specifications</u></blockquote>
-                        <p><b>&ensp;&ensp;&ensp;&ensp; *Can be made to order as per user’s requirement.</b></p>
-                        <?php printTable($specs); ?>
+                        <?php
+                          if(count($specs)!=0){ 
+                            printHeading("Technical specifications");
+                            echo "<p><b>&ensp;&ensp;&ensp;&ensp; *Can be made to order as per user’s requirement.</b></p>";
+                            printTable($specs); 
+                          }
+                        ?>
+
+                          <!-- For Token Display Specs-->
+                          <?php if( $_x=='token_display' ){
+                              echo "<p style = \"font-size:19px;\"><b><u>Display Unit</u></b><p>";
+                              printTable(array("Display Size", "4 inch",
+                                "No of digits",  "3",
+                                "Display type", "7 segment",
+                                "Enclosure", "Black powder coated ms sheet metal",
+                                "Inter connection cable", "9 pin D type connector with dust cover at both ends",
+                                "Standard length of cable", "5 meters",
+                                "Max possible length of cable", "15 meters",
+                                "Power", "230V AC 50 Hz, 5 watts max"
+                                ));
+                              echo "<p style = \"font-size:19px;\"><b><u>Base Unit</u></b><p>";
+                              printTable(array("Lighting Type", "7 segment LED",
+                                "Digit Size", "1 inch",
+                                "Display Color", "Red",
+                                "Display Function", "Numbers and texts",
+                                "Memory", "Yes, with internal battery backup",
+                                "Power Supply", "230V AC, 50 Hz"));
+                          }?>
                         <br>
                         
                         <!-- ====================================================== -->
@@ -759,8 +914,8 @@ function printTable($arr){
                         <?php
                           $len = count($display);
                           if ($len!=0){
-                            echo "<blockquote class=\"headName1\" style=\"font-size:20px;background-color: #eeeeee;height: 30px;\"><u>Display Option Available</u></blockquote>
-                              <p><b>&ensp;&ensp;&ensp;&ensp; *Can be made to order as per user’s requirement.</b></p>";
+                            printHeading("Display Options Available");
+                            echo "<p><b>&ensp;&ensp;&ensp;&ensp; *Can be made to order as per user’s requirement.</b></p>";
                             printTable($display);
                             }
                           ?>                      

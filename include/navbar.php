@@ -4,7 +4,7 @@
         $len = count($arr);
         for( $i=0;$i<$len;$i+=2 ){
             $a=$i+1;
-            echo "<p class=\"product_name\"><a href=\"products.php?id=$arr[$a]&type=$type\">&ensp;&ensp;$arr[$i]</a></p>";
+            echo "<p class=\"product_name\" style=\"padding-left:15px;\"><a href=\"products.php?id=$arr[$a]&type=$type\">$arr[$i]</a></p>";
         }
     }
 
@@ -24,10 +24,10 @@
                     echo "<div class=\"col l4\">";
                     
 
-                    createNavbarTitle("EMBEDDED SOLUTIONS","","0");
+                    $cat3=array("EMBEDDED SOLUTIONS","","3");
+                    createNavbarTitle($cat3[0],$cat3[1],$cat3[2]);
 
-
-                    createNavbarTitle("LED WALL","LED_Wall","3");
+                    $cat1=array("LED WALL","LED_Wall","1");
                     $arr1=array(
                         "DIGITAL SIGNAGE","",
                         "FULL COLOR LED WALL","hd_led_wall",
@@ -35,6 +35,8 @@
                         "SINGLE COLOR LED WALL","unicolor_led_wall",
                         "PARAMETER WALL","");
                     $type1=1;
+                    $cat=array($cat1,$arr1);
+                    createNavbarTitle($cat[0][0],$cat[0][1],$cat[0][2]);
                     createNavbarItems($arr1,$type1);
 
 
@@ -62,18 +64,18 @@
 
                     createNavbarTitle("AUTOMATIC SWITCHES","","4");
                     $arr5=array(
-                        "TWILIGHT SWITCH","",
+                        "TWILIGHT SWITCHES","twilight_switches",
                         "PUMP CONTROLLER","",
                         "TEMPERATURE CONTROLLER","temperature_controller",
                         "TIMER SWITCHES","");
                     $type5=5;
-                    createNavbarItems($arr5,$type6);
+                    createNavbarItems($arr5,$type5);
 
 
                     createNavbarTitle("INDUSTRIAL CLOCKS","","2");
                     $arr7=array(
-                        "DIGITAL CLOCKS","digital_clocks",
-                        "GPS CLOCKS","");
+                        "DIGITAL CLOCKS","digital_clock",
+                        "GPS CLOCKS","gps_clock");
                     $type7=7;
                     createNavbarItems($arr7,$type7);
 
@@ -88,8 +90,8 @@
                         "MEGA WATT PANEL","megawatt_panel",
                         "PROCESS INDICATORS","process_indicator",
                         "PH METER","ph_meter",
+                        "TEMPERATURE HUMIDITY INDICATOR", "temp_hum_indicator",
                         "TACHOMETER","tachometer",
-                        "TWILIGHT SWITCHES","twilight_switches",
                         "INDUSTRIAL DISPLAY","industrial_display",
                         "ISOLATED CONVERTER","isolated_converter",
                         "WEIGHING SCALE MONITOR","weighing_scale_monitor");
@@ -99,7 +101,7 @@
 
                     createNavbarTitle("TOKEN MANAGEMENT","","2");
                     $arr8=array(
-                        "TOKEN DISPENSER","",
+                        "TOKEN PRINTER","token_printer",
                         "TOKEN DISPLAY","token_display");
                     $type8=8;
                     createNavbarItems($arr8,$type8);

@@ -2,6 +2,8 @@ var i = 1,
     j = 10,
     k = 500;
 
+
+
 function start() {
     if (j > 42)
         j = 42;
@@ -81,10 +83,14 @@ function set1(x,n) {
     }
 
 
-    document.getElementById('product_image').innerHTML = '<img style="border-radius:10px;" width="100%" height="100%" src=photos/' + x + '1.jpg' + ' alt="' + x + '">';
+    document.getElementById('product_image').innerHTML = '<img style="border-radius:5px;" width="100%" height="100%" src=photos/' + x + '1.jpg' + ' alt="' + x + '">';
+
     document.getElementById('product_image1').innerHTML = '<img style="border-radius:10px;" width="100" height="80" src=photos/' + x + '1.jpg' + ' alt="' + x + '">';
     document.getElementById('product_image2').innerHTML = '<img style="border-radius:10px;" width="100" height="80" src=photos/' + x + '2.jpg' + ' alt="' + x + '" >';
     document.getElementById('product_image3').innerHTML = '<img style="border-radius:10px;" width="100" height="80" src=photos/' + x + '3.jpg' + ' alt="' + x + '" >';
+    document.getElementById('product_image4').innerHTML = '<img style="border-radius:10px;" width="100" height="80" src=photos/' + x + '4.jpg' + ' alt="' + x + '" >';
+    document.getElementById('product_image5').innerHTML = '<img style="border-radius:10px;" width="100" height="80" src=photos/' + x + '5.jpg' + ' alt="' + x + '" >';
+    document.getElementById('product_image6').innerHTML = '<img style="border-radius:10px;" width="100" height="80" src=photos/' + x + '6.jpg' + ' alt="' + x + '" >';
 
     $("img").error(function() {
         $(this).hide();
@@ -98,17 +104,10 @@ function set1(x,n) {
     }
 }
 
-function set2(x) {
-    document.getElementById('product_image').innerHTML = '<img style="border-radius:10px;" width="100%" height="100%" src=photos/' + x + '1.jpg' + ' alt="' + x + '">';
+function set2(x,y) {
+    document.getElementById('product_image').innerHTML = '<img style="border-radius:10px;" width="100%" height="100%" src=photos/' + x + y + '.jpg' + ' alt="' + x + '">';
 }
 
-function set3(x) {
-    document.getElementById('product_image').innerHTML = '<img style="border-radius:10px;" width="100%" height="100%" src=photos/' + x + '2.jpg' + ' alt="' + x + '">';
-}
-
-function set4(x) {
-    document.getElementById('product_image').innerHTML = '<img style="border-radius:10px;" width="100%" height="100%" src=photos/' + x + '3.jpg' + ' alt="' + x + '">';
-}
 
 
 function set5(x) {

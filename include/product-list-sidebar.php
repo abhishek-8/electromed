@@ -53,6 +53,8 @@ echo "
               
             <?php 
                 createSidebarItem($arr2,$type2);
+
+                
             ?>
 
             </div>

@@ -1,5 +1,9 @@
 <?php 
 
+    function isMobile() {
+        return preg_match("/(android|avantgo|blackberry|bolt|boost|cricket|docomo|fone|hiptop|mini|mobi|palm|phone|pie|tablet|up\.browser|up\.link|webos|wos)/i", $_SERVER["HTTP_USER_AGENT"]);
+    }
+
     function createNavbarItems($arr,$type){
         $len = count($arr);
         for( $i=0;$i<$len;$i+=2 ){
@@ -30,9 +34,10 @@
                     $cat1=array("LED WALL","LED_Wall","1");
                     $arr1=array(
                         "DIGITAL SIGNAGE","",
-                        "FULL COLOR LED WALL","hd_led_wall",
-                        "TRI COLOR LED WALL","tri_color_led_wall",
+                        "FULL COLOR LED WALL","fullcolor_led_wall",
+                        "TRI COLOR LED WALL","tricolor_led_wall",
                         "SINGLE COLOR LED WALL","unicolor_led_wall",
+                        "POLLUTION LED WALL","pollution_led_wall",
                         "PARAMETER WALL","");
                     $type1=1;
                     $cat=array($cat1,$arr1);

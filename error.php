@@ -7,8 +7,12 @@
         <meta name="Keywords" content="LED Display, LED Display Board, Line Frequency Monitors, Digital Flow Monitors, Electronic pH Meters, Digital Tachometers, Temperature Controllers, Electro-med, Lucknow"/>
         <title>Page not found</title>
         <!-- CSS  -->
-        <link rel="stylesheet" href="/css/materialize.min.css">
-        <link href="/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+        <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css'>
+        <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+        <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/styleNew.css">
         <!--Import jQuery before materialize.js-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>‌
         <!-- Compiled and minified JavaScript -->
@@ -21,7 +25,7 @@
         <!-- Top NavBar -->
 
 
-        <?php include('include/navbar.php'); ?> 
+        <?php include('include/navbarNew.php'); ?> 
 
         <!-- ====================================================== -->
         <br><br>

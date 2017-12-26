@@ -2,7 +2,11 @@
 
 function createSidebarItem($arr,$type){
   $len = count($arr);
-  $x = $GLOBALS['_x'];
+  
+  $x='';
+  if( array_key_exists('_x', $GLOBALS) ){
+    $x = $GLOBALS['_x'];
+  }
   for ($i=0;$i<$len/2;$i++){
     $a=$i*2;
     $b=$a+1;
@@ -12,107 +16,48 @@ function createSidebarItem($arr,$type){
   echo "<br>";
 }
 
-function createSidebarTitle($name,$type){
+function createSidebarTitle($arr,$type){
 
-          $_type = $GLOBALS['_type'];
-          echo "<li style=\"opacity: 0;\">
-            <div class=\"collapsible-header ";
-             if($type==$_type){ echo 'active';} 
+        $_type = $GLOBALS['_type'] ;
 
-             echo ">$name</div>
-
-            <div class=\"collapsible-body container-fluid\" style=\"line-height:72%;\"><br>";
-
-                createSidebarItem($GLOBALS['arr4'],$GLOBALS['type4']);
-
-echo "
-                     </div>
-          </li>
-";
+        echo "<li style=\"opacity: 0;\">
+                <div class=\"collapsible-header"; 
+                  if($_type==$type){ echo ' active'; } echo "\">";
+            echo getProductCategory($type); 
+            echo "</div>
+              <div class=\"collapsible-body container-fluid\" style=\"line-height:72%;\"><br>";
+               
+              createSidebarItem($arr,$type);
+              
+              echo "</div>
+                </li>";
 
 }
 ?>
-
-
-
-        <a a href="product_list.php?id=LED_display&num=3" class="btn red accent-4 category-btn" style="width:100%" onclick="Materialize.showStaggeredList('#staggered-test')">Products</a>
+        <a a href="product_list.php?type=1" class="btn red accent-4 category-btn" style="width:100%" onclick="Materialize.showStaggeredList('#staggered-test')">Products</a>
         <ul id="staggered-test" class="collapsible" data-collapsible="accordion">
-          <li style="opacity: 0;">
-            <div class="collapsible-header <?php if($_type==1) echo 'active'; ?>">LED Display</div>
-            <div class="collapsible-body container-fluid" style="line-height:72%;"><br>
-              <?php if($_type==1) echo 'active'; ?>
-              <?php 
-                createSidebarItem($arr1,$type1);
-              ?>
-              
-            </div>
-          </li>
-          <li style="opacity: 0;">
-            <div class="collapsible-header <?php if($_type==2) echo 'active'; ?>">Single Line Display</div>
-            <div class="collapsible-body container-fluid" style="line-height:72%;"><br>
-              
-            <?php 
-                createSidebarItem($arr2,$type2);
-
-                
-            ?>
-
-            </div>
-            
-          <li style="opacity: 0;">
-            <div class="collapsible-header <?php if($_type==2) echo 'active'; ?>">Embedded Solutions</div>
-            <div class="collapsible-body container-fluid" style="line-height:72%;"><br>
-              
-            </div>
-
-
-
-          </li>
-          <li style="opacity: 0;">
-            <div class="collapsible-header <?php if($_type==4){ echo 'active';} ?>">Digital Instruments</div>
-            <div class="collapsible-body container-fluid" style="line-height:72%;"><br>
-
-            <?php 
-                createSidebarItem($arr4,$type4);
-            ?>
-            </div>
-          </li>
-
-                    <li style="opacity: 0;">
-            <div class="collapsible-header <?php if($_type==5) echo 'active'; ?>">Automatic Switches</div>
-            <div class="collapsible-body container-fluid" style="line-height:72%;"><br>
-              
-            <?php 
-                createSidebarItem($arr5,$type5);
-            ?>
-
-            </div>
-          <li style="opacity: 0;">
-            <div class="collapsible-header <?php if($_type==6) echo 'active'; ?>">Rate Display Board</div>
-            <div class="collapsible-body container-fluid" style="line-height:72%;"><br>
-              
-            <?php 
-                createSidebarItem($arr6,$type6);
-            ?>
-
-            </div>
-          <li style="opacity: 0;">
-            <div class="collapsible-header <?php if($_type==7) echo 'active'; ?>">Industrial Clocks</div>
-            <div class="collapsible-body container-fluid" style="line-height:72%;"><br>
-              
-            <?php 
-                createSidebarItem($arr7,$type7);
-            ?>
-
-            </div>
-          <li style="opacity: 0;">
-            <div class="collapsible-header <?php if($_type==8) echo 'active'; ?>">Token Management</div>
-            <div class="collapsible-body container-fluid" style="line-height:72%;"><br>
-              
-            <?php 
-                createSidebarItem($arr8,$type8);
-            ?>
-
-            </div>
+          <?php createSidebarTitle($arr1,$type1); ?>
+          <?php createSidebarTitle($arr2,$type2); ?>
+          <?php createSidebarTitle($arr3,$type3); ?>
+          <?php createSidebarTitle($arr4,$type4); ?>
+          <?php createSidebarTitle($arr5,$type5); ?>
+          <?php createSidebarTitle($arr6,$type6); ?>
+          <?php createSidebarTitle($arr7,$type7); ?>
+          <?php createSidebarTitle($arr8,$type8); ?>
 
         </ul>
+        <script>
+            $(document).ready(function(){
+                Materialize.showStaggeredList('#staggered-test');
+                $('.parallax').parallax();
+                $('.button-collapse').sideNav();
+               
+            $('.collapsible').collapsible();
+            });
+            
+        </script>
+
+
+
+
+

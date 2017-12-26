@@ -6,13 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
     <title>Clients - Pioneer in sugar mills,power plants, and heavy industry - Electromed, Lucknow</title>
     <!-- CSS  -->
-    <link rel="stylesheet" href="css/materialize.min.css">
-    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
-    <!--Import jQuery before materialize.js-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>‌
+    <!--link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" /-->
+      <!--link rel="stylesheet" href="css/style.css"-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css'>
+    <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styleNew.css">
+
+    <!--script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>‌
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
-    <style>
+
+<style>
         .container-fluid img {
             margin-left: auto;
             margin-right: auto;
@@ -21,15 +29,15 @@
             width: 100%
         }
     </style>
-    <link rel="import" href="includes.html">
+
 
 </head>
 
-<body id="clients_page">
+<body >
 
     <!-- ====================================================== -->
     <!-- Top NavBar -->
-        <?php include('include/navbar.php'); ?> 
+    <?php include('include/navbarNew.php'); ?> 
     <!-- ====================================================== -->
 
 
@@ -284,7 +292,8 @@
     <!-- ====================================================== -->
 
 
-    <script>
+</body>
+    <!--script>
         $(document).ready(function() {
             $('.button-collapse').sideNav();
             $(".dropdown-button").dropdown({
@@ -295,7 +304,8 @@
             });
             $('.parallax').parallax();
         });
-    </script>
-</body>
+    </script-->
 
 </html>
+
+

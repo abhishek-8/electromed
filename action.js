@@ -83,23 +83,20 @@ function set1(x,n) {
     }
 
 
-    document.getElementById('product_image').innerHTML = '<img style="border-radius:5px;" width="100%" height="100%" src=photos/' + x + '1.jpg' + ' alt="' + x + '">';
+    document.getElementById('product_image').innerHTML = '<img style="border-radius:5px;" width="100%" height="100%" src=photos/' + x + '1.jpg' + ' alt="' + ' ' + '">';
 
-    document.getElementById('product_image1').innerHTML = '<img style="border-radius:10px;" width="100" height="80" src=photos/' + x + '1.jpg' + ' alt="' + x + '">';
-    document.getElementById('product_image2').innerHTML = '<img style="border-radius:10px;" width="100" height="80" src=photos/' + x + '2.jpg' + ' alt="' + x + '" >';
-    document.getElementById('product_image3').innerHTML = '<img style="border-radius:10px;" width="100" height="80" src=photos/' + x + '3.jpg' + ' alt="' + x + '" >';
-    document.getElementById('product_image4').innerHTML = '<img style="border-radius:10px;" width="100" height="80" src=photos/' + x + '4.jpg' + ' alt="' + x + '" >';
-    document.getElementById('product_image5').innerHTML = '<img style="border-radius:10px;" width="100" height="80" src=photos/' + x + '5.jpg' + ' alt="' + x + '" >';
-    document.getElementById('product_image6').innerHTML = '<img style="border-radius:10px;" width="100" height="80" src=photos/' + x + '6.jpg' + ' alt="' + x + '" >';
+    document.getElementById('product_image1').innerHTML = '<img style="border-radius:10px;" width="100" height="80" src=photos/' + x + '1.jpg' + ' alt="">';
+    document.getElementById('product_image2').innerHTML = '<img style="border-radius:10px;" width="100" height="80" src=photos/' + x + '2.jpg' + ' alt="" >';
+    document.getElementById('product_image3').innerHTML = '<img style="border-radius:10px;" width="100" height="80" src=photos/' + x + '3.jpg' + ' alt="" >';
+    document.getElementById('product_image4').innerHTML = '<img style="border-radius:10px;" width="100" height="80" src=photos/' + x + '4.jpg' + ' alt="" >';
+    document.getElementById('product_image5').innerHTML = '<img style="border-radius:10px;" width="100" height="80" src=photos/' + x + '5.jpg' + ' alt="" >';
+    document.getElementById('product_image6').innerHTML = '<img style="border-radius:10px;" width="100" height="80" src=photos/' + x + '6.jpg' + ' alt="" >';
 
-    $("img").error(function() {
-        $(this).hide();
-    });
 
     var x, y;
-    for (x = 1; x <= 7; x++) {
-        if ($('#r' + x + 'd2').is(':empty')) {
-            $('#r' + x).hide();
+    for (x = 1; x <= 6; x++) {
+        if ($('#product_image' + x ).is(':empty')) {
+            $('#product_image' + x).hide();
         }
     }
 }
@@ -320,115 +317,3 @@ function set5(x) {
     }
 }
 
-function filter(x, z) {
-    var y, k;
-    //	if (x!='projects'){
-    //		z=16;
-    //	}
-    for (k = 1; k <= 10; k++) {
-        if (k <= z)
-            $('#c' + k).show();
-        else
-            $('#c' + k).hide();
-    }
-
-    if (x == 'LED_Wall') {
-        y = 'LED Wall';
-
-        document.getElementById('p1').innerHTML = '<a href="products.php?id=hd_led_wall&type=1"><img src="photos/hd_led_wall1.jpg" height="170" alt="true color display"></a>';
-        document.getElementById('d1').innerHTML = 'Advanced resolution, brightness and clarity and shows colors in their most natural tones.';
-        document.getElementById('l1').innerHTML = '<br><a href="products.php?id=hd_led_wall&type=1">HD LED WALL<br><br></a>'
-
-        document.getElementById('p2').innerHTML = '<a href="products.php?id=tri_color_led_wall&type=1"><img src="photos/tri_color_led_wall1.jpg" height="170" alt="tri color display"></a>';
-        document.getElementById('d2').innerHTML = 'Compact design, low electricity consumption and user friendly functions.' + '<br><br>';
-        document.getElementById('l2').innerHTML = '<br><a href="products.php?id=tri_color_led_wall&type=1">TRI COLOR LED WALL</a>';
-
-        document.getElementById('p3').innerHTML = '<a href="products.php?id=unicolor_led_wall&type=1"><img src="photos/unicolor_led_wall1.jpg" height="170" alt="single color display"></a>';
-        document.getElementById('d3').innerHTML = 'One of the most presentable for pollution & Environment control parameters.';
-        document.getElementById('l3').innerHTML = '<br><a href="products.php?id=unicolor_led_wall&type=1">UNICOLOR DISPLAY BOARDS</a>'
-    } else if (x == 'Product_for_office') {
-        y = 'Product for Office';
-
-        document.getElementById('p1').innerHTML = '<a href="products.php?id=token_display&type=2"><img src="photos/token_display1.jpg" height="170" alt="token_display"></a>';
-        document.getElementById('d1').innerHTML = 'Provides easiest way to inform the customer or patient about his/her status while waiting.';
-        document.getElementById('l1').innerHTML = '<br><a href="products.php?id=token_display&type=2">TOKEN DISPLAY<br><br></a>'
-
-        document.getElementById('p2').innerHTML = '<a href="products.php?id=digital_clock&type=2"><img src="photos/digital_clock1.jpg" height="170" alt="digital clock"></a>';
-        document.getElementById('d2').innerHTML = 'Used in factories, offices, large public areas, shopping centers, warehouses and similar large areas.';
-        document.getElementById('l2').innerHTML = '<br><a href="products.php?id=digital_clock&type=2">DIGITAL CLOCKS<br><br></a>'
-
-        document.getElementById('p3').innerHTML = '<a href="products.php?id=interest_rate_display_board&type=2"><img src="photos/interest_rate_display_board1.jpg" height="170" alt="interest rate display board"></a>';
-        document.getElementById('d3').innerHTML = 'Date, time, deposit period, interest rate is displayed on an attractive background.';
-        document.getElementById('l3').innerHTML = '<br><a href="products.php?id=interest_rate_display_board&type=2">INTEREST RATE DISPLAY BOARD</a>'
-
-        document.getElementById('p4').innerHTML = '<a href="products.php?id=scrolling_display&type=2"><img src="photos/scrolling_display1.jpg" height="170" alt="scrolling display"></a>';
-        document.getElementById('d4').innerHTML = 'High brightness. User can store and scroll a lot of messages';
-        document.getElementById('l4').innerHTML = '<br><a href="products.php?id=scrolling_display&type=2">SCROLLING DISPLAY<br><br></a>';
-    } else if (x == 'Industrial_Instruments') {
-        y = 'Industrial Instruments';
-
-        document.getElementById('p1').innerHTML = '<a href="products.php?id=flow_monitor&type=4"><img src="photos/flow_monitor1.jpg" height="170" alt="flow monitor"></a>';
-        document.getElementById('d1').innerHTML = 'Advanced display system to monitor juice and water flow parameters.';
-        document.getElementById('l1').innerHTML = '<br><a href="products.php?id=flow_monitor&type=4">Flow Monitor<br><br></a>'
-
-        document.getElementById('p2').innerHTML = '<a href="products.php?id=line_frequency_monitor&type=4"><img src="photos/line_frequency_monitor1.jpg" height="170" alt="line frequency monitor"></a>';
-        document.getElementById('d2').innerHTML = 'Measures power line frequency, highly accurate reading and non blinking display. Microcontroller based design. ERTL tested.';
-        document.getElementById('l2').innerHTML = '<br><a href="products.php?id=line_frequency_monitor&type=4">Line Frequency Monitor</a>'
-
-        document.getElementById('p3').innerHTML = '<a href="products.php?id=megawatt_panel&type=4"><img src="photos/megawatt_panel1.jpg" height="170" alt="megawatt panel"></a>';
-        document.getElementById('d3').innerHTML = 'Essential to power plants. Generation data can be displayed all over the plant.';
-        document.getElementById('l3').innerHTML = '<br><a href="products.php?id=megawatt_panel&type=4">Megawatt Panel<br><br></a>'
-
-        document.getElementById('p4').innerHTML = '<a href="products.php?id=process_indicator&type=4"><img src="photos/process_indicator1.jpg" height="170" alt="process indicator"></a>';
-        document.getElementById('d4').innerHTML = 'Suitable for displaying process parameters like flow, temperature, level, speed, pH etc. Available in different digit heights.';
-        document.getElementById('l4').innerHTML = '<br><a href="products.php?id=process_indicator&type=4">Process Indicator<br><br></a>'
-
-        document.getElementById('p5').innerHTML = '<a href="products.php?id=ph_meter&type=4"><img src="photos/ph_meter1.jpg" height="170" alt="ph meter"></a>';
-        document.getElementById('d5').innerHTML = 'Measures pH of all types of liquids.' + '<br><br>';
-        document.getElementById('l5').innerHTML = '<br><a href="products.php?id=ph_meter&type=4">Ph meter<br><br></a>'
-
-        document.getElementById('p6').innerHTML = '<a href="products.php?id=tachometer&type=4"><img src="photos/tachometer1.jpg" height="170" alt="tachometer"></a>';
-        document.getElementById('d6').innerHTML = 'Used for monitoring the rpm of machines. The sensor is contactless.';
-        document.getElementById('l6').innerHTML = '<br><a href="products.php?id=tachometer&type=4">Tachometer<br><br></a>'
-
-        document.getElementById('p7').innerHTML = '<a href="products.php?id=temperature_controller&type=4"><img src="photos/temperature_controller1.jpg" height="170" alt="temperature controller"></a>';
-        document.getElementById('d7').innerHTML = 'Used in a variety of industrial applications like turbines, furnaces, blow moulding, etc.';
-        document.getElementById('l7').innerHTML = '<br><a href="products.php?id=temperature_controller&type=4">Temperature Controller</a>'
-
-        document.getElementById('p8').innerHTML = '<a href="products.php?id=twilight_switches&type=4"><img src="photos/twilight_switches1.jpg" height="170" alt="twilight switches"></a>';
-        document.getElementById('d8').innerHTML = 'Activates with respect to the ambient light,switches ON and OFF at dusk and dawn.';
-        document.getElementById('l8').innerHTML = '<br><a href="products.php?id=twilight_switches&type=4">Twilight Switch<br><br></a>'
-
-        document.getElementById('p9').innerHTML = '<a href="products.php?id=industrial_display&type=4"><img src="photos/industrial_display1.jpg" height="170" alt="industrial display"></a>';
-        document.getElementById('d9').innerHTML = 'All sorts of calculations can be done internally and displayed.';
-        document.getElementById('l9').innerHTML = '<br><a href="products.php?id=industrial_display&type=4">Industrial Display Board</a>'
-
-        document.getElementById('p10').innerHTML = '<a href="products.php?id=weighing_scale_monitor&type=4"><img src="photos/weighing_scale_monitor1.jpg" height="170" alt="weight scale monitor"></a>';
-        document.getElementById('d10').innerHTML = 'Monitors the number of tippings of juice and water Fully automatic operation and convenience of remote display.';
-        document.getElementById('l10').innerHTML = '<br><a href="products.php?id=weighing_scale_monitor&type=4">Weighing Scale Monitor<br><br></a>'
-    } else if (x == 'projects') {
-
-        y = 'Featured Projects';
-
-        document.getElementById('p1').innerHTML = '<a href="project_page.php?id=ntpc_rihand"><img src="photos/ntpc_rihand1.jpg" height="170"></a>';
-        document.getElementById('l1').innerHTML = '<br><a href="project_page.php?id=ntpc_rihand">NTPC RIHAND<br><br></a>';
-
-        document.getElementById('p2').innerHTML = '<a href="project_page.php?id=patna_high_court"><img src="photos/patna_high_court1.jpg" height="170"></a>';
-        document.getElementById('l2').innerHTML = '<br><a href="project_page.php?id=patna_high_court">PATNA HIGH COURT<br><br></a>';
-
-        document.getElementById('p3').innerHTML = '<a href="project_page.php?id=patna_railway_station"><img src="photos/patna_railway_station1.jpg" height="170"></a>';
-        document.getElementById('l3').innerHTML = '<br><a href="project_page.php?id=patna_railway_station">RAILWAY STATION DISPLAY AT PATNA</a>';
-
-        document.getElementById('p4').innerHTML = '<a href="project_page.php?id=shakti_bhawan"><img src="photos/shakti_bhawan1.jpg" height="170"></a>';
-        document.getElementById('l4').innerHTML = '<br><a href="project_page.php?id=shakti_bhawan">SHAKTI BHAWAN<br><br></a>';
-
-        document.getElementById('p5').innerHTML = '<a href="project_page.php?id=panki"><img src="photos/panki1.jpg" height="170"></a>';
-        document.getElementById('l5').innerHTML = '<br><a href="project_page.php?id=panki">PANKI<br><br></a>';
-
-        document.getElementById('p6').innerHTML = '<a href="project_page.php?id=coach_guidance_system"><img src="photos/coach_guidance_system1.jpg" height="170"></a>';
-        document.getElementById('l6').innerHTML = '<br><a href="project_page.php?id=coach_guidance_system">COACH GUIDANCE SYSTEM</a>';
-
-    }
-
-    document.getElementById('category_name').innerHTML = y;
-}

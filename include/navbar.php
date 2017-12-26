@@ -12,8 +12,8 @@
         }
     }
 
-    function createNavbarTitle($x,$y,$n){
-        echo "<p class=\"dropdown_headName\"><a href=\"product_list.php?id=$y&num=$n\" style=\"padding-top:15px;font-size:18px;\"><b><u>$x</u></b></a></p>";
+    function createNavbarTitle($x,$n){
+        echo "<p class=\"dropdown_headName\"><a href=\"product_list.php?type=$n\" style=\"padding-top:15px;font-size:18px;\"><b><u>$x</u></b></a></p>";
     }
 ?>
 
@@ -28,36 +28,35 @@
                     echo "<div class=\"col l4\">";
                     
 
-                    $cat3=array("EMBEDDED SOLUTIONS","","3");
-                    createNavbarTitle($cat3[0],$cat3[1],$cat3[2]);
+                    $cat3=array("EMBEDDED SOLUTIONS","3");
+                    createNavbarTitle($cat3[0],$cat3[1]);
+                    $arr3=array();
+                    $type3=3;
 
-                    $cat1=array("LED WALL","LED_Wall","1");
+                    $cat1=array("LED WALL","1");
                     $arr1=array(
-                        "DIGITAL SIGNAGE","",
                         "FULL COLOR LED WALL","fullcolor_led_wall",
                         "TRI COLOR LED WALL","tricolor_led_wall",
                         "SINGLE COLOR LED WALL","unicolor_led_wall",
                         "POLLUTION LED WALL","pollution_led_wall",
-                        "PARAMETER WALL","");
+                        "PARAMETER WALL","parameter_led_wall");
                     $type1=1;
                     $cat=array($cat1,$arr1);
-                    createNavbarTitle($cat[0][0],$cat[0][1],$cat[0][2]);
+                    createNavbarTitle($cat[0][0],$cat[0][1]);
                     createNavbarItems($arr1,$type1);
 
 
-                    createNavbarTitle("SINGLE LINE DISPLAY","","4");
+                    createNavbarTitle("LED LINE DISPLAY","2");
                     $arr2=array(
-                        "SCROLLING DISPLAY","scolling_display",
-                        "ONLINE DISPLAY","",
-                        "PARAMETER DISPLAY","",
-                        "SMS DISPLAY","");
+                        "SINGLE COLOR SCROLLING DISPLAY","unicolor_scrolling_display",
+                        "TRI  COLOR SCROLLING DISPLAY","tricolor_scrolling_display");
                     $type2=2;
                     createNavbarItems($arr2,$type2);
                     
                     echo "</div><div class=\"col l4\">";
 
 
-                    createNavbarTitle("RATE DISPLAY BOARD","rate_display_board","4");
+                    createNavbarTitle("RATE DISPLAY BOARD","6");
                     $arr6=array(
                         "INTEREST RATE DISPLAY","interest_rate_display_board",
                         "GOLD RATE DISPLAY","gold_rate_display",
@@ -67,17 +66,17 @@
                     createNavbarItems($arr6,$type6);
 
 
-                    createNavbarTitle("AUTOMATIC SWITCHES","","4");
+                    createNavbarTitle("AUTOMATIC SWITCHES","5");
                     $arr5=array(
                         "TWILIGHT SWITCHES","twilight_switches",
-                        "PUMP CONTROLLER","",
+                        "PUMP CONTROLLER","pump_controller",
                         "TEMPERATURE CONTROLLER","temperature_controller",
-                        "TIMER SWITCHES","");
+                        "TIMER SWITCHES","timer_swiches");
                     $type5=5;
                     createNavbarItems($arr5,$type5);
 
 
-                    createNavbarTitle("INDUSTRIAL CLOCKS","","2");
+                    createNavbarTitle("INDUSTRIAL CLOCKS","7");
                     $arr7=array(
                         "DIGITAL CLOCKS","digital_clock",
                         "GPS CLOCKS","gps_clock");
@@ -88,7 +87,7 @@
                     echo "</div><div class=\"col l4\">";
 
  
-                    createNavbarTitle("DIGITAL INSTRUMENTS","Industrial_instruments","10");
+                    createNavbarTitle("DIGITAL INSTRUMENTS","4");
                     $arr4=array(
                         "FLOW MONITOR","flow_monitor",
                         "LINE FREQUENCY MONITOR","line_frequency_monitor",
@@ -104,9 +103,9 @@
                     createNavbarItems($arr4,$type4);
  
 
-                    createNavbarTitle("TOKEN MANAGEMENT","","2");
+                    createNavbarTitle("TOKEN MANAGEMENT","8");
                     $arr8=array(
-                        "TOKEN PRINTER","token_printer",
+                        "TOKEN DISPENSER","token_dispenser",
                         "TOKEN DISPLAY","token_display");
                     $type8=8;
                     createNavbarItems($arr8,$type8);
@@ -148,15 +147,15 @@
         </nav>
     </div>
 </div>
-<script>
-    $(document).ready(function(){
-        $(".dropdown-button").dropdown({
-            hover:true,
-            constrain_width: true,
-            gutter: 0,
-            belowOrigin: true
+    <script>
+        $(document).ready(function() {
+            $('.button-collapse').sideNav();
+            $(".dropdown-button").dropdown({
+                hover: true,
+                constrain_width: true,
+                gutter: 0,
+                belowOrigin: true
+            });
+            $('.parallax').parallax();
         });
-        $('.button-collapse').sideNav();
-    });
-
-</script>
+    </script>

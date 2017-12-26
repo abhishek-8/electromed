@@ -3,6 +3,7 @@ body{
 	width:100%
 	background-color:#fff;
 	overflow-x:hidden
+  margin-top:0px;
 }
 	
 body::-webkit-scrollbar{
@@ -20,14 +21,14 @@ blockquote{margin:20px 0;
 	border-left:5px solid #d50000
 }
 
-.slider-overlay{position:absolute;top:0;left:0;width:100%;height:1149px;background:gray;opacity:.3}
+.slider-overlay{position:absolute;top:0;left:0;width:100%;background:gray;opacity:.3}
 
 .cardheading{font-size:18px;text-align:left}.our_clients{background-color:rgba(55,10,0,.7);height:390px}
 
 .our_clients div p{font-size:26px}#home_page #field1,#home_page #field2,#home_page #field3{font-size:72px}#c1 div p,#c2 div p,#c3 div p,#c4 div p{font-size:28px}
 
 .card .card-action a:not(.btn):not(.btn-large):not(.btn-floating):hover{color:#64b5f6}
-.card .card-action a:not(.btn):not(.btn-large):not(.btn-floating){color:#d50000;margin-right:20px;transition:color .3s ease;text-transform:uppercase}
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-floating){color:#000000;margin-right:20px;transition:color .3s ease;text-transform:uppercase}
 .card-action{position:relative;background-color:inherit;border-top:1px solid rgba(160,160,160,.2);margin-top:3px;z-index:2}
 
 .client-list li{display:inline;color:#fff;border:1px solid;border-radius:20px;border-style:double;border-width:2px;padding:21px}@media only screen and (min-width:800px){.client_slider .slides li img{height:30%}.client_slider{background:#fff;max-height:620px;min-height:620px}.client_slider .slides{position:relative;background:#fff;max-height:580px;min-height:580px}.client_slider .slides li{max-height:580px;min-height:580px;margin-left:3%}.client_slider,.client_slider .indicators{position:relative}.icon-block img{width:290px;height:160px}#contactinfo{width:30%;margin-left:44px;margin-top:80px}#contactform{margin-left:160px}#no-of-prj,#years-on-market{margin-left:5%}#navigation{display:none}.bullets:before{content:"• "}.client-list li{margin-right:1%}}.client-list li a{font-size:25px;color:#fff}.client-list li:hover{background-color:rgba(0,10,59,.7)}#contactPage{background-color:#fff;overflow-x:hidden}#about_page,#category_page,#product_page{background:#fff;overflow-x:hidden}.Overview{height:270px;background-color:rgba(50,7,14,.15)}hr.style11{height:6px;background:url(http://ibrahimjabbari.com/english/images/hr-11.png) repeat-x 0 0;border:0}.cover-pic{-webkit-filter:opacity(100%);}.client-cover{-webkit-filter:opacity(85%);filter:opacity(85%)}.image1,.parent{overflow:hidden}.image1{transition:all .5s}.image2,.image3,.image4,.image5,.image6{width:100%;height:100%;transition:all .5s;overflow:hidden}.parent:focus .image1,.parent:focus .image2,.parent:focus .image3,.parent:focus .image4,.parent:focus .image5,.parent:focus .image6,.parent:hover .image1,.parent:hover .image2,.parent:hover .image3,.parent:hover .image4,.parent:hover .image5,.parent:hover .image6{transform:scale(1.2);display:block}.client{-webkit-filter:grayscale(50%);filter:grayscale(50%)}
@@ -116,7 +117,7 @@ blockquote{margin:20px 0;
 
 .navbar-fixed {
   position: relative;
-  height: 56px;
+  height: 64px;
   z-index: 997;
 }
 
@@ -150,9 +151,23 @@ nav .button-collapse i {
   line-height: 56px;
 }
 
+/* Zoom effect on photos*/
+.zoom-effect-container {
+  overflow: hidden;
+}
+
+.zoom-effect-container:hover .card-image img {
+  -webkit-transform: scale(1.08);
+  transform: scale(1.08);
+}
+
+.card-image img {
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
 
 
-#home_content{margin-top:570px}.caption h3{text-shadow:2px 2px #000}.caption{margin-top:100px}.numerics{font-family:'Sansita',sans-serif}.related{height:80px}#popup,#request_for_quote{position:fixed;top:50;z-index:10;display:none}#popup{top:250px;z-index:11;border-radius:3%;border:4px solid rgba(211,211,211,.5)}@media only screen and (min-width:760px){.client_slider{max-height:610px;min-height:610px}.client_slider .slides{position:relative;background:#fff}.client_slider .slides,.client_slider .slides li{max-height:580px;min-height:580px}.client_slider .indicators{position:relative}.client_slider .slides li img{height:50%}.forSmallscreen{display:none}#contactinfo{margin-top:80px}.ctgry-name{line-height:0}
+#home_content{}.caption h3{text-shadow:2px 2px #000}.caption{margin-top:100px}.numerics{font-family:'Sansita',sans-serif}.related{height:80px}#popup,#request_for_quote{position:fixed;top:50;z-index:10;display:none}#popup{top:250px;z-index:11;border-radius:3%;border:4px solid rgba(211,211,211,.5)}@media only screen and (min-width:760px){.client_slider{max-height:610px;min-height:610px}.client_slider .slides{position:relative;background:#fff}.client_slider .slides,.client_slider .slides li{max-height:580px;min-height:580px}.client_slider .indicators{position:relative}.client_slider .slides li img{height:50%}.forSmallscreen{display:none}#contactinfo{margin-top:80px}.ctgry-name{line-height:0}
 
 #project-image 
 #dwnld-btn,#rqst-btn{font-size:15px;width:100%;}#rqst-btn{}#quick_facts{margin-left:7%}#field1text,#field2text,#field3text{color:#263238;text-align:center;font-size:22px}#home_card1,#home_card2,#home_card3,#home_card4,#home_card5,#home_card6,#home_card7,#home_card8,#home_card9,.cntdwn{margin-left:6%}
@@ -163,22 +178,33 @@ nav .button-collapse i {
 /*to alter product image on product*/
 #product_image{height:200px;width:100%}
 
-#about_us,#contact_us{margin-top:-25px}#contact_us{height:370px}
-#products,#projects{background-color:#263238;font-family:'Ropa Sans',sans-serif}
+
+#about_us,#contact_us{}#contact_us{margin-top:-25px;}
+#products,#projects{background-color:#fff;font-family:'Ropa Sans',sans-serif}
 
 /*to change height of dropdown menu*/
-#products{margin-left:300px;min-width:1000px;max-height:500px}
+#products{
+  margin: auto;min-width:100%;
+  max-height:500px;
+  left:auto;
+  right:0;
+  margin-right:0px;
+
+  transition: all 0.1s ease-in-out;
+}
+
+  
 .dropdown-content {
   background-color: #fff;
   margin: 0;
   display: none;
-  min-width: 50px;
   max-height: 650px;
   overflow-y: auto;
-  opacity: 0;
   position: absolute;
+  opacity: 0;
   z-index: 999;
-  will-change: width, height;
+  will-change: width,height;
+
 }
 
 .product_name{line-height:100%;font-size: 12px;}span{color:#263238}
@@ -194,8 +220,8 @@ nav .button-collapse i {
 
 .related_text{font-size:32px}.dropdown_headName{line-height:100%;color:#fff}
 
-nav{margin-top:-25px;background:#1976d2}
-nav :hover{color:#000}#products :hover,#projects :hover{color:#ff9800;background-color:#263238}
+nav{background:#1976d2}
+nav :hover{color:#000}#products :hover,#projects :hover{color:#ff0000;background-color:#fff}
 .dropdown_headName :hover,nav .brand-logo{color:#fff}
 
 
@@ -215,6 +241,13 @@ nav :hover{color:#000}#products :hover,#projects :hover{color:#ff9800;background
 
 #c1 div p,#c2 div p,#c3 div p,#c4 div p,.our_clients div p{font-size:18px}.client-list{margin-left:1%}.client-list li{display:block;color:#fff;border:1px solid;font-size:10px;border-radius:20px;margin-bottom:2px;margin-right:10px;border-style:double;border-width:1px;padding:3px}.client_head{font-size:15px;line-height:100%}#client_slider .indicators{z-index:100;position:relative}#category-overview{display:none}.numerics{font-size:32px}#field-text1,#field-text2,#field-text3{font-size:22px}.category-btn{width:100%}.striped{line-height:150%}.related_text{font-size:20px;font-weight:700}#contact .icons{font-size:35px}.flink{display:inline;padding:5px}.branches{height:100px}.breadcrumb{font-size:15px}.overview-text{font-size:16px;font-family:'Ropa Sans',sans-serif}}.breadcrumb:before{content:'\E5CC';color:rgba(0,0,0,.7);vertical-align:top;display:inline-block;font-family:'Material Icons';font-weight:400;font-style:normal;font-size:25px;margin:0 10px 0 8px;-webkit-font-smoothing:antialiased}.icon-block{padding:0 15px}.icon-block .material-icons{font-size:inherit}.overlay{background:0 0;position:relative;width:100%;height:480px;top:480px;margin-top:-480px}footer.page-footer{margin:0;position:relative;background:#263238}.foot{font-size:12px}@font-face{font-family:'Material Icons';font-style:normal;font-weight:400;src:url(https://example.com/MaterialIcons-Regular.eot);src:local('Material Icons'),local('MaterialIcons-Regular'),url(../jdev/icons/MaterialIcons-Regular.woff2) format('woff2'),url(../jdev/icons/MaterialIcons-Regular.woff) format('woff'),url(../icons/MaterialIcons-Regular.ttf) format('truetype')}.material-icons{font-family:'Material Icons';font-weight:400;font-style:normal;font-size:24px;display:inline-block;line-height:1;text-transform:none;letter-spacing:normal;word-wrap:normal;white-space:nowrap;direction:ltr;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;-moz-osx-font-smoothing:grayscale;font-feature-settings:'liga'}@font-face{font-family:'Ropa Sans';font-style:normal;font-weight:400;src:local('Ropa Sans Regular'),local('RopaSans-Regular'),url(../fonts/ropa-sans-ext.woff2) format('woff2');unicode-range:U+0100-024F,U+1E00-1EFF,U+20A0-20AB,U+20AD-20CF,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'Ropa Sans';font-style:normal;font-weight:400;src:local('Ropa Sans Regular'),local('RopaSans-Regular'),url(../fonts/ropa-sans.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2212,U+2215}@font-face{font-family:'Montserrat';font-style:normal;font-weight:700;src:local('Montserrat Bold'),local('Montserrat-Bold'),url(../fonts/montserrat-bold-1.woff2) format('woff2');unicode-range:U+0102-0103,U+1EA0-1EF9,U+20AB}@font-face{font-family:'Montserrat';font-style:normal;font-weight:700;src:local('Montserrat Bold'),local('Montserrat-Bold'),url(../fonts/montserrat-bold-ext.woff2) format('woff2');unicode-range:U+0100-024F,U+1E00-1EFF,U+20A0-20AB,U+20AD-20CF,U+2C60-2C7F,U+A720-A7FF}
 
+p1 {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 25px;
+    margin-right: 0;
+}
 @font-face{
 	font-family:'Montserrat';
 	font-style:normal;
@@ -222,3 +255,15 @@ nav :hover{color:#000}#products :hover,#projects :hover{color:#ff9800;background
 	src:local('Montserrat Bold'),local('Montserrat-Bold'),url(../fonts/montserrat-bold.woff2) format('woff2');
 	unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2212,U+2215
 }
+
+.collapsible-body {
+  margin: 0;
+  padding: 0;
+}
+
+.hideme
+{
+    opacity:0;
+}
+
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-floating){color:#000000;margin-right:20px;transition:color .3s ease;text-transform:uppercase}

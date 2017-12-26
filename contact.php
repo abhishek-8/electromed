@@ -10,19 +10,22 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
         <title>Contact - Manufacturer and supplier of LED display and Digital Instruments - Electromed, Lucknow</title>
         <!-- CSS  -->
-        <link rel="stylesheet" href="css/materialize.min.css">
-        <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-        <link href="css/style2.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+        <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css'>
+        <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+        <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
         <!--Import jQuery before materialize.js-->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>‌
         <!-- Compiled and minified JavaScript -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
-        <link rel="import" href="includes.html">
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/styleNavbar.css">
+
     </head>
     <body id="contactPage">
         <!-- ====================================================== -->
         <!-- Top NavBar -->
-        <?php include('include/navbar.php'); ?> 
+        <?php include('include/navbarNew.php'); ?> 
         <!-- ====================================================== -->
         <div class="z-depth-5 card-panel hoverable" id="popup">
             <p class="custom-text" style="color:#263238;text-align:center;font-size:17px;"><?php echo $res; ?><br><br><a href=""><u>Close</u></a></p>

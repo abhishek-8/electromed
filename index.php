@@ -10,14 +10,15 @@
         <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
         <title>Electro-med, Lucknow - Manufacturer and Supplier of LED Display and Digital Instruments</title>
         <!-- CSS  -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
-        <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
-        <!--Import jQuery before materialize.js-->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>‌
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+        <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css'>
+        <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+        <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/styleNavbar.css">
         <!-- Compiled and minified JavaScript -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
         <!--script async src="action.js" type="text/javascript"></script-->
-        <link rel="import" href="includes.html">
         <script>
             (function(i, s, o, g, r, a, m) {
                 i['GoogleAnalyticsObject'] = r;
@@ -38,9 +39,9 @@
     <body id="home_page">
         <!-- ====================================================== -->
         <!-- Top NavBar -->
-        <?php include('include/navbar.php'); ?> 
+        <?php include('include/navbarNew.php'); ?> 
         <!-- ====================================================== -->
-        <div class="slider fullscreen" style="height:670px;">
+        <div class="slider" >
             <ul class="slides">
                 <li>
                     <img class="cover-pic" src="cover/cover1.jpg">
@@ -82,8 +83,9 @@
                 <h4 class="center headName1" style="font-size:28px;color:#263238">ELECTROMED&ensp;DESIGNS,&ensp;MANUFACTURES&ensp;AND&ensp;SUPPLIES&ensp;LED&ensp;SCREENS&ensp;AND&ensp;DIGITAL&ensp;INSTRUMENTS&ensp;</h4>
                 <br>
                 <br>
+
                 <div class="section">
-                    <div class="row">
+                    <div class="row hideme">
                         <div class="col s12 m12 l3" id="home_card7">
                             <div class="icon-block center">
                                 <a href="product_list.php?id=LED_Wall&num=3"><img src="images/card1.jpg">
@@ -125,6 +127,7 @@
             </div>
         </div>
         <br>
+
         <!-- ====================================================== -->
         <!-- Footer -->
         <?php
@@ -197,5 +200,6 @@
                 window.attachEvent("onload", downloadJSAtOnload);
             else window.onload = downloadJSAtOnload;
         </script>
+        <script type="text/javascript" src="js/fadeIn.js"></script>
     </body>
 </html>

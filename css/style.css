@@ -28,7 +28,7 @@ blockquote{margin:20px 0;
 .our_clients div p{font-size:26px}#home_page #field1,#home_page #field2,#home_page #field3{font-size:72px}#c1 div p,#c2 div p,#c3 div p,#c4 div p{font-size:28px}
 
 .card .card-action a:not(.btn):not(.btn-large):not(.btn-floating):hover{color:#64b5f6}
-.card .card-action a:not(.btn):not(.btn-large):not(.btn-floating){color:#000000;margin-right:20px;transition:color .3s ease;text-transform:uppercase}
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-floating){color:#d50000;margin-right:20px;transition:color .3s ease;text-transform:uppercase}
 .card-action{position:relative;background-color:inherit;border-top:1px solid rgba(160,160,160,.2);margin-top:3px;z-index:2}
 
 .client-list li{display:inline;color:#fff;border:1px solid;border-radius:20px;border-style:double;border-width:2px;padding:21px}@media only screen and (min-width:800px){.client_slider .slides li img{height:30%}.client_slider{background:#fff;max-height:620px;min-height:620px}.client_slider .slides{position:relative;background:#fff;max-height:580px;min-height:580px}.client_slider .slides li{max-height:580px;min-height:580px;margin-left:3%}.client_slider,.client_slider .indicators{position:relative}.icon-block img{width:290px;height:160px}#contactinfo{width:30%;margin-left:44px;margin-top:80px}#contactform{margin-left:160px}#no-of-prj,#years-on-market{margin-left:5%}#navigation{display:none}.bullets:before{content:"• "}.client-list li{margin-right:1%}}.client-list li a{font-size:25px;color:#fff}.client-list li:hover{background-color:rgba(0,10,59,.7)}#contactPage{background-color:#fff;overflow-x:hidden}#about_page,#category_page,#product_page{background:#fff;overflow-x:hidden}.Overview{height:270px;background-color:rgba(50,7,14,.15)}hr.style11{height:6px;background:url(http://ibrahimjabbari.com/english/images/hr-11.png) repeat-x 0 0;border:0}.cover-pic{-webkit-filter:opacity(100%);}.client-cover{-webkit-filter:opacity(85%);filter:opacity(85%)}.image1,.parent{overflow:hidden}.image1{transition:all .5s}.image2,.image3,.image4,.image5,.image6{width:100%;height:100%;transition:all .5s;overflow:hidden}.parent:focus .image1,.parent:focus .image2,.parent:focus .image3,.parent:focus .image4,.parent:focus .image5,.parent:focus .image6,.parent:hover .image1,.parent:hover .image2,.parent:hover .image3,.parent:hover .image4,.parent:hover .image5,.parent:hover .image6{transform:scale(1.2);display:block}.client{-webkit-filter:grayscale(50%);filter:grayscale(50%)}
@@ -265,5 +265,3 @@ p1 {
 {
     opacity:0;
 }
-
-.card .card-action a:not(.btn):not(.btn-large):not(.btn-floating){color:#000000;margin-right:20px;transition:color .3s ease;text-transform:uppercase}

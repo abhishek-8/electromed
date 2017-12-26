@@ -78,6 +78,7 @@ function printHeading($a){
        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
         <meta name="description" content="<?php echo $desc; ?>" />
         <title><?php echo $title; ?> - Manufacturer and supplier - Electromed, Lucknow</title>
+    <link rel="icon" href="images/logoIcon.ico">
 
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">

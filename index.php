@@ -9,6 +9,7 @@
             Controllers, Electro-med, Lucknow" />
         <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
         <title>Electro-med, Lucknow - Manufacturer and Supplier of LED Display and Digital Instruments</title>
+        <link rel="icon" href="images/logoIcon.ico">
         <!-- CSS  -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
         <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css'>

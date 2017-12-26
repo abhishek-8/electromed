@@ -146,11 +146,10 @@
                <?php if(isMobile()){ echo "<a href=\"#\" data-activates=\"mobile-demo\" class=\"button-collapse show-on-large\"><i class=\"material-icons\">menu</i></a>";}?>
                <ul id="nav-mobile" class="left hide-on-med-and-down">
 
-               <li><a class="fadeInLogo brand-logo animated slideInUp">
+               <li><a class="fadeInLogo brand-logo animated slideInUp" href="/">
                   <!-- M -->
                   <!-- <img src="https://materializecss.com/res/materialize.svg" alt="" style="margin-top:12px;" height="40px"/> -->
-                  <i class="large material-icons" style="padding-left: 15px;">important_devices</i>
-               </a></li>
+             <img src="images/logoIconNavbar.gif">    </a></li>
                   <li><a style="color:#dddddd;" >A</a>
                
                

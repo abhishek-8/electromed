@@ -14,7 +14,14 @@
    function createNavbarTitle($x,$n){
        echo "<p class=\"dropdown_headName\"><a class=\"black-text\" href=\"product_list.php?type=$n\" style=\"padding-top:15px;font-size:18px;\"><b><u>$x</u></b></a></p>";
    }
+
+   function createSidebarItems($x,$n){
+      echo "<li><a class=\"waves-effect waves-blue\" href=\"product_list.php?type=$n\">$x</a></li>";
+      echo "<li><div class=\"divider\"></div></li>";
+   }
    ?>
+
+
 
 
 <div class="dropdown-content" id="products" >
@@ -24,25 +31,24 @@
             echo "<div class=\"col l4\">";
             
             
-            $cat3=array("EMBEDDED SOLUTIONS","3");
-            createNavbarTitle($cat3[0],$cat3[1]);
+            $cat3="EMBEDDED SOLUTIONS";
+            createNavbarTitle($cat3,"3");
             $arr3=array();
             $type3=3;
             
-            $cat1=array("LED WALL","1");
+            $cat1="VIDEO WALL";
             $arr1=array(
-                "FULL COLOR LED WALL","fullcolor_led_wall",
-                "TRI COLOR LED WALL","tricolor_led_wall",
-                "SINGLE COLOR LED WALL","unicolor_led_wall",
-                "POLLUTION LED WALL","pollution_led_wall",
-                "PARAMETER WALL","parameter_led_wall");
+                "FULL COLOR VIDEO WALL","fullcolor_led_wall",
+                "TRI COLOR VIDEO WALL","tricolor_led_wall",
+                "SINGLE COLOR VIDEO WALL","unicolor_led_wall",
+                "POLLUTION VIDEO WALL","pollution_led_wall",
+                "PARAMETER VIDEO WALL","parameter_led_wall");
             $type1=1;
-            $cat=array($cat1,$arr1);
-            createNavbarTitle($cat[0][0],$cat[0][1]);
+            createNavbarTitle($cat1,$type1);
             createNavbarItems($arr1,$type1);
             
-            
-            createNavbarTitle("LED LINE DISPLAY","2");
+            $cat2="LED LINE DISPLAY";
+            createNavbarTitle($cat2,"2");
             $arr2=array(
                 "SINGLE COLOR SCROLLING DISPLAY","unicolor_scrolling_display",
                 "TRI  COLOR SCROLLING DISPLAY","tricolor_scrolling_display");
@@ -51,8 +57,8 @@
             
             echo "</div><div class=\"col l4\">";
             
-            
-            createNavbarTitle("RATE DISPLAY BOARD","6");
+            $cat6="RATE DISPLAY BOARD";
+            createNavbarTitle($cat6,"6");
             $arr6=array(
                 "INTEREST RATE DISPLAY","interest_rate_display_board",
                 "GOLD RATE DISPLAY","gold_rate_display",
@@ -61,8 +67,8 @@
             $type6=6;
             createNavbarItems($arr6,$type6);
             
-            
-            createNavbarTitle("AUTOMATIC SWITCHES","5");
+            $cat5="AUTOMATIC SWITCHES";
+            createNavbarTitle($cat5,"5");
             $arr5=array(
                 "TWILIGHT SWITCHES","twilight_switches",
                 "PUMP CONTROLLER","pump_controller",
@@ -71,8 +77,8 @@
             $type5=5;
             createNavbarItems($arr5,$type5);
             
-            
-            createNavbarTitle("INDUSTRIAL CLOCKS","7");
+            $cat7="INDUSTRIAL CLOCKS";
+            createNavbarTitle($cat7,"7");
             $arr7=array(
                 "DIGITAL CLOCKS","digital_clock",
                 "GPS CLOCKS","gps_clock");
@@ -82,8 +88,8 @@
             
             echo "</div><div class=\"col l4\">";
             
-            
-            createNavbarTitle("DIGITAL INSTRUMENTS","4");
+            $cat4="DIGITAL INSTRUMENTS";
+            createNavbarTitle($cat4,"4");
             $arr4=array(
                 "FLOW MONITOR","flow_monitor",
                 "LINE FREQUENCY MONITOR","line_frequency_monitor",
@@ -98,8 +104,8 @@
             $type4=4;
             createNavbarItems($arr4,$type4);
             
-            
-            createNavbarTitle("TOKEN MANAGEMENT","8");
+            $cat8="TOKEN MANAGEMENT";
+            createNavbarTitle($cat8,"8");
             $arr8=array(
                 "TOKEN DISPENSER","token_dispenser",
                 "TOKEN DISPLAY","token_display");
@@ -116,7 +122,16 @@
       <div class="nav-wrapper"  style="background-color: #ffffff;padding-top: 12px;">
          <div class="row">
             <div class="col s12">
-               <a href="/" class="brand-logo" style="display:block;float:left;"><img src="LOGO.jpg" style="height: 80px;max-width: 100%;padding-left: 50px;"></a>
+               <a href="/" class="brand-logo" style="display:block;float:left;"><img src="LOGO.jpg" 
+                      <?php 
+                        if (isMobile()){
+                          echo "style=\"height:70px;\">";
+                        }
+                        else{
+                          echo "style=\"height:80px; max-width: 100%;padding-left: 50px;\">";
+                        }
+                      ?>
+                </a>
                <ul id="nav-mobile" class="right hide-on-med-and-down">
                   <!--li>
                      <form style="height:64px;">
@@ -160,136 +175,44 @@
                   <li><a href="contact.php" style="font-size:18px;color:#000;"><b>CONTACT</b></a></li>
                </ul>
             </div>
-
-
-            <!--div class="nav-content ">
-            <div class="col s12 nav-content red lighten-3">
-               <ul class="tabs tabs-transparent ">
-                  <li class="tab"><a href="#tab1" class="active">Navbar tab</a></li>
-                  <li><a href="#!" class="tab dropdown-button" data-activates="products">Contact<i class="material-icons right">arrow_drop_down</i></a></li>
-                  <li class="tab"><a href="#tab2">Another</a></li>
-                  <li class="tab"><a href="#tab3">Third one</a></li>
-                  <li class="tab"><a href="#tab4">Fourth tab</a></li>
-               </ul>
-               <ul class="side-nav grey darken-2" id="mobile-demo">
-                  <li class="sidenav-header red lighten-2">
-                     <div class="row">
-                        <div class="col s4">
-                           <img src="https://gravatar.com/avatar/961997eb7fd5c22b3e12fb3c8ca14e11?s=80&d=https://codepen.io/assets/avatars/user-avatar-80x80-bdcd44a3bfb9a5fd01eb8b86f9e033fa1a9897c3a15b33adfc2649a002dab1b6.png" width="48px" height="48px" alt="" class="circle responsive-img valign profile-image">
-                        </div>
-                        <div class="col s8">
-                           <a class="btn-flat dropdown-button waves-effect waves-light white-text" href="#" data-activates="profile-dropdown">Jay<i class="mdi-navigation-arrow-drop-down right"></i></a>
-                           <ul id="profile-dropdown" class="dropdown-content">
-                              <li><a href="#"><i class="material-icons">person</i>Profile</a></li>
-                              <li><a href="#"><i class="material-icons">settings</i>Setting</a></li>
-                              <li><a href="#"><i class="material-icons">help</i>Help</a></li>
-                              <li class="divider"></li>
-                              <li><a href="#"><i class="material-icons">lock</i>Lock</a></li>
-                              <li><a href="#"><i class="material-icons">exit_to_app</i>Logout</a></li>
-                           </ul>
-                        </div>
-                     </div>
-                  </li>
-                  <li class="red lighten-2">
-                     <ul class="collapsible collapsible-accordion">
-                        <li>
-                           <a class="collapsible-header white-text waves-effect waves-blue "><i class="material-icons white-text ">language</i>Language <i class="material-icons right white-text" style="margin-right:0;">arrow_drop_down</i></a>
-                           <div class="collapsible-body z-depth-3">
-                              <ul>
-                                 <li><a class="waves-effect waves-blue" href="#">English</a></li>
-                                 <li><a class="waves-effect waves-blue" href="#">العربية</a></li>
-                                 <li><a class="waves-effect waves-blue" href="#">中文</a></li>
-                                 <li><a class="waves-effect waves-blue" href="#">Čeština</a></li>
-                                 <li><a class="waves-effect waves-blue" href="#">Nederlands</a></li>
-                                 <li><a class="waves-effect waves-blue" href="#">Français</a></li>
-                                 <li><a class="waves-effect waves-blue" href="#">Deutsch</a></li>
-                                 <li><a class="waves-effect waves-blue" href="#">한국어</a></li>
-                                 <li><a class="waves-effect waves-blue" href="#">Português</a></li>
-                                 <li><a class="waves-effect waves-blue" href="#">Русский</a></li>
-                                 <li><a class="waves-effect waves-blue" href="#">Español</a></li>
-                                 <li><a class="waves-effect waves-blue" href="#">Svenska</a></li>
-                                 <li><a class="waves-effect waves-blue" href="#">ภาษาไทย</a></li>
-                                 <li><a class="waves-effect waves-blue" href="#">Türkçe</a></li>
-                                 <li>
-                                    <div class="divider"></div>
-                                 </li>
-                              </ul>
-                           </div>
-                        </li>
-                     </ul>
-                  </li>
-                  <li class="white">
-                     <ul class="collapsible collapsible-accordion">
-                        <li>
-                           <a class="collapsible-header waves-effect waves-blue"><i class="material-icons">folder_special</i>Layouts <i class="material-icons right" style="margin-right:0;">arrow_drop_down</i></a>
-                           <div class="collapsible-body">
-                              <ul>
-                                 <li><a class="waves-effect waves-blue" href="#"><i class="material-icons">fullscreen</i>Full Screen<span class="new badge right yellow grey lighten-1" data-badge-caption="updated"></span></a></li>
-                                 <li><a class="waves-effect waves-blue" href="#"><i class="material-icons">swap_horiz</i>Horizontal Menu<span class="new badge right yellow darken-3"></span></a></li>
-                                 <li>
-                                    <div class="divider"></div>
-                                 </li>
-                              </ul>
-                           </div>
-                        </li>
-                     </ul>
-                  </li>
-                  <li class="white">
-                     <ul class="collapsible collapsible-accordion">
-                        <li>
-                           <a class="collapsible-header waves-effect waves-blue"><i class="material-icons">folder_open</i>A submenu <i class="material-icons right" style="margin-right:0;">arrow_drop_down</i></a>
-                           <div class="collapsible-body">
-                              <ul>
-                                 <li><a class="waves-effect waves-blue" href="#"><i class="material-icons">fullscreen</i>Full Screen</a></li>
-                                 <li><a class="waves-effect waves-blue" href="#"><i class="material-icons">swap_horiz</i>Horizontal Menu</a></li>
-                                 <li>
-                                    <div class="divider"></div>
-                                 </li>
-                              </ul>
-                           </div>
-                        </li>
-                     </ul>
-                  </li>
-                  <li class="white"><a href="#" class="waves-effect waves-blue"><i class="material-icons">mail</i>Menu item</a></li>
-                  <li class="white"><a href="#" class="waves-effect waves-blue"><i class="material-icons">call</i> Menu item</a></li>
-                  <li class="white"><a href="#" class="waves-effect waves-blue"><i class="material-icons">android</i> Menu item</a></li>
-                  <li class="white"><a href="#" class="waves-effect waves-blue"><i class="material-icons">dialpad</i> Menu item</a></li>
-                  <li class="white">
-                     <div class="divider"></div>
-                  </li>
-                  <li class="white"><a href="#" class="waves-effect waves-blue"><i class="material-icons">language</i> Menu item<span class="new badge right yellow darken-3"></span></a></li>
-                  <li class="sidenav-footer grey darken-2">
-                     <div class="row">
-                        <div class="social-icons">
-                           <div class="col s2">
-                              <a href="#"><i class="fa fa-lg fa-linkedin-square"></a></i>
-                           </div>
-                           <div class="col s2">
-                              <a href="#"><i class="fa fa-lg fa-facebook-official"></a></i>
-                           </div>
-                           <div class="col s2">
-                              <a href="#"><i class="fa fa-lg fa-twitter"></a></i>
-                           </div>
-                           <div class="col s2">
-                              <a href="#"><i class="fa fa-lg fa-google-plus"></a></i>
-                           </div>
-                           <div class="col s2">
-                              <a href="#"><i class="fa fa-lg fa-pinterest"></a></i>
-                           </div>
-                           <div class="col s2">
-                              <a href="#"><i class="fa fa-lg fa-youtube"></a></i>
-                           </div>
-                        </div>
-                     </div>
-                  </li>
-               </ul>
-            </div>
-         </div-->
       </div>
      
 </div>
 </nav>
 </div>
+
+<ul class="side-nav grey darken-2" id="mobile-demo">
+                  <li class="sidenav-header white">
+                     <div class="row">
+                        <div class="col s10">
+                          <a href="/"><img src="LOGO.jpg" height="40px" alt="" class="responsive-img valign profile-image"></a>
+                        </div>
+                     </div>
+                  </li>
+
+                  <li class="white"><a href="about.php" class="waves-effect waves-blue"></i>ABOUT</a></li>
+                  <li class="white">
+                     <ul class="collapsible collapsible-accordion">
+                        <li>
+                           <a class="collapsible-header waves-effect waves-blue active"><b>PRODUCTS</b><i class="material-icons right" style="margin-right:0;">arrow_drop_down</i></a>
+                           <div class="collapsible-body">
+                              <ul>
+                                 <?php createSidebarItems($cat1,1); ?>
+                                 <?php createSidebarItems($cat2,2); ?>
+                                 <?php createSidebarItems($cat3,3); ?>
+                                 <?php createSidebarItems($cat4,4); ?>
+                                 <?php createSidebarItems($cat5,5); ?>
+                                 <?php createSidebarItems($cat6,6); ?>
+                                 <?php createSidebarItems($cat7,7); ?>
+                                 <?php createSidebarItems($cat8,8); ?>
+                              </ul>
+                           </div>
+                        </li>
+                     </ul>
+                  </li>
+                  <li class="white"><a href="contact.php" class="waves-effect waves-blue">CONTACT US</a></li>
+               </ul>
+
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js'></script>
 <script>

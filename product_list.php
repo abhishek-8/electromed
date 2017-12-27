@@ -55,7 +55,7 @@ function createCards($type,$arr){
                 <div class="col l3 m3 s12" id="product-list-sidebar-div">
                     <!-- ====================================================== -->
                     <!-- Product List Sidebar -->
-                    <?php include('include/product-list-sidebar.php'); ?> 
+                    <?php if(!isMobile()){include('include/product-list-sidebar.php');} ?> 
 
                     <!--?php
                         $myfile = fopen("include/product-list-sidebar.php", "r") or die("Unable to open file!");

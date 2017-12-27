@@ -68,18 +68,18 @@ function getProductData( $type,$x ){
             "Ambient Light","Both indoor and outdoor");
 
         if ($x == 'fullcolor_led_wall') {
-            $title = 'Full COLOR LED Wall';
-            $desc  = 'Full color LED wall “offers advanced resolution, brightness and clarity and shows colors in their most natural tones, as they were meant to be seen.” ';
+            $title = 'Full Color Video Wall';
+            $desc  = 'Full Color Video wall “offers advanced resolution, brightness and clarity and shows colors in their most natural tones, as they were meant to be seen.” ';
             array_push($display,"Color","Full Color");       
 
         } else if ($x == 'tricolor_led_wall') {
-            $title = 'Tricolor LED Wall';
-            $desc  = 'TRI color LED wall is applauded for the features like compact design, low electricity consumption and user friendly functions.';
+            $title = 'Tricolor Video Wall';
+            $desc  = 'TRI color Video wall is applauded for the features like compact design, low electricity consumption and user friendly functions.';
             array_push($display,"Color options","<li>Red,Blue,Pink<li>Red,Green,Yellow");       
         } 
         else if( $x=='unicolor_led_wall' ){
-            $title = 'Single Color LED Wall';
-            $desc  = 'Single color LED wall is one of the most presentable for pollution & Environment control parameters.';
+            $title = 'Single Color Video Wall';
+            $desc  = 'Single color Video wall is one of the most presentable for pollution & Environment control parameters.';
             array_push($display,"Color options","<li>Red<li>White<li>Green");
         }
         else if( $x=='pollution_led_wall' ){
@@ -97,7 +97,7 @@ function getProductData( $type,$x ){
                 "Color", "<li>Full Color <li> Tricolor: Red, Blue, Pink <li>Red <li>Green <li>White");
         }
         else if( $x=='parameter_led_wall' ){
-            $title = 'Parameter Display Wall';
+            $title = 'Parameter Video Wall';
             $desc = 'Electromed offers Parameter Display Wall to display your important parameters of production, environment, news etc. 
             <br><br>The software for picking up data from server/internet would be buit as per the user\'s requirement.';
             array_push($display,

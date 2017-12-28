@@ -168,7 +168,7 @@ function printHeading($a){
             <!--/div-->
             <div class="col l10 m10 s12 offset-l1">
                         <h4 class="custom-text ctgry-name" style="text-align:left;color:#263238"><b><?php echo $title ?></b></h4>
-                <br><br>
+                <br>
                 <!-- BreadCrumbs -->
                 <div class="nav-wrapper container" style="float:left">
                     <a href="product_list.php?id=LED_display&num=3" class="breadcrumb black-text" style="font-size: 15px;">Products</a>
@@ -177,7 +177,7 @@ function printHeading($a){
                </div>
 
                 <!-- Product Images -->
-                <?php if($_type==1){ include('include/productImages.php'); } ?>
+                <?php if( $_type==1 && isMobile()==false ){ include('include/productImages.php'); } ?>
                 
  
                     <?php 
@@ -282,7 +282,7 @@ function printHeading($a){
                 </div>
  
 
-                <?php if($_type!=1){ include('include/productImages.php'); } ?>
+                <?php if( $_type!=1 && isMobile()==false ){ include('include/productImages.php'); } ?>
 
        </div>
     </div>

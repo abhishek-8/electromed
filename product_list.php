@@ -4,7 +4,7 @@
 function createCards($type,$arr){
     for( $i=0;$i<count($arr)/2;$i++ ){
         $p=$i*2; $q=$p+1;
-        echo "<div class=\"col s12 m7 l3\" id=\"c$i\">
+        echo "<div class=\"col s12 m7 l3\">
               <div class=\"card\">
                     <div class=\"zoom-effect-container\">
                     <div class=\"card-image\"><a href=\"products.php?id=$arr[$q]&type=$type\"><img src=\"photos/$arr[$q]"; echo "1.jpg\" height=\"170\" alt=\"\"></a></div>

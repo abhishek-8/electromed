@@ -1,3 +1,21 @@
+<?php 
+ // Product Category Cards 
+function createCard($type,$arr,$n){
+    $i=$n*2;
+    $p=$i*2; $q=$p+1;
+    echo "<div class=\"col s12 m7 l3\">
+      <div class=\"card\">";
+            echo "<div class=\"zoom-effect-container\">";
+                echo"<div class=\"card-action custom-text center\" style=\"line-height:100%; padding-left:0px;\"><br><a style=\"color:#ff0000;font-size:20px;\"href=\"product_list.php?type=$type\">"; echo getProductCategory($type); echo "<br><br></a><hr></div>"; 
+                echo "<div class=\"card-image\"><a href=\"product_list.php?&type=$type\"><img src=\"photos/$arr[$q]"; echo "1.jpg\" height=\"250\" width=\"auto\" alt=\"\"></a></div>";
+            echo "</div>";
+        echo "</div>
+    </div>";
+}
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -18,7 +36,7 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/styleNavbar.css">
         <!-- Compiled and minified JavaScript -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
         <!--script async src="action.js" type="text/javascript"></script-->
         <script>
             (function(i, s, o, g, r, a, m) {
@@ -41,18 +59,19 @@
         <!-- ====================================================== -->
         <!-- Top NavBar -->
         <?php include('include/navbarNew.php'); ?> 
-        <!-- ====================================================== -->
+        <?php include('include/productData.php'); ?> 
+      <!-- ====================================================== -->
         <div class="slider" >
             <ul class="slides">
                 <li>
                     <img class="cover-pic" src="cover/cover1.jpg">
                     <div class="slider-overlay"></div>
-                    <div class="caption center-align">
+                    <!--div class="caption center-align">
                         <p class="white-text custom-text" style="font-size:32px;"><b>Coach Guidance System</b>
                         </p>
                         <h5 class="light white-text text-lighten-3" style="margin-top:-26px">Charbagh Station, Lucknow</h5>
                         <a class="btn red accent-4" href="project_page.php?id=coach_guidance_system">Know more</a>
-                    </div>
+                    </div-->
                 </li>
                 <li>
                     <img class="cover-pic" src="cover/cover3.jpg">
@@ -76,18 +95,53 @@
                 </li>
             </ul>
         </div>
+
+        <!--div class="row">
+            <div class="col l10 offset-l1">
+                <?php
+                    createCard($type1,$arr1,0);
+                    createCard($type2,$arr2,0);
+                //    createCard($type3,$arr3,0);
+                    createCard($type4,$arr4,0);
+                    createCard($type5,$arr5,0);
+                    createCard($type6,$arr6,0);
+                    createCard($type7,$arr7,0);
+                    createCard($type8,$arr8,0);
+                ?>
+            </div>
+        </div-->
         <div class="container-fluid" id="home_content">
             <div class="container-fluid">
-                <br>
                 <br>
                 <br>
                 <h4 class="center headName1" style="font-size:28px;color:#263238">ELECTROMED&ensp;DESIGNS,&ensp;MANUFACTURES&ensp;AND&ensp;SUPPLIES&ensp;LED&ensp;SCREENS&ensp;AND&ensp;DIGITAL&ensp;INSTRUMENTS&ensp;</h4>
                 <br>
                 <br>
 
+                        <div class="row">
+                            <div class="col l10 offset-l1">
+                                <?php
+                                    if( isMobile()==false ){ echo "<div class=\"row hideme\">"; }
+                                    createCard($type1,$arr1,0);
+                                    createCard($type2,$arr2,0);
+                                //    createCard($type3,$arr3,0);
+                                    createCard($type4,$arr4,0);
+                                    createCard($type5,$arr5,0);
+                                    if( isMobile()==false ){ 
+                                        echo "</div>";
+                                        echo "<div class=\"row hideme\">";
+                                    }
+                                    createCard($type6,$arr6,0);
+                                    createCard($type7,$arr7,0);
+                                    createCard($type8,$arr8,0);
+                                    if( isMobile()==false ){ echo "</div>"; }
+                                ?>
+                            </div>
+                        </div>
+
                 <div class="section">
-                    <div class="row hideme">
-                        <div class="col s12 m12 l3" id="home_card7">
+                 
+                        <!--div class="col s12 m12 l3" id="home_card7">
                             <div class="icon-block center">
                                 <a href="product_list.php?id=LED_Wall&num=3"><img src="images/card1.jpg">
                                 </a>
@@ -123,7 +177,7 @@
                                 <br>
                             </div>
                         </div>
-                    </div>
+                    </div-->
                 </div>
             </div>
         </div>
@@ -189,6 +243,7 @@
                 $('.button-collapse').sideNav();
             });
         </script>
+
         <script type="text/javascript">
             function downloadJSAtOnload() {
                 var element = document.createElement("script");
@@ -202,5 +257,6 @@
             else window.onload = downloadJSAtOnload;
         </script>
         <script type="text/javascript" src="js/fadeIn.js"></script>
+        
     </body>
 </html>

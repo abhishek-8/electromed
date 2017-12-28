@@ -32,7 +32,7 @@ function getProductData( $type,$x ){
 
     /* LED Wall */
     if ($type == 1) {
-        $category='LED Wall';
+        $category='Video Wall';
         $link = 'product_list.php?type=1';
         $features = array(
             "Indoor/ Outdoor (Daylight Visible)",

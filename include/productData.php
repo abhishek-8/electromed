@@ -548,8 +548,24 @@ function getProductData( $type,$x ){
         }
         else if ($x == 'twilight_switches') {
             $title    = 'Digital Twilight Switches';
-            $desc     = 'Twilight switch activates with respect to the ambient light. The device as its name suggests, switches ON and OFF at dusk and dawn.';
+            $desc     = 'Twilight switch activates with respect to the ambient light. The device as its name suggests, switches ON and OFF at dusk and dawn.<br>
+                Installation of this device results in substantial power saving besides providing automatic switching. High reliability components are used throughout to ensure a high MTBF.';
             $brochure = 'Twilight Switch';
+            $features = array("Electronic contactless relay for load handling",
+                "Fuses/ Miniature Circuit Breakers on the load side",
+                "Fully Automatic switching on and off operation",
+                "Compact & Durable Design");
+            $extras = array("Switching",
+                "<table class=\"responsive-table bordered centered\" style=\"line-height: 100%;\">
+                 <col width=\"25%\"><col width=\"25%\"><col width=\"25%\"><col width=\"25%\">
+                <tr><td><b>Contact Rating</b></td> <td><b> No of poles </b></td> <td><b>Switching Element </b></td> <td><b>Overload Protection</b></td> </tr>
+                <td>5, 10, 25 Amps</td> <td> Two </td> <td>Electromagnetic Relay</td> <td>Not Provided</td> </tr>
+                <td>10, 16, 32, 63 Amps</td> <td> Three </td> <td>Electromagnetic Contactor</td> <td>By Miniature Circuit Breaker (MCB)</td> </tr>
+                <td>100 Amps</td> <td> Three </td> <td>Electromagnetic Contactor</td> <td>By HRC fuses</td> </tr>
+                </table>");
+        }
+        else if ($x == 'pump_controller'){
+            $title = '';
         }
     }
 

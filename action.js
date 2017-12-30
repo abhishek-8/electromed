@@ -32,56 +32,6 @@ function start() {
 
 function set1(x,n) {
 
-    if (x == 'hd_led_wall' || x == 'tri_color_led_wall' || x == 'unicolor_led_wall') {
-
-/*        document.getElementById('ri1').innerHTML = '<a href="products.php?id=tri_color_led_wall&type=1"><img src="photos/tri_color_led_wall1.jpg" height="170" alt="tri color display"></a>';
-        document.getElementById('rd1').innerHTML = 'Compact design, low electricity consumption and user friendly functions.' + '<br><br>';
-        document.getElementById('rl1').innerHTML = '<br><a href="products.php?id=tri_color_led_wall&type=1">TRI COLOR LED WALL</a>';
-
-        document.getElementById('ri2').innerHTML = '<a href="products.php?id=unicolor_display&type=1"><img src="photos/unicolor_led_wall1.jpg" height="170" alt="single color display"></a>';
-        document.getElementById('rd2').innerHTML = 'One of the most presentable for pollution & Environment control parameters.';
-        document.getElementById('rl2').innerHTML = '<br><a href="products.php?id=unicolor_led_wall&type=1">UNICOLOR LED WALL</a>'
-        $('#rel3').hide();
-        $('#rel4').hide();*/
-    }
-    
-    else if (x == 'token_display' || x == 'digital_clock' || x == 'interest_rate_display_board' || x == 'scrolling_display' ) {
-
-/*        document.getElementById('ri1').innerHTML = '<a href="products.php?id=digital_clock&type=2"><img src="photos/digital_clock1.jpg" height="170" alt="digital clock"></a>';
-        document.getElementById('rd1').innerHTML = 'Used in factories, offices, large public areas, shopping centers, warehouses and similar large areas.';
-        document.getElementById('rl1').innerHTML = '<br><a href="products.php?id=digital_clock&type=2">DIGITAL CLOCKS</a>'
-
-        document.getElementById('ri2').innerHTML = '<a href="products.php?id=interest_rate_display_board&type=2"><img src="photos/interest_rate_display_board1.jpg" height="170" lat="interest rate display board"></a>';
-        document.getElementById('rd2').innerHTML = 'Date, time, deposit period, interest rate is displayed on an attractive background.';
-        document.getElementById('rl2').innerHTML = '<br><a href="products.php?id=interest_rate_display_board&type=2">INTEREST RATE DISPLAY BOARD</a>'
-
-        document.getElementById('ri3').innerHTML = '<a href="products.php?id=scrolling_display&type=2"><img src="photos/scrolling_display1.jpg" height="170" alt="scrolling display"></a>';
-        document.getElementById('rd3').innerHTML = 'High brightness. User can store and scroll a lot of messages';
-        document.getElementById('rl3').innerHTML = '<br><a href="products.php?id=scrolling_display&type=2">SCROLLING DISPLAY</a>';
-        $('#rel4').hide();*/
-    }
-
-    else if (x == 'flow_monitor' || x == 'line_frequency_monitor' || x == 'megawatt_panel' || x == 'process_indicator' || x == 'ph_meter' || x == 'tachometer' ||
-        x == 'temperature_controller' || x=='temp_hum_indicator' || x == 'twilight_switches' || x == 'weighing_scale_monitor') {
-
-/*        document.getElementById('ri1').innerHTML = '<a href="products.php?id=flow_monitor&type=4"><img src="photos/flow_monitor1.jpg" height="170" alt="flow_monitor"></a>';
-        document.getElementById('rd1').innerHTML = 'Advanced display system to monitor juice and water flow parameters.';
-        document.getElementById('rl1').innerHTML = '<br><a href="products.php?id=flow_monitor&type=4">Flow Monitor</a>'
-
-        document.getElementById('ri2').innerHTML = '<a href="products.php?id=line_frequency_monitor&type=4"><img src="photos/line_frequency_monitor1.jpg" height="170" alt="line frequency monitor"></a>';
-        document.getElementById('rd2').innerHTML = 'Measures power line frequency, highly accurate reading and non blinking display. Microcontroller based design. ERTL tested.';
-        document.getElementById('rl2').innerHTML = '<br><a href="products.php?id=line_frequency_monitor&type=4">Line Frequency Monitor</a>'
-
-        document.getElementById('ri3').innerHTML = '<a href="products.php?id=megawatt_panel&type=4"><img src="photos/megawatt_panel1.jpg" height="170" alt="megawatt panel"></a>';
-        document.getElementById('rd3').innerHTML = 'Essential to power plants. Generation data can be displayed all over the plant.';
-        document.getElementById('rl3').innerHTML = '<br><a href="products.php?id=megawatt_panel&type=4">Megawatt Panel</a>'
-
-        document.getElementById('ri4').innerHTML = '<a href="products.php?id=process_indicator&type=4"><img src="photos/process_indicator1.jpg" height="170" alt="process indicator"></a>';
-        document.getElementById('rd4').innerHTML = 'Suitable for displaying process parameters like flow, temperature, level, speed, pH etc. Available in different digit heights.';
-        document.getElementById('rl4').innerHTML = '<br><a href="products.php?id=process_indicator&type=4">Process Indicator</a>'
-*/
-    }
-
 
     document.getElementById('product_image').innerHTML = '<img style="border-radius:5px;" width="100%" height="100%" src=photos/' + x + '1.jpg' + ' alt="' + ' ' + '">';
 

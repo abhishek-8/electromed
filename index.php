@@ -119,60 +119,56 @@ if( isMobile()==false ){
                                     createCard($type8,$arr8,0);
                                     if( isMobile()==false ){ echo "</div>"; }
                                 ?>
+
+                            <br><br>
+                            
+
+
+                            <!--h3 class="custom-text ctgry-name" style="text-align:left;color:#d50000"><b>OUR CLIENTS</b></h3>
+                            <div class="row">
+                                <div class="col l2">
+                                    <h5 class="custom-text ctgry-name" style="text-align:left;"><b>Sugar</b></h5>
+                                    <img class="responsive-img" src="client_logos/SUGAR/sugar1.jpg">
+                                    <img class="responsive-img" src="client_logos/SUGAR/sugar5.jpg">
+                                    <img class="responsive-img" src="client_logos/SUGAR/sugar3.jpg">
+                                </div>
+                                <div class="col l2 offset-l1">
+                                    Sugar
+                                    <img class="responsive-img" src="client_logos/POWER/power1.jpg">
+                                    <img class="responsive-img" src="client_logos/POWER/power2.jpg">
+                                    <img class="responsive-img" src="client_logos/POWER/power3.jpg">
+                                </div>
+                                <div class="col l2 offset-l1">
+                                    Sugar
+                                    <img class="responsive-img" src="client_logos/INDUSTRY/industry1.jpg">
+                                    <img class="responsive-img" src="client_logos/INDUSTRY/industry2.jpg">
+                                    <img class="responsive-img" src="client_logos/INDUSTRY/industry3.jpg">
+                                </div>                                
+                                <div class="col l2 offset-l1">
+                                    Sugar
+                                    <img class="responsive-img" src="client_logos/SUGAR/sugar1.jpg">
+                                    <img class="responsive-img" src="client_logos/SUGAR/sugar2.jpg">
+                                    <img class="responsive-img" src="client_logos/SUGAR/sugar3.jpg">
+                                </div>
+
+                            </div-->
+
                             </div>
                         </div>
 
-                <div class="section">
-                 
-                        <!--div class="col s12 m12 l3" id="home_card7">
-                            <div class="icon-block center">
-                                <a href="product_list.php?id=LED_Wall&num=3"><img src="images/card1.jpg">
-                                </a>
-                                <p class="cardheading">LED Screens</p>
-                                <p class="light" style="text-align: justify">High resolution LED screens capable of playing videos and displaying technical data both indoors/outdoors.</p>
-                                <a href="product_list.php?id=LED_Wall&num=3" style="text-align:left;font-size:14px;line-height:5%;color: #d50000;">
-                                    <p class="headName1 light">know more...</p>
-                                </a>
-                                <br>
-                            </div>
-                        </div>
-                        <div class="col s12 m12 l3" id="home_card8">
-                            <div class="icon-block center">
-                                <a href="product_list.php?id=Industrial_Instruments&num=10"><img src="images/card2.jpg">
-                                </a>
-                                <p class="cardheading">Industrial Instruments</p>
-                                <p class="light" style="text-align: justify">State-of-the-art digital instruments that have carved a niche for themselves across the industrial sector in India.</p>
-                                <a href="product_list.php?id=Industrial_Instruments&num=10" style="text-align:left;font-size:14px;line-height:5%;color: #d50000;">
-                                    <p class="headName1 light">know more...</p>
-                                </a>
-                                <br>
-                            </div>
-                        </div>
-                        <div class="col s12 m12 l3" id="home_card9">
-                            <div class="icon-block center">
-                                <a href="product_list.php?id=LED_Wall&num=3"><img src="images/card3.jpg">
-                                </a>
-                                <p class="cardheading">Customized embedded solutions</p>
-                                <p class="light" style="text-align: justify"> We design and manufacture new systems as per the user's requirement from scratch.</p>
-                                <a href="product_list.php?id=LED_Wall&num=3" style="text-align:left;font-size:14px;line-height:5%;color: #d50000;">
-                                    <p class="headName1 light">know more...</p>
-                                </a>
-                                <br>
-                            </div>
-                        </div>
-                    </div-->
-                </div>
+
             </div>
         </div>
         <br>
 
+
+
+        <!-- ====================================================== -->
+
+
         <!-- ====================================================== -->
         <!-- Footer -->
-        <?php
-            $myfile = fopen("include/footer.php", "r") or die("Unable to open file!");
-            echo fread($myfile,filesize("include/footer.php"));
-            fclose($myfile);
-            ?> 
+        <?php  include('include/footer.php')  ?> 
         <!-- ====================================================== -->
         <script>
             $(document).ready(function() {

@@ -14,6 +14,7 @@
         <link rel="stylesheet" href="css/styleNavbar.css">
         <!-- Compiled and minified JavaScript -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+     <script async src="action.js" type="text/javascript"></script>
     </head>
 
     <body id="about_page">
@@ -110,19 +111,12 @@
         </div>
         <!-- ====================================================== -->
         <!-- Clients-logo-scroll -->
-        <?php
-            $myfile = fopen("include/client-logo-scroll.php", "r") or die("Unable to open file!");
-            echo fread($myfile,filesize("include/client-logo-scroll.php"));
-            fclose($myfile);
-            ?> 
-        <!-- ====================================================== -->
+        <?php  include('include/client-logo-scroll.php')  ?> 
         <!-- ====================================================== -->
         <!-- Footer -->
-        <?php
-            $myfile = fopen("include/footer.php", "r") or die("Unable to open file!");
-            echo fread($myfile,filesize("include/footer.php"));
-            fclose($myfile);
-            ?> 
+       <!-- Footer -->
+        <?php  include('include/footer.php')  ?> 
+        <!-- ====================================================== -->
         <!-- ====================================================== -->
         <script>
             $(document).ready(function() {
@@ -137,67 +131,75 @@
             
             });
         </script>
-        <script>
-            $(document).ready(function() {
-                if ($(window).width() > 760) {
-                    $.fn.followTo = function(pos, pos1, n) {
-                        var $this = this,
-                            $mt = "131px",
-                            x = '';
-                        $window = $(window);
-                        var t = 24;
-                        if (n == 3) {
-                            t = 28;
-                            $mt = "110px";
-                        }
-                        if (n == 1) x = '#numbers';
-                        else if (n == 2) x = '#below2';
-                        else x = '.clients-logos';
-                        $window.scroll(function(e) {
-                            if ($window.scrollTop() > pos && $window.scrollTop() < pos1) {
-            
-                                $this.css({
-                                    position: 'fixed',
-                                    width: '100%',
-                                    top: t
-                                });
-                                $(x).css({
-                                    "margin-top": $mt
-                                });
-                            } else {
-                                $this.css({
-                                    position: 'relative',
-                                    top: 0
-                                });
-                                $(x).css({
-                                    "margin-top": "0px"
-                                });
-                            }
-                        });
-                    };
-                }
-                var once = 0;
-                $(window).scroll(function() {
-                    var hT = $('#numbers').offset().top,
-                        hH = $('#numbers').outerHeight(),
-                        wH = $(window).height(),
-                        wS = $(this).scrollTop();
-                    if (wS > (hT + hH - wH) * (0.90) && once == 0) {
-                        once = 1;
-                        start();
-                    }
-                });
-                $(".dropdown-button").dropdown({
-                    hover: true,
-                    constrain_width: true,
-                    gutter: 0,
-                    belowOrigin: true
-                });
-                $('.slider').slider({
-                    full_width: true
-                });
-                $('.button-collapse').sideNav();
+<script>
+    $(document).ready(function(){
+    $('.button-collapse').sideNav();
+    $(".dropdown-button").dropdown({
+    hover:true,
+    constrain_width: true,
+    gutter: 0,
+    belowOrigin: true
+    });
+    $('.parallax').parallax();
+    
+    });
+    </script>
+    <script>
+    $(document).ready(function(){
+      if($(window).width() > 760 ) {
+      $.fn.followTo = function (pos,pos1,n) {
+    var $this = this,
+    $mt="131px",
+    x='';
+        $window = $(window);
+        var t=24;
+        if(n==3){ t=28;$mt="110px";}
+if(n==1) x='#numbers';
+else if (n==2) x='#below2';
+else x='.clients-logos';
+    $window.scroll(function (e) {
+        if ($window.scrollTop() > pos && $window.scrollTop() < pos1) {
+          
+            $this.css({
+                position: 'fixed',
+                width: '100%',
+                top: t
             });
-        </script>
+            $(x).css({
+              "margin-top": $mt
+            });
+        } else {
+            $this.css({
+                position: 'relative',
+                top: 0
+            });
+            $(x).css({
+              "margin-top": "0px"
+            });
+        }
+    });
+};
+}
+    var once=0;
+    $(window).scroll(function() {
+    var hT = $('#numbers').offset().top,
+    hH = $('#numbers').outerHeight(),
+    wH = $(window).height(),
+    wS = $(this).scrollTop();
+    if (wS > (hT+hH-wH)*(0.90) && once==0){
+    once=1;
+    start();
+    }
+    });
+    $(".dropdown-button").dropdown({
+    hover:true,
+    constrain_width: true,
+    gutter: 0,
+    belowOrigin: true
+    });
+    $('.slider').slider({full_width: true});
+    $('.button-collapse').sideNav();
+    });
+    </script>
     </body>
 </html>

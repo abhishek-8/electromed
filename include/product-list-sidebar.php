@@ -38,7 +38,6 @@ function createSidebarTitle($arr,$type){
         <ul id="staggered-test" class="collapsible" data-collapsible="accordion">
           <?php createSidebarTitle($arr1,$type1); ?>
           <?php createSidebarTitle($arr2,$type2); ?>
-          <?php createSidebarTitle($arr3,$type3); ?>
           <?php createSidebarTitle($arr4,$type4); ?>
           <?php createSidebarTitle($arr5,$type5); ?>
           <?php createSidebarTitle($arr6,$type6); ?>

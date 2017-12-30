@@ -30,12 +30,7 @@
          <?php
             echo "<div class=\"col l4\">";
             
-            
-            $cat3="EMBEDDED SOLUTIONS";
-            createNavbarTitle($cat3,"3");
-            $arr3=array();
-            $type3=3;
-            
+                    
             $cat1="VIDEO WALL";
             $arr1=array(
                 "FULL COLOR VIDEO WALL","fullcolor_led_wall",
@@ -71,9 +66,8 @@
             createNavbarTitle($cat5,"5");
             $arr5=array(
                 "TWILIGHT SWITCHES","twilight_switches",
-                "PUMP CONTROLLER","pump_controller",
-                "TEMPERATURE CONTROLLER","temperature_controller",
-                "TIMER SWITCHES","timer_swiches");
+        //        "PUMP CONTROLLER","pump_controller",
+                "TEMPERATURE CONTROLLER","temperature_controller");
             $type5=5;
             createNavbarItems($arr5,$type5);
             
@@ -165,10 +159,12 @@
                   <!-- M -->
                   <!-- <img src="https://materializecss.com/res/materialize.svg" alt="" style="margin-top:12px;" height="40px"/> -->
              <img src="images/logoIconNavbar.gif">    </a></li>
-                  <li><a style="color:#dddddd;" >A</a>
+                  <li><a style="color:#dddddd;" >EM</a>
                
                
-                  <li><a href="product_list.php?id=LED_Wall&num=3" class="dropdown-button black-text navLink" style="right: 0;" data-activates="products"><b>PRODUCTS</b><i class="material-icons right">arrow_drop_down</i></a>
+                  <li><a href="product_list.php?type=1" class="dropdown-button black-text navLink" style="right: 0; font-size: 18px;" data-activates="products"><b>PRODUCTS</b><i class="material-icons right">arrow_drop_down</i></a>
+                  <!--li><a href="product_list.php?id=LED_Wall&num=3" class="dropdown-button black-text navLink" style="right: 0; font-size: 18px;" data-activates="industries"><b>INDUSTRIES</b><i class="material-icons right">arrow_drop_down</i></a-->
+                  <li><a href="embedded_solutions.php" style="font-size:18px;color:#000;"><b>SOLUTIONS</b></a></li>
                </ul>
                <ul id="nav-mobile" class="right hide-on-med-and-down">
                   <li><a href="about.php" style="font-size:18px;color:#000;"><b>ABOUT</b></a></li>
@@ -199,7 +195,6 @@
                               <ul>
                                  <?php createSidebarItems($cat1,1); ?>
                                  <?php createSidebarItems($cat2,2); ?>
-                                 <?php createSidebarItems($cat3,3); ?>
                                  <?php createSidebarItems($cat4,4); ?>
                                  <?php createSidebarItems($cat5,5); ?>
                                  <?php createSidebarItems($cat6,6); ?>
@@ -210,6 +205,7 @@
                         </li>
                      </ul>
                   </li>
+                  <li class="white"><a href="embedded_solutions.php" class="waves-effect waves-blue"></i>SOLUTIONS</a></li>     
                   <li class="white"><a href="contact.php" class="waves-effect waves-blue">CONTACT US</a></li>
                </ul>
 

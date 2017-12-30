@@ -102,11 +102,7 @@ function createCards($type,$arr){
         </div>
         <!-- ====================================================== -->
         <!-- Footer -->
-        <?php
-            $myfile = fopen("include/footer.php", "r") or die("Unable to open file!");
-            echo fread($myfile,filesize("include/footer.php"));
-            fclose($myfile);
-            ?> 
+        <?php  include('include/footer.php')  ?> 
         <!-- ====================================================== -->
         <script>
             $(document).ready(function(){

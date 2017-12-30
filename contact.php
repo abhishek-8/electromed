@@ -31,7 +31,7 @@
         <div class="z-depth-5 card-panel hoverable" id="popup">
             <p class="custom-text" style="color:#263238;text-align:center;font-size:17px;"><?php echo $res; ?><br><br><a href=""><u>Close</u></a></p>
         </div>
-        <div class="parallax-container" id="contact_us">
+        <!--div class="parallax-container" id="contact_us">
             <div class="parallax"><img src="images/contact.jpg"></div>
             <div class="container">
                 <br>
@@ -39,7 +39,7 @@
                     Use the Contact Catalog Below So That We Can Better Assist You.
                 </p>
             </div>
-        </div>
+        </div-->
         <div class="container-fluid">
             <div class="row" >
                 <div class="col l6 m7 s12" id="contactform">
@@ -132,11 +132,7 @@
         </div>
         <!-- ====================================================== -->
         <!-- Footer -->
-        <?php
-            $myfile = fopen("include/footer.php", "r") or die("Unable to open file!");
-            echo fread($myfile,filesize("include/footer.php"));
-            fclose($myfile);
-            ?> 
+        <?php  include('include/footer.php')  ?> 
         <!-- ====================================================== -->
         <script>
             $(document).ready(function(){

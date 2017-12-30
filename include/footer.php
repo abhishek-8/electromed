@@ -3,7 +3,7 @@
         <div class="row"  style="padding-left: 20px;padding-right: 5px;">
             <div class="col l3 m3 s12">
                 <div class="row">
-                    <a href="/ "><img src="LOGO.gif" height="45px">
+                    <a href="/ "><img src="LOGO.gif" height="45px"></a>
                     <p class="black-text foot" >We manufacture and assemble a comprehensive range of electronic displays and instruments for industrial application.</p>
                 </div>
             </div>

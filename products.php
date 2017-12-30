@@ -177,7 +177,7 @@ function printHeading($a){
                </div>
 
                 <!-- Product Images -->
-                <?php if( $_type==1 && isMobile()==false ){ include('include/productImages.php'); } ?>
+                <?php if( $_type==1 ||  isMobile()==true ){ include('include/productImages.php'); } ?>
                 
  
                     <?php 

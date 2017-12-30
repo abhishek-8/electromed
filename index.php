@@ -61,40 +61,23 @@ function createCard($type,$arr,$n){
         <?php include('include/navbarNew.php'); ?> 
         <?php include('include/productData.php'); ?> 
       <!-- ====================================================== -->
-        <div class="slider" >
-            <ul class="slides">
+<?php 
+if( isMobile()==false ){
+    echo "<div class=\"slider\" >
+            <ul class=\"slides\">
                 <li>
-                    <img class="cover-pic" src="cover/cover1.jpg">
-                    <div class="slider-overlay"></div>
-                    <!--div class="caption center-align">
-                        <p class="white-text custom-text" style="font-size:32px;"><b>Coach Guidance System</b>
-                        </p>
-                        <h5 class="light white-text text-lighten-3" style="margin-top:-26px">Charbagh Station, Lucknow</h5>
-                        <a class="btn red accent-4" href="project_page.php?id=coach_guidance_system">Know more</a>
-                    </div-->
+                    <img class=\"cover-pic\" src=\"cover/cover1.jpg\">
                 </li>
                 <li>
-                    <img class="cover-pic" src="cover/cover3.jpg">
-                    <div class="slider-overlay"></div>
-                    <div class="caption right-align">
-                        <p class="white-text custom-text" style="font-size:32px;"><b>LED Screen</b>
-                        </p>
-                        <h5 class="light white-text text-lighten-3" style="margin-top:-26px">NTPC Rihand</h5>
-                        <a class="btn red accent-4" href="project_page.php?id=ntpc_rihand">Know more</a>
-                    </div>
+                    <img class=\"cover-pic\" src=\"cover/cover2.jpg\">
                 </li>
                 <li>
-                    <img class="cover-pic" src="cover/cover2.jpg">
-                    <div class="slider-overlay"></div>
-                    <div class="caption left-align">
-                        <p class="white-text custom-text" style="font-size:32px;"><b>Scrolling Message Wall</b>
-                        </p>
-                        <h5 class="light white-text text-lighten-3" style="margin-top:-26px">NTPC Unchahar</h5>
-                        <a class="btn red accent-4" href="products.php?id=unicolor_led_wall&type=1">Know more</a>
-                    </div>
+                    <img class=\"cover-pic\" src=\"cover/cover3.jpg\">
                 </li>
             </ul>
-        </div>
+        </div>";
+    }
+    ?>
 
         <!--div class="row">
             <div class="col l10 offset-l1">

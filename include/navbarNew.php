@@ -163,7 +163,7 @@
                
                
                   <li><a href="product_list.php?type=1" class="dropdown-button black-text navLink" style="right: 0; font-size: 18px;" data-activates="products"><b>PRODUCTS</b><i class="material-icons right">arrow_drop_down</i></a>
-                  <!--li><a href="product_list.php?id=LED_Wall&num=3" class="dropdown-button black-text navLink" style="right: 0; font-size: 18px;" data-activates="industries"><b>INDUSTRIES</b><i class="material-icons right">arrow_drop_down</i></a-->
+                  <!--li><a href="industries.php?id=sugar" class="dropdown-button black-text navLink" style="right: 0; font-size: 18px;" data-activates="industries"><b>INDUSTRIES</b><i class="material-icons right">arrow_drop_down</i></a-->
                   <li><a href="embedded_solutions.php" style="font-size:18px;color:#000;"><b>SOLUTIONS</b></a></li>
                </ul>
                <ul id="nav-mobile" class="right hide-on-med-and-down">
@@ -190,7 +190,7 @@
                   <li class="white">
                      <ul class="collapsible collapsible-accordion">
                         <li>
-                           <a class="collapsible-header waves-effect waves-blue active"><b>PRODUCTS</b><i class="material-icons right" style="margin-right:0;">arrow_drop_down</i></a>
+                           <a class="collapsible-header waves-effect waves-blue"><b>PRODUCTS</b><i class="material-icons right" style="margin-right:0;">arrow_drop_down</i></a>
                            <div class="collapsible-body">
                               <ul>
                                  <?php createSidebarItems($cat1,1); ?>

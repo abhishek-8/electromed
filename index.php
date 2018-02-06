@@ -210,12 +210,12 @@ if( isMobile()==false ){
                     };
                 }
                 var once = 0;
-                $(".dropdown-button").dropdown({
+                /*$(".dropdown-button").dropdown({
                     hover: true,
                     constrain_width: true,
                     gutter: 0,
                     belowOrigin: true
-                });
+                });*/
                 $('.slider').slider({
                     full_width: true
                 });

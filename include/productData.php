@@ -221,6 +221,7 @@ function getProductData( $type,$x ){
         } else if ($x == 'line_frequency_monitor') {
             $title        = 'Digital Line Frequency Monitor';
             $desc         = 'Line Frequency Monitor is a device used to measure the power line frequency accurately.<br><br>
+                        India\'s grid is connected as a wide area synchronous grid nominally running at 50 hertz. The permissible range of the frequency band is 49.7-50.2 Hz, effective 17 September 2012.<br><br>
             The unit is microcontroller based and gives an accuracy of more than 0.02%. It is used in power generation and load dispatching centers, process industries etc, where the monitoring of line frequency is utmost important.';
             $brochure     = 'line frequency monitor';
             $features     = array(

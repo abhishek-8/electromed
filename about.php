@@ -83,15 +83,15 @@
                     </blockquote>
                 </div>
                 <div class="col l2 m4 s4 cntdwn">
-                    <p class="custom-text" style="color:#263238;text-align:center;line-height:10%;font-size: 55px;" id="field1"></p>
+                    <p class="custom-text" style="color:#263238;text-align:center;line-height:10%;font-size: 55px;" id="cntdwn1"></p>
                     <p class="custom-text" id="field1text">COUNTRIES SERVED</p>
                 </div>
                 <div class="col l2 m4 s4 cntdwn" id="years-on-market">
-                    <p class="custom-text" style="color:#263238;text-align:center;line-height:10%;font-size: 55px;" id="field2"></p>
+                    <p class="custom-text" style="color:#263238;text-align:center;line-height:10%;font-size: 55px;" id="cntdwn2"></p>
                     <p class="custom-text" id="field2text">YEARS ON MARKET</p>
                 </div>
                 <div class="col l2 m4 s4 cntdwn" id="no-of-prj">
-                    <p class="custom-text" style="color:#263238;text-align:center;line-height:10%;font-size: 55px;" id="field3"></p>
+                    <p class="custom-text" style="color:#263238;text-align:center;line-height:10%;font-size: 55px;" id="cntdwn3"></p>
                     <p class="custom-text" id="field3text">NUMBER OF PROJECTS</p>
                 </div>
             </div>
@@ -188,7 +188,7 @@ else x='.clients-logos';
     wS = $(this).scrollTop();
     if (wS > (hT+hH-wH)*(0.90) && once==0){
     once=1;
-    start();
+    countdown(0,0,0,5,42,1024);
     }
     });
     $(".dropdown-button").dropdown({

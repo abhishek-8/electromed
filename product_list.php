@@ -1,24 +1,8 @@
 <?php
     $_type= $_GET['type'];
+    include("include/functions.php");
+?>
 
-function createCards($type,$arr){
-    for( $i=0;$i<count($arr)/2;$i++ ){
-        $p=$i*2; $q=$p+1;
-        echo "<div class=\"col s12 m7 l3\">
-              <div class=\"card\">
-                    <div class=\"zoom-effect-container\">
-                    <div class=\"card-image\"><a href=\"products.php?id=$arr[$q]&type=$type\"><img src=\"photos/$arr[$q]"; echo "1.jpg\" height=\"170\" alt=\"\"></a></div>
-                    <div class=\"card-action custom-text\"><br><a style=\"color:#d50000;\"href=\"products.php?id=$arr[$q]&type=$type\">$arr[$p]<br><br></a></div>
-                    <div class=\"card-content\">"; 
-                    echo getProductDesc($type,$arr[$q]); 
-                    echo "</div>
-                                        </div>
-
-                </div>
-            </div>";
-        }
-    }
-    ?>
 <!DOCTYPE html>
 <html lang="en">
     <head>

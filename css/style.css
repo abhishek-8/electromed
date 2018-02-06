@@ -192,6 +192,15 @@ nav .button-collapse i {
 
   transition: all 0.1s ease-in-out;
 }
+#industries{
+  margin: auto;min-width:100%;
+  max-height:500px;
+  left:auto;
+  right:0;
+  margin-right:0px;
+
+  transition: all 0.1s ease-in-out;
+}
 
   
 .dropdown-content {
@@ -221,7 +230,7 @@ nav .button-collapse i {
 .related_text{font-size:32px}.dropdown_headName{line-height:100%;color:#fff}
 
 nav{background:#1976d2}
-nav :hover{color:#000}#products :hover,#projects :hover{color:#ff0000;background-color:#fff}
+nav :hover{color:#000}#products :hover,#industries :hover, #projects :hover{color:#ff0000;background-color:#fff}
 .dropdown_headName :hover,nav .brand-logo{color:#fff}
 
 

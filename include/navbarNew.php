@@ -15,6 +15,13 @@
        echo "<p class=\"dropdown_headName\"><a class=\"black-text\" href=\"product_list.php?type=$n\" style=\"padding-top:15px;font-size:18px;\"><b><u>$x</u></b></a></p>";
    }
 
+   function createIndustryItems($name,$link){
+       echo "<p class=\"product_name black-text\" style=\"padding-left:15px;font-size:18px;\"><a class=\"black-text\" href=\"industries.php?id=$link\"><x>$name</x></a></p>";
+//       echo "<a id=\"thumbnail\" href=\"industries.php?id=$link\"><p class=\"product_name black-text\" style=\"padding-left:15px;font-size:18px;\"><x><b>$name</b></x></p></a>";
+//       echo "<div id=\"title\"><img src=\"http://dummyimage.com/150x150/0066ff/fff\"></div>";
+
+   }   
+
    function createSidebarItems($x,$n){
       echo "<li><a class=\"waves-effect waves-blue\" href=\"product_list.php?type=$n\">$x</a></li>";
       echo "<li><div class=\"divider\"></div></li>";
@@ -111,6 +118,29 @@
       </div>
    </div>
 </div>
+
+<div class="dropdown-content" id="industries" >
+   <div class="container" >
+      <div class="row" >
+         <?php
+            echo "<div class=\"col l4\" >";
+            $name = "Sugar";
+            
+            createIndustryItems("SUGAR","sugar");
+            createIndustryItems("ENERGY","energy");
+            createIndustryItems("HOSPITALS AND CLINICS","hospitals");
+            createIndustryItems("OFFICES","offices");
+            createIndustryItems("CHEMICAL","chemical");
+                      
+            echo "</div>";
+            ?>       
+            <!--a id="thumbnail" href="#"><img src="http://dummyimage.com/150x150/0066ff/fff"></a-->
+            <div class="col l8" id="title">
+              <div ><img src="http://dummyimage.com/150x150/0066ff/fff"></div>
+            </div>
+      </div>
+   </div>
+</div>
 <div class="navbar-upper" style="height: 100px;background-color: #ffffff;">
    <nav class="z-depth-0">
       <div class="nav-wrapper"  style="background-color: #ffffff;padding-top: 12px;">
@@ -164,9 +194,11 @@
                
                   <li><a href="product_list.php?type=1" class="dropdown-button black-text navLink" style="right: 0; font-size: 18px;" data-activates="products"><b>PRODUCTS</b><i class="material-icons right">arrow_drop_down</i></a>
                   <!--li><a href="industries.php?id=sugar" class="dropdown-button black-text navLink" style="right: 0; font-size: 18px;" data-activates="industries"><b>INDUSTRIES</b><i class="material-icons right">arrow_drop_down</i></a-->
+                  <li><a href="industry_list.php" class="dropdown-button black-text navLink" style="right: 0; font-size: 18px;" data-activates="industries"><b>INDUSTRIES</b><i class="material-icons right">arrow_drop_down</i></a>
                   <li><a href="embedded_solutions.php" style="font-size:18px;color:#000;"><b>SOLUTIONS</b></a></li>
                </ul>
                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                  <li><a href="careers.php" style="font-size:18px;color:#000;"><b>CAREERS</b></a></li>
                   <li><a href="about.php" style="font-size:18px;color:#000;"><b>ABOUT</b></a></li>
                   <li><a href="contact.php" style="font-size:18px;color:#000;"><b>CONTACT</b></a></li>
                </ul>
@@ -206,11 +238,22 @@
                      </ul>
                   </li>
                   <li class="white"><a href="embedded_solutions.php" class="waves-effect waves-blue"></i>SOLUTIONS</a></li>     
+                  <li class="white"><a href="careers.php" class="waves-effect waves-blue"></i>CAREERS</a></li>     
                   <li class="white"><a href="contact.php" class="waves-effect waves-blue">CONTACT US</a></li>
                </ul>
 
+<!--script type="text/javascript" src="https://zcs1.maillist-manage.com/js/jquery-1.11.0.min.js"></script>
+<script type='text/javascript' src='https://zcs1.maillist-manage.com/js/jquery-ui-1.10.4.custom.min.js'></script>
+<script type='text/javascript' src='https://zcs1.maillist-manage.com/js/jquery-migrate-1.2.1.min.js'></script>
+<script type="text/javascript" src='https://zcs1.maillist-manage.com/js/ui.datepicker.js'  charset="utf-8"></script>
+<script type="text/javascript" src="https://zcs1.maillist-manage.com/js/jquery.form.js"></script>
+<script type="text/javascript" src="https://zcs1.maillist-manage.com/js/optin_min.js"></script-->
+
+
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js'></script>
+  
+
 <script>
    $(document).ready(function(){
        $(".dropdown-button").dropdown({

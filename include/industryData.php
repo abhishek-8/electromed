@@ -9,7 +9,7 @@ function getIndustryData($name){
 	$clients      = '';
 	$count    = '';
 	if($name=='sugar'){
-		$title="SUGAR&ensp;&ensp;INDUSTRY";
+		$title="SUGAR&ensp;INDUSTRY";
 		$breadcrumb='Sugar Industry';
 		$link="sugar";
 		$intro="
@@ -32,11 +32,11 @@ function getIndustryData($name){
 		$count='0,0,0,37,306,93';
 	}
 	else if($name=='energy'){
-		$title="ENERGY&ensp;&ensp;INDUSTRY";
+		$title="ENERGY&ensp;INDUSTRY";
 		$breadcrumb='Energy Industry';
 		$link="energy";
 		$intro="
-		Electromed entered into business with the Energy Industry in .... , with the installation of .... . Since then, it has come a long way catering both conventional and non conventional power plants all over the country.
+		Electromed entered into business with the Energy Industry in June 1981 , with the installation of Line Frequency Printer at Panki Thermal Power Station. Since then, it has come a long way catering both conventional and non conventional power plants all over the country.
 		<br><br>
 		Constant innovation, coupled with our commitment to quality has helped us create long lasting relationships with many of the leading power plants in both government and private sector. More than anything, we look to our customers for inspiration, and try to serve them to the best of our abilities.";
 		$products=array(

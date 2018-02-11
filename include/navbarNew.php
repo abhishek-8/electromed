@@ -26,6 +26,11 @@
       echo "<li><a class=\"waves-effect waves-blue\" href=\"product_list.php?type=$n\">$x</a></li>";
       echo "<li><div class=\"divider\"></div></li>";
    }
+
+   function createSidebarIndustry($x,$n){
+      echo "<li><a class=\"waves-effect waves-blue\" href=\"industries.php?id=$n\">$x</a></li>";
+      echo "<li><div class=\"divider\"></div></li>";
+   }
    ?>
 
 
@@ -128,16 +133,16 @@
             
             createIndustryItems("SUGAR","sugar");
             createIndustryItems("ENERGY","energy");
-            createIndustryItems("HOSPITALS AND CLINICS","hospitals");
-            createIndustryItems("OFFICES","offices");
-            createIndustryItems("CHEMICAL","chemical");
+//            createIndustryItems("HOSPITALS AND CLINICS","hospitals");
+//            createIndustryItems("OFFICES","offices");
+//            createIndustryItems("CHEMICAL","chemical");
                       
             echo "</div>";
             ?>       
             <!--a id="thumbnail" href="#"><img src="http://dummyimage.com/150x150/0066ff/fff"></a-->
-            <div class="col l8" id="title">
+            <!--div class="col l8" id="title">
               <div ><img src="http://dummyimage.com/150x150/0066ff/fff"></div>
-            </div>
+            </div-->
       </div>
    </div>
 </div>
@@ -194,7 +199,7 @@
                
                   <li><a href="product_list.php?type=1" class="dropdown-button black-text navLink" style="right: 0; font-size: 18px;" data-activates="products"><b>PRODUCTS</b><i class="material-icons right">arrow_drop_down</i></a>
                   <!--li><a href="industries.php?id=sugar" class="dropdown-button black-text navLink" style="right: 0; font-size: 18px;" data-activates="industries"><b>INDUSTRIES</b><i class="material-icons right">arrow_drop_down</i></a-->
-                  <li><a href="industry_list.php" class="dropdown-button black-text navLink" style="right: 0; font-size: 18px;" data-activates="industries"><b>INDUSTRIES</b><i class="material-icons right">arrow_drop_down</i></a>
+                  <li><a href="" class="dropdown-button black-text navLink" style="right: 0; font-size: 18px;" data-activates="industries"><b>INDUSTRIES</b><i class="material-icons right">arrow_drop_down</i></a>
                   <li><a href="embedded_solutions.php" style="font-size:18px;color:#000;"><b>SOLUTIONS</b></a></li>
                </ul>
                <ul id="nav-mobile" class="right hide-on-med-and-down">
@@ -232,6 +237,19 @@
                                  <?php createSidebarItems($cat6,6); ?>
                                  <?php createSidebarItems($cat7,7); ?>
                                  <?php createSidebarItems($cat8,8); ?>
+                              </ul>
+                           </div>
+                        </li>
+                     </ul>
+                  </li>
+                  <li class="white">
+                     <ul class="collapsible collapsible-accordion">
+                        <li>
+                           <a class="collapsible-header waves-effect waves-blue"><b>INDUSTRY</b><i class="material-icons right" style="margin-right:0;">arrow_drop_down</i></a>
+                           <div class="collapsible-body">
+                              <ul>
+                                 <?php createSidebarIndustry("SUGAR","sugar"); ?>
+                                 <?php createSidebarIndustry("POWER","power"); ?>
                               </ul>
                            </div>
                         </li>

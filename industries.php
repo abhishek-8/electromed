@@ -49,10 +49,9 @@
       <!-- ====================================================== -->
       <!-- ====================================================== -->
       <?php  ?>
-<blockquote class="trello-card"><a href="https://trello.com/c/ihCSqZcv/4-product">Product</a></blockquote><script src="https://p.trellocdn.com/embed.min.js"></script>
       <div class="row">
          <div class="col l10 m10 s12 offset-l1">
-            <h3 class="custom-text ctgry-name" style="text-align:left;color:#263238;padding-bottom: 5px;"><b><?php echo "$title"; ?></b></h3>
+            <h3 class="custom-text ctgry-name" style="text-align:left;color:#263238;padding-bottom: 5px;font-size: 52px;"><b><?php echo "$title"; ?></b></h3>
             <!-- BreadCrumbs -->
             <div class="nav-wrapper container" style="float:left">
                <a href="industries_list.php" class="breadcrumb black-text" style="font-size: 13px;">Industry</a>
